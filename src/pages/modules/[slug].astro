@@ -2,7 +2,6 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import ModuleCard from '../../components/ModuleCard.astro';
 import { getAllModules, CATEGORIES, type ModuleData } from '../../lib/modules';
 
 export async function getStaticPaths() {
@@ -37,11 +36,12 @@ export interface Props {
 
 const { module, contentEntry } = Astro.props;
 const category = CATEGORIES[module.category] || { name: module.category, id: module.category };
+const author = module.repo.split('/')[0];
 
 // Related modules in same category (excluding current)
 const relatedModules = getAllModules()
   .filter(m => m.category === module.category && m.id !== module.id)
-  .slice(0, 3);
+  .slice(0, 4);
 
 // Render markdown content if available
 let ContentComponent = null;
@@ -57,6 +57,25 @@ if (contentEntry) {
 }
 
 const isTier1 = module.contentTier === 1 && ContentComponent;
+
+// Helper to parse raw backticks into proper inline code tags
+function parseInlineMarkdown(text: string): string {
+  if (!text) return '';
+  return text.replace(/`([^`]+)`/g, '<code class="bg-slate-100 text-pink-600 text-xs font-mono px-1.5 py-0.5 rounded">$1</code>');
+}
+
+// Category icon map for fallback
+const iconMap: Record<string, string> = {
+  'root-management': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+  'performance-kernel': 'M13 10V3L4 14h7v7l9-11h-7z',
+  'system-environment': 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
+  'customization-ui': 'M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4',
+  'development-instrumentation': 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
+  'system-utilities': 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+  'networking-proxies': 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9',
+  'security-certificates': 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z'
+};
+const categorySvgPath = iconMap[module.category] || iconMap['system-environment'];
 
 // Format release date
 const releaseDate = new Date(module.latestRelease.publishedAt).toLocaleDateString('en-US', {
@@ -84,12 +103,12 @@ const softwareSchema = {
   },
   'author': {
     '@type': 'Person',
-    'name': module.repo.split('/')[0],
-    'url': `https://github.com/${module.repo.split('/')[0]}`
+    'name': author,
+    'url': `https://github.com/${author}`
   }
 };
 
-// JSON-LD HowTo Schema (How to install)
+// JSON-LD HowTo Schema
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
@@ -98,9 +117,8 @@ const howToSchema = {
   'step': [
     {
       '@type': 'HowToStep',
-      'name': 'Download Release Asset',
-      'text': `Download the primary release package ${module.latestRelease.assetName} directly from the official release.`,
-      'url': module.latestRelease.downloadUrl
+      'name': 'Download ZIP',
+      'text': `Download the primary release package ${module.latestRelease.assetName} directly from the official release.`
     },
     {
       '@type': 'HowToStep',
@@ -109,13 +127,13 @@ const howToSchema = {
     },
     {
       '@type': 'HowToStep',
-      'name': 'Flash and Reboot',
+      'name': 'Install & Reboot',
       'text': `Tap Install from Storage, select ${module.latestRelease.assetName}, and reboot your device once installation completes.`
     }
   ]
 };
 
-// JSON-LD FAQPage Schema (if Tier 1 FAQs exist)
+// JSON-LD FAQ Schema
 const faqSchema = frontmatter?.faq && frontmatter.faq.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -146,64 +164,108 @@ const breadcrumbs = [
     <Breadcrumbs items={breadcrumbs} />
 
     <!-- Top Module Header Card -->
-    <div class="mt-4 rounded-lg border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs">
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <!-- Left: Coherent Metadata Stack -->
         <div class="flex items-start gap-5">
-          {module.icon ? (
-            <img 
-              src={`/${module.icon}`} 
-              alt={`${module.name} icon`}
-              width="64" 
-              height="64" 
-              class="h-16 w-16 rounded-md object-contain bg-slate-50 p-2 border border-slate-200 shrink-0"
-            />
-          ) : (
-            <div class="flex h-16 w-16 items-center justify-center rounded-md bg-brand-50 text-[#01af9c] font-bold text-2xl border border-brand-100 shrink-0">
-              {module.name.charAt(0).toUpperCase()}
-            </div>
-          )}
+          <!-- Avatar / Fallback -->
+          <div class="shrink-0">
+            {module.icon ? (
+              <img 
+                src={`/${module.icon}`} 
+                alt={`${module.name} icon`}
+                width="64" 
+                height="64" 
+                class="h-16 w-16 rounded-xl object-contain bg-slate-50 p-1.5 border border-slate-200 shrink-0"
+              />
+            ) : (
+              <div class="relative h-16 w-16">
+                <img 
+                  src={`https://github.com/${author}.png?size=96`} 
+                  alt={author}
+                  width="64"
+                  height="64"
+                  class="h-16 w-16 rounded-xl object-cover bg-slate-100 border border-slate-200"
+                  onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden h-16 w-16 items-center justify-center rounded-xl bg-teal-50 text-teal-700 border border-teal-200">
+                  <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={categorySvgPath} />
+                  </svg>
+                </div>
+              </div>
+            )}
+          </div>
 
-          <div>
+          <!-- Stack Details -->
+          <div class="space-y-2">
             <div class="flex items-center gap-3 flex-wrap">
               <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
                 {module.name}
               </h1>
 
+              <span class="bg-slate-100 text-slate-700 font-mono text-xs px-2.5 py-0.5 rounded border border-slate-200/60 font-semibold">
+                {module.latestRelease.tag}
+              </span>
+
               {isTier1 && (
-                <span class="inline-flex items-center rounded bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700 border border-brand-200">
-                  Guide
+                <span class="inline-flex items-center rounded bg-teal-50 px-2.5 py-0.5 text-xs font-semibold text-teal-800 border border-teal-200">
+                  Technical Guide
                 </span>
               )}
             </div>
 
-            <p class="mt-2 text-sm text-slate-600 max-w-2xl leading-relaxed">
-              {module.description}
-            </p>
+            <!-- Description parsed with inline code -->
+            <p class="text-sm text-slate-600 max-w-2xl leading-relaxed" set:html={parseInlineMarkdown(module.description)} />
 
-            <div class="mt-4 flex items-center gap-4 text-xs text-slate-500 flex-wrap">
-              <div class="flex items-center gap-1.5 text-[#ffb327] font-semibold">
-                <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                <span class="text-slate-700">{module.stars ? module.stars.toLocaleString() : 0} stars</span>
+            <!-- Badges & Links Line -->
+            <div class="flex items-center gap-3 text-xs text-slate-500 flex-wrap pt-1">
+              <div class="flex items-center gap-1 text-slate-700 font-semibold">
+                <span class="text-[#ffb327]">★</span>
+                <span>{module.stars ? module.stars.toLocaleString() : 0} stars</span>
               </div>
               <span>•</span>
-              <a href={`/categories/${module.category}`} class="text-brand-600 hover:underline">
+              <a href={`/categories/${module.category}`} class="text-teal-700 font-medium hover:underline">
                 {category.name}
               </a>
               <span>•</span>
-              <span class="font-mono text-slate-600">License: {module.license}</span>
+              <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="hover:text-slate-900 font-medium transition-colors">
+                by {author}
+              </a>
               <span>•</span>
-              <span>Updated: {releaseDate}</span>
+              <span class="font-mono text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded text-[11px]">
+                {module.license}
+              </span>
+              <span>•</span>
+              <span>Updated {releaseDate}</span>
+            </div>
+
+            <!-- Platform compatibility tags -->
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Roots:</span>
+              <div class="flex items-center gap-1.5">
+                {['Magisk', 'KernelSU', 'APatch'].map(platform => {
+                  const supported = module.compatibility.includes(platform as any);
+                  return (
+                    <span class={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-medium border ${
+                      supported 
+                        ? 'bg-teal-50 text-teal-800 border-teal-200' 
+                        : 'bg-slate-50 text-slate-400 border-slate-200 opacity-60'
+                    }`}>
+                      {supported ? '✓' : '✕'} {platform}
+                    </span>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Download & Source CTA Buttons -->
-        <div class="flex flex-col sm:flex-row md:flex-col gap-2.5 shrink-0">
+        <!-- Right: Action Buttons (Uniform Width Stack) -->
+        <div class="flex flex-col gap-2.5 w-full md:w-56 shrink-0">
           <a 
             href={module.latestRelease.downloadUrl}
-            class="inline-flex items-center justify-center gap-2 rounded-md bg-[#01af9c] px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#009a8a] transition-colors"
+            class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-teal-600 px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-teal-700 active:bg-teal-800 transition-colors"
           >
             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
@@ -215,95 +277,41 @@ const breadcrumbs = [
             href={module.latestRelease.url}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors"
+            class="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
           >
             <svg class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
             </svg>
             <span>GitHub Source</span>
           </a>
-        </div>
-      </div>
 
-      <!-- Compatibility Matrix Pill Bar -->
-      <div class="mt-6 pt-6 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
-        <div class="flex items-center gap-2">
-          <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Compatibility:</span>
-          <div class="flex items-center gap-1.5">
-            {['Magisk', 'KernelSU', 'APatch'].map(platform => {
-              const supported = module.compatibility.includes(platform as any);
-              return (
-                <span class={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-medium border ${
-                  supported 
-                    ? 'bg-brand-50 text-brand-700 border-brand-200' 
-                    : 'bg-slate-50 text-slate-400 border-slate-200 opacity-60'
-                }`}>
-                  {supported ? '✓' : '✕'} {platform}
-                </span>
-              );
-            })}
+          <div class="text-[11px] text-slate-500 font-mono text-center truncate pt-1">
+            File: <span class="text-slate-800">{module.latestRelease.assetName}</span>
           </div>
-        </div>
-
-        <div class="text-xs text-slate-500 font-mono">
-          Asset: <span class="text-slate-800">{module.latestRelease.assetName}</span>
         </div>
       </div>
     </div>
 
-    <!-- Main Content Area: Split 2-Column on Desktop -->
-    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Main Content Area: Balanced 2-Column Split -->
+    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
       <!-- Left 2 Cols: Main Documentation / Technical Guide -->
       <div class="lg:col-span-2 space-y-6">
         {isTier1 ? (
           <div>
-            <div class="mb-6 rounded-lg border border-slate-200 bg-white p-5 space-y-3 shadow-sm">
-              <h2 class="text-xs font-bold uppercase tracking-wider text-brand-700">Specifications</h2>
-              
-              {frontmatter.prerequisites && frontmatter.prerequisites.length > 0 && (
-                <div>
-                  <h3 class="text-xs font-semibold text-slate-500">Prerequisites:</h3>
-                  <ul class="mt-1 list-disc list-inside text-xs text-slate-700 space-y-0.5">
-                    {frontmatter.prerequisites.map((p: string) => <li>{p}</li>)}
-                  </ul>
-                </div>
-              )}
-
-              {frontmatter.conflicts && frontmatter.conflicts.length > 0 && (
-                <div>
-                  <h3 class="text-xs font-semibold text-rose-600">Known Conflicts:</h3>
-                  <ul class="mt-1 list-disc list-inside text-xs text-slate-700 space-y-0.5">
-                    {frontmatter.conflicts.map((c: string) => <li>{c}</li>)}
-                  </ul>
-                </div>
-              )}
-
-              {frontmatter.configPaths && frontmatter.configPaths.length > 0 && (
-                <div>
-                  <h3 class="text-xs font-semibold text-slate-500">Configuration Paths:</h3>
-                  <div class="mt-1 flex flex-wrap gap-1.5">
-                    {frontmatter.configPaths.map((cp: string) => (
-                      <code class="rounded bg-slate-100 px-2 py-0.5 text-[11px] font-mono text-slate-800 border border-slate-200">
-                        {cp}
-                      </code>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <article class="rounded-lg border border-slate-200 bg-white p-6 sm:p-8 shadow-sm prose prose-slate max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-2 prose-h3:text-base prose-p:text-slate-600 prose-p:leading-relaxed prose-code:text-brand-700 prose-code:bg-slate-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-slate-900 prose-pre:text-slate-100">
+            <!-- Technical Article -->
+            <article class="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs prose prose-slate max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-2 prose-h3:text-base prose-p:text-slate-600 prose-p:leading-relaxed prose-code:text-pink-600 prose-code:bg-slate-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-slate-900 prose-pre:text-slate-100">
               <ContentComponent />
             </article>
 
+            <!-- FAQ Section -->
             {frontmatter.faq && frontmatter.faq.length > 0 && (
-              <div class="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="mt-8 rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs">
                 <h2 class="text-lg font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
                 <div class="space-y-4">
                   {frontmatter.faq.map((item: any) => (
-                    <div class="rounded-md border border-slate-100 bg-slate-50/50 p-4">
-                      <h3 class="font-semibold text-slate-900 text-sm">{item.question}</h3>
-                      <p class="mt-1.5 text-xs text-slate-600 leading-relaxed">{item.answer}</p>
+                    <div class="rounded-lg border border-slate-100 bg-slate-50/60 p-4">
+                      <h3 class="font-semibold text-slate-900 text-sm" set:html={parseInlineMarkdown(item.question)} />
+                      <p class="mt-2 text-xs text-slate-600 leading-relaxed" set:html={parseInlineMarkdown(item.answer)} />
                     </div>
                   ))}
                 </div>
@@ -312,48 +320,46 @@ const breadcrumbs = [
           </div>
         ) : (
           <div class="space-y-6">
-            <div class="rounded-lg border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+            <div class="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs">
               <h2 class="text-lg font-bold text-slate-900 mb-3">About {module.name}</h2>
-              <p class="text-sm text-slate-600 leading-relaxed">
-                {module.description}
-              </p>
+              <p class="text-sm text-slate-600 leading-relaxed" set:html={parseInlineMarkdown(module.description)} />
               
-              <div class="mt-5 rounded-md border border-slate-200 bg-slate-50 p-4">
-                <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Category</h3>
+              <div class="mt-5 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Ecosystem Category</h3>
                 <p class="text-xs text-slate-600 leading-relaxed">
-                  Categorized under <strong class="text-brand-700 font-semibold">{category.name}</strong>. {category.description}
+                  Categorized under <strong class="text-teal-800 font-semibold">{category.name}</strong>. {category.description}
                 </p>
               </div>
             </div>
 
             <!-- Standard Installation Steps -->
-            <div class="rounded-lg border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
-              <h2 class="text-lg font-bold text-slate-900 mb-4">How to Install</h2>
-              <ol class="space-y-3">
+            <div class="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xs">
+              <h2 class="text-lg font-bold text-slate-900 mb-4">Installation Instructions</h2>
+              <ol class="space-y-3.5">
                 <li class="flex items-start gap-3">
-                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-700 border border-brand-200">1</span>
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs font-bold text-teal-800 border border-teal-200">1</span>
                   <div>
                     <h3 class="text-sm font-semibold text-slate-800">Download the Release Asset</h3>
                     <p class="text-xs text-slate-500 mt-0.5">
-                      Download <code class="text-slate-800 bg-slate-100 px-1 py-0.5 rounded border border-slate-200">{module.latestRelease.assetName}</code> directly to your device storage.
+                      Save <code class="text-pink-600 bg-slate-100 px-1.5 py-0.5 rounded text-xs font-mono">{module.latestRelease.assetName}</code> directly to your device storage.
                     </p>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
-                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-700 border border-brand-200">2</span>
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs font-bold text-teal-800 border border-teal-200">2</span>
                   <div>
                     <h3 class="text-sm font-semibold text-slate-800">Open Your Root Manager</h3>
                     <p class="text-xs text-slate-500 mt-0.5">
-                      Open Magisk, KernelSU, or APatch and navigate to the Modules manager tab.
+                      Launch Magisk, KernelSU, or APatch and navigate to the Modules manager tab.
                     </p>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
-                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-700 border border-brand-200">3</span>
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-50 text-xs font-bold text-teal-800 border border-teal-200">3</span>
                   <div>
                     <h3 class="text-sm font-semibold text-slate-800">Install from Storage & Reboot</h3>
                     <p class="text-xs text-slate-500 mt-0.5">
-                      Select the downloaded archive, allow the installation script to complete, and reboot your smartphone.
+                      Select the downloaded archive, allow the installation script to complete, and reboot your device.
                     </p>
                   </div>
                 </li>
@@ -363,34 +369,96 @@ const breadcrumbs = [
         )}
       </div>
 
-      <!-- Right Column: Sidebar & Related Modules -->
+      <!-- Right Column: Sidebar (Specifications + Repository Details) -->
       <div class="space-y-6">
-        <!-- Upstream Repository Card -->
-        <div class="rounded-lg border border-slate-200 bg-white p-5 space-y-4 shadow-sm">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">Repository Details</h3>
+        <!-- Technical Specifications Card (for Tier 1) -->
+        {isTier1 && (frontmatter.prerequisites?.length > 0 || frontmatter.conflicts?.length > 0 || frontmatter.configPaths?.length > 0) && (
+          <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-4 shadow-xs">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2">
+              Specifications
+            </h3>
+
+            {frontmatter.prerequisites && frontmatter.prerequisites.length > 0 && (
+              <div>
+                <h4 class="text-xs font-semibold text-slate-700">Prerequisites</h4>
+                <ul class="mt-1.5 list-disc list-inside text-xs text-slate-600 space-y-1">
+                  {frontmatter.prerequisites.map((p: string) => (
+                    <li set:html={parseInlineMarkdown(p)} />
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {frontmatter.conflicts && frontmatter.conflicts.length > 0 && (
+              <div>
+                <h4 class="text-xs font-semibold text-rose-700">Known Conflicts</h4>
+                <ul class="mt-1.5 list-disc list-inside text-xs text-slate-600 space-y-1">
+                  {frontmatter.conflicts.map((c: string) => (
+                    <li set:html={parseInlineMarkdown(c)} />
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <!-- Configuration Paths: Vertical Monospace List with Copy Button -->
+            {frontmatter.configPaths && frontmatter.configPaths.length > 0 && (
+              <div>
+                <h4 class="text-xs font-semibold text-slate-700 mb-2">Configuration Paths</h4>
+                <div class="rounded-lg border border-slate-200 bg-slate-50/80 divide-y divide-slate-200/60 font-mono text-xs overflow-hidden">
+                  {frontmatter.configPaths.map((cp: string) => (
+                    <div class="flex items-center justify-between py-2 px-2.5 gap-2 group hover:bg-slate-100/70 transition-colors">
+                      <span class="text-slate-800 text-[11px] truncate select-all">{cp}</span>
+                      <button 
+                        type="button"
+                        class="copy-path-btn inline-flex items-center gap-1 text-[11px] font-medium text-slate-400 hover:text-teal-700 px-1.5 py-0.5 rounded hover:bg-slate-200/80 transition-colors shrink-0" 
+                        data-path={cp}
+                        title="Copy file path"
+                      >
+                        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                        <span class="copy-text">Copy</span>
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        <!-- Upstream Repository Details Card (Key-Value Rows) -->
+        <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-4 shadow-xs">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2">
+            Repository Details
+          </h3>
           
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between py-1 border-b border-slate-100">
+          <div class="space-y-2.5 text-xs">
+            <div class="flex items-center justify-between py-1 border-b border-slate-100">
               <span class="text-slate-500">Maintainer</span>
-              <a href={`https://github.com/${module.repo.split('/')[0]}`} target="_blank" rel="noopener noreferrer" class="text-brand-600 font-medium hover:underline">
-                {module.repo.split('/')[0]}
+              <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="text-teal-700 font-medium hover:underline">
+                {author}
               </a>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100">
+            <div class="flex items-center justify-between py-1 border-b border-slate-100">
               <span class="text-slate-500">Repository</span>
-              <span class="text-slate-800 font-mono">{module.repo.split('/')[1]}</span>
+              <span class="text-slate-800 font-mono font-medium">{module.repo.split('/')[1]}</span>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100">
+            <div class="flex items-center justify-between py-1 border-b border-slate-100">
               <span class="text-slate-500">Latest Release</span>
-              <span class="text-slate-800 font-mono">{module.latestRelease.tag}</span>
+              <span class="bg-slate-100 text-slate-700 font-mono text-[11px] px-2 py-0.5 rounded font-medium border border-slate-200/60">
+                {module.latestRelease.tag}
+              </span>
             </div>
-            <div class="flex justify-between py-1 border-b border-slate-100">
+            <div class="flex items-center justify-between py-1 border-b border-slate-100">
               <span class="text-slate-500">Release Date</span>
               <span class="text-slate-800">{releaseDate}</span>
             </div>
-            <div class="flex justify-between py-1">
+            <div class="flex items-center justify-between py-1">
               <span class="text-slate-500">License</span>
-              <span class="text-slate-800">{module.license}</span>
+              <span class="font-mono text-slate-700 bg-slate-100 px-1.5 py-0.5 rounded text-[11px]">
+                {module.license}
+              </span>
             </div>
           </div>
 
@@ -398,7 +466,7 @@ const breadcrumbs = [
             href={`https://github.com/${module.repo}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="block w-full text-center rounded-md border border-slate-200 bg-slate-50 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 transition-colors"
+            class="block w-full text-center rounded-lg border border-slate-200 bg-slate-50 py-2 text-xs font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors"
           >
             Open GitHub Repository →
           </a>
@@ -406,25 +474,23 @@ const breadcrumbs = [
 
         <!-- Related Category Modules -->
         {relatedModules.length > 0 && (
-          <div class="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
+          <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 border-b border-slate-100 pb-2 mb-3">
               More in {category.name}
             </h3>
-            <div class="space-y-2.5">
+            <div class="space-y-2">
               {relatedModules.map(rel => (
                 <a 
                   href={`/modules/${rel.id}`}
-                  class="flex items-center justify-between p-2 rounded-md border border-slate-100 bg-slate-50/50 hover:bg-slate-50 hover:border-slate-200 transition-all group"
+                  class="flex items-center justify-between p-2 rounded-lg border border-slate-100 bg-slate-50/50 hover:bg-slate-100/70 hover:border-slate-200 transition-all group"
                 >
                   <div class="flex items-center gap-2.5 truncate">
                     {rel.icon ? (
-                      <img src={`/${rel.icon}`} alt="" width="24" height="24" class="h-6 w-6 rounded object-contain shrink-0" />
+                      <img src={`/${rel.icon}`} alt="" width="24" height="24" class="h-6 w-6 rounded object-contain shrink-0 bg-white border border-slate-200 p-0.5" />
                     ) : (
-                      <div class="h-6 w-6 rounded bg-brand-50 text-[10px] font-bold text-[#01af9c] flex items-center justify-center shrink-0">
-                        {rel.name.charAt(0)}
-                      </div>
+                      <img src={`https://github.com/${rel.repo.split('/')[0]}.png?size=48`} alt="" width="24" height="24" class="h-6 w-6 rounded object-cover shrink-0 bg-slate-200" />
                     )}
-                    <span class="text-xs font-medium text-slate-800 group-hover:text-brand-600 truncate">
+                    <span class="text-xs font-medium text-slate-800 group-hover:text-teal-700 truncate">
                       {rel.name}
                     </span>
                   </div>
@@ -440,3 +506,19 @@ const breadcrumbs = [
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  document.querySelectorAll('.copy-path-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = btn.getAttribute('data-path');
+      if (path) {
+        navigator.clipboard.writeText(path);
+        const text = btn.querySelector('.copy-text');
+        if (text) {
+          text.textContent = 'Copied!';
+          setTimeout(() => { text.textContent = 'Copy'; }, 1500);
+        }
+      }
+    });
+  });
+</script>

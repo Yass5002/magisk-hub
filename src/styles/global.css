@@ -11,6 +11,12 @@
     @apply bg-[#f8f9fa] text-slate-800 antialiased selection:bg-brand-500 selection:text-white;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
+
+  /* Disable Tailwind typography automatic backticks */
+  .prose code::before,
+  .prose code::after {
+    content: "" !important;
+  }
 }
 
 /* Clean scrollbar */
