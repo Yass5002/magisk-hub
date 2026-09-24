@@ -1,0 +1,4166 @@
+[
+  {
+    "id": "magisk",
+    "name": "Magisk",
+    "type": "root_manager",
+    "repo": "topjohnwu/Magisk",
+    "stars": 62913,
+    "description": "The Magic Mask for Android - Root management, module loader, and Zygisk runtime.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v30.7",
+      "publishedAt": "2026-02-23T08:07:01Z",
+      "url": "https://github.com/topjohnwu/Magisk/releases/tag/v30.7",
+      "downloadUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk",
+      "assetName": "Magisk-v30.7.apk"
+    }
+  },
+  {
+    "id": "librepods",
+    "name": "librepods",
+    "type": "magisk_module",
+    "repo": "librepods-org/librepods",
+    "stars": 30012,
+    "description": "AirPods liberated from Apple's ecosystem.",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.0-rc1",
+      "publishedAt": "2026-06-20T15:03:17Z",
+      "url": "https://github.com/librepods-org/librepods/releases/tag/v1.0.0-rc1",
+      "downloadUrl": "https://github.com/librepods-org/librepods/releases/download/v1.0.0-rc1/LibrePods-FOSS-v1.0.0-rc1-release.zip",
+      "assetName": "LibrePods-FOSS-v1.0.0-rc1-release.zip"
+    }
+  },
+  {
+    "id": "vector",
+    "name": "Vector",
+    "type": "magisk_module",
+    "repo": "JingMatrix/Vector",
+    "stars": 12518,
+    "description": "Modern Xposed Framework",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.2",
+      "publishedAt": "2026-08-04T09:38:29Z",
+      "url": "https://github.com/JingMatrix/Vector/releases/tag/v2.2",
+      "downloadUrl": "https://github.com/JingMatrix/Vector/releases/download/v2.2/Vector-v2.2-3080-Release.zip",
+      "assetName": "Vector-v2.2-3080-Release.zip"
+    }
+  },
+  {
+    "id": "trickystore",
+    "name": "TrickyStore",
+    "type": "magisk_module",
+    "repo": "5ec1cff/TrickyStore",
+    "stars": 6379,
+    "description": "",
+    "category": "root-management",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "1.4.1",
+      "publishedAt": "2025-11-02T09:56:37Z",
+      "url": "https://github.com/5ec1cff/TrickyStore/releases/tag/1.4.1",
+      "downloadUrl": "https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip",
+      "assetName": "Tricky-Store-v1.4.1-245-72b2e84-release.zip"
+    }
+  },
+  {
+    "id": "lsposed.github.io",
+    "name": "LSPosed.github.io",
+    "type": "magisk_module",
+    "repo": "LSPosed/LSPosed.github.io",
+    "stars": 6345,
+    "description": "",
+    "category": "root-management",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "shamiko-414",
+      "publishedAt": "2025-06-18T11:37:10Z",
+      "url": "https://github.com/LSPosed/LSPosed.github.io/releases/tag/shamiko-414",
+      "downloadUrl": "https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-414/Shamiko-v1.2.5-414-release.zip",
+      "assetName": "Shamiko-v1.2.5-414-release.zip"
+    }
+  },
+  {
+    "id": "playintegrityfork",
+    "name": "PlayIntegrityFork",
+    "type": "magisk_module",
+    "repo": "osm0sis/PlayIntegrityFork",
+    "stars": 4519,
+    "description": "Fix Play Integrity <A13 verdicts, allowing custom fields and props",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v18",
+      "publishedAt": "2026-08-29T17:33:56Z",
+      "url": "https://github.com/osm0sis/PlayIntegrityFork/releases/tag/v18",
+      "downloadUrl": "https://github.com/osm0sis/PlayIntegrityFork/releases/download/v18/PlayIntegrityFork-v18.zip",
+      "assetName": "PlayIntegrityFork-v18.zip"
+    }
+  },
+  {
+    "id": "fingerprintpay",
+    "name": "FingerprintPay",
+    "type": "magisk_module",
+    "repo": "eritpchy/FingerprintPay",
+    "stars": 4510,
+    "description": "\u8ba9\u5fae\u4fe1\u3001QQ\u3001\u652f\u4ed8\u5b9d\u3001\u6dd8\u5b9d\u3001\u4e91\u95ea\u4ed8\u652f\u6301\u4f7f\u7528\u6307\u7eb9\u652f\u4ed8",
+    "category": "app-modifications",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "6.1.0-ci",
+      "publishedAt": "2026-03-06T17:18:43Z",
+      "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/6.1.0-ci",
+      "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/6.1.0-ci/zygisk-module-xfingerprint-pay-taobao-v6.1.0-release.zip",
+      "assetName": "zygisk-module-xfingerprint-pay-taobao-v6.1.0-release.zip"
+    }
+  },
+  {
+    "id": "revanced-extended",
+    "name": "revanced-extended",
+    "type": "magisk_module",
+    "repo": "NoName-exe/revanced-extended",
+    "stars": 4209,
+    "description": "ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users.",
+    "category": "app-modifications",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "157",
+      "publishedAt": "2026-09-22T00:45:06Z",
+      "url": "https://github.com/NoName-exe/revanced-extended/releases/tag/157",
+      "downloadUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/157/youtube-music-morphe-module-v9.15.51-arm-v7a.zip",
+      "assetName": "youtube-music-morphe-module-v9.15.51-arm-v7a.zip"
+    }
+  },
+  {
+    "id": "rezygisk",
+    "name": "ReZygisk",
+    "type": "magisk_module",
+    "repo": "PerformanC/ReZygisk",
+    "stars": 3971,
+    "description": "Transparent implementation of Zygisk.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.0",
+      "publishedAt": "2026-05-10T23:08:58Z",
+      "url": "https://github.com/PerformanC/ReZygisk/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/PerformanC/ReZygisk/releases/download/v1.0.0/ReZygisk-v1.0.0-release.zip",
+      "assetName": "ReZygisk-v1.0.0-release.zip"
+    }
+  },
+  {
+    "id": "playintegrityfix",
+    "name": "PlayIntegrityFix",
+    "type": "magisk_module",
+    "repo": "KOWX712/PlayIntegrityFix",
+    "stars": 3915,
+    "description": "Fix Play Integrity verdicts.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v4.7-inject-s",
+      "publishedAt": "2026-07-11T09:58:43Z",
+      "url": "https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v4.7-inject-s",
+      "downloadUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.7-inject-s/PlayIntegrityFix_v4.7-inject-s.zip",
+      "assetName": "PlayIntegrityFix_v4.7-inject-s.zip"
+    }
+  },
+  {
+    "id": "hma-oss",
+    "name": "HMA-OSS",
+    "type": "magisk_module",
+    "repo": "frknkrc44/HMA-OSS",
+    "stars": 3286,
+    "description": "A Zygisk module to hide your app list, settings, package installers and more. It is a fork of Hide My Applist project, but LSPosed dependency is replaced with Zygisk.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "oss-168",
+      "publishedAt": "2026-09-13T20:03:29Z",
+      "url": "https://github.com/frknkrc44/HMA-OSS/releases/tag/oss-168",
+      "downloadUrl": "https://github.com/frknkrc44/HMA-OSS/releases/download/oss-168/HMA-OSS-ZYGISK-oss-168-release.zip",
+      "assetName": "HMA-OSS-ZYGISK-oss-168-release.zip"
+    }
+  },
+  {
+    "id": "bcr",
+    "name": "BCR",
+    "type": "magisk_module",
+    "repo": "chenxiaolong/BCR",
+    "stars": 2926,
+    "description": "A Basic Call Recorder for rooted Android devices",
+    "category": "utilities",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v3.9",
+      "publishedAt": "2026-09-17T03:48:57Z",
+      "url": "https://github.com/chenxiaolong/BCR/releases/tag/v3.9",
+      "downloadUrl": "https://github.com/chenxiaolong/BCR/releases/download/v3.9/BCR-3.9-release.zip",
+      "assetName": "BCR-3.9-release.zip"
+    }
+  },
+  {
+    "id": "magisk-asoulopt",
+    "name": "Magisk_AsoulOpt",
+    "type": "magisk_module",
+    "repo": "nakixii/Magisk_AsoulOpt",
+    "stars": 2709,
+    "description": "",
+    "category": "gaming",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "Kana",
+      "publishedAt": "2026-09-18T20:24:34Z",
+      "url": "https://github.com/nakixii/Magisk_AsoulOpt/releases/tag/Kana",
+      "downloadUrl": "https://github.com/nakixii/Magisk_AsoulOpt/releases/download/Kana/Magisk_AsoulOpt_Kana.zip",
+      "assetName": "Magisk_AsoulOpt_Kana.zip"
+    }
+  },
+  {
+    "id": "zygisk-assistant",
+    "name": "Zygisk-Assistant",
+    "type": "magisk_module",
+    "repo": "snake-4/Zygisk-Assistant",
+    "stars": 2614,
+    "description": "A Zygisk module to hide root for KernelSU, Magisk and APatch, designed to work on Android 5.0 and above.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.1.4",
+      "publishedAt": "2025-02-23T00:18:35Z",
+      "url": "https://github.com/snake-4/Zygisk-Assistant/releases/tag/v2.1.4",
+      "downloadUrl": "https://github.com/snake-4/Zygisk-Assistant/releases/download/v2.1.4/Zygisk-Assistant-v2.1.4-1013f8a-debug.zip",
+      "assetName": "Zygisk-Assistant-v2.1.4-1013f8a-debug.zip"
+    }
+  },
+  {
+    "id": "susfs4ksu-module",
+    "name": "susfs4ksu-module",
+    "type": "magisk_module",
+    "repo": "sidex15/susfs4ksu-module",
+    "stars": 2596,
+    "description": "An addon root hiding service for KernelSU",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.5.2+_R28",
+      "publishedAt": "2026-07-26T09:11:01Z",
+      "url": "https://github.com/sidex15/susfs4ksu-module/releases/tag/v1.5.2+_R28",
+      "downloadUrl": "https://github.com/sidex15/susfs4ksu-module/releases/download/v1.5.2+_R28/ksu_module_susfs_1.5.2+.zip",
+      "assetName": "ksu_module_susfs_1.5.2+.zip"
+    }
+  },
+  {
+    "id": "alwaystrustusercerts",
+    "name": "AlwaysTrustUserCerts",
+    "type": "magisk_module",
+    "repo": "NVISOsecurity/AlwaysTrustUserCerts",
+    "stars": 2566,
+    "description": "A Magisk/KernelSU module that automatically adds user certificates to the system root CA store",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.3",
+      "publishedAt": "2025-05-21T07:51:30Z",
+      "url": "https://github.com/NVISOsecurity/AlwaysTrustUserCerts/releases/tag/v1.3",
+      "downloadUrl": "https://github.com/NVISOsecurity/AlwaysTrustUserCerts/releases/download/v1.3/AlwaysTrustUserCerts_v1.3.zip",
+      "assetName": "AlwaysTrustUserCerts_v1.3.zip"
+    }
+  },
+  {
+    "id": "box-for-magisk",
+    "name": "box_for_magisk",
+    "type": "magisk_module",
+    "repo": "taamarin/box_for_magisk",
+    "stars": 2518,
+    "description": "Transparent Proxy for Android(root) ",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.10.2",
+      "publishedAt": "2025-09-05T12:45:22Z",
+      "url": "https://github.com/taamarin/box_for_magisk/releases/tag/v1.10.2",
+      "downloadUrl": "https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip",
+      "assetName": "box_for_root-v1.10.2.zip"
+    }
+  },
+  {
+    "id": "teesimulator",
+    "name": "TEESimulator",
+    "type": "magisk_module",
+    "repo": "JingMatrix/TEESimulator",
+    "stars": 2476,
+    "description": "Software simulation for Android hardware-backed key pairs with key attestation",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v4.0",
+      "publishedAt": "2026-08-11T09:02:26Z",
+      "url": "https://github.com/JingMatrix/TEESimulator/releases/tag/v4.0",
+      "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Debug.zip",
+      "assetName": "TEESimulator-v4.0-34-Debug.zip"
+    }
+  },
+  {
+    "id": "surfing",
+    "name": "Surfing",
+    "type": "magisk_module",
+    "repo": "GitMetaio/Surfing",
+    "stars": 2423,
+    "description": "Magisk and KernelSU modules for  Clash/mihomo services.",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v7.8.4",
+      "publishedAt": "2026-09-07T01:21:28Z",
+      "url": "https://github.com/GitMetaio/Surfing/releases/tag/v7.8.4",
+      "downloadUrl": "https://github.com/GitMetaio/Surfing/releases/download/v7.8.4/Surfing_v7.8.4_release.zip",
+      "assetName": "Surfing_v7.8.4_release.zip"
+    }
+  },
+  {
+    "id": "neozygisk",
+    "name": "NeoZygisk",
+    "type": "magisk_module",
+    "repo": "JingMatrix/NeoZygisk",
+    "stars": 2333,
+    "description": "Zygote injection with ptrace",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v2.4",
+      "publishedAt": "2026-08-08T19:03:47Z",
+      "url": "https://github.com/JingMatrix/NeoZygisk/releases/tag/v2.4",
+      "downloadUrl": "https://github.com/JingMatrix/NeoZygisk/releases/download/v2.4/NeoZygisk-v2.4-289-release.zip",
+      "assetName": "NeoZygisk-v2.4-289-release.zip"
+    }
+  },
+  {
+    "id": "zygisk-detach",
+    "name": "zygisk-detach",
+    "type": "magisk_module",
+    "repo": "j-hc/zygisk-detach",
+    "stars": 2147,
+    "description": "Zygisk module to detach installed apps from Play Store, hooking binder",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.24.0",
+      "publishedAt": "2026-09-20T20:30:39Z",
+      "url": "https://github.com/j-hc/zygisk-detach/releases/tag/v1.24.0",
+      "downloadUrl": "https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip",
+      "assetName": "zygisk-detach-v1.24.0.zip"
+    }
+  },
+  {
+    "id": "movecertificate",
+    "name": "MoveCertificate",
+    "type": "magisk_module",
+    "repo": "ys1231/MoveCertificate",
+    "stars": 1981,
+    "description": "\u652f\u6301Android7-16\u79fb\u52a8\u8bc1\u4e66\uff0c\u517c\u5bb9magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with magiskv20.4+/kernelsu/APatch",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.6.2",
+      "publishedAt": "2026-09-02T13:23:27Z",
+      "url": "https://github.com/ys1231/MoveCertificate/releases/tag/v1.6.2",
+      "downloadUrl": "https://github.com/ys1231/MoveCertificate/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip",
+      "assetName": "MoveCertificate-v1.6.2.zip"
+    }
+  },
+  {
+    "id": "yurikey",
+    "name": "yurikey",
+    "type": "magisk_module",
+    "repo": "Yurii0307/yurikey",
+    "stars": 1906,
+    "description": "A systemless module to get strong integrity easily",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v3.0.6",
+      "publishedAt": "2026-06-03T04:06:06Z",
+      "url": "https://github.com/Yurii0307/yurikey/releases/tag/v3.0.6",
+      "downloadUrl": "https://github.com/Yurii0307/yurikey/releases/download/v3.0.6/Yurikey-v3.0.6.signed.zip",
+      "assetName": "Yurikey-v3.0.6.signed.zip"
+    }
+  },
+  {
+    "id": "teesimulator-rs",
+    "name": "TEESimulator-RS",
+    "type": "magisk_module",
+    "repo": "Enginex0/TEESimulator-RS",
+    "stars": 1828,
+    "description": "Software simulation for Android hardware-backed key pairs with key attestation | https://t.me/superpowers9",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v6.0.1-282",
+      "publishedAt": "2026-06-19T15:54:47Z",
+      "url": "https://github.com/Enginex0/TEESimulator-RS/releases/tag/v6.0.1-282",
+      "downloadUrl": "https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Debug.zip",
+      "assetName": "TEESimulator-RS-v6.0.1-282-Debug.zip"
+    }
+  },
+  {
+    "id": "uperf-game-turbo",
+    "name": "Uperf-Game-Turbo",
+    "type": "magisk_module",
+    "repo": "yinwanxi/Uperf-Game-Turbo",
+    "stars": 1548,
+    "description": "Userspace performance controller for android",
+    "category": "gaming",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "Uperf-Game-Turbo-1.51",
+      "publishedAt": "2026-07-31T09:18:45Z",
+      "url": "https://github.com/yinwanxi/Uperf-Game-Turbo/releases/tag/Uperf-Game-Turbo-1.51",
+      "downloadUrl": "https://github.com/yinwanxi/Uperf-Game-Turbo/releases/download/Uperf-Game-Turbo-1.51/Uperf_Game_Turbo-1.51.zip",
+      "assetName": "Uperf_Game_Turbo-1.51.zip"
+    }
+  },
+  {
+    "id": "knoxpatch",
+    "name": "KnoxPatch",
+    "type": "magisk_module",
+    "repo": "salvogiangri/KnoxPatch",
+    "stars": 1517,
+    "description": "LSPosed module to get Samsung apps/features working again in your rooted Galaxy device.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v0.8.3",
+      "publishedAt": "2026-06-24T18:40:29Z",
+      "url": "https://github.com/salvogiangri/KnoxPatch/releases/tag/v0.8.3",
+      "downloadUrl": "https://github.com/salvogiangri/KnoxPatch/releases/download/v0.8.3/KnoxPatch-Enhancer-v0.4.zip",
+      "assetName": "KnoxPatch-Enhancer-v0.4.zip"
+    }
+  },
+  {
+    "id": "magisk-frida",
+    "name": "magisk-frida",
+    "type": "magisk_module",
+    "repo": "ViRb3/magisk-frida",
+    "stars": 1458,
+    "description": "\ud83d\udd10 Run frida-server on boot with Magisk, always up-to-date",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "17.18.0-1",
+      "publishedAt": "2026-09-09T19:28:06Z",
+      "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.18.0-1",
+      "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.18.0-1/MagiskFrida-17.18.0-1.zip",
+      "assetName": "MagiskFrida-17.18.0-1.zip"
+    }
+  },
+  {
+    "id": "bindhosts",
+    "name": "bindhosts",
+    "type": "magisk_module",
+    "repo": "bindhosts/bindhosts",
+    "stars": 1438,
+    "description": "Systemless hosts for APatch / KernelSU / Magisk",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.1.5",
+      "publishedAt": "2026-08-24T01:43:48Z",
+      "url": "https://github.com/bindhosts/bindhosts/releases/tag/v2.1.5",
+      "downloadUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip",
+      "assetName": "bindhosts.zip"
+    }
+  },
+  {
+    "id": "adguardhomeforroot",
+    "name": "AdGuardHomeForRoot",
+    "type": "magisk_module",
+    "repo": "twoone-3/AdGuardHomeForRoot",
+    "stars": 1428,
+    "description": "A module to easily execute AdGuardHome on Android",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "20260825",
+      "publishedAt": "2026-08-25T01:39:41Z",
+      "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20260825",
+      "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20260825/AdGuardHomeForRoot_arm64.zip",
+      "assetName": "AdGuardHomeForRoot_arm64.zip"
+    }
+  },
+  {
+    "id": "mountify",
+    "name": "mountify",
+    "type": "magisk_module",
+    "repo": "backslashxx/mountify",
+    "stars": 1404,
+    "description": "Globally mounted modules via OverlayFS.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "204",
+      "publishedAt": "2026-08-25T05:14:18Z",
+      "url": "https://github.com/backslashxx/mountify/releases/tag/204",
+      "downloadUrl": "https://github.com/backslashxx/mountify/releases/download/204/mountify.zip",
+      "assetName": "mountify.zip"
+    }
+  },
+  {
+    "id": "trickystoreoss",
+    "name": "TrickyStoreOSS",
+    "type": "magisk_module",
+    "repo": "beakthoven/TrickyStoreOSS",
+    "stars": 1404,
+    "description": "Open source alternative to proprietary Tricky Store module",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v3.1.0",
+      "publishedAt": "2026-08-25T20:56:39Z",
+      "url": "https://github.com/beakthoven/TrickyStoreOSS/releases/tag/v3.1.0",
+      "downloadUrl": "https://github.com/beakthoven/TrickyStoreOSS/releases/download/v3.1.0/Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip",
+      "assetName": "Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip"
+    }
+  },
+  {
+    "id": "nohello",
+    "name": "NoHello",
+    "type": "magisk_module",
+    "repo": "MhmRdd/NoHello",
+    "stars": 1356,
+    "description": "A Zygisk module to hide root.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "0.0.7",
+      "publishedAt": "2025-05-31T03:11:57Z",
+      "url": "https://github.com/MhmRdd/NoHello/releases/tag/0.0.7",
+      "downloadUrl": "https://github.com/MhmRdd/NoHello/releases/download/0.0.7/Nohello-v0.0.7-53-4d53ecf-release.zip",
+      "assetName": "Nohello-v0.0.7-53-4d53ecf-release.zip"
+    }
+  },
+  {
+    "id": "netproxy-magisk",
+    "name": "NetProxy-Magisk",
+    "type": "magisk_module",
+    "repo": "Fanju6/NetProxy-Magisk",
+    "stars": 1198,
+    "description": "Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices.",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v8.1.1",
+      "publishedAt": "2026-08-26T23:20:50Z",
+      "url": "https://github.com/Fanju6/NetProxy-Magisk/releases/tag/v8.1.1",
+      "downloadUrl": "https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.1.1/NetProxy_v8.1.1_924_with-manager.zip",
+      "assetName": "NetProxy_v8.1.1_924_with-manager.zip"
+    }
+  },
+  {
+    "id": "zygiskfrida",
+    "name": "ZygiskFrida",
+    "type": "magisk_module",
+    "repo": "lico-n/ZygiskFrida",
+    "stars": 1086,
+    "description": "Injects frida gadget using zygisk to bypass anti-tamper checks.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.9.0",
+      "publishedAt": "2025-10-18T16:37:09Z",
+      "url": "https://github.com/lico-n/ZygiskFrida/releases/tag/v1.9.0",
+      "downloadUrl": "https://github.com/lico-n/ZygiskFrida/releases/download/v1.9.0/ZygiskFrida-v1.9.0-release.zip",
+      "assetName": "ZygiskFrida-v1.9.0-release.zip"
+    }
+  },
+  {
+    "id": "hide-navbar",
+    "name": "Hide-Navbar",
+    "type": "magisk_module",
+    "repo": "DanGLVK/Hide-Navbar",
+    "stars": 808,
+    "description": "Hide Navbar",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v30.0",
+      "publishedAt": "2026-06-23T04:08:24Z",
+      "url": "https://github.com/DanGLVK/Hide-Navbar/releases/tag/v30.0",
+      "downloadUrl": "https://github.com/DanGLVK/Hide-Navbar/releases/download/v30.0/HideNavBar.zip",
+      "assetName": "HideNavBar.zip"
+    }
+  },
+  {
+    "id": "device-faker",
+    "name": "device_faker",
+    "type": "magisk_module",
+    "repo": "Seyud/device_faker",
+    "stars": 780,
+    "description": "\u81ea\u5b9a\u4e49\u914d\u7f6eZygisk\u673a\u578b\u4f2a\u88c5",
+    "category": "privacy",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.5.0",
+      "publishedAt": "2026-08-01T05:36:21Z",
+      "url": "https://github.com/Seyud/device_faker/releases/tag/v1.5.0",
+      "downloadUrl": "https://github.com/Seyud/device_faker/releases/download/v1.5.0/device_faker_v1.5.0.zip",
+      "assetName": "device_faker_v1.5.0.zip"
+    }
+  },
+  {
+    "id": "playcurlnext",
+    "name": "playcurlNEXT",
+    "type": "magisk_module",
+    "repo": "daboynb/playcurlNEXT",
+    "stars": 775,
+    "description": "Magisk module that auto-downloads working Play Integrity fingerprints at every boot",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.19",
+      "publishedAt": "2026-01-23T12:57:50Z",
+      "url": "https://github.com/daboynb/playcurlNEXT/releases/tag/v1.19",
+      "downloadUrl": "https://github.com/daboynb/playcurlNEXT/releases/download/v1.19/playcurlNEXT.zip",
+      "assetName": "playcurlNEXT.zip"
+    }
+  },
+  {
+    "id": "sui",
+    "name": "Sui",
+    "type": "magisk_module",
+    "repo": "XiaoTong6666/Sui",
+    "stars": 698,
+    "description": "Modern super user interface implementation on Android.",
+    "category": "utilities",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "nightly",
+      "publishedAt": "2026-02-06T05:03:12Z",
+      "url": "https://github.com/XiaoTong6666/Sui/releases/tag/nightly",
+      "downloadUrl": "https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_553-e37d54c-debug.zip",
+      "assetName": "Sui-v13.5.4.3_553-e37d54c-debug.zip"
+    }
+  },
+  {
+    "id": "alwaysstrong",
+    "name": "AlwaysStrong",
+    "type": "magisk_module",
+    "repo": "evoker0/AlwaysStrong",
+    "stars": 684,
+    "description": "Always Strong: Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.4",
+      "publishedAt": "2026-09-06T10:39:50Z",
+      "url": "https://github.com/evoker0/AlwaysStrong/releases/tag/v1.0.4",
+      "downloadUrl": "https://github.com/evoker0/AlwaysStrong/releases/download/v1.0.4/AlwaysStrong-v1.0.4-inject.zip",
+      "assetName": "AlwaysStrong-v1.0.4-inject.zip"
+    }
+  },
+  {
+    "id": "specter",
+    "name": "specter",
+    "type": "magisk_module",
+    "repo": "dpejoh/specter",
+    "stars": 651,
+    "description": "Unified Play Integrity and root hiding stack for Android",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.5.0",
+      "publishedAt": "2026-09-12T11:41:38Z",
+      "url": "https://github.com/dpejoh/specter/releases/tag/v1.5.0",
+      "downloadUrl": "https://github.com/dpejoh/specter/releases/download/v1.5.0/specter-v1.5.0.zip",
+      "assetName": "specter-v1.5.0.zip"
+    }
+  },
+  {
+    "id": "magisk-ad-blocking-module",
+    "name": "Magisk-Ad-Blocking-Module",
+    "type": "magisk_module",
+    "repo": "pantsufan/Magisk-Ad-Blocking-Module",
+    "stars": 569,
+    "description": "Magisk module to block ads on android",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v3.80",
+      "publishedAt": "2026-09-15T13:15:44Z",
+      "url": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/tag/v3.80",
+      "downloadUrl": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/download/v3.80/BlockAds-v3.80.zip",
+      "assetName": "BlockAds-v3.80.zip"
+    }
+  },
+  {
+    "id": "vpnhide",
+    "name": "vpnhide",
+    "type": "magisk_module",
+    "repo": "okhsunrog/vpnhide",
+    "stars": 568,
+    "description": "Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.3.0",
+      "publishedAt": "2026-09-17T16:29:23Z",
+      "url": "https://github.com/okhsunrog/vpnhide/releases/tag/v1.3.0",
+      "downloadUrl": "https://github.com/okhsunrog/vpnhide/releases/download/v1.3.0/vpnhide-zygisk.zip",
+      "assetName": "vpnhide-zygisk.zip"
+    }
+  },
+  {
+    "id": "android-vbmeta-fixer",
+    "name": "Android-VBMeta-Fixer",
+    "type": "magisk_module",
+    "repo": "reveny/Android-VBMeta-Fixer",
+    "stars": 528,
+    "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.0",
+      "publishedAt": "2025-05-10T07:20:15Z",
+      "url": "https://github.com/reveny/Android-VBMeta-Fixer/releases/tag/v1.2.0",
+      "downloadUrl": "https://github.com/reveny/Android-VBMeta-Fixer/releases/download/v1.2.0/vbmeta-fixer-v1.2.0.zip",
+      "assetName": "vbmeta-fixer-v1.2.0.zip"
+    }
+  },
+  {
+    "id": "encore",
+    "name": "encore",
+    "type": "magisk_module",
+    "repo": "Rem01Gaming/encore",
+    "stars": 511,
+    "description": "Special performance module for your device",
+    "category": "gaming",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "5.2.1",
+      "publishedAt": "2026-07-10T03:42:06Z",
+      "url": "https://github.com/Rem01Gaming/encore/releases/tag/5.2.1",
+      "downloadUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2.1/encore-5.2.1-1533-361ab0e-main.zip",
+      "assetName": "encore-5.2.1-1533-361ab0e-main.zip"
+    }
+  },
+  {
+    "id": "adb-root",
+    "name": "adb_root",
+    "type": "magisk_module",
+    "repo": "evdenis/adb_root",
+    "stars": 510,
+    "description": "Magisk Module that allows you to run \"adb root\". Android 10 only. Probably will work with Android 9. Definitely not with Android 11/12.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.0",
+      "publishedAt": "2026-02-27T10:25:07Z",
+      "url": "https://github.com/evdenis/adb_root/releases/tag/v2.0",
+      "downloadUrl": "https://github.com/evdenis/adb_root/releases/download/v2.0/adb_root-v2.0.zip",
+      "assetName": "adb_root-v2.0.zip"
+    }
+  },
+  {
+    "id": "meta-magic-mount-rs",
+    "name": "meta-magic_mount-rs",
+    "type": "magisk_module",
+    "repo": "Tools-cx-app/meta-magic_mount-rs",
+    "stars": 504,
+    "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v4.0.8",
+      "publishedAt": "2026-08-18T09:21:46Z",
+      "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.8",
+      "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.8/magic_mount_rs-4.0.8-900-armv7.zip",
+      "assetName": "magic_mount_rs-4.0.8-900-armv7.zip"
+    }
+  },
+  {
+    "id": "chroot-distro",
+    "name": "chroot-distro",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/chroot-distro",
+    "stars": 492,
+    "description": "Install Gnu/Linux distributions on Android ",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.1.0",
+      "publishedAt": "2025-06-11T08:28:40Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/chroot-distro/releases/tag/v2.1.0",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/chroot-distro/releases/download/v2.1.0/chroot-distro.zip",
+      "assetName": "chroot-distro.zip"
+    }
+  },
+  {
+    "id": "kpatch-next-module",
+    "name": "KPatch-Next-Module",
+    "type": "magisk_module",
+    "repo": "KernelSU-Next/KPatch-Next-Module",
+    "stars": 491,
+    "description": "Standalone implementation of KPM support for Magisk/KernelSU",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v0.0.1",
+      "publishedAt": "2026-01-20T09:48:22Z",
+      "url": "https://github.com/KernelSU-Next/KPatch-Next-Module/releases/tag/v0.0.1",
+      "downloadUrl": "https://github.com/KernelSU-Next/KPatch-Next-Module/releases/download/v0.0.1/KPatch-Next-Module.zip",
+      "assetName": "KPatch-Next-Module.zip"
+    }
+  },
+  {
+    "id": "re-malwack",
+    "name": "Re-Malwack",
+    "type": "magisk_module",
+    "repo": "ZG089/Re-Malwack",
+    "stars": 451,
+    "description": "A fully-fledged adblock root/no-root suite. Contains all your needs \u2728",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v8.2",
+      "publishedAt": "2026-04-01T18:03:37Z",
+      "url": "https://github.com/ZG089/Re-Malwack/releases/tag/v8.2",
+      "downloadUrl": "https://github.com/ZG089/Re-Malwack/releases/download/v8.2/Re-Malwack_v8.2.zip",
+      "assetName": "Re-Malwack_v8.2.zip"
+    }
+  },
+  {
+    "id": "livebootmodule",
+    "name": "livebootmodule",
+    "type": "magisk_module",
+    "repo": "symbuzzer/livebootmodule",
+    "stars": 450,
+    "description": "A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v6.0.1",
+      "publishedAt": "2026-09-03T09:57:00Z",
+      "url": "https://github.com/symbuzzer/livebootmodule/releases/tag/v6.0.1",
+      "downloadUrl": "https://github.com/symbuzzer/livebootmodule/releases/download/v6.0.1/livebootmodule.zip",
+      "assetName": "livebootmodule.zip"
+    }
+  },
+  {
+    "id": "abootloop",
+    "name": "abootloop",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/abootloop",
+    "stars": 443,
+    "description": "Bootloop protection",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.3.4",
+      "publishedAt": "2025-03-10T06:10:12Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/abootloop/releases/tag/v1.3.4",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/abootloop/releases/download/v1.3.4/abootloop.zip",
+      "assetName": "abootloop.zip"
+    }
+  },
+  {
+    "id": "magiskhluda",
+    "name": "MagiskHluda",
+    "type": "magisk_module",
+    "repo": "Exo1i/MagiskHluda",
+    "stars": 432,
+    "description": "Run a more undetectable frida server on boot using magisk \ud83d\udd10\u2705",
+    "category": "development",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "17.6.2",
+      "publishedAt": "2026-01-24T12:40:42Z",
+      "url": "https://github.com/Exo1i/MagiskHluda/releases/tag/17.6.2",
+      "downloadUrl": "https://github.com/Exo1i/MagiskHluda/releases/download/17.6.2/Magisk-Florida-x86_64-17.6.2.zip",
+      "assetName": "Magisk-Florida-x86_64-17.6.2.zip"
+    }
+  },
+  {
+    "id": "hyperos-launcher",
+    "name": "HyperOS-Launcher",
+    "type": "magisk_module",
+    "repo": "Mods-Center/HyperOS-Launcher",
+    "stars": 405,
+    "description": "Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent, dock background, and customization options for a refined user experience. Optimized for smoother performance and additional features on all devices.",
+    "category": "customization",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V7.1",
+      "publishedAt": "2026-09-01T02:17:04Z",
+      "url": "https://github.com/Mods-Center/HyperOS-Launcher/releases/tag/V7.1",
+      "downloadUrl": "https://github.com/Mods-Center/HyperOS-Launcher/releases/download/V7.1/HyperOS_LauncherV7.1@kashis_cringey_stuffs.zip",
+      "assetName": "HyperOS_LauncherV7.1@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "copg",
+    "name": "COPG",
+    "type": "magisk_module",
+    "repo": "AlirezaParsi/COPG",
+    "stars": 391,
+    "description": "Advanced per-app device / CPU / GPU spoofer for rooted Android \u2014 device profiles, per-app CPU models, prop & Android-ID spoofing, all driven by a full on-device WebUI. Zygisk module for KernelSU / Magisk / APatch.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v7.0.0",
+      "publishedAt": "2026-09-12T11:23:02Z",
+      "url": "https://github.com/AlirezaParsi/COPG/releases/tag/v7.0.0",
+      "downloadUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.0.0/COPG-v7.0.0.zip",
+      "assetName": "COPG-v7.0.0.zip"
+    }
+  },
+  {
+    "id": "magisk-ios-emoji",
+    "name": "Magisk-iOS-Emoji",
+    "type": "magisk_module",
+    "repo": "Keinta15/Magisk-iOS-Emoji",
+    "stars": 391,
+    "description": "Systemlessly replaces emoji font with iOS Emoji ",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v26.4",
+      "publishedAt": "2026-06-25T18:46:17Z",
+      "url": "https://github.com/Keinta15/Magisk-iOS-Emoji/releases/tag/v26.4",
+      "downloadUrl": "https://github.com/Keinta15/Magisk-iOS-Emoji/releases/download/v26.4/Magisk_iOS_Emoji_26.4.zip",
+      "assetName": "Magisk_iOS_Emoji_26.4.zip"
+    }
+  },
+  {
+    "id": "ohmykeymint",
+    "name": "OhMyKeymint",
+    "type": "magisk_module",
+    "repo": "qwq233/OhMyKeymint",
+    "stars": 384,
+    "description": "",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.0-67dc5e7",
+      "publishedAt": "2026-06-16T20:28:47Z",
+      "url": "https://github.com/qwq233/OhMyKeymint/releases/tag/v1.2.0-67dc5e7",
+      "downloadUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/v1.2.0-67dc5e7/OhMyKeymint-release-arm64-v8a-1.2.0-67dc5e7.zip",
+      "assetName": "OhMyKeymint-release-arm64-v8a-1.2.0-67dc5e7.zip"
+    }
+  },
+  {
+    "id": "gphotosunlimited",
+    "name": "GPhotosUnlimited",
+    "type": "magisk_module",
+    "repo": "Rev4N1/GPhotosUnlimited",
+    "stars": 378,
+    "description": "Unlimited Google Photos Magisk Module works with Zygisk",
+    "category": "app-modifications",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v5",
+      "publishedAt": "2026-09-17T10:23:30Z",
+      "url": "https://github.com/Rev4N1/GPhotosUnlimited/releases/tag/v5",
+      "downloadUrl": "https://github.com/Rev4N1/GPhotosUnlimited/releases/download/v5/GPhotosUnlimited-v5.zip",
+      "assetName": "GPhotosUnlimited-v5.zip"
+    }
+  },
+  {
+    "id": "zygisknext",
+    "name": "ZygiskNext",
+    "type": "magisk_module",
+    "repo": "LSPosed/ZygiskNext",
+    "stars": 365,
+    "description": "Standalone implementation of Zygisk",
+    "category": "root-management",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "1.5.0",
+      "publishedAt": "2026-09-20T04:19:50Z",
+      "url": "https://github.com/LSPosed/ZygiskNext/releases/tag/1.5.0",
+      "downloadUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/1.5.0/Zygisk-Next-1.5.0-843-5217106-release.zip",
+      "assetName": "Zygisk-Next-1.5.0-843-5217106-release.zip"
+    }
+  },
+  {
+    "id": "brene",
+    "name": "BRENE",
+    "type": "magisk_module",
+    "repo": "rrr333nnn333/BRENE",
+    "stars": 357,
+    "description": "BRENE - A SuSFS/KernelSU module for SuSFS patched kernels",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v0.0.68",
+      "publishedAt": "2026-09-22T00:05:20Z",
+      "url": "https://github.com/rrr333nnn333/BRENE/releases/tag/v0.0.68",
+      "downloadUrl": "https://github.com/rrr333nnn333/BRENE/releases/download/v0.0.68/BRENE-v0.0.68.zip",
+      "assetName": "BRENE-v0.0.68.zip"
+    }
+  },
+  {
+    "id": "audio-misc-settings",
+    "name": "audio-misc-settings",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/audio-misc-settings",
+    "stars": 344,
+    "description": "A Magisk module for setting miscellaneous audio configuration values (media audio volume steps (100 steps), raising the resampling quality, disabling the effects framework, etc.) ",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.3.11",
+      "publishedAt": "2025-06-07T14:48:38Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/tag/v1.3.11",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/download/v1.3.11/magisk-module-audio-misc-v1.3.11.zip",
+      "assetName": "magisk-module-audio-misc-v1.3.11.zip"
+    }
+  },
+  {
+    "id": "viperfx-re",
+    "name": "ViPERFX_RE",
+    "type": "magisk_module",
+    "repo": "likelikeslike/ViPERFX_RE",
+    "stars": 332,
+    "description": "Reverse Engineering of ViPER4Android FX",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.1.0",
+      "publishedAt": "2026-09-13T15:46:04Z",
+      "url": "https://github.com/likelikeslike/ViPERFX_RE/releases/tag/v2.1.0",
+      "downloadUrl": "https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.0/ViPER4Android-RE-v2.1.0.zip",
+      "assetName": "ViPER4Android-RE-v2.1.0.zip"
+    }
+  },
+  {
+    "id": "net-switch",
+    "name": "net-switch",
+    "type": "magisk_module",
+    "repo": "Rem01Gaming/net-switch",
+    "stars": 325,
+    "description": "Magisk Module to isolate any app from Internet access",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.2",
+      "publishedAt": "2025-02-06T04:30:37Z",
+      "url": "https://github.com/Rem01Gaming/net-switch/releases/tag/1.2",
+      "downloadUrl": "https://github.com/Rem01Gaming/net-switch/releases/download/1.2/net-switch-1.2-54-64b5764-release.zip",
+      "assetName": "net-switch-1.2-54-64b5764-release.zip"
+    }
+  },
+  {
+    "id": "pixelify-next",
+    "name": "Pixelify-Next",
+    "type": "magisk_module",
+    "repo": "BasGame1/Pixelify-Next",
+    "stars": 322,
+    "description": "Magisk /KSU module to enables pixel exclusive features up to android 17",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v7-0-BETA",
+      "publishedAt": "2026-08-20T15:43:27Z",
+      "url": "https://github.com/BasGame1/Pixelify-Next/releases/tag/v7-0-BETA",
+      "downloadUrl": "https://github.com/BasGame1/Pixelify-Next/releases/download/v7-0-BETA/PixelifyNext-BETA-v7.0.zip",
+      "assetName": "PixelifyNext-BETA-v7.0.zip"
+    }
+  },
+  {
+    "id": "makefontsgreatagain",
+    "name": "MakeFontsGreatAgain",
+    "type": "magisk_module",
+    "repo": "Numbersf/MakeFontsGreatAgain",
+    "stars": 322,
+    "description": "System-wide Font Overrider with Unique GMS Masking & Multi-Range Unicode Filter.",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "1717180003",
+      "publishedAt": "2026-08-31T05:05:07Z",
+      "url": "https://github.com/Numbersf/MakeFontsGreatAgain/releases/tag/1717180003",
+      "downloadUrl": "https://github.com/Numbersf/MakeFontsGreatAgain/releases/download/1717180003/MFGA-17.0.1.08-31-alpha2.1717180003.zip",
+      "assetName": "MFGA-17.0.1.08-31-alpha2.1717180003.zip"
+    }
+  },
+  {
+    "id": "magnetar",
+    "name": "MAGNETAR",
+    "type": "magisk_module",
+    "repo": "Kyliekyler/MAGNETAR",
+    "stars": 312,
+    "description": "Device Performance Optimizer \u2014 Aims To Provide An Optimal Experience At Every Usage Scenario",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v19.6.0",
+      "publishedAt": "2025-08-30T02:48:34Z",
+      "url": "https://github.com/Kyliekyler/MAGNETAR/releases/tag/v19.6.0",
+      "downloadUrl": "https://github.com/Kyliekyler/MAGNETAR/releases/download/v19.6.0/MAGNETAR.19.6.0.YANKEE.zip",
+      "assetName": "MAGNETAR.19.6.0.YANKEE.zip"
+    }
+  },
+  {
+    "id": "hydro-br-leur",
+    "name": "Hydro-Br-leur",
+    "type": "magisk_module",
+    "repo": "AestasBritannia/Hydro-Br-leur",
+    "stars": 309,
+    "description": "A magisk module for Android devices",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "7.2",
+      "publishedAt": "2026-04-17T17:14:25Z",
+      "url": "https://github.com/AestasBritannia/Hydro-Br-leur/releases/tag/7.2",
+      "downloadUrl": "https://github.com/AestasBritannia/Hydro-Br-leur/releases/download/7.2/Hydrostellaire.Chocolate.zip",
+      "assetName": "Hydrostellaire.Chocolate.zip"
+    }
+  },
+  {
+    "id": "nlsound-module-qcom",
+    "name": "NLSound_module_QCom",
+    "type": "magisk_module",
+    "repo": "Briclyaz/NLSound_module_QCom",
+    "stars": 300,
+    "description": "The best all-in-one solution available today to comprehensively improve your smartphone's audio quality at the system level, as well as fix various issues related to lousy microphone recording quality!",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v4.4",
+      "publishedAt": "2025-05-05T18:37:53Z",
+      "url": "https://github.com/Briclyaz/NLSound_module_QCom/releases/tag/v4.4",
+      "downloadUrl": "https://github.com/Briclyaz/NLSound_module_QCom/releases/download/v4.4/NLSound.v4.4.Qualcomm.Devices.zip",
+      "assetName": "NLSound.v4.4.Qualcomm.Devices.zip"
+    }
+  },
+  {
+    "id": "stevenblock",
+    "name": "StevenBlock",
+    "type": "magisk_module",
+    "repo": "mikropsoft/StevenBlock",
+    "stars": 300,
+    "description": "\ud83d\udeab Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch \ud83d\udd12",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V4.0",
+      "publishedAt": "2026-03-02T15:23:50Z",
+      "url": "https://github.com/mikropsoft/StevenBlock/releases/tag/V4.0",
+      "downloadUrl": "https://github.com/mikropsoft/StevenBlock/releases/download/V4.0/StevenBlock.zip",
+      "assetName": "StevenBlock.zip"
+    }
+  },
+  {
+    "id": "treat-wheel-zygisk",
+    "name": "Treat-Wheel-Zygisk",
+    "type": "magisk_module",
+    "repo": "PerformanC/Treat-Wheel-Zygisk",
+    "stars": 292,
+    "description": "The wheel to reinvent the new light.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "0.0.11",
+      "publishedAt": "2026-09-21T17:46:16Z",
+      "url": "https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/tag/0.0.11",
+      "downloadUrl": "https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/download/0.0.11/TreatWheel.zip",
+      "assetName": "TreatWheel.zip"
+    }
+  },
+  {
+    "id": "magisk-manager-for-recovery-mode",
+    "name": "Magisk-Manager-for-Recovery-Mode",
+    "type": "magisk_module",
+    "repo": "Rikj000/Magisk-Manager-for-Recovery-Mode",
+    "stars": 290,
+    "description": "Updated version of VR25's Magisk Manager for Recovery mode. Works with Magisk v19.0 - v30.X! With this you can be at ease while trying out Android Magisk Modules. Since if you end up with a bootloop, you can just disable the module from recovery! Saved me many times! This app is used in a recovery terminal (e.g. TWRP), not in Magisk itself.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2026.02.28",
+      "publishedAt": "2026-02-28T14:45:25Z",
+      "url": "https://github.com/Rikj000/Magisk-Manager-for-Recovery-Mode/releases/tag/2026.02.28",
+      "downloadUrl": "https://github.com/Rikj000/Magisk-Manager-for-Recovery-Mode/releases/download/2026.02.28/MagiskManagerForRecovery_v12_202602280.zip",
+      "assetName": "MagiskManagerForRecovery_v12_202602280.zip"
+    }
+  },
+  {
+    "id": "unlock-ai-and-en-services-for-russia",
+    "name": "Unlock_AI_and_EN_Services_for_Russia",
+    "type": "magisk_module",
+    "repo": "AvenCores/Unlock_AI_and_EN_Services_for_Russia",
+    "stars": 286,
+    "description": "\ud83d\udee1 \u0420\u0430\u0437\u0431\u043b\u043e\u043a\u0438\u0440\u043e\u0432\u043a\u0430 \u0437\u0430\u0440\u0443\u0431\u0435\u0436\u043d\u044b\u0445 AI-\u0441\u0435\u0440\u0432\u0438\u0441\u043e\u0432 (\u0438 \u043d\u0435 \u0442\u043e\u043b\u044c\u043a\u043e) \u0434\u043b\u044f \u0420\u043e\u0441\u0441\u0438\u0438 \ud83c\udf0d",
+    "category": "networking",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V1.4.9",
+      "publishedAt": "2026-09-03T09:37:56Z",
+      "url": "https://github.com/AvenCores/Unlock_AI_and_EN_Services_for_Russia/releases/tag/V1.4.9",
+      "downloadUrl": "https://github.com/AvenCores/Unlock_AI_and_EN_Services_for_Russia/releases/download/V1.4.9/Unlock_AI_and_EN_Services_for_Russia.V1.4.9.zip",
+      "assetName": "Unlock_AI_and_EN_Services_for_Russia.V1.4.9.zip"
+    }
+  },
+  {
+    "id": "deviceidchanger",
+    "name": "deviceidchanger",
+    "type": "magisk_module",
+    "repo": "sidex15/deviceidchanger",
+    "stars": 278,
+    "description": "A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch, KSU (And its forks), or Magisk.",
+    "category": "privacy",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.1",
+      "publishedAt": "2025-11-30T15:45:02Z",
+      "url": "https://github.com/sidex15/deviceidchanger/releases/tag/v1.2.1",
+      "downloadUrl": "https://github.com/sidex15/deviceidchanger/releases/download/v1.2.1/DeviceID-Changer.zip",
+      "assetName": "DeviceID-Changer.zip"
+    }
+  },
+  {
+    "id": "twrp-keep",
+    "name": "twrp-keep",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Repo/twrp-keep",
+    "stars": 276,
+    "description": "twrp-keep",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "20260808",
+      "publishedAt": "2026-08-08T12:52:39Z",
+      "url": "https://github.com/Magisk-Modules-Repo/twrp-keep/releases/tag/20260808",
+      "downloadUrl": "https://github.com/Magisk-Modules-Repo/twrp-keep/releases/download/20260808/TWRP_A_B_Retention_Script-Magisk-1.zip",
+      "assetName": "TWRP_A_B_Retention_Script-Magisk-1.zip"
+    }
+  },
+  {
+    "id": "magisk-wifiadb",
+    "name": "magisk-wifiadb",
+    "type": "magisk_module",
+    "repo": "mrh929/magisk-wifiadb",
+    "stars": 272,
+    "description": "A magisk module to enable WiFi ADB automatically.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.1.0",
+      "publishedAt": "2025-02-15T17:09:07Z",
+      "url": "https://github.com/mrh929/magisk-wifiadb/releases/tag/1.1.0",
+      "downloadUrl": "https://github.com/mrh929/magisk-wifiadb/releases/download/1.1.0/magisk-wifiadb.zip",
+      "assetName": "magisk-wifiadb.zip"
+    }
+  },
+  {
+    "id": "selinux-permissive",
+    "name": "selinux_permissive",
+    "type": "magisk_module",
+    "repo": "evdenis/selinux_permissive",
+    "stars": 268,
+    "description": "Magisk Module that switches SELinux to permissive mode",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v3.1",
+      "publishedAt": "2026-03-07T17:24:21Z",
+      "url": "https://github.com/evdenis/selinux_permissive/releases/tag/v3.1",
+      "downloadUrl": "https://github.com/evdenis/selinux_permissive/releases/download/v3.1/selinux_permissive-v3.1.zip",
+      "assetName": "selinux_permissive-v3.1.zip"
+    }
+  },
+  {
+    "id": "systemapp-nuker",
+    "name": "systemapp_nuker",
+    "type": "magisk_module",
+    "repo": "chisewaguri/systemapp_nuker",
+    "stars": 256,
+    "description": "A KernelSU module to debloat system apps with WebUI Interface",
+    "category": "debloating",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.2.2",
+      "publishedAt": "2026-08-30T01:47:54Z",
+      "url": "https://github.com/chisewaguri/systemapp_nuker/releases/tag/v2.2.2",
+      "downloadUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
+      "assetName": "SAN_v2.2.2.zip"
+    }
+  },
+  {
+    "id": "pixelupdater",
+    "name": "PixelUpdater",
+    "type": "magisk_module",
+    "repo": "PixelUpdater/PixelUpdater",
+    "stars": 234,
+    "description": "Android A/B OTA updater app for rooted Pixels",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v0.210",
+      "publishedAt": "2026-01-22T16:00:01Z",
+      "url": "https://github.com/PixelUpdater/PixelUpdater/releases/tag/v0.210",
+      "downloadUrl": "https://github.com/PixelUpdater/PixelUpdater/releases/download/v0.210/PixelUpdater-v0.210-release.zip",
+      "assetName": "PixelUpdater-v0.210-release.zip"
+    }
+  },
+  {
+    "id": "hyperunlocked",
+    "name": "HyperUnlocked",
+    "type": "magisk_module",
+    "repo": "ukriu/HyperUnlocked",
+    "stars": 233,
+    "description": "A Magisk/KernelSU/APatch module to unlock high-end features on all Xiaomi devices.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.3.1",
+      "publishedAt": "2026-09-23T15:50:41Z",
+      "url": "https://github.com/ukriu/HyperUnlocked/releases/tag/v2.3.1",
+      "downloadUrl": "https://github.com/ukriu/HyperUnlocked/releases/download/v2.3.1/HyperUnlocked.zip",
+      "assetName": "HyperUnlocked.zip"
+    }
+  },
+  {
+    "id": "frosty",
+    "name": "Frosty",
+    "type": "magisk_module",
+    "repo": "Drsexo/Frosty",
+    "stars": 232,
+    "description": "Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "4.4",
+      "publishedAt": "2026-09-03T09:10:58Z",
+      "url": "https://github.com/Drsexo/Frosty/releases/tag/4.4",
+      "downloadUrl": "https://github.com/Drsexo/Frosty/releases/download/4.4/Frosty-4.4.zip",
+      "assetName": "Frosty-4.4.zip"
+    }
+  },
+  {
+    "id": "blockads",
+    "name": "BlockAds",
+    "type": "magisk_module",
+    "repo": "pantsufan/BlockAds",
+    "stars": 214,
+    "description": "Magisk module to block ads on android ",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.71",
+      "publishedAt": "2026-09-15T13:14:00Z",
+      "url": "https://github.com/pantsufan/BlockAds/releases/tag/v2.71",
+      "downloadUrl": "https://github.com/pantsufan/BlockAds/releases/download/v2.71/BlockAds-v2.71.zip",
+      "assetName": "BlockAds-v2.71.zip"
+    }
+  },
+  {
+    "id": "nano-ndk",
+    "name": "nano-ndk",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Repo/nano-ndk",
+    "stars": 199,
+    "description": "nano-ndk",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "9200",
+      "publishedAt": "2026-08-17T20:06:54Z",
+      "url": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/tag/9200",
+      "downloadUrl": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/download/9200/UPDATE-nano.Terminal.Editor.v9.2-signed.zip",
+      "assetName": "UPDATE-nano.Terminal.Editor.v9.2-signed.zip"
+    }
+  },
+  {
+    "id": "hyperos-theme-manager",
+    "name": "HyperOS-Theme-Manager",
+    "type": "magisk_module",
+    "repo": "Mods-Center/HyperOS-Theme-Manager",
+    "stars": 196,
+    "description": "Unlocks full theme customization in HyperOS with multi-theme servers, premium themes, AI wallpapers, third-party imports, super icons/widgets, and low-end features. Designed exclusively for HyperOS, bringing advanced personalization beyond stock limits.",
+    "category": "customization",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V6.1",
+      "publishedAt": "2026-08-10T14:50:29Z",
+      "url": "https://github.com/Mods-Center/HyperOS-Theme-Manager/releases/tag/V6.1",
+      "downloadUrl": "https://github.com/Mods-Center/HyperOS-Theme-Manager/releases/download/V6.1/HyperOS_ThemeManagerV6@kashis_cringey_stuffs.zip",
+      "assetName": "HyperOS_ThemeManagerV6@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "ashlooper",
+    "name": "AshLooper",
+    "type": "magisk_module",
+    "repo": "RipperHybrid/AshLooper",
+    "stars": 196,
+    "description": "A module designed to prevent boot loops caused by problematic modules installed via KernelSU or Magisk on Android devices.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v9.9",
+      "publishedAt": "2026-08-13T17:38:39Z",
+      "url": "https://github.com/RipperHybrid/AshLooper/releases/tag/v9.9",
+      "downloadUrl": "https://github.com/RipperHybrid/AshLooper/releases/download/v9.9/AshReXcue_Bootloop_Protector_9.9_199.zip",
+      "assetName": "AshReXcue_Bootloop_Protector_9.9_199.zip"
+    }
+  },
+  {
+    "id": "zygisk-cacerts",
+    "name": "zygisk_cacerts",
+    "type": "magisk_module",
+    "repo": "vvb2060/zygisk_cacerts",
+    "stars": 195,
+    "description": "",
+    "category": "security",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2",
+      "publishedAt": "2026-01-14T10:15:03Z",
+      "url": "https://github.com/vvb2060/zygisk_cacerts/releases/tag/v1.2",
+      "downloadUrl": "https://github.com/vvb2060/zygisk_cacerts/releases/download/v1.2/zygisk_cacerts-v1.2-release.zip",
+      "assetName": "zygisk_cacerts-v1.2-release.zip"
+    }
+  },
+  {
+    "id": "hifi-maximizer-mod",
+    "name": "hifi-maximizer-mod",
+    "type": "magisk_module",
+    "repo": "yzyhk904/hifi-maximizer-mod",
+    "stars": 194,
+    "description": "A Magisk module for maximizing the digital audio fidelity by reducing jitters on audio outputs (USB DACs, Bluetooth a2dp, DLNA, etc.)",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.6.0",
+      "publishedAt": "2026-08-30T15:47:06Z",
+      "url": "https://github.com/yzyhk904/hifi-maximizer-mod/releases/tag/v2.6.0",
+      "downloadUrl": "https://github.com/yzyhk904/hifi-maximizer-mod/releases/download/v2.6.0/magisk-hifi-maximizer-mod-v2.6.0.zip",
+      "assetName": "magisk-hifi-maximizer-mod-v2.6.0.zip"
+    }
+  },
+  {
+    "id": "ih8securelock",
+    "name": "ih8SecureLock",
+    "type": "magisk_module",
+    "repo": "j-hc/ih8SecureLock",
+    "stars": 190,
+    "description": "Prevent apps from blocking and listening to your screenshots with Zygisk",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v9",
+      "publishedAt": "2026-08-13T22:07:46Z",
+      "url": "https://github.com/j-hc/ih8SecureLock/releases/tag/v9",
+      "downloadUrl": "https://github.com/j-hc/ih8SecureLock/releases/download/v9/ih8SecureLock-v9.zip",
+      "assetName": "ih8SecureLock-v9.zip"
+    }
+  },
+  {
+    "id": "yetanotherbootloopprotector",
+    "name": "YetAnotherBootloopProtector",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector",
+    "stars": 185,
+    "description": " A Magisk Module to monitor and fix potential Bootloops and SystemUI failures. ",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v8.138-6537c16",
+      "publishedAt": "2026-04-07T07:26:46Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector/releases/tag/v8.138-6537c16",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector/releases/download/v8.138-6537c16/YetAnotherBootloopProtector-138-v8.138-6537c16.zip",
+      "assetName": "YetAnotherBootloopProtector-138-v8.138-6537c16.zip"
+    }
+  },
+  {
+    "id": "termuxrootmods",
+    "name": "TermuxRootMods",
+    "type": "magisk_module",
+    "repo": "rompelhd/TermuxRootMods",
+    "stars": 183,
+    "description": "A module that enhances the Termux experience for rooted devices.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v.1.0.22",
+      "publishedAt": "2026-05-05T23:20:12Z",
+      "url": "https://github.com/rompelhd/TermuxRootMods/releases/tag/v.1.0.22",
+      "downloadUrl": "https://github.com/rompelhd/TermuxRootMods/releases/download/v.1.0.22/TermuxRootMods-v1.0.22.zip",
+      "assetName": "TermuxRootMods-v1.0.22.zip"
+    }
+  },
+  {
+    "id": "magicnet",
+    "name": "MagicNet",
+    "type": "magisk_module",
+    "repo": "LIghtJUNction/MagicNet",
+    "stars": 179,
+    "description": "Consciously set all groups to block",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.5.14",
+      "publishedAt": "2026-09-22T09:53:51Z",
+      "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.5.14",
+      "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.5.14/MagicNet-component-bin-ecapture-361016d000bed2c0ddb41be2dbd0aa62725ef1ff78a15d3a18448874be21b03b.zip",
+      "assetName": "MagicNet-component-bin-ecapture-361016d000bed2c0ddb41be2dbd0aa62725ef1ff78a15d3a18448874be21b03b.zip"
+    }
+  },
+  {
+    "id": "ghostgms",
+    "name": "GhostGMS",
+    "type": "magisk_module",
+    "repo": "kaushikieeee/GhostGMS",
+    "stars": 176,
+    "description": "GhostGMS is a Magisk module designed to disable unnecessary Google Mobile Services (GMS) background processes, reducing active drain to as low as 6-7% while maintaining essential functionality.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "3.1.3",
+      "publishedAt": "2026-06-04T12:30:52Z",
+      "url": "https://github.com/kaushikieeee/GhostGMS/releases/tag/3.1.3",
+      "downloadUrl": "https://github.com/kaushikieeee/GhostGMS/releases/download/3.1.3/GhostGMS-Legacy-1.3.zip",
+      "assetName": "GhostGMS-Legacy-1.3.zip"
+    }
+  },
+  {
+    "id": "ubuntu-chroot",
+    "name": "Ubuntu-Chroot",
+    "type": "magisk_module",
+    "repo": "ravindu644/Ubuntu-Chroot",
+    "stars": 160,
+    "description": "Run Ubuntu 24.04 on Android With full Hardware Access and pure namespace isolation..!",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v4.4",
+      "publishedAt": "2026-03-23T16:59:09Z",
+      "url": "https://github.com/ravindu644/Ubuntu-Chroot/releases/tag/v4.4",
+      "downloadUrl": "https://github.com/ravindu644/Ubuntu-Chroot/releases/download/v4.4/update-GUI.zip",
+      "assetName": "update-GUI.zip"
+    }
+  },
+  {
+    "id": "zapret-pocket",
+    "name": "zapret-pocket",
+    "type": "magisk_module",
+    "repo": "sevcator/zapret-pocket",
+    "stars": 158,
+    "description": "\u26a1 Bypass censorship via zapret on rooted Android devices",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "69",
+      "publishedAt": "2026-09-20T12:44:44Z",
+      "url": "https://github.com/sevcator/zapret-pocket/releases/tag/69",
+      "downloadUrl": "https://github.com/sevcator/zapret-pocket/releases/download/69/zapret-pocket.zip",
+      "assetName": "zapret-pocket.zip"
+    }
+  },
+  {
+    "id": "tcp-optimiser-module",
+    "name": "TCP_Optimiser_Module",
+    "type": "magisk_module",
+    "repo": "fatalcoder524/TCP_Optimiser_Module",
+    "stars": 152,
+    "description": "A Magisk/KernelSU module to change tcp congestion algorithm based on current active internet type and some network enhancements.",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.5",
+      "publishedAt": "2026-07-01T06:22:38Z",
+      "url": "https://github.com/fatalcoder524/TCP_Optimiser_Module/releases/tag/v2.5",
+      "downloadUrl": "https://github.com/fatalcoder524/TCP_Optimiser_Module/releases/download/v2.5/TCP_Optimiser-2.5-17.zip",
+      "assetName": "TCP_Optimiser-2.5-17.zip"
+    }
+  },
+  {
+    "id": "sam",
+    "name": "SAM",
+    "type": "magisk_module",
+    "repo": "5MayRain/SAM",
+    "stars": 151,
+    "description": "SmartDNS\u3001AdGuardHome \u548c mihomo \u4e09\u79cd\u7ed3\u5408\u7684\u6a21\u5757\uff0c\u9002\u7528\u4e8eMagisk \u548c KernelSU ",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "20260907",
+      "publishedAt": "2026-09-07T11:48:00Z",
+      "url": "https://github.com/5MayRain/SAM/releases/tag/20260907",
+      "downloadUrl": "https://github.com/5MayRain/SAM/releases/download/20260907/SAM_20260907_release.zip",
+      "assetName": "SAM_20260907_release.zip"
+    }
+  },
+  {
+    "id": "zerotier-magisk",
+    "name": "zerotier-magisk",
+    "type": "magisk_module",
+    "repo": "eventlOwOp/zerotier-magisk",
+    "stars": 150,
+    "description": "ZeroTier for magisk \u2705 App controller \u2705",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.14.2-2",
+      "publishedAt": "2025-04-11T05:57:01Z",
+      "url": "https://github.com/eventlOwOp/zerotier-magisk/releases/tag/v1.14.2-2",
+      "downloadUrl": "https://github.com/eventlOwOp/zerotier-magisk/releases/download/v1.14.2-2/app-f55e880.zip",
+      "assetName": "app-f55e880.zip"
+    }
+  },
+  {
+    "id": "audio-jitter-silencer",
+    "name": "audio-jitter-silencer",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/audio-jitter-silencer",
+    "stars": 143,
+    "description": "For avoiding foggy sound like (jitter) distortion on all digital audio outputs, this Magisk module disables very large audio jitter generators (w.r.t. battery draining & optimizations, and wireless connectivity).",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.11",
+      "publishedAt": "2026-06-21T07:27:05Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-jitter-silencer/releases/tag/v1.0.11",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-jitter-silencer/releases/download/v1.0.11/magisk-module-audio-jitter-silencer-v1.0.11.zip",
+      "assetName": "magisk-module-audio-jitter-silencer-v1.0.11.zip"
+    }
+  },
+  {
+    "id": "alterinstaller",
+    "name": "AlterInstaller",
+    "type": "magisk_module",
+    "repo": "chenxiaolong/AlterInstaller",
+    "stars": 135,
+    "description": "Spoof Android package manager installer fields",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.4",
+      "publishedAt": "2026-06-26T23:27:08Z",
+      "url": "https://github.com/chenxiaolong/AlterInstaller/releases/tag/v2.4",
+      "downloadUrl": "https://github.com/chenxiaolong/AlterInstaller/releases/download/v2.4/AlterInstaller-2.4-release.zip",
+      "assetName": "AlterInstaller-2.4-release.zip"
+    }
+  },
+  {
+    "id": "zeromount",
+    "name": "zeromount",
+    "type": "magisk_module",
+    "repo": "Enginex0/zeromount",
+    "stars": 131,
+    "description": "Mountless module loading for rooted Android. Kernel-level VFS path redirection \u2014 zero mount table pollution. SUSFS integration, WebUI, bootloop guard, and strategy fallback.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v2.0.216-dev",
+      "publishedAt": "2026-04-15T02:44:54Z",
+      "url": "https://github.com/Enginex0/zeromount/releases/tag/v2.0.216-dev",
+      "downloadUrl": "https://github.com/Enginex0/zeromount/releases/download/v2.0.216-dev/zeromount-v2.0.216-dev.zip",
+      "assetName": "zeromount-v2.0.216-dev.zip"
+    }
+  },
+  {
+    "id": "noogle-magisk",
+    "name": "noogle-magisk",
+    "type": "magisk_module",
+    "repo": "SelfRef/noogle-magisk",
+    "stars": 131,
+    "description": "Degoogling Magisk modules for stock Android (powered by microG)",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.1",
+      "publishedAt": "2025-04-04T09:46:00Z",
+      "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2.1",
+      "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2.1/noogle-microg-v2.1.zip",
+      "assetName": "noogle-microg-v2.1.zip"
+    }
+  },
+  {
+    "id": "hyperos-security-center",
+    "name": "HyperOS-Security-Center",
+    "type": "magisk_module",
+    "repo": "Mods-Center/HyperOS-Security-Center",
+    "stars": 130,
+    "description": "Enhances HyperOS Security Center with advanced app info tools, system app Wi-Fi management, FBO unlocking, removal of root/account restrictions, extended security options, and additional customization features.",
+    "category": "system",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V7",
+      "publishedAt": "2026-08-14T03:09:26Z",
+      "url": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/tag/V7",
+      "downloadUrl": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/download/V7/HyperOS_SecurityV7@kashis_cringey_stuffs.zip",
+      "assetName": "HyperOS_SecurityV7@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "azenith",
+    "name": "AZenith",
+    "type": "magisk_module",
+    "repo": "Liliya2727/AZenith",
+    "stars": 129,
+    "description": "Universal perf modules",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "AZenith-5.2",
+      "publishedAt": "2026-08-19T14:06:32Z",
+      "url": "https://github.com/Liliya2727/AZenith/releases/tag/AZenith-5.2",
+      "downloadUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.2/AZenith-5.2-1823-bf02195-Dazzling.zip",
+      "assetName": "AZenith-5.2-1823-bf02195-Dazzling.zip"
+    }
+  },
+  {
+    "id": "usb-samplerate-unlocker",
+    "name": "usb-samplerate-unlocker",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/usb-samplerate-unlocker",
+    "stars": 129,
+    "description": "USB (HAL) Audio Class drivers on Android have a limiter of sample rates at 96kHz. This magisk module unlocks the limiter. ",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.5.11",
+      "publishedAt": "2026-04-03T14:38:46Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/usb-samplerate-unlocker/releases/tag/v1.5.11",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/usb-samplerate-unlocker/releases/download/v1.5.11/magisk-module-usb-samplerate-unlocker-v1.5.11.zip",
+      "assetName": "magisk-module-usb-samplerate-unlocker-v1.5.11.zip"
+    }
+  },
+  {
+    "id": "video-to-bootanimation",
+    "name": "video-to-bootanimation",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/video-to-bootanimation",
+    "stars": 129,
+    "description": "A Magisk Module Which Can Set Videos as Android Device BootAnimation",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V8",
+      "publishedAt": "2025-11-09T13:58:03Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation/releases/tag/V8",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation/releases/download/V8/video-to-bootanimation-online-V8.zip",
+      "assetName": "video-to-bootanimation-online-V8.zip"
+    }
+  },
+  {
+    "id": "antisafetycore",
+    "name": "AntiSafetyCore",
+    "type": "magisk_module",
+    "repo": "Astoritin/AntiSafetyCore",
+    "stars": 126,
+    "description": "A Magisk module to fight against the behavior of installing Android System SafetyCore and Android System Key Verifier by Google quietly / \u4e00\u4e2a\u5bf9\u6297 Google \u9759\u9ed8\u5b89\u88c5 SafetyCore \u548c Key Verifier \u8fd9\u4e00\u884c\u4e3a\u7684 Magisk \u6a21\u5757",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "1.3.0",
+      "publishedAt": "2026-01-30T15:59:18Z",
+      "url": "https://github.com/Astoritin/AntiSafetyCore/releases/tag/1.3.0",
+      "downloadUrl": "https://github.com/Astoritin/AntiSafetyCore/releases/download/1.3.0/AntiSafetyCore-1.3.0.zip",
+      "assetName": "AntiSafetyCore-1.3.0.zip"
+    }
+  },
+  {
+    "id": "dockerd",
+    "name": "dockerd",
+    "type": "magisk_module",
+    "repo": "mgksu/dockerd",
+    "stars": 123,
+    "description": "Magisk Docker",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v28.2.1",
+      "publishedAt": "2025-05-29T09:04:18Z",
+      "url": "https://github.com/mgksu/dockerd/releases/tag/v28.2.1",
+      "downloadUrl": "https://github.com/mgksu/dockerd/releases/download/v28.2.1/Magisk-Dockerd-v28.2.1.zip",
+      "assetName": "Magisk-Dockerd-v28.2.1.zip"
+    }
+  },
+  {
+    "id": "simple-flag-secure",
+    "name": "Simple-Flag-Secure",
+    "type": "magisk_module",
+    "repo": "ShivamXD6/Simple-Flag-Secure",
+    "stars": 118,
+    "description": "\u26a1Simple Flag Secure Magisk Module \u26a1 to Disable Secure Flag and allow taking screenshots/screen recording in apps supports KSU/APatch",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v6",
+      "publishedAt": "2026-09-13T11:13:21Z",
+      "url": "https://github.com/ShivamXD6/Simple-Flag-Secure/releases/tag/v6",
+      "downloadUrl": "https://github.com/ShivamXD6/Simple-Flag-Secure/releases/download/v6/Simple_Flag_Secure_v6_Hotfix.zip",
+      "assetName": "Simple_Flag_Secure_v6_Hotfix.zip"
+    }
+  },
+  {
+    "id": "drc-remover",
+    "name": "drc-remover",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/drc-remover",
+    "stars": 113,
+    "description": "A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices ",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.5",
+      "publishedAt": "2025-06-07T14:56:56Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/drc-remover/releases/tag/v1.2.5",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/drc-remover/releases/download/v1.2.5/magisk-module-drc-remover-v1.2.5.zip",
+      "assetName": "magisk-module-drc-remover-v1.2.5.zip"
+    }
+  },
+  {
+    "id": "onyxzygisk",
+    "name": "OnyxZygisk",
+    "type": "magisk_module",
+    "repo": "OnyxZygisk/OnyxZygisk",
+    "stars": 108,
+    "description": "Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v1.09",
+      "publishedAt": "2026-09-21T13:45:06Z",
+      "url": "https://github.com/OnyxZygisk/OnyxZygisk/releases/tag/v1.09",
+      "downloadUrl": "https://github.com/OnyxZygisk/OnyxZygisk/releases/download/v1.09/OnyxZygisk-v1.09-399-820b68b-release.zip",
+      "assetName": "OnyxZygisk-v1.09-399-820b68b-release.zip"
+    }
+  },
+  {
+    "id": "iunlockergl",
+    "name": "iUnlockerGL",
+    "type": "magisk_module",
+    "repo": "i-Taylo/iUnlockerGL",
+    "stars": 106,
+    "description": "iUnlocker GLTool is a Magisk module designed to spoof GPU information, allowing users to modify GPU informations for unlocking graphics in games and testing.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.1.5-r4",
+      "publishedAt": "2025-12-29T21:15:40Z",
+      "url": "https://github.com/i-Taylo/iUnlockerGL/releases/tag/v1.1.5-r4",
+      "downloadUrl": "https://github.com/i-Taylo/iUnlockerGL/releases/download/v1.1.5-r4/iUnlocker-GLTool-for-android-v1.1.5-r4.zip",
+      "assetName": "iUnlocker-GLTool-for-android-v1.1.5-r4.zip"
+    }
+  },
+  {
+    "id": "wadbd",
+    "name": "wadbd",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/wadbd",
+    "stars": 98,
+    "description": "Allows you to enable or disable wireless ADB for the current session or at boot.",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V4.8",
+      "publishedAt": "2026-04-07T08:02:09Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/wadbd/releases/tag/V4.8",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/wadbd/releases/download/V4.8/wadbd-4.8-11.zip",
+      "assetName": "wadbd-4.8-11.zip"
+    }
+  },
+  {
+    "id": "simple-bootloopsaver",
+    "name": "Simple_BootloopSaver",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/Simple_BootloopSaver",
+    "stars": 96,
+    "description": "Protect your system from bootloop caused by Magisk modules by turning off all your modules and restart your system if bootloop is detected.",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2",
+      "publishedAt": "2025-06-15T04:13:45Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/Simple_BootloopSaver/releases/tag/v2",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/Simple_BootloopSaver/releases/download/v2/Simple_BootloopSaver.zip",
+      "assetName": "Simple_BootloopSaver.zip"
+    }
+  },
+  {
+    "id": "custom-certificate-authorities",
+    "name": "custom-certificate-authorities",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/custom-certificate-authorities",
+    "stars": 92,
+    "description": "Custom Certificate Authorities is a Magisk module that moves user-installed certificate authorities into the system trust store, making them trusted by all apps.",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.2.0",
+      "publishedAt": "2026-06-15T05:39:00Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/custom-certificate-authorities/releases/tag/1.2.0",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/custom-certificate-authorities/releases/download/1.2.0/Custom_Certificate_Authorities_v1.2.0.zip",
+      "assetName": "Custom_Certificate_Authorities_v1.2.0.zip"
+    }
+  },
+  {
+    "id": "sqlite3-magisk-module",
+    "name": "sqlite3-magisk-module",
+    "type": "magisk_module",
+    "repo": "rojenzaman/sqlite3-magisk-module",
+    "stars": 92,
+    "description": "SQLite 3 Magisk Module for Android arm64-v8a, armeabi-v7a, x86 and x86_64",
+    "category": "development",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2026.07.15",
+      "publishedAt": "2026-07-15T11:43:44Z",
+      "url": "https://github.com/rojenzaman/sqlite3-magisk-module/releases/tag/2026.07.15",
+      "downloadUrl": "https://github.com/rojenzaman/sqlite3-magisk-module/releases/download/2026.07.15/SQLite-v3.53.3-for-magisk.multi-arch.zip",
+      "assetName": "SQLite-v3.53.3-for-magisk.multi-arch.zip"
+    }
+  },
+  {
+    "id": "vbmetadisguiser",
+    "name": "VBMetaDisguiser",
+    "type": "magisk_module",
+    "repo": "Astoritin/VBMetaDisguiser",
+    "stars": 91,
+    "description": "A Magisk module to disguise the props of vbmeta / \u4e00\u4e2a\u7528\u4e8e\u4f2a\u88c5 VBMeta \u5c5e\u6027\u7684 Magisk \u6a21\u5757",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.4.0",
+      "publishedAt": "2025-10-30T06:59:28Z",
+      "url": "https://github.com/Astoritin/VBMetaDisguiser/releases/tag/v1.4.0",
+      "downloadUrl": "https://github.com/Astoritin/VBMetaDisguiser/releases/download/v1.4.0/VBMetaDisguiser-v1.4.0.zip",
+      "assetName": "VBMetaDisguiser-v1.4.0.zip"
+    }
+  },
+  {
+    "id": "perfmtk",
+    "name": "PerfMTK",
+    "type": "magisk_module",
+    "repo": "JUANIMAN/PerfMTK",
+    "stars": 91,
+    "description": "A Magisk module for MediaTek devices with Mali GPUs.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v16.3",
+      "publishedAt": "2026-09-23T05:34:17Z",
+      "url": "https://github.com/JUANIMAN/PerfMTK/releases/tag/v16.3",
+      "downloadUrl": "https://github.com/JUANIMAN/PerfMTK/releases/download/v16.3/PerfMTKv16.3.zip",
+      "assetName": "PerfMTKv16.3.zip"
+    }
+  },
+  {
+    "id": "audio-samplerate-changer",
+    "name": "audio-samplerate-changer",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/audio-samplerate-changer",
+    "stars": 91,
+    "description": "A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi experience.",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.1.10",
+      "publishedAt": "2026-05-09T07:29:31Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-samplerate-changer/releases/tag/v1.1.10",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-samplerate-changer/releases/download/v1.1.10/magisk-module-audio-samplerate-changer-v1.1.10-1.zip",
+      "assetName": "magisk-module-audio-samplerate-changer-v1.1.10-1.zip"
+    }
+  },
+  {
+    "id": "stellar-tweaks",
+    "name": "Stellar-Tweaks",
+    "type": "magisk_module",
+    "repo": "kanaodnd/Stellar-Tweaks",
+    "stars": 90,
+    "description": "Intelligent Android performance daemon written in Rust. Fast-paced hybrid scheduler and real-time telemetry for Root and Non-Root environments.",
+    "category": "performance",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "22.0",
+      "publishedAt": "2026-09-19T15:58:50Z",
+      "url": "https://github.com/kanaodnd/Stellar-Tweaks/releases/tag/22.0",
+      "downloadUrl": "https://github.com/kanaodnd/Stellar-Tweaks/releases/download/22.0/Stellar-v22.0-release5.1-VoyagingAstralist-23926.zip",
+      "assetName": "Stellar-v22.0-release5.1-VoyagingAstralist-23926.zip"
+    }
+  },
+  {
+    "id": "smbootfx",
+    "name": "SMbootFX",
+    "type": "magisk_module",
+    "repo": "John0n1/SMbootFX",
+    "stars": 89,
+    "description": "Custom boot and shutdown animations for Samsung Galaxy devices via distinct Magisk modules.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "3.1.0",
+      "publishedAt": "2026-08-30T00:22:24Z",
+      "url": "https://github.com/John0n1/SMbootFX/releases/tag/3.1.0",
+      "downloadUrl": "https://github.com/John0n1/SMbootFX/releases/download/3.1.0/android-black-on-pink-bootfx-3.1.0-magisk.zip",
+      "assetName": "android-black-on-pink-bootfx-3.1.0-magisk.zip"
+    }
+  },
+  {
+    "id": "infamick-script",
+    "name": "Infamick-script",
+    "type": "magisk_module",
+    "repo": "Infamousmick/Infamick-script",
+    "stars": 88,
+    "description": "",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v3.3",
+      "publishedAt": "2026-04-15T13:38:58Z",
+      "url": "https://github.com/Infamousmick/Infamick-script/releases/tag/v3.3",
+      "downloadUrl": "https://github.com/Infamousmick/Infamick-script/releases/download/v3.3/Infamick-script-v3.3_MAGISK.zip",
+      "assetName": "Infamick-script-v3.3_MAGISK.zip"
+    }
+  },
+  {
+    "id": "copg-vd",
+    "name": "COPG-VD",
+    "type": "magisk_module",
+    "repo": "VD171/COPG-VD",
+    "stars": 87,
+    "description": "COPG-VD is a module designed for global device spoofing. This means even system apps and the whole device will be hooked.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v5.1.1-vd",
+      "publishedAt": "2026-09-21T07:58:04Z",
+      "url": "https://github.com/VD171/COPG-VD/releases/tag/v5.1.1-vd",
+      "downloadUrl": "https://github.com/VD171/COPG-VD/releases/download/v5.1.1-vd/COPG-VD-v5.1.1-vd.zip",
+      "assetName": "COPG-VD-v5.1.1-vd.zip"
+    }
+  },
+  {
+    "id": "czero",
+    "name": "CZero",
+    "type": "magisk_module",
+    "repo": "Xocio/CZero",
+    "stars": 84,
+    "description": "A system cache cleaning and optimisation module made just for Android.",
+    "category": "file-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.6",
+      "publishedAt": "2026-09-23T07:19:49Z",
+      "url": "https://github.com/Xocio/CZero/releases/tag/v1.2.6",
+      "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.2.6/CZero_v1.2.6.zip",
+      "assetName": "CZero_v1.2.6.zip"
+    }
+  },
+  {
+    "id": "dirtysepolicy-bypass",
+    "name": "DirtySepolicy_Bypass",
+    "type": "magisk_module",
+    "repo": "flipphoneguy/DirtySepolicy_Bypass",
+    "stars": 81,
+    "description": "bypass new DirtySepolicy on rooted Android devices to keep apps working",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v3.0.0",
+      "publishedAt": "2026-05-31T01:35:28Z",
+      "url": "https://github.com/flipphoneguy/DirtySepolicy_Bypass/releases/tag/v3.0.0",
+      "downloadUrl": "https://github.com/flipphoneguy/DirtySepolicy_Bypass/releases/download/v3.0.0/dirtysepbypass.zip",
+      "assetName": "dirtysepbypass.zip"
+    }
+  },
+  {
+    "id": "cubic-adblock",
+    "name": "Cubic-AdBlock",
+    "type": "magisk_module",
+    "repo": "Vaz15k/Cubic-AdBlock",
+    "stars": 79,
+    "description": "AdBlock Based in /etc/hosts",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v3.19",
+      "publishedAt": "2026-09-21T17:21:47Z",
+      "url": "https://github.com/Vaz15k/Cubic-AdBlock/releases/tag/v3.19",
+      "downloadUrl": "https://github.com/Vaz15k/Cubic-AdBlock/releases/download/v3.19/Cubic-AdBlock.zip",
+      "assetName": "Cubic-AdBlock.zip"
+    }
+  },
+  {
+    "id": "stevenblock",
+    "name": "StevenBlock",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/StevenBlock",
+    "stars": 77,
+    "description": "\ud83d\udeab Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch \ud83d\udd12",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V4.0",
+      "publishedAt": "2026-03-02T15:23:51Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/StevenBlock/releases/tag/V4.0",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/StevenBlock/releases/download/V4.0/StevenBlock.zip",
+      "assetName": "StevenBlock.zip"
+    }
+  },
+  {
+    "id": "partition-backup",
+    "name": "partition-backup",
+    "type": "magisk_module",
+    "repo": "rhythmcache/partition-backup",
+    "stars": 77,
+    "description": "*Magisk Module To Backup or Save Android Device Partition",
+    "category": "file-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V2",
+      "publishedAt": "2025-07-01T12:35:33Z",
+      "url": "https://github.com/rhythmcache/partition-backup/releases/tag/V2",
+      "downloadUrl": "https://github.com/rhythmcache/partition-backup/releases/download/V2/partition-backup-magisk-module-5d1c7b4.zip",
+      "assetName": "partition-backup-magisk-module-5d1c7b4.zip"
+    }
+  },
+  {
+    "id": "universal-gms-doze",
+    "name": "universal-gms-doze",
+    "type": "magisk_module",
+    "repo": "MarsPatrick/universal-gms-doze",
+    "stars": 75,
+    "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.9.11",
+      "publishedAt": "2026-08-17T21:35:44Z",
+      "url": "https://github.com/MarsPatrick/universal-gms-doze/releases/tag/1.9.11",
+      "downloadUrl": "https://github.com/MarsPatrick/universal-gms-doze/releases/download/1.9.11/gms_1.9.11.zip",
+      "assetName": "gms_1.9.11.zip"
+    }
+  },
+  {
+    "id": "hyperoptimize",
+    "name": "HyperOptimize",
+    "type": "magisk_module",
+    "repo": "TatshSiow/HyperOptimize",
+    "stars": 75,
+    "description": "Tune HyperOS System and Kernel parameters to reduce power consumption",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.0.0",
+      "publishedAt": "2026-07-28T11:34:54Z",
+      "url": "https://github.com/TatshSiow/HyperOptimize/releases/tag/1.0.0",
+      "downloadUrl": "https://github.com/TatshSiow/HyperOptimize/releases/download/1.0.0/HyperOptimize_v1.0.0.zip",
+      "assetName": "HyperOptimize_v1.0.0.zip"
+    }
+  },
+  {
+    "id": "fontloader",
+    "name": "FontLoader",
+    "type": "magisk_module",
+    "repo": "JingMatrix/FontLoader",
+    "stars": 74,
+    "description": "",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.1.0",
+      "publishedAt": "2025-07-23T12:53:33Z",
+      "url": "https://github.com/JingMatrix/FontLoader/releases/tag/v1.1.0",
+      "downloadUrl": "https://github.com/JingMatrix/FontLoader/releases/download/v1.1.0/FontLoader-debug.zip",
+      "assetName": "FontLoader-debug.zip"
+    }
+  },
+  {
+    "id": "zram-module",
+    "name": "ZRAM-Module",
+    "type": "magisk_module",
+    "repo": "FurLC/ZRAM-Module",
+    "stars": 73,
+    "description": "A Magisk/KernelSU module that provides ZRAM compression algorithm support for Android devices",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.3.0",
+      "publishedAt": "2025-05-31T12:23:22Z",
+      "url": "https://github.com/FurLC/ZRAM-Module/releases/tag/v1.3.0",
+      "downloadUrl": "https://github.com/FurLC/ZRAM-Module/releases/download/v1.3.0/ZRAM-Module-v1.3.0.zip",
+      "assetName": "ZRAM-Module-v1.3.0.zip"
+    }
+  },
+  {
+    "id": "py2droid",
+    "name": "py2droid",
+    "type": "magisk_module",
+    "repo": "Mrakorez/py2droid",
+    "stars": 73,
+    "description": "Magisk/KernelSU/APatch module to install Python 3 on Android.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v0.3.6",
+      "publishedAt": "2026-08-06T11:55:04Z",
+      "url": "https://github.com/Mrakorez/py2droid/releases/tag/v0.3.6",
+      "downloadUrl": "https://github.com/Mrakorez/py2droid/releases/download/v0.3.6/py2droid-v0.3.6.zip",
+      "assetName": "py2droid-v0.3.6.zip"
+    }
+  },
+  {
+    "id": "magisk-samsung-dex-standalone-mode",
+    "name": "magisk-samsung-dex-standalone-mode",
+    "type": "magisk_module",
+    "repo": "supermarsx/magisk-samsung-dex-standalone-mode",
+    "stars": 73,
+    "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2026.3",
+      "publishedAt": "2026-04-15T22:22:17Z",
+      "url": "https://github.com/supermarsx/magisk-samsung-dex-standalone-mode/releases/tag/2026.3",
+      "downloadUrl": "https://github.com/supermarsx/magisk-samsung-dex-standalone-mode/releases/download/2026.3/magisk-samsung-dex-standalone-mode.zip",
+      "assetName": "magisk-samsung-dex-standalone-mode.zip"
+    }
+  },
+  {
+    "id": "unicodefontset-magisk-module",
+    "name": "UnicodeFontSet-magisk-module",
+    "type": "magisk_module",
+    "repo": "Losketch/UnicodeFontSet-magisk-module",
+    "stars": 72,
+    "description": "A full Unicode font set Magisk module / \u4e00\u4e2a\u5b8c\u6574 Unicode \u5b57\u4f53\u5408\u96c6\u7684 Magisk \u6a21\u5757",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.0.0-beta.1",
+      "publishedAt": "2026-08-18T14:54:47Z",
+      "url": "https://github.com/Losketch/UnicodeFontSet-magisk-module/releases/tag/v2.0.0-beta.1",
+      "downloadUrl": "https://github.com/Losketch/UnicodeFontSet-magisk-module/releases/download/v2.0.0-beta.1/UnicodeFontSet-COLRv1-module.zip",
+      "assetName": "UnicodeFontSet-COLRv1-module.zip"
+    }
+  },
+  {
+    "id": "vanadium-webviewbrowser",
+    "name": "Vanadium-WebViewBrowser",
+    "type": "magisk_module",
+    "repo": "NoneBaiano/Vanadium-WebViewBrowser",
+    "stars": 72,
+    "description": "A Magisk/KernelSU module that changes the system WebView with Vanadium WebView and installs the Vanadium Browser.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.0",
+      "publishedAt": "2026-08-17T23:29:33Z",
+      "url": "https://github.com/NoneBaiano/Vanadium-WebViewBrowser/releases/tag/v1.2.0",
+      "downloadUrl": "https://github.com/NoneBaiano/Vanadium-WebViewBrowser/releases/download/v1.2.0/Vanadium-WebViewBrowser_v1.2.0.zip",
+      "assetName": "Vanadium-WebViewBrowser_v1.2.0.zip"
+    }
+  },
+  {
+    "id": "rclone-fuse3-magisk",
+    "name": "rclone-fuse3-magisk",
+    "type": "magisk_module",
+    "repo": "NewFuture/rclone-fuse3-magisk",
+    "stars": 70,
+    "description": "magisk rclone module (with libfuse3)",
+    "category": "utilities",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.75.1",
+      "publishedAt": "2026-09-05T14:27:05Z",
+      "url": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/tag/v1.75.1",
+      "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.75.1/magisk-rclone_arm64-v8a.zip",
+      "assetName": "magisk-rclone_arm64-v8a.zip"
+    }
+  },
+  {
+    "id": "supl-replacer",
+    "name": "supl-replacer",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/supl-replacer",
+    "stars": 66,
+    "description": "Magisk module to replace the SUPL provider in gps.conf",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.3.1",
+      "publishedAt": "2025-11-06T10:24:26Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/supl-replacer/releases/tag/v2.3.1",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/supl-replacer/releases/download/v2.3.1/supl-replacer-v2.3.1.zip",
+      "assetName": "supl-replacer-v2.3.1.zip"
+    }
+  },
+  {
+    "id": "greenify4magisk-ksu-reborn",
+    "name": "Greenify4Magisk-KSU-Reborn",
+    "type": "magisk_module",
+    "repo": "Drsexo/Greenify4Magisk-KSU-Reborn",
+    "stars": 65,
+    "description": "Integrate Greenify as a privileged system app to enable boost mode\u2122, with automatic bulk app list generation and multi-user support. Works seamlessly with Magisk, KernelSU, and APatch.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v5.1.1.3",
+      "publishedAt": "2026-02-16T14:37:02Z",
+      "url": "https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn/releases/tag/v5.1.1.3",
+      "downloadUrl": "https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn/releases/download/v5.1.1.3/Greenify4Magisk-KSU-Reborn-v5.1.1.3.zip",
+      "assetName": "Greenify4Magisk-KSU-Reborn-v5.1.1.3.zip"
+    }
+  },
+  {
+    "id": "oosgms-optimiser",
+    "name": "OOSGMS-OPTIMISER",
+    "type": "magisk_module",
+    "repo": "epicmann24/OOSGMS-OPTIMISER",
+    "stars": 62,
+    "description": "Magisk module to optimise and remove trackers for GMS and OOS",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.8",
+      "publishedAt": "2025-10-12T14:13:20Z",
+      "url": "https://github.com/epicmann24/OOSGMS-OPTIMISER/releases/tag/v1.0.8",
+      "downloadUrl": "https://github.com/epicmann24/OOSGMS-OPTIMISER/releases/download/v1.0.8/OOSGMS-OPTIMISER.zip",
+      "assetName": "OOSGMS-OPTIMISER.zip"
+    }
+  },
+  {
+    "id": "hyperos-app-vault",
+    "name": "HyperOS-App-Vault",
+    "type": "magisk_module",
+    "repo": "Mods-Center/HyperOS-App-Vault",
+    "stars": 61,
+    "description": "Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur adjustments, and scrolling animations.",
+    "category": "customization",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V4.5",
+      "publishedAt": "2026-08-10T14:52:54Z",
+      "url": "https://github.com/Mods-Center/HyperOS-App-Vault/releases/tag/V4.5",
+      "downloadUrl": "https://github.com/Mods-Center/HyperOS-App-Vault/releases/download/V4.5/HyperOS_AppVaultV4.5@kashis_cringey_stuffs.zip",
+      "assetName": "HyperOS_AppVaultV4.5@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "vexzygisk",
+    "name": "VexZygisk",
+    "type": "magisk_module",
+    "repo": "Lxiaoyao077/VexZygisk",
+    "stars": 59,
+    "description": "Standalone implementation of Zygisk for KernelSU and APatch.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU",
+      "APatch"
+    ],
+    "latestRelease": {
+      "tag": "v2.1.2",
+      "publishedAt": "2026-09-02T01:33:41Z",
+      "url": "https://github.com/Lxiaoyao077/VexZygisk/releases/tag/v2.1.2",
+      "downloadUrl": "https://github.com/Lxiaoyao077/VexZygisk/releases/download/v2.1.2/VexZygisk-v2.1.2-592-c3c2148-release.zip",
+      "assetName": "VexZygisk-v2.1.2-592-c3c2148-release.zip"
+    }
+  },
+  {
+    "id": "hyperos-aod",
+    "name": "HyperOS-AOD",
+    "type": "magisk_module",
+    "repo": "Mods-Center/HyperOS-AOD",
+    "stars": 59,
+    "description": "Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices.",
+    "category": "customization",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V3",
+      "publishedAt": "2025-12-12T07:57:00Z",
+      "url": "https://github.com/Mods-Center/HyperOS-AOD/releases/tag/V3",
+      "downloadUrl": "https://github.com/Mods-Center/HyperOS-AOD/releases/download/V3/HyperOS_AOD_V3@kashis_cringey_stuffs.zip",
+      "assetName": "HyperOS_AOD_V3@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "smartclear",
+    "name": "SmartClear",
+    "type": "magisk_module",
+    "repo": "S123123sd/SmartClear",
+    "stars": 59,
+    "description": "Magisk\u667a\u80fd\u6e05\u7406\u7a0b\u5e8f",
+    "category": "file-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "AutoPurge",
+      "publishedAt": "2025-03-01T07:39:48Z",
+      "url": "https://github.com/S123123sd/SmartClear/releases/tag/AutoPurge",
+      "downloadUrl": "https://github.com/S123123sd/SmartClear/releases/download/AutoPurge/AutoPurge_1.0.12.0.zip",
+      "assetName": "AutoPurge_1.0.12.0.zip"
+    }
+  },
+  {
+    "id": "playstoreselfupdateblocker",
+    "name": "PlayStoreSelfUpdateBlocker",
+    "type": "magisk_module",
+    "repo": "himanshujjp/PlayStoreSelfUpdateBlocker",
+    "stars": 56,
+    "description": "Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play Integrity compliance.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.0",
+      "publishedAt": "2025-09-17T07:15:45Z",
+      "url": "https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/tag/v2.0",
+      "downloadUrl": "https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/download/v2.0/PlayStoreSelfUpdateBlocker-v2.0.zip",
+      "assetName": "PlayStoreSelfUpdateBlocker-v2.0.zip"
+    }
+  },
+  {
+    "id": "resampling-for-cheapies",
+    "name": "resampling-for-cheapies",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/resampling-for-cheapies",
+    "stars": 55,
+    "description": "For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this module sets near ideal re-sampling which involves special digital filtering at the system-wide mixer.",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.0.2",
+      "publishedAt": "2025-12-31T07:14:17Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/tag/v2.0.2",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/download/v2.0.2/magisk-module-resampling-for-cheapies-v2.0.2.zip",
+      "assetName": "magisk-module-resampling-for-cheapies-v2.0.2.zip"
+    }
+  },
+  {
+    "id": "kernelenhancer",
+    "name": "KernelEnhancer",
+    "type": "magisk_module",
+    "repo": "RAAJK20Pro/KernelEnhancer",
+    "stars": 52,
+    "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices.",
+    "category": "performance",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V5.0",
+      "publishedAt": "2026-06-08T08:23:22Z",
+      "url": "https://github.com/RAAJK20Pro/KernelEnhancer/releases/tag/V5.0",
+      "downloadUrl": "https://github.com/RAAJK20Pro/KernelEnhancer/releases/download/V5.0/KernelEnhancerV5.0.zip",
+      "assetName": "KernelEnhancerV5.0.zip"
+    }
+  },
+  {
+    "id": "extreme-gms-doze",
+    "name": "Extreme-Gms-Doze",
+    "type": "magisk_module",
+    "repo": "Skyghost090/Extreme-Gms-Doze",
+    "stars": 50,
+    "description": "A Magisk Module for Kill gms on screen off",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "4",
+      "publishedAt": "2025-07-14T00:42:15Z",
+      "url": "https://github.com/Skyghost090/Extreme-Gms-Doze/releases/tag/4",
+      "downloadUrl": "https://github.com/Skyghost090/Extreme-Gms-Doze/releases/download/4/Extreme.Gms.Doze.zip",
+      "assetName": "Extreme.Gms.Doze.zip"
+    }
+  },
+  {
+    "id": "fontcraft",
+    "name": "FontCraft",
+    "type": "magisk_module",
+    "repo": "RipperHybrid/FontCraft",
+    "stars": 49,
+    "description": "Stylish fonts & emojis for a personalized experience.",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v7.5",
+      "publishedAt": "2026-08-13T08:53:10Z",
+      "url": "https://github.com/RipperHybrid/FontCraft/releases/tag/v7.5",
+      "downloadUrl": "https://github.com/RipperHybrid/FontCraft/releases/download/v7.5/FontCraftPro_V7.5_By_RipperHybrid.zip",
+      "assetName": "FontCraftPro_V7.5_By_RipperHybrid.zip"
+    }
+  },
+  {
+    "id": "fastcharge-next",
+    "name": "Fastcharge-next",
+    "type": "magisk_module",
+    "repo": "Dev97633/Fastcharge-next",
+    "stars": 48,
+    "description": "\u26a1 Magisk Module to boost charging speed with smart tweaks.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.0.2",
+      "publishedAt": "2026-04-12T11:17:26Z",
+      "url": "https://github.com/Dev97633/Fastcharge-next/releases/tag/v2.0.2",
+      "downloadUrl": "https://github.com/Dev97633/Fastcharge-next/releases/download/v2.0.2/fastcharge-next-v2.0.2.zip",
+      "assetName": "fastcharge-next-v2.0.2.zip"
+    }
+  },
+  {
+    "id": "dynamic-system-tweaks-magisk-module",
+    "name": "Dynamic-System-Tweaks-Magisk-Module",
+    "type": "magisk_module",
+    "repo": "g7755726/Dynamic-System-Tweaks-Magisk-Module",
+    "stars": 48,
+    "description": "",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v4.7",
+      "publishedAt": "2026-05-10T07:32:46Z",
+      "url": "https://github.com/g7755726/Dynamic-System-Tweaks-Magisk-Module/releases/tag/v4.7",
+      "downloadUrl": "https://github.com/g7755726/Dynamic-System-Tweaks-Magisk-Module/releases/download/v4.7/DynamicSystemTweaks-v4.7.zip",
+      "assetName": "DynamicSystemTweaks-v4.7.zip"
+    }
+  },
+  {
+    "id": "magisk-swapspace",
+    "name": "magisk-swapspace",
+    "type": "magisk_module",
+    "repo": "chkndrp/magisk-swapspace",
+    "stars": 47,
+    "description": "This module allows for creating a persistent swap space on android",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2.4",
+      "publishedAt": "2025-11-01T22:34:15Z",
+      "url": "https://github.com/chkndrp/magisk-swapspace/releases/tag/2.4",
+      "downloadUrl": "https://github.com/chkndrp/magisk-swapspace/releases/download/2.4/magiskswapspace.zip",
+      "assetName": "magiskswapspace.zip"
+    }
+  },
+  {
+    "id": "scalpel",
+    "name": "Scalpel",
+    "type": "magisk_module",
+    "repo": "Enginex0/Scalpel",
+    "stars": 46,
+    "description": "Precision debloat & systemize for rooted Android \u2014 Magisk, KernelSU, APatch",
+    "category": "debloating",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v0.1.27",
+      "publishedAt": "2026-03-23T03:27:19Z",
+      "url": "https://github.com/Enginex0/Scalpel/releases/tag/v0.1.27",
+      "downloadUrl": "https://github.com/Enginex0/Scalpel/releases/download/v0.1.27/scalpel-v0.1.27-debug.zip",
+      "assetName": "scalpel-v0.1.27-debug.zip"
+    }
+  },
+  {
+    "id": "clearbox",
+    "name": "ClearBox",
+    "type": "magisk_module",
+    "repo": "FLYCOM-E/ClearBox",
+    "stars": 46,
+    "description": "A Magisk module dedicated to automatic cleaning and optimization of Android   |   \u4e00\u4e2a\u81f4\u529b\u4e8e Android \u81ea\u52a8\u6e05\u7406\u4f18\u5316\u7684 Magisk \u6a21\u5757",
+    "category": "file-management",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V5.2.0",
+      "publishedAt": "2026-09-13T13:33:04Z",
+      "url": "https://github.com/FLYCOM-E/ClearBox/releases/tag/V5.2.0",
+      "downloadUrl": "https://github.com/FLYCOM-E/ClearBox/releases/download/V5.2.0/ClearBox-V5.2.0-100-aarch64.zip",
+      "assetName": "ClearBox-V5.2.0-100-aarch64.zip"
+    }
+  },
+  {
+    "id": "magicalprotection",
+    "name": "MagicalProtection",
+    "type": "magisk_module",
+    "repo": "programminghoch10/MagicalProtection",
+    "stars": 46,
+    "description": "Magisk-only completely systemless adblocking.",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "mv19-hv121",
+      "publishedAt": "2026-09-09T01:57:06Z",
+      "url": "https://github.com/programminghoch10/MagicalProtection/releases/tag/mv19-hv121",
+      "downloadUrl": "https://github.com/programminghoch10/MagicalProtection/releases/download/mv19-hv121/MagicalProtection-mv19-hv121.zip",
+      "assetName": "MagicalProtection-mv19-hv121.zip"
+    }
+  },
+  {
+    "id": "opluskey",
+    "name": "OplusKey",
+    "type": "magisk_module",
+    "repo": "ItosEO/OplusKey",
+    "stars": 43,
+    "description": "",
+    "category": "customization",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.1.6",
+      "publishedAt": "2025-09-17T08:49:28Z",
+      "url": "https://github.com/ItosEO/OplusKey/releases/tag/1.1.6",
+      "downloadUrl": "https://github.com/ItosEO/OplusKey/releases/download/1.1.6/OplusKey-1.1.6.zip",
+      "assetName": "OplusKey-1.1.6.zip"
+    }
+  },
+  {
+    "id": "hid-gadget-module",
+    "name": "hid-gadget-module",
+    "type": "magisk_module",
+    "repo": "kelexine/hid-gadget-module",
+    "stars": 41,
+    "description": "A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices ",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.38.2",
+      "publishedAt": "2026-01-20T10:39:46Z",
+      "url": "https://github.com/kelexine/hid-gadget-module/releases/tag/v1.38.2",
+      "downloadUrl": "https://github.com/kelexine/hid-gadget-module/releases/download/v1.38.2/hid-gadget-module-v1.38.2.zip",
+      "assetName": "hid-gadget-module-v1.38.2.zip"
+    }
+  },
+  {
+    "id": "crond4android",
+    "name": "crond4android",
+    "type": "magisk_module",
+    "repo": "powerAn2020/crond4android",
+    "stars": 40,
+    "description": "\u652f\u6301 KernelSU\u3001APatch\u3001Magisk\u4e0b\u8fd0\u884c\u7684Crond\u3002\u5e26UI\u754c\u9762/The Crond program that supports running on KernelSU, APatch and Magisk.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.1.0",
+      "publishedAt": "2026-08-07T10:04:08Z",
+      "url": "https://github.com/powerAn2020/crond4android/releases/tag/v1.1.0",
+      "downloadUrl": "https://github.com/powerAn2020/crond4android/releases/download/v1.1.0/crond4android-v1.1.0.zip",
+      "assetName": "crond4android-v1.1.0.zip"
+    }
+  },
+  {
+    "id": "fps-limitation-patcher",
+    "name": "FPS-Limitation-Patcher",
+    "type": "magisk_module",
+    "repo": "Mods-Center/FPS-Limitation-Patcher",
+    "stars": 38,
+    "description": "Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS devices, enhancing gaming performance.",
+    "category": "gaming",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v3.1",
+      "publishedAt": "2025-11-16T13:07:01Z",
+      "url": "https://github.com/Mods-Center/FPS-Limitation-Patcher/releases/tag/v3.1",
+      "downloadUrl": "https://github.com/Mods-Center/FPS-Limitation-Patcher/releases/download/v3.1/v3.1FPS_Limitations_patcher@kashis_cringey_stuffs.zip",
+      "assetName": "v3.1FPS_Limitations_patcher@kashis_cringey_stuffs.zip"
+    }
+  },
+  {
+    "id": "skysceneaddon",
+    "name": "SkySceneAddon",
+    "type": "magisk_module",
+    "repo": "WeirdMidas/SkySceneAddon",
+    "stars": 38,
+    "description": "A Magisk module for optimizing memory management for legacy and modern ARM devices.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "20260910",
+      "publishedAt": "2026-07-09T17:18:00Z",
+      "url": "https://github.com/WeirdMidas/SkySceneAddon/releases/tag/20260910",
+      "downloadUrl": "https://github.com/WeirdMidas/SkySceneAddon/releases/download/20260910/SkyScene.Add-on.zip",
+      "assetName": "SkyScene.Add-on.zip"
+    }
+  },
+  {
+    "id": "sortify",
+    "name": "Sortify",
+    "type": "magisk_module",
+    "repo": "xCaptaiN09/Sortify",
+    "stars": 38,
+    "description": "\u2728Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra",
+    "category": "file-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v4.0",
+      "publishedAt": "2026-01-19T18:00:53Z",
+      "url": "https://github.com/xCaptaiN09/Sortify/releases/tag/v4.0",
+      "downloadUrl": "https://github.com/xCaptaiN09/Sortify/releases/download/v4.0/Sortify-v4.0.zip",
+      "assetName": "Sortify-v4.0.zip"
+    }
+  },
+  {
+    "id": "systemless-adblocker",
+    "name": "systemless-adblocker",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/systemless-adblocker",
+    "stars": 36,
+    "description": "Ultimate adblocker module derived from gloeyisk/systemless-hosts",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.11",
+      "publishedAt": "2025-02-22T14:19:31Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/systemless-adblocker/releases/tag/1.11",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/systemless-adblocker/releases/download/1.11/Systemless_Adblocker_V1.11.zip",
+      "assetName": "Systemless_Adblocker_V1.11.zip"
+    }
+  },
+  {
+    "id": "debugassistant",
+    "name": "DebugAssistant",
+    "type": "magisk_module",
+    "repo": "ThePedroo/DebugAssistant",
+    "stars": 36,
+    "description": "The simplest yet powerful logcat capture system as Magisk module.",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v3.0.2",
+      "publishedAt": "2026-01-25T13:04:34Z",
+      "url": "https://github.com/ThePedroo/DebugAssistant/releases/tag/v3.0.2",
+      "downloadUrl": "https://github.com/ThePedroo/DebugAssistant/releases/download/v3.0.2/DebugAssistant-3.0.2.zip",
+      "assetName": "DebugAssistant-3.0.2.zip"
+    }
+  },
+  {
+    "id": "komodo-build-prop",
+    "name": "Komodo-Build-Prop",
+    "type": "magisk_module",
+    "repo": "Elcapitanoe/Komodo-Build-Prop",
+    "stars": 34,
+    "description": "Magisk and KernelSU module that spoofs your Android device as Google Pixel 9 Pro XL.",
+    "category": "root-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "20260918",
+      "publishedAt": "2026-09-18T13:23:05Z",
+      "url": "https://github.com/Elcapitanoe/Komodo-Build-Prop/releases/tag/20260918",
+      "downloadUrl": "https://github.com/Elcapitanoe/Komodo-Build-Prop/releases/download/20260918/Komodo_beta_CP41.260828.004.A8.zip",
+      "assetName": "Komodo_beta_CP41.260828.004.A8.zip"
+    }
+  },
+  {
+    "id": "xhhttp",
+    "name": "xhhttp",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/xhhttp",
+    "stars": 29,
+    "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v0.25.3",
+      "publishedAt": "2026-02-16T09:00:51Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/tag/v0.25.3",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
+      "assetName": "xh-magisk-module.zip"
+    }
+  },
+  {
+    "id": "batteryhoney",
+    "name": "BatteryHoney",
+    "type": "magisk_module",
+    "repo": "kaminarich/BatteryHoney",
+    "stars": 29,
+    "description": "A Magisk module to Optimize Battery Saving without interrupting Performance ",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "batteryhoney7.2",
+      "publishedAt": "2026-01-24T07:25:35Z",
+      "url": "https://github.com/kaminarich/BatteryHoney/releases/tag/batteryhoney7.2",
+      "downloadUrl": "https://github.com/kaminarich/BatteryHoney/releases/download/batteryhoney7.2/Battery.Honey.7.2.Awaken.zip",
+      "assetName": "Battery.Honey.7.2.Awaken.zip"
+    }
+  },
+  {
+    "id": "evilfont",
+    "name": "EvilFont",
+    "type": "magisk_module",
+    "repo": "dedeadend/EvilFont",
+    "stars": 27,
+    "description": "A systemless module to change default Arabic/Persian font + Apple emojis.",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v2.1",
+      "publishedAt": "2026-08-11T12:03:51Z",
+      "url": "https://github.com/dedeadend/EvilFont/releases/tag/v2.1",
+      "downloadUrl": "https://github.com/dedeadend/EvilFont/releases/download/v2.1/EvilFont-v2.1.zip",
+      "assetName": "EvilFont-v2.1.zip"
+    }
+  },
+  {
+    "id": "ttf-twemoji",
+    "name": "ttf-twemoji",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/ttf-twemoji",
+    "stars": 26,
+    "description": "Changes your system emoji to Twemoji! ",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v17",
+      "publishedAt": "2026-03-22T04:52:18Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/releases/tag/v17",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/releases/download/v17/ttf-twemoji-1702.zip",
+      "assetName": "ttf-twemoji-1702.zip"
+    }
+  },
+  {
+    "id": "swap-disabler",
+    "name": "Swap-Disabler",
+    "type": "magisk_module",
+    "repo": "rompelhd/Swap-Disabler",
+    "stars": 25,
+    "description": "A module designed to disable swap at system startup. Is particularly beneficial for devices equipped with a substantial amount of RAM, where the use of swap is unnecessary and may even hinder performance.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.0",
+      "publishedAt": "2025-01-18T21:09:51Z",
+      "url": "https://github.com/rompelhd/Swap-Disabler/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/rompelhd/Swap-Disabler/releases/download/v1.0.0/Swap-Disabler-v1.0.0.zip",
+      "assetName": "Swap-Disabler-v1.0.0.zip"
+    }
+  },
+  {
+    "id": "nothing-euicc",
+    "name": "nothing-euicc",
+    "type": "magisk_module",
+    "repo": "reindex-ot/nothing-euicc",
+    "stars": 24,
+    "description": "Nothing EUICC Force Enabler Magisk Module.",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v2.6",
+      "publishedAt": "2025-07-18T10:15:27Z",
+      "url": "https://github.com/reindex-ot/nothing-euicc/releases/tag/v2.6",
+      "downloadUrl": "https://github.com/reindex-ot/nothing-euicc/releases/download/v2.6/nothing-euicc.zip",
+      "assetName": "nothing-euicc.zip"
+    }
+  },
+  {
+    "id": "oneplus-8series-9r-camera-unlocker",
+    "name": "oneplus-8series-9r-camera-unlocker",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker",
+    "stars": 23,
+    "description": "",
+    "category": "app-modifications",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.3",
+      "publishedAt": "2025-06-23T06:09:46Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker/releases/tag/v1.3",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker/releases/download/v1.3/OnePlus-8Series-9R-Camera-Unlocker-v1.3.zip",
+      "assetName": "OnePlus-8Series-9R-Camera-Unlocker-v1.3.zip"
+    }
+  },
+  {
+    "id": "swapboost-pro",
+    "name": "SwapBoost-Pro",
+    "type": "magisk_module",
+    "repo": "yadavnikhil03/SwapBoost-Pro",
+    "stars": 22,
+    "description": "A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile optimization with VM tweaks.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.1",
+      "publishedAt": "2026-06-16T11:29:24Z",
+      "url": "https://github.com/yadavnikhil03/SwapBoost-Pro/releases/tag/v1.1",
+      "downloadUrl": "https://github.com/yadavnikhil03/SwapBoost-Pro/releases/download/v1.1/SwapBoost-Pro-1.1.zip",
+      "assetName": "SwapBoost-Pro-1.1.zip"
+    }
+  },
+  {
+    "id": "stealthdebug",
+    "name": "StealthDebug",
+    "type": "magisk_module",
+    "repo": "sp11xy/StealthDebug",
+    "stars": 21,
+    "description": "Magisk module to hide USB debugging properties",
+    "category": "privacy",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "spoofing",
+      "publishedAt": "2025-07-21T12:58:06Z",
+      "url": "https://github.com/sp11xy/StealthDebug/releases/tag/spoofing",
+      "downloadUrl": "https://github.com/sp11xy/StealthDebug/releases/download/spoofing/StealthDebug.zip",
+      "assetName": "StealthDebug.zip"
+    }
+  },
+  {
+    "id": "charging-bypass-magisk",
+    "name": "charging-bypass-magisk",
+    "type": "magisk_module",
+    "repo": "AbhishekTor55/charging-bypass-magisk",
+    "stars": 20,
+    "description": "Charging Bypass Magisk Module \u2014 Android 14\u201316 supported. Disables charging when screen is ON and re-enables when OFF. Useful for gaming/dev use. Kernel-level control. Tested on Miatoll (AOSP 16). Logs saved to /sdcard/charging_bypass.log",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "untagged-831450a552014cfd8ec4",
+      "publishedAt": "2025-06-25T10:52:04Z",
+      "url": "https://github.com/AbhishekTor55/charging-bypass-magisk/releases/tag/untagged-831450a552014cfd8ec4",
+      "downloadUrl": "https://github.com/AbhishekTor55/charging-bypass-magisk/releases/download/untagged-831450a552014cfd8ec4/charging-bypass-v1.0.zip",
+      "assetName": "charging-bypass-v1.0.zip"
+    }
+  },
+  {
+    "id": "basiccleaner",
+    "name": "BasicCleaner",
+    "type": "magisk_module",
+    "repo": "WeirdMidas/BasicCleaner",
+    "stars": 20,
+    "description": "A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days.",
+    "category": "file-management",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "6000100",
+      "publishedAt": "2025-09-15T00:52:28Z",
+      "url": "https://github.com/WeirdMidas/BasicCleaner/releases/tag/6000100",
+      "downloadUrl": "https://github.com/WeirdMidas/BasicCleaner/releases/download/6000100/Basic.Cleaner.zip",
+      "assetName": "Basic.Cleaner.zip"
+    }
+  },
+  {
+    "id": "lite-blur-control-center-for-hyperos",
+    "name": "Lite-Blur-Control-Center-for-HyperOS",
+    "type": "magisk_module",
+    "repo": "fakerieh/Lite-Blur-Control-Center-for-HyperOS",
+    "stars": 20,
+    "description": "Control Center Blur for MIUI & HyperOS but LIGHTER is a modification designed to bring back the blur on device that doesn't have blur effect (frosted glass) effect to the Control Center and Notification Shade \u2014 without sacrificing performance.",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "RELEASE-16-MAY-2026",
+      "publishedAt": "2026-05-16T09:35:22Z",
+      "url": "https://github.com/fakerieh/Lite-Blur-Control-Center-for-HyperOS/releases/tag/RELEASE-16-MAY-2026",
+      "downloadUrl": "https://github.com/fakerieh/Lite-Blur-Control-Center-for-HyperOS/releases/download/RELEASE-16-MAY-2026/Lite.Blur.HyperOS.3.1.-.Animation.zip",
+      "assetName": "Lite.Blur.HyperOS.3.1.-.Animation.zip"
+    }
+  },
+  {
+    "id": "deepsuppressor",
+    "name": "DeepSuppressor",
+    "type": "magisk_module",
+    "repo": "Aurora-Nasa-1/DeepSuppressor",
+    "stars": 19,
+    "description": "A Magisk Module",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v0.2.0",
+      "publishedAt": "2025-06-01T06:54:15Z",
+      "url": "https://github.com/Aurora-Nasa-1/DeepSuppressor/releases/tag/v0.2.0",
+      "downloadUrl": "https://github.com/Aurora-Nasa-1/DeepSuppressor/releases/download/v0.2.0/DeepSuppressor_f414499.zip",
+      "assetName": "DeepSuppressor_f414499.zip"
+    }
+  },
+  {
+    "id": "disable-low-ram",
+    "name": "disable-low-ram",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/disable-low-ram",
+    "stars": 16,
+    "description": "Magisk module to disable Low-RAM flag on Android Go devices",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.0",
+      "publishedAt": "2025-06-21T14:27:17Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/disable-low-ram/releases/tag/1.0",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/disable-low-ram/releases/download/1.0/disable-low-ram_v1.0.zip",
+      "assetName": "disable-low-ram_v1.0.zip"
+    }
+  },
+  {
+    "id": "g-news-control",
+    "name": "G-News-Control",
+    "type": "magisk_module",
+    "repo": "mango0oo/G-News-Control",
+    "stars": 15,
+    "description": "Magisk / KernelSU module for control the Google News on the home screen.",
+    "category": "app-modifications",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "V2_20.09.2025",
+      "publishedAt": "2025-09-19T22:39:50Z",
+      "url": "https://github.com/mango0oo/G-News-Control/releases/tag/V2_20.09.2025",
+      "downloadUrl": "https://github.com/mango0oo/G-News-Control/releases/download/V2_20.09.2025/G-News.Control.V2.zip",
+      "assetName": "G-News.Control.V2.zip"
+    }
+  },
+  {
+    "id": "forcedns-magisk-kernelsu",
+    "name": "forcedns_Magisk-kernelsu",
+    "type": "magisk_module",
+    "repo": "LuferOS/forcedns_Magisk-kernelsu",
+    "stars": 14,
+    "description": "Fuerza todo el tr\u00e1fico DNS est\u00e1ndar (puerto 53) a usar 1.1.1.1 mediante iptables. Sobrescribe DNS de red. Compatible con Magisk/KernelSU.",
+    "category": "ad-blocking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "3.0",
+      "publishedAt": "2026-09-14T19:48:30Z",
+      "url": "https://github.com/LuferOS/forcedns_Magisk-kernelsu/releases/tag/3.0",
+      "downloadUrl": "https://github.com/LuferOS/forcedns_Magisk-kernelsu/releases/download/3.0/forcedns_3.0.zip",
+      "assetName": "forcedns_3.0.zip"
+    }
+  },
+  {
+    "id": "hyperos-accessibility-fix",
+    "name": "hyperos-accessibility-fix",
+    "type": "magisk_module",
+    "repo": "chkndrp/hyperos-accessibility-fix",
+    "stars": 14,
+    "description": "Stop HyperOS from randomly disabling accessibillity services",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "1.0.5",
+      "publishedAt": "2026-07-20T01:49:07Z",
+      "url": "https://github.com/chkndrp/hyperos-accessibility-fix/releases/tag/1.0.5",
+      "downloadUrl": "https://github.com/chkndrp/hyperos-accessibility-fix/releases/download/1.0.5/hyperos-accessibility-fix.zip",
+      "assetName": "hyperos-accessibility-fix.zip"
+    }
+  },
+  {
+    "id": "magisk-cromite-webview",
+    "name": "magisk-cromite-webview",
+    "type": "magisk_module",
+    "repo": "hddq/magisk-cromite-webview",
+    "stars": 14,
+    "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions.",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+      "publishedAt": "2026-09-16T09:11:17Z",
+      "url": "https://github.com/hddq/magisk-cromite-webview/releases/tag/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+      "downloadUrl": "https://github.com/hddq/magisk-cromite-webview/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip",
+      "assetName": "CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip"
+    }
+  },
+  {
+    "id": "rotationsuggestionstoggle",
+    "name": "RotationSuggestionsToggle",
+    "type": "magisk_module",
+    "repo": "Astoritin/RotationSuggestionsToggle",
+    "stars": 13,
+    "description": "A Magisk module to toggle the showing of rotation suggestions button / \u4e00\u4e2a\u7528\u4e8e\u5207\u6362\u65cb\u8f6c\u5efa\u8bae\u6309\u94ae\u663e\u793a\u7684 Magisk \u6a21\u5757",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0",
+      "publishedAt": "2025-11-19T07:21:41Z",
+      "url": "https://github.com/Astoritin/RotationSuggestionsToggle/releases/tag/v1.0",
+      "downloadUrl": "https://github.com/Astoritin/RotationSuggestionsToggle/releases/download/v1.0/RotationSuggestionsToggle-1.0.zip",
+      "assetName": "RotationSuggestionsToggle-1.0.zip"
+    }
+  },
+  {
+    "id": "hide-navbar-keyboard",
+    "name": "Hide-Navbar-Keyboard",
+    "type": "magisk_module",
+    "repo": "UNKNUW/Hide-Navbar-Keyboard",
+    "stars": 13,
+    "description": "Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+ (Based AOSP, MIUI, HyperOS)",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2.7.1",
+      "publishedAt": "2025-04-24T15:02:02Z",
+      "url": "https://github.com/UNKNUW/Hide-Navbar-Keyboard/releases/tag/2.7.1",
+      "downloadUrl": "https://github.com/UNKNUW/Hide-Navbar-Keyboard/releases/download/2.7.1/Hide-Navbar-Keyboard_v2.7.1.FINAL.zip",
+      "assetName": "Hide-Navbar-Keyboard_v2.7.1.FINAL.zip"
+    }
+  },
+  {
+    "id": "misans",
+    "name": "MiSans",
+    "type": "magisk_module",
+    "repo": "adivenxnataly/MiSans",
+    "stars": 13,
+    "description": "Enhance your font devices with MiSans",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2.0-0",
+      "publishedAt": "2025-02-04T21:13:09Z",
+      "url": "https://github.com/adivenxnataly/MiSans/releases/tag/2.0-0",
+      "downloadUrl": "https://github.com/adivenxnataly/MiSans/releases/download/2.0-0/MiSans_2.0.zip",
+      "assetName": "MiSans_2.0.zip"
+    }
+  },
+  {
+    "id": "aclipboardmanager",
+    "name": "AClipBoardManager",
+    "type": "magisk_module",
+    "repo": "kaduvert/AClipBoardManager",
+    "stars": 13,
+    "description": "Android ClipBoard Manager using LSPosed / Magisk. generated by AI",
+    "category": "utilities",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "1.3.1",
+      "publishedAt": "2026-08-27T12:26:29Z",
+      "url": "https://github.com/kaduvert/AClipBoardManager/releases/tag/1.3.1",
+      "downloadUrl": "https://github.com/kaduvert/AClipBoardManager/releases/download/1.3.1/AClipBoardManager-RootModule.zip",
+      "assetName": "AClipBoardManager-RootModule.zip"
+    }
+  },
+  {
+    "id": "perfgame",
+    "name": "PerfGame",
+    "type": "magisk_module",
+    "repo": "adivenxnataly/PerfGame",
+    "stars": 11,
+    "description": "Enable custom resolution & frame-rate mechanism for your games.",
+    "category": "gaming",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2.0-release",
+      "publishedAt": "2025-05-12T08:06:27Z",
+      "url": "https://github.com/adivenxnataly/PerfGame/releases/tag/2.0-release",
+      "downloadUrl": "https://github.com/adivenxnataly/PerfGame/releases/download/2.0-release/PerfGamev2.0-release.zip",
+      "assetName": "PerfGamev2.0-release.zip"
+    }
+  },
+  {
+    "id": "auditpatch",
+    "name": "AuditPatch",
+    "type": "magisk_module",
+    "repo": "silvzr/AuditPatch",
+    "stars": 11,
+    "description": "Replace sensitive context in audit log",
+    "category": "root-management",
+    "license": "Proprietary",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.2.0",
+      "publishedAt": "2026-04-30T16:06:01Z",
+      "url": "https://github.com/silvzr/AuditPatch/releases/tag/v1.2.0",
+      "downloadUrl": "https://github.com/silvzr/AuditPatch/releases/download/v1.2.0/Audit-Patch-v1.2.0-18-014691d-release.zip",
+      "assetName": "Audit-Patch-v1.2.0-18-014691d-release.zip"
+    }
+  },
+  {
+    "id": "ezme-dex-space",
+    "name": "ezme-dex-space",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/ezme-dex-space",
+    "stars": 10,
+    "description": "Changes how Android's dex2oat compiles packages to save space, rather than focus on speed ",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1",
+      "publishedAt": "2025-07-09T01:11:05Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/ezme-dex-space/releases/tag/v1",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/ezme-dex-space/releases/download/v1/ezme-dex-space.zip",
+      "assetName": "ezme-dex-space.zip"
+    }
+  },
+  {
+    "id": "magisk-modules",
+    "name": "magisk-modules",
+    "type": "magisk_module",
+    "repo": "NewFuture/magisk-modules",
+    "stars": 10,
+    "description": "Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup.",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "2025.05.22",
+      "publishedAt": "2025-05-21T16:01:20Z",
+      "url": "https://github.com/NewFuture/magisk-modules/releases/tag/2025.05.22",
+      "downloadUrl": "https://github.com/NewFuture/magisk-modules/releases/download/2025.05.22/magisk-auto-adb-v1.1.2.zip",
+      "assetName": "magisk-auto-adb-v1.1.2.zip"
+    }
+  },
+  {
+    "id": "tree",
+    "name": "tree",
+    "type": "magisk_module",
+    "repo": "Magisk-Modules-Alt-Repo/tree",
+    "stars": 9,
+    "description": " tree for android ",
+    "category": "utilities",
+    "license": "Unknown",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1",
+      "publishedAt": "2025-01-11T11:59:51Z",
+      "url": "https://github.com/Magisk-Modules-Alt-Repo/tree/releases/tag/1",
+      "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/tree/releases/download/1/tree-main.zip",
+      "assetName": "tree-main.zip"
+    }
+  },
+  {
+    "id": "jetbrains-font-magisk-module",
+    "name": "jetbrains-font-magisk-module",
+    "type": "magisk_module",
+    "repo": "Mars-Wave/jetbrains-font-magisk-module",
+    "stars": 9,
+    "description": "Make your phone prettier with jetbrains mono and magisk",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.0",
+      "publishedAt": "2025-09-19T02:18:31Z",
+      "url": "https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/download/v1.0.0/magisk-jetbrains-mono-system-font.zip",
+      "assetName": "magisk-jetbrains-mono-system-font.zip"
+    }
+  },
+  {
+    "id": "multiuseruienabler",
+    "name": "multiuseruienabler",
+    "type": "magisk_module",
+    "repo": "InsertX2k/multiuseruienabler",
+    "stars": 8,
+    "description": "multiuseruienabler",
+    "category": "system",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0",
+      "publishedAt": "2025-02-19T21:15:43Z",
+      "url": "https://github.com/InsertX2k/multiuseruienabler/releases/tag/v1.0",
+      "downloadUrl": "https://github.com/InsertX2k/multiuseruienabler/releases/download/v1.0/multiuseruienabler.zip",
+      "assetName": "multiuseruienabler.zip"
+    }
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "type": "magisk_module",
+    "repo": "Tkocean/Aurora",
+    "stars": 8,
+    "description": "Magisk Module - PROXY Launcher",
+    "category": "networking",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "Stable",
+      "publishedAt": "2025-12-03T09:50:28Z",
+      "url": "https://github.com/Tkocean/Aurora/releases/tag/Stable",
+      "downloadUrl": "https://github.com/Tkocean/Aurora/releases/download/Stable/Aurora.zip",
+      "assetName": "Aurora.zip"
+    }
+  },
+  {
+    "id": "background-app-slayer",
+    "name": "Background-App-Slayer",
+    "type": "magisk_module",
+    "repo": "UNKNUW/Background-App-Slayer",
+    "stars": 7,
+    "description": "Module Magisk/KSU automatic Killing Background apps for BETTER GAMING PERFORMANCE !!",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "5.1.2",
+      "publishedAt": "2025-06-05T01:11:26Z",
+      "url": "https://github.com/UNKNUW/Background-App-Slayer/releases/tag/5.1.2",
+      "downloadUrl": "https://github.com/UNKNUW/Background-App-Slayer/releases/download/5.1.2/BAS_LOOP.zip",
+      "assetName": "BAS_LOOP.zip"
+    }
+  },
+  {
+    "id": "oneuiemojipack",
+    "name": "OneUIEmojiPack",
+    "type": "magisk_module",
+    "repo": "AloozChips/OneUIEmojiPack",
+    "stars": 7,
+    "description": "Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU, and Apatch.",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v7.1",
+      "publishedAt": "2025-06-14T13:46:40Z",
+      "url": "https://github.com/AloozChips/OneUIEmojiPack/releases/tag/v7.1",
+      "downloadUrl": "https://github.com/AloozChips/OneUIEmojiPack/releases/download/v7.1/OneUI_Emoji_Pack-v7.1.zip",
+      "assetName": "OneUI_Emoji_Pack-v7.1.zip"
+    }
+  },
+  {
+    "id": "dozedisabler",
+    "name": "dozedisabler",
+    "type": "magisk_module",
+    "repo": "draumaz/dozedisabler",
+    "stars": 7,
+    "description": "Disable Doze optimizations at boot (Magisk)",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "1.2",
+      "publishedAt": "2025-07-23T03:34:48Z",
+      "url": "https://github.com/draumaz/dozedisabler/releases/tag/1.2",
+      "downloadUrl": "https://github.com/draumaz/dozedisabler/releases/download/1.2/dozedisabler-1.2.zip",
+      "assetName": "dozedisabler-1.2.zip"
+    }
+  },
+  {
+    "id": "magisk-minecraft-font",
+    "name": "Magisk-Minecraft-Font",
+    "type": "magisk_module",
+    "repo": "DethByte64/Magisk-Minecraft-Font",
+    "stars": 6,
+    "description": "A Magisk Module that changes your default font to the Minecraft font",
+    "category": "customization",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.0.0",
+      "publishedAt": "2025-05-09T19:34:33Z",
+      "url": "https://github.com/DethByte64/Magisk-Minecraft-Font/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/DethByte64/Magisk-Minecraft-Font/releases/download/v1.0.0/MinecraftFont.zip",
+      "assetName": "MinecraftFont.zip"
+    }
+  },
+  {
+    "id": "realme-gt3-neo5-cpu-limiter",
+    "name": "Realme-GT3-neo5-CPU-limiter",
+    "type": "magisk_module",
+    "repo": "Quantom2/Realme-GT3-neo5-CPU-limiter",
+    "stars": 6,
+    "description": "A Magisk/KSU bazed module to slow down your CPU to make your screen time better. Highly customizable.",
+    "category": "performance",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "1.4",
+      "publishedAt": "2025-08-26T08:27:48Z",
+      "url": "https://github.com/Quantom2/Realme-GT3-neo5-CPU-limiter/releases/tag/1.4",
+      "downloadUrl": "https://github.com/Quantom2/Realme-GT3-neo5-CPU-limiter/releases/download/1.4/Realme-GT3-neo5-CPU-limiter_1.4.zip",
+      "assetName": "Realme-GT3-neo5-CPU-limiter_1.4.zip"
+    }
+  },
+  {
+    "id": "dsp-audiofix",
+    "name": "DSP-AudioFix",
+    "type": "magisk_module",
+    "repo": "ahmed-alnassif/DSP-AudioFix",
+    "stars": 6,
+    "description": "",
+    "category": "audio",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v1.0",
+      "publishedAt": "2026-02-28T20:23:05Z",
+      "url": "https://github.com/ahmed-alnassif/DSP-AudioFix/releases/tag/v1.0",
+      "downloadUrl": "https://github.com/ahmed-alnassif/DSP-AudioFix/releases/download/v1.0/DSP-AudioFix.zip",
+      "assetName": "DSP-AudioFix.zip"
+    }
+  },
+  {
+    "id": "log-catcher",
+    "name": "Log-Catcher",
+    "type": "magisk_module",
+    "repo": "hxreborn/Log-Catcher",
+    "stars": 6,
+    "description": "A module to make capturing boot logs easier",
+    "category": "development",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v23.2",
+      "publishedAt": "2026-03-14T23:51:28Z",
+      "url": "https://github.com/hxreborn/Log-Catcher/releases/tag/v23.2",
+      "downloadUrl": "https://github.com/hxreborn/Log-Catcher/releases/download/v23.2/hxr_logcat.zip",
+      "assetName": "hxr_logcat.zip"
+    }
+  },
+  {
+    "id": "disable-usb-debugging",
+    "name": "disable_usb_debugging",
+    "type": "magisk_module",
+    "repo": "Aakif17/disable_usb_debugging",
+    "stars": 5,
+    "description": "Disables USB Debugging after every reboot",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "v1.4",
+      "publishedAt": "2025-03-12T06:34:59Z",
+      "url": "https://github.com/Aakif17/disable_usb_debugging/releases/tag/v1.4",
+      "downloadUrl": "https://github.com/Aakif17/disable_usb_debugging/releases/download/v1.4/disable_usb_debugging.zip",
+      "assetName": "disable_usb_debugging.zip"
+    }
+  },
+  {
+    "id": "turnoffsensors-magisk",
+    "name": "TurnOffSensors-Magisk",
+    "type": "magisk_module",
+    "repo": "AdalynAstatine/TurnOffSensors-Magisk",
+    "stars": 4,
+    "description": "",
+    "category": "privacy",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "Latest",
+      "publishedAt": "2026-03-28T19:04:31Z",
+      "url": "https://github.com/AdalynAstatine/TurnOffSensors-Magisk/releases/tag/Latest",
+      "downloadUrl": "https://github.com/AdalynAstatine/TurnOffSensors-Magisk/releases/download/Latest/TurnOffSensors-Magisk.zip",
+      "assetName": "TurnOffSensors-Magisk.zip"
+    }
+  },
+  {
+    "id": "custom-certificates",
+    "name": "custom-certificates",
+    "type": "magisk_module",
+    "repo": "YujiaCheng1996/custom-certificates",
+    "stars": 4,
+    "description": "A Magisk module which adds custom certificates to the system trust store.",
+    "category": "security",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk",
+      "KernelSU"
+    ],
+    "latestRelease": {
+      "tag": "v3.2",
+      "publishedAt": "2026-07-19T08:18:47Z",
+      "url": "https://github.com/YujiaCheng1996/custom-certificates/releases/tag/v3.2",
+      "downloadUrl": "https://github.com/YujiaCheng1996/custom-certificates/releases/download/v3.2/custom-certificates-v3.2.zip",
+      "assetName": "custom-certificates-v3.2.zip"
+    }
+  },
+  {
+    "id": "rsync-magisk",
+    "name": "rsync-magisk",
+    "type": "magisk_module",
+    "repo": "AdalynAstatine/rsync-magisk",
+    "stars": 2,
+    "description": "",
+    "category": "utilities",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "Latest",
+      "publishedAt": "2025-10-30T08:14:49Z",
+      "url": "https://github.com/AdalynAstatine/rsync-magisk/releases/tag/Latest",
+      "downloadUrl": "https://github.com/AdalynAstatine/rsync-magisk/releases/download/Latest/rsync-magisk.zip",
+      "assetName": "rsync-magisk.zip"
+    }
+  },
+  {
+    "id": "imagecopyhide",
+    "name": "ImageCopyHide",
+    "type": "magisk_module",
+    "repo": "cookieof/ImageCopyHide",
+    "stars": 2,
+    "description": "Automatically copy and hide files from /sdcard/DCIM/Camera to /sdcard/wot/cptp (magisk module)",
+    "category": "privacy",
+    "license": "FOSS",
+    "compatibility": [
+      "Magisk"
+    ],
+    "latestRelease": {
+      "tag": "V1.0",
+      "publishedAt": "2025-05-24T11:11:37Z",
+      "url": "https://github.com/cookieof/ImageCopyHide/releases/tag/V1.0",
+      "downloadUrl": "https://github.com/cookieof/ImageCopyHide/releases/download/V1.0/ImageCopyHide-v1.0.zip",
+      "assetName": "ImageCopyHide-v1.0.zip"
+    }
+  }
+]
