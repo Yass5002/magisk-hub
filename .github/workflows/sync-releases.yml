@@ -1,4 +1,5 @@
 name: Sync Releases & Active-Bar Re-Audit
+# Automated 6-hour cron and manual dispatch engine
 
 on:
   schedule:
