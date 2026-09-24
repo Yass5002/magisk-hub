@@ -285,8 +285,21 @@ const breadcrumbs = [
             <span>GitHub Source</span>
           </a>
 
-          <div class="text-[11px] text-slate-500 font-mono text-center truncate pt-1">
-            File: <span class="text-slate-800">{module.latestRelease.assetName}</span>
+          <!-- Release Asset Monospace Container with Full Visibility and Copy Action -->
+          <div class="flex items-center justify-between gap-1.5 rounded-lg border border-slate-200 bg-slate-50/90 px-2.5 py-1.5 text-[11px] font-mono text-slate-700">
+            <span class="truncate select-all" title={module.latestRelease.assetName}>
+              {module.latestRelease.assetName}
+            </span>
+            <button 
+              type="button" 
+              class="copy-asset-btn inline-flex items-center text-slate-400 hover:text-teal-700 shrink-0 p-1 rounded hover:bg-slate-200/80 transition-colors"
+              data-asset={module.latestRelease.assetName}
+              title="Copy file name"
+            >
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -369,8 +382,8 @@ const breadcrumbs = [
         )}
       </div>
 
-      <!-- Right Column: Sidebar (Specifications + Repository Details) -->
-      <div class="space-y-6">
+      <!-- Right Column: Sticky Sidebar (Specifications + Repository Details) -->
+      <div class="space-y-6 lg:sticky lg:top-24 lg:self-start">
         <!-- Technical Specifications Card (for Tier 1) -->
         {isTier1 && (frontmatter.prerequisites?.length > 0 || frontmatter.conflicts?.length > 0 || frontmatter.configPaths?.length > 0) && (
           <div class="rounded-xl border border-slate-200 bg-white p-5 space-y-4 shadow-xs">
@@ -400,17 +413,17 @@ const breadcrumbs = [
               </div>
             )}
 
-            <!-- Configuration Paths: Vertical Monospace List with Copy Button -->
+            <!-- Configuration Paths: Crisp High-Contrast Monospace Code Block -->
             {frontmatter.configPaths && frontmatter.configPaths.length > 0 && (
               <div>
                 <h4 class="text-xs font-semibold text-slate-700 mb-2">Configuration Paths</h4>
-                <div class="rounded-lg border border-slate-200 bg-slate-50/80 divide-y divide-slate-200/60 font-mono text-xs overflow-hidden">
+                <div class="rounded-lg border border-slate-800 bg-slate-950 p-2 space-y-1 font-mono text-xs shadow-inner">
                   {frontmatter.configPaths.map((cp: string) => (
-                    <div class="flex items-center justify-between py-2 px-2.5 gap-2 group hover:bg-slate-100/70 transition-colors">
-                      <span class="text-slate-800 text-[11px] truncate select-all">{cp}</span>
+                    <div class="flex items-center justify-between py-1.5 px-2.5 gap-2 rounded bg-slate-900 hover:bg-slate-850 border border-slate-800/80 transition-colors group">
+                      <span class="text-teal-400 text-[11px] truncate select-all">{cp}</span>
                       <button 
                         type="button"
-                        class="copy-path-btn inline-flex items-center gap-1 text-[11px] font-medium text-slate-400 hover:text-teal-700 px-1.5 py-0.5 rounded hover:bg-slate-200/80 transition-colors shrink-0" 
+                        class="copy-path-btn inline-flex items-center gap-1 text-[11px] font-medium text-slate-400 hover:text-teal-300 px-1.5 py-0.5 rounded hover:bg-slate-800 transition-colors shrink-0" 
                         data-path={cp}
                         title="Copy file path"
                       >
@@ -508,6 +521,7 @@ const breadcrumbs = [
 </BaseLayout>
 
 <script>
+  // Copy configuration paths
   document.querySelectorAll('.copy-path-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const path = btn.getAttribute('data-path');
@@ -518,6 +532,18 @@ const breadcrumbs = [
           text.textContent = 'Copied!';
           setTimeout(() => { text.textContent = 'Copy'; }, 1500);
         }
+      }
+    });
+  });
+
+  // Copy release asset filename
+  document.querySelectorAll('.copy-asset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const asset = btn.getAttribute('data-asset');
+      if (asset) {
+        navigator.clipboard.writeText(asset);
+        btn.classList.add('text-teal-600');
+        setTimeout(() => { btn.classList.remove('text-teal-600'); }, 1500);
       }
     });
   });

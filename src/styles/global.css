@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply bg-[#f8f9fa] text-slate-800 antialiased selection:bg-brand-500 selection:text-white;
+    @apply bg-[#f8f9fa] text-slate-800 antialiased selection:bg-brand-500 selection:text-white font-sans;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 

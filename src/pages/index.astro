@@ -12,6 +12,27 @@ const magiskRelease = magiskModule?.latestRelease || {
 };
 
 const allCategories = Object.values(CATEGORIES);
+
+function formatStars(count?: number): string {
+  if (!count) return '0';
+  if (count >= 1000) {
+    const k = (count / 1000).toFixed(1).replace(/\.0$/, '');
+    return `${k}k`;
+  }
+  return count.toString();
+}
+
+// Lightweight dataset for instant search autocomplete dropdown
+const searchIndex = modules.map(m => ({
+  id: m.id,
+  name: m.name,
+  desc: m.description,
+  author: m.repo.split('/')[0],
+  tag: m.latestRelease.tag,
+  category: CATEGORIES[m.category]?.name || m.category,
+  stars: formatStars(m.stars),
+  icon: m.icon || null,
+}));
 ---
 
 <BaseLayout
@@ -20,18 +41,21 @@ const allCategories = Object.values(CATEGORIES);
   keywords={["magisk modules", "kernelsu modules", "apatch modules", "download magisk apk", "root modules directory"]}
 >
   <!-- Sleek Compact Developer Hero -->
-  <section class="border-b border-slate-200 bg-slate-50/70 py-10 sm:py-12">
+  <section id="heroSection" class="border-b border-slate-200 bg-slate-50/70 py-10 sm:py-12 transition-all duration-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
-          Magisk Modules Directory
-        </h1>
-        <p class="mt-2 text-sm sm:text-base text-slate-600">
-          Discover and download active root modules for Magisk, KernelSU, and APatch.
-        </p>
+        <!-- Hero Text that condenses when search is active -->
+        <div id="heroText" class="transition-all duration-200">
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+            Magisk Modules Directory
+          </h1>
+          <p class="mt-2 text-sm sm:text-base text-slate-600">
+            Discover and download active root modules for Magisk, KernelSU, and APatch.
+          </p>
+        </div>
 
-        <!-- Prominent Search Bar with Ctrl+K -->
-        <div class="mt-6 max-w-2xl mx-auto">
+        <!-- Prominent Search Bar with Autocomplete Dropdown Container -->
+        <div class="mt-6 max-w-2xl mx-auto relative">
           <div class="relative flex items-center h-12 sm:h-14 rounded-xl border border-slate-300 bg-white shadow-xs focus-within:border-teal-600 focus-within:ring-2 focus-within:ring-teal-600/20 transition-all">
             <div class="pl-4 pr-2 text-slate-400 pointer-events-none">
               <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,6 +66,7 @@ const allCategories = Object.values(CATEGORIES);
               type="text" 
               id="searchInput"
               placeholder="Search 195 modules by name, keyword, or author..."
+              autocomplete="off"
               class="w-full bg-transparent py-3 pr-4 text-sm text-slate-900 placeholder-slate-400 focus:outline-none"
             />
             <div class="pr-3.5 hidden sm:flex items-center">
@@ -50,6 +75,14 @@ const allCategories = Object.values(CATEGORIES);
               </kbd>
             </div>
           </div>
+
+          <!-- Command-Palette Autocomplete Dropdown -->
+          <div 
+            id="searchDropdown" 
+            class="hidden absolute top-full left-0 right-0 z-50 mt-1.5 max-h-80 overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-2xl divide-y divide-slate-100 py-1 text-left text-xs"
+          >
+            <!-- Populated via client-side script -->
+          </div>
         </div>
       </div>
     </div>
@@ -57,8 +90,8 @@ const allCategories = Object.values(CATEGORIES);
 
   <!-- Main Content Container -->
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Download Magisk Top Section -->
-    <section class="mb-8 rounded-xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
+    <!-- Download Magisk Spotlight Section (Hidden during active search) -->
+    <section id="featuredMagiskBanner" class="mb-8 rounded-xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs transition-all">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
         <div class="flex items-start sm:items-center gap-4">
           <img 
@@ -70,8 +103,8 @@ const allCategories = Object.values(CATEGORIES);
           />
           <div>
             <div class="flex items-center gap-2 flex-wrap">
-              <h2 class="text-xl font-bold text-slate-900">Magisk</h2>
-              <span class="rounded bg-teal-50 px-2 py-0.5 text-xs font-semibold text-teal-800 border border-teal-200">
+              <h2 class="text-xl font-bold text-slate-900 tracking-tight">Magisk</h2>
+              <span class="rounded bg-teal-50 px-2 py-0.5 text-xs font-semibold text-teal-800 border border-teal-200 font-mono">
                 {magiskRelease.tag}
               </span>
               <span class="text-xs text-slate-500">
@@ -183,6 +216,7 @@ const allCategories = Object.values(CATEGORIES);
           data-compat={module.compatibility.join(',')}
           data-stars={module.stars || 0}
           data-date={module.latestRelease.publishedAt}
+          style={module.id === 'magisk' ? 'display: none;' : ''}
         >
           <ModuleCard module={module} />
         </div>
@@ -203,10 +237,29 @@ const allCategories = Object.values(CATEGORIES);
       </button>
     </div>
   </div>
+
+  <!-- Search autocomplete index serialization -->
+  <script id="modulesDataScript" type="application/json" set:html={JSON.stringify(searchIndex)} />
 </BaseLayout>
 
 <script>
+  interface SearchItem {
+    id: string;
+    name: string;
+    desc: string;
+    author: string;
+    tag: string;
+    category: string;
+    stars: string;
+    icon: string | null;
+  }
+
   const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
+  const searchDropdown = document.getElementById('searchDropdown') as HTMLElement | null;
+  const heroSection = document.getElementById('heroSection') as HTMLElement | null;
+  const heroText = document.getElementById('heroText') as HTMLElement | null;
+  const featuredMagiskBanner = document.getElementById('featuredMagiskBanner') as HTMLElement | null;
+
   const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
   const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement | null;
   const compatButtons = document.querySelectorAll('.compat-filter');
@@ -216,23 +269,111 @@ const allCategories = Object.values(CATEGORIES);
   const noResults = document.getElementById('noResults');
   const resetBtn = document.getElementById('resetBtn');
 
+  // Load search index
+  const modulesData: SearchItem[] = JSON.parse(document.getElementById('modulesDataScript')?.textContent || '[]');
+
   let currentSearch = '';
   let currentCategory = 'all';
   let currentCompat = 'all';
   let currentSort = 'stars';
 
+  function updateAutocompleteDropdown() {
+    if (!searchDropdown) return;
+
+    if (!currentSearch) {
+      searchDropdown.classList.add('hidden');
+      searchDropdown.innerHTML = '';
+      return;
+    }
+
+    const matches = modulesData.filter(m => 
+      m.name.toLowerCase().includes(currentSearch) ||
+      m.desc.toLowerCase().includes(currentSearch) ||
+      m.author.toLowerCase().includes(currentSearch) ||
+      m.id.toLowerCase().includes(currentSearch)
+    ).slice(0, 6);
+
+    if (matches.length === 0) {
+      searchDropdown.innerHTML = `
+        <div class="px-4 py-3 text-center text-slate-500 text-xs">
+          No quick matches found for <strong class="text-slate-800">"${currentSearch}"</strong>.
+        </div>
+      `;
+      searchDropdown.classList.remove('hidden');
+      return;
+    }
+
+    searchDropdown.innerHTML = matches.map(m => `
+      <a 
+        href="/modules/${m.id}" 
+        class="flex items-center justify-between p-2.5 sm:px-3.5 hover:bg-slate-50 transition-colors group cursor-pointer"
+      >
+        <div class="flex items-center gap-3 min-w-0">
+          ${m.icon 
+            ? `<img src="/${m.icon}" alt="" class="h-8 w-8 rounded-lg object-contain bg-slate-50 p-0.5 border border-slate-200 shrink-0" />`
+            : `<img src="https://github.com/${m.author}.png?size=64" alt="" class="h-8 w-8 rounded-lg object-cover bg-slate-100 border border-slate-200 shrink-0" />`
+          }
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sm text-slate-900 group-hover:text-teal-700 transition-colors truncate">
+                ${m.name}
+              </span>
+              <span class="font-mono text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 shrink-0 font-medium">
+                ${m.tag}
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-500 truncate mt-0.5">
+              ${m.category} <span class="text-slate-300">•</span> by ${m.author}
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-1 text-xs font-semibold text-slate-700 shrink-0 ml-3">
+          <span class="text-[#ffb327]">★</span>
+          <span>${m.stars}</span>
+        </div>
+      </a>
+    `).join('');
+
+    searchDropdown.classList.remove('hidden');
+  }
+
   function applyFiltersAndSort() {
     let visibleCount = 0;
+    const isSearching = currentSearch.length > 0;
 
-    // Filter
+    // Visibility of Hero & Featured Banner when searching
+    if (featuredMagiskBanner) {
+      featuredMagiskBanner.style.display = isSearching ? 'none' : '';
+    }
+
+    if (heroSection && heroText) {
+      if (isSearching) {
+        heroSection.classList.remove('py-10', 'sm:py-12');
+        heroSection.classList.add('py-5', 'sm:py-6');
+        heroText.classList.add('hidden');
+      } else {
+        heroSection.classList.add('py-10', 'sm:py-12');
+        heroSection.classList.remove('py-5', 'sm:py-6');
+        heroText.classList.remove('hidden');
+      }
+    }
+
+    // Filter module cards
     cardWrappers.forEach(el => {
+      const id = el.getAttribute('data-id') || '';
       const name = el.getAttribute('data-name') || '';
       const desc = el.getAttribute('data-desc') || '';
       const repo = el.getAttribute('data-repo') || '';
       const cat = el.getAttribute('data-category') || '';
       const compat = (el.getAttribute('data-compat') || '').split(',');
 
-      const matchesSearch = !currentSearch || 
+      // If not searching, hide the duplicate Magisk card because spotlight banner is active
+      if (!isSearching && id === 'magisk') {
+        el.style.display = 'none';
+        return;
+      }
+
+      const matchesSearch = !isSearching || 
         name.includes(currentSearch) || 
         desc.includes(currentSearch) || 
         repo.includes(currentSearch);
@@ -275,8 +416,14 @@ const allCategories = Object.values(CATEGORIES);
     }
 
     if (noResults) {
-      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
     }
+
+    updateAutocompleteDropdown();
   }
 
   // Ctrl+K keyboard shortcut
@@ -286,12 +433,28 @@ const allCategories = Object.values(CATEGORIES);
       searchInput?.focus();
       searchInput?.select();
     }
+    if (e.key === 'Escape') {
+      searchDropdown?.classList.add('hidden');
+    }
   });
 
-  // Event Listeners
+  // Hide dropdown on click outside
+  document.addEventListener('click', (e) => {
+    if (!searchInput?.contains(e.target as Node) && !searchDropdown?.contains(e.target as Node)) {
+      searchDropdown?.classList.add('hidden');
+    }
+  });
+
+  // Search input events
   searchInput?.addEventListener('input', (e) => {
     currentSearch = (e.target as HTMLInputElement).value.toLowerCase().trim();
     applyFiltersAndSort();
+  });
+
+  searchInput?.addEventListener('focus', () => {
+    if (currentSearch) {
+      updateAutocompleteDropdown();
+    }
   });
 
   categorySelect?.addEventListener('change', (e) => {
