@@ -11,7 +11,7 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 6345,
+  "stars": 6346,
   "latestRelease": {
     "tag": "shamiko-414",
     "publishedAt": "2025-06-18T11:37:10Z",
@@ -20,8 +20,8 @@
     "assetName": "Shamiko-v1.2.5-414-release.zip"
   },
   "seo": {
-    "title": "Shamiko - Zygisk Root Hiding Module",
-    "description": "Conceal Magisk, KernelSU, and root environment from detection mechanisms using Shamiko."
+    "title": "Shamiko - Active Magisk Module",
+    "description": "Zygisk-based root hiding module by LSPosed developers to conceal root, zygisk, and sensitive props from banking apps and integrity checks."
   },
   "contentTier": 1
 }
