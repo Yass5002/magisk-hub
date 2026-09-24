@@ -25,7 +25,7 @@
       ]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/(_astro|assets)/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
