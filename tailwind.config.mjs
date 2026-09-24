@@ -6,26 +6,18 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#ecfdf5',
-          100: '#d1fae5',
-          200: '#a7f3d0',
-          300: '#6ee7b7',
-          400: '#34d399',
-          500: '#10b981', // Magisk green accent
-          600: '#059669',
-          700: '#047857',
-          800: '#065f46',
-          900: '#064e3b',
+          50: '#edfbf9',
+          100: '#d4f5f0',
+          200: '#adeae1',
+          300: '#78d9cd',
+          400: '#3ec1b3',
+          500: '#01af9c', // Official Magisk Teal
+          600: '#009a8a',
+          700: '#017a6e',
+          800: '#046158',
+          900: '#07504a',
         },
-        surface: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          800: '#1e293b',
-          850: '#172033',
-          900: '#0f172a',
-          950: '#090d16',
-        }
+        magisk: '#01af9c',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],

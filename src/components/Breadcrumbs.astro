@@ -22,7 +22,7 @@ const schema = {
 };
 ---
 
-<nav aria-label="Breadcrumb" class="flex items-center text-xs text-slate-400 py-3">
+<nav aria-label="Breadcrumb" class="flex items-center text-xs text-slate-500 py-3">
   <ol class="flex items-center flex-wrap gap-1.5">
     {items.map((item, idx) => (
       <li class="flex items-center gap-1.5">
@@ -32,11 +32,11 @@ const schema = {
           </svg>
         )}
         {idx === items.length - 1 ? (
-          <span class="font-medium text-slate-200 truncate max-w-xs sm:max-w-md" aria-current="page">
+          <span class="font-medium text-slate-800 truncate max-w-xs sm:max-w-md" aria-current="page">
             {item.name}
           </span>
         ) : (
-          <a href={item.url} class="hover:text-brand-400 transition-colors">
+          <a href={item.url} class="hover:text-brand-600 transition-colors">
             {item.name}
           </a>
         )}

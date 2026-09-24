@@ -1,256 +1,318 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ModuleCard from '../components/ModuleCard.astro';
-import { getAllModules, getStats, CATEGORIES } from '../lib/modules';
+import { getAllModules, CATEGORIES } from '../lib/modules';
 
 const modules = getAllModules();
-const stats = getStats();
+const magiskModule = modules.find(m => m.id === 'magisk');
+const magiskRelease = magiskModule?.latestRelease || {
+  tag: 'v30.7',
+  downloadUrl: 'https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk',
+  url: 'https://github.com/topjohnwu/Magisk/releases/tag/v30.7'
+};
 
-const tier1Modules = modules.filter(m => m.contentTier === 1);
 const allCategories = Object.values(CATEGORIES);
 ---
 
 <BaseLayout
-  title="Magisk Hub - The Verified Active Magisk & Root Module Registry"
-  description="Explore 195+ active, verified Magisk, KernelSU, and APatch modules. Automatic 6-hour release sync, zero stale projects, and in-depth technical guides."
-  keywords={["magisk modules", "kernelsu modules", "apatch modules", "best magisk modules 2026", "play integrity bypass", "root modules android 14 15"]}
+  title="Magisk Hub - Modules Directory"
+  description="Discover and download active root modules for Magisk, KernelSU, and APatch."
+  keywords={["magisk modules", "kernelsu modules", "apatch modules", "download magisk apk", "root modules directory"]}
 >
-  <!-- Hero Section -->
-  <section class="relative overflow-hidden border-b border-surface-800/80 bg-gradient-to-b from-surface-900/50 via-surface-950 to-surface-950 py-16 sm:py-24">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))] pointer-events-none"></div>
-
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3.5 py-1 text-xs font-semibold text-brand-400 mb-6">
-        <span class="h-2 w-2 rounded-full bg-brand-400 animate-pulse"></span>
-        Automated 6-Hour GitHub Re-Audit • Zero Dead Projects
-      </div>
-
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl max-w-4xl mx-auto leading-[1.1]">
-        The Verified Directory of Active <span class="bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent">Android Root Modules</span>
+  <!-- Hero Section (WordPress Directory Style) -->
+  <section class="bg-[#01af9c] text-white py-14 sm:py-16">
+    <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Magisk Modules
       </h1>
-
-      <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-        Every module in Magisk Hub is strictly validated against active-development criteria: tested release assets, live GitHub repositories, and zero abandoned forks.
+      <p class="mt-3 text-base sm:text-lg text-emerald-50/90 max-w-xl mx-auto">
+        Discover and download community root modules for your Android device.
       </p>
 
-      <!-- Live Stats Bar -->
-      <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-3xl mx-auto">
-        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
-          <div class="text-2xl font-black text-white">{stats.total}</div>
-          <div class="text-xs text-slate-400 mt-0.5">Active Modules</div>
-        </div>
-        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
-          <div class="text-2xl font-black text-brand-400">{stats.tier1}</div>
-          <div class="text-xs text-slate-400 mt-0.5">In-Depth Guides</div>
-        </div>
-        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
-          <div class="text-2xl font-black text-white">{stats.categories}</div>
-          <div class="text-xs text-slate-400 mt-0.5">Categories</div>
-        </div>
-        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
-          <div class="text-2xl font-black text-amber-400">{(stats.totalStars / 1000).toFixed(0)}k+</div>
-          <div class="text-xs text-slate-400 mt-0.5">GitHub Stars</div>
-        </div>
-      </div>
-
-      <!-- Real-Time Interactive Search Bar -->
-      <div class="mt-10 max-w-2xl mx-auto">
-        <div class="relative flex items-center">
-          <svg class="absolute left-4 h-5 w-5 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
+      <!-- Search Input -->
+      <div class="mt-8 max-w-2xl mx-auto">
+        <div class="relative flex items-center shadow-lg rounded-md overflow-hidden">
           <input 
             type="text" 
             id="searchInput"
-            placeholder="Search 195 modules by name, keyword, or problem (e.g. Play Integrity, Call Record, Hosts)..."
-            class="w-full rounded-2xl border border-surface-700 bg-surface-900/90 py-4 pl-12 pr-4 text-sm text-white placeholder-slate-400 shadow-2xl focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+            placeholder="Search modules..."
+            class="w-full bg-white py-3.5 pl-4 pr-12 text-sm text-slate-800 placeholder-slate-400 focus:outline-none"
           />
+          <div class="absolute right-0 top-0 bottom-0 flex items-center pr-3.5 bg-white text-slate-400 pointer-events-none">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Filter & Catalog Section -->
-  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8" id="catalog">
-    <!-- Filter Controls -->
-    <div class="flex flex-col gap-4 pb-8 border-b border-surface-800">
-      <!-- Compatibility Filter -->
-      <div class="flex items-center gap-2 flex-wrap">
-        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-2">Platform:</span>
-        <button class="compat-filter active rounded-lg border border-brand-500 bg-brand-500/10 px-3 py-1 text-xs font-semibold text-brand-400 transition-colors" data-compat="all">
-          All Platforms
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Download Magisk Featured Banner -->
+    <section class="mb-10 rounded-lg border border-slate-200 bg-white p-5 sm:p-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div class="flex items-start sm:items-center gap-4">
+          <img 
+            src="/magisk-logo.svg" 
+            alt="Magisk Logo" 
+            width="56" 
+            height="56" 
+            class="h-14 w-14 shrink-0 object-contain"
+          />
+          <div>
+            <div class="flex items-center gap-2.5 flex-wrap">
+              <h2 class="text-xl font-bold text-slate-900">Magisk</h2>
+              <span class="rounded bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-700 border border-brand-200">
+                {magiskRelease.tag}
+              </span>
+              <span class="text-xs text-slate-500">
+                • 62.9k stars on GitHub
+              </span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600 max-w-2xl">
+              The universal open-source root suite for Android devices. Boot image patching, Zygisk framework, and systemless module management.
+            </p>
+          </div>
+        </div>
+
+        <!-- Download Buttons -->
+        <div class="flex items-center gap-3 shrink-0 flex-wrap">
+          <a 
+            href={magiskRelease.downloadUrl}
+            class="inline-flex items-center gap-2 rounded-md bg-[#01af9c] px-4 py-2.5 text-sm font-semibold text-white hover:bg-[#009a8a] transition-colors shadow-sm"
+          >
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+            <span>Download Magisk ({magiskRelease.tag})</span>
+          </a>
+
+          <a 
+            href="/modules/magisk"
+            class="inline-flex items-center rounded-md border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors"
+          >
+            Guide
+          </a>
+
+          <a 
+            href="https://github.com/topjohnwu/Magisk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center rounded-md border border-slate-200 bg-white px-3.5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter & Controls Header -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 mb-6 border-b border-slate-200">
+      <!-- Platform Filters -->
+      <div class="flex items-center gap-1.5 flex-wrap">
+        <span class="text-xs font-semibold uppercase text-slate-500 mr-1.5">Platform:</span>
+        <button class="compat-filter active rounded-md bg-[#01af9c] px-3 py-1 text-xs font-semibold text-white transition-colors" data-compat="all">
+          All
         </button>
-        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="Magisk">
+        <button class="compat-filter rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-compat="Magisk">
           Magisk
         </button>
-        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="KernelSU">
+        <button class="compat-filter rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-compat="KernelSU">
           KernelSU
         </button>
-        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="APatch">
+        <button class="compat-filter rounded-md bg-white border border-slate-200 px-3 py-1 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors" data-compat="APatch">
           APatch
         </button>
       </div>
 
-      <!-- Category Filter Pills -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-2 shrink-0">Category:</span>
-        <button class="cat-filter active rounded-lg border border-brand-500 bg-brand-500/10 px-3 py-1 text-xs font-semibold text-brand-400 transition-colors shrink-0" data-cat="all">
-          All Categories ({modules.length})
-        </button>
-        {allCategories.map(c => {
-          const count = modules.filter(m => m.category === c.id).length;
-          return (
-            <button class="cat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors shrink-0" data-cat={c.id}>
-              {c.name} ({count})
-            </button>
-          );
-        })}
+      <!-- Category Filter Dropdown & Sorter -->
+      <div class="flex items-center gap-3 flex-wrap">
+        <div class="flex items-center gap-1.5">
+          <label for="categorySelect" class="text-xs font-semibold uppercase text-slate-500">Category:</label>
+          <select 
+            id="categorySelect" 
+            class="rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-700 focus:outline-none focus:border-brand-500"
+          >
+            <option value="all">All Categories ({modules.length})</option>
+            {allCategories.map(c => (
+              <option value={c.id}>{c.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="flex items-center gap-1.5">
+          <label for="sortSelect" class="text-xs font-semibold uppercase text-slate-500">Sort:</label>
+          <select 
+            id="sortSelect" 
+            class="rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-700 focus:outline-none focus:border-brand-500"
+          >
+            <option value="stars">Most Stars</option>
+            <option value="name">Alphabetical</option>
+            <option value="recent">Recently Updated</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <!-- Results Counter -->
-    <div class="flex items-center justify-between py-6">
-      <div class="text-xs font-semibold text-slate-400">
-        Showing <span id="visibleCount" class="text-white font-bold">{modules.length}</span> modules
-      </div>
-
-      <div class="flex items-center gap-2 text-xs">
-        <span class="text-slate-400">Sort:</span>
-        <select id="sortSelect" class="rounded-lg border border-surface-800 bg-surface-900 px-2.5 py-1 text-xs text-slate-200 focus:border-brand-500 focus:outline-none">
-          <option value="stars">Most Stars</option>
-          <option value="name">Alphabetical</option>
-          <option value="tier">Technical Guides First</option>
-        </select>
-      </div>
+    <!-- Results Status Counter -->
+    <div class="flex items-center justify-between text-xs text-slate-500 mb-4">
+      <span id="moduleCount">Showing {modules.length} modules</span>
     </div>
 
-    <!-- Module Cards Grid -->
-    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="modulesGrid">
-      {modules.map(mod => (
+    <!-- Modules Grid (WordPress 2-Column Card Grid) -->
+    <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {modules.map(module => (
         <div 
-          class="module-card-wrapper"
-          data-id={mod.id}
-          data-name={mod.name.toLowerCase()}
-          data-repo={mod.repo.toLowerCase()}
-          data-desc={mod.description.toLowerCase()}
-          data-cat={mod.category}
-          data-compat={mod.compatibility.join(',')}
-          data-stars={mod.stars || 0}
-          data-tier={mod.contentTier || (mod.stars >= 200 ? 2 : 3)}
+          class="module-card-wrapper" 
+          data-id={module.id}
+          data-name={module.name.toLowerCase()}
+          data-desc={module.description.toLowerCase()}
+          data-repo={module.repo.toLowerCase()}
+          data-category={module.category}
+          data-compat={module.compatibility.join(',')}
+          data-stars={module.stars || 0}
+          data-date={module.latestRelease.publishedAt}
         >
-          <ModuleCard module={mod} />
+          <ModuleCard module={module} />
         </div>
       ))}
     </div>
 
-    <!-- Empty State -->
-    <div id="noResults" class="hidden text-center py-20">
-      <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-surface-900 text-slate-400 mb-4 border border-surface-800">
-        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </div>
-      <h3 class="text-base font-bold text-white">No active modules found</h3>
-      <p class="mt-1 text-xs text-slate-400 max-w-sm mx-auto">
-        No modules match your current filter and search query. Try clearing your filters.
-      </p>
+    <!-- No results state -->
+    <div id="noResults" class="hidden text-center py-16 bg-white rounded-lg border border-slate-200 mt-4">
+      <p class="text-slate-600 text-sm font-medium">No modules found matching your criteria.</p>
+      <button id="resetBtn" class="mt-3 text-xs font-semibold text-brand-600 hover:underline">
+        Reset filters
+      </button>
     </div>
-  </section>
-
-  <!-- Client-side Search and Filter Script -->
-  <script is:inline>
-    const searchInput = document.getElementById('searchInput');
-    const modulesGrid = document.getElementById('modulesGrid');
-    const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper'));
-    const visibleCount = document.getElementById('visibleCount');
-    const noResults = document.getElementById('noResults');
-    const sortSelect = document.getElementById('sortSelect');
-    
-    let activeCat = 'all';
-    let activeCompat = 'all';
-    let searchQuery = '';
-
-    function filterModules() {
-      let matches = 0;
-
-      cardWrappers.forEach(card => {
-        const name = card.dataset.name || '';
-        const repo = card.dataset.repo || '';
-        const desc = card.dataset.desc || '';
-        const cat = card.dataset.cat || '';
-        const compat = (card.dataset.compat || '').split(',');
-
-        const matchesSearch = !searchQuery || 
-          name.includes(searchQuery) || 
-          repo.includes(searchQuery) || 
-          desc.includes(searchQuery);
-
-        const matchesCat = activeCat === 'all' || cat === activeCat;
-        const matchesCompat = activeCompat === 'all' || compat.includes(activeCompat);
-
-        if (matchesSearch && matchesCat && matchesCompat) {
-          card.style.display = '';
-          matches++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      if (visibleCount) visibleCount.textContent = matches.toString();
-      if (noResults) noResults.style.display = matches === 0 ? 'block' : 'none';
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value.toLowerCase().trim();
-        filterModules();
-      });
-    }
-
-    // Category button clicks
-    document.querySelectorAll('.cat-filter').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.cat-filter').forEach(b => {
-          b.classList.remove('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
-          b.classList.add('border-surface-800', 'bg-surface-900', 'text-slate-300');
-        });
-        btn.classList.add('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
-        btn.classList.remove('border-surface-800', 'bg-surface-900', 'text-slate-300');
-        activeCat = btn.dataset.cat || 'all';
-        filterModules();
-      });
-    });
-
-    // Compatibility button clicks
-    document.querySelectorAll('.compat-filter').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.compat-filter').forEach(b => {
-          b.classList.remove('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
-          b.classList.add('border-surface-800', 'bg-surface-900', 'text-slate-300');
-        });
-        btn.classList.add('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
-        btn.classList.remove('border-surface-800', 'bg-surface-900', 'text-slate-300');
-        activeCompat = btn.dataset.compat || 'all';
-        filterModules();
-      });
-    });
-
-    // Sort Handler
-    if (sortSelect) {
-      sortSelect.addEventListener('change', () => {
-        const val = sortSelect.value;
-        const sorted = [...cardWrappers].sort((a, b) => {
-          if (val === 'stars') {
-            return (parseInt(b.dataset.stars) || 0) - (parseInt(a.dataset.stars) || 0);
-          } else if (val === 'name') {
-            return (a.dataset.name || '').localeCompare(b.dataset.name || '');
-          } else if (val === 'tier') {
-            return (parseInt(a.dataset.tier) || 3) - (parseInt(b.dataset.tier) || 3);
-          }
-          return 0;
-        });
-        sorted.forEach(card => modulesGrid.appendChild(card));
-      });
-    }
-  </script>
+  </div>
 </BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
+  const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
+  const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement | null;
+  const compatButtons = document.querySelectorAll('.compat-filter');
+  const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper')) as HTMLElement[];
+  const moduleGrid = document.getElementById('moduleGrid');
+  const moduleCount = document.getElementById('moduleCount');
+  const noResults = document.getElementById('noResults');
+  const resetBtn = document.getElementById('resetBtn');
+
+  let currentSearch = '';
+  let currentCategory = 'all';
+  let currentCompat = 'all';
+  let currentSort = 'stars';
+
+  function applyFiltersAndSort() {
+    let visibleCount = 0;
+
+    // Filter
+    cardWrappers.forEach(el => {
+      const name = el.getAttribute('data-name') || '';
+      const desc = el.getAttribute('data-desc') || '';
+      const repo = el.getAttribute('data-repo') || '';
+      const cat = el.getAttribute('data-category') || '';
+      const compat = (el.getAttribute('data-compat') || '').split(',');
+
+      const matchesSearch = !currentSearch || 
+        name.includes(currentSearch) || 
+        desc.includes(currentSearch) || 
+        repo.includes(currentSearch);
+
+      const matchesCategory = currentCategory === 'all' || cat === currentCategory;
+      const matchesCompat = currentCompat === 'all' || compat.includes(currentCompat);
+
+      if (matchesSearch && matchesCategory && matchesCompat) {
+        el.style.display = '';
+        visibleCount++;
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    // Sort visible elements in the DOM
+    const sorted = [...cardWrappers].sort((a, b) => {
+      if (currentSort === 'stars') {
+        const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
+        const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
+        return starsB - starsA;
+      } else if (currentSort === 'name') {
+        const nameA = a.getAttribute('data-name') || '';
+        const nameB = b.getAttribute('data-name') || '';
+        return nameA.localeCompare(nameB);
+      } else if (currentSort === 'recent') {
+        const dateA = new Date(a.getAttribute('data-date') || 0).getTime();
+        const dateB = new Date(b.getAttribute('data-date') || 0).getTime();
+        return dateB - dateA;
+      }
+      return 0;
+    });
+
+    sorted.forEach(el => {
+      if (moduleGrid) moduleGrid.appendChild(el);
+    });
+
+    if (moduleCount) {
+      moduleCount.textContent = `Showing ${visibleCount} modules`;
+    }
+
+    if (noResults) {
+      noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+
+  // Event Listeners
+  searchInput?.addEventListener('input', (e) => {
+    currentSearch = (e.target as HTMLInputElement).value.toLowerCase().trim();
+    applyFiltersAndSort();
+  });
+
+  categorySelect?.addEventListener('change', (e) => {
+    currentCategory = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+  });
+
+  sortSelect?.addEventListener('change', (e) => {
+    currentSort = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+  });
+
+  compatButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      compatButtons.forEach(b => {
+        b.classList.remove('active', 'bg-[#01af9c]', 'text-white');
+        b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      });
+      btn.classList.add('active', 'bg-[#01af9c]', 'text-white');
+      btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      
+      currentCompat = btn.getAttribute('data-compat') || 'all';
+      applyFiltersAndSort();
+    });
+  });
+
+  resetBtn?.addEventListener('click', () => {
+    if (searchInput) searchInput.value = '';
+    if (categorySelect) categorySelect.value = 'all';
+    if (sortSelect) sortSelect.value = 'stars';
+    
+    currentSearch = '';
+    currentCategory = 'all';
+    currentSort = 'stars';
+    currentCompat = 'all';
+
+    compatButtons.forEach((b, idx) => {
+      if (idx === 0) {
+        b.classList.add('active', 'bg-[#01af9c]', 'text-white');
+        b.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      } else {
+        b.classList.remove('active', 'bg-[#01af9c]', 'text-white');
+        b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      }
+    });
+
+    applyFiltersAndSort();
+  });
+</script>

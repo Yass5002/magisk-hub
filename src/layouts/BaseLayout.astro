@@ -32,7 +32,7 @@ const baseWebSiteSchema = {
   '@type': 'WebSite',
   'name': 'Magisk Hub',
   'url': 'https://magiskhub.com',
-  'description': 'The verified directory of active, community-maintained Magisk, KernelSU, and APatch root modules.',
+  'description': 'Directory of active root modules for Magisk, KernelSU, and APatch.',
   'potentialAction': {
     '@type': 'SearchAction',
     'target': 'https://magiskhub.com/?q={search_term_string}',
@@ -42,11 +42,11 @@ const baseWebSiteSchema = {
 ---
 
 <!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth bg-[#f8f9fa]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/magisk-logo.svg" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Canonical URL -->
@@ -58,7 +58,7 @@ const baseWebSiteSchema = {
     <meta name="description" content={description} />
     {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#090d16" />
+    <meta name="theme-color" content="#01af9c" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
@@ -87,7 +87,7 @@ const baseWebSiteSchema = {
       )
     )}
   </head>
-  <body class="min-h-screen flex flex-col bg-surface-950 text-slate-100">
+  <body class="min-h-screen flex flex-col bg-[#f8f9fa] text-slate-800">
     <Navbar />
     
     <main class="flex-1">
