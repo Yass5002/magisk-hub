@@ -1,0 +1,24 @@
+{
+  "id": "unicodefontset-magisk-module",
+  "name": "UnicodeFontSet-magisk-module",
+  "repo": "Losketch/UnicodeFontSet-magisk-module",
+  "category": "customization-ui",
+  "description": "A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 72,
+  "latestRelease": {
+    "tag": "v2.0.0-beta.1",
+    "publishedAt": "2026-08-18T14:54:47Z",
+    "url": "https://github.com/Losketch/UnicodeFontSet-magisk-module/releases/tag/v2.0.0-beta.1",
+    "downloadUrl": "https://github.com/Losketch/UnicodeFontSet-magisk-module/releases/download/v2.0.0-beta.1/UnicodeFontSet-COLRv1-module.zip",
+    "assetName": "UnicodeFontSet-COLRv1-module.zip"
+  },
+  "seo": {
+    "title": "UnicodeFontSet-magisk-module - Active Magisk Module",
+    "description": "A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块"
+  }
+}

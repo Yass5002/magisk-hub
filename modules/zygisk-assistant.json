@@ -1,0 +1,24 @@
+{
+  "id": "zygisk-assistant",
+  "name": "Zygisk-Assistant",
+  "repo": "snake-4/Zygisk-Assistant",
+  "category": "root-management",
+  "description": "A Zygisk module to hide root for KernelSU, Magisk and APatch, designed to work on Android 5.0 and above.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 2614,
+  "latestRelease": {
+    "tag": "v2.1.4",
+    "publishedAt": "2025-02-23T00:18:35Z",
+    "url": "https://github.com/snake-4/Zygisk-Assistant/releases/tag/v2.1.4",
+    "downloadUrl": "https://github.com/snake-4/Zygisk-Assistant/releases/download/v2.1.4/Zygisk-Assistant-v2.1.4-1013f8a-debug.zip",
+    "assetName": "Zygisk-Assistant-v2.1.4-1013f8a-debug.zip"
+  },
+  "seo": {
+    "title": "Zygisk-Assistant - Active Magisk Module",
+    "description": "A Zygisk module to hide root for KernelSU, Magisk and APatch, designed to work on Android 5.0 and above."
+  }
+}

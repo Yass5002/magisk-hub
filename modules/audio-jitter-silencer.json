@@ -1,0 +1,24 @@
+{
+  "id": "audio-jitter-silencer",
+  "name": "audio-jitter-silencer",
+  "repo": "Magisk-Modules-Alt-Repo/audio-jitter-silencer",
+  "category": "system-utilities",
+  "description": "For avoiding foggy sound like (jitter) distortion on all digital audio outputs, this Magisk module disables very large audio jitter generators (w.r.t. battery draining & optimizations, and wireless connectivity).",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 143,
+  "latestRelease": {
+    "tag": "v1.0.11",
+    "publishedAt": "2026-06-21T07:27:05Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-jitter-silencer/releases/tag/v1.0.11",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-jitter-silencer/releases/download/v1.0.11/magisk-module-audio-jitter-silencer-v1.0.11.zip",
+    "assetName": "magisk-module-audio-jitter-silencer-v1.0.11.zip"
+  },
+  "seo": {
+    "title": "audio-jitter-silencer - Active Magisk Module",
+    "description": "For avoiding foggy sound like (jitter) distortion on all digital audio outputs, this Magisk module disables very large audio jitter generators (w.r.t. batt"
+  }
+}

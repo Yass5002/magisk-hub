@@ -1,0 +1,24 @@
+{
+  "id": "fastcharge-next",
+  "name": "Fastcharge-next",
+  "repo": "Dev97633/Fastcharge-next",
+  "category": "performance-kernel",
+  "description": "⚡ Magisk Module to boost charging speed with smart tweaks.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 48,
+  "latestRelease": {
+    "tag": "v2.0.2",
+    "publishedAt": "2026-04-12T11:17:26Z",
+    "url": "https://github.com/Dev97633/Fastcharge-next/releases/tag/v2.0.2",
+    "downloadUrl": "https://github.com/Dev97633/Fastcharge-next/releases/download/v2.0.2/fastcharge-next-v2.0.2.zip",
+    "assetName": "fastcharge-next-v2.0.2.zip"
+  },
+  "seo": {
+    "title": "Fastcharge-next - Active Magisk Module",
+    "description": "⚡ Magisk Module to boost charging speed with smart tweaks."
+  }
+}

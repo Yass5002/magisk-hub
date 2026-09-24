@@ -1,0 +1,24 @@
+{
+  "id": "magnetar",
+  "name": "MAGNETAR",
+  "repo": "Kyliekyler/MAGNETAR",
+  "category": "performance-kernel",
+  "description": "Device Performance Optimizer — Aims To Provide An Optimal Experience At Every Usage Scenario",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 312,
+  "latestRelease": {
+    "tag": "v19.6.0",
+    "publishedAt": "2025-08-30T02:48:34Z",
+    "url": "https://github.com/Kyliekyler/MAGNETAR/releases/tag/v19.6.0",
+    "downloadUrl": "https://github.com/Kyliekyler/MAGNETAR/releases/download/v19.6.0/MAGNETAR.19.6.0.YANKEE.zip",
+    "assetName": "MAGNETAR.19.6.0.YANKEE.zip"
+  },
+  "seo": {
+    "title": "MAGNETAR - Active Magisk Module",
+    "description": "Device Performance Optimizer — Aims To Provide An Optimal Experience At Every Usage Scenario"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "magisk-swapspace",
+  "name": "magisk-swapspace",
+  "repo": "chkndrp/magisk-swapspace",
+  "category": "performance-kernel",
+  "description": "This module allows for creating a persistent swap space on android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 47,
+  "latestRelease": {
+    "tag": "2.4",
+    "publishedAt": "2025-11-01T22:34:15Z",
+    "url": "https://github.com/chkndrp/magisk-swapspace/releases/tag/2.4",
+    "downloadUrl": "https://github.com/chkndrp/magisk-swapspace/releases/download/2.4/magiskswapspace.zip",
+    "assetName": "magiskswapspace.zip"
+  },
+  "seo": {
+    "title": "magisk-swapspace - Active Magisk Module",
+    "description": "This module allows for creating a persistent swap space on android"
+  }
+}

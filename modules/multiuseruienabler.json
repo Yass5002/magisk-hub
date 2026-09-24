@@ -1,0 +1,24 @@
+{
+  "id": "multiuseruienabler",
+  "name": "multiuseruienabler",
+  "repo": "InsertX2k/multiuseruienabler",
+  "category": "system-environment",
+  "description": "multiuseruienabler",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 8,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2025-02-19T21:15:43Z",
+    "url": "https://github.com/InsertX2k/multiuseruienabler/releases/tag/v1.0",
+    "downloadUrl": "https://github.com/InsertX2k/multiuseruienabler/releases/download/v1.0/multiuseruienabler.zip",
+    "assetName": "multiuseruienabler.zip"
+  },
+  "seo": {
+    "title": "multiuseruienabler - Active Magisk Module",
+    "description": "multiuseruienabler"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "sam",
+  "name": "SAM",
+  "repo": "5MayRain/SAM",
+  "category": "networking-proxies",
+  "description": "SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/sam.png",
+  "stars": 151,
+  "latestRelease": {
+    "tag": "20260907",
+    "publishedAt": "2026-09-07T11:48:00Z",
+    "url": "https://github.com/5MayRain/SAM/releases/tag/20260907",
+    "downloadUrl": "https://github.com/5MayRain/SAM/releases/download/20260907/SAM_20260907_release.zip",
+    "assetName": "SAM_20260907_release.zip"
+  },
+  "seo": {
+    "title": "SAM - Active Magisk Module",
+    "description": "SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU"
+  }
+}

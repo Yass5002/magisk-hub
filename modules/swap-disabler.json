@@ -1,0 +1,24 @@
+{
+  "id": "swap-disabler",
+  "name": "Swap-Disabler",
+  "repo": "rompelhd/Swap-Disabler",
+  "category": "performance-kernel",
+  "description": "A module designed to disable swap at system startup. Is particularly beneficial for devices equipped with a substantial amount of RAM, where the use of swap is unnecessary and may even hinder performance.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 25,
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2025-01-18T21:09:51Z",
+    "url": "https://github.com/rompelhd/Swap-Disabler/releases/tag/v1.0.0",
+    "downloadUrl": "https://github.com/rompelhd/Swap-Disabler/releases/download/v1.0.0/Swap-Disabler-v1.0.0.zip",
+    "assetName": "Swap-Disabler-v1.0.0.zip"
+  },
+  "seo": {
+    "title": "Swap-Disabler - Active Magisk Module",
+    "description": "A module designed to disable swap at system startup. Is particularly beneficial for devices equipped with a substantial amount of RAM, where the use of swa"
+  }
+}

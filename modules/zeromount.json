@@ -1,0 +1,26 @@
+{
+  "id": "zeromount",
+  "name": "zeromount",
+  "repo": "Enginex0/zeromount",
+  "category": "root-management",
+  "description": "Mountless module loading for rooted Android. Kernel-level VFS path redirection — zero mount table pollution. SUSFS integration, WebUI, bootloop guard, and strategy fallback.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 131,
+  "latestRelease": {
+    "tag": "v2.0.216-dev",
+    "publishedAt": "2026-04-15T02:44:54Z",
+    "url": "https://github.com/Enginex0/zeromount/releases/tag/v2.0.216-dev",
+    "downloadUrl": "https://github.com/Enginex0/zeromount/releases/download/v2.0.216-dev/zeromount-v2.0.216-dev.zip",
+    "assetName": "zeromount-v2.0.216-dev.zip"
+  },
+  "seo": {
+    "title": "zeromount - Active Magisk Module",
+    "description": "Mountless module loading for rooted Android. Kernel-level VFS path redirection — zero mount table pollution. SUSFS integration, WebUI, bootloop guard, and "
+  }
+}

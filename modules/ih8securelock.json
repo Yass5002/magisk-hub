@@ -1,0 +1,25 @@
+{
+  "id": "ih8securelock",
+  "name": "ih8SecureLock",
+  "repo": "j-hc/ih8SecureLock",
+  "category": "security-certificates",
+  "description": "Prevent apps from blocking and listening to your screenshots with Zygisk",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 190,
+  "latestRelease": {
+    "tag": "v10",
+    "publishedAt": "2026-09-24T12:28:10Z",
+    "url": "https://github.com/j-hc/ih8SecureLock/releases/tag/v10",
+    "downloadUrl": "https://github.com/j-hc/ih8SecureLock/releases/download/v10/ih8SecureLock-v10.zip",
+    "assetName": "ih8SecureLock-v10.zip"
+  },
+  "seo": {
+    "title": "ih8SecureLock - Active Magisk Module",
+    "description": "Prevent apps from blocking and listening to your screenshots with Zygisk"
+  }
+}

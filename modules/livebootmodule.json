@@ -1,0 +1,25 @@
+{
+  "id": "livebootmodule",
+  "name": "livebootmodule",
+  "repo": "symbuzzer/livebootmodule",
+  "category": "system-environment",
+  "description": "A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 450,
+  "latestRelease": {
+    "tag": "v6.0.1",
+    "publishedAt": "2026-09-03T09:57:00Z",
+    "url": "https://github.com/symbuzzer/livebootmodule/releases/tag/v6.0.1",
+    "downloadUrl": "https://github.com/symbuzzer/livebootmodule/releases/download/v6.0.1/livebootmodule.zip",
+    "assetName": "livebootmodule.zip"
+  },
+  "seo": {
+    "title": "livebootmodule - Active Magisk Module",
+    "description": "A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices"
+  }
+}

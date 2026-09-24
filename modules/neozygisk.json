@@ -1,0 +1,26 @@
+{
+  "id": "neozygisk",
+  "name": "NeoZygisk",
+  "repo": "JingMatrix/NeoZygisk",
+  "category": "root-management",
+  "description": "Zygote injection with ptrace",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 2333,
+  "latestRelease": {
+    "tag": "v2.4",
+    "publishedAt": "2026-08-08T19:03:47Z",
+    "url": "https://github.com/JingMatrix/NeoZygisk/releases/tag/v2.4",
+    "downloadUrl": "https://github.com/JingMatrix/NeoZygisk/releases/download/v2.4/NeoZygisk-v2.4-289-release.zip",
+    "assetName": "NeoZygisk-v2.4-289-release.zip"
+  },
+  "seo": {
+    "title": "NeoZygisk - Active Magisk Module",
+    "description": "Zygote injection with ptrace"
+  }
+}

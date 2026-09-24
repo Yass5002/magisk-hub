@@ -1,0 +1,24 @@
+{
+  "id": "hide-navbar",
+  "name": "Hide-Navbar",
+  "repo": "DanGLVK/Hide-Navbar",
+  "category": "customization-ui",
+  "description": "Hide Navbar",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 808,
+  "latestRelease": {
+    "tag": "v30.0",
+    "publishedAt": "2026-06-23T04:08:24Z",
+    "url": "https://github.com/DanGLVK/Hide-Navbar/releases/tag/v30.0",
+    "downloadUrl": "https://github.com/DanGLVK/Hide-Navbar/releases/download/v30.0/HideNavBar.zip",
+    "assetName": "HideNavBar.zip"
+  },
+  "seo": {
+    "title": "Hide-Navbar - Active Magisk Module",
+    "description": "Hide Navbar"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "py2droid",
+  "name": "py2droid",
+  "repo": "Mrakorez/py2droid",
+  "category": "development-instrumentation",
+  "description": "Magisk/KernelSU/APatch module to install Python 3 on Android.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 73,
+  "latestRelease": {
+    "tag": "v0.3.6",
+    "publishedAt": "2026-08-06T11:55:04Z",
+    "url": "https://github.com/Mrakorez/py2droid/releases/tag/v0.3.6",
+    "downloadUrl": "https://github.com/Mrakorez/py2droid/releases/download/v0.3.6/py2droid-v0.3.6.zip",
+    "assetName": "py2droid-v0.3.6.zip"
+  },
+  "seo": {
+    "title": "py2droid - Active Magisk Module",
+    "description": "Magisk/KernelSU/APatch module to install Python 3 on Android."
+  }
+}

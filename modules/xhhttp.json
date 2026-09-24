@@ -1,0 +1,24 @@
+{
+  "id": "xhhttp",
+  "name": "xhhttp",
+  "repo": "Magisk-Modules-Alt-Repo/xhhttp",
+  "category": "system-utilities",
+  "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 29,
+  "latestRelease": {
+    "tag": "v0.25.3",
+    "publishedAt": "2026-02-16T09:00:51Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/tag/v0.25.3",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
+    "assetName": "xh-magisk-module.zip"
+  },
+  "seo": {
+    "title": "xhhttp - Active Magisk Module",
+    "description": "Friendly and fast tool for sending HTTP requests as Magisk module"
+  }
+}

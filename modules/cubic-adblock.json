@@ -1,0 +1,24 @@
+{
+  "id": "cubic-adblock",
+  "name": "Cubic-AdBlock",
+  "repo": "Vaz15k/Cubic-AdBlock",
+  "category": "networking-proxies",
+  "description": "AdBlock Based in /etc/hosts",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/cubic-adblock.png",
+  "stars": 79,
+  "latestRelease": {
+    "tag": "v3.19",
+    "publishedAt": "2026-09-21T17:21:47Z",
+    "url": "https://github.com/Vaz15k/Cubic-AdBlock/releases/tag/v3.19",
+    "downloadUrl": "https://github.com/Vaz15k/Cubic-AdBlock/releases/download/v3.19/Cubic-AdBlock.zip",
+    "assetName": "Cubic-AdBlock.zip"
+  },
+  "seo": {
+    "title": "Cubic-AdBlock - Active Magisk Module",
+    "description": "AdBlock Based in /etc/hosts"
+  }
+}

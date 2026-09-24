@@ -1,0 +1,24 @@
+{
+  "id": "encore",
+  "name": "encore",
+  "repo": "Rem01Gaming/encore",
+  "category": "performance-kernel",
+  "description": "Special performance module for your device",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/encore.png",
+  "stars": 511,
+  "latestRelease": {
+    "tag": "5.2.1",
+    "publishedAt": "2026-07-10T03:42:06Z",
+    "url": "https://github.com/Rem01Gaming/encore/releases/tag/5.2.1",
+    "downloadUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2.1/encore-5.2.1-1533-361ab0e-main.zip",
+    "assetName": "encore-5.2.1-1533-361ab0e-main.zip"
+  },
+  "seo": {
+    "title": "encore - Active Magisk Module",
+    "description": "Special performance module for your device"
+  }
+}

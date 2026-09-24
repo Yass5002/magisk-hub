@@ -1,0 +1,24 @@
+{
+  "id": "re-malwack",
+  "name": "Re-Malwack",
+  "repo": "ZG089/Re-Malwack",
+  "category": "networking-proxies",
+  "description": "A fully-fledged adblock root/no-root suite. Contains all your needs ✨",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/re-malwack.png",
+  "stars": 451,
+  "latestRelease": {
+    "tag": "v8.2",
+    "publishedAt": "2026-04-01T18:03:37Z",
+    "url": "https://github.com/ZG089/Re-Malwack/releases/tag/v8.2",
+    "downloadUrl": "https://github.com/ZG089/Re-Malwack/releases/download/v8.2/Re-Malwack_v8.2.zip",
+    "assetName": "Re-Malwack_v8.2.zip"
+  },
+  "seo": {
+    "title": "Re-Malwack - Active Magisk Module",
+    "description": "A fully-fledged adblock root/no-root suite. Contains all your needs ✨"
+  }
+}

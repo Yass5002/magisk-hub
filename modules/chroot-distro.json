@@ -1,0 +1,24 @@
+{
+  "id": "chroot-distro",
+  "name": "chroot-distro",
+  "repo": "Magisk-Modules-Alt-Repo/chroot-distro",
+  "category": "development-instrumentation",
+  "description": "Install Gnu/Linux distributions on Android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 492,
+  "latestRelease": {
+    "tag": "v2.1.0",
+    "publishedAt": "2025-06-11T08:28:40Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/chroot-distro/releases/tag/v2.1.0",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/chroot-distro/releases/download/v2.1.0/chroot-distro.zip",
+    "assetName": "chroot-distro.zip"
+  },
+  "seo": {
+    "title": "chroot-distro - Active Magisk Module",
+    "description": "Install Gnu/Linux distributions on Android"
+  }
+}

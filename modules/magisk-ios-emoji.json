@@ -1,0 +1,24 @@
+{
+  "id": "magisk-ios-emoji",
+  "name": "Magisk-iOS-Emoji",
+  "repo": "Keinta15/Magisk-iOS-Emoji",
+  "category": "customization-ui",
+  "description": "Systemlessly replaces emoji font with iOS Emoji",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 391,
+  "latestRelease": {
+    "tag": "v26.4",
+    "publishedAt": "2026-06-25T18:46:17Z",
+    "url": "https://github.com/Keinta15/Magisk-iOS-Emoji/releases/tag/v26.4",
+    "downloadUrl": "https://github.com/Keinta15/Magisk-iOS-Emoji/releases/download/v26.4/Magisk_iOS_Emoji_26.4.zip",
+    "assetName": "Magisk_iOS_Emoji_26.4.zip"
+  },
+  "seo": {
+    "title": "Magisk-iOS-Emoji - Active Magisk Module",
+    "description": "Systemlessly replaces emoji font with iOS Emoji"
+  }
+}

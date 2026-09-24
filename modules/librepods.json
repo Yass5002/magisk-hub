@@ -1,0 +1,25 @@
+{
+  "id": "librepods",
+  "name": "librepods",
+  "repo": "librepods-org/librepods",
+  "category": "system-utilities",
+  "description": "AirPods liberated from Apple's ecosystem.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 30011,
+  "latestRelease": {
+    "tag": "v1.0.0-rc1",
+    "publishedAt": "2026-06-20T15:03:17Z",
+    "url": "https://github.com/librepods-org/librepods/releases/tag/v1.0.0-rc1",
+    "downloadUrl": "https://github.com/librepods-org/librepods/releases/download/v1.0.0-rc1/LibrePods-FOSS-v1.0.0-rc1-release.zip",
+    "assetName": "LibrePods-FOSS-v1.0.0-rc1-release.zip"
+  },
+  "seo": {
+    "title": "librepods - Active Magisk Module",
+    "description": "AirPods liberated from Apple's ecosystem."
+  }
+}

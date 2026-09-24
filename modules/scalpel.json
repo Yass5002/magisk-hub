@@ -1,0 +1,25 @@
+{
+  "id": "scalpel",
+  "name": "Scalpel",
+  "repo": "Enginex0/Scalpel",
+  "category": "system-utilities",
+  "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 46,
+  "latestRelease": {
+    "tag": "v0.1.27",
+    "publishedAt": "2026-03-23T03:27:19Z",
+    "url": "https://github.com/Enginex0/Scalpel/releases/tag/v0.1.27",
+    "downloadUrl": "https://github.com/Enginex0/Scalpel/releases/download/v0.1.27/scalpel-v0.1.27-debug.zip",
+    "assetName": "scalpel-v0.1.27-debug.zip"
+  },
+  "seo": {
+    "title": "Scalpel - Active Magisk Module",
+    "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dsp-audiofix",
+  "name": "DSP-AudioFix",
+  "repo": "ahmed-alnassif/DSP-AudioFix",
+  "category": "system-utilities",
+  "description": "DSP-AudioFix active root module.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 6,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2026-02-28T20:23:05Z",
+    "url": "https://github.com/ahmed-alnassif/DSP-AudioFix/releases/tag/v1.0",
+    "downloadUrl": "https://github.com/ahmed-alnassif/DSP-AudioFix/releases/download/v1.0/DSP-AudioFix.zip",
+    "assetName": "DSP-AudioFix.zip"
+  },
+  "seo": {
+    "title": "DSP-AudioFix - Active Magisk Module",
+    "description": "DSP-AudioFix active root module."
+  }
+}

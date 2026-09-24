@@ -1,0 +1,25 @@
+{
+  "id": "forcedns-magisk-kernelsu",
+  "name": "forcedns_Magisk-kernelsu",
+  "repo": "LuferOS/forcedns_Magisk-kernelsu",
+  "category": "networking-proxies",
+  "description": "Fuerza todo el tráfico DNS estándar (puerto 53) a usar 1.1.1.1 mediante iptables. Sobrescribe DNS de red. Compatible con Magisk/KernelSU.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 14,
+  "latestRelease": {
+    "tag": "3.0",
+    "publishedAt": "2026-09-14T19:48:30Z",
+    "url": "https://github.com/LuferOS/forcedns_Magisk-kernelsu/releases/tag/3.0",
+    "downloadUrl": "https://github.com/LuferOS/forcedns_Magisk-kernelsu/releases/download/3.0/forcedns_3.0.zip",
+    "assetName": "forcedns_3.0.zip"
+  },
+  "seo": {
+    "title": "forcedns_Magisk-kernelsu - Active Magisk Module",
+    "description": "Fuerza todo el tráfico DNS estándar (puerto 53) a usar 1.1.1.1 mediante iptables. Sobrescribe DNS de red. Compatible con Magisk/KernelSU."
+  }
+}

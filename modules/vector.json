@@ -1,0 +1,24 @@
+{
+  "id": "vector",
+  "name": "Vector",
+  "repo": "JingMatrix/Vector",
+  "category": "root-management",
+  "description": "Modern Xposed Framework",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 12520,
+  "latestRelease": {
+    "tag": "v2.2",
+    "publishedAt": "2026-08-04T09:38:29Z",
+    "url": "https://github.com/JingMatrix/Vector/releases/tag/v2.2",
+    "downloadUrl": "https://github.com/JingMatrix/Vector/releases/download/v2.2/Vector-v2.2-3080-Release.zip",
+    "assetName": "Vector-v2.2-3080-Release.zip"
+  },
+  "seo": {
+    "title": "Vector - Active Magisk Module",
+    "description": "Modern Xposed Framework"
+  }
+}

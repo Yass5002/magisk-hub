@@ -1,0 +1,25 @@
+{
+  "id": "teesimulator",
+  "name": "TEESimulator",
+  "repo": "JingMatrix/TEESimulator",
+  "category": "root-management",
+  "description": "Software simulation for Android hardware-backed key pairs with key attestation",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 2476,
+  "latestRelease": {
+    "tag": "v4.0",
+    "publishedAt": "2026-08-11T09:02:26Z",
+    "url": "https://github.com/JingMatrix/TEESimulator/releases/tag/v4.0",
+    "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Debug.zip",
+    "assetName": "TEESimulator-v4.0-34-Debug.zip"
+  },
+  "seo": {
+    "title": "TEESimulator - Active Magisk Module",
+    "description": "Software simulation for Android hardware-backed key pairs with key attestation"
+  }
+}

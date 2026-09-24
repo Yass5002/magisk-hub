@@ -1,0 +1,24 @@
+{
+  "id": "ttf-twemoji",
+  "name": "ttf-twemoji",
+  "repo": "Magisk-Modules-Alt-Repo/ttf-twemoji",
+  "category": "system-utilities",
+  "description": "Changes your system emoji to Twemoji!",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 26,
+  "latestRelease": {
+    "tag": "v17",
+    "publishedAt": "2026-03-22T04:52:18Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/releases/tag/v17",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/releases/download/v17/ttf-twemoji-1702.zip",
+    "assetName": "ttf-twemoji-1702.zip"
+  },
+  "seo": {
+    "title": "ttf-twemoji - Active Magisk Module",
+    "description": "Changes your system emoji to Twemoji!"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "onyxzygisk",
+  "name": "OnyxZygisk",
+  "repo": "OnyxZygisk/OnyxZygisk",
+  "category": "root-management",
+  "description": "Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 108,
+  "latestRelease": {
+    "tag": "v1.09",
+    "publishedAt": "2026-09-21T13:45:06Z",
+    "url": "https://github.com/OnyxZygisk/OnyxZygisk/releases/tag/v1.09",
+    "downloadUrl": "https://github.com/OnyxZygisk/OnyxZygisk/releases/download/v1.09/OnyxZygisk-v1.09-399-820b68b-release.zip",
+    "assetName": "OnyxZygisk-v1.09-399-820b68b-release.zip"
+  },
+  "seo": {
+    "title": "OnyxZygisk - Active Magisk Module",
+    "description": "Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI"
+  }
+}

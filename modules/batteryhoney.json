@@ -1,0 +1,24 @@
+{
+  "id": "batteryhoney",
+  "name": "BatteryHoney",
+  "repo": "kaminarich/BatteryHoney",
+  "category": "performance-kernel",
+  "description": "A Magisk module to Optimize Battery Saving without interrupting Performance",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 29,
+  "latestRelease": {
+    "tag": "batteryhoney7.2",
+    "publishedAt": "2026-01-24T07:25:35Z",
+    "url": "https://github.com/kaminarich/BatteryHoney/releases/tag/batteryhoney7.2",
+    "downloadUrl": "https://github.com/kaminarich/BatteryHoney/releases/download/batteryhoney7.2/Battery.Honey.7.2.Awaken.zip",
+    "assetName": "Battery.Honey.7.2.Awaken.zip"
+  },
+  "seo": {
+    "title": "BatteryHoney - Active Magisk Module",
+    "description": "A Magisk module to Optimize Battery Saving without interrupting Performance"
+  }
+}

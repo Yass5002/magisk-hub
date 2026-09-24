@@ -1,0 +1,25 @@
+{
+  "id": "basiccleaner",
+  "name": "BasicCleaner",
+  "repo": "WeirdMidas/BasicCleaner",
+  "category": "system-utilities",
+  "description": "A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 20,
+  "latestRelease": {
+    "tag": "6000100",
+    "publishedAt": "2025-09-15T00:52:28Z",
+    "url": "https://github.com/WeirdMidas/BasicCleaner/releases/tag/6000100",
+    "downloadUrl": "https://github.com/WeirdMidas/BasicCleaner/releases/download/6000100/Basic.Cleaner.zip",
+    "assetName": "Basic.Cleaner.zip"
+  },
+  "seo": {
+    "title": "BasicCleaner - Active Magisk Module",
+    "description": "A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days."
+  }
+}

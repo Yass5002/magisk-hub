@@ -1,0 +1,24 @@
+{
+  "id": "ezme-dex-space",
+  "name": "ezme-dex-space",
+  "repo": "Magisk-Modules-Alt-Repo/ezme-dex-space",
+  "category": "system-utilities",
+  "description": "Changes how Android's dex2oat compiles packages to save space, rather than focus on speed",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 10,
+  "latestRelease": {
+    "tag": "v1",
+    "publishedAt": "2025-07-09T01:11:05Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/ezme-dex-space/releases/tag/v1",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/ezme-dex-space/releases/download/v1/ezme-dex-space.zip",
+    "assetName": "ezme-dex-space.zip"
+  },
+  "seo": {
+    "title": "ezme-dex-space - Active Magisk Module",
+    "description": "Changes how Android's dex2oat compiles packages to save space, rather than focus on speed"
+  }
+}

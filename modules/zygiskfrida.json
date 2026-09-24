@@ -1,0 +1,25 @@
+{
+  "id": "zygiskfrida",
+  "name": "ZygiskFrida",
+  "repo": "lico-n/ZygiskFrida",
+  "category": "development-instrumentation",
+  "description": "Injects frida gadget using zygisk to bypass anti-tamper checks.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 1087,
+  "latestRelease": {
+    "tag": "v1.9.0",
+    "publishedAt": "2025-10-18T16:37:09Z",
+    "url": "https://github.com/lico-n/ZygiskFrida/releases/tag/v1.9.0",
+    "downloadUrl": "https://github.com/lico-n/ZygiskFrida/releases/download/v1.9.0/ZygiskFrida-v1.9.0-release.zip",
+    "assetName": "ZygiskFrida-v1.9.0-release.zip"
+  },
+  "seo": {
+    "title": "ZygiskFrida - Active Magisk Module",
+    "description": "Injects frida gadget using zygisk to bypass anti-tamper checks."
+  }
+}

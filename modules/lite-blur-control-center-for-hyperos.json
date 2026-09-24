@@ -1,0 +1,24 @@
+{
+  "id": "lite-blur-control-center-for-hyperos",
+  "name": "Lite-Blur-Control-Center-for-HyperOS",
+  "repo": "fakerieh/Lite-Blur-Control-Center-for-HyperOS",
+  "category": "customization-ui",
+  "description": "Control Center Blur for MIUI & HyperOS but LIGHTER is a modification designed to bring back the blur on device that doesn't have blur effect (frosted glass) effect to the Control Center and Notification Shade — without sacrificing performance.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 20,
+  "latestRelease": {
+    "tag": "RELEASE-16-MAY-2026",
+    "publishedAt": "2026-05-16T09:35:22Z",
+    "url": "https://github.com/fakerieh/Lite-Blur-Control-Center-for-HyperOS/releases/tag/RELEASE-16-MAY-2026",
+    "downloadUrl": "https://github.com/fakerieh/Lite-Blur-Control-Center-for-HyperOS/releases/download/RELEASE-16-MAY-2026/Lite.Blur.HyperOS.3.1.-.Animation.zip",
+    "assetName": "Lite.Blur.HyperOS.3.1.-.Animation.zip"
+  },
+  "seo": {
+    "title": "Lite-Blur-Control-Center-for-HyperOS - Active Magisk Module",
+    "description": "Control Center Blur for MIUI & HyperOS but LIGHTER is a modification designed to bring back the blur on device that doesn't have blur effect (frosted glass"
+  }
+}

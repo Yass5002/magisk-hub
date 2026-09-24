@@ -1,0 +1,24 @@
+{
+  "id": "pixelify-next",
+  "name": "Pixelify-Next",
+  "repo": "BasGame1/Pixelify-Next",
+  "category": "system-environment",
+  "description": "Magisk /KSU module to enables pixel exclusive features up to android 17",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/pixelify-next.png",
+  "stars": 322,
+  "latestRelease": {
+    "tag": "v7-0-BETA",
+    "publishedAt": "2026-08-20T15:43:27Z",
+    "url": "https://github.com/BasGame1/Pixelify-Next/releases/tag/v7-0-BETA",
+    "downloadUrl": "https://github.com/BasGame1/Pixelify-Next/releases/download/v7-0-BETA/PixelifyNext-BETA-v7.0.zip",
+    "assetName": "PixelifyNext-BETA-v7.0.zip"
+  },
+  "seo": {
+    "title": "Pixelify-Next - Active Magisk Module",
+    "description": "Magisk /KSU module to enables pixel exclusive features up to android 17"
+  }
+}

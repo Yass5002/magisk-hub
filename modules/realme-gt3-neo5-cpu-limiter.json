@@ -1,0 +1,25 @@
+{
+  "id": "realme-gt3-neo5-cpu-limiter",
+  "name": "Realme-GT3-neo5-CPU-limiter",
+  "repo": "Quantom2/Realme-GT3-neo5-CPU-limiter",
+  "category": "performance-kernel",
+  "description": "A Magisk/KSU bazed module to slow down your CPU to make your screen time better. Highly customizable.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 6,
+  "latestRelease": {
+    "tag": "1.4",
+    "publishedAt": "2025-08-26T08:27:48Z",
+    "url": "https://github.com/Quantom2/Realme-GT3-neo5-CPU-limiter/releases/tag/1.4",
+    "downloadUrl": "https://github.com/Quantom2/Realme-GT3-neo5-CPU-limiter/releases/download/1.4/Realme-GT3-neo5-CPU-limiter_1.4.zip",
+    "assetName": "Realme-GT3-neo5-CPU-limiter_1.4.zip"
+  },
+  "seo": {
+    "title": "Realme-GT3-neo5-CPU-limiter - Active Magisk Module",
+    "description": "A Magisk/KSU bazed module to slow down your CPU to make your screen time better. Highly customizable."
+  }
+}

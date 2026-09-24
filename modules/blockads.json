@@ -1,0 +1,25 @@
+{
+  "id": "blockads",
+  "name": "BlockAds",
+  "repo": "pantsufan/BlockAds",
+  "category": "networking-proxies",
+  "description": "Magisk module to block ads on android",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/blockads.png",
+  "stars": 214,
+  "latestRelease": {
+    "tag": "v2.71",
+    "publishedAt": "2026-09-15T13:14:00Z",
+    "url": "https://github.com/pantsufan/BlockAds/releases/tag/v2.71",
+    "downloadUrl": "https://github.com/pantsufan/BlockAds/releases/download/v2.71/BlockAds-v2.71.zip",
+    "assetName": "BlockAds-v2.71.zip"
+  },
+  "seo": {
+    "title": "BlockAds - Active Magisk Module",
+    "description": "Magisk module to block ads on android"
+  }
+}

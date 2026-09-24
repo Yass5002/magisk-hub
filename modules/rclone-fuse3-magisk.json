@@ -1,0 +1,24 @@
+{
+  "id": "rclone-fuse3-magisk",
+  "name": "rclone-fuse3-magisk",
+  "repo": "NewFuture/rclone-fuse3-magisk",
+  "category": "system-utilities",
+  "description": "magisk rclone module (with libfuse3)",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 70,
+  "latestRelease": {
+    "tag": "v1.75.1",
+    "publishedAt": "2026-09-05T14:27:05Z",
+    "url": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/tag/v1.75.1",
+    "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.75.1/magisk-rclone_arm64-v8a.zip",
+    "assetName": "magisk-rclone_arm64-v8a.zip"
+  },
+  "seo": {
+    "title": "rclone-fuse3-magisk - Active Magisk Module",
+    "description": "magisk rclone module (with libfuse3)"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "magisk-ad-blocking-module",
+  "name": "Magisk-Ad-Blocking-Module",
+  "repo": "pantsufan/Magisk-Ad-Blocking-Module",
+  "category": "networking-proxies",
+  "description": "Magisk module to block ads on android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/magisk-ad-blocking-module.png",
+  "stars": 568,
+  "latestRelease": {
+    "tag": "v3.80",
+    "publishedAt": "2026-09-15T13:15:44Z",
+    "url": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/tag/v3.80",
+    "downloadUrl": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/download/v3.80/BlockAds-v3.80.zip",
+    "assetName": "BlockAds-v3.80.zip"
+  },
+  "seo": {
+    "title": "Magisk-Ad-Blocking-Module - Active Magisk Module",
+    "description": "Magisk module to block ads on android"
+  }
+}

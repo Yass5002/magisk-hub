@@ -1,0 +1,25 @@
+{
+  "id": "vpnhide",
+  "name": "vpnhide",
+  "repo": "okhsunrog/vpnhide",
+  "category": "networking-proxies",
+  "description": "Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/vpnhide.png",
+  "stars": 568,
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2026-09-17T16:29:23Z",
+    "url": "https://github.com/okhsunrog/vpnhide/releases/tag/v1.3.0",
+    "downloadUrl": "https://github.com/okhsunrog/vpnhide/releases/download/v1.3.0/vpnhide-zygisk.zip",
+    "assetName": "vpnhide-zygisk.zip"
+  },
+  "seo": {
+    "title": "vpnhide - Active Magisk Module",
+    "description": "Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)"
+  }
+}

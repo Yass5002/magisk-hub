@@ -1,0 +1,24 @@
+{
+  "id": "knoxpatch",
+  "name": "KnoxPatch",
+  "repo": "salvogiangri/KnoxPatch",
+  "category": "system-environment",
+  "description": "LSPosed module to get Samsung apps/features working again in your rooted Galaxy device.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/knoxpatch.png",
+  "stars": 1517,
+  "latestRelease": {
+    "tag": "v0.8.3",
+    "publishedAt": "2026-06-24T18:40:29Z",
+    "url": "https://github.com/salvogiangri/KnoxPatch/releases/tag/v0.8.3",
+    "downloadUrl": "https://github.com/salvogiangri/KnoxPatch/releases/download/v0.8.3/KnoxPatch-Enhancer-v0.4.zip",
+    "assetName": "KnoxPatch-Enhancer-v0.4.zip"
+  },
+  "seo": {
+    "title": "KnoxPatch - Active Magisk Module",
+    "description": "LSPosed module to get Samsung apps/features working again in your rooted Galaxy device."
+  }
+}

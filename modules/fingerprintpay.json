@@ -1,0 +1,24 @@
+{
+  "id": "fingerprintpay",
+  "name": "FingerprintPay",
+  "repo": "eritpchy/FingerprintPay",
+  "category": "customization-ui",
+  "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 4510,
+  "latestRelease": {
+    "tag": "6.1.0-ci",
+    "publishedAt": "2026-03-06T17:18:43Z",
+    "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/6.1.0-ci",
+    "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/6.1.0-ci/zygisk-module-xfingerprint-pay-taobao-v6.1.0-release.zip",
+    "assetName": "zygisk-module-xfingerprint-pay-taobao-v6.1.0-release.zip"
+  },
+  "seo": {
+    "title": "FingerprintPay - Active Magisk Module",
+    "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付"
+  }
+}

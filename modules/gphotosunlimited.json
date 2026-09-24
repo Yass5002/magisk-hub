@@ -1,0 +1,25 @@
+{
+  "id": "gphotosunlimited",
+  "name": "GPhotosUnlimited",
+  "repo": "Rev4N1/GPhotosUnlimited",
+  "category": "customization-ui",
+  "description": "Unlimited Google Photos Magisk Module works with Zygisk",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 378,
+  "latestRelease": {
+    "tag": "v5",
+    "publishedAt": "2026-09-17T10:23:30Z",
+    "url": "https://github.com/Rev4N1/GPhotosUnlimited/releases/tag/v5",
+    "downloadUrl": "https://github.com/Rev4N1/GPhotosUnlimited/releases/download/v5/GPhotosUnlimited-v5.zip",
+    "assetName": "GPhotosUnlimited-v5.zip"
+  },
+  "seo": {
+    "title": "GPhotosUnlimited - Active Magisk Module",
+    "description": "Unlimited Google Photos Magisk Module works with Zygisk"
+  }
+}

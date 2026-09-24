@@ -1,0 +1,25 @@
+{
+  "id": "tcp-optimiser-module",
+  "name": "TCP_Optimiser_Module",
+  "repo": "fatalcoder524/TCP_Optimiser_Module",
+  "category": "networking-proxies",
+  "description": "A Magisk/KernelSU module to change tcp congestion algorithm based on current active internet type and some network enhancements.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 152,
+  "latestRelease": {
+    "tag": "v2.5",
+    "publishedAt": "2026-07-01T06:22:38Z",
+    "url": "https://github.com/fatalcoder524/TCP_Optimiser_Module/releases/tag/v2.5",
+    "downloadUrl": "https://github.com/fatalcoder524/TCP_Optimiser_Module/releases/download/v2.5/TCP_Optimiser-2.5-17.zip",
+    "assetName": "TCP_Optimiser-2.5-17.zip"
+  },
+  "seo": {
+    "title": "TCP_Optimiser_Module - Active Magisk Module",
+    "description": "A Magisk/KernelSU module to change tcp congestion algorithm based on current active internet type and some network enhancements."
+  }
+}

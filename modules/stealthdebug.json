@@ -1,0 +1,24 @@
+{
+  "id": "stealthdebug",
+  "name": "StealthDebug",
+  "repo": "sp11xy/StealthDebug",
+  "category": "security-certificates",
+  "description": "Magisk module to hide USB debugging properties",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 21,
+  "latestRelease": {
+    "tag": "spoofing",
+    "publishedAt": "2025-07-21T12:58:06Z",
+    "url": "https://github.com/sp11xy/StealthDebug/releases/tag/spoofing",
+    "downloadUrl": "https://github.com/sp11xy/StealthDebug/releases/download/spoofing/StealthDebug.zip",
+    "assetName": "StealthDebug.zip"
+  },
+  "seo": {
+    "title": "StealthDebug - Active Magisk Module",
+    "description": "Magisk module to hide USB debugging properties"
+  }
+}

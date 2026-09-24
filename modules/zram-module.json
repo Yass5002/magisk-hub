@@ -1,0 +1,25 @@
+{
+  "id": "zram-module",
+  "name": "ZRAM-Module",
+  "repo": "FurLC/ZRAM-Module",
+  "category": "performance-kernel",
+  "description": "A Magisk/KernelSU module that provides ZRAM compression algorithm support for Android devices",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 73,
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2025-05-31T12:23:22Z",
+    "url": "https://github.com/FurLC/ZRAM-Module/releases/tag/v1.3.0",
+    "downloadUrl": "https://github.com/FurLC/ZRAM-Module/releases/download/v1.3.0/ZRAM-Module-v1.3.0.zip",
+    "assetName": "ZRAM-Module-v1.3.0.zip"
+  },
+  "seo": {
+    "title": "ZRAM-Module - Active Magisk Module",
+    "description": "A Magisk/KernelSU module that provides ZRAM compression algorithm support for Android devices"
+  }
+}

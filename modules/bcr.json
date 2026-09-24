@@ -1,0 +1,25 @@
+{
+  "id": "bcr",
+  "name": "BCR",
+  "repo": "chenxiaolong/BCR",
+  "category": "system-utilities",
+  "description": "A Basic Call Recorder for rooted Android devices",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/bcr.png",
+  "stars": 2926,
+  "latestRelease": {
+    "tag": "v3.9",
+    "publishedAt": "2026-09-17T03:48:57Z",
+    "url": "https://github.com/chenxiaolong/BCR/releases/tag/v3.9",
+    "downloadUrl": "https://github.com/chenxiaolong/BCR/releases/download/v3.9/BCR-3.9-release.zip",
+    "assetName": "BCR-3.9-release.zip"
+  },
+  "seo": {
+    "title": "BCR - Active Magisk Module",
+    "description": "A Basic Call Recorder for rooted Android devices"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "partition-backup",
+  "name": "partition-backup",
+  "repo": "rhythmcache/partition-backup",
+  "category": "system-utilities",
+  "description": "*Magisk Module To Backup or Save Android Device Partition",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/partition-backup.png",
+  "stars": 77,
+  "latestRelease": {
+    "tag": "V2",
+    "publishedAt": "2025-07-01T12:35:33Z",
+    "url": "https://github.com/rhythmcache/partition-backup/releases/tag/V2",
+    "downloadUrl": "https://github.com/rhythmcache/partition-backup/releases/download/V2/partition-backup-magisk-module-5d1c7b4.zip",
+    "assetName": "partition-backup-magisk-module-5d1c7b4.zip"
+  },
+  "seo": {
+    "title": "partition-backup - Active Magisk Module",
+    "description": "*Magisk Module To Backup or Save Android Device Partition"
+  }
+}

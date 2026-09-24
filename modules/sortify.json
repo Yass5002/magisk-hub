@@ -1,0 +1,25 @@
+{
+  "id": "sortify",
+  "name": "Sortify",
+  "repo": "xCaptaiN09/Sortify",
+  "category": "system-utilities",
+  "description": "✨Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 38,
+  "latestRelease": {
+    "tag": "v4.0",
+    "publishedAt": "2026-01-19T18:00:53Z",
+    "url": "https://github.com/xCaptaiN09/Sortify/releases/tag/v4.0",
+    "downloadUrl": "https://github.com/xCaptaiN09/Sortify/releases/download/v4.0/Sortify-v4.0.zip",
+    "assetName": "Sortify-v4.0.zip"
+  },
+  "seo": {
+    "title": "Sortify - Active Magisk Module",
+    "description": "✨Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra"
+  }
+}

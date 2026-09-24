@@ -1,0 +1,25 @@
+{
+  "id": "ashlooper",
+  "name": "AshLooper",
+  "repo": "RipperHybrid/AshLooper",
+  "category": "root-management",
+  "description": "A module designed to prevent boot loops caused by problematic modules installed via KernelSU or Magisk on Android devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 197,
+  "latestRelease": {
+    "tag": "v9.9",
+    "publishedAt": "2026-08-13T17:38:39Z",
+    "url": "https://github.com/RipperHybrid/AshLooper/releases/tag/v9.9",
+    "downloadUrl": "https://github.com/RipperHybrid/AshLooper/releases/download/v9.9/AshReXcue_Bootloop_Protector_9.9_199.zip",
+    "assetName": "AshReXcue_Bootloop_Protector_9.9_199.zip"
+  },
+  "seo": {
+    "title": "AshLooper - Active Magisk Module",
+    "description": "A module designed to prevent boot loops caused by problematic modules installed via KernelSU or Magisk on Android devices."
+  }
+}

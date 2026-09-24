@@ -1,0 +1,24 @@
+{
+  "id": "perfmtk",
+  "name": "PerfMTK",
+  "repo": "JUANIMAN/PerfMTK",
+  "category": "performance-kernel",
+  "description": "A Magisk module for MediaTek devices with Mali GPUs.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 91,
+  "latestRelease": {
+    "tag": "v16.3",
+    "publishedAt": "2026-09-23T05:34:17Z",
+    "url": "https://github.com/JUANIMAN/PerfMTK/releases/tag/v16.3",
+    "downloadUrl": "https://github.com/JUANIMAN/PerfMTK/releases/download/v16.3/PerfMTKv16.3.zip",
+    "assetName": "PerfMTKv16.3.zip"
+  },
+  "seo": {
+    "title": "PerfMTK - Active Magisk Module",
+    "description": "A Magisk module for MediaTek devices with Mali GPUs."
+  }
+}

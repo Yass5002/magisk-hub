@@ -1,0 +1,24 @@
+{
+  "id": "systemapp-nuker",
+  "name": "systemapp_nuker",
+  "repo": "chisewaguri/systemapp_nuker",
+  "category": "system-utilities",
+  "description": "A KernelSU module to debloat system apps with WebUI Interface",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 256,
+  "latestRelease": {
+    "tag": "v2.2.2",
+    "publishedAt": "2026-08-30T01:47:54Z",
+    "url": "https://github.com/chisewaguri/systemapp_nuker/releases/tag/v2.2.2",
+    "downloadUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
+    "assetName": "SAN_v2.2.2.zip"
+  },
+  "seo": {
+    "title": "systemapp_nuker - Active Magisk Module",
+    "description": "A KernelSU module to debloat system apps with WebUI Interface"
+  }
+}

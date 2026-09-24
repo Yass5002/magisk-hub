@@ -1,0 +1,25 @@
+{
+  "id": "deviceidchanger",
+  "name": "deviceidchanger",
+  "repo": "sidex15/deviceidchanger",
+  "category": "security-certificates",
+  "description": "A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch, KSU (And its forks), or Magisk.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 278,
+  "latestRelease": {
+    "tag": "v1.2.1",
+    "publishedAt": "2025-11-30T15:45:02Z",
+    "url": "https://github.com/sidex15/deviceidchanger/releases/tag/v1.2.1",
+    "downloadUrl": "https://github.com/sidex15/deviceidchanger/releases/download/v1.2.1/DeviceID-Changer.zip",
+    "assetName": "DeviceID-Changer.zip"
+  },
+  "seo": {
+    "title": "deviceidchanger - Active Magisk Module",
+    "description": "A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch, KSU (And its forks), or Magisk."
+  }
+}

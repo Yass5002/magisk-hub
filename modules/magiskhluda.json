@@ -1,0 +1,26 @@
+{
+  "id": "magiskhluda",
+  "name": "MagiskHluda",
+  "repo": "Exo1i/MagiskHluda",
+  "category": "development-instrumentation",
+  "description": "Run a more undetectable frida server on boot using magisk 🔐✅",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 432,
+  "latestRelease": {
+    "tag": "17.6.2",
+    "publishedAt": "2026-01-24T12:40:42Z",
+    "url": "https://github.com/Exo1i/MagiskHluda/releases/tag/17.6.2",
+    "downloadUrl": "https://github.com/Exo1i/MagiskHluda/releases/download/17.6.2/Magisk-Florida-x86_64-17.6.2.zip",
+    "assetName": "Magisk-Florida-x86_64-17.6.2.zip"
+  },
+  "seo": {
+    "title": "MagiskHluda - Active Magisk Module",
+    "description": "Run a more undetectable frida server on boot using magisk 🔐✅"
+  }
+}

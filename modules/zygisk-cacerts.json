@@ -1,0 +1,25 @@
+{
+  "id": "zygisk-cacerts",
+  "name": "zygisk_cacerts",
+  "repo": "vvb2060/zygisk_cacerts",
+  "category": "security-certificates",
+  "description": "zygisk_cacerts active root module.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 195,
+  "latestRelease": {
+    "tag": "v1.2",
+    "publishedAt": "2026-01-14T10:15:03Z",
+    "url": "https://github.com/vvb2060/zygisk_cacerts/releases/tag/v1.2",
+    "downloadUrl": "https://github.com/vvb2060/zygisk_cacerts/releases/download/v1.2/zygisk_cacerts-v1.2-release.zip",
+    "assetName": "zygisk_cacerts-v1.2-release.zip"
+  },
+  "seo": {
+    "title": "zygisk_cacerts - Active Magisk Module",
+    "description": "zygisk_cacerts active root module."
+  }
+}

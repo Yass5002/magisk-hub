@@ -1,0 +1,26 @@
+{
+  "id": "antisafetycore",
+  "name": "AntiSafetyCore",
+  "repo": "Astoritin/AntiSafetyCore",
+  "category": "security-certificates",
+  "description": "A Magisk module to fight against the behavior of installing Android System SafetyCore and Android System Key Verifier by Google quietly / 一个对抗 Google 静默安装 SafetyCore 和 Key Verifier 这一行为的 Magisk 模块",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 126,
+  "latestRelease": {
+    "tag": "1.3.0",
+    "publishedAt": "2026-01-30T15:59:18Z",
+    "url": "https://github.com/Astoritin/AntiSafetyCore/releases/tag/1.3.0",
+    "downloadUrl": "https://github.com/Astoritin/AntiSafetyCore/releases/download/1.3.0/AntiSafetyCore-1.3.0.zip",
+    "assetName": "AntiSafetyCore-1.3.0.zip"
+  },
+  "seo": {
+    "title": "AntiSafetyCore - Active Magisk Module",
+    "description": "A Magisk module to fight against the behavior of installing Android System SafetyCore and Android System Key Verifier by Google quietly / 一个对抗 Google 静默安装 "
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "dozedisabler",
+  "name": "dozedisabler",
+  "repo": "draumaz/dozedisabler",
+  "category": "performance-kernel",
+  "description": "Disable Doze optimizations at boot (Magisk)",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 7,
+  "latestRelease": {
+    "tag": "1.2",
+    "publishedAt": "2025-07-23T03:34:48Z",
+    "url": "https://github.com/draumaz/dozedisabler/releases/tag/1.2",
+    "downloadUrl": "https://github.com/draumaz/dozedisabler/releases/download/1.2/dozedisabler-1.2.zip",
+    "assetName": "dozedisabler-1.2.zip"
+  },
+  "seo": {
+    "title": "dozedisabler - Active Magisk Module",
+    "description": "Disable Doze optimizations at boot (Magisk)"
+  }
+}

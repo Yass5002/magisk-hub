@@ -1,0 +1,24 @@
+{
+  "id": "iunlockergl",
+  "name": "iUnlockerGL",
+  "repo": "i-Taylo/iUnlockerGL",
+  "category": "performance-kernel",
+  "description": "iUnlocker GLTool is a Magisk module designed to spoof GPU information, allowing users to modify GPU informations for unlocking graphics in games and testing.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 106,
+  "latestRelease": {
+    "tag": "v1.1.5-r4",
+    "publishedAt": "2025-12-29T21:15:40Z",
+    "url": "https://github.com/i-Taylo/iUnlockerGL/releases/tag/v1.1.5-r4",
+    "downloadUrl": "https://github.com/i-Taylo/iUnlockerGL/releases/download/v1.1.5-r4/iUnlocker-GLTool-for-android-v1.1.5-r4.zip",
+    "assetName": "iUnlocker-GLTool-for-android-v1.1.5-r4.zip"
+  },
+  "seo": {
+    "title": "iUnlockerGL - Active Magisk Module",
+    "description": "iUnlocker GLTool is a Magisk module designed to spoof GPU information, allowing users to modify GPU informations for unlocking graphics in games and testin"
+  }
+}

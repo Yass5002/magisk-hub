@@ -1,0 +1,24 @@
+{
+  "id": "magisk-asoulopt",
+  "name": "Magisk_AsoulOpt",
+  "repo": "nakixii/Magisk_AsoulOpt",
+  "category": "performance-kernel",
+  "description": "Magisk_AsoulOpt active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 2709,
+  "latestRelease": {
+    "tag": "Kana",
+    "publishedAt": "2026-09-18T20:24:34Z",
+    "url": "https://github.com/nakixii/Magisk_AsoulOpt/releases/tag/Kana",
+    "downloadUrl": "https://github.com/nakixii/Magisk_AsoulOpt/releases/download/Kana/Magisk_AsoulOpt_Kana.zip",
+    "assetName": "Magisk_AsoulOpt_Kana.zip"
+  },
+  "seo": {
+    "title": "Magisk_AsoulOpt - Active Magisk Module",
+    "description": "Magisk_AsoulOpt active root module."
+  }
+}

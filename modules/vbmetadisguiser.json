@@ -1,0 +1,25 @@
+{
+  "id": "vbmetadisguiser",
+  "name": "VBMetaDisguiser",
+  "repo": "Astoritin/VBMetaDisguiser",
+  "category": "system-environment",
+  "description": "A Magisk module to disguise the props of vbmeta / 一个用于伪装 VBMeta 属性的 Magisk 模块",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 91,
+  "latestRelease": {
+    "tag": "v1.4.0",
+    "publishedAt": "2025-10-30T06:59:28Z",
+    "url": "https://github.com/Astoritin/VBMetaDisguiser/releases/tag/v1.4.0",
+    "downloadUrl": "https://github.com/Astoritin/VBMetaDisguiser/releases/download/v1.4.0/VBMetaDisguiser-v1.4.0.zip",
+    "assetName": "VBMetaDisguiser-v1.4.0.zip"
+  },
+  "seo": {
+    "title": "VBMetaDisguiser - Active Magisk Module",
+    "description": "A Magisk module to disguise the props of vbmeta / 一个用于伪装 VBMeta 属性的 Magisk 模块"
+  }
+}

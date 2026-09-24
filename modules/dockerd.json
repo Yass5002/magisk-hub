@@ -1,0 +1,25 @@
+{
+  "id": "dockerd",
+  "name": "dockerd",
+  "repo": "mgksu/dockerd",
+  "category": "development-instrumentation",
+  "description": "Magisk Docker",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 123,
+  "latestRelease": {
+    "tag": "v28.2.1",
+    "publishedAt": "2025-05-29T09:04:18Z",
+    "url": "https://github.com/mgksu/dockerd/releases/tag/v28.2.1",
+    "downloadUrl": "https://github.com/mgksu/dockerd/releases/download/v28.2.1/Magisk-Dockerd-v28.2.1.zip",
+    "assetName": "Magisk-Dockerd-v28.2.1.zip"
+  },
+  "seo": {
+    "title": "dockerd - Active Magisk Module",
+    "description": "Magisk Docker"
+  }
+}

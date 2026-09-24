@@ -1,0 +1,25 @@
+{
+  "id": "crond4android",
+  "name": "crond4android",
+  "repo": "powerAn2020/crond4android",
+  "category": "development-instrumentation",
+  "description": "支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on KernelSU, APatch and Magisk.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 40,
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2026-08-07T10:04:08Z",
+    "url": "https://github.com/powerAn2020/crond4android/releases/tag/v1.1.0",
+    "downloadUrl": "https://github.com/powerAn2020/crond4android/releases/download/v1.1.0/crond4android-v1.1.0.zip",
+    "assetName": "crond4android-v1.1.0.zip"
+  },
+  "seo": {
+    "title": "crond4android - Active Magisk Module",
+    "description": "支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on KernelSU, APatch and Magisk."
+  }
+}

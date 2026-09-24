@@ -1,0 +1,24 @@
+{
+  "id": "uperf-game-turbo",
+  "name": "Uperf-Game-Turbo",
+  "repo": "yinwanxi/Uperf-Game-Turbo",
+  "category": "performance-kernel",
+  "description": "Userspace performance controller for android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 1547,
+  "latestRelease": {
+    "tag": "Uperf-Game-Turbo-1.51",
+    "publishedAt": "2026-07-31T09:18:45Z",
+    "url": "https://github.com/yinwanxi/Uperf-Game-Turbo/releases/tag/Uperf-Game-Turbo-1.51",
+    "downloadUrl": "https://github.com/yinwanxi/Uperf-Game-Turbo/releases/download/Uperf-Game-Turbo-1.51/Uperf_Game_Turbo-1.51.zip",
+    "assetName": "Uperf_Game_Turbo-1.51.zip"
+  },
+  "seo": {
+    "title": "Uperf-Game-Turbo - Active Magisk Module",
+    "description": "Userspace performance controller for android"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "auditpatch",
+  "name": "AuditPatch",
+  "repo": "silvzr/AuditPatch",
+  "category": "root-management",
+  "description": "Replace sensitive context in audit log",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 11,
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-04-30T16:06:01Z",
+    "url": "https://github.com/silvzr/AuditPatch/releases/tag/v1.2.0",
+    "downloadUrl": "https://github.com/silvzr/AuditPatch/releases/download/v1.2.0/Audit-Patch-v1.2.0-18-014691d-release.zip",
+    "assetName": "Audit-Patch-v1.2.0-18-014691d-release.zip"
+  },
+  "seo": {
+    "title": "AuditPatch - Active Magisk Module",
+    "description": "Replace sensitive context in audit log"
+  }
+}

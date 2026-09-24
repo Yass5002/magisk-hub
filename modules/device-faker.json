@@ -1,0 +1,25 @@
+{
+  "id": "device-faker",
+  "name": "device_faker",
+  "repo": "Seyud/device_faker",
+  "category": "security-certificates",
+  "description": "自定义配置Zygisk机型伪装",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/device-faker.png",
+  "stars": 780,
+  "latestRelease": {
+    "tag": "v1.5.0",
+    "publishedAt": "2026-08-01T05:36:21Z",
+    "url": "https://github.com/Seyud/device_faker/releases/tag/v1.5.0",
+    "downloadUrl": "https://github.com/Seyud/device_faker/releases/download/v1.5.0/device_faker_v1.5.0.zip",
+    "assetName": "device_faker_v1.5.0.zip"
+  },
+  "seo": {
+    "title": "device_faker - Active Magisk Module",
+    "description": "自定义配置Zygisk机型伪装"
+  }
+}

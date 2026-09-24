@@ -1,0 +1,26 @@
+{
+  "id": "mountify",
+  "name": "mountify",
+  "repo": "backslashxx/mountify",
+  "category": "root-management",
+  "description": "Globally mounted modules via OverlayFS.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Unlicense",
+  "icon": null,
+  "stars": 1404,
+  "latestRelease": {
+    "tag": "204",
+    "publishedAt": "2026-08-25T05:14:18Z",
+    "url": "https://github.com/backslashxx/mountify/releases/tag/204",
+    "downloadUrl": "https://github.com/backslashxx/mountify/releases/download/204/mountify.zip",
+    "assetName": "mountify.zip"
+  },
+  "seo": {
+    "title": "mountify - Active Magisk Module",
+    "description": "Globally mounted modules via OverlayFS."
+  }
+}

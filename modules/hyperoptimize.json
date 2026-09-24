@@ -1,0 +1,24 @@
+{
+  "id": "hyperoptimize",
+  "name": "HyperOptimize",
+  "repo": "TatshSiow/HyperOptimize",
+  "category": "performance-kernel",
+  "description": "Tune HyperOS System and Kernel parameters to reduce power consumption",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 75,
+  "latestRelease": {
+    "tag": "1.0.0",
+    "publishedAt": "2026-07-28T11:34:54Z",
+    "url": "https://github.com/TatshSiow/HyperOptimize/releases/tag/1.0.0",
+    "downloadUrl": "https://github.com/TatshSiow/HyperOptimize/releases/download/1.0.0/HyperOptimize_v1.0.0.zip",
+    "assetName": "HyperOptimize_v1.0.0.zip"
+  },
+  "seo": {
+    "title": "HyperOptimize - Active Magisk Module",
+    "description": "Tune HyperOS System and Kernel parameters to reduce power consumption"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "rsync-magisk",
+  "name": "rsync-magisk",
+  "repo": "AdalynAstatine/rsync-magisk",
+  "category": "system-utilities",
+  "description": "rsync-magisk active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 2,
+  "latestRelease": {
+    "tag": "Latest",
+    "publishedAt": "2025-10-30T08:14:49Z",
+    "url": "https://github.com/AdalynAstatine/rsync-magisk/releases/tag/Latest",
+    "downloadUrl": "https://github.com/AdalynAstatine/rsync-magisk/releases/download/Latest/rsync-magisk.zip",
+    "assetName": "rsync-magisk.zip"
+  },
+  "seo": {
+    "title": "rsync-magisk - Active Magisk Module",
+    "description": "rsync-magisk active root module."
+  }
+}

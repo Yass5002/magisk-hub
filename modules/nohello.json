@@ -1,0 +1,24 @@
+{
+  "id": "nohello",
+  "name": "NoHello",
+  "repo": "MhmRdd/NoHello",
+  "category": "root-management",
+  "description": "A Zygisk module to hide root.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 1356,
+  "latestRelease": {
+    "tag": "0.0.7",
+    "publishedAt": "2025-05-31T03:11:57Z",
+    "url": "https://github.com/MhmRdd/NoHello/releases/tag/0.0.7",
+    "downloadUrl": "https://github.com/MhmRdd/NoHello/releases/download/0.0.7/Nohello-v0.0.7-53-4d53ecf-release.zip",
+    "assetName": "Nohello-v0.0.7-53-4d53ecf-release.zip"
+  },
+  "seo": {
+    "title": "NoHello - Active Magisk Module",
+    "description": "A Zygisk module to hide root."
+  }
+}

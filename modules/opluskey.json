@@ -1,0 +1,24 @@
+{
+  "id": "opluskey",
+  "name": "OplusKey",
+  "repo": "ItosEO/OplusKey",
+  "category": "customization-ui",
+  "description": "OplusKey active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 43,
+  "latestRelease": {
+    "tag": "1.1.6",
+    "publishedAt": "2025-09-17T08:49:28Z",
+    "url": "https://github.com/ItosEO/OplusKey/releases/tag/1.1.6",
+    "downloadUrl": "https://github.com/ItosEO/OplusKey/releases/download/1.1.6/OplusKey-1.1.6.zip",
+    "assetName": "OplusKey-1.1.6.zip"
+  },
+  "seo": {
+    "title": "OplusKey - Active Magisk Module",
+    "description": "OplusKey active root module."
+  }
+}

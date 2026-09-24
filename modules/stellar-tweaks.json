@@ -1,0 +1,26 @@
+{
+  "id": "stellar-tweaks",
+  "name": "Stellar-Tweaks",
+  "repo": "kanaodnd/Stellar-Tweaks",
+  "category": "performance-kernel",
+  "description": "Intelligent Android performance daemon written in Rust. Fast-paced hybrid scheduler and real-time telemetry for Root and Non-Root environments.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 90,
+  "latestRelease": {
+    "tag": "22.0",
+    "publishedAt": "2026-09-19T15:58:50Z",
+    "url": "https://github.com/kanaodnd/Stellar-Tweaks/releases/tag/22.0",
+    "downloadUrl": "https://github.com/kanaodnd/Stellar-Tweaks/releases/download/22.0/Stellar-v22.0-release5.1-VoyagingAstralist-23926.zip",
+    "assetName": "Stellar-v22.0-release5.1-VoyagingAstralist-23926.zip"
+  },
+  "seo": {
+    "title": "Stellar-Tweaks - Active Magisk Module",
+    "description": "Intelligent Android performance daemon written in Rust. Fast-paced hybrid scheduler and real-time telemetry for Root and Non-Root environments."
+  }
+}

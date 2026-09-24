@@ -1,0 +1,25 @@
+{
+  "id": "yurikey",
+  "name": "yurikey",
+  "repo": "Yurii0307/yurikey",
+  "category": "root-management",
+  "description": "A systemless module to get strong integrity easily",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 1906,
+  "latestRelease": {
+    "tag": "v3.0.6",
+    "publishedAt": "2026-06-03T04:06:06Z",
+    "url": "https://github.com/Yurii0307/yurikey/releases/tag/v3.0.6",
+    "downloadUrl": "https://github.com/Yurii0307/yurikey/releases/download/v3.0.6/Yurikey-v3.0.6.signed.zip",
+    "assetName": "Yurikey-v3.0.6.signed.zip"
+  },
+  "seo": {
+    "title": "yurikey - Active Magisk Module",
+    "description": "A systemless module to get strong integrity easily"
+  }
+}

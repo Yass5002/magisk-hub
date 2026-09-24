@@ -1,0 +1,24 @@
+{
+  "id": "playintegrityfix",
+  "name": "PlayIntegrityFix",
+  "repo": "KOWX712/PlayIntegrityFix",
+  "category": "root-management",
+  "description": "Fix Play Integrity verdicts.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/playintegrityfix.png",
+  "stars": 3914,
+  "latestRelease": {
+    "tag": "v4.7-inject-s",
+    "publishedAt": "2026-07-11T09:58:43Z",
+    "url": "https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v4.7-inject-s",
+    "downloadUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.7-inject-s/PlayIntegrityFix_v4.7-inject-s.zip",
+    "assetName": "PlayIntegrityFix_v4.7-inject-s.zip"
+  },
+  "seo": {
+    "title": "PlayIntegrityFix - Active Magisk Module",
+    "description": "Fix Play Integrity verdicts."
+  }
+}

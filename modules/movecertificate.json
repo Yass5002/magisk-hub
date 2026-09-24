@@ -1,0 +1,25 @@
+{
+  "id": "movecertificate",
+  "name": "MoveCertificate",
+  "repo": "ys1231/MoveCertificate",
+  "category": "security-certificates",
+  "description": "支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with magiskv20.4+/kernelsu/APatch",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 1981,
+  "latestRelease": {
+    "tag": "v1.6.2",
+    "publishedAt": "2026-09-02T13:23:27Z",
+    "url": "https://github.com/ys1231/MoveCertificate/releases/tag/v1.6.2",
+    "downloadUrl": "https://github.com/ys1231/MoveCertificate/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip",
+    "assetName": "MoveCertificate-v1.6.2.zip"
+  },
+  "seo": {
+    "title": "MoveCertificate - Active Magisk Module",
+    "description": "支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with magiskv20.4+/kernelsu/APatch"
+  }
+}

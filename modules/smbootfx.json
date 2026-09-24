@@ -1,0 +1,24 @@
+{
+  "id": "smbootfx",
+  "name": "SMbootFX",
+  "repo": "John0n1/SMbootFX",
+  "category": "system-environment",
+  "description": "Custom boot and shutdown animations for Samsung Galaxy devices via distinct Magisk modules.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 89,
+  "latestRelease": {
+    "tag": "3.1.0",
+    "publishedAt": "2026-08-30T00:22:24Z",
+    "url": "https://github.com/John0n1/SMbootFX/releases/tag/3.1.0",
+    "downloadUrl": "https://github.com/John0n1/SMbootFX/releases/download/3.1.0/android-black-on-pink-bootfx-3.1.0-magisk.zip",
+    "assetName": "android-black-on-pink-bootfx-3.1.0-magisk.zip"
+  },
+  "seo": {
+    "title": "SMbootFX - Active Magisk Module",
+    "description": "Custom boot and shutdown animations for Samsung Galaxy devices via distinct Magisk modules."
+  }
+}

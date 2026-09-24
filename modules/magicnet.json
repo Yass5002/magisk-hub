@@ -1,0 +1,25 @@
+{
+  "id": "magicnet",
+  "name": "MagicNet",
+  "repo": "LIghtJUNction/MagicNet",
+  "category": "networking-proxies",
+  "description": "Consciously set all groups to block",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/magicnet.png",
+  "stars": 179,
+  "latestRelease": {
+    "tag": "v1.5.14",
+    "publishedAt": "2026-09-22T09:53:51Z",
+    "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.5.14",
+    "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.5.14/MagicNet-component-bin-ecapture-361016d000bed2c0ddb41be2dbd0aa62725ef1ff78a15d3a18448874be21b03b.zip",
+    "assetName": "MagicNet-component-bin-ecapture-361016d000bed2c0ddb41be2dbd0aa62725ef1ff78a15d3a18448874be21b03b.zip"
+  },
+  "seo": {
+    "title": "MagicNet - Active Magisk Module",
+    "description": "Consciously set all groups to block"
+  }
+}

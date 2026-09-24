@@ -1,0 +1,25 @@
+{
+  "id": "fontcraft",
+  "name": "FontCraft",
+  "repo": "RipperHybrid/FontCraft",
+  "category": "customization-ui",
+  "description": "Stylish fonts & emojis for a personalized experience.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 49,
+  "latestRelease": {
+    "tag": "v7.5",
+    "publishedAt": "2026-08-13T08:53:10Z",
+    "url": "https://github.com/RipperHybrid/FontCraft/releases/tag/v7.5",
+    "downloadUrl": "https://github.com/RipperHybrid/FontCraft/releases/download/v7.5/FontCraftPro_V7.5_By_RipperHybrid.zip",
+    "assetName": "FontCraftPro_V7.5_By_RipperHybrid.zip"
+  },
+  "seo": {
+    "title": "FontCraft - Active Magisk Module",
+    "description": "Stylish fonts & emojis for a personalized experience."
+  }
+}

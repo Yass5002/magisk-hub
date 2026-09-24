@@ -1,0 +1,24 @@
+{
+  "id": "nothing-euicc",
+  "name": "nothing-euicc",
+  "repo": "reindex-ot/nothing-euicc",
+  "category": "networking-proxies",
+  "description": "Nothing EUICC Force Enabler Magisk Module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "WTFPL",
+  "icon": null,
+  "stars": 24,
+  "latestRelease": {
+    "tag": "v2.6",
+    "publishedAt": "2025-07-18T10:15:27Z",
+    "url": "https://github.com/reindex-ot/nothing-euicc/releases/tag/v2.6",
+    "downloadUrl": "https://github.com/reindex-ot/nothing-euicc/releases/download/v2.6/nothing-euicc.zip",
+    "assetName": "nothing-euicc.zip"
+  },
+  "seo": {
+    "title": "nothing-euicc - Active Magisk Module",
+    "description": "Nothing EUICC Force Enabler Magisk Module."
+  }
+}

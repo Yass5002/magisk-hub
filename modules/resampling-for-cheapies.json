@@ -1,0 +1,24 @@
+{
+  "id": "resampling-for-cheapies",
+  "name": "resampling-for-cheapies",
+  "repo": "Magisk-Modules-Alt-Repo/resampling-for-cheapies",
+  "category": "system-utilities",
+  "description": "For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this module sets near ideal re-sampling which involves special digital filtering at the system-wide mixer.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 55,
+  "latestRelease": {
+    "tag": "v2.0.2",
+    "publishedAt": "2025-12-31T07:14:17Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/tag/v2.0.2",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/download/v2.0.2/magisk-module-resampling-for-cheapies-v2.0.2.zip",
+    "assetName": "magisk-module-resampling-for-cheapies-v2.0.2.zip"
+  },
+  "seo": {
+    "title": "resampling-for-cheapies - Active Magisk Module",
+    "description": "For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this module se"
+  }
+}

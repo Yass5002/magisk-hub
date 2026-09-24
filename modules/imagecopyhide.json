@@ -1,0 +1,24 @@
+{
+  "id": "imagecopyhide",
+  "name": "ImageCopyHide",
+  "repo": "cookieof/ImageCopyHide",
+  "category": "security-certificates",
+  "description": "Automatically copy and hide files from /sdcard/DCIM/Camera to /sdcard/wot/cptp (magisk module)",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 2,
+  "latestRelease": {
+    "tag": "V1.0",
+    "publishedAt": "2025-05-24T11:11:37Z",
+    "url": "https://github.com/cookieof/ImageCopyHide/releases/tag/V1.0",
+    "downloadUrl": "https://github.com/cookieof/ImageCopyHide/releases/download/V1.0/ImageCopyHide-v1.0.zip",
+    "assetName": "ImageCopyHide-v1.0.zip"
+  },
+  "seo": {
+    "title": "ImageCopyHide - Active Magisk Module",
+    "description": "Automatically copy and hide files from /sdcard/DCIM/Camera to /sdcard/wot/cptp (magisk module)"
+  }
+}

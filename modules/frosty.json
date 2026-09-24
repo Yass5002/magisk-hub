@@ -1,0 +1,25 @@
+{
+  "id": "frosty",
+  "name": "Frosty",
+  "repo": "Drsexo/Frosty",
+  "category": "performance-kernel",
+  "description": "Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/frosty.png",
+  "stars": 232,
+  "latestRelease": {
+    "tag": "4.4",
+    "publishedAt": "2026-09-03T09:10:58Z",
+    "url": "https://github.com/Drsexo/Frosty/releases/tag/4.4",
+    "downloadUrl": "https://github.com/Drsexo/Frosty/releases/download/4.4/Frosty-4.4.zip",
+    "assetName": "Frosty-4.4.zip"
+  },
+  "seo": {
+    "title": "Frosty - Active Magisk Module",
+    "description": "Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "nano-ndk",
+  "name": "nano-ndk",
+  "repo": "Magisk-Modules-Repo/nano-ndk",
+  "category": "development-instrumentation",
+  "description": "nano-ndk",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 199,
+  "latestRelease": {
+    "tag": "9200",
+    "publishedAt": "2026-08-17T20:06:54Z",
+    "url": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/tag/9200",
+    "downloadUrl": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/download/9200/UPDATE-nano.Terminal.Editor.v9.2-signed.zip",
+    "assetName": "UPDATE-nano.Terminal.Editor.v9.2-signed.zip"
+  },
+  "seo": {
+    "title": "nano-ndk - Active Magisk Module",
+    "description": "nano-ndk"
+  }
+}

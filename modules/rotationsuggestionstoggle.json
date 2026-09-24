@@ -1,0 +1,24 @@
+{
+  "id": "rotationsuggestionstoggle",
+  "name": "RotationSuggestionsToggle",
+  "repo": "Astoritin/RotationSuggestionsToggle",
+  "category": "customization-ui",
+  "description": "A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 13,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2025-11-19T07:21:41Z",
+    "url": "https://github.com/Astoritin/RotationSuggestionsToggle/releases/tag/v1.0",
+    "downloadUrl": "https://github.com/Astoritin/RotationSuggestionsToggle/releases/download/v1.0/RotationSuggestionsToggle-1.0.zip",
+    "assetName": "RotationSuggestionsToggle-1.0.zip"
+  },
+  "seo": {
+    "title": "RotationSuggestionsToggle - Active Magisk Module",
+    "description": "A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块"
+  }
+}

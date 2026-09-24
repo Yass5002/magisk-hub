@@ -1,0 +1,25 @@
+{
+  "id": "czero",
+  "name": "CZero",
+  "repo": "Xocio/CZero",
+  "category": "system-utilities",
+  "description": "A system cache cleaning and optimisation module made just for Android.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/czero.png",
+  "stars": 84,
+  "latestRelease": {
+    "tag": "v1.2.6",
+    "publishedAt": "2026-09-23T07:19:49Z",
+    "url": "https://github.com/Xocio/CZero/releases/tag/v1.2.6",
+    "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.2.6/CZero_v1.2.6.zip",
+    "assetName": "CZero_v1.2.6.zip"
+  },
+  "seo": {
+    "title": "CZero - Active Magisk Module",
+    "description": "A system cache cleaning and optimisation module made just for Android."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "skysceneaddon",
+  "name": "SkySceneAddon",
+  "repo": "WeirdMidas/SkySceneAddon",
+  "category": "performance-kernel",
+  "description": "A Magisk module for optimizing memory management for legacy and modern ARM devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 38,
+  "latestRelease": {
+    "tag": "20260910",
+    "publishedAt": "2026-07-09T17:18:00Z",
+    "url": "https://github.com/WeirdMidas/SkySceneAddon/releases/tag/20260910",
+    "downloadUrl": "https://github.com/WeirdMidas/SkySceneAddon/releases/download/20260910/SkyScene.Add-on.zip",
+    "assetName": "SkyScene.Add-on.zip"
+  },
+  "seo": {
+    "title": "SkySceneAddon - Active Magisk Module",
+    "description": "A Magisk module for optimizing memory management for legacy and modern ARM devices."
+  }
+}

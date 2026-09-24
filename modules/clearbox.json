@@ -1,0 +1,25 @@
+{
+  "id": "clearbox",
+  "name": "ClearBox",
+  "repo": "FLYCOM-E/ClearBox",
+  "category": "system-utilities",
+  "description": "A Magisk module dedicated to automatic cleaning and optimization of Android   |   一个致力于 Android 自动清理优化的 Magisk 模块",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 46,
+  "latestRelease": {
+    "tag": "V5.2.0",
+    "publishedAt": "2026-09-13T13:33:04Z",
+    "url": "https://github.com/FLYCOM-E/ClearBox/releases/tag/V5.2.0",
+    "downloadUrl": "https://github.com/FLYCOM-E/ClearBox/releases/download/V5.2.0/ClearBox-V5.2.0-100-aarch64.zip",
+    "assetName": "ClearBox-V5.2.0-100-aarch64.zip"
+  },
+  "seo": {
+    "title": "ClearBox - Active Magisk Module",
+    "description": "A Magisk module dedicated to automatic cleaning and optimization of Android   |   一个致力于 Android 自动清理优化的 Magisk 模块"
+  }
+}

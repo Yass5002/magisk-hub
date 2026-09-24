@@ -1,0 +1,25 @@
+{
+  "id": "trickystoreoss",
+  "name": "TrickyStoreOSS",
+  "repo": "beakthoven/TrickyStoreOSS",
+  "category": "root-management",
+  "description": "Open source alternative to proprietary Tricky Store module",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 1404,
+  "latestRelease": {
+    "tag": "v3.1.0",
+    "publishedAt": "2026-08-25T20:56:39Z",
+    "url": "https://github.com/beakthoven/TrickyStoreOSS/releases/tag/v3.1.0",
+    "downloadUrl": "https://github.com/beakthoven/TrickyStoreOSS/releases/download/v3.1.0/Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip",
+    "assetName": "Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip"
+  },
+  "seo": {
+    "title": "TrickyStoreOSS - Active Magisk Module",
+    "description": "Open source alternative to proprietary Tricky Store module"
+  }
+}

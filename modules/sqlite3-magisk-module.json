@@ -1,0 +1,24 @@
+{
+  "id": "sqlite3-magisk-module",
+  "name": "sqlite3-magisk-module",
+  "repo": "rojenzaman/sqlite3-magisk-module",
+  "category": "development-instrumentation",
+  "description": "SQLite 3 Magisk Module for Android arm64-v8a, armeabi-v7a, x86 and x86_64",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 92,
+  "latestRelease": {
+    "tag": "2026.07.15",
+    "publishedAt": "2026-07-15T11:43:44Z",
+    "url": "https://github.com/rojenzaman/sqlite3-magisk-module/releases/tag/2026.07.15",
+    "downloadUrl": "https://github.com/rojenzaman/sqlite3-magisk-module/releases/download/2026.07.15/SQLite-v3.53.3-for-magisk.multi-arch.zip",
+    "assetName": "SQLite-v3.53.3-for-magisk.multi-arch.zip"
+  },
+  "seo": {
+    "title": "sqlite3-magisk-module - Active Magisk Module",
+    "description": "SQLite 3 Magisk Module for Android arm64-v8a, armeabi-v7a, x86 and x86_64"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "perfgame",
+  "name": "PerfGame",
+  "repo": "adivenxnataly/PerfGame",
+  "category": "performance-kernel",
+  "description": "Enable custom resolution & frame-rate mechanism for your games.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 11,
+  "latestRelease": {
+    "tag": "2.0-release",
+    "publishedAt": "2025-05-12T08:06:27Z",
+    "url": "https://github.com/adivenxnataly/PerfGame/releases/tag/2.0-release",
+    "downloadUrl": "https://github.com/adivenxnataly/PerfGame/releases/download/2.0-release/PerfGamev2.0-release.zip",
+    "assetName": "PerfGamev2.0-release.zip"
+  },
+  "seo": {
+    "title": "PerfGame - Active Magisk Module",
+    "description": "Enable custom resolution & frame-rate mechanism for your games."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "aurora",
+  "name": "Aurora",
+  "repo": "Tkocean/Aurora",
+  "category": "networking-proxies",
+  "description": "Magisk Module - PROXY Launcher",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 8,
+  "latestRelease": {
+    "tag": "Stable",
+    "publishedAt": "2025-12-03T09:50:28Z",
+    "url": "https://github.com/Tkocean/Aurora/releases/tag/Stable",
+    "downloadUrl": "https://github.com/Tkocean/Aurora/releases/download/Stable/Aurora.zip",
+    "assetName": "Aurora.zip"
+  },
+  "seo": {
+    "title": "Aurora - Active Magisk Module",
+    "description": "Magisk Module - PROXY Launcher"
+  }
+}

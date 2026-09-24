@@ -1,0 +1,25 @@
+{
+  "id": "sui",
+  "name": "Sui",
+  "repo": "XiaoTong6666/Sui",
+  "category": "system-utilities",
+  "description": "Modern super user interface implementation on Android.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 698,
+  "latestRelease": {
+    "tag": "nightly",
+    "publishedAt": "2026-02-06T05:03:12Z",
+    "url": "https://github.com/XiaoTong6666/Sui/releases/tag/nightly",
+    "downloadUrl": "https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_553-e37d54c-debug.zip",
+    "assetName": "Sui-v13.5.4.3_553-e37d54c-debug.zip"
+  },
+  "seo": {
+    "title": "Sui - Active Magisk Module",
+    "description": "Modern super user interface implementation on Android."
+  }
+}

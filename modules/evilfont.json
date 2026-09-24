@@ -1,0 +1,25 @@
+{
+  "id": "evilfont",
+  "name": "EvilFont",
+  "repo": "dedeadend/EvilFont",
+  "category": "customization-ui",
+  "description": "A systemless module to change default Arabic/Persian font + Apple emojis.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 27,
+  "latestRelease": {
+    "tag": "v2.1",
+    "publishedAt": "2026-08-11T12:03:51Z",
+    "url": "https://github.com/dedeadend/EvilFont/releases/tag/v2.1",
+    "downloadUrl": "https://github.com/dedeadend/EvilFont/releases/download/v2.1/EvilFont-v2.1.zip",
+    "assetName": "EvilFont-v2.1.zip"
+  },
+  "seo": {
+    "title": "EvilFont - Active Magisk Module",
+    "description": "A systemless module to change default Arabic/Persian font + Apple emojis."
+  }
+}

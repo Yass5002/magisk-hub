@@ -1,0 +1,24 @@
+{
+  "id": "selinux-permissive",
+  "name": "selinux_permissive",
+  "repo": "evdenis/selinux_permissive",
+  "category": "development-instrumentation",
+  "description": "Magisk Module that switches SELinux to permissive mode",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 268,
+  "latestRelease": {
+    "tag": "v3.1",
+    "publishedAt": "2026-03-07T17:24:21Z",
+    "url": "https://github.com/evdenis/selinux_permissive/releases/tag/v3.1",
+    "downloadUrl": "https://github.com/evdenis/selinux_permissive/releases/download/v3.1/selinux_permissive-v3.1.zip",
+    "assetName": "selinux_permissive-v3.1.zip"
+  },
+  "seo": {
+    "title": "selinux_permissive - Active Magisk Module",
+    "description": "Magisk Module that switches SELinux to permissive mode"
+  }
+}

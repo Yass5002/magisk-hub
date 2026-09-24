@@ -1,0 +1,25 @@
+{
+  "id": "teesimulator-rs",
+  "name": "TEESimulator-RS",
+  "repo": "Enginex0/TEESimulator-RS",
+  "category": "root-management",
+  "description": "Software simulation for Android hardware-backed key pairs with key attestation | https://t.me/superpowers9",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 1828,
+  "latestRelease": {
+    "tag": "v6.0.1-282",
+    "publishedAt": "2026-06-19T15:54:47Z",
+    "url": "https://github.com/Enginex0/TEESimulator-RS/releases/tag/v6.0.1-282",
+    "downloadUrl": "https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Debug.zip",
+    "assetName": "TEESimulator-RS-v6.0.1-282-Debug.zip"
+  },
+  "seo": {
+    "title": "TEESimulator-RS - Active Magisk Module",
+    "description": "Software simulation for Android hardware-backed key pairs with key attestation | https://t.me/superpowers9"
+  }
+}

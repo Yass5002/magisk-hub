@@ -1,0 +1,24 @@
+{
+  "id": "twrp-keep",
+  "name": "twrp-keep",
+  "repo": "Magisk-Modules-Repo/twrp-keep",
+  "category": "system-environment",
+  "description": "twrp-keep",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 276,
+  "latestRelease": {
+    "tag": "20260808",
+    "publishedAt": "2026-08-08T12:52:39Z",
+    "url": "https://github.com/Magisk-Modules-Repo/twrp-keep/releases/tag/20260808",
+    "downloadUrl": "https://github.com/Magisk-Modules-Repo/twrp-keep/releases/download/20260808/TWRP_A_B_Retention_Script-Magisk-1.zip",
+    "assetName": "TWRP_A_B_Retention_Script-Magisk-1.zip"
+  },
+  "seo": {
+    "title": "twrp-keep - Active Magisk Module",
+    "description": "twrp-keep"
+  }
+}

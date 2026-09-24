@@ -1,0 +1,24 @@
+{
+  "id": "drc-remover",
+  "name": "drc-remover",
+  "repo": "Magisk-Modules-Alt-Repo/drc-remover",
+  "category": "system-utilities",
+  "description": "A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 113,
+  "latestRelease": {
+    "tag": "v1.2.5",
+    "publishedAt": "2025-06-07T14:56:56Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/drc-remover/releases/tag/v1.2.5",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/drc-remover/releases/download/v1.2.5/magisk-module-drc-remover-v1.2.5.zip",
+    "assetName": "magisk-module-drc-remover-v1.2.5.zip"
+  },
+  "seo": {
+    "title": "drc-remover - Active Magisk Module",
+    "description": "A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices"
+  }
+}

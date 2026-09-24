@@ -1,0 +1,25 @@
+{
+  "id": "ubuntu-chroot",
+  "name": "Ubuntu-Chroot",
+  "repo": "ravindu644/Ubuntu-Chroot",
+  "category": "development-instrumentation",
+  "description": "Run Ubuntu 24.04 on Android With full Hardware Access and pure namespace isolation..!",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/ubuntu-chroot.png",
+  "stars": 160,
+  "latestRelease": {
+    "tag": "v4.4",
+    "publishedAt": "2026-03-23T16:59:09Z",
+    "url": "https://github.com/ravindu644/Ubuntu-Chroot/releases/tag/v4.4",
+    "downloadUrl": "https://github.com/ravindu644/Ubuntu-Chroot/releases/download/v4.4/update-GUI.zip",
+    "assetName": "update-GUI.zip"
+  },
+  "seo": {
+    "title": "Ubuntu-Chroot - Active Magisk Module",
+    "description": "Run Ubuntu 24.04 on Android With full Hardware Access and pure namespace isolation..!"
+  }
+}

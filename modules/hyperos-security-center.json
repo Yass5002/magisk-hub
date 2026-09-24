@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-security-center",
+  "name": "HyperOS-Security-Center",
+  "repo": "Mods-Center/HyperOS-Security-Center",
+  "category": "system-environment",
+  "description": "Enhances HyperOS Security Center with advanced app info tools, system app Wi-Fi management, FBO unlocking, removal of root/account restrictions, extended security options, and additional customization features.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 130,
+  "latestRelease": {
+    "tag": "V7",
+    "publishedAt": "2026-08-14T03:09:26Z",
+    "url": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/tag/V7",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/download/V7/HyperOS_SecurityV7%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_SecurityV7@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "HyperOS-Security-Center - Active Magisk Module",
+    "description": "Enhances HyperOS Security Center with advanced app info tools, system app Wi-Fi management, FBO unlocking, removal of root/account restrictions, extended s"
+  }
+}

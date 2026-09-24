@@ -1,0 +1,24 @@
+{
+  "id": "stevenblock",
+  "name": "StevenBlock",
+  "repo": "Magisk-Modules-Alt-Repo/StevenBlock",
+  "category": "system-utilities",
+  "description": "🚫 Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch 🔒",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 77,
+  "latestRelease": {
+    "tag": "V4.0",
+    "publishedAt": "2026-03-02T15:23:51Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/StevenBlock/releases/tag/V4.0",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/StevenBlock/releases/download/V4.0/StevenBlock.zip",
+    "assetName": "StevenBlock.zip"
+  },
+  "seo": {
+    "title": "StevenBlock - Active Magisk Module",
+    "description": "🚫 Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch 🔒"
+  }
+}

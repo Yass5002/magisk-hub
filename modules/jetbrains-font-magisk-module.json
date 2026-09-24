@@ -1,0 +1,24 @@
+{
+  "id": "jetbrains-font-magisk-module",
+  "name": "jetbrains-font-magisk-module",
+  "repo": "Mars-Wave/jetbrains-font-magisk-module",
+  "category": "customization-ui",
+  "description": "Make your phone prettier with jetbrains mono and magisk",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Unlicense",
+  "icon": null,
+  "stars": 9,
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2025-09-19T02:18:31Z",
+    "url": "https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/tag/v1.0.0",
+    "downloadUrl": "https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/download/v1.0.0/magisk-jetbrains-mono-system-font.zip",
+    "assetName": "magisk-jetbrains-mono-system-font.zip"
+  },
+  "seo": {
+    "title": "jetbrains-font-magisk-module - Active Magisk Module",
+    "description": "Make your phone prettier with jetbrains mono and magisk"
+  }
+}

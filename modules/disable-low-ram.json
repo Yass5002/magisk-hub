@@ -1,0 +1,24 @@
+{
+  "id": "disable-low-ram",
+  "name": "disable-low-ram",
+  "repo": "Magisk-Modules-Alt-Repo/disable-low-ram",
+  "category": "system-environment",
+  "description": "Magisk module to disable Low-RAM flag on Android Go devices",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 16,
+  "latestRelease": {
+    "tag": "1.0",
+    "publishedAt": "2025-06-21T14:27:17Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/disable-low-ram/releases/tag/1.0",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/disable-low-ram/releases/download/1.0/disable-low-ram_v1.0.zip",
+    "assetName": "disable-low-ram_v1.0.zip"
+  },
+  "seo": {
+    "title": "disable-low-ram - Active Magisk Module",
+    "description": "Magisk module to disable Low-RAM flag on Android Go devices"
+  }
+}

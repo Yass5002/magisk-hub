@@ -1,0 +1,25 @@
+{
+  "id": "brene",
+  "name": "BRENE",
+  "repo": "rrr333nnn333/BRENE",
+  "category": "root-management",
+  "description": "BRENE - A SuSFS/KernelSU module for SuSFS patched kernels",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 358,
+  "latestRelease": {
+    "tag": "v0.0.68",
+    "publishedAt": "2026-09-22T00:05:20Z",
+    "url": "https://github.com/rrr333nnn333/BRENE/releases/tag/v0.0.68",
+    "downloadUrl": "https://github.com/rrr333nnn333/BRENE/releases/download/v0.0.68/BRENE-v0.0.68.zip",
+    "assetName": "BRENE-v0.0.68.zip"
+  },
+  "seo": {
+    "title": "BRENE - Active Magisk Module",
+    "description": "BRENE - A SuSFS/KernelSU module for SuSFS patched kernels"
+  }
+}

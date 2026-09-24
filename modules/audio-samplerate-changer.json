@@ -1,0 +1,24 @@
+{
+  "id": "audio-samplerate-changer",
+  "name": "audio-samplerate-changer",
+  "repo": "Magisk-Modules-Alt-Repo/audio-samplerate-changer",
+  "category": "system-utilities",
+  "description": "A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi experience.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 91,
+  "latestRelease": {
+    "tag": "v1.1.10",
+    "publishedAt": "2026-05-09T07:29:31Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-samplerate-changer/releases/tag/v1.1.10",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-samplerate-changer/releases/download/v1.1.10/magisk-module-audio-samplerate-changer-v1.1.10-1.zip",
+    "assetName": "magisk-module-audio-samplerate-changer-v1.1.10-1.zip"
+  },
+  "seo": {
+    "title": "audio-samplerate-changer - Active Magisk Module",
+    "description": "A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi experience."
+  }
+}

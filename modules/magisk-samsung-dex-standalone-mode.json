@@ -1,0 +1,24 @@
+{
+  "id": "magisk-samsung-dex-standalone-mode",
+  "name": "magisk-samsung-dex-standalone-mode",
+  "repo": "supermarsx/magisk-samsung-dex-standalone-mode",
+  "category": "system-environment",
+  "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 73,
+  "latestRelease": {
+    "tag": "2026.3",
+    "publishedAt": "2026-04-15T22:22:17Z",
+    "url": "https://github.com/supermarsx/magisk-samsung-dex-standalone-mode/releases/tag/2026.3",
+    "downloadUrl": "https://github.com/supermarsx/magisk-samsung-dex-standalone-mode/releases/download/2026.3/magisk-samsung-dex-standalone-mode.zip",
+    "assetName": "magisk-samsung-dex-standalone-mode.zip"
+  },
+  "seo": {
+    "title": "magisk-samsung-dex-standalone-mode - Active Magisk Module",
+    "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode"
+  }
+}

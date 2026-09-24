@@ -1,0 +1,24 @@
+{
+  "id": "magisk-manager-for-recovery-mode",
+  "name": "Magisk-Manager-for-Recovery-Mode",
+  "repo": "Rikj000/Magisk-Manager-for-Recovery-Mode",
+  "category": "root-management",
+  "description": "Updated version of VR25's Magisk Manager for Recovery mode. Works with Magisk v19.0 - v30.X! With this you can be at ease while trying out Android Magisk Modules. Since if you end up with a bootloop, you can just disable the module from recovery! Saved me many times! This app is used in a recovery terminal (e.g. TWRP), not in Magisk itself.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 290,
+  "latestRelease": {
+    "tag": "2026.02.28",
+    "publishedAt": "2026-02-28T14:45:25Z",
+    "url": "https://github.com/Rikj000/Magisk-Manager-for-Recovery-Mode/releases/tag/2026.02.28",
+    "downloadUrl": "https://github.com/Rikj000/Magisk-Manager-for-Recovery-Mode/releases/download/2026.02.28/MagiskManagerForRecovery_v12_202602280.zip",
+    "assetName": "MagiskManagerForRecovery_v12_202602280.zip"
+  },
+  "seo": {
+    "title": "Magisk-Manager-for-Recovery-Mode - Active Magisk Module",
+    "description": "Updated version of VR25's Magisk Manager for Recovery mode. Works with Magisk v19.0 - v30.X! With this you can be at ease while trying out Android Magisk M"
+  }
+}

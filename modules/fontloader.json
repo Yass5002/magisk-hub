@@ -1,0 +1,24 @@
+{
+  "id": "fontloader",
+  "name": "FontLoader",
+  "repo": "JingMatrix/FontLoader",
+  "category": "customization-ui",
+  "description": "FontLoader active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 74,
+  "latestRelease": {
+    "tag": "v1.1.0",
+    "publishedAt": "2025-07-23T12:53:33Z",
+    "url": "https://github.com/JingMatrix/FontLoader/releases/tag/v1.1.0",
+    "downloadUrl": "https://github.com/JingMatrix/FontLoader/releases/download/v1.1.0/FontLoader-debug.zip",
+    "assetName": "FontLoader-debug.zip"
+  },
+  "seo": {
+    "title": "FontLoader - Active Magisk Module",
+    "description": "FontLoader active root module."
+  }
+}

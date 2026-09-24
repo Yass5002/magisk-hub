@@ -1,0 +1,24 @@
+{
+  "id": "tree",
+  "name": "tree",
+  "repo": "Magisk-Modules-Alt-Repo/tree",
+  "category": "system-utilities",
+  "description": "tree for android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 9,
+  "latestRelease": {
+    "tag": "1",
+    "publishedAt": "2025-01-11T11:59:51Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/tree/releases/tag/1",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/tree/releases/download/1/tree-main.zip",
+    "assetName": "tree-main.zip"
+  },
+  "seo": {
+    "title": "tree - Active Magisk Module",
+    "description": "tree for android"
+  }
+}

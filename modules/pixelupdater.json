@@ -1,0 +1,24 @@
+{
+  "id": "pixelupdater",
+  "name": "PixelUpdater",
+  "repo": "PixelUpdater/PixelUpdater",
+  "category": "system-environment",
+  "description": "Android A/B OTA updater app for rooted Pixels",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/pixelupdater.png",
+  "stars": 234,
+  "latestRelease": {
+    "tag": "v0.210",
+    "publishedAt": "2026-01-22T16:00:01Z",
+    "url": "https://github.com/PixelUpdater/PixelUpdater/releases/tag/v0.210",
+    "downloadUrl": "https://github.com/PixelUpdater/PixelUpdater/releases/download/v0.210/PixelUpdater-v0.210-release.zip",
+    "assetName": "PixelUpdater-v0.210-release.zip"
+  },
+  "seo": {
+    "title": "PixelUpdater - Active Magisk Module",
+    "description": "Android A/B OTA updater app for rooted Pixels"
+  }
+}

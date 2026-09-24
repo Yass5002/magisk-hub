@@ -1,0 +1,24 @@
+{
+  "id": "magisk-wifiadb",
+  "name": "magisk-wifiadb",
+  "repo": "mrh929/magisk-wifiadb",
+  "category": "development-instrumentation",
+  "description": "A magisk module to enable WiFi ADB automatically.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 272,
+  "latestRelease": {
+    "tag": "1.1.0",
+    "publishedAt": "2025-02-15T17:09:07Z",
+    "url": "https://github.com/mrh929/magisk-wifiadb/releases/tag/1.1.0",
+    "downloadUrl": "https://github.com/mrh929/magisk-wifiadb/releases/download/1.1.0/magisk-wifiadb.zip",
+    "assetName": "magisk-wifiadb.zip"
+  },
+  "seo": {
+    "title": "magisk-wifiadb - Active Magisk Module",
+    "description": "A magisk module to enable WiFi ADB automatically."
+  }
+}

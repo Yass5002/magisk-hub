@@ -1,0 +1,24 @@
+{
+  "id": "audio-misc-settings",
+  "name": "audio-misc-settings",
+  "repo": "Magisk-Modules-Alt-Repo/audio-misc-settings",
+  "category": "system-utilities",
+  "description": "A Magisk module for setting miscellaneous audio configuration values (media audio volume steps (100 steps), raising the resampling quality, disabling the effects framework, etc.)",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 344,
+  "latestRelease": {
+    "tag": "v1.3.11",
+    "publishedAt": "2025-06-07T14:48:38Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/tag/v1.3.11",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/download/v1.3.11/magisk-module-audio-misc-v1.3.11.zip",
+    "assetName": "magisk-module-audio-misc-v1.3.11.zip"
+  },
+  "seo": {
+    "title": "audio-misc-settings - Active Magisk Module",
+    "description": "A Magisk module for setting miscellaneous audio configuration values (media audio volume steps (100 steps), raising the resampling quality, disabling the e"
+  }
+}

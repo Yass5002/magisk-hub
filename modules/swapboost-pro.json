@@ -1,0 +1,24 @@
+{
+  "id": "swapboost-pro",
+  "name": "SwapBoost-Pro",
+  "repo": "yadavnikhil03/SwapBoost-Pro",
+  "category": "performance-kernel",
+  "description": "A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile optimization with VM tweaks.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 22,
+  "latestRelease": {
+    "tag": "v1.1",
+    "publishedAt": "2026-06-16T11:29:24Z",
+    "url": "https://github.com/yadavnikhil03/SwapBoost-Pro/releases/tag/v1.1",
+    "downloadUrl": "https://github.com/yadavnikhil03/SwapBoost-Pro/releases/download/v1.1/SwapBoost-Pro-1.1.zip",
+    "assetName": "SwapBoost-Pro-1.1.zip"
+  },
+  "seo": {
+    "title": "SwapBoost-Pro - Active Magisk Module",
+    "description": "A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile optimization with VM tweaks."
+  }
+}

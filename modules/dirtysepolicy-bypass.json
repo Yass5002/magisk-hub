@@ -1,0 +1,26 @@
+{
+  "id": "dirtysepolicy-bypass",
+  "name": "DirtySepolicy_Bypass",
+  "repo": "flipphoneguy/DirtySepolicy_Bypass",
+  "category": "root-management",
+  "description": "bypass new DirtySepolicy on rooted Android devices to keep apps working",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 81,
+  "latestRelease": {
+    "tag": "v3.0.0",
+    "publishedAt": "2026-05-31T01:35:28Z",
+    "url": "https://github.com/flipphoneguy/DirtySepolicy_Bypass/releases/tag/v3.0.0",
+    "downloadUrl": "https://github.com/flipphoneguy/DirtySepolicy_Bypass/releases/download/v3.0.0/dirtysepbypass.zip",
+    "assetName": "dirtysepbypass.zip"
+  },
+  "seo": {
+    "title": "DirtySepolicy_Bypass - Active Magisk Module",
+    "description": "bypass new DirtySepolicy on rooted Android devices to keep apps working"
+  }
+}

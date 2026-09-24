@@ -1,0 +1,24 @@
+{
+  "id": "simple-bootloopsaver",
+  "name": "Simple_BootloopSaver",
+  "repo": "Magisk-Modules-Alt-Repo/Simple_BootloopSaver",
+  "category": "system-utilities",
+  "description": "Protect your system from bootloop caused by Magisk modules by turning off all your modules and restart your system if bootloop is detected.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 96,
+  "latestRelease": {
+    "tag": "v2",
+    "publishedAt": "2025-06-15T04:13:45Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/Simple_BootloopSaver/releases/tag/v2",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/Simple_BootloopSaver/releases/download/v2/Simple_BootloopSaver.zip",
+    "assetName": "Simple_BootloopSaver.zip"
+  },
+  "seo": {
+    "title": "Simple_BootloopSaver - Active Magisk Module",
+    "description": "Protect your system from bootloop caused by Magisk modules by turning off all your modules and restart your system if bootloop is detected."
+  }
+}

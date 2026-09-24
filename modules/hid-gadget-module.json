@@ -1,0 +1,24 @@
+{
+  "id": "hid-gadget-module",
+  "name": "hid-gadget-module",
+  "repo": "kelexine/hid-gadget-module",
+  "category": "development-instrumentation",
+  "description": "A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 41,
+  "latestRelease": {
+    "tag": "v1.38.2",
+    "publishedAt": "2026-01-20T10:39:46Z",
+    "url": "https://github.com/kelexine/hid-gadget-module/releases/tag/v1.38.2",
+    "downloadUrl": "https://github.com/kelexine/hid-gadget-module/releases/download/v1.38.2/hid-gadget-module-v1.38.2.zip",
+    "assetName": "hid-gadget-module-v1.38.2.zip"
+  },
+  "seo": {
+    "title": "hid-gadget-module - Active Magisk Module",
+    "description": "A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices"
+  }
+}

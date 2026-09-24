@@ -1,0 +1,24 @@
+{
+  "id": "magisk-modules",
+  "name": "magisk-modules",
+  "repo": "NewFuture/magisk-modules",
+  "category": "networking-proxies",
+  "description": "Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 10,
+  "latestRelease": {
+    "tag": "2025.05.22",
+    "publishedAt": "2025-05-21T16:01:20Z",
+    "url": "https://github.com/NewFuture/magisk-modules/releases/tag/2025.05.22",
+    "downloadUrl": "https://github.com/NewFuture/magisk-modules/releases/download/2025.05.22/magisk-auto-adb-v1.1.2.zip",
+    "assetName": "magisk-auto-adb-v1.1.2.zip"
+  },
+  "seo": {
+    "title": "magisk-modules - Active Magisk Module",
+    "description": "Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup."
+  }
+}

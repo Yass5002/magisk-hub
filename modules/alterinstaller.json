@@ -1,0 +1,25 @@
+{
+  "id": "alterinstaller",
+  "name": "AlterInstaller",
+  "repo": "chenxiaolong/AlterInstaller",
+  "category": "system-environment",
+  "description": "Spoof Android package manager installer fields",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 135,
+  "latestRelease": {
+    "tag": "v2.4",
+    "publishedAt": "2026-06-26T23:27:08Z",
+    "url": "https://github.com/chenxiaolong/AlterInstaller/releases/tag/v2.4",
+    "downloadUrl": "https://github.com/chenxiaolong/AlterInstaller/releases/download/v2.4/AlterInstaller-2.4-release.zip",
+    "assetName": "AlterInstaller-2.4-release.zip"
+  },
+  "seo": {
+    "title": "AlterInstaller - Active Magisk Module",
+    "description": "Spoof Android package manager installer fields"
+  }
+}

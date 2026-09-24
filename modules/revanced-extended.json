@@ -1,0 +1,25 @@
+{
+  "id": "revanced-extended",
+  "name": "revanced-extended",
+  "repo": "NoName-exe/revanced-extended",
+  "category": "customization-ui",
+  "description": "ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 4209,
+  "latestRelease": {
+    "tag": "157",
+    "publishedAt": "2026-09-22T00:45:06Z",
+    "url": "https://github.com/NoName-exe/revanced-extended/releases/tag/157",
+    "downloadUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/157/youtube-music-morphe-module-v9.15.51-arm-v7a.zip",
+    "assetName": "youtube-music-morphe-module-v9.15.51-arm-v7a.zip"
+  },
+  "seo": {
+    "title": "revanced-extended - Active Magisk Module",
+    "description": "ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "custom-certificate-authorities",
+  "name": "custom-certificate-authorities",
+  "repo": "Magisk-Modules-Alt-Repo/custom-certificate-authorities",
+  "category": "security-certificates",
+  "description": "Custom Certificate Authorities is a Magisk module that moves user-installed certificate authorities into the system trust store, making them trusted by all apps.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 92,
+  "latestRelease": {
+    "tag": "1.2.0",
+    "publishedAt": "2026-06-15T05:39:00Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/custom-certificate-authorities/releases/tag/1.2.0",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/custom-certificate-authorities/releases/download/1.2.0/Custom_Certificate_Authorities_v1.2.0.zip",
+    "assetName": "Custom_Certificate_Authorities_v1.2.0.zip"
+  },
+  "seo": {
+    "title": "custom-certificate-authorities - Active Magisk Module",
+    "description": "Custom Certificate Authorities is a Magisk module that moves user-installed certificate authorities into the system trust store, making them trusted by all"
+  }
+}

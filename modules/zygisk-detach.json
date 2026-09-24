@@ -1,0 +1,25 @@
+{
+  "id": "zygisk-detach",
+  "name": "zygisk-detach",
+  "repo": "j-hc/zygisk-detach",
+  "category": "system-environment",
+  "description": "Zygisk module to detach installed apps from Play Store, hooking binder",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": null,
+  "stars": 2146,
+  "latestRelease": {
+    "tag": "v1.24.0",
+    "publishedAt": "2026-09-20T20:30:39Z",
+    "url": "https://github.com/j-hc/zygisk-detach/releases/tag/v1.24.0",
+    "downloadUrl": "https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip",
+    "assetName": "zygisk-detach-v1.24.0.zip"
+  },
+  "seo": {
+    "title": "zygisk-detach - Active Magisk Module",
+    "description": "Zygisk module to detach installed apps from Play Store, hooking binder"
+  }
+}

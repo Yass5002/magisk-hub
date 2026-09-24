@@ -1,0 +1,24 @@
+{
+  "id": "oneplus-8series-9r-camera-unlocker",
+  "name": "oneplus-8series-9r-camera-unlocker",
+  "repo": "Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker",
+  "category": "customization-ui",
+  "description": "oneplus-8series-9r-camera-unlocker active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 23,
+  "latestRelease": {
+    "tag": "v1.3",
+    "publishedAt": "2025-06-23T06:09:46Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker/releases/tag/v1.3",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker/releases/download/v1.3/OnePlus-8Series-9R-Camera-Unlocker-v1.3.zip",
+    "assetName": "OnePlus-8Series-9R-Camera-Unlocker-v1.3.zip"
+  },
+  "seo": {
+    "title": "oneplus-8series-9r-camera-unlocker - Active Magisk Module",
+    "description": "oneplus-8series-9r-camera-unlocker active root module."
+  }
+}

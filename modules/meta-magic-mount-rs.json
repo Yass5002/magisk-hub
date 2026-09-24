@@ -1,0 +1,26 @@
+{
+  "id": "meta-magic-mount-rs",
+  "name": "meta-magic_mount-rs",
+  "repo": "Tools-cx-app/meta-magic_mount-rs",
+  "category": "root-management",
+  "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/meta-magic-mount-rs.png",
+  "stars": 505,
+  "latestRelease": {
+    "tag": "v4.0.8",
+    "publishedAt": "2026-08-18T09:21:46Z",
+    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.8",
+    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.8/magic_mount_rs-4.0.8-900-armv7.zip",
+    "assetName": "magic_mount_rs-4.0.8-900-armv7.zip"
+  },
+  "seo": {
+    "title": "meta-magic_mount-rs - Active Magisk Module",
+    "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay."
+  }
+}

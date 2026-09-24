@@ -1,0 +1,25 @@
+{
+  "id": "makefontsgreatagain",
+  "name": "MakeFontsGreatAgain",
+  "repo": "Numbersf/MakeFontsGreatAgain",
+  "category": "customization-ui",
+  "description": "System-wide Font Overrider with Unique GMS Masking & Multi-Range Unicode Filter.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/makefontsgreatagain.png",
+  "stars": 322,
+  "latestRelease": {
+    "tag": "1717180003",
+    "publishedAt": "2026-08-31T05:05:07Z",
+    "url": "https://github.com/Numbersf/MakeFontsGreatAgain/releases/tag/1717180003",
+    "downloadUrl": "https://github.com/Numbersf/MakeFontsGreatAgain/releases/download/1717180003/MFGA-17.0.1.08-31-alpha2.1717180003.zip",
+    "assetName": "MFGA-17.0.1.08-31-alpha2.1717180003.zip"
+  },
+  "seo": {
+    "title": "MakeFontsGreatAgain - Active Magisk Module",
+    "description": "System-wide Font Overrider with Unique GMS Masking & Multi-Range Unicode Filter."
+  }
+}

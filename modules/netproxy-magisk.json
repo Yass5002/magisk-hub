@@ -1,0 +1,24 @@
+{
+  "id": "netproxy-magisk",
+  "name": "NetProxy-Magisk",
+  "repo": "Fanju6/NetProxy-Magisk",
+  "category": "networking-proxies",
+  "description": "Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/netproxy-magisk.png",
+  "stars": 1199,
+  "latestRelease": {
+    "tag": "v8.1.1",
+    "publishedAt": "2026-08-26T23:20:50Z",
+    "url": "https://github.com/Fanju6/NetProxy-Magisk/releases/tag/v8.1.1",
+    "downloadUrl": "https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.1.1/NetProxy_v8.1.1_924_with-manager.zip",
+    "assetName": "NetProxy_v8.1.1_924_with-manager.zip"
+  },
+  "seo": {
+    "title": "NetProxy-Magisk - Active Magisk Module",
+    "description": "Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices."
+  }
+}

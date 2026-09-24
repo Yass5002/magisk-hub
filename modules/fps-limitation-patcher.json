@@ -1,0 +1,25 @@
+{
+  "id": "fps-limitation-patcher",
+  "name": "FPS-Limitation-Patcher",
+  "repo": "Mods-Center/FPS-Limitation-Patcher",
+  "category": "performance-kernel",
+  "description": "Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS devices, enhancing gaming performance.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 38,
+  "latestRelease": {
+    "tag": "v3.1",
+    "publishedAt": "2025-11-16T13:07:01Z",
+    "url": "https://github.com/Mods-Center/FPS-Limitation-Patcher/releases/tag/v3.1",
+    "downloadUrl": "https://github.com/Mods-Center/FPS-Limitation-Patcher/releases/download/v3.1/v3.1FPS_Limitations_patcher%40kashis_cringey_stuffs.zip",
+    "assetName": "v3.1FPS_Limitations_patcher@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "FPS-Limitation-Patcher - Active Magisk Module",
+    "description": "Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS devices, enhancing gaming performance."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "wadbd",
+  "name": "wadbd",
+  "repo": "Magisk-Modules-Alt-Repo/wadbd",
+  "category": "system-utilities",
+  "description": "Allows you to enable or disable wireless ADB for the current session or at boot.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 98,
+  "latestRelease": {
+    "tag": "V4.8",
+    "publishedAt": "2026-04-07T08:02:09Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/wadbd/releases/tag/V4.8",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/wadbd/releases/download/V4.8/wadbd-4.8-11.zip",
+    "assetName": "wadbd-4.8-11.zip"
+  },
+  "seo": {
+    "title": "wadbd - Active Magisk Module",
+    "description": "Allows you to enable or disable wireless ADB for the current session or at boot."
+  }
+}

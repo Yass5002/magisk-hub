@@ -1,0 +1,25 @@
+{
+  "id": "viperfx-re",
+  "name": "ViPERFX_RE",
+  "repo": "likelikeslike/ViPERFX_RE",
+  "category": "system-utilities",
+  "description": "Reverse Engineering of ViPER4Android FX",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 332,
+  "latestRelease": {
+    "tag": "v2.1.0",
+    "publishedAt": "2026-09-13T15:46:04Z",
+    "url": "https://github.com/likelikeslike/ViPERFX_RE/releases/tag/v2.1.0",
+    "downloadUrl": "https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.0/ViPER4Android-RE-v2.1.0.zip",
+    "assetName": "ViPER4Android-RE-v2.1.0.zip"
+  },
+  "seo": {
+    "title": "ViPERFX_RE - Active Magisk Module",
+    "description": "Reverse Engineering of ViPER4Android FX"
+  }
+}

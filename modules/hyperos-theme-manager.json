@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-theme-manager",
+  "name": "HyperOS-Theme-Manager",
+  "repo": "Mods-Center/HyperOS-Theme-Manager",
+  "category": "customization-ui",
+  "description": "Unlocks full theme customization in HyperOS with multi-theme servers, premium themes, AI wallpapers, third-party imports, super icons/widgets, and low-end features. Designed exclusively for HyperOS, bringing advanced personalization beyond stock limits.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 196,
+  "latestRelease": {
+    "tag": "V6.1",
+    "publishedAt": "2026-08-10T14:50:29Z",
+    "url": "https://github.com/Mods-Center/HyperOS-Theme-Manager/releases/tag/V6.1",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-Theme-Manager/releases/download/V6.1/HyperOS_ThemeManagerV6%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_ThemeManagerV6@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "HyperOS-Theme-Manager - Active Magisk Module",
+    "description": "Unlocks full theme customization in HyperOS with multi-theme servers, premium themes, AI wallpapers, third-party imports, super icons/widgets, and low-end "
+  }
+}

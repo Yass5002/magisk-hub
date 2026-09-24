@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-launcher",
+  "name": "HyperOS-Launcher",
+  "repo": "Mods-Center/HyperOS-Launcher",
+  "category": "customization-ui",
+  "description": "Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent, dock background, and customization options for a refined user experience. Optimized for smoother performance and additional features on all devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 405,
+  "latestRelease": {
+    "tag": "V7.1",
+    "publishedAt": "2026-09-01T02:17:04Z",
+    "url": "https://github.com/Mods-Center/HyperOS-Launcher/releases/tag/V7.1",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-Launcher/releases/download/V7.1/HyperOS_LauncherV7.1%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_LauncherV7.1@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "HyperOS-Launcher - Active Magisk Module",
+    "description": "Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent, dock background, and customization options for a refined user experie"
+  }
+}

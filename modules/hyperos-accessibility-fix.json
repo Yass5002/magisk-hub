@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-accessibility-fix",
+  "name": "hyperos-accessibility-fix",
+  "repo": "chkndrp/hyperos-accessibility-fix",
+  "category": "system-environment",
+  "description": "Stop HyperOS from randomly disabling accessibillity services",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 14,
+  "latestRelease": {
+    "tag": "1.0.5",
+    "publishedAt": "2026-07-20T01:49:07Z",
+    "url": "https://github.com/chkndrp/hyperos-accessibility-fix/releases/tag/1.0.5",
+    "downloadUrl": "https://github.com/chkndrp/hyperos-accessibility-fix/releases/download/1.0.5/hyperos-accessibility-fix.zip",
+    "assetName": "hyperos-accessibility-fix.zip"
+  },
+  "seo": {
+    "title": "hyperos-accessibility-fix - Active Magisk Module",
+    "description": "Stop HyperOS from randomly disabling accessibillity services"
+  }
+}

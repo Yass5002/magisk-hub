@@ -1,0 +1,25 @@
+{
+  "id": "android-vbmeta-fixer",
+  "name": "Android-VBMeta-Fixer",
+  "repo": "reveny/Android-VBMeta-Fixer",
+  "category": "system-environment",
+  "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 528,
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2025-05-10T07:20:15Z",
+    "url": "https://github.com/reveny/Android-VBMeta-Fixer/releases/tag/v1.2.0",
+    "downloadUrl": "https://github.com/reveny/Android-VBMeta-Fixer/releases/download/v1.2.0/vbmeta-fixer-v1.2.0.zip",
+    "assetName": "vbmeta-fixer-v1.2.0.zip"
+  },
+  "seo": {
+    "title": "Android-VBMeta-Fixer - Active Magisk Module",
+    "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android"
+  }
+}

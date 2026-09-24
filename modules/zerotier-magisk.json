@@ -1,0 +1,24 @@
+{
+  "id": "zerotier-magisk",
+  "name": "zerotier-magisk",
+  "repo": "eventlOwOp/zerotier-magisk",
+  "category": "networking-proxies",
+  "description": "ZeroTier for magisk ✅ App controller ✅",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/zerotier-magisk.png",
+  "stars": 150,
+  "latestRelease": {
+    "tag": "v1.14.2-2",
+    "publishedAt": "2025-04-11T05:57:01Z",
+    "url": "https://github.com/eventlOwOp/zerotier-magisk/releases/tag/v1.14.2-2",
+    "downloadUrl": "https://github.com/eventlOwOp/zerotier-magisk/releases/download/v1.14.2-2/app-f55e880.zip",
+    "assetName": "app-f55e880.zip"
+  },
+  "seo": {
+    "title": "zerotier-magisk - Active Magisk Module",
+    "description": "ZeroTier for magisk ✅ App controller ✅"
+  }
+}

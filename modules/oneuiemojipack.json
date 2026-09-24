@@ -1,0 +1,25 @@
+{
+  "id": "oneuiemojipack",
+  "name": "OneUIEmojiPack",
+  "repo": "AloozChips/OneUIEmojiPack",
+  "category": "customization-ui",
+  "description": "Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU, and Apatch.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 7,
+  "latestRelease": {
+    "tag": "v7.1",
+    "publishedAt": "2025-06-14T13:46:40Z",
+    "url": "https://github.com/AloozChips/OneUIEmojiPack/releases/tag/v7.1",
+    "downloadUrl": "https://github.com/AloozChips/OneUIEmojiPack/releases/download/v7.1/OneUI_Emoji_Pack-v7.1.zip",
+    "assetName": "OneUI_Emoji_Pack-v7.1.zip"
+  },
+  "seo": {
+    "title": "OneUIEmojiPack - Active Magisk Module",
+    "description": "Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU"
+  }
+}

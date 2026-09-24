@@ -1,0 +1,24 @@
+{
+  "id": "background-app-slayer",
+  "name": "Background-App-Slayer",
+  "repo": "UNKNUW/Background-App-Slayer",
+  "category": "performance-kernel",
+  "description": "Module Magisk/KSU automatic Killing Background apps for BETTER GAMING PERFORMANCE !!",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/background-app-slayer.png",
+  "stars": 7,
+  "latestRelease": {
+    "tag": "5.1.2",
+    "publishedAt": "2025-06-05T01:11:26Z",
+    "url": "https://github.com/UNKNUW/Background-App-Slayer/releases/tag/5.1.2",
+    "downloadUrl": "https://github.com/UNKNUW/Background-App-Slayer/releases/download/5.1.2/BAS_LOOP.zip",
+    "assetName": "BAS_LOOP.zip"
+  },
+  "seo": {
+    "title": "Background-App-Slayer - Active Magisk Module",
+    "description": "Module Magisk/KSU automatic Killing Background apps for BETTER GAMING PERFORMANCE !!"
+  }
+}

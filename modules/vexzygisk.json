@@ -1,0 +1,26 @@
+{
+  "id": "vexzygisk",
+  "name": "VexZygisk",
+  "repo": "Lxiaoyao077/VexZygisk",
+  "category": "root-management",
+  "description": "Standalone implementation of Zygisk for KernelSU and APatch.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 60,
+  "latestRelease": {
+    "tag": "v2.1.2",
+    "publishedAt": "2026-09-02T01:33:41Z",
+    "url": "https://github.com/Lxiaoyao077/VexZygisk/releases/tag/v2.1.2",
+    "downloadUrl": "https://github.com/Lxiaoyao077/VexZygisk/releases/download/v2.1.2/VexZygisk-v2.1.2-592-c3c2148-release.zip",
+    "assetName": "VexZygisk-v2.1.2-592-c3c2148-release.zip"
+  },
+  "seo": {
+    "title": "VexZygisk - Active Magisk Module",
+    "description": "Standalone implementation of Zygisk for KernelSU and APatch."
+  }
+}

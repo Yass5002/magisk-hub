@@ -1,0 +1,24 @@
+{
+  "id": "infamick-script",
+  "name": "Infamick-script",
+  "repo": "Infamousmick/Infamick-script",
+  "category": "system-environment",
+  "description": "Infamick-script active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 88,
+  "latestRelease": {
+    "tag": "v3.3",
+    "publishedAt": "2026-04-15T13:38:58Z",
+    "url": "https://github.com/Infamousmick/Infamick-script/releases/tag/v3.3",
+    "downloadUrl": "https://github.com/Infamousmick/Infamick-script/releases/download/v3.3/Infamick-script-v3.3_MAGISK.zip",
+    "assetName": "Infamick-script-v3.3_MAGISK.zip"
+  },
+  "seo": {
+    "title": "Infamick-script - Active Magisk Module",
+    "description": "Infamick-script active root module."
+  }
+}

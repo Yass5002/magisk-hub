@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-app-vault",
+  "name": "HyperOS-App-Vault",
+  "repo": "Mods-Center/HyperOS-App-Vault",
+  "category": "customization-ui",
+  "description": "Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur adjustments, and scrolling animations.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 61,
+  "latestRelease": {
+    "tag": "V4.5",
+    "publishedAt": "2026-08-10T14:52:54Z",
+    "url": "https://github.com/Mods-Center/HyperOS-App-Vault/releases/tag/V4.5",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-App-Vault/releases/download/V4.5/HyperOS_AppVaultV4.5%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_AppVaultV4.5@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "HyperOS-App-Vault - Active Magisk Module",
+    "description": "Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur adjustments, and scrolling animations."
+  }
+}

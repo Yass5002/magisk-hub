@@ -1,0 +1,24 @@
+{
+  "id": "hydro-br-leur",
+  "name": "Hydro-Br-leur",
+  "repo": "AestasBritannia/Hydro-Br-leur",
+  "category": "performance-kernel",
+  "description": "A magisk module for Android devices",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 309,
+  "latestRelease": {
+    "tag": "7.2",
+    "publishedAt": "2026-04-17T17:14:25Z",
+    "url": "https://github.com/AestasBritannia/Hydro-Br-leur/releases/tag/7.2",
+    "downloadUrl": "https://github.com/AestasBritannia/Hydro-Br-leur/releases/download/7.2/Hydrostellaire.Chocolate.zip",
+    "assetName": "Hydrostellaire.Chocolate.zip"
+  },
+  "seo": {
+    "title": "Hydro-Br-leur - Active Magisk Module",
+    "description": "A magisk module for Android devices"
+  }
+}

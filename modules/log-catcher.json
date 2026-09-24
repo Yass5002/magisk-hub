@@ -1,0 +1,25 @@
+{
+  "id": "log-catcher",
+  "name": "Log-Catcher",
+  "repo": "hxreborn/Log-Catcher",
+  "category": "development-instrumentation",
+  "description": "A module to make capturing boot logs easier",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 6,
+  "latestRelease": {
+    "tag": "v23.2",
+    "publishedAt": "2026-03-14T23:51:28Z",
+    "url": "https://github.com/hxreborn/Log-Catcher/releases/tag/v23.2",
+    "downloadUrl": "https://github.com/hxreborn/Log-Catcher/releases/download/v23.2/hxr_logcat.zip",
+    "assetName": "hxr_logcat.zip"
+  },
+  "seo": {
+    "title": "Log-Catcher - Active Magisk Module",
+    "description": "A module to make capturing boot logs easier"
+  }
+}

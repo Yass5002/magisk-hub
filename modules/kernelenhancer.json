@@ -1,0 +1,24 @@
+{
+  "id": "kernelenhancer",
+  "name": "KernelEnhancer",
+  "repo": "RAAJK20Pro/KernelEnhancer",
+  "category": "performance-kernel",
+  "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 52,
+  "latestRelease": {
+    "tag": "V5.0",
+    "publishedAt": "2026-06-08T08:23:22Z",
+    "url": "https://github.com/RAAJK20Pro/KernelEnhancer/releases/tag/V5.0",
+    "downloadUrl": "https://github.com/RAAJK20Pro/KernelEnhancer/releases/download/V5.0/KernelEnhancerV5.0.zip",
+    "assetName": "KernelEnhancerV5.0.zip"
+  },
+  "seo": {
+    "title": "KernelEnhancer - Active Magisk Module",
+    "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices."
+  }
+}

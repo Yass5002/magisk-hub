@@ -1,0 +1,25 @@
+{
+  "id": "hyperos-aod",
+  "name": "HyperOS-AOD",
+  "repo": "Mods-Center/HyperOS-AOD",
+  "category": "customization-ui",
+  "description": "Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 59,
+  "latestRelease": {
+    "tag": "V3",
+    "publishedAt": "2025-12-12T07:57:00Z",
+    "url": "https://github.com/Mods-Center/HyperOS-AOD/releases/tag/V3",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-AOD/releases/download/V3/HyperOS_AOD_V3%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_AOD_V3@kashis_cringey_stuffs.zip"
+  },
+  "seo": {
+    "title": "HyperOS-AOD - Active Magisk Module",
+    "description": "Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices."
+  }
+}

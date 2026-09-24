@@ -1,0 +1,24 @@
+{
+  "id": "video-to-bootanimation",
+  "name": "video-to-bootanimation",
+  "repo": "Magisk-Modules-Alt-Repo/video-to-bootanimation",
+  "category": "system-environment",
+  "description": "A Magisk Module Which Can Set Videos as Android Device BootAnimation",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 129,
+  "latestRelease": {
+    "tag": "V8",
+    "publishedAt": "2025-11-09T13:58:03Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation/releases/tag/V8",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation/releases/download/V8/video-to-bootanimation-online-V8.zip",
+    "assetName": "video-to-bootanimation-online-V8.zip"
+  },
+  "seo": {
+    "title": "video-to-bootanimation - Active Magisk Module",
+    "description": "A Magisk Module Which Can Set Videos as Android Device BootAnimation"
+  }
+}

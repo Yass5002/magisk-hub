@@ -1,0 +1,24 @@
+{
+  "id": "dynamic-system-tweaks-magisk-module",
+  "name": "Dynamic-System-Tweaks-Magisk-Module",
+  "repo": "g7755726/Dynamic-System-Tweaks-Magisk-Module",
+  "category": "performance-kernel",
+  "description": "Dynamic-System-Tweaks-Magisk-Module active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 48,
+  "latestRelease": {
+    "tag": "v4.7",
+    "publishedAt": "2026-05-10T07:32:46Z",
+    "url": "https://github.com/g7755726/Dynamic-System-Tweaks-Magisk-Module/releases/tag/v4.7",
+    "downloadUrl": "https://github.com/g7755726/Dynamic-System-Tweaks-Magisk-Module/releases/download/v4.7/DynamicSystemTweaks-v4.7.zip",
+    "assetName": "DynamicSystemTweaks-v4.7.zip"
+  },
+  "seo": {
+    "title": "Dynamic-System-Tweaks-Magisk-Module - Active Magisk Module",
+    "description": "Dynamic-System-Tweaks-Magisk-Module active root module."
+  }
+}

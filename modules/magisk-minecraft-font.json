@@ -1,0 +1,24 @@
+{
+  "id": "magisk-minecraft-font",
+  "name": "Magisk-Minecraft-Font",
+  "repo": "DethByte64/Magisk-Minecraft-Font",
+  "category": "customization-ui",
+  "description": "A Magisk Module that changes your default font to the Minecraft font",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 6,
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2025-05-09T19:34:33Z",
+    "url": "https://github.com/DethByte64/Magisk-Minecraft-Font/releases/tag/v1.0.0",
+    "downloadUrl": "https://github.com/DethByte64/Magisk-Minecraft-Font/releases/download/v1.0.0/MinecraftFont.zip",
+    "assetName": "MinecraftFont.zip"
+  },
+  "seo": {
+    "title": "Magisk-Minecraft-Font - Active Magisk Module",
+    "description": "A Magisk Module that changes your default font to the Minecraft font"
+  }
+}

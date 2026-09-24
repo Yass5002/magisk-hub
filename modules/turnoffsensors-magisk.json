@@ -1,0 +1,24 @@
+{
+  "id": "turnoffsensors-magisk",
+  "name": "TurnOffSensors-Magisk",
+  "repo": "AdalynAstatine/TurnOffSensors-Magisk",
+  "category": "security-certificates",
+  "description": "TurnOffSensors-Magisk active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 4,
+  "latestRelease": {
+    "tag": "Latest",
+    "publishedAt": "2026-03-28T19:04:31Z",
+    "url": "https://github.com/AdalynAstatine/TurnOffSensors-Magisk/releases/tag/Latest",
+    "downloadUrl": "https://github.com/AdalynAstatine/TurnOffSensors-Magisk/releases/download/Latest/TurnOffSensors-Magisk.zip",
+    "assetName": "TurnOffSensors-Magisk.zip"
+  },
+  "seo": {
+    "title": "TurnOffSensors-Magisk - Active Magisk Module",
+    "description": "TurnOffSensors-Magisk active root module."
+  }
+}

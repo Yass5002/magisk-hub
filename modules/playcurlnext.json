@@ -1,0 +1,25 @@
+{
+  "id": "playcurlnext",
+  "name": "playcurlNEXT",
+  "repo": "daboynb/playcurlNEXT",
+  "category": "root-management",
+  "description": "Magisk module that auto-downloads working Play Integrity fingerprints at every boot",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 775,
+  "latestRelease": {
+    "tag": "v1.19",
+    "publishedAt": "2026-01-23T12:57:50Z",
+    "url": "https://github.com/daboynb/playcurlNEXT/releases/tag/v1.19",
+    "downloadUrl": "https://github.com/daboynb/playcurlNEXT/releases/download/v1.19/playcurlNEXT.zip",
+    "assetName": "playcurlNEXT.zip"
+  },
+  "seo": {
+    "title": "playcurlNEXT - Active Magisk Module",
+    "description": "Magisk module that auto-downloads working Play Integrity fingerprints at every boot"
+  }
+}

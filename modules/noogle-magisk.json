@@ -1,0 +1,24 @@
+{
+  "id": "noogle-magisk",
+  "name": "noogle-magisk",
+  "repo": "SelfRef/noogle-magisk",
+  "category": "system-environment",
+  "description": "Degoogling Magisk modules for stock Android (powered by microG)",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 131,
+  "latestRelease": {
+    "tag": "v2.1",
+    "publishedAt": "2025-04-04T09:46:00Z",
+    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2.1",
+    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2.1/noogle-microg-v2.1.zip",
+    "assetName": "noogle-microg-v2.1.zip"
+  },
+  "seo": {
+    "title": "noogle-magisk - Active Magisk Module",
+    "description": "Degoogling Magisk modules for stock Android (powered by microG)"
+  }
+}

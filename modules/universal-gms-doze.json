@@ -1,0 +1,24 @@
+{
+  "id": "universal-gms-doze",
+  "name": "universal-gms-doze",
+  "repo": "MarsPatrick/universal-gms-doze",
+  "category": "performance-kernel",
+  "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 75,
+  "latestRelease": {
+    "tag": "1.9.11",
+    "publishedAt": "2026-08-17T21:35:44Z",
+    "url": "https://github.com/MarsPatrick/universal-gms-doze/releases/tag/1.9.11",
+    "downloadUrl": "https://github.com/MarsPatrick/universal-gms-doze/releases/download/1.9.11/gms_1.9.11.zip",
+    "assetName": "gms_1.9.11.zip"
+  },
+  "seo": {
+    "title": "universal-gms-doze - Active Magisk Module",
+    "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization"
+  }
+}

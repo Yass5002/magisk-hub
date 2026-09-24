@@ -1,0 +1,24 @@
+{
+  "id": "extreme-gms-doze",
+  "name": "Extreme-Gms-Doze",
+  "repo": "Skyghost090/Extreme-Gms-Doze",
+  "category": "performance-kernel",
+  "description": "A Magisk Module for Kill gms on screen off",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 50,
+  "latestRelease": {
+    "tag": "4",
+    "publishedAt": "2025-07-14T00:42:15Z",
+    "url": "https://github.com/Skyghost090/Extreme-Gms-Doze/releases/tag/4",
+    "downloadUrl": "https://github.com/Skyghost090/Extreme-Gms-Doze/releases/download/4/Extreme.Gms.Doze.zip",
+    "assetName": "Extreme.Gms.Doze.zip"
+  },
+  "seo": {
+    "title": "Extreme-Gms-Doze - Active Magisk Module",
+    "description": "A Magisk Module for Kill gms on screen off"
+  }
+}

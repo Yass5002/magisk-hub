@@ -1,0 +1,24 @@
+{
+  "id": "termuxrootmods",
+  "name": "TermuxRootMods",
+  "repo": "rompelhd/TermuxRootMods",
+  "category": "development-instrumentation",
+  "description": "A module that enhances the Termux experience for rooted devices.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 183,
+  "latestRelease": {
+    "tag": "v.1.0.22",
+    "publishedAt": "2026-05-05T23:20:12Z",
+    "url": "https://github.com/rompelhd/TermuxRootMods/releases/tag/v.1.0.22",
+    "downloadUrl": "https://github.com/rompelhd/TermuxRootMods/releases/download/v.1.0.22/TermuxRootMods-v1.0.22.zip",
+    "assetName": "TermuxRootMods-v1.0.22.zip"
+  },
+  "seo": {
+    "title": "TermuxRootMods - Active Magisk Module",
+    "description": "A module that enhances the Termux experience for rooted devices."
+  }
+}

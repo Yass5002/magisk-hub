@@ -1,0 +1,25 @@
+{
+  "id": "treat-wheel-zygisk",
+  "name": "Treat-Wheel-Zygisk",
+  "repo": "PerformanC/Treat-Wheel-Zygisk",
+  "category": "root-management",
+  "description": "The wheel to reinvent the new light.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 292,
+  "latestRelease": {
+    "tag": "0.0.11",
+    "publishedAt": "2026-09-21T17:46:16Z",
+    "url": "https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/tag/0.0.11",
+    "downloadUrl": "https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/download/0.0.11/TreatWheel.zip",
+    "assetName": "TreatWheel.zip"
+  },
+  "seo": {
+    "title": "Treat-Wheel-Zygisk - Active Magisk Module",
+    "description": "The wheel to reinvent the new light."
+  }
+}

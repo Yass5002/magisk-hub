@@ -1,0 +1,24 @@
+{
+  "id": "supl-replacer",
+  "name": "supl-replacer",
+  "repo": "Magisk-Modules-Alt-Repo/supl-replacer",
+  "category": "system-utilities",
+  "description": "Magisk module to replace the SUPL provider in gps.conf",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "BSD-3-Clause",
+  "icon": null,
+  "stars": 66,
+  "latestRelease": {
+    "tag": "v2.3.1",
+    "publishedAt": "2025-11-06T10:24:26Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/supl-replacer/releases/tag/v2.3.1",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/supl-replacer/releases/download/v2.3.1/supl-replacer-v2.3.1.zip",
+    "assetName": "supl-replacer-v2.3.1.zip"
+  },
+  "seo": {
+    "title": "supl-replacer - Active Magisk Module",
+    "description": "Magisk module to replace the SUPL provider in gps.conf"
+  }
+}

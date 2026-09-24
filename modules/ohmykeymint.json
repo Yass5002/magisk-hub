@@ -1,0 +1,25 @@
+{
+  "id": "ohmykeymint",
+  "name": "OhMyKeymint",
+  "repo": "qwq233/OhMyKeymint",
+  "category": "root-management",
+  "description": "OhMyKeymint active root module.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "AGPL-3.0",
+  "icon": null,
+  "stars": 385,
+  "latestRelease": {
+    "tag": "v1.2.0-67dc5e7",
+    "publishedAt": "2026-06-16T20:28:47Z",
+    "url": "https://github.com/qwq233/OhMyKeymint/releases/tag/v1.2.0-67dc5e7",
+    "downloadUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/v1.2.0-67dc5e7/OhMyKeymint-release-arm64-v8a-1.2.0-67dc5e7.zip",
+    "assetName": "OhMyKeymint-release-arm64-v8a-1.2.0-67dc5e7.zip"
+  },
+  "seo": {
+    "title": "OhMyKeymint - Active Magisk Module",
+    "description": "OhMyKeymint active root module."
+  }
+}

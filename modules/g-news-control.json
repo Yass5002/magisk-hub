@@ -1,0 +1,25 @@
+{
+  "id": "g-news-control",
+  "name": "G-News-Control",
+  "repo": "mango0oo/G-News-Control",
+  "category": "customization-ui",
+  "description": "Magisk / KernelSU module for control the Google News on the home screen.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 15,
+  "latestRelease": {
+    "tag": "V2_20.09.2025",
+    "publishedAt": "2025-09-19T22:39:50Z",
+    "url": "https://github.com/mango0oo/G-News-Control/releases/tag/V2_20.09.2025",
+    "downloadUrl": "https://github.com/mango0oo/G-News-Control/releases/download/V2_20.09.2025/G-News.Control.V2.zip",
+    "assetName": "G-News.Control.V2.zip"
+  },
+  "seo": {
+    "title": "G-News-Control - Active Magisk Module",
+    "description": "Magisk / KernelSU module for control the Google News on the home screen."
+  }
+}

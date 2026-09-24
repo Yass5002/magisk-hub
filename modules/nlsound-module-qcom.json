@@ -1,0 +1,24 @@
+{
+  "id": "nlsound-module-qcom",
+  "name": "NLSound_module_QCom",
+  "repo": "Briclyaz/NLSound_module_QCom",
+  "category": "system-utilities",
+  "description": "The best all-in-one solution available today to comprehensively improve your smartphone's audio quality at the system level, as well as fix various issues related to lousy microphone recording quality!",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 300,
+  "latestRelease": {
+    "tag": "v4.4",
+    "publishedAt": "2025-05-05T18:37:53Z",
+    "url": "https://github.com/Briclyaz/NLSound_module_QCom/releases/tag/v4.4",
+    "downloadUrl": "https://github.com/Briclyaz/NLSound_module_QCom/releases/download/v4.4/NLSound.v4.4.Qualcomm.Devices.zip",
+    "assetName": "NLSound.v4.4.Qualcomm.Devices.zip"
+  },
+  "seo": {
+    "title": "NLSound_module_QCom - Active Magisk Module",
+    "description": "The best all-in-one solution available today to comprehensively improve your smartphone's audio quality at the system level, as well as fix various issues "
+  }
+}

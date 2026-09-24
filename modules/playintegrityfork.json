@@ -1,0 +1,24 @@
+{
+  "id": "playintegrityfork",
+  "name": "PlayIntegrityFork",
+  "repo": "osm0sis/PlayIntegrityFork",
+  "category": "root-management",
+  "description": "Fix Play Integrity <A13 verdicts, allowing custom fields and props",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 4518,
+  "latestRelease": {
+    "tag": "v18",
+    "publishedAt": "2026-08-29T17:33:56Z",
+    "url": "https://github.com/osm0sis/PlayIntegrityFork/releases/tag/v18",
+    "downloadUrl": "https://github.com/osm0sis/PlayIntegrityFork/releases/download/v18/PlayIntegrityFork-v18.zip",
+    "assetName": "PlayIntegrityFork-v18.zip"
+  },
+  "seo": {
+    "title": "PlayIntegrityFork - Active Magisk Module",
+    "description": "Fix Play Integrity <A13 verdicts, allowing custom fields and props"
+  }
+}

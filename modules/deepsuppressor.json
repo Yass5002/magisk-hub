@@ -1,0 +1,24 @@
+{
+  "id": "deepsuppressor",
+  "name": "DeepSuppressor",
+  "repo": "Aurora-Nasa-1/DeepSuppressor",
+  "category": "performance-kernel",
+  "description": "A Magisk Module",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 19,
+  "latestRelease": {
+    "tag": "v0.2.0",
+    "publishedAt": "2025-06-01T06:54:15Z",
+    "url": "https://github.com/Aurora-Nasa-1/DeepSuppressor/releases/tag/v0.2.0",
+    "downloadUrl": "https://github.com/Aurora-Nasa-1/DeepSuppressor/releases/download/v0.2.0/DeepSuppressor_f414499.zip",
+    "assetName": "DeepSuppressor_f414499.zip"
+  },
+  "seo": {
+    "title": "DeepSuppressor - Active Magisk Module",
+    "description": "A Magisk Module"
+  }
+}

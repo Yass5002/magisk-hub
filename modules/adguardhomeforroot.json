@@ -1,0 +1,24 @@
+{
+  "id": "adguardhomeforroot",
+  "name": "AdGuardHomeForRoot",
+  "repo": "twoone-3/AdGuardHomeForRoot",
+  "category": "networking-proxies",
+  "description": "A module to easily execute AdGuardHome on Android",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 1428,
+  "latestRelease": {
+    "tag": "20260825",
+    "publishedAt": "2026-08-25T01:39:41Z",
+    "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20260825",
+    "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20260825/AdGuardHomeForRoot_arm64.zip",
+    "assetName": "AdGuardHomeForRoot_arm64.zip"
+  },
+  "seo": {
+    "title": "AdGuardHomeForRoot - Active Magisk Module",
+    "description": "A module to easily execute AdGuardHome on Android"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "yetanotherbootloopprotector",
+  "name": "YetAnotherBootloopProtector",
+  "repo": "Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector",
+  "category": "root-management",
+  "description": "A Magisk Module to monitor and fix potential Bootloops and SystemUI failures.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 185,
+  "latestRelease": {
+    "tag": "v8.138-6537c16",
+    "publishedAt": "2026-04-07T07:26:46Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector/releases/tag/v8.138-6537c16",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector/releases/download/v8.138-6537c16/YetAnotherBootloopProtector-138-v8.138-6537c16.zip",
+    "assetName": "YetAnotherBootloopProtector-138-v8.138-6537c16.zip"
+  },
+  "seo": {
+    "title": "YetAnotherBootloopProtector - Active Magisk Module",
+    "description": "A Magisk Module to monitor and fix potential Bootloops and SystemUI failures."
+  }
+}

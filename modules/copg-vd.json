@@ -1,0 +1,25 @@
+{
+  "id": "copg-vd",
+  "name": "COPG-VD",
+  "repo": "VD171/COPG-VD",
+  "category": "performance-kernel",
+  "description": "COPG-VD is a module designed for global device spoofing. This means even system apps and the whole device will be hooked.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/copg-vd.png",
+  "stars": 89,
+  "latestRelease": {
+    "tag": "v5.1.1-vd",
+    "publishedAt": "2026-09-21T07:58:04Z",
+    "url": "https://github.com/VD171/COPG-VD/releases/tag/v5.1.1-vd",
+    "downloadUrl": "https://github.com/VD171/COPG-VD/releases/download/v5.1.1-vd/COPG-VD-v5.1.1-vd.zip",
+    "assetName": "COPG-VD-v5.1.1-vd.zip"
+  },
+  "seo": {
+    "title": "COPG-VD - Active Magisk Module",
+    "description": "COPG-VD is a module designed for global device spoofing. This means even system apps and the whole device will be hooked."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "zapret-pocket",
+  "name": "zapret-pocket",
+  "repo": "sevcator/zapret-pocket",
+  "category": "networking-proxies",
+  "description": "⚡ Bypass censorship via zapret on rooted Android devices",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/zapret-pocket.png",
+  "stars": 158,
+  "latestRelease": {
+    "tag": "69",
+    "publishedAt": "2026-09-20T12:44:44Z",
+    "url": "https://github.com/sevcator/zapret-pocket/releases/tag/69",
+    "downloadUrl": "https://github.com/sevcator/zapret-pocket/releases/download/69/zapret-pocket.zip",
+    "assetName": "zapret-pocket.zip"
+  },
+  "seo": {
+    "title": "zapret-pocket - Active Magisk Module",
+    "description": "⚡ Bypass censorship via zapret on rooted Android devices"
+  }
+}

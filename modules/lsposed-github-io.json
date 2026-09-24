@@ -1,0 +1,24 @@
+{
+  "id": "lsposed-github-io",
+  "name": "LSPosed.github.io",
+  "repo": "LSPosed/LSPosed.github.io",
+  "category": "root-management",
+  "description": "LSPosed.github.io active root module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 6345,
+  "latestRelease": {
+    "tag": "shamiko-414",
+    "publishedAt": "2025-06-18T11:37:10Z",
+    "url": "https://github.com/LSPosed/LSPosed.github.io/releases/tag/shamiko-414",
+    "downloadUrl": "https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-414/Shamiko-v1.2.5-414-release.zip",
+    "assetName": "Shamiko-v1.2.5-414-release.zip"
+  },
+  "seo": {
+    "title": "LSPosed.github.io - Active Magisk Module",
+    "description": "LSPosed.github.io active root module."
+  }
+}

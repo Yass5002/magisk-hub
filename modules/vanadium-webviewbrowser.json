@@ -1,0 +1,25 @@
+{
+  "id": "vanadium-webviewbrowser",
+  "name": "Vanadium-WebViewBrowser",
+  "repo": "NoneBaiano/Vanadium-WebViewBrowser",
+  "category": "system-environment",
+  "description": "A Magisk/KernelSU module that changes the system WebView with Vanadium WebView and installs the Vanadium Browser.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 72,
+  "latestRelease": {
+    "tag": "v1.2.0",
+    "publishedAt": "2026-08-17T23:29:33Z",
+    "url": "https://github.com/NoneBaiano/Vanadium-WebViewBrowser/releases/tag/v1.2.0",
+    "downloadUrl": "https://github.com/NoneBaiano/Vanadium-WebViewBrowser/releases/download/v1.2.0/Vanadium-WebViewBrowser_v1.2.0.zip",
+    "assetName": "Vanadium-WebViewBrowser_v1.2.0.zip"
+  },
+  "seo": {
+    "title": "Vanadium-WebViewBrowser - Active Magisk Module",
+    "description": "A Magisk/KernelSU module that changes the system WebView with Vanadium WebView and installs the Vanadium Browser."
+  }
+}

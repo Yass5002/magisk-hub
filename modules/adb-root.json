@@ -1,0 +1,24 @@
+{
+  "id": "adb-root",
+  "name": "adb_root",
+  "repo": "evdenis/adb_root",
+  "category": "development-instrumentation",
+  "description": "Magisk Module that allows you to run \"adb root\". Android 10 only. Probably will work with Android 9. Definitely not with Android 11/12.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 510,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2026-02-27T10:25:07Z",
+    "url": "https://github.com/evdenis/adb_root/releases/tag/v2.0",
+    "downloadUrl": "https://github.com/evdenis/adb_root/releases/download/v2.0/adb_root-v2.0.zip",
+    "assetName": "adb_root-v2.0.zip"
+  },
+  "seo": {
+    "title": "adb_root - Active Magisk Module",
+    "description": "Magisk Module that allows you to run \"adb root\". Android 10 only. Probably will work with Android 9. Definitely not with Android 11/12."
+  }
+}

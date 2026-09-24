@@ -1,0 +1,24 @@
+{
+  "id": "magisk-cromite-webview",
+  "name": "magisk-cromite-webview",
+  "repo": "hddq/magisk-cromite-webview",
+  "category": "system-environment",
+  "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "stars": 14,
+  "latestRelease": {
+    "tag": "v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+    "publishedAt": "2026-09-16T09:11:17Z",
+    "url": "https://github.com/hddq/magisk-cromite-webview/releases/tag/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+    "downloadUrl": "https://github.com/hddq/magisk-cromite-webview/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip",
+    "assetName": "CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip"
+  },
+  "seo": {
+    "title": "magisk-cromite-webview - Active Magisk Module",
+    "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions."
+  }
+}

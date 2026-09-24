@@ -1,0 +1,25 @@
+{
+  "id": "azenith",
+  "name": "AZenith",
+  "repo": "Liliya2727/AZenith",
+  "category": "performance-kernel",
+  "description": "Universal perf modules",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/azenith.png",
+  "stars": 129,
+  "latestRelease": {
+    "tag": "AZenith-5.2",
+    "publishedAt": "2026-08-19T14:06:32Z",
+    "url": "https://github.com/Liliya2727/AZenith/releases/tag/AZenith-5.2",
+    "downloadUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.2/AZenith-5.2-1823-bf02195-Dazzling.zip",
+    "assetName": "AZenith-5.2-1823-bf02195-Dazzling.zip"
+  },
+  "seo": {
+    "title": "AZenith - Active Magisk Module",
+    "description": "Universal perf modules"
+  }
+}

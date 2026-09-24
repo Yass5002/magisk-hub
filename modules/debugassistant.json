@@ -1,0 +1,24 @@
+{
+  "id": "debugassistant",
+  "name": "DebugAssistant",
+  "repo": "ThePedroo/DebugAssistant",
+  "category": "development-instrumentation",
+  "description": "The simplest yet powerful logcat capture system as Magisk module.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "BSD-3-Clause",
+  "icon": null,
+  "stars": 36,
+  "latestRelease": {
+    "tag": "v3.0.2",
+    "publishedAt": "2026-01-25T13:04:34Z",
+    "url": "https://github.com/ThePedroo/DebugAssistant/releases/tag/v3.0.2",
+    "downloadUrl": "https://github.com/ThePedroo/DebugAssistant/releases/download/v3.0.2/DebugAssistant-3.0.2.zip",
+    "assetName": "DebugAssistant-3.0.2.zip"
+  },
+  "seo": {
+    "title": "DebugAssistant - Active Magisk Module",
+    "description": "The simplest yet powerful logcat capture system as Magisk module."
+  }
+}

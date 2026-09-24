@@ -1,0 +1,25 @@
+{
+  "id": "trickystore",
+  "name": "TrickyStore",
+  "repo": "5ec1cff/TrickyStore",
+  "category": "root-management",
+  "description": "TrickyStore active root module.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 6378,
+  "latestRelease": {
+    "tag": "1.4.1",
+    "publishedAt": "2025-11-02T09:56:37Z",
+    "url": "https://github.com/5ec1cff/TrickyStore/releases/tag/1.4.1",
+    "downloadUrl": "https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip",
+    "assetName": "Tricky-Store-v1.4.1-245-72b2e84-release.zip"
+  },
+  "seo": {
+    "title": "TrickyStore - Active Magisk Module",
+    "description": "TrickyStore active root module."
+  }
+}

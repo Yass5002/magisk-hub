@@ -1,0 +1,25 @@
+{
+  "id": "playstoreselfupdateblocker",
+  "name": "PlayStoreSelfUpdateBlocker",
+  "repo": "himanshujjp/PlayStoreSelfUpdateBlocker",
+  "category": "system-environment",
+  "description": "Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play Integrity compliance.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "Proprietary",
+  "icon": null,
+  "stars": 56,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2025-09-17T07:15:45Z",
+    "url": "https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/tag/v2.0",
+    "downloadUrl": "https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/download/v2.0/PlayStoreSelfUpdateBlocker-v2.0.zip",
+    "assetName": "PlayStoreSelfUpdateBlocker-v2.0.zip"
+  },
+  "seo": {
+    "title": "PlayStoreSelfUpdateBlocker - Active Magisk Module",
+    "description": "Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play "
+  }
+}
