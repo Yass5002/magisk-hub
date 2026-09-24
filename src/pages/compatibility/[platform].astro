@@ -64,7 +64,7 @@ const platformSchema = {
   '@type': 'CollectionPage',
   'name': `${platform.name} Root Modules`,
   'description': platform.description,
-  'url': `https://magiskhub.com/compatibility/${platform.id}`,
+  'url': `https://magisk.yssn.tech/compatibility/${platform.id}`,
   'numberOfItems': modules.length,
 };
 ---
@@ -77,19 +77,19 @@ const platformSchema = {
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
     <Breadcrumbs items={breadcrumbs} />
 
-    <div class="py-6 border-b border-slate-200">
+    <div class="py-6 border-b border-zinc-200">
       <div class="flex items-center gap-2.5">
-        <span class="rounded bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-700 border border-brand-200">
+        <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
           Platform
         </span>
-        <span class="text-xs text-slate-500 font-medium">{modules.length} Modules</span>
+        <span class="text-xs font-mono text-zinc-500">{modules.length} Modules</span>
       </div>
 
-      <h1 class="mt-2 text-3xl font-bold text-slate-900 tracking-tight">
+      <h1 class="mt-2 text-3xl font-extrabold text-zinc-900 tracking-tight">
         {platform.name} Modules
       </h1>
 
-      <p class="mt-1.5 text-sm text-slate-600 max-w-2xl leading-relaxed">
+      <p class="mt-1.5 text-sm text-zinc-600 max-w-2xl leading-relaxed">
         {platform.details}
       </p>
     </div>

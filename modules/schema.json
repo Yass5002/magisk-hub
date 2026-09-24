@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://magiskhub.com/schemas/module.json",
+  "$id": "https://magisk.yssn.tech/schemas/module.json",
   "title": "MagiskHubModule",
   "description": "JSON Schema specification for MagiskHub verified module entries",
   "type": "object",

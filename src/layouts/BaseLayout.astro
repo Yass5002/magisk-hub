@@ -31,18 +31,18 @@ const baseWebSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   'name': 'Magisk Hub',
-  'url': 'https://magiskhub.com',
+  'url': 'https://magisk.yssn.tech',
   'description': 'Directory of active root modules for Magisk, KernelSU, and APatch.',
   'potentialAction': {
     '@type': 'SearchAction',
-    'target': 'https://magiskhub.com/?q={search_term_string}',
+    'target': 'https://magisk.yssn.tech/?q={search_term_string}',
     'query-input': 'required name=search_term_string'
   }
 };
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-[#f8f9fa]">
+<html lang="en" class="scroll-smooth bg-[#fafafa]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,14 +64,14 @@ const baseWebSiteSchema = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <meta name="theme-color" content="#01af9c" />
+    <meta name="theme-color" content="#fafafa" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://magiskhub.com${ogImage}`} />
+    <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
     <meta property="og:site_name" content={siteName} />
 
     <!-- Twitter -->
@@ -79,7 +79,7 @@ const baseWebSiteSchema = {
     <meta property="twitter:url" content={canonicalUrl} />
     <meta property="twitter:title" content={fullTitle} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magiskhub.com${ogImage}`} />
+    <meta property="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(baseWebSiteSchema)} />
@@ -93,7 +93,7 @@ const baseWebSiteSchema = {
       )
     )}
   </head>
-  <body class="min-h-screen flex flex-col bg-[#f8f9fa] text-slate-800">
+  <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900">
     <Navbar />
     
     <main class="flex-1">

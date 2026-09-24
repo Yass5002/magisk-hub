@@ -30,48 +30,48 @@ const breadcrumbs = [
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
     <Breadcrumbs items={breadcrumbs} />
 
-    <div class="py-6">
-      <h1 class="text-3xl font-bold text-slate-900 tracking-tight">
+    <div class="py-6 border-b border-zinc-200">
+      <h1 class="text-3xl font-extrabold text-zinc-900 tracking-tight">
         Module Categories
       </h1>
-      <p class="mt-1.5 text-sm text-slate-600 max-w-2xl">
+      <p class="mt-1.5 text-sm text-zinc-500 max-w-2xl">
         Explore community modules grouped by functionality.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
       {categories.map(cat => (
         <a 
           href={`/categories/${cat.id}`}
-          class="group rounded-lg border border-slate-200 bg-white p-5 hover:border-slate-300 hover:shadow-md transition-all flex flex-col justify-between"
+          class="group rounded-xl border border-zinc-200 bg-white p-5 hover:border-zinc-300 hover:shadow-xs transition-all flex flex-col justify-between"
         >
           <div>
             <div class="flex items-start justify-between">
-              <h2 class="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+              <h2 class="text-lg font-bold text-zinc-900 group-hover:text-black transition-colors">
                 {cat.name}
               </h2>
-              <span class="rounded bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-700 border border-brand-200">
+              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
                 {cat.count} modules
               </span>
             </div>
 
-            <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+            <p class="mt-2 text-xs text-zinc-600 leading-relaxed">
               {cat.description}
             </p>
           </div>
 
-          <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <div class="mt-5 pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-mono text-zinc-500">
             <div class="flex items-center gap-2">
-              <span class="text-[#ffb327] font-semibold">★ {cat.totalStars.toLocaleString()} stars</span>
+              <span class="text-amber-500 font-medium">★ {cat.totalStars.toLocaleString()} stars</span>
               {cat.tier1Count > 0 && (
                 <>
-                  <span>•</span>
+                  <span class="text-zinc-300">•</span>
                   <span>{cat.tier1Count} guides</span>
                 </>
               )}
             </div>
 
-            <span class="font-semibold text-brand-600 group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1">
+            <span class="font-medium text-zinc-900 group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1">
               Browse →
             </span>
           </div>

@@ -5,23 +5,23 @@ const isCategories = currentPath.startsWith('/categories');
 const isPlatforms = currentPath.startsWith('/compatibility');
 ---
 
-<header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/95 backdrop-blur-sm shadow-2xs">
-  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+<header class="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white/95 backdrop-blur-md shadow-2xs">
+  <div class="mx-auto flex h-16 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
     <div class="flex items-center gap-10">
       <!-- Brand Logo & Title -->
-      <a href="/" class="flex items-center gap-3.5 group">
+      <a href="/" class="flex items-center gap-3 group">
         <img 
           src="/magisk-logo.svg" 
           alt="Magisk Logo" 
-          width="44" 
-          height="44" 
-          class="h-10 w-10 sm:h-11 sm:w-11 object-contain group-hover:scale-105 transition-transform shrink-0"
+          width="40" 
+          height="40" 
+          class="h-9 w-9 sm:h-11 sm:w-11 object-contain group-hover:scale-105 transition-transform shrink-0"
         />
         <div class="flex flex-col">
-          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          <span class="text-lg sm:text-2xl font-extrabold tracking-tight text-zinc-900 leading-tight whitespace-nowrap">
             Magisk Hub
           </span>
-          <span class="text-xs font-medium text-slate-500 tracking-normal mt-0.5">
+          <span class="hidden sm:inline text-xs font-medium text-zinc-500 tracking-normal mt-0.5">
             Modules Directory
           </span>
         </div>
@@ -33,8 +33,8 @@ const isPlatforms = currentPath.startsWith('/compatibility');
           href="/" 
           class={`relative py-1.5 transition-colors ${
             isModules 
-              ? 'text-teal-800 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-teal-600 after:rounded-full' 
-              : 'text-slate-600 hover:text-slate-900'
+              ? 'text-zinc-900 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-900 after:rounded-full' 
+              : 'text-zinc-600 hover:text-zinc-900'
           }`}
         >
           Modules
@@ -43,8 +43,8 @@ const isPlatforms = currentPath.startsWith('/compatibility');
           href="/categories" 
           class={`relative py-1.5 transition-colors ${
             isCategories 
-              ? 'text-teal-800 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-teal-600 after:rounded-full' 
-              : 'text-slate-600 hover:text-slate-900'
+              ? 'text-zinc-900 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-900 after:rounded-full' 
+              : 'text-zinc-600 hover:text-zinc-900'
           }`}
         >
           Categories
@@ -52,22 +52,22 @@ const isPlatforms = currentPath.startsWith('/compatibility');
         <div class="relative group">
           <button class={`relative py-1.5 flex items-center gap-1 transition-colors ${
             isPlatforms 
-              ? 'text-teal-800 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-teal-600 after:rounded-full' 
-              : 'text-slate-600 hover:text-slate-900'
+              ? 'text-zinc-900 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-900 after:rounded-full' 
+              : 'text-zinc-600 hover:text-zinc-900'
           }`}>
             <span>Platforms</span>
-            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-3.5 h-3.5 text-zinc-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </button>
-          <div class="absolute left-0 mt-2 w-48 rounded-xl border border-slate-200 bg-white p-1.5 shadow-xl opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all z-50">
-            <a href="/compatibility/magisk" class="block px-3 py-2 text-xs font-medium rounded-lg text-slate-700 hover:text-teal-800 hover:bg-teal-50">
+          <div class="absolute left-0 mt-2 w-48 rounded-xl border border-zinc-200 bg-white p-1.5 shadow-lg opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all z-50">
+            <a href="/compatibility/magisk" class="block px-3 py-2 text-xs font-mono font-medium rounded-lg text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100">
               Magisk Modules
             </a>
-            <a href="/compatibility/kernelsu" class="block px-3 py-2 text-xs font-medium rounded-lg text-slate-700 hover:text-teal-800 hover:bg-teal-50">
+            <a href="/compatibility/kernelsu" class="block px-3 py-2 text-xs font-mono font-medium rounded-lg text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100">
               KernelSU Modules
             </a>
-            <a href="/compatibility/apatch" class="block px-3 py-2 text-xs font-medium rounded-lg text-slate-700 hover:text-teal-800 hover:bg-teal-50">
+            <a href="/compatibility/apatch" class="block px-3 py-2 text-xs font-mono font-medium rounded-lg text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100">
               APatch Modules
             </a>
           </div>
@@ -77,12 +77,12 @@ const isPlatforms = currentPath.startsWith('/compatibility');
 
     <!-- Right Side Actions -->
     <div class="flex items-center gap-3">
-      <!-- Primary: Download Magisk -->
+      <!-- Primary Action: Solid Pitch Black Button (Desktop only) -->
       <a 
         href="https://github.com/topjohnwu/Magisk/releases/latest" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 rounded-lg bg-teal-600 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-700 active:bg-teal-800 transition-colors shadow-xs"
+        class="hidden md:inline-flex items-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2 text-sm font-semibold transition-colors shadow-xs"
       >
         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
@@ -90,12 +90,12 @@ const isPlatforms = currentPath.startsWith('/compatibility');
         <span>Download Magisk</span>
       </a>
 
-      <!-- Sleek Icon-only GitHub button -->
+      <!-- Sleek Icon-only GitHub button (Desktop only) -->
       <a 
         href="https://github.com/Yass5002/magisk-hub" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="inline-flex items-center justify-center h-9 w-9 rounded-lg border border-slate-200 text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+        class="hidden md:inline-flex items-center justify-center h-9 w-9 rounded-lg border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 transition-colors"
         aria-label="GitHub Repository"
         title="View GitHub Repository"
       >
@@ -103,6 +103,107 @@ const isPlatforms = currentPath.startsWith('/compatibility');
           <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
         </svg>
       </a>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button 
+        id="mobile-menu-btn" 
+        type="button"
+        class="flex md:hidden items-center justify-center h-9 w-9 rounded-lg border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 transition-colors"
+        aria-label="Toggle navigation menu"
+      >
+        <svg id="menu-icon-open" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="menu-icon-close" class="h-5 w-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-200 bg-white px-4 py-4 space-y-4">
+    <nav class="flex flex-col space-y-1.5 text-sm font-medium">
+      <a 
+        href="/" 
+        class={`px-3 py-2 rounded-lg transition-colors ${
+          isModules 
+            ? 'bg-zinc-100 text-zinc-900 font-semibold border border-zinc-200' 
+            : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50'
+        }`}
+      >
+        Modules
+      </a>
+      <a 
+        href="/categories" 
+        class={`px-3 py-2 rounded-lg transition-colors ${
+          isCategories 
+            ? 'bg-zinc-100 text-zinc-900 font-semibold border border-zinc-200' 
+            : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50'
+        }`}
+      >
+        Categories
+      </a>
+      
+      <div class="pt-2">
+        <div class="px-3 pb-1.5 text-xs text-zinc-400">Platforms</div>
+        <div class="space-y-1 pl-2 font-mono text-xs">
+          <a href="/compatibility/magisk" class="block px-3 py-1.5 rounded-md text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50">
+            Magisk Modules
+          </a>
+          <a href="/compatibility/kernelsu" class="block px-3 py-1.5 rounded-md text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50">
+            KernelSU Modules
+          </a>
+          <a href="/compatibility/apatch" class="block px-3 py-1.5 rounded-md text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50">
+            APatch Modules
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Drawer Actions: Download CTA + GitHub -->
+    <div class="pt-3 border-t border-zinc-200 space-y-2.5">
+      <a 
+        href="https://github.com/topjohnwu/Magisk/releases/latest" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-sm font-semibold shadow-xs transition-colors"
+      >
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        <span>Download Magisk</span>
+      </a>
+
+      <a 
+        href="https://github.com/Yass5002/magisk-hub" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full flex items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 px-4 py-2 text-xs font-mono text-zinc-700 hover:text-zinc-900 transition-colors"
+      >
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+        </svg>
+        <span>GitHub Repository</span>
+      </a>
     </div>
   </div>
 </header>
+
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  toggleBtn?.addEventListener('click', () => {
+    const isHidden = mobileMenu?.classList.toggle('hidden');
+    if (isHidden) {
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+    } else {
+      iconOpen?.classList.add('hidden');
+      iconClose?.classList.remove('hidden');
+    }
+  });
+</script>

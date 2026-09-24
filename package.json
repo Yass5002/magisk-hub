@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets/icons', 'public/assets/icons', {recursive:true});\"",
+    "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets', 'public/assets', {recursive:true});\"",
     "dev": "npm run copy-assets && astro dev",
     "build": "npm run copy-assets && astro build",
     "preview": "astro preview",

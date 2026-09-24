@@ -31,14 +31,18 @@ function formatStars(count?: number): string {
   }
   return count.toString();
 }
+
+const isTier1 = module.contentTier === 1;
 ---
 
-<div class="relative group flex flex-col justify-between h-full rounded-xl border border-slate-200 bg-white p-5 cursor-pointer transition-all duration-150 ease-in-out hover:border-slate-300 hover:shadow-md">
+<div class={`relative group flex flex-col justify-between h-full rounded-xl border bg-white p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
+  isTier1 ? 'border-zinc-300 hover:border-zinc-400' : 'border-zinc-200 hover:border-zinc-300'
+}`}>
   <!-- Interactive Overlay Link -->
   <a href={`/modules/${module.id}`} class="absolute inset-0 z-0" aria-label={`View ${module.name} module`}></a>
 
   <div>
-    <!-- Top Row: Avatar + Title & Meta -->
+    <!-- Top Row: Avatar + Title & Normalized Monospace Version -->
     <div class="flex items-start gap-3.5">
       <!-- Avatar / Category Icon -->
       <div class="shrink-0 relative z-10">
@@ -49,7 +53,7 @@ function formatStars(count?: number): string {
             width="44" 
             height="44" 
             loading="lazy"
-            class="h-11 w-11 rounded-lg object-contain bg-slate-50 p-1 border border-slate-200/80 group-hover:border-teal-500/40 transition-colors"
+            class="h-11 w-11 rounded-lg object-contain bg-zinc-50 p-1 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
           />
         ) : (
           <div class="relative h-11 w-11">
@@ -59,10 +63,10 @@ function formatStars(count?: number): string {
               width="44" 
               height="44" 
               loading="lazy"
-              class="h-11 w-11 rounded-lg object-cover bg-slate-100 border border-slate-200 group-hover:border-teal-500/40 transition-colors"
+              class="h-11 w-11 rounded-lg object-cover bg-zinc-50 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
               onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
             />
-            <div class="hidden h-11 w-11 items-center justify-center rounded-lg bg-teal-50 text-teal-700 border border-teal-200">
+            <div class="hidden h-11 w-11 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-200">
               <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={categorySvgPath} />
               </svg>
@@ -76,51 +80,54 @@ function formatStars(count?: number): string {
         <div class="flex items-start justify-between gap-2">
           <!-- Title with Inline Guide Badge -->
           <div class="flex items-center gap-1.5 flex-wrap min-w-0">
-            <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-teal-700 transition-colors truncate leading-snug">
+            <h3 class="font-bold text-base sm:text-lg text-zinc-900 group-hover:text-zinc-700 transition-colors truncate leading-snug">
               {module.name}
             </h3>
-            {module.contentTier === 1 && (
-              <span class="rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-semibold text-teal-800 border border-teal-200 shrink-0">
-                Guide
+            {isTier1 && (
+              <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] font-mono font-medium text-zinc-800 border border-zinc-200/80 shrink-0">
+                guide
               </span>
             )}
           </div>
 
-          <!-- Top-Right: Strictly Version Badge only in JetBrains Mono -->
-          <span class="bg-slate-100 text-slate-700 font-mono text-xs px-2 py-0.5 rounded border border-slate-200/70 shrink-0 font-medium">
+          <!-- Normalized Version Badge: Clean, muted monospace data stamp -->
+          <span 
+            class="bg-zinc-100 text-zinc-700 font-mono text-[11px] px-2 py-0.5 rounded border border-zinc-200/80 shrink-0 max-w-[110px] truncate"
+            title={module.latestRelease.tag}
+          >
             {module.latestRelease.tag}
           </span>
         </div>
 
-        <!-- Clean Category Name under Title -->
-        <div class="mt-1 text-xs text-slate-500 truncate">
+        <!-- Category Name under Title -->
+        <div class="mt-1 text-xs font-mono text-zinc-500 truncate">
           {category.name}
         </div>
       </div>
     </div>
 
     <!-- Description (Clamped to 2 lines with consistent min-h-[2.5rem]) -->
-    <p class="mt-3 text-sm text-slate-600 leading-relaxed line-clamp-2 min-h-[2.5rem]">
+    <p class="mt-3 text-sm text-zinc-600 leading-relaxed line-clamp-2 min-h-[2.5rem]">
       {module.description}
     </p>
   </div>
 
   <!-- Unified Bottom Metadata Bar -->
-  <div class="mt-4 pt-3.5 border-t border-slate-100 flex items-center justify-between text-xs font-medium text-slate-500 relative z-10">
+  <div class="mt-4 pt-3.5 border-t border-zinc-100 flex items-center justify-between text-xs font-medium text-zinc-500 relative z-10">
     <!-- Left: Maintainer + Compact Stars -->
     <div class="flex items-center gap-2.5 truncate max-w-[55%]">
-      <div class="flex items-center gap-1 truncate text-slate-600">
-        <svg class="h-3.5 w-3.5 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="flex items-center gap-1 truncate text-zinc-500">
+        <svg class="h-3.5 w-3.5 text-zinc-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
         </svg>
-        <span class="truncate hover:text-slate-900 transition-colors font-medium">{author}</span>
+        <span class="truncate hover:text-zinc-900 transition-colors font-mono">{author}</span>
       </div>
 
-      <span class="text-slate-300 shrink-0">•</span>
+      <span class="text-zinc-300 shrink-0">•</span>
 
-      <!-- Compact Stars (e.g. ★ 6.4k) -->
-      <div class="inline-flex items-center gap-1 font-semibold text-slate-700 shrink-0">
-        <span class="text-[#ffb327]">★</span>
+      <!-- Compact Stars -->
+      <div class="inline-flex items-center gap-1 font-mono font-medium text-zinc-800 shrink-0">
+        <span class="text-amber-500">★</span>
         <span>{formatStars(module.stars)}</span>
       </div>
     </div>
@@ -128,7 +135,7 @@ function formatStars(count?: number): string {
     <!-- Right: Platform Compatibility Badges -->
     <div class="flex items-center gap-1 shrink-0">
       {module.compatibility.map(c => (
-        <span class="rounded bg-slate-50 px-1.5 py-0.5 text-[10px] font-medium text-slate-600 border border-slate-200">
+        <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] font-mono text-zinc-600 border border-zinc-200/80">
           {c}
         </span>
       ))}

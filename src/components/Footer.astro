@@ -2,7 +2,7 @@
 import { CATEGORIES } from '../lib/modules';
 ---
 
-<footer class="mt-20 border-t border-slate-200 bg-white text-slate-600 text-xs">
+<footer class="mt-20 border-t border-zinc-200 bg-white text-zinc-600 text-xs">
   <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-2">
@@ -14,32 +14,32 @@ import { CATEGORIES } from '../lib/modules';
             height="32" 
             class="h-8 w-8 object-contain"
           />
-          <span class="text-base font-bold text-slate-900">Magisk Hub</span>
+          <span class="text-base font-bold text-zinc-900">Magisk Hub</span>
         </div>
-        <p class="mt-3 max-w-sm text-slate-500 leading-relaxed text-xs">
+        <p class="mt-3 max-w-sm text-zinc-500 leading-relaxed text-xs">
           An open directory of community-maintained root modules for Magisk, KernelSU, and APatch.
         </p>
-        <p class="mt-4 text-[11px] text-slate-400">
+        <p class="mt-4 text-[11px] text-zinc-400">
           Magisk Hub is an independent community project. Android, Magisk, and related trademarks belong to their respective copyright holders.
         </p>
       </div>
 
       <div>
-        <h4 class="font-semibold text-slate-900 tracking-wider uppercase text-[11px]">Platforms</h4>
-        <ul class="mt-4 space-y-2">
-          <li><a href="/compatibility/magisk" class="text-slate-600 hover:text-brand-600 transition-colors">Magisk Modules</a></li>
-          <li><a href="/compatibility/kernelsu" class="text-slate-600 hover:text-brand-600 transition-colors">KernelSU Modules</a></li>
-          <li><a href="/compatibility/apatch" class="text-slate-600 hover:text-brand-600 transition-colors">APatch Modules</a></li>
-          <li><a href="/categories" class="text-slate-600 hover:text-brand-600 transition-colors">All Categories</a></li>
+        <h4 class="font-semibold text-zinc-900 text-xs">Platforms</h4>
+        <ul class="mt-4 space-y-2 font-mono">
+          <li><a href="/compatibility/magisk" class="text-zinc-600 hover:text-zinc-900 transition-colors">Magisk Modules</a></li>
+          <li><a href="/compatibility/kernelsu" class="text-zinc-600 hover:text-zinc-900 transition-colors">KernelSU Modules</a></li>
+          <li><a href="/compatibility/apatch" class="text-zinc-600 hover:text-zinc-900 transition-colors">APatch Modules</a></li>
+          <li><a href="/categories" class="text-zinc-600 hover:text-zinc-900 transition-colors">All Categories</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-semibold text-slate-900 tracking-wider uppercase text-[11px]">Categories</h4>
-        <ul class="mt-4 space-y-2">
+        <h4 class="font-semibold text-zinc-900 text-xs">Categories</h4>
+        <ul class="mt-4 space-y-2 font-mono">
           {Object.values(CATEGORIES).slice(0, 4).map(c => (
             <li>
-              <a href={`/categories/${c.id}`} class="text-slate-600 hover:text-brand-600 transition-colors">
+              <a href={`/categories/${c.id}`} class="text-zinc-600 hover:text-zinc-900 transition-colors">
                 {c.name}
               </a>
             </li>
@@ -48,35 +48,36 @@ import { CATEGORIES } from '../lib/modules';
       </div>
 
       <div>
-        <h4 class="font-semibold text-slate-900 tracking-wider uppercase text-[11px]">Repository</h4>
-        <ul class="mt-4 space-y-2">
+        <h4 class="font-semibold text-zinc-900 text-xs">Repository</h4>
+        <ul class="mt-4 space-y-2 font-mono">
           <li>
-            <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-600 transition-colors">
+            <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-zinc-900 transition-colors">
               GitHub Source
             </a>
           </li>
           <li>
-            <a href="https://github.com/Yass5002/magisk-hub/blob/master/modules/schema.json" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-600 transition-colors">
+            <a href="https://github.com/Yass5002/magisk-hub/blob/master/modules/schema.json" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-zinc-900 transition-colors">
               JSON Schema
             </a>
           </li>
           <li>
-            <a href="https://github.com/Yass5002/magisk-hub/pulls" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-600 transition-colors">
-              Submit a Module
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-600 transition-colors">
-              Official Magisk
+            <a href="https://github.com/Yass5002/magisk-hub/actions" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-zinc-900 transition-colors">
+              Release Sync CI
             </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-10 border-t border-slate-100 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
-      <p>© {new Date().getFullYear()} Magisk Hub. Open Source under MIT License.</p>
-      <p>Data synced with GitHub releases.</p>
+    <div class="mt-12 border-t border-zinc-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
+      <p>
+        Data validated against JSON Schema Draft-07 • Verified upstream release assets
+      </p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-800">GitHub</a>
+        <a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-800">Magisk</a>
+        <a href="https://kernelsu.org" target="_blank" rel="noopener noreferrer" class="hover:text-zinc-800">KernelSU</a>
+      </div>
     </div>
   </div>
 </footer>

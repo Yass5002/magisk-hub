@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://magiskhub.com/sitemap-index.xml
+Sitemap: https://magisk.yssn.tech/sitemap-index.xml

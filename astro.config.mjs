@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://magiskhub.com',
+  site: 'https://magisk.yssn.tech',
   integrations: [
     tailwind({
       applyBaseStyles: false,

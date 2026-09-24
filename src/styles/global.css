@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply bg-[#f8f9fa] text-slate-800 antialiased selection:bg-brand-500 selection:text-white font-sans;
+    @apply bg-[#fafafa] text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white font-sans;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
@@ -19,18 +19,27 @@
   }
 }
 
-/* Clean scrollbar */
+/* Hide scrollbar for horizontal chip navigation on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Clean light scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #fafafa;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #e4e4e7;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #d4d4d8;
 }
