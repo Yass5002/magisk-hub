@@ -1,0 +1,60 @@
+name: Sync Releases & Active-Bar Re-Audit
+
+on:
+  schedule:
+    # Run every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Sync Releases & Prune Inactive Modules
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'scripts/requirements.txt'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run release synchronizer & active-bar auditor
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/sync_releases.py
+
+      - name: Validate database schema integrity
+        run: |
+          python3 scripts/validate_module.py
+
+      - name: Commit and push changes if updated or pruned
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage any modified/added/deleted files in modules/ and assets/
+          git add -A modules/ assets/
+          
+          if git diff --staged --quiet; then
+            echo "No changes detected. Database is completely up to date."
+          else
+            git commit -m "chore(data): automated release sync and active-bar pruning [skip ci]"
+            git push
+            echo "Successfully pushed release updates and pruning changes to repository."
+          fi

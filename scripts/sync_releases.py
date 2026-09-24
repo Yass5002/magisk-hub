@@ -48,8 +48,41 @@ CAT_MAP = {
     'privacy': 'security-certificates',
 }
 
-# Load verified icon path mapping if available
-KNOWN_ICONS = {}
+# Verified icon path mapping within module repositories
+KNOWN_ICONS = {
+    "topjohnwu/Magisk": "docs/images/logo.png",
+    "KOWX712/PlayIntegrityFix": "webui/public/icon.jpg",
+    "frknkrc44/HMA-OSS": "app/src/main/res/drawable/cont_icon_designer.webp",
+    "chenxiaolong/BCR": "app/images/icon.svg",
+    "sidex15/susfs4ksu-module": "susfsicon.png",
+    "salvogiangri/KnoxPatch": "fastlane/metadata/android/en-US/images/icon.png",
+    "bindhosts/bindhosts": "webui/public/icon.png",
+    "Fanju6/NetProxy-Magisk": "src/module/webroot/sing-box-dashboard/apple-touch-icon-180x180.png",
+    "Seyud/device_faker": "docs/logo.png",
+    "pantsufan/Magisk-Ad-Blocking-Module": "logo.png",
+    "okhsunrog/vpnhide": "assets/icon-512.png",
+    "Rem01Gaming/encore": "webui/public/icon.webp",
+    "Tools-cx-app/meta-magic_mount-rs": "webui/public/favicon.svg",
+    "KernelSU-Next/KPatch-Next-Module": "webui/icon.png",
+    "ZG089/Re-Malwack": "assets/logo.png",
+    "AlirezaParsi/COPG": "webroot/icon.png",
+    "BasGame1/Pixelify-Next": "beta/module/webroot/glogo.webp",
+    "Numbersf/MakeFontsGreatAgain": "webroot/icon.png",
+    "PixelUpdater/PixelUpdater": "app/images/icon.png",
+    "Drsexo/Frosty": "module/webroot/icon.png",
+    "pantsufan/BlockAds": "logo.png",
+    "LIghtJUNction/MagicNet": "icon.png",
+    "ravindu644/Ubuntu-Chroot": "webroot/assets/logo.png",
+    "sevcator/zapret-pocket": "icon.png",
+    "5MayRain/SAM": "etc/mihomo/webui/zashboard/apple-touch-icon.png",
+    "eventlOwOp/zerotier-magisk": "app/assets/icon.png",
+    "Liliya2727/AZenith": "logo.jpg",
+    "VD171/COPG-VD": "module/webroot/icon.png",
+    "Xocio/CZero": "assets/logo.png",
+    "Vaz15k/Cubic-AdBlock": "docs/cubic_logo.png",
+    "rhythmcache/partition-backup": "module/webroot/logo.svg",
+    "UNKNUW/Background-App-Slayer": "LOGO.png"
+}
 if os.path.isfile('/tmp/deep_tree_icons.json'):
     try:
         with open('/tmp/deep_tree_icons.json', 'r', encoding='utf-8') as f:
@@ -67,6 +100,7 @@ if os.path.isfile('/tmp/deep_tree_icons.json'):
                         KNOWN_ICONS[r] = ic_list[0]
     except Exception:
         pass
+
 
 
 def make_slug(raw_id, repo_name):
@@ -136,6 +170,19 @@ def resolve_icon(repo, slug, default_branch="master"):
     return None
 
 
+def get_github_token():
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        return token
+    try:
+        proc = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True)
+        if proc.returncode == 0 and proc.stdout.strip():
+            return proc.stdout.strip()
+    except Exception:
+        pass
+    return None
+
+
 def fetch_graphql_batch(batch_repos):
     query_parts = ["query {"]
     alias_map = {}
@@ -174,27 +221,58 @@ def fetch_graphql_batch(batch_repos):
     query_parts.append("}")
     full_q = "\n".join(query_parts)
 
+    token = get_github_token()
     results = {}
+
+    if token:
+        try:
+            req = urllib.request.Request(
+                "https://api.github.com/graphql",
+                data=json.dumps({"query": full_q}).encode("utf-8"),
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)",
+                    "Content-Type": "application/json"
+                }
+            )
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+                data = payload.get("data") or {}
+                for alias, repo_data in data.items():
+                    orig_r = alias_map.get(alias)
+                    if orig_r:
+                        results[orig_r] = repo_data
+                return results
+        except Exception:
+            pass
+
+    # Fallback to gh CLI
     try:
         proc = subprocess.run(["gh", "api", "graphql", "-f", f"query={full_q}"], capture_output=True, text=True)
-        if proc.returncode == 0:
-            data = json.loads(proc.stdout).get("data", {})
-            for alias, repo_data in data.items():
-                orig_r = alias_map[alias]
-                results[orig_r] = repo_data
-        else:
-            # Fallback per repo in batch
-            for orig_r in batch_repos:
-                parts = orig_r.split('/')
-                single_q = f"""query {{ repository(owner: "{parts[0]}", name: "{parts[1]}") {{ nameWithOwner description isArchived pushedAt stargazerCount licenseInfo {{ spdxId }} defaultBranchRef {{ name }} latestRelease {{ tagName publishedAt url releaseAssets(first: 15) {{ nodes {{ name downloadUrl }} }} }} }} }}"""
-                p_ind = subprocess.run(["gh", "api", "graphql", "-f", f"query={single_q}"], capture_output=True, text=True)
-                if p_ind.returncode == 0:
-                    d = json.loads(p_ind.stdout).get("data", {}).get("repository")
-                    results[orig_r] = d
-                else:
-                    results[orig_r] = None
+        if proc.stdout and proc.stdout.strip().startswith("{"):
+            try:
+                data = json.loads(proc.stdout).get("data") or {}
+                for alias, repo_data in data.items():
+                    orig_r = alias_map.get(alias)
+                    if orig_r:
+                        results[orig_r] = repo_data
+                if results:
+                    return results
+            except Exception:
+                pass
+
+        for orig_r in batch_repos:
+            parts = orig_r.split('/')
+            single_q = f"""query {{ repository(owner: "{parts[0]}", name: "{parts[1]}") {{ nameWithOwner description isArchived pushedAt stargazerCount licenseInfo {{ spdxId }} defaultBranchRef {{ name }} latestRelease {{ tagName publishedAt url releaseAssets(first: 15) {{ nodes {{ name downloadUrl }} }} }} }} }}"""
+            p_ind = subprocess.run(["gh", "api", "graphql", "-f", f"query={single_q}"], capture_output=True, text=True)
+            if p_ind.returncode == 0:
+                d = json.loads(p_ind.stdout).get("data", {}).get("repository")
+                results[orig_r] = d
+            else:
+                results[orig_r] = None
     except Exception as e:
         print(f"Batch query exception: {e}", flush=True)
+
     return results
 
 
@@ -206,10 +284,21 @@ def main():
     os.makedirs(MODULES_DIR, exist_ok=True)
     os.makedirs(ICONS_DIR, exist_ok=True)
 
-    with open("/tmp/strictly_active_releases.json", "r", encoding="utf-8") as f:
-        candidates = json.load(f)
+    candidates = []
+    import glob
+    module_files = [f for f in glob.glob(os.path.join(MODULES_DIR, "*.json")) if os.path.basename(f) != "schema.json"]
+    if module_files:
+        for fpath in sorted(module_files):
+            try:
+                with open(fpath, "r", encoding="utf-8") as f:
+                    candidates.append(json.load(f))
+            except Exception as e:
+                print(f"Error reading {fpath}: {e}", file=sys.stderr)
+    elif os.path.isfile("/tmp/strictly_active_releases.json"):
+        with open("/tmp/strictly_active_releases.json", "r", encoding="utf-8") as f:
+            candidates = json.load(f)
 
-    print(f"Loaded {len(candidates)} candidate modules from audited dataset.", flush=True)
+    print(f"Loaded {len(candidates)} candidate modules from modules/ directory.", flush=True)
 
     repo_list = [c["repo"] for c in candidates]
     batch_size = 25
@@ -233,8 +322,8 @@ def main():
         repo = c["repo"]
         raw_id = c["id"]
         repo_name = repo.split('/')[1]
-        slug = make_slug(raw_id, repo_name)
-        category = CAT_MAP.get(c.get("category", "system-utilities"), "system-utilities")
+        slug = c.get("id") or make_slug(raw_id, repo_name)
+        category = c.get("category") or CAT_MAP.get(c.get("category", "system-utilities"), "system-utilities")
         compat = c.get("compatibility", ["Magisk"])
 
         info = github_data.get(repo)
