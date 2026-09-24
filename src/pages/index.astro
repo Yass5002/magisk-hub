@@ -12,27 +12,6 @@ const magiskRelease = magiskModule?.latestRelease || {
 };
 
 const allCategories = Object.values(CATEGORIES);
-
-function formatStars(count?: number): string {
-  if (!count) return '0';
-  if (count >= 1000) {
-    const k = (count / 1000).toFixed(1).replace(/\.0$/, '');
-    return `${k}k`;
-  }
-  return count.toString();
-}
-
-// Lightweight dataset for instant search autocomplete dropdown
-const searchIndex = modules.map(m => ({
-  id: m.id,
-  name: m.name,
-  desc: m.description,
-  author: m.repo.split('/')[0],
-  tag: m.latestRelease.tag,
-  category: CATEGORIES[m.category]?.name || m.category,
-  stars: formatStars(m.stars),
-  icon: m.icon || null,
-}));
 ---
 
 <BaseLayout
@@ -54,8 +33,8 @@ const searchIndex = modules.map(m => ({
           </p>
         </div>
 
-        <!-- Prominent Search Bar with Autocomplete Dropdown Container -->
-        <div class="mt-6 max-w-2xl mx-auto relative">
+        <!-- Prominent Search Bar with Ctrl+K -->
+        <div class="mt-6 max-w-2xl mx-auto">
           <div class="relative flex items-center h-12 sm:h-14 rounded-xl border border-slate-300 bg-white shadow-xs focus-within:border-teal-600 focus-within:ring-2 focus-within:ring-teal-600/20 transition-all">
             <div class="pl-4 pr-2 text-slate-400 pointer-events-none">
               <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,14 +53,6 @@ const searchIndex = modules.map(m => ({
                 Ctrl K
               </kbd>
             </div>
-          </div>
-
-          <!-- Command-Palette Autocomplete Dropdown -->
-          <div 
-            id="searchDropdown" 
-            class="hidden absolute top-full left-0 right-0 z-50 mt-1.5 max-h-80 overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-2xl divide-y divide-slate-100 py-1 text-left text-xs"
-          >
-            <!-- Populated via client-side script -->
           </div>
         </div>
       </div>
@@ -237,25 +208,10 @@ const searchIndex = modules.map(m => ({
       </button>
     </div>
   </div>
-
-  <!-- Search autocomplete index serialization -->
-  <script id="modulesDataScript" type="application/json" set:html={JSON.stringify(searchIndex)} />
 </BaseLayout>
 
 <script>
-  interface SearchItem {
-    id: string;
-    name: string;
-    desc: string;
-    author: string;
-    tag: string;
-    category: string;
-    stars: string;
-    icon: string | null;
-  }
-
   const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
-  const searchDropdown = document.getElementById('searchDropdown') as HTMLElement | null;
   const heroSection = document.getElementById('heroSection') as HTMLElement | null;
   const heroText = document.getElementById('heroText') as HTMLElement | null;
   const featuredMagiskBanner = document.getElementById('featuredMagiskBanner') as HTMLElement | null;
@@ -269,73 +225,10 @@ const searchIndex = modules.map(m => ({
   const noResults = document.getElementById('noResults');
   const resetBtn = document.getElementById('resetBtn');
 
-  // Load search index
-  const modulesData: SearchItem[] = JSON.parse(document.getElementById('modulesDataScript')?.textContent || '[]');
-
   let currentSearch = '';
   let currentCategory = 'all';
   let currentCompat = 'all';
   let currentSort = 'stars';
-
-  function updateAutocompleteDropdown() {
-    if (!searchDropdown) return;
-
-    if (!currentSearch) {
-      searchDropdown.classList.add('hidden');
-      searchDropdown.innerHTML = '';
-      return;
-    }
-
-    const matches = modulesData.filter(m => 
-      m.name.toLowerCase().includes(currentSearch) ||
-      m.desc.toLowerCase().includes(currentSearch) ||
-      m.author.toLowerCase().includes(currentSearch) ||
-      m.id.toLowerCase().includes(currentSearch)
-    ).slice(0, 6);
-
-    if (matches.length === 0) {
-      searchDropdown.innerHTML = `
-        <div class="px-4 py-3 text-center text-slate-500 text-xs">
-          No quick matches found for <strong class="text-slate-800">"${currentSearch}"</strong>.
-        </div>
-      `;
-      searchDropdown.classList.remove('hidden');
-      return;
-    }
-
-    searchDropdown.innerHTML = matches.map(m => `
-      <a 
-        href="/modules/${m.id}" 
-        class="flex items-center justify-between p-2.5 sm:px-3.5 hover:bg-slate-50 transition-colors group cursor-pointer"
-      >
-        <div class="flex items-center gap-3 min-w-0">
-          ${m.icon 
-            ? `<img src="/${m.icon}" alt="" class="h-8 w-8 rounded-lg object-contain bg-slate-50 p-0.5 border border-slate-200 shrink-0" />`
-            : `<img src="https://github.com/${m.author}.png?size=64" alt="" class="h-8 w-8 rounded-lg object-cover bg-slate-100 border border-slate-200 shrink-0" />`
-          }
-          <div class="min-w-0">
-            <div class="flex items-center gap-2">
-              <span class="font-bold text-sm text-slate-900 group-hover:text-teal-700 transition-colors truncate">
-                ${m.name}
-              </span>
-              <span class="font-mono text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/60 shrink-0 font-medium">
-                ${m.tag}
-              </span>
-            </div>
-            <div class="text-[11px] text-slate-500 truncate mt-0.5">
-              ${m.category} <span class="text-slate-300">•</span> by ${m.author}
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center gap-1 text-xs font-semibold text-slate-700 shrink-0 ml-3">
-          <span class="text-[#ffb327]">★</span>
-          <span>${m.stars}</span>
-        </div>
-      </a>
-    `).join('');
-
-    searchDropdown.classList.remove('hidden');
-  }
 
   function applyFiltersAndSort() {
     let visibleCount = 0;
@@ -358,7 +251,7 @@ const searchIndex = modules.map(m => ({
       }
     }
 
-    // Filter module cards
+    // Filter module cards in the grid directly
     cardWrappers.forEach(el => {
       const id = el.getAttribute('data-id') || '';
       const name = el.getAttribute('data-name') || '';
@@ -422,8 +315,6 @@ const searchIndex = modules.map(m => ({
         noResults.classList.add('hidden');
       }
     }
-
-    updateAutocompleteDropdown();
   }
 
   // Ctrl+K keyboard shortcut
@@ -433,28 +324,12 @@ const searchIndex = modules.map(m => ({
       searchInput?.focus();
       searchInput?.select();
     }
-    if (e.key === 'Escape') {
-      searchDropdown?.classList.add('hidden');
-    }
   });
 
-  // Hide dropdown on click outside
-  document.addEventListener('click', (e) => {
-    if (!searchInput?.contains(e.target as Node) && !searchDropdown?.contains(e.target as Node)) {
-      searchDropdown?.classList.add('hidden');
-    }
-  });
-
-  // Search input events
+  // Search input events: instant live filtering of the grid below
   searchInput?.addEventListener('input', (e) => {
     currentSearch = (e.target as HTMLInputElement).value.toLowerCase().trim();
     applyFiltersAndSort();
-  });
-
-  searchInput?.addEventListener('focus', () => {
-    if (currentSearch) {
-      updateAutocompleteDropdown();
-    }
   });
 
   categorySelect?.addEventListener('change', (e) => {
