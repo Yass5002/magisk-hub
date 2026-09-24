@@ -25,8 +25,8 @@ const { category, modules } = Astro.props;
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Categories', url: '/categories' },
-  { name: category.name, url: `/categories/${category.id}` },
+  { name: 'Categories', url: '/categories/' },
+  { name: category.name, url: `/categories/${category.id}/` },
 ];
 
 const categorySchema = {
@@ -34,7 +34,7 @@ const categorySchema = {
   '@type': 'CollectionPage',
   'name': `${category.name} Magisk & Root Modules`,
   'description': category.description,
-  'url': `https://magisk.yssn.tech/categories/${category.id}`,
+  'url': `https://magisk.yssn.tech/categories/${category.id}/`,
   'numberOfItems': modules.length,
 };
 ---

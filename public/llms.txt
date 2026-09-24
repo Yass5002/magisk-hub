@@ -1,0 +1,51 @@
+# Magisk Hub
+
+> Magisk Hub is an open directory and technical knowledge hub cataloging over 190 community-maintained root modules for Android devices utilizing Magisk, KernelSU, and APatch root managers.
+
+## Overview & Architecture
+Magisk Hub indexes verified open-source root packages, technical architecture breakdowns, and official release assets. Every module listed is verified against JSON Schema Draft-07 specifications and links directly to official maintainer GitHub repositories.
+
+- Website: https://magisk.yssn.tech/
+- Source Code: https://github.com/Yass5002/magisk-hub
+- Schema Definition: https://github.com/Yass5002/magisk-hub/blob/master/modules/schema.json
+- Security & Verification Policy: https://magisk.yssn.tech/security/
+
+## Root Platform Compatibility
+Android root solutions supported across this directory:
+- [Magisk Modules](https://magisk.yssn.tech/compatibility/magisk/): Standard systemless root providing boot image patching, systemless /system mounting, and Zygisk.
+- [KernelSU Modules](https://magisk.yssn.tech/compatibility/kernelsu/): Kernel-space root management operating via custom su privilege delegation in GKI kernels.
+- [APatch Modules](https://magisk.yssn.tech/compatibility/apatch/): KernelPatch-based root solution modifying the Android kernel in-place without requiring full custom boot image rebuilds.
+
+## Ecosystem Categories
+Browse modules by functional domain:
+- [Root Management](https://magisk.yssn.tech/categories/root-management/): Core su daemons, Zygisk engines, root cloaking, and attestation bypass tools.
+- [Performance & Kernel](https://magisk.yssn.tech/categories/performance-kernel/): CPU/GPU governor tuners, thermal throttle controls, and game performance modules.
+- [System Environment](https://magisk.yssn.tech/categories/system-environment/): Framework tweaks, OEM feature restoration, and OS-level modifications.
+- [Customization & UI](https://magisk.yssn.tech/categories/customization-ui/): Status bar, gesture, navigation, launcher, and appearance customizations.
+- [Development & Instrumentation](https://magisk.yssn.tech/categories/development-instrumentation/): Dynamic hooking frameworks, Frida servers, debugging, and reverse engineering tools.
+- [System Utilities](https://magisk.yssn.tech/categories/system-utilities/): Audio DSP engines, call recorders, automated cleanup, and terminal power tools.
+- [Networking & Proxies](https://magisk.yssn.tech/categories/networking-proxies/): Systemless adblockers, transparent TPROXY gateways, and privacy DNS redirectors.
+- [Security & Certificates](https://magisk.yssn.tech/categories/security-certificates/): CA certificate trust injectors, device identifier spoofing, and privacy guards.
+
+## Featured Flagship Guides (Tier 1)
+In-depth technical guides with architecture diagrams, prerequisites, configuration paths, and troubleshooting FAQs:
+
+- [PlayIntegrityFix](https://magisk.yssn.tech/modules/playintegrityfix/): Fix Play Integrity API verdicts by spoofing valid device fingerprints and unbanning Google Play attestation checks. Config: `/data/adb/pif.json`.
+- [Shamiko](https://magisk.yssn.tech/modules/shamiko/): Closed-source Zygisk module for advanced root hiding and sensitive app cloaking. Config: `/data/adb/shamiko/whitelist`.
+- [TrickyStore](https://magisk.yssn.tech/modules/trickystore/): A keystore interception tool supporting software-backed keybox spoofing for hardware-backed attestation bypasses. Config: `/data/adb/tricky_store/target.txt`.
+- [susfs4ksu-module](https://magisk.yssn.tech/modules/susfs4ksu-module/): Companion module for SUSFS kernel patch to hide mount points and ksu processes from detection.
+- [ReZygisk](https://magisk.yssn.tech/modules/rezygisk/): Standalone implementation of Zygisk for modern Android root environments.
+- [Zygisk-Assistant](https://magisk.yssn.tech/modules/zygisk-assistant/): Intercepts tracer processes and root detection checks inside zygote child processes.
+- [BCR (Basic Call Recorder)](https://magisk.yssn.tech/modules/bcr/): High-quality, open-source on-device call recorder module hooking audio streams.
+- [ViPER4Android FX Redesign](https://magisk.yssn.tech/modules/viperfx-re/): Renowned systemless audio DSP equalizer, convolver, and bass management suite.
+- [KnoxPatch](https://magisk.yssn.tech/modules/knoxpatch/): Restore Samsung Knox-dependent apps (Secure Folder, Samsung Health) on rooted One UI ROMs.
+- [AlwaysTrustUserCerts](https://magisk.yssn.tech/modules/alwaystrustusercerts/): Injects user-installed CA certificates into the system trust store for SSL/TLS traffic inspection.
+- [Bindhosts](https://magisk.yssn.tech/modules/bindhosts/): Simple, systemless `/system/etc/hosts` adblocker supporting Magisk, KernelSU, and APatch.
+- [Zygisk-Detach](https://magisk.yssn.tech/modules/zygisk-detach/): Detach installed applications from Google Play Store automatic updates.
+
+## Installation Instructions
+1. Download the release archive (`.zip`) from the verified download link on any module page.
+2. Open your device root manager application (Magisk, KernelSU Manager, or APatch Manager).
+3. Navigate to the **Modules** section.
+4. Tap **Install from storage**, select the downloaded `.zip` file, and allow installation to finish.
+5. Reboot your device to activate changes.

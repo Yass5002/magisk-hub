@@ -56,7 +56,7 @@ const { platform, modules } = Astro.props;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: 'Compatibility', url: '/' },
-  { name: platform.name, url: `/compatibility/${platform.id}` },
+  { name: platform.name, url: `/compatibility/${platform.id}/` },
 ];
 
 const platformSchema = {
@@ -64,7 +64,7 @@ const platformSchema = {
   '@type': 'CollectionPage',
   'name': `${platform.name} Root Modules`,
   'description': platform.description,
-  'url': `https://magisk.yssn.tech/compatibility/${platform.id}`,
+  'url': `https://magisk.yssn.tech/compatibility/${platform.id}/`,
   'numberOfItems': modules.length,
 };
 ---

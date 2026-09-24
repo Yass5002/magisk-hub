@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Security Policy', url: '/security/' },
+];
+
+const policySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': 'Editorial, Safety & Security Policy',
+  'description': 'Verification process, malware screening, bootloop protection, and safety guidelines for Magisk Hub.',
+  'url': 'https://magisk.yssn.tech/security/',
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Magisk Hub',
+    'url': 'https://magisk.yssn.tech/'
+  }
+};
+---
+
+<BaseLayout
+  title="Security & Verification Policy - Magisk Hub"
+  description="Learn how Magisk Hub verifies, screens, and indexes Android root modules for Magisk, KernelSU, and APatch. Safety recommendations and reporting procedures."
+  structuredData={policySchema}
+>
+  <div class="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <header class="py-6 border-b border-zinc-200">
+      <div class="flex items-center gap-2">
+        <span class="rounded bg-zinc-100 px-2.5 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200">
+          Ecosystem Safety
+        </span>
+        <span class="text-xs font-mono text-zinc-500">Updated September 2026</span>
+      </div>
+
+      <h1 class="mt-3 text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">
+        Editorial, Safety & Security Policy
+      </h1>
+
+      <p class="mt-2 text-sm sm:text-base text-zinc-600 leading-relaxed">
+        Magisk Hub is an open directory and knowledge hub cataloging community-maintained root modules. Because rooting grants deep system privileges, we uphold strict standards for repository indexing, release asset integrity, and user transparency.
+      </p>
+    </header>
+
+    <div class="mt-8 space-y-10 text-sm text-zinc-700 leading-relaxed">
+      <!-- Section 1 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-zinc-900 tracking-tight">
+          1. Automated Module Verification Pipeline
+        </h2>
+        <p>
+          Every module listed on Magisk Hub is tracked against an open-source JSON specification (<code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">modules/schema.json</code>) adhering to JSON Schema Draft-07. Our continuous synchronization pipeline enforces the following validation gates before any package enters the directory:
+        </p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-zinc-600">
+          <li><strong>Public Source Repository:</strong> All indexed modules must link to public, inspectable git repositories (predominantly GitHub). Proprietary or obfuscated binary-only repositories are not accepted.</li>
+          <li><strong>Verified Release Assets:</strong> Download links point directly to official GitHub releases published by repository maintainers. Assets are never re-hosted on third-party servers.</li>
+          <li><strong>Compatibility Tagging:</strong> Supported root implementations (Magisk, KernelSU, APatch) are audited against maintainer manifests to prevent cross-platform installation errors.</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-zinc-900 tracking-tight">
+          2. Root Safety & Bootloop Prevention Guidelines
+        </h2>
+        <p>
+          Systemless root modules modify runtime behavior by overlaying files or hooking Zygote processes. Flashing poorly configured modules can induce bootloops. We advise users to observe the following safeguards:
+        </p>
+        <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-5 space-y-3">
+          <h3 class="font-semibold text-zinc-900 text-sm">Emergency Rescue Protocol</h3>
+          <p class="text-xs text-zinc-600">
+            If your device fails to boot after flashing a module, you can disable modules without losing data:
+          </p>
+          <ol class="list-decimal list-inside space-y-1 text-xs font-mono text-zinc-800">
+            <li>Boot into Safe Mode (press and hold Volume Down during startup) to disable all third-party modules.</li>
+            <li>In TWRP/OrangeFox recovery, open the file manager and navigate to <code class="bg-zinc-200 px-1 py-0.5 rounded">/data/adb/modules/</code> to delete the offending module folder.</li>
+            <li>Use <code class="bg-zinc-200 px-1 py-0.5 rounded">touch /data/adb/modules/.disable_magisk</code> via custom recovery terminal.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-zinc-900 tracking-tight">
+          3. Malware & Integrity Disclosures
+        </h2>
+        <p>
+          While Magisk Hub validates repository metadata, upstream releases are authored by independent community developers. Granting root access to any module allows arbitrary code execution. Users should:
+        </p>
+        <ul class="list-disc list-inside space-y-1.5 pl-2 text-zinc-600">
+          <li>Inspect repository commit history and maintainer reputation prior to flashing.</li>
+          <li>Review module source files, specifically <code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">customize.sh</code> and <code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">service.sh</code>.</li>
+          <li>Avoid installing untrusted modules requesting elevated network or keystore permissions.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="space-y-3">
+        <h2 class="text-xl font-bold text-zinc-900 tracking-tight">
+          4. Takedown & Incident Reporting Procedures
+        </h2>
+        <p>
+          If you discover a malicious module, compromised release asset, or trademark infringement in our directory, submit an incident report immediately:
+        </p>
+        <p>
+          Open a high-priority issue on our <a href="https://github.com/Yass5002/magisk-hub/issues" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-900 underline hover:text-black">GitHub Issue Tracker</a> with the prefix <code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">[SECURITY]</code> or submit a pull request removing the module JSON from <code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">modules/</code>. Malicious entries are purged from the live index upon verification.
+        </p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

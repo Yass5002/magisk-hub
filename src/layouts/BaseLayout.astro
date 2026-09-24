@@ -23,6 +23,11 @@ const {
   structuredData,
 } = Astro.props;
 
+const rawCanonical = canonicalUrl || Astro.url.href;
+const finalCanonical = rawCanonical.split('?')[0].endsWith('/') 
+  ? rawCanonical 
+  : (rawCanonical.includes('?') ? rawCanonical.replace('?', '/?') : `${rawCanonical}/`);
+
 const siteName = 'Magisk Hub';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
@@ -31,7 +36,7 @@ const baseWebSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   'name': 'Magisk Hub',
-  'url': 'https://magisk.yssn.tech',
+  'url': 'https://magisk.yssn.tech/',
   'description': 'Directory of active root modules for Magisk, KernelSU, and APatch.',
   'potentialAction': {
     '@type': 'SearchAction',
@@ -50,7 +55,7 @@ const baseWebSiteSchema = {
     <meta name="generator" content={Astro.generator} />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href={canonicalUrl} />
+    <link rel="canonical" href={finalCanonical} />
 
     <!-- Primary Meta Tags -->
     <title>{fullTitle}</title>
@@ -68,18 +73,18 @@ const baseWebSiteSchema = {
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
-    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:url" content={finalCanonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
     <meta property="og:site_name" content={siteName} />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalUrl} />
-    <meta property="twitter:title" content={fullTitle} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={finalCanonical} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(baseWebSiteSchema)} />
