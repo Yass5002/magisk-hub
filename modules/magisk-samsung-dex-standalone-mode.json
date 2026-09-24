@@ -20,5 +20,6 @@
   "seo": {
     "title": "magisk-samsung-dex-standalone-mode - Active Magisk Module",
     "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode"
-  }
+  },
+  "contentTier": 3
 }

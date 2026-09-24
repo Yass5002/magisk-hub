@@ -21,5 +21,6 @@
   "seo": {
     "title": "Android-VBMeta-Fixer - Active Magisk Module",
     "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android"
-  }
+  },
+  "contentTier": 2
 }

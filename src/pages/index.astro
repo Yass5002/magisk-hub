@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ModuleCard from '../components/ModuleCard.astro';
+import { getAllModules, getStats, CATEGORIES } from '../lib/modules';
+
+const modules = getAllModules();
+const stats = getStats();
+
+const tier1Modules = modules.filter(m => m.contentTier === 1);
+const allCategories = Object.values(CATEGORIES);
+---
+
+<BaseLayout
+  title="Magisk Hub - The Verified Active Magisk & Root Module Registry"
+  description="Explore 195+ active, verified Magisk, KernelSU, and APatch modules. Automatic 6-hour release sync, zero stale projects, and in-depth technical guides."
+  keywords={["magisk modules", "kernelsu modules", "apatch modules", "best magisk modules 2026", "play integrity bypass", "root modules android 14 15"]}
+>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden border-b border-surface-800/80 bg-gradient-to-b from-surface-900/50 via-surface-950 to-surface-950 py-16 sm:py-24">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))] pointer-events-none"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3.5 py-1 text-xs font-semibold text-brand-400 mb-6">
+        <span class="h-2 w-2 rounded-full bg-brand-400 animate-pulse"></span>
+        Automated 6-Hour GitHub Re-Audit • Zero Dead Projects
+      </div>
+
+      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl max-w-4xl mx-auto leading-[1.1]">
+        The Verified Directory of Active <span class="bg-gradient-to-r from-brand-400 to-emerald-300 bg-clip-text text-transparent">Android Root Modules</span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Every module in Magisk Hub is strictly validated against active-development criteria: tested release assets, live GitHub repositories, and zero abandoned forks.
+      </p>
+
+      <!-- Live Stats Bar -->
+      <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 max-w-3xl mx-auto">
+        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
+          <div class="text-2xl font-black text-white">{stats.total}</div>
+          <div class="text-xs text-slate-400 mt-0.5">Active Modules</div>
+        </div>
+        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
+          <div class="text-2xl font-black text-brand-400">{stats.tier1}</div>
+          <div class="text-xs text-slate-400 mt-0.5">In-Depth Guides</div>
+        </div>
+        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
+          <div class="text-2xl font-black text-white">{stats.categories}</div>
+          <div class="text-xs text-slate-400 mt-0.5">Categories</div>
+        </div>
+        <div class="rounded-xl border border-surface-800 bg-surface-900/60 p-4 backdrop-blur-sm">
+          <div class="text-2xl font-black text-amber-400">{(stats.totalStars / 1000).toFixed(0)}k+</div>
+          <div class="text-xs text-slate-400 mt-0.5">GitHub Stars</div>
+        </div>
+      </div>
+
+      <!-- Real-Time Interactive Search Bar -->
+      <div class="mt-10 max-w-2xl mx-auto">
+        <div class="relative flex items-center">
+          <svg class="absolute left-4 h-5 w-5 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input 
+            type="text" 
+            id="searchInput"
+            placeholder="Search 195 modules by name, keyword, or problem (e.g. Play Integrity, Call Record, Hosts)..."
+            class="w-full rounded-2xl border border-surface-700 bg-surface-900/90 py-4 pl-12 pr-4 text-sm text-white placeholder-slate-400 shadow-2xl focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Catalog Section -->
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8" id="catalog">
+    <!-- Filter Controls -->
+    <div class="flex flex-col gap-4 pb-8 border-b border-surface-800">
+      <!-- Compatibility Filter -->
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-2">Platform:</span>
+        <button class="compat-filter active rounded-lg border border-brand-500 bg-brand-500/10 px-3 py-1 text-xs font-semibold text-brand-400 transition-colors" data-compat="all">
+          All Platforms
+        </button>
+        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="Magisk">
+          Magisk
+        </button>
+        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="KernelSU">
+          KernelSU
+        </button>
+        <button class="compat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors" data-compat="APatch">
+          APatch
+        </button>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-2 shrink-0">Category:</span>
+        <button class="cat-filter active rounded-lg border border-brand-500 bg-brand-500/10 px-3 py-1 text-xs font-semibold text-brand-400 transition-colors shrink-0" data-cat="all">
+          All Categories ({modules.length})
+        </button>
+        {allCategories.map(c => {
+          const count = modules.filter(m => m.category === c.id).length;
+          return (
+            <button class="cat-filter rounded-lg border border-surface-800 bg-surface-900 px-3 py-1 text-xs font-medium text-slate-300 hover:border-slate-700 hover:text-white transition-colors shrink-0" data-cat={c.id}>
+              {c.name} ({count})
+            </button>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Results Counter -->
+    <div class="flex items-center justify-between py-6">
+      <div class="text-xs font-semibold text-slate-400">
+        Showing <span id="visibleCount" class="text-white font-bold">{modules.length}</span> modules
+      </div>
+
+      <div class="flex items-center gap-2 text-xs">
+        <span class="text-slate-400">Sort:</span>
+        <select id="sortSelect" class="rounded-lg border border-surface-800 bg-surface-900 px-2.5 py-1 text-xs text-slate-200 focus:border-brand-500 focus:outline-none">
+          <option value="stars">Most Stars</option>
+          <option value="name">Alphabetical</option>
+          <option value="tier">Technical Guides First</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Module Cards Grid -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="modulesGrid">
+      {modules.map(mod => (
+        <div 
+          class="module-card-wrapper"
+          data-id={mod.id}
+          data-name={mod.name.toLowerCase()}
+          data-repo={mod.repo.toLowerCase()}
+          data-desc={mod.description.toLowerCase()}
+          data-cat={mod.category}
+          data-compat={mod.compatibility.join(',')}
+          data-stars={mod.stars || 0}
+          data-tier={mod.contentTier || (mod.stars >= 200 ? 2 : 3)}
+        >
+          <ModuleCard module={mod} />
+        </div>
+      ))}
+    </div>
+
+    <!-- Empty State -->
+    <div id="noResults" class="hidden text-center py-20">
+      <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-surface-900 text-slate-400 mb-4 border border-surface-800">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="text-base font-bold text-white">No active modules found</h3>
+      <p class="mt-1 text-xs text-slate-400 max-w-sm mx-auto">
+        No modules match your current filter and search query. Try clearing your filters.
+      </p>
+    </div>
+  </section>
+
+  <!-- Client-side Search and Filter Script -->
+  <script is:inline>
+    const searchInput = document.getElementById('searchInput');
+    const modulesGrid = document.getElementById('modulesGrid');
+    const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper'));
+    const visibleCount = document.getElementById('visibleCount');
+    const noResults = document.getElementById('noResults');
+    const sortSelect = document.getElementById('sortSelect');
+    
+    let activeCat = 'all';
+    let activeCompat = 'all';
+    let searchQuery = '';
+
+    function filterModules() {
+      let matches = 0;
+
+      cardWrappers.forEach(card => {
+        const name = card.dataset.name || '';
+        const repo = card.dataset.repo || '';
+        const desc = card.dataset.desc || '';
+        const cat = card.dataset.cat || '';
+        const compat = (card.dataset.compat || '').split(',');
+
+        const matchesSearch = !searchQuery || 
+          name.includes(searchQuery) || 
+          repo.includes(searchQuery) || 
+          desc.includes(searchQuery);
+
+        const matchesCat = activeCat === 'all' || cat === activeCat;
+        const matchesCompat = activeCompat === 'all' || compat.includes(activeCompat);
+
+        if (matchesSearch && matchesCat && matchesCompat) {
+          card.style.display = '';
+          matches++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (visibleCount) visibleCount.textContent = matches.toString();
+      if (noResults) noResults.style.display = matches === 0 ? 'block' : 'none';
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        filterModules();
+      });
+    }
+
+    // Category button clicks
+    document.querySelectorAll('.cat-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.cat-filter').forEach(b => {
+          b.classList.remove('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
+          b.classList.add('border-surface-800', 'bg-surface-900', 'text-slate-300');
+        });
+        btn.classList.add('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
+        btn.classList.remove('border-surface-800', 'bg-surface-900', 'text-slate-300');
+        activeCat = btn.dataset.cat || 'all';
+        filterModules();
+      });
+    });
+
+    // Compatibility button clicks
+    document.querySelectorAll('.compat-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.compat-filter').forEach(b => {
+          b.classList.remove('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
+          b.classList.add('border-surface-800', 'bg-surface-900', 'text-slate-300');
+        });
+        btn.classList.add('active', 'border-brand-500', 'bg-brand-500/10', 'text-brand-400');
+        btn.classList.remove('border-surface-800', 'bg-surface-900', 'text-slate-300');
+        activeCompat = btn.dataset.compat || 'all';
+        filterModules();
+      });
+    });
+
+    // Sort Handler
+    if (sortSelect) {
+      sortSelect.addEventListener('change', () => {
+        const val = sortSelect.value;
+        const sorted = [...cardWrappers].sort((a, b) => {
+          if (val === 'stars') {
+            return (parseInt(b.dataset.stars) || 0) - (parseInt(a.dataset.stars) || 0);
+          } else if (val === 'name') {
+            return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+          } else if (val === 'tier') {
+            return (parseInt(a.dataset.tier) || 3) - (parseInt(b.dataset.tier) || 3);
+          }
+          return 0;
+        });
+        sorted.forEach(card => modulesGrid.appendChild(card));
+      });
+    }
+  </script>
+</BaseLayout>

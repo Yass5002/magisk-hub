@@ -20,5 +20,6 @@
   "seo": {
     "title": "Magisk-Minecraft-Font - Active Magisk Module",
     "description": "A Magisk Module that changes your default font to the Minecraft font"
-  }
+  },
+  "contentTier": 3
 }

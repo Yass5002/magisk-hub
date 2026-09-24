@@ -21,5 +21,6 @@
   "seo": {
     "title": "livebootmodule - Active Magisk Module",
     "description": "A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices"
-  }
+  },
+  "contentTier": 2
 }

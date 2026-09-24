@@ -84,6 +84,13 @@ def validate_all_modules():
             if not os.path.isfile(full_icon_path):
                 file_errors.append(f"Icon file not found at relative path '{icon_path}'")
 
+        # 4. Check contentTier 1 requires markdown guide
+        content_tier = data.get("contentTier")
+        if content_tier == 1:
+            full_md_path = os.path.join(REPO_ROOT, "content", "modules", f"{expected_id}.md")
+            if not os.path.isfile(full_md_path):
+                file_errors.append(f"contentTier is 1, but markdown guide is missing at 'content/modules/{expected_id}.md'")
+
         if file_errors:
             errors_by_file[filename] = file_errors
 

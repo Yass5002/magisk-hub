@@ -20,5 +20,6 @@
   "seo": {
     "title": "HyperUnlocked - Active Magisk Module",
     "description": "A Magisk/KernelSU/APatch module to unlock high-end features on all Xiaomi devices."
-  }
+  },
+  "contentTier": 2
 }

@@ -21,5 +21,6 @@
   "seo": {
     "title": "box_for_magisk - Active Magisk Module",
     "description": "Transparent Proxy for Android(root)"
-  }
+  },
+  "contentTier": 1
 }

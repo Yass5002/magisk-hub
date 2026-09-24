@@ -20,5 +20,6 @@
   "seo": {
     "title": "Magisk - Active Magisk Module",
     "description": "The Magic Mask for Android"
-  }
+  },
+  "contentTier": 1
 }

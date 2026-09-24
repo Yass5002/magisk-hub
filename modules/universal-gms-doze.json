@@ -20,5 +20,6 @@
   "seo": {
     "title": "universal-gms-doze - Active Magisk Module",
     "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization"
-  }
+  },
+  "contentTier": 3
 }

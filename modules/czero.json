@@ -21,5 +21,6 @@
   "seo": {
     "title": "CZero - Active Magisk Module",
     "description": "A system cache cleaning and optimisation module made just for Android."
-  }
+  },
+  "contentTier": 3
 }

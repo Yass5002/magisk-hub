@@ -20,5 +20,6 @@
   "seo": {
     "title": "dozedisabler - Active Magisk Module",
     "description": "Disable Doze optimizations at boot (Magisk)"
-  }
+  },
+  "contentTier": 3
 }

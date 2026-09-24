@@ -20,5 +20,6 @@
   "seo": {
     "title": "PlayIntegrityFork - Active Magisk Module",
     "description": "Fix Play Integrity <A13 verdicts, allowing custom fields and props"
-  }
+  },
+  "contentTier": 1
 }

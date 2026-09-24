@@ -20,5 +20,6 @@
   "seo": {
     "title": "ImageCopyHide - Active Magisk Module",
     "description": "Automatically copy and hide files from /sdcard/DCIM/Camera to /sdcard/wot/cptp (magisk module)"
-  }
+  },
+  "contentTier": 3
 }

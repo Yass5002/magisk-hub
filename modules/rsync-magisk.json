@@ -20,5 +20,6 @@
   "seo": {
     "title": "rsync-magisk - Active Magisk Module",
     "description": "rsync-magisk active root module."
-  }
+  },
+  "contentTier": 3
 }

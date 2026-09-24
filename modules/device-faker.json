@@ -21,5 +21,6 @@
   "seo": {
     "title": "device_faker - Active Magisk Module",
     "description": "自定义配置Zygisk机型伪装"
-  }
+  },
+  "contentTier": 1
 }

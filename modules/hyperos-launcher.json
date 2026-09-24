@@ -21,5 +21,6 @@
   "seo": {
     "title": "HyperOS-Launcher - Active Magisk Module",
     "description": "Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent, dock background, and customization options for a refined user experie"
-  }
+  },
+  "contentTier": 2
 }

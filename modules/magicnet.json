@@ -21,5 +21,6 @@
   "seo": {
     "title": "MagicNet - Active Magisk Module",
     "description": "Consciously set all groups to block"
-  }
+  },
+  "contentTier": 3
 }

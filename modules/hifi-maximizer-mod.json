@@ -20,5 +20,6 @@
   "seo": {
     "title": "hifi-maximizer-mod - Active Magisk Module",
     "description": "A Magisk module for maximizing the digital audio fidelity by reducing jitters on audio outputs (USB DACs, Bluetooth a2dp, DLNA, etc.)"
-  }
+  },
+  "contentTier": 3
 }

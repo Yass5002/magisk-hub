@@ -20,5 +20,6 @@
   "seo": {
     "title": "supl-replacer - Active Magisk Module",
     "description": "Magisk module to replace the SUPL provider in gps.conf"
-  }
+  },
+  "contentTier": 3
 }

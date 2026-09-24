@@ -21,5 +21,6 @@
   "seo": {
     "title": "Scalpel - Active Magisk Module",
     "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch"
-  }
+  },
+  "contentTier": 3
 }

@@ -1,11 +1,13 @@
 {
-  "id": "lsposed-github-io",
-  "name": "LSPosed.github.io",
+  "id": "shamiko",
+  "name": "Shamiko",
   "repo": "LSPosed/LSPosed.github.io",
   "category": "root-management",
-  "description": "LSPosed.github.io active root module.",
+  "description": "Zygisk-based root hiding module by LSPosed developers to conceal root, zygisk, and sensitive props from banking apps and integrity checks.",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "Proprietary",
   "icon": null,
@@ -18,7 +20,8 @@
     "assetName": "Shamiko-v1.2.5-414-release.zip"
   },
   "seo": {
-    "title": "LSPosed.github.io - Active Magisk Module",
-    "description": "LSPosed.github.io active root module."
-  }
+    "title": "Shamiko - Zygisk Root Hiding Module",
+    "description": "Conceal Magisk, KernelSU, and root environment from detection mechanisms using Shamiko."
+  },
+  "contentTier": 1
 }

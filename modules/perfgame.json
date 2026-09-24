@@ -20,5 +20,6 @@
   "seo": {
     "title": "PerfGame - Active Magisk Module",
     "description": "Enable custom resolution & frame-rate mechanism for your games."
-  }
+  },
+  "contentTier": 3
 }

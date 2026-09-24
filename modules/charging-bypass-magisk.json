@@ -20,5 +20,6 @@
   "seo": {
     "title": "charging-bypass-magisk - Active Magisk Module",
     "description": "Charging Bypass Magisk Module — Android 14–16 supported. Disables charging when screen is ON and re-enables when OFF. Useful for gaming/dev use. Kernel-lev"
-  }
+  },
+  "contentTier": 3
 }

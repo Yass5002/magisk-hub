@@ -20,5 +20,6 @@
   "seo": {
     "title": "magisk-wifiadb - Active Magisk Module",
     "description": "A magisk module to enable WiFi ADB automatically."
-  }
+  },
+  "contentTier": 2
 }

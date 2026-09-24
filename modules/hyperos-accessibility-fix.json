@@ -21,5 +21,6 @@
   "seo": {
     "title": "hyperos-accessibility-fix - Active Magisk Module",
     "description": "Stop HyperOS from randomly disabling accessibillity services"
-  }
+  },
+  "contentTier": 3
 }

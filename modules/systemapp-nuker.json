@@ -20,5 +20,6 @@
   "seo": {
     "title": "systemapp_nuker - Active Magisk Module",
     "description": "A KernelSU module to debloat system apps with WebUI Interface"
-  }
+  },
+  "contentTier": 2
 }

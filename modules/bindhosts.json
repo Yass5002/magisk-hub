@@ -21,5 +21,6 @@
   "seo": {
     "title": "bindhosts - Active Magisk Module",
     "description": "Systemless hosts for APatch / KernelSU / Magisk"
-  }
+  },
+  "contentTier": 1
 }

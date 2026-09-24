@@ -20,5 +20,6 @@
   "seo": {
     "title": "Magisk-iOS-Emoji - Active Magisk Module",
     "description": "Systemlessly replaces emoji font with iOS Emoji"
-  }
+  },
+  "contentTier": 2
 }

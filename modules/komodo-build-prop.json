@@ -20,5 +20,6 @@
   "seo": {
     "title": "Komodo-Build-Prop - Active Magisk Module",
     "description": "Magisk and KernelSU module that spoofs your Android device as Google Pixel 9 Pro XL."
-  }
+  },
+  "contentTier": 3
 }

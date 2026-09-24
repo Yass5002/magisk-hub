@@ -20,5 +20,6 @@
   "seo": {
     "title": "disable-low-ram - Active Magisk Module",
     "description": "Magisk module to disable Low-RAM flag on Android Go devices"
-  }
+  },
+  "contentTier": 3
 }

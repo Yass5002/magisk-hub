@@ -22,5 +22,6 @@
   "seo": {
     "title": "meta-magic_mount-rs - Active Magisk Module",
     "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay."
-  }
+  },
+  "contentTier": 2
 }

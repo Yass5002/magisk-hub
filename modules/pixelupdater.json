@@ -20,5 +20,6 @@
   "seo": {
     "title": "PixelUpdater - Active Magisk Module",
     "description": "Android A/B OTA updater app for rooted Pixels"
-  }
+  },
+  "contentTier": 2
 }

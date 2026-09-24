@@ -20,5 +20,6 @@
   "seo": {
     "title": "Pixelify-Next - Active Magisk Module",
     "description": "Magisk /KSU module to enables pixel exclusive features up to android 17"
-  }
+  },
+  "contentTier": 2
 }

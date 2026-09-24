@@ -447,6 +447,8 @@ def main():
                 "description": cand["desc"][:155]
             }
         }
+        if c.get("contentTier"):
+            entry["contentTier"] = c["contentTier"]
         final_module_entries.append((slug, entry))
 
     # Clean existing module files if they got pruned

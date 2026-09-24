@@ -20,5 +20,6 @@
   "seo": {
     "title": "xhhttp - Active Magisk Module",
     "description": "Friendly and fast tool for sending HTTP requests as Magisk module"
-  }
+  },
+  "contentTier": 3
 }

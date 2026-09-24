@@ -21,5 +21,6 @@
   "seo": {
     "title": "vpnhide - Active Magisk Module",
     "description": "Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)"
-  }
+  },
+  "contentTier": 2
 }

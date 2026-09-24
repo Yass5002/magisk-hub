@@ -21,5 +21,6 @@
   "seo": {
     "title": "COPG-VD - Active Magisk Module",
     "description": "COPG-VD is a module designed for global device spoofing. This means even system apps and the whole device will be hooked."
-  }
+  },
+  "contentTier": 3
 }

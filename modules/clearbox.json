@@ -21,5 +21,6 @@
   "seo": {
     "title": "ClearBox - Active Magisk Module",
     "description": "A Magisk module dedicated to automatic cleaning and optimization of Android   |   一个致力于 Android 自动清理优化的 Magisk 模块"
-  }
+  },
+  "contentTier": 3
 }

@@ -20,5 +20,6 @@
   "seo": {
     "title": "COPG - Active Magisk Module",
     "description": "Advanced per-app device / CPU / GPU spoofer for rooted Android — device profiles, per-app CPU models, prop & Android-ID spoofing, all driven by a full on-d"
-  }
+  },
+  "contentTier": 1
 }

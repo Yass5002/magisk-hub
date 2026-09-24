@@ -21,5 +21,6 @@
   "seo": {
     "title": "Vanadium-WebViewBrowser - Active Magisk Module",
     "description": "A Magisk/KernelSU module that changes the system WebView with Vanadium WebView and installs the Vanadium Browser."
-  }
+  },
+  "contentTier": 3
 }

@@ -21,5 +21,6 @@
   "seo": {
     "title": "crond4android - Active Magisk Module",
     "description": "支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on KernelSU, APatch and Magisk."
-  }
+  },
+  "contentTier": 3
 }

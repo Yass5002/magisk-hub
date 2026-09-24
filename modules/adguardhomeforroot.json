@@ -20,5 +20,6 @@
   "seo": {
     "title": "AdGuardHomeForRoot - Active Magisk Module",
     "description": "A module to easily execute AdGuardHome on Android"
-  }
+  },
+  "contentTier": 2
 }

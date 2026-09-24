@@ -21,5 +21,6 @@
   "seo": {
     "title": "revanced-extended - Active Magisk Module",
     "description": "ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users."
-  }
+  },
+  "contentTier": 2
 }

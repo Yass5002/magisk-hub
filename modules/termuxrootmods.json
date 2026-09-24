@@ -20,5 +20,6 @@
   "seo": {
     "title": "TermuxRootMods - Active Magisk Module",
     "description": "A module that enhances the Termux experience for rooted devices."
-  }
+  },
+  "contentTier": 3
 }

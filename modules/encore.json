@@ -20,5 +20,6 @@
   "seo": {
     "title": "encore - Active Magisk Module",
     "description": "Special performance module for your device"
-  }
+  },
+  "contentTier": 2
 }

@@ -21,5 +21,6 @@
   "seo": {
     "title": "TCP_Optimiser_Module - Active Magisk Module",
     "description": "A Magisk/KernelSU module to change tcp congestion algorithm based on current active internet type and some network enhancements."
-  }
+  },
+  "contentTier": 3
 }

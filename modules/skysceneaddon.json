@@ -21,5 +21,6 @@
   "seo": {
     "title": "SkySceneAddon - Active Magisk Module",
     "description": "A Magisk module for optimizing memory management for legacy and modern ARM devices."
-  }
+  },
+  "contentTier": 3
 }

@@ -21,5 +21,6 @@
   "seo": {
     "title": "OhMyKeymint - Active Magisk Module",
     "description": "OhMyKeymint active root module."
-  }
+  },
+  "contentTier": 2
 }

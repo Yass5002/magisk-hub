@@ -21,5 +21,6 @@
   "seo": {
     "title": "BCR - Active Magisk Module",
     "description": "A Basic Call Recorder for rooted Android devices"
-  }
+  },
+  "contentTier": 1
 }

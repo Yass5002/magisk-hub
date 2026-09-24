@@ -21,5 +21,6 @@
   "seo": {
     "title": "AlwaysTrustUserCerts - Active Magisk Module",
     "description": "A Magisk/KernelSU module that automatically adds user certificates to the system root CA store"
-  }
+  },
+  "contentTier": 1
 }

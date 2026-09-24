@@ -20,5 +20,6 @@
   "seo": {
     "title": "wadbd - Active Magisk Module",
     "description": "Allows you to enable or disable wireless ADB for the current session or at boot."
-  }
+  },
+  "contentTier": 3
 }

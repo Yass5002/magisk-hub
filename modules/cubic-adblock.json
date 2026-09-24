@@ -20,5 +20,6 @@
   "seo": {
     "title": "Cubic-AdBlock - Active Magisk Module",
     "description": "AdBlock Based in /etc/hosts"
-  }
+  },
+  "contentTier": 3
 }

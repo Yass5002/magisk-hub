@@ -20,5 +20,6 @@
   "seo": {
     "title": "SwapBoost-Pro - Active Magisk Module",
     "description": "A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile optimization with VM tweaks."
-  }
+  },
+  "contentTier": 3
 }

@@ -20,5 +20,6 @@
   "seo": {
     "title": "magisk-modules - Active Magisk Module",
     "description": "Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup."
-  }
+  },
+  "contentTier": 3
 }

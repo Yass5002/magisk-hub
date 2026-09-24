@@ -20,5 +20,6 @@
   "seo": {
     "title": "NoHello - Active Magisk Module",
     "description": "A Zygisk module to hide root."
-  }
+  },
+  "contentTier": 2
 }

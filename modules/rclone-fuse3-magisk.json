@@ -20,5 +20,6 @@
   "seo": {
     "title": "rclone-fuse3-magisk - Active Magisk Module",
     "description": "magisk rclone module (with libfuse3)"
-  }
+  },
+  "contentTier": 3
 }

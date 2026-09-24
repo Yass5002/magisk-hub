@@ -20,5 +20,6 @@
   "seo": {
     "title": "drc-remover - Active Magisk Module",
     "description": "A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices"
-  }
+  },
+  "contentTier": 3
 }

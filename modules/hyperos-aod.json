@@ -21,5 +21,6 @@
   "seo": {
     "title": "HyperOS-AOD - Active Magisk Module",
     "description": "Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices."
-  }
+  },
+  "contentTier": 3
 }

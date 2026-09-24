@@ -21,5 +21,6 @@
   "seo": {
     "title": "HyperOS-Theme-Manager - Active Magisk Module",
     "description": "Unlocks full theme customization in HyperOS with multi-theme servers, premium themes, AI wallpapers, third-party imports, super icons/widgets, and low-end "
-  }
+  },
+  "contentTier": 3
 }

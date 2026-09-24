@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ModuleCard from '../../components/ModuleCard.astro';
+import { CATEGORIES, getAllModules, type CategoryInfo, type ModuleData } from '../../lib/modules';
+
+export async function getStaticPaths() {
+  const allModules = getAllModules();
+  
+  return Object.values(CATEGORIES).map(cat => {
+    const modules = allModules.filter(m => m.category === cat.id);
+    return {
+      params: { category: cat.id },
+      props: { category: cat, modules },
+    };
+  });
+}
+
+export interface Props {
+  category: CategoryInfo;
+  modules: ModuleData[];
+}
+
+const { category, modules } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Categories', url: '/categories' },
+  { name: category.name, url: `/categories/${category.id}` },
+];
+
+const categorySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  'name': `${category.name} Magisk & Root Modules`,
+  'description': category.description,
+  'url': `https://magiskhub.com/categories/${category.id}`,
+  'numberOfItems': modules.length,
+};
+---
+
+<BaseLayout
+  title={`Best ${category.name} Magisk & Root Modules (2026) - Magisk Hub`}
+  description={`Browse verified ${category.name} modules for Magisk, KernelSU, and APatch. ${category.description}`}
+  structuredData={categorySchema}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <!-- Category Header -->
+    <div class="py-8 border-b border-surface-800">
+      <div class="flex items-center gap-3">
+        <span class="rounded-xl bg-brand-500/10 px-3 py-1 text-xs font-bold text-brand-400 border border-brand-500/20 uppercase tracking-wider">
+          Category Hub
+        </span>
+        <span class="text-xs text-slate-400 font-semibold">{modules.length} Active Modules</span>
+      </div>
+
+      <h1 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        {category.name} Modules
+      </h1>
+
+      <p class="mt-3 text-sm text-slate-300 max-w-3xl leading-relaxed">
+        {category.description} Every module listed below is continuously monitored by automated 6-hour release synchronizers to guarantee functioning download links and active upstream maintenance.
+      </p>
+    </div>
+
+    <!-- Modules Grid -->
+    <div class="mt-10">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {modules.map(mod => (
+          <ModuleCard module={mod} />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

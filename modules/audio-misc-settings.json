@@ -20,5 +20,6 @@
   "seo": {
     "title": "audio-misc-settings - Active Magisk Module",
     "description": "A Magisk module for setting miscellaneous audio configuration values (media audio volume steps (100 steps), raising the resampling quality, disabling the e"
-  }
+  },
+  "contentTier": 2
 }

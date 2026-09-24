@@ -20,5 +20,6 @@
   "seo": {
     "title": "Swap-Disabler - Active Magisk Module",
     "description": "A module designed to disable swap at system startup. Is particularly beneficial for devices equipped with a substantial amount of RAM, where the use of swa"
-  }
+  },
+  "contentTier": 3
 }

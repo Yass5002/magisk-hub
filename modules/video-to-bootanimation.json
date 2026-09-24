@@ -20,5 +20,6 @@
   "seo": {
     "title": "video-to-bootanimation - Active Magisk Module",
     "description": "A Magisk Module Which Can Set Videos as Android Device BootAnimation"
-  }
+  },
+  "contentTier": 3
 }

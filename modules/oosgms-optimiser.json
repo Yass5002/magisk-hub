@@ -20,5 +20,6 @@
   "seo": {
     "title": "OOSGMS-OPTIMISER - Active Magisk Module",
     "description": "Magisk module to optimise and remove trackers for GMS and OOS"
-  }
+  },
+  "contentTier": 3
 }

@@ -20,5 +20,6 @@
   "seo": {
     "title": "PlayIntegrityFix - Active Magisk Module",
     "description": "Fix Play Integrity verdicts."
-  }
+  },
+  "contentTier": 1
 }

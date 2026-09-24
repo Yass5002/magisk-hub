@@ -21,5 +21,6 @@
   "seo": {
     "title": "MoveCertificate - Active Magisk Module",
     "description": "支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with magiskv20.4+/kernelsu/APatch"
-  }
+  },
+  "contentTier": 1
 }

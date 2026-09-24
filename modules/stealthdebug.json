@@ -20,5 +20,6 @@
   "seo": {
     "title": "StealthDebug - Active Magisk Module",
     "description": "Magisk module to hide USB debugging properties"
-  }
+  },
+  "contentTier": 3
 }

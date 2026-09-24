@@ -21,5 +21,6 @@
   "seo": {
     "title": "Surfing - Active Magisk Module",
     "description": "Magisk and KernelSU modules for  Clash/mihomo services."
-  }
+  },
+  "contentTier": 2
 }

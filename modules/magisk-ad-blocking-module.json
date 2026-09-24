@@ -20,5 +20,6 @@
   "seo": {
     "title": "Magisk-Ad-Blocking-Module - Active Magisk Module",
     "description": "Magisk module to block ads on android"
-  }
+  },
+  "contentTier": 2
 }

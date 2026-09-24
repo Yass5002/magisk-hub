@@ -20,5 +20,6 @@
   "seo": {
     "title": "SMbootFX - Active Magisk Module",
     "description": "Custom boot and shutdown animations for Samsung Galaxy devices via distinct Magisk modules."
-  }
+  },
+  "contentTier": 3
 }

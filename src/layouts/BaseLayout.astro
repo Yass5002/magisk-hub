@@ -1,0 +1,99 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  keywords?: string[];
+  canonicalUrl?: string;
+  ogType?: 'website' | 'article';
+  ogImage?: string;
+  structuredData?: Record<string, any> | Record<string, any>[];
+}
+
+const {
+  title,
+  description,
+  keywords = [],
+  canonicalUrl = Astro.url.href,
+  ogType = 'website',
+  ogImage = '/assets/og-image.png',
+  structuredData,
+} = Astro.props;
+
+const siteName = 'Magisk Hub';
+const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+
+// Base Schema.org WebSite structure
+const baseWebSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  'name': 'Magisk Hub',
+  'url': 'https://magiskhub.com',
+  'description': 'The verified directory of active, community-maintained Magisk, KernelSU, and APatch root modules.',
+  'potentialAction': {
+    '@type': 'SearchAction',
+    'target': 'https://magiskhub.com/?q={search_term_string}',
+    'query-input': 'required name=search_term_string'
+  }
+};
+---
+
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Primary Meta Tags -->
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle} />
+    <meta name="description" content={description} />
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090d16" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://magiskhub.com${ogImage}`} />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={fullTitle} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magiskhub.com${ogImage}`} />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(baseWebSiteSchema)} />
+    {structuredData && (
+      Array.isArray(structuredData) ? (
+        structuredData.map(data => (
+          <script type="application/ld+json" set:html={JSON.stringify(data)} />
+        ))
+      ) : (
+        <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+      )
+    )}
+  </head>
+  <body class="min-h-screen flex flex-col bg-surface-950 text-slate-100">
+    <Navbar />
+    
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

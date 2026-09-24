@@ -20,5 +20,6 @@
   "seo": {
     "title": "noogle-magisk - Active Magisk Module",
     "description": "Degoogling Magisk modules for stock Android (powered by microG)"
-  }
+  },
+  "contentTier": 3
 }

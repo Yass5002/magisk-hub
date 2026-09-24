@@ -21,5 +21,6 @@
   "seo": {
     "title": "Greenify4Magisk-KSU-Reborn - Active Magisk Module",
     "description": "Integrate Greenify as a privileged system app to enable boost mode™, with automatic bulk app list generation and multi-user support. Works seamlessly with "
-  }
+  },
+  "contentTier": 3
 }

@@ -20,5 +20,6 @@
   "seo": {
     "title": "partition-backup - Active Magisk Module",
     "description": "*Magisk Module To Backup or Save Android Device Partition"
-  }
+  },
+  "contentTier": 3
 }

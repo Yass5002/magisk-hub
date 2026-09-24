@@ -21,5 +21,6 @@
   "seo": {
     "title": "ViPERFX_RE - Active Magisk Module",
     "description": "Reverse Engineering of ViPER4Android FX"
-  }
+  },
+  "contentTier": 1
 }

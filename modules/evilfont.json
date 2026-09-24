@@ -21,5 +21,6 @@
   "seo": {
     "title": "EvilFont - Active Magisk Module",
     "description": "A systemless module to change default Arabic/Persian font + Apple emojis."
-  }
+  },
+  "contentTier": 3
 }

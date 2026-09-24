@@ -21,5 +21,6 @@
   "seo": {
     "title": "specter - Active Magisk Module",
     "description": "Unified Play Integrity and root hiding stack for Android"
-  }
+  },
+  "contentTier": 2
 }

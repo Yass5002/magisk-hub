@@ -20,5 +20,6 @@
   "seo": {
     "title": "jetbrains-font-magisk-module - Active Magisk Module",
     "description": "Make your phone prettier with jetbrains mono and magisk"
-  }
+  },
+  "contentTier": 3
 }

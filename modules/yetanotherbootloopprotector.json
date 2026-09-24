@@ -20,5 +20,6 @@
   "seo": {
     "title": "YetAnotherBootloopProtector - Active Magisk Module",
     "description": "A Magisk Module to monitor and fix potential Bootloops and SystemUI failures."
-  }
+  },
+  "contentTier": 3
 }

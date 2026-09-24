@@ -20,5 +20,6 @@
   "seo": {
     "title": "audio-samplerate-changer - Active Magisk Module",
     "description": "A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi experience."
-  }
+  },
+  "contentTier": 3
 }

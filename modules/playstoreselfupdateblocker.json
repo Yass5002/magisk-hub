@@ -21,5 +21,6 @@
   "seo": {
     "title": "PlayStoreSelfUpdateBlocker - Active Magisk Module",
     "description": "Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play "
-  }
+  },
+  "contentTier": 3
 }

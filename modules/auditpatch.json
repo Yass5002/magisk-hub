@@ -21,5 +21,6 @@
   "seo": {
     "title": "AuditPatch - Active Magisk Module",
     "description": "Replace sensitive context in audit log"
-  }
+  },
+  "contentTier": 3
 }

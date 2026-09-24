@@ -20,5 +20,6 @@
   "seo": {
     "title": "KnoxPatch - Active Magisk Module",
     "description": "LSPosed module to get Samsung apps/features working again in your rooted Galaxy device."
-  }
+  },
+  "contentTier": 1
 }

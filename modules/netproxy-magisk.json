@@ -20,5 +20,6 @@
   "seo": {
     "title": "NetProxy-Magisk - Active Magisk Module",
     "description": "Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices."
-  }
+  },
+  "contentTier": 1
 }

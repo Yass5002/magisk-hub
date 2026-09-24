@@ -20,5 +20,6 @@
   "seo": {
     "title": "net-switch - Active Magisk Module",
     "description": "Magisk Module to isolate any app from Internet access"
-  }
+  },
+  "contentTier": 2
 }

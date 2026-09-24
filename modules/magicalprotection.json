@@ -20,5 +20,6 @@
   "seo": {
     "title": "MagicalProtection - Active Magisk Module",
     "description": "Magisk-only completely systemless adblocking."
-  }
+  },
+  "contentTier": 3
 }

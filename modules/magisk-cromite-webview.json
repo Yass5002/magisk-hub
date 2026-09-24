@@ -20,5 +20,6 @@
   "seo": {
     "title": "magisk-cromite-webview - Active Magisk Module",
     "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions."
-  }
+  },
+  "contentTier": 3
 }

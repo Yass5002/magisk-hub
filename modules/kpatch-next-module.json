@@ -21,5 +21,6 @@
   "seo": {
     "title": "KPatch-Next-Module - Active Magisk Module",
     "description": "Standalone implementation of KPM support for Magisk/KernelSU"
-  }
+  },
+  "contentTier": 1
 }

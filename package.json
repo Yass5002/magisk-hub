@@ -1,0 +1,31 @@
+{
+  "name": "magisk-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets/icons', 'public/assets/icons', {recursive:true});\"",
+    "dev": "npm run copy-assets && astro dev",
+    "build": "npm run copy-assets && astro build",
+    "preview": "astro preview",
+    "validate": "python3 scripts/validate_module.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yass5002/magisk-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yass5002/magisk-hub/issues"
+  },
+  "homepage": "https://github.com/Yass5002/magisk-hub#readme",
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/typography": "^0.5.20",
+    "astro": "^7.3.5",
+    "tailwindcss": "^3.4.19"
+  }
+}

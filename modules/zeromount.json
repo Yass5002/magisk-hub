@@ -22,5 +22,6 @@
   "seo": {
     "title": "zeromount - Active Magisk Module",
     "description": "Mountless module loading for rooted Android. Kernel-level VFS path redirection — zero mount table pollution. SUSFS integration, WebUI, bootloop guard, and "
-  }
+  },
+  "contentTier": 3
 }

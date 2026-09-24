@@ -21,5 +21,6 @@
   "seo": {
     "title": "MakeFontsGreatAgain - Active Magisk Module",
     "description": "System-wide Font Overrider with Unique GMS Masking & Multi-Range Unicode Filter."
-  }
+  },
+  "contentTier": 2
 }

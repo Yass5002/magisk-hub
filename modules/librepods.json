@@ -21,5 +21,6 @@
   "seo": {
     "title": "librepods - Active Magisk Module",
     "description": "AirPods liberated from Apple's ecosystem."
-  }
+  },
+  "contentTier": 2
 }

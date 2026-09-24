@@ -21,5 +21,6 @@
   "seo": {
     "title": "AshLooper - Active Magisk Module",
     "description": "A module designed to prevent boot loops caused by problematic modules installed via KernelSU or Magisk on Android devices."
-  }
+  },
+  "contentTier": 3
 }

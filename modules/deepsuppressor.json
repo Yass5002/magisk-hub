@@ -20,5 +20,6 @@
   "seo": {
     "title": "DeepSuppressor - Active Magisk Module",
     "description": "A Magisk Module"
-  }
+  },
+  "contentTier": 3
 }

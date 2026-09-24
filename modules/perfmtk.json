@@ -20,5 +20,6 @@
   "seo": {
     "title": "PerfMTK - Active Magisk Module",
     "description": "A Magisk module for MediaTek devices with Mali GPUs."
-  }
+  },
+  "contentTier": 3
 }

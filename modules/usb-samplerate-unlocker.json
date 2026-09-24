@@ -20,5 +20,6 @@
   "seo": {
     "title": "usb-samplerate-unlocker - Active Magisk Module",
     "description": "USB (HAL) Audio Class drivers on Android have a limiter of sample rates at 96kHz. This magisk module unlocks the limiter."
-  }
+  },
+  "contentTier": 3
 }

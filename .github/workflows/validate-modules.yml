@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'modules/**'
+      - 'content/**'
+      - 'src/**'
       - 'scripts/**'
       - '.github/workflows/validate-modules.yml'
   push:
@@ -12,6 +14,8 @@ on:
       - master
     paths:
       - 'modules/**'
+      - 'content/**'
+      - 'src/**'
       - 'scripts/**'
       - '.github/workflows/validate-modules.yml'
 
@@ -31,7 +35,7 @@ jobs:
           cache: 'pip'
           cache-dependency-path: 'scripts/requirements.txt'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
@@ -39,3 +43,15 @@ jobs:
       - name: Run module validator
         run: |
           python3 scripts/validate_module.py
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Verify static site build
+        run: npm run build

@@ -20,5 +20,6 @@
   "seo": {
     "title": "selinux_permissive - Active Magisk Module",
     "description": "Magisk Module that switches SELinux to permissive mode"
-  }
+  },
+  "contentTier": 2
 }

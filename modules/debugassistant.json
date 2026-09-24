@@ -20,5 +20,6 @@
   "seo": {
     "title": "DebugAssistant - Active Magisk Module",
     "description": "The simplest yet powerful logcat capture system as Magisk module."
-  }
+  },
+  "contentTier": 3
 }

@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ModuleCard from '../../components/ModuleCard.astro';
+import { getAllModules, type ModuleData } from '../../lib/modules';
+
+export async function getStaticPaths() {
+  const allModules = getAllModules();
+
+  const platforms = [
+    {
+      id: 'magisk',
+      name: 'Magisk',
+      title: 'Magisk Modules Catalog',
+      description: 'Browse active, verified modules compatible with standard Magisk systemless root on Android.',
+      details: 'Magisk is the universal systemless root interface utilizing Magic Mount and Zygisk. Modules listed here support standard Magisk 26.0+ installations.'
+    },
+    {
+      id: 'kernelsu',
+      name: 'KernelSU',
+      title: 'KernelSU Modules Catalog',
+      description: 'Explore verified root modules supporting KernelSU and GKI Linux kernel-assisted root.',
+      details: 'KernelSU operates in kernel space (Ring 0) with custom su privilege delegation and overlayfs. Modules listed here are tested for KernelSU compatibility.'
+    },
+    {
+      id: 'apatch',
+      name: 'APatch',
+      title: 'APatch Modules Catalog',
+      description: 'Curated directory of modules verified for APatch (KernelPatch) root solution.',
+      details: 'APatch leverages KernelPatch to modify the kernel in-place without replacing the kernel image. Modules listed here are validated for APatch.'
+    }
+  ];
+
+  return platforms.map(p => {
+    const modules = allModules.filter(m => m.compatibility.includes(p.name as any));
+    return {
+      params: { platform: p.id },
+      props: { platform: p, modules },
+    };
+  });
+}
+
+export interface Props {
+  platform: {
+    id: string;
+    name: string;
+    title: string;
+    description: string;
+    details: string;
+  };
+  modules: ModuleData[];
+}
+
+const { platform, modules } = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Compatibility', url: '/' },
+  { name: platform.name, url: `/compatibility/${platform.id}` },
+];
+
+const platformSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  'name': `${platform.name} Verified Root Modules`,
+  'description': platform.description,
+  'url': `https://magiskhub.com/compatibility/${platform.id}`,
+  'numberOfItems': modules.length,
+};
+---
+
+<BaseLayout
+  title={`${platform.title} (2026) - Verified Active Modules | Magisk Hub`}
+  description={platform.description}
+  structuredData={platformSchema}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <div class="py-8 border-b border-surface-800">
+      <div class="flex items-center gap-3">
+        <span class="rounded-xl bg-brand-500/10 px-3 py-1 text-xs font-bold text-brand-400 border border-brand-500/20 uppercase tracking-wider">
+          Platform Hub
+        </span>
+        <span class="text-xs text-slate-400 font-semibold">{modules.length} Verified Modules</span>
+      </div>
+
+      <h1 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        {platform.name} Modules
+      </h1>
+
+      <p class="mt-3 text-sm text-slate-300 max-w-3xl leading-relaxed">
+        {platform.details}
+      </p>
+    </div>
+
+    <!-- Modules Grid -->
+    <div class="mt-10">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {modules.map(mod => (
+          <ModuleCard module={mod} />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

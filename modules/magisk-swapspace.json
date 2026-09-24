@@ -20,5 +20,6 @@
   "seo": {
     "title": "magisk-swapspace - Active Magisk Module",
     "description": "This module allows for creating a persistent swap space on android"
-  }
+  },
+  "contentTier": 3
 }

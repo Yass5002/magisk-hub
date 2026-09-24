@@ -21,5 +21,6 @@
   "seo": {
     "title": "magisk-frida - Active Magisk Module",
     "description": "🔐 Run frida-server on boot with Magisk, always up-to-date"
-  }
+  },
+  "contentTier": 1
 }

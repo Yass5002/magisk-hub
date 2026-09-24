@@ -20,5 +20,6 @@
   "seo": {
     "title": "FingerprintPay - Active Magisk Module",
     "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付"
-  }
+  },
+  "contentTier": 1
 }

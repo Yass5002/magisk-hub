@@ -20,5 +20,6 @@
   "seo": {
     "title": "Vector - Active Magisk Module",
     "description": "Modern Xposed Framework"
-  }
+  },
+  "contentTier": 1
 }

@@ -21,5 +21,6 @@
   "seo": {
     "title": "susfs4ksu-module - Active Magisk Module",
     "description": "An addon root hiding service for KernelSU"
-  }
+  },
+  "contentTier": 1
 }

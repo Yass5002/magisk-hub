@@ -20,5 +20,6 @@
   "seo": {
     "title": "Extreme-Gms-Doze - Active Magisk Module",
     "description": "A Magisk Module for Kill gms on screen off"
-  }
+  },
+  "contentTier": 3
 }

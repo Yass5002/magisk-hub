@@ -20,5 +20,6 @@
   "seo": {
     "title": "chroot-distro - Active Magisk Module",
     "description": "Install Gnu/Linux distributions on Android"
-  }
+  },
+  "contentTier": 2
 }

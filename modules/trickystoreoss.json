@@ -21,5 +21,6 @@
   "seo": {
     "title": "TrickyStoreOSS - Active Magisk Module",
     "description": "Open source alternative to proprietary Tricky Store module"
-  }
+  },
+  "contentTier": 2
 }

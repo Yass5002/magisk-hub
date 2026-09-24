@@ -20,5 +20,6 @@
   "seo": {
     "title": "KernelEnhancer - Active Magisk Module",
     "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices."
-  }
+  },
+  "contentTier": 3
 }

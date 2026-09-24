@@ -21,5 +21,6 @@
   "seo": {
     "title": "VBMetaDisguiser - Active Magisk Module",
     "description": "A Magisk module to disguise the props of vbmeta / 一个用于伪装 VBMeta 属性的 Magisk 模块"
-  }
+  },
+  "contentTier": 3
 }

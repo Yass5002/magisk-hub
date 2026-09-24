@@ -21,5 +21,6 @@
   "seo": {
     "title": "Log-Catcher - Active Magisk Module",
     "description": "A module to make capturing boot logs easier"
-  }
+  },
+  "contentTier": 3
 }

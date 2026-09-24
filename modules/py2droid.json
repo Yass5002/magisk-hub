@@ -20,5 +20,6 @@
   "seo": {
     "title": "py2droid - Active Magisk Module",
     "description": "Magisk/KernelSU/APatch module to install Python 3 on Android."
-  }
+  },
+  "contentTier": 3
 }

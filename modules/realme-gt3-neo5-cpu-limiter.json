@@ -21,5 +21,6 @@
   "seo": {
     "title": "Realme-GT3-neo5-CPU-limiter - Active Magisk Module",
     "description": "A Magisk/KSU bazed module to slow down your CPU to make your screen time better. Highly customizable."
-  }
+  },
+  "contentTier": 3
 }
