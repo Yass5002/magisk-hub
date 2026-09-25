@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/czero.png",
-  "stars": 85,
+  "stars": 87,
   "latestRelease": {
-    "tag": "v1.2.6",
-    "publishedAt": "2026-09-23T07:19:49Z",
-    "url": "https://github.com/Xocio/CZero/releases/tag/v1.2.6",
-    "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.2.6/CZero_v1.2.6.zip",
-    "assetName": "CZero_v1.2.6.zip"
+    "tag": "v1.2.7",
+    "publishedAt": "2026-09-25T12:45:47Z",
+    "url": "https://github.com/Xocio/CZero/releases/tag/v1.2.7",
+    "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.2.7/CZero_v1.2.7.zip",
+    "assetName": "CZero_v1.2.7.zip"
   },
   "seo": {
     "title": "CZero - Active Magisk Module",

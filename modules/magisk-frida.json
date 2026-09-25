@@ -12,11 +12,11 @@
   "icon": null,
   "stars": 1458,
   "latestRelease": {
-    "tag": "17.18.0-1",
-    "publishedAt": "2026-09-09T19:28:06Z",
-    "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.18.0-1",
-    "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.18.0-1/MagiskFrida-17.18.0-1.zip",
-    "assetName": "MagiskFrida-17.18.0-1.zip"
+    "tag": "17.19.0-1",
+    "publishedAt": "2026-09-25T12:10:42Z",
+    "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.19.0-1",
+    "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.19.0-1/MagiskFrida-17.19.0-1.zip",
+    "assetName": "MagiskFrida-17.19.0-1.zip"
   },
   "seo": {
     "title": "magisk-frida - Active Magisk Module",
