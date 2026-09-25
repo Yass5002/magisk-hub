@@ -23,5 +23,5 @@
     "title": "mountify - Active Magisk Module",
     "description": "Globally mounted modules via OverlayFS."
   },
-  "contentTier": 2
+  "contentTier": 1
 }

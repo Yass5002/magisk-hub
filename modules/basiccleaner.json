@@ -22,5 +22,5 @@
     "title": "BasicCleaner - Active Magisk Module",
     "description": "A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

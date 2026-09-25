@@ -3,7 +3,7 @@
   "name": "multiuseruienabler",
   "repo": "InsertX2k/multiuseruienabler",
   "category": "system-environment",
-  "description": "multiuseruienabler",
+  "description": "Systemlessly enables the native Android Multi-User settings interface on restricted OEM ROMs.",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "multiuseruienabler - Active Magisk Module",
-    "description": "multiuseruienabler"
+    "description": "Systemlessly enables the native Android Multi-User settings interface on restricted OEM ROMs."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

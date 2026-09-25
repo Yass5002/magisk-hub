@@ -21,5 +21,5 @@
     "title": "custom-certificate-authorities - Active Magisk Module",
     "description": "Custom Certificate Authorities is a Magisk module that moves user-installed certificate authorities into the system trust store, making them trusted by all"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

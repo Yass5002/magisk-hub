@@ -5,7 +5,9 @@
   "category": "development-instrumentation",
   "description": "Magisk/KernelSU/APatch module to install Python 3 on Android.",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "MIT",
   "icon": null,
@@ -21,5 +23,5 @@
     "title": "py2droid - Active Magisk Module",
     "description": "Magisk/KernelSU/APatch module to install Python 3 on Android."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

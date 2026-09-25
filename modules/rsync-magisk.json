@@ -3,7 +3,7 @@
   "name": "rsync-magisk",
   "repo": "AdalynAstatine/rsync-magisk",
   "category": "system-utilities",
-  "description": "rsync-magisk active root module.",
+  "description": "Installs a statically compiled rsync binary systemlessly into /system/bin.",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "rsync-magisk - Active Magisk Module",
-    "description": "rsync-magisk active root module."
+    "description": "Installs a statically compiled rsync binary systemlessly into /system/bin."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

@@ -22,5 +22,5 @@
     "title": "ZRAM-Module - Active Magisk Module",
     "description": "A Magisk/KernelSU module that provides ZRAM compression algorithm support for Android devices"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

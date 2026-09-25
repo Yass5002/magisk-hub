@@ -5,7 +5,9 @@
   "category": "system-utilities",
   "description": "*Magisk Module To Backup or Save Android Device Partition",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "Apache-2.0",
   "icon": "assets/icons/partition-backup.png",
@@ -21,5 +23,5 @@
     "title": "partition-backup - Active Magisk Module",
     "description": "*Magisk Module To Backup or Save Android Device Partition"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

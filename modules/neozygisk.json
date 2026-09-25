@@ -23,5 +23,5 @@
     "title": "NeoZygisk - Active Magisk Module",
     "description": "Zygote injection with ptrace"
   },
-  "contentTier": 2
+  "contentTier": 1
 }

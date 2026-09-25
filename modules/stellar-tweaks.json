@@ -23,5 +23,5 @@
     "title": "Stellar-Tweaks - Active Magisk Module",
     "description": "Intelligent Android performance daemon written in Rust. Fast-paced hybrid scheduler and real-time telemetry for Root and Non-Root environments."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

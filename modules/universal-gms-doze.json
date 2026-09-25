@@ -5,7 +5,9 @@
   "category": "performance-kernel",
   "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "GPL-2.0",
   "icon": null,
@@ -21,5 +23,5 @@
     "title": "universal-gms-doze - Active Magisk Module",
     "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

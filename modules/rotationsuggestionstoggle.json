@@ -5,7 +5,9 @@
   "category": "customization-ui",
   "description": "A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "GPL-3.0",
   "icon": null,
@@ -21,5 +23,5 @@
     "title": "RotationSuggestionsToggle - Active Magisk Module",
     "description": "A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

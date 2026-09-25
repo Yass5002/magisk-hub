@@ -5,7 +5,8 @@
   "category": "system-environment",
   "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU"
   ],
   "license": "MIT",
   "icon": null,
@@ -21,5 +22,5 @@
     "title": "magisk-samsung-dex-standalone-mode - Active Magisk Module",
     "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

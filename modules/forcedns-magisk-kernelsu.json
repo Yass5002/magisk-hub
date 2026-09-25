@@ -22,5 +22,5 @@
     "title": "forcedns_Magisk-kernelsu - Active Magisk Module",
     "description": "Fuerza todo el tráfico DNS estándar (puerto 53) a usar 1.1.1.1 mediante iptables. Sobrescribe DNS de red. Compatible con Magisk/KernelSU."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

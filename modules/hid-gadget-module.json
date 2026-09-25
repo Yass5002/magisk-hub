@@ -21,5 +21,5 @@
     "title": "hid-gadget-module - Active Magisk Module",
     "description": "A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

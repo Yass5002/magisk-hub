@@ -23,5 +23,5 @@
     "title": "VexZygisk - Active Magisk Module",
     "description": "Standalone implementation of Zygisk for KernelSU and APatch."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

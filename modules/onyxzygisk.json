@@ -23,5 +23,5 @@
     "title": "OnyxZygisk - Active Magisk Module",
     "description": "Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

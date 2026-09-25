@@ -6,7 +6,8 @@
   "description": "Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU, and Apatch.",
   "compatibility": [
     "Magisk",
-    "KernelSU"
+    "KernelSU",
+    "APatch"
   ],
   "license": "MIT",
   "icon": null,
@@ -22,5 +23,5 @@
     "title": "OneUIEmojiPack - Active Magisk Module",
     "description": "Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

@@ -3,7 +3,7 @@
   "name": "TurnOffSensors-Magisk",
   "repo": "AdalynAstatine/TurnOffSensors-Magisk",
   "category": "security-certificates",
-  "description": "TurnOffSensors-Magisk active root module.",
+  "description": "Automatically disables device hardware sensors on startup via Android's native sensor_privacy service.",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "TurnOffSensors-Magisk - Active Magisk Module",
-    "description": "TurnOffSensors-Magisk active root module."
+    "description": "Automatically disables device hardware sensors on startup via Android's native sensor_privacy service."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

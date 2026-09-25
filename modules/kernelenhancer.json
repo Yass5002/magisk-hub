@@ -5,7 +5,8 @@
   "category": "performance-kernel",
   "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices.",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU"
   ],
   "license": "Proprietary",
   "icon": null,
@@ -21,5 +22,5 @@
     "title": "KernelEnhancer - Active Magisk Module",
     "description": "Stable Magisk modules for performance and efficient battery usage on rooted Android devices."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

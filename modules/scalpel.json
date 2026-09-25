@@ -6,7 +6,8 @@
   "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch",
   "compatibility": [
     "Magisk",
-    "KernelSU"
+    "KernelSU",
+    "APatch"
   ],
   "license": "Proprietary",
   "icon": null,
@@ -22,5 +23,5 @@
     "title": "Scalpel - Active Magisk Module",
     "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

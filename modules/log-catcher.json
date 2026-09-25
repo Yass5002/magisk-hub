@@ -6,7 +6,8 @@
   "description": "A module to make capturing boot logs easier",
   "compatibility": [
     "Magisk",
-    "KernelSU"
+    "KernelSU",
+    "APatch"
   ],
   "license": "GPL-3.0",
   "icon": null,
@@ -22,5 +23,5 @@
     "title": "Log-Catcher - Active Magisk Module",
     "description": "A module to make capturing boot logs easier"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

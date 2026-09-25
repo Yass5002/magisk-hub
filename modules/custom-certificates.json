@@ -22,5 +22,5 @@
     "title": "custom-certificates - Active Magisk Module",
     "description": "A Magisk module which adds custom certificates to the system trust store."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

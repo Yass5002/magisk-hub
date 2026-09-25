@@ -5,7 +5,8 @@
   "category": "customization-ui",
   "description": "Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+ (Based AOSP, MIUI, HyperOS)",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU"
   ],
   "license": "Proprietary",
   "icon": null,
@@ -21,5 +22,5 @@
     "title": "Hide-Navbar-Keyboard - Active Magisk Module",
     "description": "Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+ (Based AOSP, MIUI, HyperOS)"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

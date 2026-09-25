@@ -22,5 +22,5 @@
     "title": "TEESimulator - Active Magisk Module",
     "description": "Software simulation for Android hardware-backed key pairs with key attestation"
   },
-  "contentTier": 2
+  "contentTier": 1
 }

@@ -1201,7 +1201,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: 🚫 Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch 🔒
 - Module URL: https://magisk.yssn.tech/modules/stevenblock/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 77
 - Latest Release: V4.0
 - Download Asset: https://github.com/Magisk-Modules-Alt-Repo/StevenBlock/releases/download/V4.0/StevenBlock.zip
@@ -1211,7 +1211,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: *Magisk Module To Backup or Save Android Device Partition
 - Module URL: https://magisk.yssn.tech/modules/partition-backup/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 77
 - Latest Release: V2
 - Download Asset: https://github.com/rhythmcache/partition-backup/releases/download/V2/partition-backup-magisk-module-5d1c7b4.zip
@@ -1221,7 +1221,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Tune HyperOS System and Kernel parameters to reduce power consumption
 - Module URL: https://magisk.yssn.tech/modules/hyperoptimize/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 75
 - Latest Release: 1.0.0
 - Download Asset: https://github.com/TatshSiow/HyperOptimize/releases/download/1.0.0/HyperOptimize_v1.0.0.zip
@@ -1231,7 +1231,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Patches Google Play services app and certain processes/services to be able to use battery optimization
 - Module URL: https://magisk.yssn.tech/modules/universal-gms-doze/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 75
 - Latest Release: 1.9.11
 - Download Asset: https://github.com/MarsPatrick/universal-gms-doze/releases/download/1.9.11/gms_1.9.11.zip
@@ -1261,7 +1261,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: A Magisk module to systemlessly enable Samsung DeX standalone mode
 - Module URL: https://magisk.yssn.tech/modules/magisk-samsung-dex-standalone-mode/
 - Category: https://magisk.yssn.tech/categories/system-environment/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 73
 - Latest Release: 2026.3
 - Download Asset: https://github.com/supermarsx/magisk-samsung-dex-standalone-mode/releases/download/2026.3/magisk-samsung-dex-standalone-mode.zip
@@ -1271,7 +1271,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Magisk/KernelSU/APatch module to install Python 3 on Android.
 - Module URL: https://magisk.yssn.tech/modules/py2droid/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 73
 - Latest Release: v0.3.6
 - Download Asset: https://github.com/Mrakorez/py2droid/releases/download/v0.3.6/py2droid-v0.3.6.zip
@@ -1298,7 +1298,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/NoneBaiano/Vanadium-WebViewBrowser
 
 ### rclone-fuse3-magisk (`rclone-fuse3-magisk`)
-- Description: magisk rclone module (with libfuse3)
+- Description: Integrates Rclone with FUSE 3.17.x to mount remote cloud storage directly as local directories.
 - Module URL: https://magisk.yssn.tech/modules/rclone-fuse3-magisk/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk
@@ -1331,7 +1331,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Magisk module to optimise and remove trackers for GMS and OOS
 - Module URL: https://magisk.yssn.tech/modules/oosgms-optimiser/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 62
 - Latest Release: v1.0.8
 - Download Asset: https://github.com/epicmann24/OOSGMS-OPTIMISER/releases/download/v1.0.8/OOSGMS-OPTIMISER.zip
@@ -1371,7 +1371,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play Integrity compliance.
 - Module URL: https://magisk.yssn.tech/modules/playstoreselfupdateblocker/
 - Category: https://magisk.yssn.tech/categories/system-environment/
-- Supported Platforms: Magisk, KernelSU
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 56
 - Latest Release: v2.0
 - Download Asset: https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/download/v2.0/PlayStoreSelfUpdateBlocker-v2.0.zip
@@ -1391,7 +1391,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Stable Magisk modules for performance and efficient battery usage on rooted Android devices.
 - Module URL: https://magisk.yssn.tech/modules/kernelenhancer/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 53
 - Latest Release: V5.0
 - Download Asset: https://github.com/RAAJK20Pro/KernelEnhancer/releases/download/V5.0/KernelEnhancerV5.0.zip
@@ -1441,7 +1441,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: This module allows for creating a persistent swap space on android
 - Module URL: https://magisk.yssn.tech/modules/magisk-swapspace/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 47
 - Latest Release: 2.4
 - Download Asset: https://github.com/chkndrp/magisk-swapspace/releases/download/2.4/magiskswapspace.zip
@@ -1471,7 +1471,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch
 - Module URL: https://magisk.yssn.tech/modules/scalpel/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
-- Supported Platforms: Magisk, KernelSU
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 46
 - Latest Release: v0.1.27
 - Download Asset: https://github.com/Enginex0/Scalpel/releases/download/v0.1.27/scalpel-v0.1.27-debug.zip
@@ -1551,7 +1551,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Magisk and KernelSU module that spoofs your Android device as Google Pixel 9 Pro XL.
 - Module URL: https://magisk.yssn.tech/modules/komodo-build-prop/
 - Category: https://magisk.yssn.tech/categories/root-management/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 34
 - Latest Release: 20260918
 - Download Asset: https://github.com/Elcapitanoe/Komodo-Build-Prop/releases/download/20260918/Komodo_beta_CP41.260828.004.A8.zip
@@ -1568,7 +1568,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/kaminarich/BatteryHoney
 
 ### xhhttp (`xhhttp`)
-- Description: Friendly and fast tool for sending HTTP requests as Magisk module
+- Description: Friendly and fast tool for sending HTTP requests from Android root shells, built as an optimized Rust reimplementation of HTTPie.
 - Module URL: https://magisk.yssn.tech/modules/xhhttp/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk
@@ -1671,7 +1671,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Control Center Blur for MIUI & HyperOS but LIGHTER is a modification designed to bring back the blur on device that doesn't have blur effect (frosted glass) effect to the Control Center and Notification Shade — without sacrificing performance.
 - Module URL: https://magisk.yssn.tech/modules/lite-blur-control-center-for-hyperos/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 20
 - Latest Release: RELEASE-16-MAY-2026
 - Download Asset: https://github.com/fakerieh/Lite-Blur-Control-Center-for-HyperOS/releases/download/RELEASE-16-MAY-2026/Lite.Blur.HyperOS.3.1.-.Animation.zip
@@ -1731,7 +1731,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions.
 - Module URL: https://magisk.yssn.tech/modules/magisk-cromite-webview/
 - Category: https://magisk.yssn.tech/categories/system-environment/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 14
 - Latest Release: v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a
 - Download Asset: https://github.com/hddq/magisk-cromite-webview/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip
@@ -1751,7 +1751,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+ (Based AOSP, MIUI, HyperOS)
 - Module URL: https://magisk.yssn.tech/modules/hide-navbar-keyboard/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 13
 - Latest Release: 2.7.1
 - Download Asset: https://github.com/UNKNUW/Hide-Navbar-Keyboard/releases/download/2.7.1/Hide-Navbar-Keyboard_v2.7.1.FINAL.zip
@@ -1761,7 +1761,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块
 - Module URL: https://magisk.yssn.tech/modules/rotationsuggestionstoggle/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
-- Supported Platforms: Magisk
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 13
 - Latest Release: v1.0
 - Download Asset: https://github.com/Astoritin/RotationSuggestionsToggle/releases/download/v1.0/RotationSuggestionsToggle-1.0.zip
@@ -1818,7 +1818,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/Mars-Wave/jetbrains-font-magisk-module
 
 ### tree (`tree`)
-- Description: tree for android
+- Description: Pure bash implementation of the classic Linux tree command for Android root shells.
 - Module URL: https://magisk.yssn.tech/modules/tree/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk
@@ -1838,7 +1838,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/Tkocean/Aurora
 
 ### multiuseruienabler (`multiuseruienabler`)
-- Description: multiuseruienabler
+- Description: Systemlessly enables the native Android Multi-User settings interface on restricted OEM ROMs.
 - Module URL: https://magisk.yssn.tech/modules/multiuseruienabler/
 - Category: https://magisk.yssn.tech/categories/system-environment/
 - Supported Platforms: Magisk
@@ -1861,7 +1861,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji pack. Compatible with most popular Android Root Solutions, including Magisk, KSU, and Apatch.
 - Module URL: https://magisk.yssn.tech/modules/oneuiemojipack/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
-- Supported Platforms: Magisk, KernelSU
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 7
 - Latest Release: v7.1
 - Download Asset: https://github.com/AloozChips/OneUIEmojiPack/releases/download/v7.1/OneUI_Emoji_Pack-v7.1.zip
@@ -1891,7 +1891,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Description: A module to make capturing boot logs easier
 - Module URL: https://magisk.yssn.tech/modules/log-catcher/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
-- Supported Platforms: Magisk, KernelSU
+- Supported Platforms: Magisk, KernelSU, APatch
 - GitHub Stars: 6
 - Latest Release: v23.2
 - Download Asset: https://github.com/hxreborn/Log-Catcher/releases/download/v23.2/hxr_logcat.zip
@@ -1918,7 +1918,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/Quantom2/Realme-GT3-neo5-CPU-limiter
 
 ### TurnOffSensors-Magisk (`turnoffsensors-magisk`)
-- Description: TurnOffSensors-Magisk active root module.
+- Description: Automatically disables device hardware sensors on startup via Android's native sensor_privacy service.
 - Module URL: https://magisk.yssn.tech/modules/turnoffsensors-magisk/
 - Category: https://magisk.yssn.tech/categories/security-certificates/
 - Supported Platforms: Magisk
@@ -1948,7 +1948,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Upstream Source: https://github.com/cookieof/ImageCopyHide
 
 ### rsync-magisk (`rsync-magisk`)
-- Description: rsync-magisk active root module.
+- Description: Installs a statically compiled rsync binary systemlessly into /system/bin.
 - Module URL: https://magisk.yssn.tech/modules/rsync-magisk/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk

@@ -22,5 +22,5 @@
     "title": "deviceidchanger - Active Magisk Module",
     "description": "A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch, KSU (And its forks), or Magisk."
   },
-  "contentTier": 2
+  "contentTier": 1
 }

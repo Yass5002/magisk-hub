@@ -5,7 +5,9 @@
   "category": "system-utilities",
   "description": "🚫 Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch 🔒",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "GPL-2.0",
   "icon": null,
@@ -21,5 +23,5 @@
     "title": "StevenBlock - Active Magisk Module",
     "description": "🚫 Advanced Ad-Blocking Module for Android | Compatible with Magisk, KernelSU, and APatch 🔒"
   },
-  "contentTier": 3
+  "contentTier": 1
 }

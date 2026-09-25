@@ -3,7 +3,7 @@
   "name": "tree",
   "repo": "Magisk-Modules-Alt-Repo/tree",
   "category": "system-utilities",
-  "description": "tree for android",
+  "description": "Pure bash implementation of the classic Linux tree command for Android root shells.",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "tree - Active Magisk Module",
-    "description": "tree for android"
+    "description": "Pure bash implementation of the classic Linux tree command for Android root shells."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

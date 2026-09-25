@@ -23,5 +23,5 @@
     "title": "AntiSafetyCore - Active Magisk Module",
     "description": "A Magisk module to fight against the behavior of installing Android System SafetyCore and Android System Key Verifier by Google quietly / 一个对抗 Google 静默安装 "
   },
-  "contentTier": 3
+  "contentTier": 1
 }

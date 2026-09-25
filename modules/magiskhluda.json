@@ -23,5 +23,5 @@
     "title": "MagiskHluda - Active Magisk Module",
     "description": "Run a more undetectable frida server on boot using magisk 🔐✅"
   },
-  "contentTier": 2
+  "contentTier": 1
 }

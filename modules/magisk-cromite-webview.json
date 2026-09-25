@@ -5,7 +5,8 @@
   "category": "system-environment",
   "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions.",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU"
   ],
   "license": "GPL-3.0",
   "icon": null,
@@ -21,5 +22,5 @@
     "title": "magisk-cromite-webview - Active Magisk Module",
     "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions."
   },
-  "contentTier": 3
+  "contentTier": 1
 }

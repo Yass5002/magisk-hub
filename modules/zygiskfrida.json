@@ -22,5 +22,5 @@
     "title": "ZygiskFrida - Active Magisk Module",
     "description": "Injects frida gadget using zygisk to bypass anti-tamper checks."
   },
-  "contentTier": 2
+  "contentTier": 1
 }
