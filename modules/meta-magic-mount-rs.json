@@ -13,11 +13,11 @@
   "icon": "assets/icons/meta-magic-mount-rs.png",
   "stars": 507,
   "latestRelease": {
-    "tag": "v4.0.8",
-    "publishedAt": "2026-08-18T09:21:46Z",
-    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.8",
-    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.8/magic_mount_rs-4.0.8-900-armv7.zip",
-    "assetName": "magic_mount_rs-4.0.8-900-armv7.zip"
+    "tag": "v4.0.10",
+    "publishedAt": "2026-09-25T07:46:28Z",
+    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.10",
+    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.10/magic_mount_rs-4.0.10-918-arm64.zip",
+    "assetName": "magic_mount_rs-4.0.10-918-arm64.zip"
   },
   "seo": {
     "title": "meta-magic_mount-rs - Active Magisk Module",
