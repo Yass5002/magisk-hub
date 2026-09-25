@@ -74,10 +74,16 @@ const baseWebSiteSchema = {
     <meta name="description" content={description} />
     {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
     <meta name="robots" content="index, follow" />
+    <meta name="yandex-verification" content="30d5239d97b25ad5" />
 
     <!-- Preconnect to GitHub avatars for fast author image delivery -->
     <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
     <link rel="dns-prefetch" href="https://avatars.githubusercontent.com" />
+
+    <!-- Self-hosted Umami Analytics -->
+    <link rel="preconnect" href="https://analytics.mehro.me" crossorigin />
+    <link rel="dns-prefetch" href="https://analytics.mehro.me" />
+    <script defer src="https://analytics.mehro.me/mehro.js" data-website-id="190ae8fe-29af-471c-977d-e255344c0938"></script>
 
     <meta name="theme-color" content="#fafafa" />
 
@@ -107,6 +113,7 @@ const baseWebSiteSchema = {
         <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
       )
     )}
+    <slot name="head" />
   </head>
   <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900">
     <Navbar />

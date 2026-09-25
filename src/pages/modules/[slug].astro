@@ -271,6 +271,10 @@ const metaDescription = module.seo?.description ||
         <div class="flex flex-col gap-2.5 w-full md:w-56 shrink-0">
           <a 
             href={module.latestRelease.downloadUrl}
+            data-umami-event="download-module"
+            data-umami-event-module={module.id}
+            data-umami-event-version={module.latestRelease.tag}
+            data-umami-event-category={module.category}
             class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-xs sm:text-sm font-semibold transition-colors shadow-xs"
           >
             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,6 +287,9 @@ const metaDescription = module.seo?.description ||
             href={module.latestRelease.url}
             target="_blank"
             rel="noopener noreferrer"
+            data-umami-event="github-release-click"
+            data-umami-event-module={module.id}
+            data-umami-event-repo={module.repo}
             class="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 px-4 py-2 text-xs font-mono font-medium text-zinc-800 transition-colors shadow-2xs"
           >
             <svg class="h-3.5 w-3.5 text-zinc-700" fill="currentColor" viewBox="0 0 24 24">
@@ -300,6 +307,8 @@ const metaDescription = module.seo?.description ||
               type="button" 
               class="copy-asset-btn inline-flex items-center text-zinc-400 hover:text-zinc-900 shrink-0 p-1 rounded hover:bg-zinc-200/60 transition-colors"
               data-asset={module.latestRelease.assetName}
+              data-umami-event="copy-asset-name"
+              data-umami-event-module={module.id}
               title="Copy file name"
             >
               <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -431,6 +440,8 @@ const metaDescription = module.seo?.description ||
                         type="button" 
                         class="copy-path-btn inline-flex items-center gap-1 text-[11px] font-medium text-zinc-500 hover:text-zinc-900 px-1.5 py-0.5 rounded hover:bg-zinc-200 transition-colors shrink-0" 
                         data-path={cp}
+                        data-umami-event="copy-config-path"
+                        data-umami-event-module={module.id}
                         title="Copy file path"
                       >
                         <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -485,6 +496,9 @@ const metaDescription = module.seo?.description ||
             href={`https://github.com/${module.repo}`}
             target="_blank"
             rel="noopener noreferrer"
+            data-umami-event="github-repo-click"
+            data-umami-event-module={module.id}
+            data-umami-event-repo={module.repo}
             class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
           >
             Open GitHub Repository →
@@ -501,6 +515,9 @@ const metaDescription = module.seo?.description ||
               {relatedModules.map(rel => (
                 <a 
                   href={`/modules/${rel.id}/`}
+                  data-umami-event="related-module-click"
+                  data-umami-event-module={rel.id}
+                  data-umami-event-source={module.id}
                   class="flex items-center justify-between p-2 rounded-lg border border-zinc-200 bg-zinc-50 hover:border-zinc-300 hover:bg-zinc-100/80 transition-all group"
                 >
                   <div class="flex items-center gap-2.5 truncate">
