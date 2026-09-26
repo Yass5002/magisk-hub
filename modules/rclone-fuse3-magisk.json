@@ -3,7 +3,7 @@
   "name": "rclone-fuse3-magisk",
   "repo": "NewFuture/rclone-fuse3-magisk",
   "category": "system-utilities",
-  "description": "Integrates Rclone with FUSE 3.17.x to mount remote cloud storage directly as local directories.",
+  "description": "magisk rclone module (with libfuse3)",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "rclone-fuse3-magisk - Active Magisk Module",
-    "description": "Integrates Rclone with FUSE 3.17.x to mount remote cloud storage directly as local directories."
+    "description": "magisk rclone module (with libfuse3)"
   },
   "contentTier": 1
 }

@@ -3,7 +3,7 @@
   "name": "xhhttp",
   "repo": "Magisk-Modules-Alt-Repo/xhhttp",
   "category": "system-utilities",
-  "description": "Friendly and fast tool for sending HTTP requests from Android root shells, built as an optimized Rust reimplementation of HTTPie.",
+  "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "xhhttp - Active Magisk Module",
-    "description": "Friendly and fast tool for sending HTTP requests from Android root shells, built as an optimized Rust reimplementation of HTTPie."
+    "description": "Friendly and fast tool for sending HTTP requests as Magisk module"
   },
   "contentTier": 1
 }
