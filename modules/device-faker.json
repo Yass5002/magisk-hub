@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/device-faker.png",
-  "stars": 783,
+  "stars": 782,
   "latestRelease": {
-    "tag": "v1.5.0",
-    "publishedAt": "2026-08-01T05:36:21Z",
-    "url": "https://github.com/Seyud/device_faker/releases/tag/v1.5.0",
-    "downloadUrl": "https://github.com/Seyud/device_faker/releases/download/v1.5.0/device_faker_v1.5.0.zip",
-    "assetName": "device_faker_v1.5.0.zip"
+    "tag": "v1.6.0",
+    "publishedAt": "2026-09-26T10:19:10Z",
+    "url": "https://github.com/Seyud/device_faker/releases/tag/v1.6.0",
+    "downloadUrl": "https://github.com/Seyud/device_faker/releases/download/v1.6.0/device_faker_v1.6.0.zip",
+    "assetName": "device_faker_v1.6.0.zip"
   },
   "seo": {
     "title": "device_faker - Active Magisk Module",
