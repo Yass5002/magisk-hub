@@ -20,8 +20,8 @@
     "assetName": "mountify.zip"
   },
   "seo": {
-    "title": "mountify - Active Magisk Module",
-    "description": "Globally mounted modules via OverlayFS."
+    "title": "mountify – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download mountify for Magisk, KernelSU, and APatch. Globally mounted modules via OverlayFS."
   },
   "contentTier": 1
 }

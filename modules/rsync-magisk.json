@@ -18,8 +18,8 @@
     "assetName": "rsync-magisk.zip"
   },
   "seo": {
-    "title": "rsync-magisk - Active Magisk Module",
-    "description": "Installs a statically compiled rsync binary systemlessly into /system/bin."
+    "title": "rsync-magisk – Download (Magisk) | Magisk Hub",
+    "description": "Download rsync-magisk for Magisk. Installs a statically compiled rsync binary systemlessly into /system/bin."
   },
   "contentTier": 1
 }

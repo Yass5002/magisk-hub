@@ -20,8 +20,8 @@
     "assetName": "HMA-OSS-ZYGISK-oss-168-release.zip"
   },
   "seo": {
-    "title": "HMA-OSS - Active Magisk Module",
-    "description": "A Zygisk module to hide your app list, settings, and root packages. Fork of Hide My Applist replacing LSPosed with standalone Zygisk injection."
+    "title": "HMA-OSS – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download HMA-OSS for Magisk, KernelSU, and APatch. Conceal installed apps and root packages with standalone Zygisk injection."
   },
   "contentTier": 1
 }

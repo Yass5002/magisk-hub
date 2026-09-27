@@ -150,3 +150,66 @@ export function getStats() {
     totalStars: all.reduce((sum, m) => sum + (m.stars || 0), 0),
   };
 }
+
+export function formatPlatformsShort(compatibility: ('Magisk' | 'KernelSU' | 'APatch')[]): string {
+  const shortMap: Record<string, string> = { Magisk: 'Magisk', KernelSU: 'KSU', APatch: 'APatch' };
+  return compatibility.map(p => shortMap[p] || p).join('/');
+}
+
+export function formatPlatformsSentence(compatibility: ('Magisk' | 'KernelSU' | 'APatch')[]): string {
+  if (compatibility.length === 1) return compatibility[0];
+  if (compatibility.length === 2) return `${compatibility[0]} and ${compatibility[1]}`;
+  return `${compatibility[0]}, ${compatibility[1]}, and ${compatibility[2]}`;
+}
+
+export function generateModuleSEO(module: ModuleData): { title: string; description: string } {
+  // Title template: {ModuleName} – Download ({platforms}) | Magisk Hub
+  // Fallback: {ModuleName} – Download | Magisk Hub if > 60 chars
+  let title = module.seo?.title;
+  if (!title || !title.includes('– Download')) {
+    const platShort = formatPlatformsShort(module.compatibility);
+    const fullTitle = `${module.name} – Download (${platShort}) | Magisk Hub`;
+    const fallbackTitle = `${module.name} – Download | Magisk Hub`;
+    title = fullTitle.length <= 60 ? fullTitle : fallbackTitle;
+  }
+
+  // Description template: Download {name} for {platforms}. {trimmed desc} (<= 140 chars)
+  let description = module.seo?.description;
+  if (!description || !description.startsWith(`Download ${module.name} for `) || description.length > 140) {
+    const lead = `Download ${module.name} for ${formatPlatformsSentence(module.compatibility)}. `;
+    const budget = 140 - lead.length;
+    let body = (module.description || '').trim();
+    
+    // Strip version tag if present
+    if (module.latestRelease?.tag) {
+      body = body.replace(new RegExp(module.latestRelease.tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '');
+    }
+    body = body.replace(/\bv?\d+\.\d+(\.\d+)?(-[a-zA-Z0-9.]+)?\b/g, '');
+    
+    // Strip leading name repetition
+    body = body.replace(new RegExp(`^${module.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[:\\-–]\\s*`, 'i'), '');
+    const nameSpaced = module.name.replace(/([a-z])([A-Z])/g, '$1 $2');
+    body = body.replace(new RegExp(`^${nameSpaced.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[:\\-–]\\s*`, 'i'), '');
+    body = body.replace(/\s+/g, ' ').replace(/^[:\-–,\s]+/, '').trim();
+    
+    if (body.length <= budget) {
+      // fits in budget
+    } else {
+      const targetBudget = budget - 3;
+      let cut = body.slice(0, targetBudget);
+      if (cut.includes(' ')) {
+        cut = cut.slice(0, cut.lastIndexOf(' '));
+      }
+      cut = cut.replace(/[,;:\-–\s]+$/, '');
+      body = cut + '...';
+    }
+    
+    description = `${lead}${body}`;
+    if (!description.endsWith('.') && !description.endsWith('...')) {
+      if (description.length < 140) description += '.';
+    }
+  }
+
+  return { title, description };
+}
+

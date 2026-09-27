@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { getAllModules, CATEGORIES, type ModuleData } from '../../lib/modules';
+import { getAllModules, CATEGORIES, generateModuleSEO, type ModuleData } from '../../lib/modules';
 
 export async function getStaticPaths() {
   const allModules = getAllModules();
@@ -155,15 +155,12 @@ const breadcrumbs = [
   { name: module.name, url: `/modules/${module.id}/` },
 ];
 
-const metaDescription = module.seo?.description || 
-  (module.description && module.description.length >= 60 
-    ? module.description 
-    : `${module.name} - ${module.description} Explore verified downloads, installation instructions, and compatibility for ${module.compatibility.join(', ')}.`);
+const seo = generateModuleSEO(module);
 ---
 
 <BaseLayout
-  title={module.seo?.title || `${module.name} - Active Magisk Module`}
-  description={metaDescription}
+  title={seo.title}
+  description={seo.description}
   keywords={[module.name, module.category, ...module.compatibility, 'root module', 'magisk', 'kernelsu']}
   structuredData={[softwareSchema, howToSchema, ...(faqSchema ? [faqSchema] : [])]}
 >

@@ -20,8 +20,8 @@
     "assetName": "magic_mount_rs-4.0.10-918-arm64.zip"
   },
   "seo": {
-    "title": "meta-magic_mount-rs - Active Magisk Module",
-    "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay."
+    "title": "meta-magic_mount-rs – Download | Magisk Hub",
+    "description": "Download meta-magic_mount-rs for Magisk, KernelSU, and APatch. An implementation of a metamodule using Magic Mount, Based on MKSU..."
   },
   "contentTier": 1
 }

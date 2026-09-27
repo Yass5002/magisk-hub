@@ -113,6 +113,58 @@ def make_slug(raw_id, repo_name):
     return s
 
 
+def format_platforms_sentence(compat):
+    if len(compat) == 1:
+        return compat[0]
+    elif len(compat) == 2:
+        return f"{compat[0]} and {compat[1]}"
+    else:
+        return f"{compat[0]}, {compat[1]}, and {compat[2]}"
+
+
+def format_platforms_short(compat):
+    short = ["KSU" if p == "KernelSU" else p for p in compat]
+    return "/".join(short)
+
+
+def generate_module_seo(name, compat, desc, ver_tag):
+    plat_short = format_platforms_short(compat)
+    full_title = f"{name} – Download ({plat_short}) | Magisk Hub"
+    fallback_title = f"{name} – Download | Magisk Hub"
+    title = full_title if len(full_title) <= 60 else fallback_title
+
+    lead = f"Download {name} for {format_platforms_sentence(compat)}. "
+    budget = 140 - len(lead)
+
+    body = desc.strip()
+    if ver_tag:
+        body = re.sub(re.escape(ver_tag), "", body, flags=re.IGNORECASE)
+    body = re.sub(r"\bv?\d+\.\d+(\.\d+)?(-[a-zA-Z0-9.]+)?\b", "", body)
+    name_clean = re.escape(name)
+    body = re.sub(rf"^{name_clean}\s*[:\-–]\s*", "", body, flags=re.IGNORECASE)
+    name_spaced = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
+    body = re.sub(rf"^{re.escape(name_spaced)}\s*[:\-–]\s*", "", body, flags=re.IGNORECASE)
+    body = re.sub(r"\s+", " ", body).strip()
+    body = re.sub(r"^[:\-–,\s]+", "", body).strip()
+
+    if len(body) <= budget:
+        final_body = body
+    else:
+        target_budget = budget - 3
+        cut = body[:target_budget]
+        if " " in cut:
+            cut = cut.rsplit(" ", 1)[0]
+        cut = re.sub(r"[,;:\-–\s]+$", "", cut)
+        final_body = cut + "..."
+
+    description = f"{lead}{final_body}"
+    if not (description.endswith(".") or description.endswith("...")):
+        if len(description) < 140:
+            description += "."
+    return title, description
+
+
+
 def check_asset_head(url):
     req = urllib.request.Request(
         url,
@@ -443,8 +495,8 @@ def main():
                 "assetName": cand["chosen_asset"]["name"]
             },
             "seo": {
-                "title": f"{c['name']} - Active Magisk Module",
-                "description": cand["desc"][:155]
+                "title": generate_module_seo(c["name"], cand["compat"], cand["desc"], cand["latest_rel"]["tagName"])[0],
+                "description": generate_module_seo(c["name"], cand["compat"], cand["desc"], cand["latest_rel"]["tagName"])[1]
             }
         }
         if c.get("contentTier"):
