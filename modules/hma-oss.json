@@ -5,7 +5,9 @@
   "category": "root-management",
   "description": "A Zygisk module to hide your app list, settings, package installers and more. It is a fork of Hide My Applist project, but LSPosed dependency is replaced with Zygisk.",
   "compatibility": [
-    "Magisk"
+    "Magisk",
+    "KernelSU",
+    "APatch"
   ],
   "license": "AGPL-3.0",
   "icon": "assets/icons/hma-oss.png",
@@ -19,7 +21,7 @@
   },
   "seo": {
     "title": "HMA-OSS - Active Magisk Module",
-    "description": "A Zygisk module to hide your app list, settings, package installers and more. It is a fork of Hide My Applist project, but LSPosed dependency is replaced w"
+    "description": "A Zygisk module to hide your app list, settings, and root packages. Fork of Hide My Applist replacing LSPosed with standalone Zygisk injection."
   },
   "contentTier": 1
 }

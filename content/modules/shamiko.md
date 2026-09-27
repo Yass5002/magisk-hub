@@ -56,7 +56,7 @@ Shamiko operates inside the Zygote process via Zygisk. It dynamically scrubs tra
 ## Installation & Setup
 
 ### Step 1: Configure Magisk Settings
-1. Open **Magisk App** $\rightarrow$ tap the **Settings** gear icon.
+1. Open **Magisk App** → tap the **Settings** gear icon.
 2. Ensure **Zygisk** is **ENABLED**.
 3. Ensure **Enforce DenyList** is **DISABLED** (do not leave it checked).
 4. Tap **Configure DenyList** and select the applications from which you wish to hide root (e.g., banking apps, government apps, games).

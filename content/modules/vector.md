@@ -63,7 +63,7 @@ The Xposed paradigm allows developers to modify the behavior of system component
 2. If the APK is not automatically placed in notifications, locate `manager.apk` inside `/data/adb/lspd/` and install it manually.
 
 ### Step 3: Activating Modules
-1. Install any Xposed module APK (e.g., Hide My Applist, CustoMIUIzer, KnoxPatch).
-2. Open **Vector Manager** $\rightarrow$ tap **Modules**.
+1. Install any Xposed module APK (e.g., FingerprintPay, CustoMIUIzer, KnoxPatch).
+2. Open **Vector Manager** → tap **Modules**.
 3. Toggle the module **ON** and configure its target **Scope** (check the specific apps you want the module to modify).
 4. Force stop or reboot the target apps to apply changes.

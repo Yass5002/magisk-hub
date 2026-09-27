@@ -61,7 +61,7 @@ PlayIntegrityFork intercepts requests made by Google's attestation process (`com
 
 ### Step 2: Flash the Module
 1. Download the latest `PlayIntegrityFork-vX.zip` from releases.
-2. In your root manager, go to **Modules** $\rightarrow$ **Install from Storage** $\rightarrow$ select the zip.
+2. In your root manager, go to **Modules** → **Install from Storage** → select the zip.
 3. Reboot your device.
 
 ### Step 3: Clear GMS Cache
@@ -103,4 +103,4 @@ su -c "killall -9 com.google.android.gms.unstable"
 - **Banking App Still Detects Root**:
   Passing Play Integrity does not automatically conceal root binaries. Ensure your banking app is added to Magisk's **DenyList** or configured in **Shamiko / Zygisk Assistant**, and verify that the app does not detect the Magisk app package name (enable "Hide the Magisk app").
 - **Play Store Shows 'Device is not certified'**:
-  After passing `MEETS_DEVICE_INTEGRITY`, the Play Store app caches certification status for up to 24 hours. Go to **Settings** $\rightarrow$ **Apps** $\rightarrow$ **Google Play Store** $\rightarrow$ **Storage** $\rightarrow$ **Clear Storage**, then reboot.
+  After passing `MEETS_DEVICE_INTEGRITY`, the Play Store app caches certification status for up to 24 hours. Go to **Settings** → **Apps** → **Google Play Store** → **Storage** → **Clear Storage**, then reboot.

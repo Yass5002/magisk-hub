@@ -69,7 +69,7 @@ Download the exact stock firmware matching your device's currently installed bui
 
 ### Step 2: Patch the Image in Magisk App
 1. Install the official Magisk APK (`Magisk-v30.x.apk`) on your device.
-2. Tap **Install** $\rightarrow$ **Select and Patch a File**.
+2. Tap **Install** → **Select and Patch a File**.
 3. Select your extracted `boot.img` or `init_boot.img`.
 4. Magisk will output `magisk_patched_[random_strings].img` to your `Download` folder.
 
@@ -101,7 +101,7 @@ su -c "magisk --mount-features"
 ```
 
 ### Enabling Zygisk & DenyList
-1. Open **Magisk App** $\rightarrow$ tap the **Settings** gear icon.
+1. Open **Magisk App** → tap the **Settings** gear icon.
 2. Toggle **Zygisk** to ON.
 3. Toggle **Enforce DenyList** to OFF (if using third-party hiders like Shamiko or Zygisk Assistant) or ON if relying strictly on native Magisk hiding.
 4. Tap **Configure DenyList** to select target apps (e.g. banking apps, Google Play Services).

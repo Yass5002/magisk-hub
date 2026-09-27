@@ -65,7 +65,7 @@ Before installing this module, your device must be running a kernel built with S
 
 ### Step 2: Flash the SUSFS Module
 1. Open **KernelSU** or **APatch**.
-2. Go to **Modules** $\rightarrow$ **Install** $\rightarrow$ select `susfs4ksu-module-vX.zip`.
+2. Go to **Modules** → **Install** → select `susfs4ksu-module-vX.zip`.
 3. Reboot your device.
 
 ### Step 3: Verify Kernel Status

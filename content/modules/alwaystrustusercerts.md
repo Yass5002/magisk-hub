@@ -43,7 +43,7 @@ When security researchers or developers need to inspect mobile API traffic using
 
 ### The Systemless Certificate Overlay
 
-1. **User Certificate Detection**: When a user installs a certificate via Android Settings $\rightarrow$ Security $\rightarrow$ Encryption & Credentials, Android places the `.0` hashed certificate file into `/data/misc/user/0/cacerts-added/`.
+1. **User Certificate Detection**: When a user installs a certificate via Android Settings → Security → Encryption & Credentials, Android places the `.0` hashed certificate file into `/data/misc/user/0/cacerts-added/`.
 2. **Early Boot Synchronization**: During the `post-fs-data` stage, AlwaysTrustUserCerts scans `/data/misc/user/0/cacerts-added/` for new certificates.
 3. **Magic Mount Integration**: The module copies the detected certificates into `/data/adb/modules/alwaystrustusercerts/system/etc/security/cacerts/` and fixes permissions (`chmod 644`, `chown root:root`).
 4. **Trust Store Overlay**: Magisk / KernelSU mounts this directory over `/system/etc/security/cacerts/`. When any application initiates a TLS handshake, Android's Bionic cryptographic libraries treat the proxy certificate as a pre-installed, trusted root authority.
@@ -59,8 +59,8 @@ When security researchers or developers need to inspect mobile API traffic using
 ### Step 2: Install Your Proxy CA Certificate
 1. Export the CA certificate from your proxy tool (e.g., `cacert.der` from Burp Suite).
 2. Rename the extension to `.crt` and transfer it to your device's internal storage.
-3. On your Android device, go to **Settings** $\rightarrow$ **Security** $\rightarrow$ **Install a certificate** $\rightarrow$ **CA certificate** $\rightarrow$ select the file.
+3. On your Android device, go to **Settings** → **Security** → **Install a certificate** → **CA certificate** → select the file.
 4. Name the certificate (e.g., "BurpCA") and confirm.
 
 ### Step 3: Reboot to Promote
-Reboot your phone. The certificate will now appear under **Trusted Credentials** $\rightarrow$ **System**, and your proxy will successfully decrypt HTTPS API requests.
+Reboot your phone. The certificate will now appear under **Trusted Credentials** → **System**, and your proxy will successfully decrypt HTTPS API requests.

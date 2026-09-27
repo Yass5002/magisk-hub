@@ -58,6 +58,6 @@ In Android 14, Google completed the migration of core operating system security 
 1. Open your root manager (**Magisk**, **KernelSU**, or **APatch**).
 2. Download and flash `MoveCertificate-vX.zip`.
 3. Reboot your device.
-4. Install your proxy CA certificate (e.g. Burp Suite, mitmproxy, Charles) via Android's standard **Settings** $\rightarrow$ **Security** $\rightarrow$ **Install from storage** $\rightarrow$ **CA Certificate**.
+4. Install your proxy CA certificate (e.g. Burp Suite, mitmproxy, Charles) via Android's standard **Settings** → **Security** → **Install from storage** → **CA Certificate**.
 5. Reboot your device one more time.
-6. Verify under **Settings** $\rightarrow$ **Trusted Credentials** $\rightarrow$ **System**: your proxy certificate is now listed as a valid system authority.
+6. Verify under **Settings** → **Trusted Credentials** → **System**: your proxy certificate is now listed as a valid system authority.

@@ -57,6 +57,6 @@ As enterprise and banking security suites (like Promon SHIELD, AppSealing, and T
 
 1. Open your root manager (**Magisk**, **KernelSU**, or **APatch**).
 2. Download and flash the latest `Zygisk-Assistant-vX.zip`.
-3. In Magisk, go to **Settings** $\rightarrow$ **Configure DenyList** $\rightarrow$ select the applications you want to hide root from.
+3. In Magisk, go to **Settings** → **Configure DenyList** → select the applications you want to hide root from.
 4. Ensure **Enforce DenyList** is toggled **OFF** (so Zygisk Assistant can inject its companion library into the process).
 5. Reboot your device.

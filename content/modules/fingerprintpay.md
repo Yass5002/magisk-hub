@@ -54,7 +54,7 @@ Stock firmware from OEMs like Xiaomi, OnePlus, Oppo, and Vivo includes proprieta
 
 1. Ensure **Vector** or **LSPosed** is installed and running.
 2. Install the `FingerprintPay.apk` application.
-3. Open **Vector Manager** $\rightarrow$ enable **FingerprintPay** $\rightarrow$ set scope to include **System Framework**, **Alipay**, and **WeChat**.
+3. Open **Vector Manager** → enable **FingerprintPay** → set scope to include **System Framework**, **Alipay**, and **WeChat**.
 4. Reboot your phone.
 5. Open the **FingerprintPay** app and verify that both IFAA and Soter service tests pass.
-6. Open your payment app, navigate to **Settings** $\rightarrow$ **Biometrics / Fingerprint Payment**, and toggle on fingerprint verification.
+6. Open your payment app, navigate to **Settings** → **Biometrics / Fingerprint Payment**, and toggle on fingerprint verification.
