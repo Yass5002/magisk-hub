@@ -3,25 +3,25 @@
   "name": "VexZygisk",
   "repo": "Lxiaoyao077/VexZygisk",
   "category": "root-management",
-  "description": "Standalone implementation of Zygisk for KernelSU and APatch.",
+  "description": "Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per root solution, with Zygisk Next module support and HyperOS runtime support.",
   "compatibility": [
     "Magisk",
     "KernelSU",
     "APatch"
   ],
-  "license": "GPL-3.0",
+  "license": "AGPL-3.0",
   "icon": null,
-  "stars": 60,
+  "stars": 63,
   "latestRelease": {
-    "tag": "v2.1.2",
-    "publishedAt": "2026-09-02T01:33:41Z",
-    "url": "https://github.com/Lxiaoyao077/VexZygisk/releases/tag/v2.1.2",
-    "downloadUrl": "https://github.com/Lxiaoyao077/VexZygisk/releases/download/v2.1.2/VexZygisk-v2.1.2-592-c3c2148-release.zip",
-    "assetName": "VexZygisk-v2.1.2-592-c3c2148-release.zip"
+    "tag": "v2.2.0",
+    "publishedAt": "2026-09-28T08:45:52Z",
+    "url": "https://github.com/Lxiaoyao077/VexZygisk/releases/tag/v2.2.0",
+    "downloadUrl": "https://github.com/Lxiaoyao077/VexZygisk/releases/download/v2.2.0/VexZygisk-v2.2.0-770-1d35d50-release.zip",
+    "assetName": "VexZygisk-v2.2.0-770-1d35d50-release.zip"
   },
   "seo": {
     "title": "VexZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
-    "description": "Download VexZygisk for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk for KernelSU and APatch."
+    "description": "Download VexZygisk for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per..."
   },
   "contentTier": 1
 }
