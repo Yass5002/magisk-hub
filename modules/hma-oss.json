@@ -11,7 +11,7 @@
   ],
   "license": "AGPL-3.0",
   "icon": "assets/icons/hma-oss.png",
-  "stars": 3331,
+  "stars": 3335,
   "latestRelease": {
     "tag": "oss-168",
     "publishedAt": "2026-09-13T20:03:29Z",
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "HMA-OSS – Download (Magisk/KSU/APatch) | Magisk Hub",
-    "description": "Download HMA-OSS for Magisk, KernelSU, and APatch. Conceal installed apps and root packages with standalone Zygisk injection."
+    "description": "Download HMA-OSS for Magisk, KernelSU, and APatch. A Zygisk module to hide your app list, settings, package installers and more. It is a..."
   },
   "contentTier": 1
 }

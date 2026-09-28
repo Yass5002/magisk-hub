@@ -10,7 +10,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 721,
+  "stars": 728,
   "latestRelease": {
     "tag": "v1.0.4",
     "publishedAt": "2026-09-06T10:39:50Z",
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "AlwaysStrong – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download AlwaysStrong for Magisk and KernelSU. Strong Play Integrity in one drop-in module bundling TEESimulator-RS and PlayIntegrityFork."
+    "description": "Download AlwaysStrong for Magisk and KernelSU. Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled."
   },
   "contentTier": 1
 }
