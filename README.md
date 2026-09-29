@@ -1,118 +1,122 @@
 # Magisk Hub
 
 <div align="center">
-  <h3>The Verified Directory of Active Magisk, KernelSU, and APatch Modules</h3>
-  <p>Continuous 6-hour automated release audits • Zero dead projects • Real technical documentation</p>
-  
+  <h3>An active-source directory for Magisk, KernelSU, and APatch modules</h3>
+  <p>Release metadata refreshed every 6 hours, with source-backed documentation for selected modules</p>
+
   [![Validate Modules](https://github.com/Yass5002/magisk-hub/actions/workflows/validate-modules.yml/badge.svg)](https://github.com/Yass5002/magisk-hub/actions/workflows/validate-modules.yml)
   [![Sync Releases](https://github.com/Yass5002/magisk-hub/actions/workflows/sync-releases.yml/badge.svg)](https://github.com/Yass5002/magisk-hub/actions/workflows/sync-releases.yml)
   [![Schema](https://img.shields.io/badge/Schema-Draft--07-blue.svg)](modules/schema.json)
   [![License](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
 </div>
 
----
+Magisk Hub is a static directory of Android root modules. It indexes module metadata from upstream GitHub repositories and links directly to their release pages and downloadable assets.
 
-## What is Magisk Hub?
+Live site: https://magisk.yssn.tech
 
-**Magisk Hub** is an open-source, automated single source of truth for modern Android root modules. Unlike traditional module repositories that accumulate abandoned, broken, and unmaintained repositories from years past, Magisk Hub enforces a strict **active-development bar**:
+## What the automation checks
 
-- **Continuous Re-Audits**: A scheduled GitHub Action runs every 6 hours to query the GitHub GraphQL API for all listed repositories.
-- **Strict Active Bar**: If a repository is archived, stale (>548 days without a push), deleted/404, or lacks downloadable `.zip`/`.apk` assets on its latest release, it is **hard-deleted** from the database.
-- **Link-Rot Elimination**: All module icons are locally resolved and cached in `assets/icons/` to prevent broken image CDNs.
-- **Grounded Content Tiers**: High-volume, foundational root modules feature hand-crafted in-depth technical guides covering architecture, configuration files (`/data/adb/...`), conflicts, and recovery steps.
+The scheduled release sync runs every 6 hours. For each configured upstream repository, it checks:
 
----
+- The repository can be reached and is not archived.
+- Recent push activity meets the configured freshness window.
+- A latest GitHub release is available.
+- The release contains a downloadable ZIP asset, or an APK where the module record explicitly supports it.
+- The release asset URL is reachable.
+- Repository metadata and the module record can be normalized into the local schema.
 
-## Content Tier Architecture
+These checks describe repository and release availability. They do not prove that a module is safe, bug-free, compatible with every device, or independently security-audited. Every module remains a third-party project, and root modules can cause boot loops, data loss, instability, or other device problems. Read the upstream documentation, keep a recovery path, and make a backup before installation.
 
-To maintain scale across hundreds of modules without algorithmic fluff or database bloat, Magisk Hub separates machine metadata from editorial documentation:
+Modules can be removed automatically when they no longer satisfy the configured freshness, repository, release, or asset checks. A removal is a directory maintenance decision, not a safety verdict.
+
+## Documentation tiers
+
+The directory separates machine-readable metadata from editorial documentation:
 
 | Tier | Coverage | Storage | Description |
 | :--- | :--- | :--- | :--- |
-| **Tier 1** | ~25 Foundational Modules | `content/modules/<id>.md` | Full technical deep-dives: low-level mechanics (Zygisk, overlayfs, kernel hooks), prerequisites, conflicts, config paths, and FAQs. |
-| **Tier 2** | Star Count $\ge 200$ | Grounded Assembly | Assembled dynamically from verified machine JSON data: direct release assets, category role, and installation guides. |
-| **Tier 3** | Single-Purpose Utilities | Grounded Assembly | Clean data-only card and direct download link. Zero fake content. |
+| **Tier 1** | Selected foundational modules | `content/modules/<id>.md` | Source-backed guides with prerequisites, configuration, limitations, recovery notes, and FAQs. |
+| **Tier 2** | Higher-interest modules | Module JSON plus generated page sections | Build-time page content derived from available module metadata and release information. |
+| **Tier 3** | Single-purpose utilities | Module JSON | A concise data card with upstream links and a direct release asset. |
 
----
+Tier 2 content is assembled at build time for the static site. It is not fetched dynamically by visitors.
 
-## Locked Ecosystem Categories
+## Categories
 
-Every module is strictly categorized into one of 8 locked categories:
+Every module uses one of these eight categories:
 
-1. **`root-management`**: Core su daemons, Zygisk runtimes, root cloaking, and attestation bypass tools.
-2. **`performance-kernel`**: CPU/GPU governor tuners, thermal throttle controls, and game performance modules.
-3. **`system-environment`**: Systemless framework tweaks, OEM feature restoration, and OS-level modifications.
-4. **`customization-ui`**: Status bar, gesture, navigation, launcher, and appearance customizations.
-5. **`development-instrumentation`**: Dynamic hooking frameworks, Frida servers, debugging, and reverse engineering tools.
-6. **`system-utilities`**: Audio DSP engines, call recorders, automated cleanup, and terminal power tools.
-7. **`networking-proxies`**: Systemless adblockers, transparent TPROXY gateways, and privacy DNS redirectors.
-8. **`security-certificates`**: CA certificate trust injectors, device identifier spoofing, and privacy guards.
+1. **`root-management`**: Root managers, Zygisk runtimes, and root-related tools.
+2. **`performance-kernel`**: CPU, GPU, thermal, governor, and gaming performance tools.
+3. **`system-environment`**: Systemless framework tweaks and operating-system changes.
+4. **`customization-ui`**: Status bar, gestures, launchers, navigation, and appearance.
+5. **`development-instrumentation`**: Hooking, Frida, debugging, and reverse-engineering tools.
+6. **`system-utilities`**: Audio, cleanup, call recording, backup, and terminal utilities.
+7. **`networking-proxies`**: Ad blockers, proxy gateways, DNS tools, and network clients.
+8. **`security-certificates`**: Certificate, device-identity, and privacy-related tools.
 
----
+## Repository layout
 
-## Local Development & Contribution
+- `modules/`: normalized module records and the JSON schema.
+- `content/modules/`: optional Tier 1 Markdown guides.
+- `assets/icons/`: cached local module icons.
+- `public/assets/`: generated static copies of asset files. Do not edit directly.
+- `scripts/`: validation and release synchronization tooling.
+- `src/`: Astro pages and components.
+- `dist/`: generated production output. It is ignored by Git.
 
-### Prerequisites
-- Node.js 20+ and npm
+## Local development
+
+### Requirements
+
+- Node.js `>=22.12.0`
+- npm `>=9.6.5`
 - Python 3.10+
-- `pip install -r scripts/requirements.txt`
 
-### Commands
+Install Python dependencies with:
 
 ```bash
-# Install dependencies
-npm install
 pip install -r scripts/requirements.txt
+```
 
-# Run module schema validation
+Install Node dependencies and run the checks:
+
+```bash
+npm install
 npm run validate
-
-# Start local Astro development server
-npm run dev
-
-# Build production static website (outputs to dist/)
 npm run build
+```
 
-# Preview production build
+Start a local development server:
+
+```bash
+npm run dev
+```
+
+Preview the production output:
+
+```bash
 npm run preview
 ```
 
----
+## Contributing a module
 
-## Submitting a New Module
+Magisk Hub uses upstream repositories as its source of release metadata. Alt Repo and other catalogs may help discover candidates, but a contribution must be verified against the original upstream repository.
 
-Community contributions are welcome! To add an active module:
+1. Add `modules/<module-id>.json` using the format in `modules/schema.json`.
+2. Use a unique lowercase kebab-case `id` that matches the filename.
+3. Link the original upstream repository and a direct release asset.
+4. Use only a category from the locked list above.
+5. Use `icon: null` when no local icon is available.
+6. Add `content/modules/<module-id>.md` only when the guide is grounded in upstream documentation or directly inspected source.
+7. Run `npm run validate` and `npm run build`.
+8. Open a pull request with the upstream repository, release tag, asset name, and verification notes.
 
-1. Create `modules/<your-module-slug>.json` conforming to `modules/schema.json`:
-   ```json
-   {
-     "id": "your-module-slug",
-     "name": "Your Module Name",
-     "repo": "owner/repo",
-     "category": "system-utilities",
-     "description": "Clear 1-sentence explanation of what it does.",
-     "compatibility": ["Magisk", "KernelSU"],
-     "license": "GPL-3.0-only",
-     "icon": null,
-     "latestRelease": {
-       "tag": "v1.0.0",
-       "publishedAt": "2026-01-01T00:00:00Z",
-       "url": "https://github.com/owner/repo/releases/tag/v1.0.0",
-       "downloadUrl": "https://github.com/owner/repo/releases/download/v1.0.0/module.zip",
-       "assetName": "module.zip"
-     },
-     "seo": {
-       "title": "Your Module Name - Active Magisk Module",
-       "description": "Clear meta description for search engines."
-     }
-   }
-   ```
-2. Run `npm run validate` to ensure your JSON conforms to Draft-07 schema and naming conventions.
-3. Open a Pull Request. CI will automatically validate your module and build the preview site.
+The scheduled sync may update release metadata or prune a module after it is merged. The workflow commits those generated changes to `master`. A pull request that overlaps generated records may need to be rebased after the workflow runs.
 
----
+If a module is pruned, re-add it by updating the original module record with current upstream evidence and submitting a new pull request. Do not restore a stale generated record without checking the upstream repository and release again.
 
-## License & Disclaimer
+## License and scope
 
-- Code and documentation are licensed under the [MIT License](LICENSE).
-- **Disclaimer**: Magisk Hub is an independent community project. Android is a trademark of Google LLC. Magisk is developed by John Wu. This project is not affiliated with or endorsed by Google or device manufacturers.
+The code and documentation in this repository are licensed under the [MIT License](LICENSE).
+
+Magisk Hub is an independent community directory. It is not affiliated with Google, Magisk, KernelSU, APatch, device manufacturers, or the developers of the listed modules. Product names and trademarks belong to their respective owners.

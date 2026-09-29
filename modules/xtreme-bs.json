@@ -1,0 +1,25 @@
+{
+  "id": "xtreme-bs",
+  "name": "Xtreme Battery Saver",
+  "repo": "DethByte64/Xtreme-Battery-Saver",
+  "category": "performance-kernel",
+  "description": "Configurable battery and power optimization for rooted Android devices, with CPU, app, Wi-Fi, Doze, CLI, and WebUI controls.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "GPL-3.0",
+  "icon": null,
+  "latestRelease": {
+    "tag": "v2.1.4",
+    "publishedAt": "2025-08-13T18:30:00Z",
+    "url": "https://github.com/DethByte64/Xtreme-Battery-Saver/releases/tag/v2.1.4",
+    "downloadUrl": "https://github.com/DethByte64/Xtreme-Battery-Saver/releases/download/v2.1.4/XtremeBS.zip",
+    "assetName": "XtremeBS.zip"
+  },
+  "seo": {
+    "title": "Xtreme Battery Saver – Download (Magisk) | Magisk Hub",
+    "description": "Download Xtreme Battery Saver for Magisk and KernelSU. Configure rooted Android power-saving controls."
+  },
+  "contentTier": 1
+}

@@ -28,3 +28,5 @@ Thumbs.db
 .idea/
 .playwright-mcp/
 
+# Local audit exports
+magisk.yssn.tech-audit/

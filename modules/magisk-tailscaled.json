@@ -1,0 +1,25 @@
+{
+  "id": "magisk-tailscaled",
+  "name": "Magisk Tailscaled",
+  "repo": "anasfanani/Magisk-Tailscaled",
+  "category": "networking-proxies",
+  "description": "Run Tailscale on rooted Android devices, with support for using it alongside an Android VPN.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU"
+  ],
+  "license": "BSD-3-Clause",
+  "icon": null,
+  "latestRelease": {
+    "tag": "v2.0.0.1",
+    "publishedAt": "2025-11-04T10:31:00Z",
+    "url": "https://github.com/anasfanani/Magisk-Tailscaled/releases/tag/v2.0.0.1",
+    "downloadUrl": "https://github.com/anasfanani/Magisk-Tailscaled/releases/download/v2.0.0.1/Magisk-Tailscaled-v2.0.0.1.zip",
+    "assetName": "Magisk-Tailscaled-v2.0.0.1.zip"
+  },
+  "seo": {
+    "title": "Magisk Tailscaled – Download (Magisk) | Magisk Hub",
+    "description": "Download Magisk Tailscaled for rooted Android devices. Run Tailscale alongside an Android VPN."
+  },
+  "contentTier": 1
+}
