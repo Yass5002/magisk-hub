@@ -1,0 +1,25 @@
+{
+  "id": "strace",
+  "name": "Strace",
+  "repo": "evdenis/strace",
+  "category": "development-instrumentation",
+  "description": "A Magisk module that installs statically linked strace v6.19 for ARM64, ARM, x86_64, and x86 Android devices.",
+  "compatibility": [
+    "Magisk"
+  ],
+  "license": "GPL-2.0",
+  "icon": null,
+  "stars": 45,
+  "latestRelease": {
+    "tag": "v2",
+    "publishedAt": "2026-03-24T11:50:46Z",
+    "url": "https://github.com/evdenis/strace/releases/tag/v2",
+    "downloadUrl": "https://github.com/evdenis/strace/releases/download/v2/strace-v2.zip",
+    "assetName": "strace-v2.zip"
+  },
+  "seo": {
+    "title": "Strace – Download (Magisk) | Magisk Hub",
+    "description": "Download Strace for Magisk. Installs strace v6.19 for ARM64, ARM, x86_64, and x86 Android devices."
+  },
+  "contentTier": 1
+}
