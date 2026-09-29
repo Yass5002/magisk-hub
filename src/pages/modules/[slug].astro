@@ -272,13 +272,19 @@ const seo = generateModuleSEO(module);
             data-umami-event-module={module.id}
             data-umami-event-version={module.latestRelease.tag}
             data-umami-event-category={module.category}
+            data-download-feedback
+            data-download-label={`Download ${module.latestRelease.tag}`}
+            data-download-starting-label="Starting download..."
+            data-download-started-label="Download started"
+            aria-describedby={`download-status-${module.id}`}
             class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-xs sm:text-sm font-semibold transition-colors shadow-xs"
           >
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg data-download-icon class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
             </svg>
-            <span>Download {module.latestRelease.tag}</span>
+            <span data-download-label>Download {module.latestRelease.tag}</span>
           </a>
+          <p id={`download-status-${module.id}`} data-download-status class="hidden text-center text-[11px] text-zinc-500" aria-live="polite"></p>
 
           <a 
             href={module.latestRelease.url}

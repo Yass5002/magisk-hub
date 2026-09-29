@@ -156,13 +156,19 @@ const itemListSchema = {
             href={magiskRelease.downloadUrl}
             data-umami-event="download-magisk-apk"
             data-umami-event-tag={magiskRelease.tag}
+            data-download-feedback
+            data-download-label={`Download APK (${magiskRelease.tag})`}
+            data-download-starting-label="Starting download..."
+            data-download-started-label="Download started"
+            aria-describedby="download-status-magisk"
             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-sm font-semibold transition-colors shadow-xs"
           >
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg data-download-icon class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
             </svg>
-            <span>Download APK ({magiskRelease.tag})</span>
+            <span data-download-label>Download APK ({magiskRelease.tag})</span>
           </a>
+          <p id="download-status-magisk" data-download-status class="hidden text-center sm:text-left text-[11px] text-zinc-500" aria-live="polite"></p>
 
           <div class="flex items-center justify-center sm:justify-start gap-4 sm:gap-2 pt-1 sm:pt-0">
             <a 
