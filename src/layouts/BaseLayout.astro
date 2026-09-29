@@ -129,54 +129,19 @@ const baseWebSiteSchema = {
         const target = event.target;
         if (!(target instanceof Element)) return;
 
-        const link = target.closest('[data-download-feedback]');
+        const link = target.closest('[data-download-button]');
         if (!(link instanceof HTMLAnchorElement)) return;
 
-        const state = link.dataset.downloadState || 'idle';
-        if (state !== 'idle') {
-          event.preventDefault();
-          return;
+        link.dataset.state = 'downloading';
+
+        const timerKey = '_downloadTimer';
+        if ((link as any)[timerKey]) {
+          clearTimeout((link as any)[timerKey]);
         }
 
-        const label = link.querySelector('[data-download-label]');
-        const icon = link.querySelector('[data-download-icon]');
-        const statusId = link.getAttribute('aria-describedby');
-        const status = statusId ? document.getElementById(statusId) : null;
-        const originalLabel = link.dataset.downloadLabel || label?.textContent || '';
-        const startingLabel = link.dataset.downloadStartingLabel || 'Starting download...';
-        const startedLabel = link.dataset.downloadStartedLabel || 'Download started';
-
-        link.dataset.downloadState = 'starting';
-        link.setAttribute('aria-busy', 'true');
-        if (label) label.textContent = startingLabel;
-        icon?.classList.add('animate-spin');
-        if (status) {
-          status.textContent = 'Your browser is preparing the download.';
-          status.classList.remove('hidden');
-        }
-
-        window.setTimeout(() => {
-          if (link.dataset.downloadState !== 'starting') return;
-
-          link.dataset.downloadState = 'started';
-          link.removeAttribute('aria-busy');
-          if (label) label.textContent = startedLabel;
-          icon?.classList.remove('animate-spin');
-          if (status) {
-            status.textContent = 'Download started. Check your browser downloads if it is not visible.';
-          }
-        }, 900);
-
-        window.setTimeout(() => {
-          if (link.dataset.downloadState !== 'started') return;
-
-          link.dataset.downloadState = 'idle';
-          if (label) label.textContent = originalLabel;
-          if (status) {
-            status.textContent = '';
-            status.classList.add('hidden');
-          }
-        }, 7000);
+        (link as any)[timerKey] = window.setTimeout(() => {
+          delete link.dataset.state;
+        }, 2200);
       });
     </script>
   </body>

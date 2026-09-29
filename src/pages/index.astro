@@ -156,19 +156,27 @@ const itemListSchema = {
             href={magiskRelease.downloadUrl}
             data-umami-event="download-magisk-apk"
             data-umami-event-tag={magiskRelease.tag}
-            data-download-feedback
-            data-download-label={`Download APK (${magiskRelease.tag})`}
-            data-download-starting-label="Starting download..."
-            data-download-started-label="Download started"
-            aria-describedby="download-status-magisk"
-            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-sm font-semibold transition-colors shadow-xs"
+            data-download-button
+            class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black data-[state=downloading]:bg-emerald-600 data-[state=downloading]:hover:bg-emerald-500 text-white px-4 py-2.5 text-sm font-semibold transition-all duration-200 shadow-xs hover:shadow-sm active:scale-[0.98] select-none"
           >
-            <svg data-download-icon class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-            </svg>
-            <span data-download-label>Download APK ({magiskRelease.tag})</span>
+            <span class="grid grid-cols-1 grid-rows-1 items-center justify-items-center">
+              <!-- Default state -->
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-200 group-data-[state=downloading]:opacity-0 group-data-[state=downloading]:scale-90 group-data-[state=downloading]:pointer-events-none">
+                <svg class="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                <span>Download APK ({magiskRelease.tag})</span>
+              </span>
+
+              <!-- Downloading / Success state -->
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-200 opacity-0 scale-90 pointer-events-none group-data-[state=downloading]:opacity-100 group-data-[state=downloading]:scale-100">
+                <svg class="h-4 w-4 shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span>Download Started!</span>
+              </span>
+            </span>
           </a>
-          <p id="download-status-magisk" data-download-status class="hidden text-center sm:text-left text-[11px] text-zinc-500" aria-live="polite"></p>
 
           <div class="flex items-center justify-center sm:justify-start gap-4 sm:gap-2 pt-1 sm:pt-0">
             <a 
