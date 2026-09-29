@@ -3,7 +3,7 @@
   "name": "Strace",
   "repo": "evdenis/strace",
   "category": "development-instrumentation",
-  "description": "A Magisk module that installs statically linked strace v6.19 for ARM64, ARM, x86_64, and x86 Android devices.",
+  "description": "Magisk Module with strace",
   "compatibility": [
     "Magisk"
   ],
@@ -19,7 +19,7 @@
   },
   "seo": {
     "title": "Strace – Download (Magisk) | Magisk Hub",
-    "description": "Download Strace for Magisk. Installs strace v6.19 for ARM64, ARM, x86_64, and x86 Android devices."
+    "description": "Download Strace for Magisk. Magisk Module with strace."
   },
   "contentTier": 1
 }
