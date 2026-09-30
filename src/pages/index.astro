@@ -254,9 +254,10 @@ const itemListSchema = {
             id="sortSelect" 
             class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
           >
+            <option value="trending">Trending</option>
             <option value="stars">Most Stars</option>
-            <option value="name">Alphabetical</option>
             <option value="recent">Recently Updated</option>
+            <option value="name">Alphabetical</option>
           </select>
         </div>
       </div>
@@ -279,6 +280,7 @@ const itemListSchema = {
           data-category={module.category}
           data-compat={module.compatibility.join(',')}
           data-stars={module.stars || 0}
+          data-trending={module.trendingDownloads || 0}
           data-date={module.latestRelease.publishedAt}
           style={module.id === 'magisk' ? 'display: none;' : ''}
         >
@@ -371,7 +373,7 @@ const itemListSchema = {
   let currentSearch = '';
   let currentCategory = 'all';
   let currentCompat = 'all';
-  let currentSort = 'stars';
+  let currentSort = 'trending';
 
   function applyFiltersAndSort() {
     let visibleCount = 0;
@@ -427,7 +429,26 @@ const itemListSchema = {
 
     // Sort visible elements in the DOM
     const sorted = [...cardWrappers].sort((a, b) => {
-      if (currentSort === 'stars') {
+      if (currentSort === 'trending') {
+        const K = 3;
+        const dlA = parseInt(a.getAttribute('data-trending') || '0', 10);
+        const dlB = parseInt(b.getAttribute('data-trending') || '0', 10);
+        const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
+        const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
+
+        const isT1_A = dlA >= K;
+        const isT1_B = dlB >= K;
+
+        if (isT1_A && !isT1_B) return -1;
+        if (!isT1_A && isT1_B) return 1;
+
+        if (isT1_A && isT1_B) {
+          if (dlB !== dlA) return dlB - dlA;
+          return starsB - starsA;
+        }
+
+        return starsB - starsA;
+      } else if (currentSort === 'stars') {
         const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
         const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
         return starsB - starsA;
@@ -528,11 +549,11 @@ const itemListSchema = {
   resetBtn?.addEventListener('click', () => {
     if (searchInput) searchInput.value = '';
     if (categorySelect) categorySelect.value = 'all';
-    if (sortSelect) sortSelect.value = 'stars';
+    if (sortSelect) sortSelect.value = 'trending';
     
     currentSearch = '';
     currentCategory = 'all';
-    currentSort = 'stars';
+    currentSort = 'trending';
     currentCompat = 'all';
 
     compatButtons.forEach((b, idx) => {

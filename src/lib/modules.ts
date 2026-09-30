@@ -24,6 +24,7 @@ export interface ModuleData {
   license: string;
   icon: string | null;
   stars: number;
+  trendingDownloads?: number;
   contentTier?: 1 | 2 | 3;
   latestRelease: ModuleRelease;
   seo: ModuleSEO;
@@ -99,6 +100,16 @@ export function getAllModules(): ModuleData[] {
     return [];
   }
 
+  const trendingFile = path.resolve(process.cwd(), 'src/data/trending.json');
+  let trendingMap: Record<string, number> = {};
+  if (fs.existsSync(trendingFile)) {
+    try {
+      trendingMap = JSON.parse(fs.readFileSync(trendingFile, 'utf-8'));
+    } catch {
+      trendingMap = {};
+    }
+  }
+
   const files = fs.readdirSync(modulesDir).filter(f => f.endsWith('.json') && f !== 'schema.json');
   const modules: ModuleData[] = [];
 
@@ -107,19 +118,31 @@ export function getAllModules(): ModuleData[] {
       const fullPath = path.join(modulesDir, file);
       const raw = fs.readFileSync(fullPath, 'utf-8');
       const data = JSON.parse(raw) as ModuleData;
+      data.trendingDownloads = trendingMap[data.id] || 0;
       modules.push(data);
     } catch (err) {
       console.error(`Failed to parse module ${file}:`, err);
     }
   }
 
-  // Sort: Tier 1 first, then by stars descending
+  // 2-Tier Trending Sort:
+  // Tier 1: trendingDownloads >= 3, sorted by trendingDownloads DESC, then stars DESC
+  // Tier 2: trendingDownloads < 3, sorted by stars DESC
   modules.sort((a, b) => {
-    const tierA = a.contentTier || (a.stars >= 200 ? 2 : 3);
-    const tierB = b.contentTier || (b.stars >= 200 ? 2 : 3);
-    if (tierA !== tierB) {
-      return tierA - tierB;
+    const K = 3;
+    const dlA = a.trendingDownloads || 0;
+    const dlB = b.trendingDownloads || 0;
+    const isT1_A = dlA >= K;
+    const isT1_B = dlB >= K;
+
+    if (isT1_A && !isT1_B) return -1;
+    if (!isT1_A && isT1_B) return 1;
+
+    if (isT1_A && isT1_B) {
+      if (dlB !== dlA) return dlB - dlA;
+      return (b.stars || 0) - (a.stars || 0);
     }
+
     return (b.stars || 0) - (a.stars || 0);
   });
 
