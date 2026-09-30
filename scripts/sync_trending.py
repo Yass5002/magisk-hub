@@ -11,7 +11,7 @@ import urllib.error
 
 UMAMI_URL = os.environ.get("UMAMI_URL", "https://analytics.mehro.me").rstrip("/")
 WEBSITE_ID = os.environ.get("UMAMI_WEBSITE_ID", "190ae8fe-29af-471c-977d-e255344c0938")
-UMAMI_API_KEY = os.environ.get("UMAMI_API_KEY", "umami_cVFt0t4dGguVN6JPlx5gQMTkQi28x7aM")
+UMAMI_API_KEY = os.environ.get("UMAMI_API_KEY", "")
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "src", "data", "trending.json")
 
 def get_7d_timestamps():
