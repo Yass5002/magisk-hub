@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Sync 7-day rolling module downloads from Umami Analytics into src/data/trending.json.
-Gracefully handles missing credentials, network errors, or zero-data states without failing CI.
+Uses the authenticated Umami API token to query download-module event data.
 """
 import os
 import json
@@ -11,7 +11,7 @@ import urllib.error
 
 UMAMI_URL = os.environ.get("UMAMI_URL", "https://analytics.mehro.me").rstrip("/")
 WEBSITE_ID = os.environ.get("UMAMI_WEBSITE_ID", "190ae8fe-29af-471c-977d-e255344c0938")
-UMAMI_API_KEY = os.environ.get("UMAMI_API_KEY", "")
+UMAMI_API_KEY = os.environ.get("UMAMI_API_KEY", "umami_cVFt0t4dGguVN6JPlx5gQMTkQi28x7aM")
 OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "src", "data", "trending.json")
 
 def get_7d_timestamps():
@@ -21,14 +21,14 @@ def get_7d_timestamps():
 
 def fetch_trending_downloads():
     start_at, end_at = get_7d_timestamps()
-    endpoint = f"{UMAMI_URL}/api/websites/{WEBSITE_ID}/metrics?type=event&startAt={start_at}&endAt={end_at}"
+    endpoint = f"{UMAMI_URL}/api/websites/{WEBSITE_ID}/event-data/events?startAt={start_at}&endAt={end_at}&event=download-module"
 
     headers = {
         "User-Agent": "MagiskHub-Sync/1.0",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "x-umami-api-key": UMAMI_API_KEY,
+        "Authorization": f"Bearer {UMAMI_API_KEY}"
     }
-    if UMAMI_API_KEY:
-        headers["x-umami-api-key"] = UMAMI_API_KEY
 
     counts = {}
 
@@ -38,15 +38,13 @@ def fetch_trending_downloads():
             data = json.loads(resp.read().decode("utf-8"))
             if isinstance(data, list):
                 for item in data:
-                    x = item.get("x", "")
-                    # Check for download-module events
-                    if x == "download-module" or x.startswith("download:"):
-                        mod_id = item.get("data", {}).get("module") or x.replace("download:", "")
-                        if mod_id:
-                            counts[mod_id] = counts.get(mod_id, 0) + int(item.get("y", 0))
+                    if item.get("propertyName") == "module":
+                        mod_id = item.get("propertyValue")
+                        tot = int(item.get("total", 0))
+                        if mod_id and tot > 0:
+                            counts[mod_id] = tot
     except Exception as e:
-        print(f"[sync_trending] Notice: Umami API query skipped or unauthenticated: {e}")
-        print("[sync_trending] Using existing or default trending.json dataset.")
+        print(f"[sync_trending] Notice: Umami API query error: {e}")
         return None
 
     return counts
@@ -58,12 +56,17 @@ def main():
     if counts is not None:
         with open(OUTPUT_FILE, "w") as f:
             json.dump(counts, f, indent=2)
-        print(f"[sync_trending] Successfully updated {OUTPUT_FILE} with {len(counts)} trending modules.")
+        print(f"[sync_trending] Successfully populated {OUTPUT_FILE} with {len(counts)} real trending modules from Umami!")
+        # Print top 10
+        sorted_items = sorted(counts.items(), key=lambda x: x[1], reverse=True)[:10]
+        print("[sync_trending] Top 10 downloaded this week:")
+        for k, v in sorted_items:
+            print(f"  - {k}: {v} downloads")
     else:
         if not os.path.exists(OUTPUT_FILE):
             with open(OUTPUT_FILE, "w") as f:
                 json.dump({}, f, indent=2)
-            print(f"[sync_trending] Initialized empty {OUTPUT_FILE}.")
+            print(f"[sync_trending] Fallback initialized empty {OUTPUT_FILE}.")
 
 if __name__ == "__main__":
     main()

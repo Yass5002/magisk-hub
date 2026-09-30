@@ -40,6 +40,12 @@ jobs:
         run: |
           python3 scripts/sync_releases.py
 
+      - name: Sync 7-day trending downloads from Umami
+        env:
+          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
+        run: |
+          python3 scripts/sync_trending.py
+
       - name: Validate database schema integrity
         run: |
           python3 scripts/validate_module.py
@@ -49,13 +55,13 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Stage any modified/added/deleted files in modules/ and assets/
-          git add -A modules/ assets/
+          # Stage any modified/added/deleted files in modules/, assets/, and src/data/
+          git add -A modules/ assets/ src/data/
           
           if git diff --staged --quiet; then
             echo "No changes detected. Database is completely up to date."
           else
-            git commit -m "chore(data): automated release sync and active-bar pruning [skip ci]"
+            git commit -m "chore(data): automated release and trending sync [skip ci]"
             git push
             echo "Successfully pushed release updates and pruning changes to repository."
           fi
