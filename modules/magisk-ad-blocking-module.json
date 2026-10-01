@@ -11,11 +11,11 @@
   "icon": "assets/icons/magisk-ad-blocking-module.png",
   "stars": 569,
   "latestRelease": {
-    "tag": "v3.80",
-    "publishedAt": "2026-09-15T13:15:44Z",
-    "url": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/tag/v3.80",
-    "downloadUrl": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/download/v3.80/BlockAds-v3.80.zip",
-    "assetName": "BlockAds-v3.80.zip"
+    "tag": "v3.81",
+    "publishedAt": "2026-10-01T15:11:52Z",
+    "url": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/tag/v3.81",
+    "downloadUrl": "https://github.com/pantsufan/Magisk-Ad-Blocking-Module/releases/download/v3.81/BlockAds-v3.81.zip",
+    "assetName": "BlockAds-v3.81.zip"
   },
   "seo": {
     "title": "Magisk-Ad-Blocking-Module – Download (Magisk) | Magisk Hub",
