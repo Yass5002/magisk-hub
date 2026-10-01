@@ -9,13 +9,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 257,
+  "stars": 259,
   "latestRelease": {
-    "tag": "v2.2.3",
-    "publishedAt": "2026-09-30T13:46:22Z",
-    "url": "https://github.com/chisewaguri/systemapp_nuker/releases/tag/v2.2.3",
-    "downloadUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.3/SAN_v2.2.3.zip",
-    "assetName": "SAN_v2.2.3.zip"
+    "tag": "v2.2.4",
+    "publishedAt": "2026-10-01T09:42:21Z",
+    "url": "https://github.com/chisewaguri/systemapp_nuker/releases/tag/v2.2.4",
+    "downloadUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.4/SAN_v2.2.4.zip",
+    "assetName": "SAN_v2.2.4.zip"
   },
   "seo": {
     "title": "systemapp_nuker – Download (Magisk) | Magisk Hub",
