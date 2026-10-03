@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/meta-magic-mount-rs.png",
-  "stars": 522,
+  "stars": 523,
   "latestRelease": {
-    "tag": "v4.0.10",
-    "publishedAt": "2026-09-25T07:46:28Z",
-    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.10",
-    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.10/magic_mount_rs-4.0.10-918-arm64.zip",
-    "assetName": "magic_mount_rs-4.0.10-918-arm64.zip"
+    "tag": "v4.0.11",
+    "publishedAt": "2026-10-02T23:27:44Z",
+    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.0.11",
+    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.11/magic_mount_rs-4.0.11-930-arm64.zip",
+    "assetName": "magic_mount_rs-4.0.11-930-arm64.zip"
   },
   "seo": {
     "title": "meta-magic_mount-rs – Download | Magisk Hub",
