@@ -1,0 +1,30 @@
+{
+  "id": "sukisu-ultra",
+  "name": "SukiSU Ultra Root Manager (KernelSU LKM)",
+  "repo": "SukiSU-Ultra/SukiSU-Ultra",
+  "author": "SukiSU-Ultra Team (ShirkNeko, HSSkyBoy, Wes765)",
+  "sourceType": "github",
+  "sourceUrl": "https://github.com/SukiSU-Ultra/SukiSU-Ultra",
+  "category": "root-management",
+  "softwareType": "standalone-app",
+  "description": "Next-generation KernelSU-based root management solution and manager app featuring loadable kernel module (LKM) integration, Susfs stealth hiding, dynamic CPU spoofing, and Zygisk status inspection.",
+  "compatibility": [
+    "KernelSU",
+    "Rootless"
+  ],
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/icons/sukisu-ultra.png",
+  "stars": 6447,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v4.2.0",
+    "publishedAt": "2026-09-06T00:00:00Z",
+    "url": "https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases/tag/v4.2.0",
+    "downloadUrl": "https://github.com/SukiSU-Ultra/SukiSU-Ultra/releases/download/v4.2.0/SukiSU_v4.2.0_40900-release.apk",
+    "assetName": "SukiSU_v4.2.0_40900-release.apk"
+  },
+  "seo": {
+    "title": "SukiSU Ultra – KernelSU Root Manager with Susfs & LKM Support",
+    "description": "Download SukiSU Ultra 4.2.0 manager. Kernel-level root solution featuring Susfs stealth support, LKM loading, and dynamic CPU identity spoofing."
+  }
+}

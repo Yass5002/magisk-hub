@@ -1,0 +1,31 @@
+{
+  "id": "mediatek-mali-gpu-governor",
+  "name": "Mediatek Mali GPU Governor (天玑GPU调速器)",
+  "repo": "Seyud/Mediatek_Mali_GPU_Governor",
+  "author": "Seyud & Tools-cx-app",
+  "sourceType": "github",
+  "sourceUrl": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor",
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Dynamic GPU governor module for MediaTek Dimensity processors featuring ARM Mali GPUs, optimizing frequency scaling, power consumption, and thermal stability under heavy gaming loads.",
+  "compatibility": [
+    "KernelSU",
+    "APatch",
+    "Magisk"
+  ],
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/icons/mediatek-mali-gpu-governor.png",
+  "stars": 114,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.12.3",
+    "publishedAt": "2024-05-01T00:00:00Z",
+    "url": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor/releases/tag/v2.12.3",
+    "downloadUrl": "https://github.com/Seyud/Mediatek_Mali_GPU_Governor/releases/download/v2.12.3/Mediatek_Mali_GPU_Governor_v2.12.3.zip",
+    "assetName": "Mediatek_Mali_GPU_Governor_v2.12.3.zip"
+  },
+  "seo": {
+    "title": "MediaTek Dimensity Mali GPU Governor for KernelSU & Magisk",
+    "description": "Optimize ARM Mali GPU frequency scaling and power efficiency on MediaTek Dimensity 8100, 8200, 9000, 9200, and 9300 devices."
+  }
+}

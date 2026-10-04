@@ -1,0 +1,30 @@
+{
+  "id": "meta-overlayfs-kernelsu",
+  "name": "OverlayFS MetaModule for KernelSU",
+  "repo": "MySU-org/meta-overlayfs",
+  "author": "AshBorn & KernelSU Devs",
+  "sourceType": "github",
+  "sourceUrl": "https://github.com/MySU-org/meta-overlayfs",
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Next-generation OverlayFS meta-module engine for KernelSU and APatch providing high-performance systemless file mounting, real-time kernel inspection, and native WebUI.",
+  "compatibility": [
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/icons/meta-overlayfs-kernelsu.png",
+  "stars": 85,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.3.4",
+    "publishedAt": "2024-05-01T00:00:00Z",
+    "url": "https://github.com/MySU-org/meta-overlayfs/releases/tag/v1.3.4",
+    "downloadUrl": "https://github.com/MySU-org/meta-overlayfs/releases/download/v1.3.4/meta-overlayfs_v1.3.4_13400.zip",
+    "assetName": "meta-overlayfs_v1.3.4_13400.zip"
+  },
+  "seo": {
+    "title": "OverlayFS MetaModule for KernelSU & APatch",
+    "description": "High-performance OverlayFS filesystem metamodule for KernelSU. Replace Magic Mount with real kernel-level overlayfs mounting."
+  }
+}

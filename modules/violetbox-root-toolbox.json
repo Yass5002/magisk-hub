@@ -1,0 +1,31 @@
+{
+  "id": "violetbox-root-toolbox",
+  "name": "VioletBox Root Toolbox (紫罗兰Box)",
+  "repo": null,
+  "author": "Smart-Paocai",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-utilities",
+  "softwareType": "standalone-app",
+  "description": "Comprehensive all-in-one Android root utility by Smart-Paocai featuring SELinux mode management, raw partition reading/flashing, baseband font backup, module batch flashing, and device ID modification.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/violetbox-root-toolbox.png",
+  "stars": 650,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2026-08-02T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=2252",
+    "assetName": "VioletBox_V1.0.0_release.apk"
+  },
+  "seo": {
+    "title": "VioletBox Root Toolbox (紫罗兰Box) for Magisk & KernelSU",
+    "description": "All-in-one mobile root utility for SELinux switching, partition read/write, baseband/font backup, batch module management, and device spoofing."
+  }
+}

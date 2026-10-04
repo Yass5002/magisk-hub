@@ -30,3 +30,7 @@ Thumbs.db
 
 # Local audit exports
 magisk.yssn.tech-audit/
+
+# Temporary ingestion scratch workspace
+scratch/
+
