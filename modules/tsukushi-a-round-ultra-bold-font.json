@@ -1,0 +1,31 @@
+{
+  "id": "tsukushi-a-round-ultra-bold-font",
+  "name": "Tsukushi A Round Ultra Bold 5-Weight Font",
+  "repo": null,
+  "author": "beixin & lxgw",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-typography-fonts",
+  "softwareType": "flashable-module",
+  "description": "Heavyweight Japanese Tsukushi A Round Gothic font suite featuring 5 high-density bold typographic weights optimized for high-resolution displays.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/tsukushi-a-round-ultra-bold-font.png",
+  "stars": 860,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=223",
+    "assetName": "tsukushi-a-round-ultra-bold-font-v1.0.zip"
+  },
+  "seo": {
+    "title": "Tsukushi A Round Ultra Bold Font for Magisk & KernelSU",
+    "description": "Upgrade your Android device with high-density ultra-bold Tsukushi Round typography across 5 distinct typographic weights."
+  }
+}

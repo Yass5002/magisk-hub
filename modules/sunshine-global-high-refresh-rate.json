@@ -1,0 +1,31 @@
+{
+  "id": "sunshine-global-high-refresh-rate",
+  "name": "Sunshine Global High Refresh Rate Enabler",
+  "repo": null,
+  "author": "Everything by the sun",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Forces universal 120Hz/144Hz high refresh rate display operation across all applications, video players, and system dialogs without downclocking.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/sunshine-global-high-refresh-rate.png",
+  "stars": 1508,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=74",
+    "assetName": "sunshine-global-high-refresh-rate-v1.0.0.zip"
+  },
+  "seo": {
+    "title": "Sunshine Global High Refresh Rate Enabler for Magisk & KernelSU",
+    "description": "Unlock permanent 120Hz and 144Hz display refresh rates universally across all Android apps and games."
+  }
+}

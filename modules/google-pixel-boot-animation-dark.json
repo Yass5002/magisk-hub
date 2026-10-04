@@ -1,0 +1,31 @@
+{
+  "id": "google-pixel-boot-animation-dark",
+  "name": "Google Pixel Boot Animation (Dark)",
+  "repo": null,
+  "author": "Kuku de RCOL",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Authentic Google Pixel dark-mode boot animation featuring smooth 60 FPS geometric loading transitions and pure black background.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/google-pixel-boot-animation-dark.png",
+  "stars": 691,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=188",
+    "assetName": "google-pixel-boot-animation-dark-v1.0.zip"
+  },
+  "seo": {
+    "title": "Google Pixel Boot Animation Dark for Magisk & KernelSU",
+    "description": "Install the iconic dark-mode Google Pixel 60 FPS startup boot animation systemlessly across Android devices."
+  }
+}

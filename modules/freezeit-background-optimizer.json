@@ -1,0 +1,31 @@
+{
+  "id": "freezeit-background-optimizer",
+  "name": "FreezeIt Background App Optimizer",
+  "repo": null,
+  "author": "JARK006",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Intelligent background application freezer leveraging Linux kernel cgroups and process freezer subsystems to eliminate standby battery drain and background wakelocks.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/freezeit-background-optimizer.png",
+  "stars": 1375,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.1.1",
+    "publishedAt": "2022-07-12T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=65",
+    "assetName": "freezeit-background-optimizer-v2.1.1.zip"
+  },
+  "seo": {
+    "title": "FreezeIt Background App Optimizer for Magisk & KernelSU",
+    "description": "Suspend battery-draining background applications automatically using Linux cgroups and kernel freezer daemons."
+  }
+}

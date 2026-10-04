@@ -1,0 +1,31 @@
+{
+  "id": "miui-alpha-launcher-mod",
+  "name": "MIUI Alpha Launcher Mod",
+  "repo": null,
+  "author": "Hanhan Hatsune",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Enhanced Xiaomi Alpha Launcher systemless modification unlocking custom desktop grid dimensions, app icon hiding, folder animation physics, and full background blur.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/miui-alpha-launcher-mod.png",
+  "stars": 1034,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v4.39.0.5785",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=206",
+    "assetName": "miui-alpha-launcher-mod-v4.39.0.5785.zip"
+  },
+  "seo": {
+    "title": "MIUI Alpha Launcher Mod for Magisk & KernelSU",
+    "description": "Unlock fluid animations, custom grid sizing, hidden apps, and background blur in Xiaomi MIUI Launcher systemlessly."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "miui-perfect-icons",
+  "name": "MIUI Perfect Icons HD Suite",
+  "repo": null,
+  "author": "Move.p",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "High-definition 2K vector icon harmonization suite for Xiaomi MIUI Launcher, replacing low-resolution third-party icons with uniform squircles and removing ad badges.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/miui-perfect-icons.png",
+  "stars": 1076,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2022.03.25",
+    "publishedAt": "2022-03-25T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=213",
+    "assetName": "miui-perfect-icons-v2022.03.25.zip"
+  },
+  "seo": {
+    "title": "MIUI Perfect Icons HD Suite for Magisk & KernelSU",
+    "description": "Clean up your Xiaomi desktop with 2K high-definition uniform squircle icons and ad-badge removal."
+  }
+}

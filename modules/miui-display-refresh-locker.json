@@ -1,0 +1,31 @@
+{
+  "id": "miui-display-refresh-locker",
+  "name": "MIUI Display Refresh Rate Locker",
+  "repo": null,
+  "author": "key",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Locks high refresh rate (120Hz/144Hz) globally on Xiaomi MIUI and HyperOS by disabling dynamic SurfaceFlinger fps detection and vendor Joyose throttling.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/miui-display-refresh-locker.png",
+  "stars": 1187,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v0.02",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=42",
+    "assetName": "miui-display-refresh-locker-v0.02.zip"
+  },
+  "seo": {
+    "title": "MIUI Display Refresh Rate Locker for Magisk & KernelSU",
+    "description": "Lock 120Hz and 144Hz screen refresh rate on Xiaomi MIUI and HyperOS without automatic downclocking."
+  }
+}

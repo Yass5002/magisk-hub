@@ -1,0 +1,31 @@
+{
+  "id": "ios-status-bar-control-center-theme",
+  "name": "iOS Status Bar & Control Center Theme",
+  "repo": null,
+  "author": "Jiuhen",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "High-fidelity iOS-style status bar theme featuring single-row cellular signal indicators, battery glyphs, and control center styling for ColorOS and AOSP.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/ios-status-bar-control-center-theme.png",
+  "stars": 6610,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v15.0.1",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=832",
+    "assetName": "ios-status-bar-control-center-theme-v15.0.1.zip"
+  },
+  "seo": {
+    "title": "iOS Status Bar & Control Center Theme for Magisk & KernelSU",
+    "description": "Transform your Android status bar with authentic iOS 17 style cellular signal bars, Wi-Fi glyphs, and battery icons."
+  }
+}

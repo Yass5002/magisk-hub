@@ -1,0 +1,31 @@
+{
+  "id": "miui-stacked-recent-tasks",
+  "name": "MIUI Stacked Recent Tasks Launcher",
+  "repo": null,
+  "author": "Nanju Beizhi & Xposeded",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless packaging of Xposeded's stacked desktop engine, unlocking iOS-style horizontal card stacking and smooth task switching in Xiaomi MIUI Launcher.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/miui-stacked-recent-tasks.png",
+  "stars": 5932,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.9.1",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=96",
+    "assetName": "miui-stacked-recent-tasks-v1.9.1.zip"
+  },
+  "seo": {
+    "title": "MIUI Stacked Recent Tasks Launcher for Magisk & KernelSU",
+    "description": "Enable iOS-style stacked horizontal task switcher cards and fluid animations in Xiaomi MIUI Launcher."
+  }
+}

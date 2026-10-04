@@ -152,6 +152,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v2.0
 - Download Asset: https://apk.magisk.vip/download.php?id=651
 
+### iOS Status Bar & Control Center Theme (`ios-status-bar-control-center-theme`)
+- Description: High-fidelity iOS-style status bar theme featuring single-row cellular signal indicators, battery glyphs, and control center styling for ColorOS and AOSP.
+- Module URL: https://magisk.yssn.tech/modules/ios-status-bar-control-center-theme/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 6,610
+- Latest Release: v15.0.1
+- Download Asset: https://apk.magisk.vip/download.php?id=832
+
 ### TrickyStore (`trickystore`)
 - Description: TrickyStore active root module.
 - Module URL: https://magisk.yssn.tech/modules/trickystore/
@@ -181,6 +190,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v4.0.0
 - Download Asset: https://github.com/samolego/Canta/releases/download/v4.0.0/androidApp-release.apk
 - Upstream Source: https://github.com/samolego/Canta
+
+### MIUI Stacked Recent Tasks Launcher (`miui-stacked-recent-tasks`)
+- Description: Systemless packaging of Xposeded's stacked desktop engine, unlocking iOS-style horizontal card stacking and smooth task switching in Xiaomi MIUI Launcher.
+- Module URL: https://magisk.yssn.tech/modules/miui-stacked-recent-tasks/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 5,932
+- Latest Release: v1.9.1
+- Download Asset: https://apk.magisk.vip/download.php?id=96
 
 ### Google Mobile Services Core Suite (`google-mobile-services-core`)
 - Description: Systemless Google Mobile Services (GMS) framework and Google Play Store suite that eliminates regional restrictions on Chinese firmware.
@@ -488,6 +506,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/salvogiangri/KnoxPatch/releases/download/v0.8.3/KnoxPatch-Enhancer-v0.4.zip
 - Upstream Source: https://github.com/salvogiangri/KnoxPatch
 
+### Sunshine Global High Refresh Rate Enabler (`sunshine-global-high-refresh-rate`)
+- Description: Forces universal 120Hz/144Hz high refresh rate display operation across all applications, video players, and system dialogs without downclocking.
+- Module URL: https://magisk.yssn.tech/modules/sunshine-global-high-refresh-rate/
+- Category: https://magisk.yssn.tech/categories/performance-kernel/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,508
+- Latest Release: v1.0.0
+- Download Asset: https://apk.magisk.vip/download.php?id=74
+
 ### magisk-frida (`magisk-frida`)
 - Description: 🔐 Run frida-server on boot with Magisk, always up-to-date
 - Module URL: https://magisk.yssn.tech/modules/magisk-frida/
@@ -538,6 +565,24 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/backslashxx/mountify/releases/download/204/mountify.zip
 - Upstream Source: https://github.com/backslashxx/mountify
 
+### PUI System Interface & Control Suite (`pui-interface-control-suite`)
+- Description: Customized UI theme and control center styling suite specifically engineered for ColorOS 15 and OxygenOS 15.
+- Module URL: https://magisk.yssn.tech/modules/pui-interface-control-suite/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,384
+- Latest Release: v15.0.2.84
+- Download Asset: https://apk.magisk.vip/download.php?id=836
+
+### FreezeIt Background App Optimizer (`freezeit-background-optimizer`)
+- Description: Intelligent background application freezer leveraging Linux kernel cgroups and process freezer subsystems to eliminate standby battery drain and background wakelocks.
+- Module URL: https://magisk.yssn.tech/modules/freezeit-background-optimizer/
+- Category: https://magisk.yssn.tech/categories/battery-power-charging/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,375
+- Latest Release: v2.1.1
+- Download Asset: https://apk.magisk.vip/download.php?id=65
+
 ### NoHello (`nohello`)
 - Description: A Zygisk module to hide root.
 - Module URL: https://magisk.yssn.tech/modules/nohello/
@@ -576,6 +621,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v1.0
 - Download Asset: https://apk.magisk.vip/download.php?id=224
 
+### MIUI Display Refresh Rate Locker (`miui-display-refresh-locker`)
+- Description: Locks high refresh rate (120Hz/144Hz) globally on Xiaomi MIUI and HyperOS by disabling dynamic SurfaceFlinger fps detection and vendor Joyose throttling.
+- Module URL: https://magisk.yssn.tech/modules/miui-display-refresh-locker/
+- Category: https://magisk.yssn.tech/categories/performance-kernel/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,187
+- Latest Release: v0.02
+- Download Asset: https://apk.magisk.vip/download.php?id=42
+
 ### MIUI Theme & Font Rights Enabler (`miui-theme-rights-enabler`)
 - Description: Systemless patch for Xiaomi Theme Manager that unlocks third-party and premium theme importation, permanent font persistence, and removes account authentication checks.
 - Module URL: https://magisk.yssn.tech/modules/miui-theme-rights-enabler/
@@ -605,6 +659,24 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/lico-n/ZygiskFrida/releases/download/v1.9.0/ZygiskFrida-v1.9.0-release.zip
 - Upstream Source: https://github.com/lico-n/ZygiskFrida
 
+### MIUI Perfect Icons HD Suite (`miui-perfect-icons`)
+- Description: High-definition 2K vector icon harmonization suite for Xiaomi MIUI Launcher, replacing low-resolution third-party icons with uniform squircles and removing ad badges.
+- Module URL: https://magisk.yssn.tech/modules/miui-perfect-icons/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,076
+- Latest Release: v2022.03.25
+- Download Asset: https://apk.magisk.vip/download.php?id=213
+
+### MIUI Alpha Launcher Mod (`miui-alpha-launcher-mod`)
+- Description: Enhanced Xiaomi Alpha Launcher systemless modification unlocking custom desktop grid dimensions, app icon hiding, folder animation physics, and full background blur.
+- Module URL: https://magisk.yssn.tech/modules/miui-alpha-launcher-mod/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,034
+- Latest Release: v4.39.0.5785
+- Download Asset: https://apk.magisk.vip/download.php?id=206
+
 ### Earpiece Stereo & Volume Boost (`earpiece-stereo-volume-boost`)
 - Description: Routes media audio through the front call earpiece for pseudo-stereo playback while boosting ALSA mixer analog gain and digital registers.
 - Module URL: https://magisk.yssn.tech/modules/earpiece-stereo-volume-boost/
@@ -622,6 +694,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - GitHub Stars: 891
 - Latest Release: v13.0
 - Download Asset: https://apk.magisk.vip/download.php?id=477
+
+### Tsukushi A Round Ultra Bold 5-Weight Font (`tsukushi-a-round-ultra-bold-font`)
+- Description: Heavyweight Japanese Tsukushi A Round Gothic font suite featuring 5 high-density bold typographic weights optimized for high-resolution displays.
+- Module URL: https://magisk.yssn.tech/modules/tsukushi-a-round-ultra-bold-font/
+- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 860
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=223
 
 ### AlwaysStrong (`alwaysstrong`)
 - Description: Always Strong: Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled.
@@ -700,6 +781,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v1.5.0
 - Download Asset: https://github.com/dpejoh/specter/releases/download/v1.5.0/specter-v1.5.0.zip
 - Upstream Source: https://github.com/dpejoh/specter
+
+### Google Pixel Boot Animation (Dark) (`google-pixel-boot-animation-dark`)
+- Description: Authentic Google Pixel dark-mode boot animation featuring smooth 60 FPS geometric loading transitions and pure black background.
+- Module URL: https://magisk.yssn.tech/modules/google-pixel-boot-animation-dark/
+- Category: https://magisk.yssn.tech/categories/boot-animations-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 691
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=188
 
 ### ZygiskNext (`zygisknext`)
 - Description: Standalone implementation of Zygisk

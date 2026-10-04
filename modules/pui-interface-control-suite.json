@@ -1,0 +1,31 @@
+{
+  "id": "pui-interface-control-suite",
+  "name": "PUI System Interface & Control Suite",
+  "repo": null,
+  "author": "Tiansansha & PanL",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Customized UI theme and control center styling suite specifically engineered for ColorOS 15 and OxygenOS 15.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/pui-interface-control-suite.png",
+  "stars": 1384,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v15.0.2.84",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=836",
+    "assetName": "pui-interface-control-suite-v15.0.2.84.zip"
+  },
+  "seo": {
+    "title": "PUI System Interface & Control Suite for ColorOS 15 & OxygenOS 15",
+    "description": "Enhance your Android 15 UI with custom quick settings tiles, status icons, and control center themes."
+  }
+}
