@@ -4,6 +4,13 @@ import ModuleCard from '../components/ModuleCard.astro';
 import { getAllModules, CATEGORIES, PLATFORMS } from '../lib/modules';
 
 const modules = getAllModules();
+const magiskModule = modules.find(m => m.id === 'magisk');
+const magiskRelease = magiskModule?.latestRelease || {
+  tag: 'v30.7',
+  downloadUrl: 'https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk',
+  url: 'https://github.com/topjohnwu/Magisk/releases/tag/v30.7'
+};
+
 const allCategories = Object.values(CATEGORIES);
 const allPlatforms = Object.values(PLATFORMS);
 
@@ -77,64 +84,154 @@ const itemListSchema = {
   ]}
   structuredData={[faqSchema, itemListSchema]}
 >
-  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-    <!-- Compact Header & Direct Search (Immediate screen presence on mobile) -->
-    <header class="mb-4 sm:mb-5">
-      <div class="flex items-baseline justify-between gap-3 mb-2.5">
-        <div>
-          <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
-            Magisk & Root Modules
+  <!-- Sleek Developer Hero -->
+  <section id="heroSection" class="border-b border-zinc-200 bg-white py-5 sm:py-10 transition-all duration-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <!-- Hero Text that condenses when search is active -->
+        <div id="heroText" class="transition-all duration-200">
+          <h1 class="text-xl sm:text-4xl font-extrabold tracking-tight text-zinc-900">
+            Magisk Modules Directory
           </h1>
-          <p class="text-xs sm:text-sm text-zinc-500">
-            Clean, verified directory of root modules, hooks, and utilities.
+          <p class="mt-1 sm:mt-2 text-xs sm:text-base text-zinc-500">
+            Discover and download {modules.length} active root modules, Xposed hooks, and privileged apps.
           </p>
         </div>
-        <span id="moduleCount" class="text-xs font-mono text-zinc-400 shrink-0">
-          {modules.length} modules
-        </span>
-      </div>
 
-      <!-- Quick Search Bar with Instant Clear -->
-      <div class="relative flex items-center h-10 sm:h-11 rounded-lg border border-zinc-200 bg-white shadow-2xs focus-within:border-zinc-900 focus-within:ring-1 focus-within:ring-zinc-900/10 transition-all">
-        <div class="pl-3 pr-2 text-zinc-400 pointer-events-none">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
+        <!-- Search Bar with Instant Clear Button (✕) -->
+        <div class="mt-3.5 sm:mt-6 max-w-2xl mx-auto">
+          <div class="relative flex items-center h-10 sm:h-13 rounded-xl border border-zinc-200 bg-[#fafafa] shadow-2xs focus-within:border-zinc-900 focus-within:ring-2 focus-within:ring-zinc-900/10 transition-all">
+            <div class="pl-3.5 pr-2 text-zinc-400 pointer-events-none">
+              <svg class="h-4.5 w-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+            <input 
+              type="text" 
+              id="searchInput"
+              placeholder={`Search ${modules.length} modules by name, keyword, or author...`}
+              autocomplete="off"
+              class="w-full bg-transparent py-2 pr-2 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
+            />
+            <!-- Instant Clear Button (Visible when typing) -->
+            <button
+              id="searchClearBtn"
+              type="button"
+              class="hidden mr-2 p-1 rounded-full text-zinc-400 hover:text-zinc-700 hover:bg-zinc-200/60 transition-colors"
+              aria-label="Clear search"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+            <div class="pr-3 hidden sm:flex items-center">
+              <kbd class="inline-flex items-center rounded border border-zinc-200 bg-white px-2 py-0.5 text-[11px] font-mono text-zinc-500">
+                Ctrl K
+              </kbd>
+            </div>
+          </div>
         </div>
-        <input 
-          type="text" 
-          id="searchInput"
-          placeholder="Search modules by name, keyword, or author..."
-          autocomplete="off"
-          class="w-full bg-transparent py-2 pr-2 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
-        />
-        <button
-          id="searchClearBtn"
-          type="button"
-          class="hidden mr-2 p-1 rounded-full text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors cursor-pointer"
-          aria-label="Clear search"
-        >
-          <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
-        </button>
       </div>
+    </div>
+  </section>
 
-      <!-- Minimal, Screen-Friendly Controls (Single clean row, zero chip bloat) -->
-      <div class="mt-2.5 flex flex-wrap items-center gap-2">
-        <select 
-          id="categorySelect" 
-          class="rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
-        >
-          <option value="all">All Categories</option>
-          {allCategories.map(c => (
-            <option value={c.id}>{c.name}</option>
-          ))}
-        </select>
+  <!-- Main Content Container -->
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+    
+    <!-- Smart Magisk Spotlight Banner (Automatically hides when searching or filtering other platforms/categories) -->
+    <section id="featuredMagiskBanner" class="mb-4 sm:mb-8 rounded-xl border border-zinc-200 bg-white p-3.5 sm:p-6 shadow-2xs transition-all">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-5">
+        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+          <img 
+            src="/magisk-logo.svg" 
+            alt="Magisk Logo" 
+            width="44" 
+            height="44" 
+            class="h-9 w-9 sm:h-12 sm:w-12 shrink-0 object-contain"
+          />
+          <div class="min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <h2 class="text-base sm:text-xl font-bold text-zinc-900 tracking-tight">Magisk</h2>
+              <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] sm:text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+                {magiskRelease.tag}
+              </span>
+              <span class="text-[11px] sm:text-xs text-zinc-500 font-mono">
+                • 62.9k stars
+              </span>
+            </div>
+            <p class="mt-0.5 sm:mt-1 text-xs sm:text-sm text-zinc-600 line-clamp-2 sm:line-clamp-none max-w-2xl leading-relaxed">
+              The universal open-source root suite for Android devices. Boot image patching, Zygisk framework, and module management.
+            </p>
+          </div>
+        </div>
 
+        <!-- Download Action Group -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2 shrink-0 w-full md:w-auto">
+          <a 
+            href={magiskRelease.downloadUrl}
+            data-umami-event="download-magisk-apk"
+            data-umami-event-tag={magiskRelease.tag}
+            data-download-button
+            class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black data-[state=downloading]:bg-zinc-800 text-white px-3.5 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-semibold transition-all duration-150 shadow-2xs hover:shadow-xs active:scale-[0.98] select-none"
+          >
+            <span class="grid grid-cols-1 grid-rows-1 items-center justify-items-center">
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-1.5 sm:gap-2 transition-all duration-150 group-data-[state=downloading]:opacity-0 group-data-[state=downloading]:scale-95 group-data-[state=downloading]:pointer-events-none">
+                <svg class="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                <span>Download APK ({magiskRelease.tag})</span>
+              </span>
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-1.5 sm:gap-2 transition-all duration-150 opacity-0 scale-95 pointer-events-none group-data-[state=downloading]:opacity-100 group-data-[state=downloading]:scale-100">
+                <svg class="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 animate-spin text-zinc-300" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Starting download...</span>
+              </span>
+            </span>
+          </a>
+
+          <div class="flex items-center justify-center sm:justify-start gap-3 sm:gap-2">
+            <a 
+              href="/modules/magisk/"
+              data-umami-event="hero-guide-click"
+              data-umami-event-module="magisk"
+              class="inline-flex items-center gap-1 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3 sm:py-2 sm:text-xs sm:font-medium sm:text-zinc-700 transition-colors"
+            >
+              <svg class="h-3.5 w-3.5 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+              <span>Guide</span>
+            </a>
+
+            <span class="text-zinc-300 sm:hidden">•</span>
+
+            <a 
+              href="https://github.com/topjohnwu/Magisk"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="hero-github-click"
+              data-umami-event-repo="topjohnwu/Magisk"
+              class="inline-flex items-center gap-1 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3 sm:py-2 sm:text-xs sm:font-medium sm:text-zinc-700 transition-colors"
+            >
+              <svg class="h-3.5 w-3.5 sm:hidden" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clean, Non-Overlapping Filter Bar (Platform FIRST, Category SECOND, Sort THIRD) -->
+    <div class="mb-5 sm:mb-6">
+      <div class="grid grid-cols-2 sm:flex sm:items-center gap-2 sm:gap-3">
+        <!-- 1. Platform (FIRST) -->
         <select 
           id="compatSelect" 
-          class="rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+          class="w-full sm:w-auto rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+          aria-label="Filter by Platform"
         >
           <option value="all">All Platforms</option>
           {allPlatforms.map(p => (
@@ -142,20 +239,39 @@ const itemListSchema = {
           ))}
         </select>
 
+        <!-- 2. Category (SECOND) -->
+        <select 
+          id="categorySelect" 
+          class="w-full sm:w-auto rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs truncate"
+          aria-label="Filter by Category"
+        >
+          <option value="all">All Categories</option>
+          {allCategories.map(c => (
+            <option value={c.id}>{c.name}</option>
+          ))}
+        </select>
+
+        <!-- 3. Sort (THIRD - Full width on mobile row 2, right-aligned on desktop) -->
         <select 
           id="sortSelect" 
-          class="rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs ml-auto"
+          class="col-span-2 sm:col-span-1 w-full sm:w-auto sm:ml-auto rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+          aria-label="Sort Modules"
         >
-          <option value="trending">Trending</option>
-          <option value="stars">Most Stars</option>
-          <option value="recent">Recently Updated</option>
-          <option value="name">Alphabetical</option>
+          <option value="trending">Sort: Trending</option>
+          <option value="stars">Sort: Most Stars</option>
+          <option value="recent">Sort: Recently Updated</option>
+          <option value="name">Sort: Alphabetical</option>
         </select>
       </div>
-    </header>
 
-    <!-- Clean, Browsable Module Grid -->
-    <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
+      <!-- Live Counter Row -->
+      <div class="mt-2 flex items-center justify-between text-xs font-mono text-zinc-400 px-0.5">
+        <span id="moduleCount">{modules.length} modules</span>
+      </div>
+    </div>
+
+    <!-- Balanced Module Card Grid -->
+    <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {modules.map(module => (
         <div 
           class="module-card-wrapper h-full" 
@@ -169,14 +285,15 @@ const itemListSchema = {
           data-stars={module.stars || 0}
           data-trending={module.trendingDownloads || 0}
           data-date={module.latestRelease.publishedAt}
+          style={module.id === 'magisk' ? 'display: none;' : ''}
         >
           <ModuleCard module={module} />
         </div>
       ))}
     </div>
 
-    <!-- Empty State -->
-    <div id="noResults" class="hidden text-center py-12 bg-white rounded-xl border border-zinc-200 mt-4 shadow-2xs">
+    <!-- No results state -->
+    <div id="noResults" class="hidden text-center py-14 bg-white rounded-xl border border-zinc-200 mt-6 shadow-xs">
       <div class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-zinc-100 text-zinc-400 mb-2.5">
         <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -184,49 +301,59 @@ const itemListSchema = {
       </div>
       <p class="text-zinc-900 text-sm font-semibold">No modules found</p>
       <p class="text-zinc-500 text-xs mt-1">Try adjusting your search terms or clearing filters.</p>
-      <div class="mt-3">
-        <button id="resetBtn" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 hover:bg-zinc-50 transition-colors shadow-2xs cursor-pointer">
+      <div class="mt-3.5">
+        <button id="resetBtn" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-zinc-800 hover:bg-zinc-50 transition-colors shadow-2xs cursor-pointer">
           Reset all filters
         </button>
       </div>
     </div>
 
-    <!-- Minimal SEO FAQ (Kept subtle at the bottom of the page) -->
-    <section class="mt-12 border-t border-zinc-200/80 pt-8 pb-4">
+    <!-- SEO FAQ Section -->
+    <section class="mt-14 border-t border-zinc-200/80 pt-10 pb-6">
       <div class="max-w-3xl">
-        <h2 class="text-base font-bold tracking-tight text-zinc-900 mb-4">
+        <h2 class="text-lg font-bold tracking-tight text-zinc-900 sm:text-2xl mb-5">
           Frequently Asked Questions
         </h2>
-        <div class="space-y-4 text-xs sm:text-sm">
+        <div class="space-y-5">
           <div>
-            <h3 class="font-semibold text-zinc-900">What are Magisk modules and how do they work?</h3>
-            <p class="mt-0.5 text-zinc-600 leading-relaxed">
-              Magisk modules are systemless packages that modify system settings or add features without altering the Android system partition directly.
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">What are Magisk modules and how do they work?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
+              Magisk modules are systemless zip packages that modify system settings, add features, or improve device performance without altering the Android <code class="font-mono text-xs bg-zinc-100 text-zinc-800 px-1 py-0.5 rounded border border-zinc-200">/system</code> partition directly.
             </p>
           </div>
           <div>
-            <h3 class="font-semibold text-zinc-900">Are these modules compatible with KernelSU and APatch?</h3>
-            <p class="mt-0.5 text-zinc-600 leading-relaxed">
-              Yes, many modules support KernelSU and APatch alongside Magisk. Use the platform filter above to check compatibility before flashing.
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">Are these modules compatible with KernelSU and APatch?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
+              Yes, many modern modules support KernelSU and APatch alongside Magisk. Use the platform filters above to verify compatibility for your specific root solution before flashing.
             </p>
           </div>
           <div>
-            <h3 class="font-semibold text-zinc-900">How do I install a module?</h3>
-            <p class="mt-0.5 text-zinc-600 leading-relaxed">
-              Download the module package, open your root manager app (Magisk, KernelSU Manager, or APatch), tap <em>Install from storage</em>, select the file, and reboot after flashing.
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">Where can I download the official Magisk release?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
+              The official Magisk app and root manager can be downloaded directly from the official topjohnwu GitHub releases or via our featured download link above.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">How do I install a module in Magisk, KernelSU, or APatch?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
+              Download the module zip package, open your root manager app, navigate to the Modules tab, tap <em>Install from storage</em>, select the zip file, and reboot after flashing completes.
             </p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+  </div>
 </BaseLayout>
 
 <script>
   const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
   const searchClearBtn = document.getElementById('searchClearBtn') as HTMLButtonElement | null;
-  const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
+  const heroSection = document.getElementById('heroSection') as HTMLElement | null;
+  const heroText = document.getElementById('heroText') as HTMLElement | null;
+  const featuredMagiskBanner = document.getElementById('featuredMagiskBanner') as HTMLElement | null;
+
   const compatSelect = document.getElementById('compatSelect') as HTMLSelectElement | null;
+  const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
   const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement | null;
   const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper')) as HTMLElement[];
   const moduleGrid = document.getElementById('moduleGrid');
@@ -243,13 +370,41 @@ const itemListSchema = {
     let visibleCount = 0;
     const isSearching = currentSearch.length > 0;
 
-    // Filter cards
+    // Magisk spotlight banner: hide if searching or filtering non-Magisk platform or specific category
+    const shouldShowSpotlight = !isSearching && 
+      (currentCompat === 'all' || currentCompat === 'Magisk') && 
+      currentCategory === 'all';
+
+    if (featuredMagiskBanner) {
+      featuredMagiskBanner.style.display = shouldShowSpotlight ? '' : 'none';
+    }
+
+    if (heroSection && heroText) {
+      if (isSearching) {
+        heroSection.classList.remove('py-5', 'sm:py-10');
+        heroSection.classList.add('py-3.5', 'sm:py-5');
+        heroText.classList.add('hidden');
+      } else {
+        heroSection.classList.add('py-5', 'sm:py-10');
+        heroSection.classList.remove('py-3.5', 'sm:py-5');
+        heroText.classList.remove('hidden');
+      }
+    }
+
+    // Filter module cards
     cardWrappers.forEach(el => {
+      const id = el.getAttribute('data-id') || '';
       const name = el.getAttribute('data-name') || '';
       const desc = el.getAttribute('data-desc') || '';
       const repo = el.getAttribute('data-repo') || '';
       const cat = el.getAttribute('data-category') || '';
       const compat = (el.getAttribute('data-compat') || '').split(',');
+
+      // If spotlight banner is visible, hide duplicate Magisk card in grid
+      if (shouldShowSpotlight && id === 'magisk') {
+        el.style.display = 'none';
+        return;
+      }
 
       const matchesSearch = !isSearching || 
         name.includes(currentSearch) || 
@@ -310,6 +465,14 @@ const itemListSchema = {
     }
   }
 
+  // Ctrl+K keybinding
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      searchInput?.focus();
+    }
+  });
+
   // Search input handler
   searchInput?.addEventListener('input', (e) => {
     currentSearch = (e.target as HTMLInputElement).value.trim().toLowerCase();
@@ -334,19 +497,19 @@ const itemListSchema = {
     }
   });
 
-  // Category select
-  categorySelect?.addEventListener('change', (e) => {
-    currentCategory = (e.target as HTMLSelectElement).value;
-    applyFiltersAndSort();
-  });
-
-  // Platform select
+  // 1. Platform select (FIRST)
   compatSelect?.addEventListener('change', (e) => {
     currentCompat = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
   });
 
-  // Sort select
+  // 2. Category select (SECOND)
+  categorySelect?.addEventListener('change', (e) => {
+    currentCategory = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+  });
+
+  // 3. Sort select (THIRD)
   sortSelect?.addEventListener('change', (e) => {
     currentSort = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
@@ -361,8 +524,8 @@ const itemListSchema = {
     currentSort = 'trending';
 
     if (searchClearBtn) searchClearBtn.classList.add('hidden');
-    if (categorySelect) categorySelect.value = 'all';
     if (compatSelect) compatSelect.value = 'all';
+    if (categorySelect) categorySelect.value = 'all';
     if (sortSelect) sortSelect.value = 'trending';
 
     applyFiltersAndSort();
