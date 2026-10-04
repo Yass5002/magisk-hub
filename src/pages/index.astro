@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ModuleCard from '../components/ModuleCard.astro';
-import { getAllModules, CATEGORIES } from '../lib/modules';
+import { getAllModules, CATEGORIES, PLATFORMS, SOFTWARE_TYPE_CONFIG } from '../lib/modules';
 
 const modules = getAllModules();
 const magiskModule = modules.find(m => m.id === 'magisk');
@@ -12,6 +12,8 @@ const magiskRelease = magiskModule?.latestRelease || {
 };
 
 const allCategories = Object.values(CATEGORIES);
+const allPlatforms = Object.values(PLATFORMS);
+const allSoftwareTypes = Object.entries(SOFTWARE_TYPE_CONFIG);
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -30,7 +32,7 @@ const faqSchema = {
       'name': 'Are these modules compatible with KernelSU and APatch?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Yes, many modules in this directory support KernelSU and APatch alongside Magisk. Use the platform filters to view verified compatibility for your root solution.'
+        'text': 'Yes, many modules in this directory support KernelSU, APatch, and LSPosed alongside Magisk. Use the platform filters to view verified compatibility for your root solution.'
       }
     },
     {
@@ -46,7 +48,7 @@ const faqSchema = {
       'name': 'How do I install a module in Magisk, KernelSU, or APatch?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Download the module zip package, open your root manager app (Magisk, KernelSU Manager, or APatch Manager), navigate to the Modules tab, tap Install from storage, select the zip file, and reboot after flashing.'
+        'text': 'Download the module package, open your root manager app (Magisk, KernelSU Manager, or APatch Manager), navigate to the Modules tab, tap Install from storage, select the file, and reboot after flashing.'
       }
     }
   ]
@@ -56,7 +58,7 @@ const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   'name': 'Featured Magisk & Root Modules',
-  'description': 'Directory of active and verified modules for Magisk, KernelSU, and APatch',
+  'description': 'Directory of active and verified modules for Magisk, KernelSU, APatch, and LSPosed',
   'numberOfItems': modules.length,
   'itemListElement': modules.slice(0, 10).map((m, idx) => ({
     '@type': 'ListItem',
@@ -69,13 +71,15 @@ const itemListSchema = {
 
 <BaseLayout
   title="Magisk Modules Repository & Directory (2026)"
-  description="Explore and download 195+ active root modules for Magisk, KernelSU, and APatch. Verified releases, guides, and direct downloads."
+  description={`Explore and download ${modules.length}+ active root modules, Xposed hooks, and privileged apps for Magisk, KernelSU, APatch, LSPosed, and Shizuku. Verified releases, guides, and direct downloads.`}
   keywords={[
     "magisk modules",
     "magisk module repository",
     "best magisk modules",
     "kernelsu modules",
     "apatch modules",
+    "lsposed modules",
+    "shizuku apps",
     "download magisk apk",
     "root modules directory"
   ]}
@@ -91,9 +95,10 @@ const itemListSchema = {
             Magisk Modules Directory
           </h1>
           <p class="mt-1.5 sm:mt-2 text-xs sm:text-base text-zinc-500">
-            Discover and download active root modules for Magisk, KernelSU, and APatch.
+            Discover and download {modules.length} active root modules, Xposed hooks, and privileged apps.
           </p>
         </div>
+
 
         <!-- Search Bar with Ctrl+K -->
         <div class="mt-4 sm:mt-6 max-w-2xl mx-auto">
@@ -212,60 +217,75 @@ const itemListSchema = {
       </div>
     </section>
 
-    <!-- Filter Bar: Cleanly Separated Controls on Single Row with Mobile Horizontal Scroll -->
-    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-5 mb-6 border-b border-zinc-200">
-      <!-- Left: Platform Pill Group (Mobile Horizontal Scrollable) -->
-      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
-        <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Platform:</span>
-        <div class="inline-flex items-center gap-1.5 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
-          <button class="compat-filter active rounded-md bg-zinc-900 px-3 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-xs" data-compat="all">
-            All
-          </button>
-          <button class="compat-filter rounded-md bg-transparent px-3 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat="Magisk">
-            Magisk
-          </button>
-          <button class="compat-filter rounded-md bg-transparent px-3 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat="KernelSU">
-            KernelSU
-          </button>
-          <button class="compat-filter rounded-md bg-transparent px-3 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat="APatch">
-            APatch
-          </button>
-        </div>
-      </div>
-
-      <!-- Right: Category Dropdown and Sorter -->
-      <div class="flex items-center gap-4 flex-wrap">
-        <div class="flex items-center gap-2">
-          <label for="categorySelect" class="text-xs font-medium text-zinc-500">Category:</label>
-          <select 
-            id="categorySelect" 
-            class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
-          >
-            <option value="all">All Categories ({modules.length})</option>
-            {allCategories.map(c => (
-              <option value={c.id}>{c.name}</option>
+    <!-- Filter Bar: Fully Dynamic Controls for Platform, Software Type, Category, and Sorter -->
+    <div class="flex flex-col gap-3.5 pb-5 mb-6 border-b border-zinc-200">
+      <!-- Upper Controls Row: Platform Pills & Type Pills -->
+      <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-3">
+        <!-- Platform Pill Group (Mobile Horizontal Scrollable) -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Platform:</span>
+          <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
+            <button class="compat-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-xs" data-compat="all">
+              All
+            </button>
+            {allPlatforms.map(p => (
+              <button class="compat-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat={p.name}>
+                {p.shortName}
+              </button>
             ))}
-          </select>
+          </div>
         </div>
 
-        <div class="flex items-center gap-2">
-          <label for="sortSelect" class="text-xs font-medium text-zinc-500">Sort:</label>
-          <select 
-            id="sortSelect" 
-            class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
-          >
-            <option value="trending">Trending</option>
-            <option value="stars">Most Stars</option>
-            <option value="recent">Recently Updated</option>
-            <option value="name">Alphabetical</option>
-          </select>
+        <!-- Software Type Pill Group -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+          <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Type:</span>
+          <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
+            <button class="type-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-xs" data-type="all">
+              All Types
+            </button>
+            {allSoftwareTypes.map(([typeKey, cfg]) => (
+              <button class="type-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-type={typeKey}>
+                {cfg.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Results Status Counter -->
-    <div class="flex items-center justify-between text-xs font-mono text-zinc-500 mb-5">
-      <span id="moduleCount" class="font-medium">Showing {modules.length} modules</span>
+      <!-- Lower Controls Row: Category Dropdown, Sorter, and Counter -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
+        <div class="flex items-center gap-4 flex-wrap">
+          <div class="flex items-center gap-2">
+            <label for="categorySelect" class="text-xs font-medium text-zinc-500">Category:</label>
+            <select 
+              id="categorySelect" 
+              class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+            >
+              <option value="all">All Categories ({modules.length})</option>
+              {allCategories.map(c => (
+                <option value={c.id}>{c.name}</option>
+              ))}
+            </select>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <label for="sortSelect" class="text-xs font-medium text-zinc-500">Sort:</label>
+            <select 
+              id="sortSelect" 
+              class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+            >
+              <option value="trending">Trending</option>
+              <option value="stars">Most Stars</option>
+              <option value="recent">Recently Updated</option>
+              <option value="name">Alphabetical</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="text-xs font-mono text-zinc-500">
+          <span id="moduleCount" class="font-medium">Showing {modules.length} modules</span>
+        </div>
+      </div>
     </div>
 
     <!-- Balanced 3-Column Card Grid on Desktop -->
@@ -278,6 +298,7 @@ const itemListSchema = {
           data-desc={module.description.toLowerCase()}
           data-repo={module.repo.toLowerCase()}
           data-category={module.category}
+          data-type={module.softwareType}
           data-compat={module.compatibility.join(',')}
           data-stars={module.stars || 0}
           data-trending={module.trendingDownloads || 0}
@@ -361,6 +382,7 @@ const itemListSchema = {
   const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
   const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement | null;
   const compatButtons = document.querySelectorAll('.compat-filter');
+  const typeButtons = document.querySelectorAll('.type-filter');
   const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper')) as HTMLElement[];
   const moduleGrid = document.getElementById('moduleGrid');
   const moduleCount = document.getElementById('moduleCount');
@@ -373,6 +395,7 @@ const itemListSchema = {
   let currentSearch = '';
   let currentCategory = 'all';
   let currentCompat = 'all';
+  let currentType = 'all';
   let currentSort = 'trending';
 
   function applyFiltersAndSort() {
@@ -403,6 +426,7 @@ const itemListSchema = {
       const desc = el.getAttribute('data-desc') || '';
       const repo = el.getAttribute('data-repo') || '';
       const cat = el.getAttribute('data-category') || '';
+      const type = el.getAttribute('data-type') || '';
       const compat = (el.getAttribute('data-compat') || '').split(',');
 
       // If not searching, hide the duplicate Magisk card because spotlight banner is active
@@ -418,8 +442,9 @@ const itemListSchema = {
 
       const matchesCategory = currentCategory === 'all' || cat === currentCategory;
       const matchesCompat = currentCompat === 'all' || compat.includes(currentCompat);
+      const matchesType = currentType === 'all' || type === currentType;
 
-      if (matchesSearch && matchesCategory && matchesCompat) {
+      if (matchesSearch && matchesCategory && matchesCompat && matchesType) {
         el.style.display = '';
         visibleCount++;
       } else {
@@ -546,6 +571,21 @@ const itemListSchema = {
     });
   });
 
+  typeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      typeButtons.forEach(b => {
+        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
+        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      });
+      btn.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
+      btn.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      
+      currentType = btn.getAttribute('data-type') || 'all';
+      applyFiltersAndSort();
+      (window as any).umami?.track('filter-type', { type: currentType });
+    });
+  });
+
   resetBtn?.addEventListener('click', () => {
     if (searchInput) searchInput.value = '';
     if (categorySelect) categorySelect.value = 'all';
@@ -555,8 +595,19 @@ const itemListSchema = {
     currentCategory = 'all';
     currentSort = 'trending';
     currentCompat = 'all';
+    currentType = 'all';
 
     compatButtons.forEach((b, idx) => {
+      if (idx === 0) {
+        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
+        b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      } else {
+        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
+        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      }
+    });
+
+    typeButtons.forEach((b, idx) => {
       if (idx === 0) {
         b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
         b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');

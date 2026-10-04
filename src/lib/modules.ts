@@ -129,6 +129,78 @@ export const SOFTWARE_TYPE_CONFIG: Record<SoftwareType, { label: string; badgeCo
   'kernel-module': { label: 'Kernel Object', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200', installVerb: 'Load Kernel Module' },
 };
 
+export interface PlatformInfo {
+  id: string;
+  name: PlatformCompatibility;
+  label: string;
+  shortName: string;
+  title: string;
+  description: string;
+  details: string;
+}
+
+export const PLATFORMS: Record<PlatformCompatibility, PlatformInfo> = {
+  Magisk: {
+    id: 'magisk',
+    name: 'Magisk',
+    label: 'Magisk Modules',
+    shortName: 'Magisk',
+    title: 'Magisk Modules',
+    description: 'Active modules compatible with Magisk systemless root on Android.',
+    details: 'Magisk provides systemless root, boot image patching, and the Zygisk framework.'
+  },
+  KernelSU: {
+    id: 'kernelsu',
+    name: 'KernelSU',
+    label: 'KernelSU Modules',
+    shortName: 'KernelSU',
+    title: 'KernelSU Modules',
+    description: 'Root modules supporting KernelSU kernel-assisted root.',
+    details: 'KernelSU operates in kernel space with custom su privilege delegation.'
+  },
+  APatch: {
+    id: 'apatch',
+    name: 'APatch',
+    label: 'APatch Modules',
+    shortName: 'APatch',
+    title: 'APatch Modules',
+    description: 'Root modules verified for APatch (KernelPatch).',
+    details: 'APatch modifies the Android kernel in-place using KernelPatch.'
+  },
+  LSPosed: {
+    id: 'lsposed',
+    name: 'LSPosed',
+    label: 'LSPosed Modules',
+    shortName: 'LSPosed',
+    title: 'LSPosed & Xposed Modules',
+    description: 'Runtime ART method hooking modules for the LSPosed framework.',
+    details: 'LSPosed provides ART runtime hooking with per-app scope management on modern Android.'
+  },
+  Shizuku: {
+    id: 'shizuku',
+    name: 'Shizuku',
+    label: 'Shizuku Apps',
+    shortName: 'Shizuku',
+    title: 'Shizuku Privileged Apps',
+    description: 'Applications leveraging Shizuku privileged system API binder tokens.',
+    details: 'Shizuku shares system service binder tokens with third-party applications without giving full root access.'
+  },
+  Rootless: {
+    id: 'rootless',
+    name: 'Rootless',
+    label: 'Rootless Utilities',
+    shortName: 'Rootless',
+    title: 'Rootless & Device Owner Utilities',
+    description: 'Powerful Android system utilities operational via Wireless ADB or Device Owner without root.',
+    details: 'Rootless utilities run via ADB wireless debugging, Shizuku, or Device Policy Manager without unlocking bootloaders.'
+  }
+};
+
+export function getAllPlatforms(): PlatformInfo[] {
+  return Object.values(PLATFORMS);
+}
+
+
 let cachedModules: ModuleData[] | null = null;
 
 export function getAllModules(): ModuleData[] {
@@ -216,16 +288,9 @@ export function getStats() {
 }
 
 export function formatPlatformsShort(compatibility: PlatformCompatibility[]): string {
-  const shortMap: Record<PlatformCompatibility, string> = {
-    Magisk: 'Magisk',
-    KernelSU: 'KSU',
-    APatch: 'APatch',
-    LSPosed: 'LSPosed',
-    Shizuku: 'Shizuku',
-    Rootless: 'Rootless'
-  };
-  return compatibility.map(p => shortMap[p] || p).join('/');
+  return compatibility.map(p => PLATFORMS[p]?.shortName || p).join('/');
 }
+
 
 export function formatPlatformsSentence(compatibility: PlatformCompatibility[]): string {
   if (!compatibility || compatibility.length === 0) return 'Android';

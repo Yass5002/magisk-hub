@@ -2,58 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ModuleCard from '../../components/ModuleCard.astro';
-import { getAllModules, type ModuleData } from '../../lib/modules';
+import { getAllModules, PLATFORMS, type PlatformInfo, type ModuleData } from '../../lib/modules';
 
 export async function getStaticPaths() {
   const allModules = getAllModules();
+  const platformList = Object.values(PLATFORMS);
 
-  const platforms = [
-    {
-      id: 'magisk',
-      name: 'Magisk',
-      title: 'Magisk Modules',
-      description: 'Active modules compatible with Magisk systemless root on Android.',
-      details: 'Magisk provides systemless root, boot image patching, and the Zygisk framework.'
-    },
-    {
-      id: 'kernelsu',
-      name: 'KernelSU',
-      title: 'KernelSU Modules',
-      description: 'Root modules supporting KernelSU kernel-assisted root.',
-      details: 'KernelSU operates in kernel space with custom su privilege delegation.'
-    },
-    {
-      id: 'apatch',
-      name: 'APatch',
-      title: 'APatch Modules',
-      description: 'Root modules verified for APatch (KernelPatch).',
-      details: 'APatch modifies the Android kernel in-place using KernelPatch.'
-    },
-    {
-      id: 'lsposed',
-      name: 'LSPosed',
-      title: 'LSPosed & Xposed Modules',
-      description: 'Runtime ART method hooking modules for the LSPosed framework.',
-      details: 'LSPosed provides ART runtime hooking with per-app scope management on modern Android.'
-    },
-    {
-      id: 'shizuku',
-      name: 'Shizuku',
-      title: 'Shizuku Privileged Apps',
-      description: 'Applications leveraging Shizuku privileged system API binder tokens.',
-      details: 'Shizuku shares system service binder tokens with third-party applications without giving full root access.'
-    },
-    {
-      id: 'rootless',
-      name: 'Rootless',
-      title: 'Rootless & Device Owner Utilities',
-      description: 'Powerful Android system utilities operational via Wireless ADB or Device Owner without root.',
-      details: 'Rootless utilities run via ADB wireless debugging, Shizuku, or Device Policy Manager without unlocking bootloaders.'
-    }
-  ];
-
-  return platforms.map(p => {
-    const modules = allModules.filter(m => m.compatibility.includes(p.name as any));
+  return platformList.map(p => {
+    const modules = allModules.filter(m => m.compatibility.includes(p.name));
     return {
       params: { platform: p.id },
       props: { platform: p, modules },
@@ -62,15 +18,10 @@ export async function getStaticPaths() {
 }
 
 export interface Props {
-  platform: {
-    id: string;
-    name: string;
-    title: string;
-    description: string;
-    details: string;
-  };
+  platform: PlatformInfo;
   modules: ModuleData[];
 }
+
 
 const { platform, modules } = Astro.props;
 
