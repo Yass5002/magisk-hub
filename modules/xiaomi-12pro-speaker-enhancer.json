@@ -1,0 +1,31 @@
+{
+  "id": "xiaomi-12pro-speaker-enhancer",
+  "name": "Xiaomi 12 Pro Speaker & ADSP Audio Booster",
+  "repo": null,
+  "author": "Huber_HaYu",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Comprehensive speaker, ADSP mixer paths, and Dolby Atmos audio enhancement package tailored for Xiaomi 12 Pro (Snapdragon 8 Gen 1) and compatible Waipio platforms.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/xiaomi-12pro-speaker-enhancer.png",
+  "stars": 2260,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v6.0.5-X12Pro",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=153",
+    "assetName": "xiaomi-12pro-speaker-enhancer-v6.0.5.zip"
+  },
+  "seo": {
+    "title": "Xiaomi 12 Pro Speaker Booster & Dolby ADSP Mod for Magisk",
+    "description": "Unlock quadruple-unit stereo speakers, enhanced ADSP audio mixers, spatial audio level 7, and tuned Dolby Atmos on Xiaomi 12 Pro."
+  }
+}

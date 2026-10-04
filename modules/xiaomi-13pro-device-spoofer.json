@@ -1,0 +1,31 @@
+{
+  "id": "xiaomi-13pro-device-spoofer",
+  "name": "Xiaomi 13 Pro Device Identity Spoofer",
+  "repo": null,
+  "author": "Da Feng Mei Le Yun Bu Fei (大风没了云不飞)",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Systemless device identity spoofer masquerading device properties as Xiaomi 13 Pro (2210132C) to unlock 120 FPS high refresh rates and flagship gaming profiles.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/xiaomi-13pro-device-spoofer.png",
+  "stars": 955,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=156",
+    "assetName": "xiaomi-13pro-device-spoofer-v1.0.zip"
+  },
+  "seo": {
+    "title": "Xiaomi 13 Pro Device Spoofer for Magisk & KernelSU",
+    "description": "Spoof system fingerprint to Xiaomi 13 Pro (2210132C). Unlock 120Hz/90Hz graphics in PUBG Mobile, Genshin Impact, and Honor of Kings."
+  }
+}

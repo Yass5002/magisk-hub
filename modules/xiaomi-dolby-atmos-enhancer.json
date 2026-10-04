@@ -1,0 +1,31 @@
+{
+  "id": "xiaomi-dolby-atmos-enhancer",
+  "name": "Dolby Atmos Xiaomi Tuning & Pad 6 Max Surround",
+  "repo": null,
+  "author": "xiaoran777",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Dolby Atmos acoustic enhancement delivering punchy low frequencies, smooth high frequencies, user-tunable Bluetooth equalizer, and Xiaomi Pad 6 Max spatial surround sound.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/xiaomi-dolby-atmos-enhancer.png",
+  "stars": 736,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "bate7",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=171",
+    "assetName": "xiaomi-dolby-atmos-enhancer-bate7.zip"
+  },
+  "seo": {
+    "title": "Xiaomi Dolby Atmos Audio Enhancer & Pad 6 Max Surround Sound",
+    "description": "Enhance Dolby Atmos tuning with deep bass, non-fatiguing treble, Bluetooth EQ calibration, and Xiaomi Pad 6 Max spatial surround acoustics."
+  }
+}

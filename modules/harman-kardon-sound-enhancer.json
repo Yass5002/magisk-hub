@@ -1,0 +1,31 @@
+{
+  "id": "harman-kardon-sound-enhancer",
+  "name": "Harman Kardon Sound Enhancement & Dolby Driver",
+  "repo": null,
+  "author": "xiaoran777",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Systemless extraction of authentic Xiaomi 10S Harman Kardon audio HAL drivers, custom tuned Dolby Atmos profiles, and MiSound DSP enhancements.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/harman-kardon-sound-enhancer.png",
+  "stars": 5921,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "bate1",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=139",
+    "assetName": "harman-kardon-sound-enhancer-bate1.zip"
+  },
+  "seo": {
+    "title": "Harman Kardon Audio Drivers & Dolby Port for Magisk & KernelSU",
+    "description": "Port authentic Xiaomi 10S Harman Kardon acoustic drivers, low-frequency resonance tuning, and custom Dolby Atmos equalizer to Snapdragon devices."
+  }
+}

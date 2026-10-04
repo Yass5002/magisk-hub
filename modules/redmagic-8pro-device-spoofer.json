@@ -1,0 +1,31 @@
+{
+  "id": "redmagic-8pro-device-spoofer",
+  "name": "Nubia RedMagic 8 Pro Device Identity Spoofer",
+  "repo": null,
+  "author": "Da Feng Qi Xi Yun Fei Yang (大风起兮云飞扬)",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Systemless device identity spoofer masquerading device properties as Nubia RedMagic 8 Pro (NX729J) to unlock gaming high refresh rates up to 165Hz and extreme gaming profiles.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/redmagic-8pro-device-spoofer.png",
+  "stars": 616,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=180",
+    "assetName": "redmagic-8pro-device-spoofer-v1.zip"
+  },
+  "seo": {
+    "title": "Nubia RedMagic 8 Pro Gaming Device Spoofer for Magisk",
+    "description": "Spoof system fingerprint to Nubia RedMagic 8 Pro (NX729J) to unlock 120Hz/165Hz ultra-high frame rate modes and dedicated gaming features."
+  }
+}

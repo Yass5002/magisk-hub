@@ -1,0 +1,29 @@
+{
+  "id": "qishui-music-svip-unlocker",
+  "name": "Soda Music SVIP & AdBlock (me.bingyue.fuckqishui)",
+  "repo": "Xposed-Modules-Repo/me.bingyue.fuckqishui",
+  "author": "bingqiu456",
+  "sourceType": "github",
+  "sourceUrl": "https://github.com/Xposed-Modules-Repo/me.bingyue.fuckqishui",
+  "category": "xposed-runtime-hooks",
+  "softwareType": "xposed-module",
+  "description": "LSPosed Xposed module for Soda Music (汽水音乐 / Luna Music) that unlocks SVIP privileges, removes in-app advertisements, and enables lossless audio streaming.",
+  "compatibility": [
+    "LSPosed"
+  ],
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/icons/qishui-music-svip-unlocker.png",
+  "stars": 575,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "3-3.0",
+    "publishedAt": "2025-07-14T06:06:32Z",
+    "url": "https://github.com/Xposed-Modules-Repo/me.bingyue.fuckqishui/releases/tag/3-3.0",
+    "downloadUrl": "https://github.com/Xposed-Modules-Repo/me.bingyue.fuckqishui/releases/download/3-3.0/_3.0.apk",
+    "assetName": "_3.0.apk"
+  },
+  "seo": {
+    "title": "Soda Music SVIP Unlocker & AdBlock LSPosed Module",
+    "description": "Unlock Soda Music (汽水音乐 / Luna Music) SVIP privileges, remove splash/banner advertisements, and enable high-bitrate playback via LSPosed."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "thermal-controller-bypass",
+  "name": "Thermal Controller Disabler (温控拜拜)",
+  "repo": null,
+  "author": "Xiao Bai Yang / AiWanJi (小白杨(爱玩机))",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Systemless thermal management remover created by AiWanJi ToolBox to bypass thermal throttling, eliminate thermal limit configuration files, and prevent aggressive CPU/GPU downclocking.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/thermal-controller-bypass.png",
+  "stars": 686,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "183.72",
+    "publishedAt": "2025-04-04T08:18:04Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=174",
+    "assetName": "thermal-controller-bypass-183.72.zip"
+  },
+  "seo": {
+    "title": "Thermal Controller Disabler (温控拜拜) for Magisk & KernelSU",
+    "description": "Bypass aggressive Android thermal throttling and prevent screen dimming, CPU downclocking, and frame drops during heavy gaming."
+  }
+}
