@@ -1,0 +1,29 @@
+{
+  "id": "app-manager",
+  "name": "App Manager",
+  "repo": "MuntashirAkon/AppManager",
+  "category": "development-instrumentation",
+  "softwareType": "standalone-app",
+  "description": "Fully featured open-source Android package manager, tracker blocker, component controller, AppOps manager, and backup utility with root and Shizuku support.",
+  "compatibility": [
+    "Shizuku",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/icons/app-manager.png",
+  "stars": 9121,
+  "latestRelease": {
+    "tag": "v4.1.1",
+    "publishedAt": "2026-09-04T11:52:33Z",
+    "url": "https://github.com/MuntashirAkon/AppManager/releases/tag/v4.1.1",
+    "downloadUrl": "https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk",
+    "assetName": "AppManager_v4.1.1.apk"
+  },
+  "seo": {
+    "title": "App Manager – Download | Magisk Hub",
+    "description": "Download App Manager for Android. Comprehensive package inspector, component blocker, AppOps manager, and backup engine with root & Shizuku."
+  },
+  "contentTier": 1
+}

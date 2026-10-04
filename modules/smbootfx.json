@@ -21,5 +21,6 @@
     "title": "SMbootFX – Download (Magisk) | Magisk Hub",
     "description": "Download SMbootFX for Magisk. Custom boot and shutdown animations for Samsung Galaxy devices via distinct Magisk modules."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

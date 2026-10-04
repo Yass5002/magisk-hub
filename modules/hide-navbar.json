@@ -21,5 +21,6 @@
     "title": "Hide-Navbar – Download (Magisk) | Magisk Hub",
     "description": "Download Hide-Navbar for Magisk. Hide Navbar."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

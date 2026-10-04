@@ -21,5 +21,6 @@
     "title": "zerotier-magisk – Download (Magisk) | Magisk Hub",
     "description": "Download zerotier-magisk for Magisk. ZeroTier for magisk ✅ App controller ✅."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

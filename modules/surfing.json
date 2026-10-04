@@ -22,5 +22,6 @@
     "title": "Surfing – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Surfing for Magisk and KernelSU. Magisk and KernelSU modules for Clash/mihomo services."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

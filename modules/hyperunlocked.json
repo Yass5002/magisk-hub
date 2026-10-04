@@ -21,5 +21,6 @@
     "title": "HyperUnlocked – Download (Magisk) | Magisk Hub",
     "description": "Download HyperUnlocked for Magisk. A Magisk/KernelSU/APatch module to unlock high-end features on all Xiaomi devices."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

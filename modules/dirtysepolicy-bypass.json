@@ -23,5 +23,6 @@
     "title": "DirtySepolicy_Bypass – Download | Magisk Hub",
     "description": "Download DirtySepolicy_Bypass for Magisk, KernelSU, and APatch. bypass new DirtySepolicy on rooted Android devices to keep apps working."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

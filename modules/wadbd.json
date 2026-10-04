@@ -21,5 +21,6 @@
     "title": "wadbd – Download (Magisk) | Magisk Hub",
     "description": "Download wadbd for Magisk. Allows you to enable or disable wireless ADB for the current session or at boot."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

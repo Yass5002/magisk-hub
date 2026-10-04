@@ -21,5 +21,6 @@
     "title": "Magisk-Minecraft-Font – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk-Minecraft-Font for Magisk. A Magisk Module that changes your default font to the Minecraft font."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

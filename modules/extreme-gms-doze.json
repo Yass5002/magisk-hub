@@ -21,5 +21,6 @@
     "title": "Extreme-Gms-Doze – Download (Magisk) | Magisk Hub",
     "description": "Download Extreme-Gms-Doze for Magisk. A Magisk Module for Kill gms on screen off."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

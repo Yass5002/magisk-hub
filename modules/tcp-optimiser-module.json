@@ -22,5 +22,6 @@
     "title": "TCP_Optimiser_Module – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download TCP_Optimiser_Module for Magisk and KernelSU. A Magisk/KernelSU module to change tcp congestion algorithm based on current..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

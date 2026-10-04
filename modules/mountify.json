@@ -23,5 +23,6 @@
     "title": "mountify – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download mountify for Magisk, KernelSU, and APatch. Globally mounted modules via OverlayFS."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

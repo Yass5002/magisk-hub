@@ -22,5 +22,6 @@
     "title": "ih8SecureLock – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download ih8SecureLock for Magisk and KernelSU. Prevent apps from blocking and listening to your screenshots with Zygisk."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

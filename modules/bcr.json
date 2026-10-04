@@ -22,5 +22,6 @@
     "title": "BCR – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BCR for Magisk and KernelSU. A Basic Call Recorder for rooted Android devices."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

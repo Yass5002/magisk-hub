@@ -22,5 +22,6 @@
     "title": "Sortify – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Sortify for Magisk and KernelSU. ✨Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

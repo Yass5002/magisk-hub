@@ -10,6 +10,7 @@
     "name",
     "repo",
     "category",
+    "softwareType",
     "description",
     "compatibility",
     "license",
@@ -48,9 +49,24 @@
         "development-instrumentation",
         "system-utilities",
         "networking-proxies",
-        "security-certificates"
+        "security-certificates",
+        "xposed-runtime-hooks",
+        "audio-dsp-acoustics",
+        "system-typography-fonts",
+        "battery-power-charging",
+        "boot-animations-ui"
       ],
       "description": "Locked ecosystem category"
+    },
+    "softwareType": {
+      "type": "string",
+      "enum": [
+        "flashable-module",
+        "xposed-module",
+        "standalone-app",
+        "kernel-module"
+      ],
+      "description": "Architectural classification of the deliverable package"
     },
     "compatibility": {
       "type": "array",
@@ -61,10 +77,13 @@
         "enum": [
           "Magisk",
           "KernelSU",
-          "APatch"
+          "APatch",
+          "LSPosed",
+          "Shizuku",
+          "Rootless"
         ]
       },
-      "description": "List of supported root solutions"
+      "description": "List of supported root solutions and privilege providers"
     },
     "license": {
       "type": "string",

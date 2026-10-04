@@ -22,5 +22,6 @@
     "title": "HyperOS-App-Vault – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-App-Vault for Magisk and KernelSU. Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

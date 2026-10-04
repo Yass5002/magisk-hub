@@ -22,5 +22,6 @@
     "title": "HyperOS-AOD – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-AOD for Magisk and KernelSU. Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

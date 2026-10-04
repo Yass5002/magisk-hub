@@ -21,5 +21,6 @@
     "title": "UnicodeFontSet-magisk-module – Download | Magisk Hub",
     "description": "Download UnicodeFontSet-magisk-module for Magisk. A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

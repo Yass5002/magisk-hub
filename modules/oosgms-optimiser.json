@@ -22,5 +22,6 @@
     "title": "OOSGMS-OPTIMISER – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download OOSGMS-OPTIMISER for Magisk and KernelSU. Magisk module to optimise and remove trackers for GMS and OOS."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

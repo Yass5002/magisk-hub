@@ -22,5 +22,6 @@
     "title": "KernelEnhancer – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download KernelEnhancer for Magisk and KernelSU. Stable Magisk modules for performance and efficient battery usage on rooted Android..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

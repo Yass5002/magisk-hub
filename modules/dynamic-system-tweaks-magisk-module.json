@@ -21,5 +21,6 @@
     "title": "Dynamic-System-Tweaks-Magisk-Module – Download | Magisk Hub",
     "description": "Download Dynamic-System-Tweaks-Magisk-Module for Magisk. Dynamic-System-Tweaks-Magisk-Module active root module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

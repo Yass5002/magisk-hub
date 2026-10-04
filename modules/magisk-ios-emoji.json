@@ -21,5 +21,6 @@
     "title": "Magisk-iOS-Emoji – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk-iOS-Emoji for Magisk. Systemlessly replaces emoji font with iOS Emoji."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

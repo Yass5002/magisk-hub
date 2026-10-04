@@ -22,5 +22,6 @@
     "title": "susfs4ksu-module – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download susfs4ksu-module for Magisk and KernelSU. An addon root hiding service for KernelSU."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

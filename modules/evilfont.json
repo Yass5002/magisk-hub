@@ -22,5 +22,6 @@
     "title": "EvilFont – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download EvilFont for Magisk and KernelSU. A systemless module to change default Arabic/Persian font + Apple emojis."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

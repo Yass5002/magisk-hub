@@ -28,6 +28,27 @@ export async function getStaticPaths() {
       title: 'APatch Modules',
       description: 'Root modules verified for APatch (KernelPatch).',
       details: 'APatch modifies the Android kernel in-place using KernelPatch.'
+    },
+    {
+      id: 'lsposed',
+      name: 'LSPosed',
+      title: 'LSPosed & Xposed Modules',
+      description: 'Runtime ART method hooking modules for the LSPosed framework.',
+      details: 'LSPosed provides ART runtime hooking with per-app scope management on modern Android.'
+    },
+    {
+      id: 'shizuku',
+      name: 'Shizuku',
+      title: 'Shizuku Privileged Apps',
+      description: 'Applications leveraging Shizuku privileged system API binder tokens.',
+      details: 'Shizuku shares system service binder tokens with third-party applications without giving full root access.'
+    },
+    {
+      id: 'rootless',
+      name: 'Rootless',
+      title: 'Rootless & Device Owner Utilities',
+      description: 'Powerful Android system utilities operational via Wireless ADB or Device Owner without root.',
+      details: 'Rootless utilities run via ADB wireless debugging, Shizuku, or Device Policy Manager without unlocking bootloaders.'
     }
   ];
 

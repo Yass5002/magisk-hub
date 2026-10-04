@@ -22,5 +22,6 @@
     "title": "BRENE – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BRENE for Magisk and KernelSU. A SuSFS/KernelSU module for SuSFS patched kernels."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

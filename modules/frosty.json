@@ -22,5 +22,6 @@
     "title": "Frosty – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Frosty for Magisk and KernelSU. Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

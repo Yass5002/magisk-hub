@@ -21,5 +21,6 @@
     "title": "DeepSuppressor – Download (Magisk) | Magisk Hub",
     "description": "Download DeepSuppressor for Magisk. A Magisk Module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

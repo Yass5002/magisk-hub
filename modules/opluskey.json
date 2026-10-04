@@ -21,5 +21,6 @@
     "title": "OplusKey – Download (Magisk) | Magisk Hub",
     "description": "Download OplusKey for Magisk. OplusKey active root module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

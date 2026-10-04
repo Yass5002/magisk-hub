@@ -22,5 +22,6 @@
     "title": "Lite-Blur-Control-Center-for-HyperOS – Download | Magisk Hub",
     "description": "Download Lite-Blur-Control-Center-for-HyperOS for Magisk and KernelSU. Control Center Blur for MIUI & HyperOS but LIGHTER is a..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

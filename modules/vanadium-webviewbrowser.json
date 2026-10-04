@@ -22,5 +22,6 @@
     "title": "Vanadium-WebViewBrowser – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Vanadium-WebViewBrowser for Magisk and KernelSU. A Magisk/KernelSU module that changes the system WebView with Vanadium WebView..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

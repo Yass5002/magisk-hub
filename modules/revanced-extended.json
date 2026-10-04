@@ -22,5 +22,6 @@
     "title": "revanced-extended – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download revanced-extended for Magisk and KernelSU. ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

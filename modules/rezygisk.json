@@ -23,5 +23,6 @@
     "title": "ReZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download ReZygisk for Magisk, KernelSU, and APatch. Transparent implementation of Zygisk."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

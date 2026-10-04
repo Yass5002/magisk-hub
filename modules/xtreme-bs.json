@@ -22,5 +22,6 @@
     "title": "Xtreme Battery Saver – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Xtreme Battery Saver for Magisk and KernelSU. An extreme battery saver Magisk Module for users who want to really stretch their..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

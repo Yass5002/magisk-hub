@@ -21,5 +21,6 @@
     "title": "KnoxPatch – Download (Magisk) | Magisk Hub",
     "description": "Download KnoxPatch for Magisk. LSPosed module to get Samsung apps/features working again in your rooted Galaxy device."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

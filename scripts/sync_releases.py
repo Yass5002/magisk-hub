@@ -46,6 +46,16 @@ CAT_MAP = {
     'security': 'security-certificates',
     'security-certificates': 'security-certificates',
     'privacy': 'security-certificates',
+    'xposed-runtime-hooks': 'xposed-runtime-hooks',
+    'xposed': 'xposed-runtime-hooks',
+    'audio-dsp-acoustics': 'audio-dsp-acoustics',
+    'audio': 'audio-dsp-acoustics',
+    'system-typography-fonts': 'system-typography-fonts',
+    'fonts': 'system-typography-fonts',
+    'battery-power-charging': 'battery-power-charging',
+    'battery': 'battery-power-charging',
+    'boot-animations-ui': 'boot-animations-ui',
+    'boot-animation': 'boot-animations-ui',
 }
 
 # Verified icon path mapping within module repositories
@@ -114,16 +124,26 @@ def make_slug(raw_id, repo_name):
 
 
 def format_platforms_sentence(compat):
+    if not compat:
+        return "Android"
     if len(compat) == 1:
         return compat[0]
     elif len(compat) == 2:
         return f"{compat[0]} and {compat[1]}"
     else:
-        return f"{compat[0]}, {compat[1]}, and {compat[2]}"
+        return f"{', '.join(compat[:-1])}, and {compat[-1]}"
 
 
 def format_platforms_short(compat):
-    short = ["KSU" if p == "KernelSU" else p for p in compat]
+    short_map = {
+        "KernelSU": "KSU",
+        "Magisk": "Magisk",
+        "APatch": "APatch",
+        "LSPosed": "LSPosed",
+        "Shizuku": "Shizuku",
+        "Rootless": "Rootless"
+    }
+    short = [short_map.get(p, p) for p in compat]
     return "/".join(short)
 
 
@@ -374,6 +394,7 @@ def main():
         repo = c["repo"]
         raw_id = c["id"]
         repo_name = repo.split('/')[1]
+        sw_type = c.get("softwareType", "flashable-module")
         slug = c.get("id") or make_slug(raw_id, repo_name)
         category = c.get("category") or CAT_MAP.get(c.get("category", "system-utilities"), "system-utilities")
         compat = c.get("compatibility", ["Magisk"])
@@ -402,13 +423,20 @@ def main():
 
         assets = latest_rel.get("releaseAssets", {}).get("nodes", [])
 
-        # Check target asset: apk for Magisk app, zip for modules
-        if slug == "magisk" or c.get("type") == "root_manager":
-            valid_assets = [a for a in assets if a["name"].startswith("Magisk-v") and a["name"].endswith(".apk")]
+        # Check target asset based on softwareType
+        if sw_type in ("xposed-module", "standalone-app"):
+            valid_assets = [a for a in assets if a["name"].endswith(".apk") and not any(x in a["name"].lower() for x in ["source", "debug", "unaligned"])]
             if not valid_assets:
                 valid_assets = [a for a in assets if a["name"].endswith(".apk")]
+        elif sw_type == "kernel-module":
+            valid_assets = [a for a in assets if a["name"].endswith((".ko", ".kpm", ".zip", ".tar.gz"))]
         else:
-            valid_assets = [a for a in assets if a["name"].endswith(".zip")]
+            if slug == "magisk" or c.get("type") == "root_manager":
+                valid_assets = [a for a in assets if a["name"].startswith("Magisk-v") and a["name"].endswith(".apk")]
+                if not valid_assets:
+                    valid_assets = [a for a in assets if a["name"].endswith(".apk")]
+            else:
+                valid_assets = [a for a in assets if a["name"].endswith(".zip")]
 
         if not valid_assets:
             pruned_modules.append({"repo": repo, "slug": slug, "reason": f"Release {latest_rel['tagName']} lacks downloadable asset"})
@@ -436,6 +464,7 @@ def main():
             "c": c,
             "info": info,
             "slug": slug,
+            "sw_type": sw_type,
             "category": category,
             "compat": compat,
             "chosen_asset": chosen_asset,
@@ -482,6 +511,7 @@ def main():
             "name": c["name"],
             "repo": repo,
             "category": cand["category"],
+            "softwareType": cand["sw_type"],
             "description": cand["desc"],
             "compatibility": cand["compat"],
             "license": cand["spdx"],

@@ -1,0 +1,26 @@
+{
+  "id": "bootloader-spoofer",
+  "name": "Bootloader Spoofer",
+  "repo": "Xposed-Modules-Repo/es.chiteroman.bootloaderspoofer",
+  "category": "xposed-runtime-hooks",
+  "softwareType": "xposed-module",
+  "description": "Xposed module by chiteroman that modifies Android KeyStore certificate extensions in process memory to spoof a locked bootloader state for apps performing local attestation.",
+  "compatibility": [
+    "LSPosed"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/bootloader-spoofer.png",
+  "stars": 74,
+  "latestRelease": {
+    "tag": "38-3.8",
+    "publishedAt": "2024-01-02T21:00:55Z",
+    "url": "https://github.com/Xposed-Modules-Repo/es.chiteroman.bootloaderspoofer/releases/tag/38-3.8",
+    "downloadUrl": "https://github.com/Xposed-Modules-Repo/es.chiteroman.bootloaderspoofer/releases/download/38-3.8/app-release.apk",
+    "assetName": "app-release.apk"
+  },
+  "seo": {
+    "title": "Bootloader Spoofer – Download (LSPosed) | Magisk Hub",
+    "description": "Download Bootloader Spoofer for LSPosed. Spoof locked bootloader status for banking and enterprise apps using local KeyStore certificate extension hooks."
+  },
+  "contentTier": 1
+}

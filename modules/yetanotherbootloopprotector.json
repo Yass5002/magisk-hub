@@ -21,5 +21,6 @@
     "title": "YetAnotherBootloopProtector – Download (Magisk) | Magisk Hub",
     "description": "Download YetAnotherBootloopProtector for Magisk. A Magisk Module to monitor and fix potential Bootloops and SystemUI failures."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

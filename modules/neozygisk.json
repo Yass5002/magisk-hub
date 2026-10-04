@@ -23,5 +23,6 @@
     "title": "NeoZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download NeoZygisk for Magisk, KernelSU, and APatch. Zygote injection with ptrace."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

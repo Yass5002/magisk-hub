@@ -22,5 +22,6 @@
     "title": "specter – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download specter for Magisk and KernelSU. Unified Play Integrity and root hiding stack for Android."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

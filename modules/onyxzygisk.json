@@ -23,5 +23,6 @@
     "title": "OnyxZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download OnyxZygisk for Magisk, KernelSU, and APatch. Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

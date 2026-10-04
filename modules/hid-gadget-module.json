@@ -21,5 +21,6 @@
     "title": "hid-gadget-module – Download (Magisk) | Magisk Hub",
     "description": "Download hid-gadget-module for Magisk. A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

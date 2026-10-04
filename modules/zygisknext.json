@@ -23,5 +23,6 @@
     "title": "ZygiskNext – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download ZygiskNext for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

@@ -1,0 +1,29 @@
+{
+  "id": "material-files",
+  "name": "Material Files",
+  "repo": "zhanghai/MaterialFiles",
+  "category": "system-utilities",
+  "softwareType": "standalone-app",
+  "description": "Open-source Material Design file manager for Android with native Linux syscalls, root access, Shizuku support, and archive management.",
+  "compatibility": [
+    "Shizuku",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/material-files.png",
+  "stars": 9136,
+  "latestRelease": {
+    "tag": "v1.7.5",
+    "publishedAt": "2026-09-20T06:28:21Z",
+    "url": "https://github.com/zhanghai/MaterialFiles/releases/tag/v1.7.5",
+    "downloadUrl": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk",
+    "assetName": "app-release-universal.apk"
+  },
+  "seo": {
+    "title": "Material Files – Download | Magisk Hub",
+    "description": "Download Material Files for Android. FOSS Material Design file manager with root access, Shizuku support, Linux permissions, and SMB/FTP."
+  },
+  "contentTier": 1
+}

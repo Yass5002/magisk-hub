@@ -22,5 +22,6 @@
     "title": "Sui – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Sui for Magisk and KernelSU. Modern super user interface implementation on Android."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

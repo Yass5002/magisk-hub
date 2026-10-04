@@ -22,5 +22,6 @@
     "title": "hyperos-accessibility-fix – Download | Magisk Hub",
     "description": "Download hyperos-accessibility-fix for Magisk and KernelSU. Stop HyperOS from randomly disabling accessibillity services."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

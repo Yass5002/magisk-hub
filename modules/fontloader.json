@@ -21,5 +21,6 @@
     "title": "FontLoader – Download (Magisk) | Magisk Hub",
     "description": "Download FontLoader for Magisk. FontLoader active root module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

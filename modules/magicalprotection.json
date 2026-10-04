@@ -21,5 +21,6 @@
     "title": "MagicalProtection – Download (Magisk) | Magisk Hub",
     "description": "Download MagicalProtection for Magisk. Magisk-only completely systemless adblocking."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

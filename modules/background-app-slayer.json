@@ -21,5 +21,6 @@
     "title": "Background-App-Slayer – Download (Magisk) | Magisk Hub",
     "description": "Download Background-App-Slayer for Magisk. Module Magisk/KSU automatic Killing Background apps for BETTER GAMING PERFORMANCE !!."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

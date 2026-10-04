@@ -14,13 +14,17 @@ export interface ModuleSEO {
   description: string;
 }
 
+export type SoftwareType = 'flashable-module' | 'xposed-module' | 'standalone-app' | 'kernel-module';
+export type PlatformCompatibility = 'Magisk' | 'KernelSU' | 'APatch' | 'LSPosed' | 'Shizuku' | 'Rootless';
+
 export interface ModuleData {
   id: string;
   name: string;
   repo: string;
   category: string;
+  softwareType: SoftwareType;
   description: string;
-  compatibility: ('Magisk' | 'KernelSU' | 'APatch')[];
+  compatibility: PlatformCompatibility[];
   license: string;
   icon: string | null;
   stars: number;
@@ -86,6 +90,43 @@ export const CATEGORIES: Record<string, CategoryInfo> = {
     description: 'CA certificate trust injectors, device identifier spoofing, and privacy guards.',
     icon: 'Lock',
   },
+  'xposed-runtime-hooks': {
+    id: 'xposed-runtime-hooks',
+    name: 'Xposed & Runtime Hooks',
+    description: 'ART method hooks, signature verification bypasses, and runtime memory modifiers.',
+    icon: 'Cpu',
+  },
+  'audio-dsp-acoustics': {
+    id: 'audio-dsp-acoustics',
+    name: 'Audio DSP & Acoustics',
+    description: 'System-wide equalizers, sound drivers, mixer path modifiers, and Dolby Atmos ports.',
+    icon: 'Volume2',
+  },
+  'system-typography-fonts': {
+    id: 'system-typography-fonts',
+    name: 'System Typography & Fonts',
+    description: 'Systemless font replacements, CJK font extensions, emoji replacements, and glyph engines.',
+    icon: 'Type',
+  },
+  'battery-power-charging': {
+    id: 'battery-power-charging',
+    name: 'Battery & Power Management',
+    description: 'Advanced charging switches, battery idle mode controls, thermal throttles, and power monitors.',
+    icon: 'BatteryCharging',
+  },
+  'boot-animations-ui': {
+    id: 'boot-animations-ui',
+    name: 'Boot Animations & Splash',
+    description: 'Custom boot sequences, Google Pixel boot animations, and boot splash screen replacements.',
+    icon: 'PlaySquare',
+  },
+};
+
+export const SOFTWARE_TYPE_CONFIG: Record<SoftwareType, { label: string; badgeColor: string; installVerb: string }> = {
+  'flashable-module': { label: 'Flashable Module', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200', installVerb: 'Flash in Root Manager' },
+  'xposed-module': { label: 'Xposed Module', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200', installVerb: 'Install APK & Enable in LSPosed' },
+  'standalone-app': { label: 'Privileged App', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200', installVerb: 'Install APK & Authorize' },
+  'kernel-module': { label: 'Kernel Object', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200', installVerb: 'Load Kernel Module' },
 };
 
 let cachedModules: ModuleData[] | null = null;
@@ -174,15 +215,23 @@ export function getStats() {
   };
 }
 
-export function formatPlatformsShort(compatibility: ('Magisk' | 'KernelSU' | 'APatch')[]): string {
-  const shortMap: Record<string, string> = { Magisk: 'Magisk', KernelSU: 'KSU', APatch: 'APatch' };
+export function formatPlatformsShort(compatibility: PlatformCompatibility[]): string {
+  const shortMap: Record<PlatformCompatibility, string> = {
+    Magisk: 'Magisk',
+    KernelSU: 'KSU',
+    APatch: 'APatch',
+    LSPosed: 'LSPosed',
+    Shizuku: 'Shizuku',
+    Rootless: 'Rootless'
+  };
   return compatibility.map(p => shortMap[p] || p).join('/');
 }
 
-export function formatPlatformsSentence(compatibility: ('Magisk' | 'KernelSU' | 'APatch')[]): string {
+export function formatPlatformsSentence(compatibility: PlatformCompatibility[]): string {
+  if (!compatibility || compatibility.length === 0) return 'Android';
   if (compatibility.length === 1) return compatibility[0];
   if (compatibility.length === 2) return `${compatibility[0]} and ${compatibility[1]}`;
-  return `${compatibility[0]}, ${compatibility[1]}, and ${compatibility[2]}`;
+  return `${compatibility.slice(0, -1).join(', ')}, and ${compatibility[compatibility.length - 1]}`;
 }
 
 export function generateModuleSEO(module: ModuleData): { title: string; description: string } {

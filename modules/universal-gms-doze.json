@@ -23,5 +23,6 @@
     "title": "universal-gms-doze – Download | Magisk Hub",
     "description": "Download universal-gms-doze for Magisk, KernelSU, and APatch. Patches Google Play services app and certain processes/services to be able..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

@@ -22,5 +22,6 @@
     "title": "Simple-Flag-Secure – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Simple-Flag-Secure for Magisk and KernelSU. 👀 Lightweight root module that disables FLAG_SECURE, enabling screenshots & screen..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

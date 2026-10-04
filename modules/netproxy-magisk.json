@@ -21,5 +21,6 @@
     "title": "NetProxy-Magisk – Download (Magisk) | Magisk Hub",
     "description": "Download NetProxy-Magisk for Magisk. Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

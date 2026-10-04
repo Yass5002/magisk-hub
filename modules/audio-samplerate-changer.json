@@ -21,5 +21,6 @@
     "title": "audio-samplerate-changer – Download (Magisk) | Magisk Hub",
     "description": "Download audio-samplerate-changer for Magisk. A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

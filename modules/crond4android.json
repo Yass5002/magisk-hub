@@ -22,5 +22,6 @@
     "title": "crond4android – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download crond4android for Magisk and KernelSU. 支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

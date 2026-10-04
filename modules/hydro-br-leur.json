@@ -21,5 +21,6 @@
     "title": "Hydro-Br-leur – Download (Magisk) | Magisk Hub",
     "description": "Download Hydro-Br-leur for Magisk. A magisk module for Android devices."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

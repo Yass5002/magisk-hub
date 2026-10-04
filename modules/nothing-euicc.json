@@ -21,5 +21,6 @@
     "title": "nothing-euicc – Download (Magisk) | Magisk Hub",
     "description": "Download nothing-euicc for Magisk. Nothing EUICC Force Enabler Magisk Module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

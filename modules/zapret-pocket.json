@@ -21,5 +21,6 @@
     "title": "zapret-pocket – Download (Magisk) | Magisk Hub",
     "description": "Download zapret-pocket for Magisk. ⚡ Bypass censorship via zapret on rooted Android devices."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

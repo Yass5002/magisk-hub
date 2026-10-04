@@ -23,5 +23,6 @@
     "title": "Shamiko – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Shamiko for Magisk, KernelSU, and APatch. Zygisk-based root hiding module by LSPosed developers to conceal root, zygisk, and..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

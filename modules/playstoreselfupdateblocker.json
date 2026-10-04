@@ -23,5 +23,6 @@
     "title": "PlayStoreSelfUpdateBlocker – Download | Magisk Hub",
     "description": "Download PlayStoreSelfUpdateBlocker for Magisk, KernelSU, and APatch. Blocks Google Play Store self-updates on rooted Android devices...."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

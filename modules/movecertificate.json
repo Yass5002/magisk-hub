@@ -22,5 +22,6 @@
     "title": "MoveCertificate – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download MoveCertificate for Magisk and KernelSU. 支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

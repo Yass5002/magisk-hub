@@ -21,5 +21,6 @@
     "title": "GhostGMS – Download (Magisk) | Magisk Hub",
     "description": "Download GhostGMS for Magisk. GhostGMS is a Magisk module designed to disable unnecessary Google Mobile Services (GMS) background..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

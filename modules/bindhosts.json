@@ -22,5 +22,6 @@
     "title": "bindhosts – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download bindhosts for Magisk and KernelSU. Systemless hosts for APatch / KernelSU / Magisk."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

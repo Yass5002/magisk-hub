@@ -23,5 +23,6 @@
     "title": "Stellar-Tweaks – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Stellar-Tweaks for Magisk, KernelSU, and APatch. Intelligent Android performance daemon written in Rust. Fast-paced hybrid..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

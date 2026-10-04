@@ -22,5 +22,6 @@
     "title": "FPS-Limitation-Patcher – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download FPS-Limitation-Patcher for Magisk and KernelSU. Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

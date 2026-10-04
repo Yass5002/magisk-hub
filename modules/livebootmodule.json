@@ -22,5 +22,6 @@
     "title": "livebootmodule – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download livebootmodule for Magisk and KernelSU. A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

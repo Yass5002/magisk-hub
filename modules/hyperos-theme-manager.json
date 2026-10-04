@@ -22,5 +22,6 @@
     "title": "HyperOS-Theme-Manager – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-Theme-Manager for Magisk and KernelSU. Unlocks full theme customization in HyperOS with multi-theme servers, premium..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

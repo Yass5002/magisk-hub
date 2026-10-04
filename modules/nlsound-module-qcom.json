@@ -21,5 +21,6 @@
     "title": "NLSound_module_QCom – Download (Magisk) | Magisk Hub",
     "description": "Download NLSound_module_QCom for Magisk. System-level Android audio enhancement module for Magisk, KernelSU & APatch. Removes DSP..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

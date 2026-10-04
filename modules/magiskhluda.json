@@ -23,5 +23,6 @@
     "title": "MagiskHluda – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download MagiskHluda for Magisk, KernelSU, and APatch. Run a more undetectable frida server on boot using magisk 🔐✅."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

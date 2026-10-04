@@ -22,5 +22,6 @@
     "title": "COPG-VD – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download COPG-VD for Magisk and KernelSU. COPG-VD is a module designed for global device spoofing. This means even system apps and the..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

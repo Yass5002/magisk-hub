@@ -22,5 +22,6 @@
     "title": "yurikey – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download yurikey for Magisk and KernelSU. A systemless module to get strong integrity easily."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

@@ -21,5 +21,6 @@
     "title": "Swap-Disabler – Download (Magisk) | Magisk Hub",
     "description": "Download Swap-Disabler for Magisk. A module designed to disable swap at system startup. Is particularly beneficial for devices equipped..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

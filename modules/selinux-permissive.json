@@ -21,5 +21,6 @@
     "title": "selinux_permissive – Download (Magisk) | Magisk Hub",
     "description": "Download selinux_permissive for Magisk. Magisk Module that switches SELinux to permissive mode."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

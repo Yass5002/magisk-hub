@@ -22,5 +22,6 @@
     "title": "MakeFontsGreatAgain – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download MakeFontsGreatAgain for Magisk and KernelSU. System-wide Font Overrider with Unique GMS Masking & Multi-Range Unicode Filter."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

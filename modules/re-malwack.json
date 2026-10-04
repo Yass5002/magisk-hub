@@ -21,5 +21,6 @@
     "title": "Re-Malwack – Download (Magisk) | Magisk Hub",
     "description": "Download Re-Malwack for Magisk. A fully-fledged adblock root/no-root suite. Contains all your needs ✨."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

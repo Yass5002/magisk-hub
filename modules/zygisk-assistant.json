@@ -21,5 +21,6 @@
     "title": "Zygisk-Assistant – Download (Magisk) | Magisk Hub",
     "description": "Download Zygisk-Assistant for Magisk. A Zygisk module to hide root for KernelSU, Magisk and APatch, designed to work on Android and above."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

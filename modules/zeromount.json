@@ -23,5 +23,6 @@
     "title": "zeromount – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download zeromount for Magisk, KernelSU, and APatch. Mountless module loading for rooted Android. Kernel-level VFS path redirection —..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

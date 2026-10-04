@@ -21,5 +21,6 @@
     "title": "jetbrains-font-magisk-module – Download | Magisk Hub",
     "description": "Download jetbrains-font-magisk-module for Magisk. Make your phone prettier with jetbrains mono and magisk."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

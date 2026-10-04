@@ -21,5 +21,6 @@
     "title": "Fastcharge-next – Download (Magisk) | Magisk Hub",
     "description": "Download Fastcharge-next for Magisk. ⚡ Magisk Module to boost charging speed with smart tweaks."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

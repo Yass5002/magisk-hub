@@ -21,5 +21,6 @@
     "title": "sqlite3-magisk-module – Download (Magisk) | Magisk Hub",
     "description": "Download sqlite3-magisk-module for Magisk. SQLite 3 Magisk Module for Android arm64-v8a, armeabi-v7a, x86 and x86_64."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

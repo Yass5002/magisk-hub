@@ -23,5 +23,6 @@
     "title": "Log-Catcher – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Log-Catcher for Magisk, KernelSU, and APatch. A module to make capturing boot logs easier."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

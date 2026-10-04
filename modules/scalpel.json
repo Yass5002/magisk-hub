@@ -23,5 +23,6 @@
     "title": "Scalpel – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Scalpel for Magisk, KernelSU, and APatch. Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

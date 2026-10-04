@@ -23,5 +23,6 @@
     "title": "RotationSuggestionsToggle – Download | Magisk Hub",
     "description": "Download RotationSuggestionsToggle for Magisk, KernelSU, and APatch. A Magisk module to toggle the showing of rotation suggestions..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

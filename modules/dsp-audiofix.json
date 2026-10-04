@@ -22,5 +22,6 @@
     "title": "DSP-AudioFix – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download DSP-AudioFix for Magisk and KernelSU. DSP-AudioFix active root module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

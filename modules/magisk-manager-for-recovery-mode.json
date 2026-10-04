@@ -21,5 +21,6 @@
     "title": "Magisk-Manager-for-Recovery-Mode – Download | Magisk Hub",
     "description": "Download Magisk-Manager-for-Recovery-Mode for Magisk. Updated version of VR25's Magisk Manager for Recovery mode. Works with Magisk..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

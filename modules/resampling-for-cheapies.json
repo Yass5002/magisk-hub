@@ -21,5 +21,6 @@
     "title": "resampling-for-cheapies – Download (Magisk) | Magisk Hub",
     "description": "Download resampling-for-cheapies for Magisk. For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

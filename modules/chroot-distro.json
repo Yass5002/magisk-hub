@@ -21,5 +21,6 @@
     "title": "chroot-distro – Download (Magisk) | Magisk Hub",
     "description": "Download chroot-distro for Magisk. Install Gnu/Linux distributions on Android."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

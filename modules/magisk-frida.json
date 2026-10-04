@@ -22,5 +22,6 @@
     "title": "magisk-frida – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download magisk-frida for Magisk and KernelSU. 🔐 Run frida-server on boot with Magisk, always up-to-date."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

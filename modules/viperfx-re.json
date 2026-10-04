@@ -22,5 +22,6 @@
     "title": "ViPERFX_RE – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download ViPERFX_RE for Magisk and KernelSU. Reverse Engineering of ViPER4Android FX."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

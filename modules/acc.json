@@ -1,0 +1,28 @@
+{
+  "id": "acc",
+  "name": "Advanced Charging Controller",
+  "repo": "VR-25/acc",
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Low-level charging control daemon for Android that limits charging voltage, current, and capacity to extend lithium-ion battery longevity.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/acc.png",
+  "stars": 2416,
+  "latestRelease": {
+    "tag": "v2023.10.16",
+    "publishedAt": "2023-10-16T19:46:11Z",
+    "url": "https://github.com/VR-25/acc/releases/tag/v2023.10.16",
+    "downloadUrl": "https://github.com/VR-25/acc/releases/download/v2023.10.16/acc_v2023.10.16_202310160.zip",
+    "assetName": "acc_v2023.10.16_202310160.zip"
+  },
+  "seo": {
+    "title": "Advanced Charging Controller – Download | Magisk Hub",
+    "description": "Download Advanced Charging Controller (ACC) for Magisk, KernelSU, and APatch. Limit battery charging capacity, voltage, and prolong battery life."
+  },
+  "contentTier": 1
+}

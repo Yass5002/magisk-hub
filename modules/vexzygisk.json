@@ -23,5 +23,6 @@
     "title": "VexZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download VexZygisk for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

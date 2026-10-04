@@ -22,5 +22,6 @@
     "title": "MagicNet – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download MagicNet for Magisk and KernelSU. Consciously set all groups to block."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

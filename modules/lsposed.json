@@ -1,0 +1,28 @@
+{
+  "id": "lsposed",
+  "name": "LSPosed Framework",
+  "repo": "LSPosed/LSPosed",
+  "category": "root-management",
+  "softwareType": "flashable-module",
+  "description": "Modern, high-performance ART runtime hooking framework providing OG Xposed API compatibility with fine-grained per-app scope management via Zygisk.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/lsposed.png",
+  "stars": 24906,
+  "latestRelease": {
+    "tag": "v1.9.2",
+    "publishedAt": "2023-10-11T15:11:13Z",
+    "url": "https://github.com/LSPosed/LSPosed/releases/tag/v1.9.2",
+    "downloadUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-zygisk-release.zip",
+    "assetName": "LSPosed-v1.9.2-7024-zygisk-release.zip"
+  },
+  "seo": {
+    "title": "LSPosed Framework – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download LSPosed Framework for Magisk, KernelSU, and APatch. Modern ART runtime hooking framework with fine-grained per-app scope control."
+  },
+  "contentTier": 1
+}

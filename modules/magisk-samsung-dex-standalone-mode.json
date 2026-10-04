@@ -22,5 +22,6 @@
     "title": "magisk-samsung-dex-standalone-mode – Download | Magisk Hub",
     "description": "Download magisk-samsung-dex-standalone-mode for Magisk and KernelSU. A Magisk module to systemlessly enable Samsung DeX standalone mode."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

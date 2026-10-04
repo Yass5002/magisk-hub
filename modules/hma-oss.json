@@ -23,5 +23,6 @@
     "title": "HMA-OSS – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download HMA-OSS for Magisk, KernelSU, and APatch. A Zygisk module to hide your app list, settings, package installers and more. It is a..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

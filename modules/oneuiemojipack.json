@@ -23,5 +23,6 @@
     "title": "OneUIEmojiPack – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download OneUIEmojiPack for Magisk, KernelSU, and APatch. Module that systemlessly replaces the AOSP emoji pack with the OneUI emoji..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

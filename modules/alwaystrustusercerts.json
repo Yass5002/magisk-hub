@@ -22,5 +22,6 @@
     "title": "AlwaysTrustUserCerts – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AlwaysTrustUserCerts for Magisk and KernelSU. A Magisk/KernelSU module that automatically adds user certificates to the system..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

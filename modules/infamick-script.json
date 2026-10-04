@@ -21,5 +21,6 @@
     "title": "Infamick-script – Download (Magisk) | Magisk Hub",
     "description": "Download Infamick-script for Magisk. Infamick-script active root module."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

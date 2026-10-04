@@ -23,5 +23,6 @@
     "title": "meta-magic_mount-rs – Download | Magisk Hub",
     "description": "Download meta-magic_mount-rs for Magisk, KernelSU, and APatch. An implementation of a metamodule using Magic Mount, Based on MKSU..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

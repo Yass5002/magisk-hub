@@ -22,5 +22,6 @@
     "title": "zygisk-detach – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download zygisk-detach for Magisk and KernelSU. Zygisk module to detach installed apps from Play Store, hooking binder."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

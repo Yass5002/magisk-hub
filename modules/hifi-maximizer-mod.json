@@ -21,5 +21,6 @@
     "title": "hifi-maximizer-mod – Download (Magisk) | Magisk Hub",
     "description": "Download hifi-maximizer-mod for Magisk. A Magisk module for maximizing the digital audio fidelity by reducing jitters on audio outputs..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

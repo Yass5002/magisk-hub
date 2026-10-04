@@ -22,5 +22,6 @@
     "title": "AlwaysStrong – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AlwaysStrong for Magisk and KernelSU. Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

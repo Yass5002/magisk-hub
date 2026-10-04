@@ -21,5 +21,6 @@
     "title": "ttf-twemoji – Download (Magisk) | Magisk Hub",
     "description": "Download ttf-twemoji for Magisk. Changes your system emoji to Twemoji!."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

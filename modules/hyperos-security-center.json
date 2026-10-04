@@ -22,5 +22,6 @@
     "title": "HyperOS-Security-Center – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-Security-Center for Magisk and KernelSU. Enhances HyperOS Security Center with advanced app info tools, system app..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

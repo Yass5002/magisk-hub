@@ -1,0 +1,29 @@
+{
+  "id": "key-attestation",
+  "name": "Key Attestation",
+  "repo": "vvb2060/KeyAttestation",
+  "category": "security-certificates",
+  "softwareType": "standalone-app",
+  "description": "Diagnostic security application by vvb2060 for generating, parsing, and verifying Android Hardware Keystore, StrongBox, and KeyMint certificate chains without network dependencies.",
+  "compatibility": [
+    "Rootless",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/key-attestation.png",
+  "stars": 2140,
+  "latestRelease": {
+    "tag": "v1.8.4",
+    "publishedAt": "2025-01-16T15:15:30Z",
+    "url": "https://github.com/vvb2060/KeyAttestation/releases/tag/v1.8.4",
+    "downloadUrl": "https://github.com/vvb2060/KeyAttestation/releases/download/v1.8.4/KeyAttestation-v1.8.4.apk",
+    "assetName": "KeyAttestation-v1.8.4.apk"
+  },
+  "seo": {
+    "title": "Key Attestation – Download Keystore Diagnostic APK | Magisk Hub",
+    "description": "Download Key Attestation APK by vvb2060 for Android. Inspect hardware keystore attestation, KeyMint, StrongBox, and verified boot state."
+  },
+  "contentTier": 1
+}

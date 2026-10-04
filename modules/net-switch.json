@@ -21,5 +21,6 @@
     "title": "net-switch – Download (Magisk) | Magisk Hub",
     "description": "Download net-switch for Magisk. Magisk Module to isolate any app from Internet access."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

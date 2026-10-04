@@ -22,5 +22,6 @@
     "title": "Greenify4Magisk-KSU-Reborn – Download | Magisk Hub",
     "description": "Download Greenify4Magisk-KSU-Reborn for Magisk and KernelSU. Integrate Greenify as a privileged system app to enable boost mode™, with..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

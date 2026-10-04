@@ -21,5 +21,6 @@
     "title": "magisk-wifiadb – Download (Magisk) | Magisk Hub",
     "description": "Download magisk-wifiadb for Magisk. A magisk module to enable WiFi ADB automatically."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

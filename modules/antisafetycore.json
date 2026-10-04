@@ -23,5 +23,6 @@
     "title": "AntiSafetyCore – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download AntiSafetyCore for Magisk, KernelSU, and APatch. A Magisk module to fight against the behavior of installing Android System..."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

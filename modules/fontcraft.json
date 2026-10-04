@@ -22,5 +22,6 @@
     "title": "FontCraft – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download FontCraft for Magisk and KernelSU. Stylish fonts & emojis for a personalized experience."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

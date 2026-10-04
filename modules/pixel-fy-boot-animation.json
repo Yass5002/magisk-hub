@@ -1,0 +1,28 @@
+{
+  "id": "pixel-fy-boot-animation",
+  "name": "Pixel-fy Boot Animation",
+  "repo": "wacko1805/Pixel-fy-boot-animation",
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless boot animation module replacing OEM boot screens with the authentic Google Pixel loading animation across all display resolutions.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/pixel-fy-boot-animation.png",
+  "stars": 4,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2020-11-07T22:39:46Z",
+    "url": "https://github.com/wacko1805/Pixel-fy-boot-animation/releases/tag/v1.0",
+    "downloadUrl": "https://github.com/wacko1805/Pixel-fy-boot-animation/releases/download/v1.0/pixel-boot-animation.zip",
+    "assetName": "pixel-boot-animation.zip"
+  },
+  "seo": {
+    "title": "Pixel-fy Boot Animation – Download | Magisk Hub",
+    "description": "Download Pixel-fy Boot Animation for Magisk, KernelSU, and APatch. Get the authentic Google Pixel boot animation systemlessly."
+  },
+  "contentTier": 1
+}

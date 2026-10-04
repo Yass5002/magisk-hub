@@ -22,5 +22,6 @@
     "title": "forcedns_Magisk-kernelsu – Download | Magisk Hub",
     "description": "Download forcedns_Magisk-kernelsu for Magisk and KernelSU. Fuerza todo el tráfico DNS estándar (puerto 53) a usar .1 mediante iptables...."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }

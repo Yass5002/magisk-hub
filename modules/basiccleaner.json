@@ -22,5 +22,6 @@
     "title": "BasicCleaner – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BasicCleaner for Magisk and KernelSU. A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days."
   },
-  "contentTier": 1
+  "contentTier": 1,
+  "softwareType": "flashable-module"
 }
