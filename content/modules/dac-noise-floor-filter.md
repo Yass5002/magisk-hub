@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**DAC Noise Floor Filter & Stereo Fix** (authored by FK, upstream repository: https://mi.fiime.cn/libcangku/2904.html) addresses one of the most frustrating audio anomalies on Qualcomm Snapdragon smartphones: persistent background hiss, ground loop electromagnetic interference, and elevated noise floors when listening through sensitive wired earphones.
+**DAC Noise Floor Filter & Stereo Fix** (authored by FK) addresses one of the most frustrating audio anomalies on Qualcomm Snapdragon smartphones: persistent background hiss, ground loop electromagnetic interference, and elevated noise floors when listening through sensitive wired earphones.
 
 Audiophiles using multi-driver balanced armature (BA) in-ear monitors or low-impedance dynamic IEMs frequently report hearing an annoying "ocean roar" or persistent electrical static whenever an app requests audio focus, even when music is paused. This occurs because OEM mixer path configurations often set the analog headphone amplifier (`HPHL`/`HPHR`) to excessive base gain, relying on downstream software digital attenuation to control volume.
 

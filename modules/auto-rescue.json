@@ -4,7 +4,7 @@
   "repo": null,
   "author": "Fendou Youth",
   "sourceType": "community",
-  "sourceUrl": "https://www.52pojie.cn/thread-1600094-1-1.html",
+  "sourceUrl": null,
   "category": "system-utilities",
   "softwareType": "flashable-module",
   "description": "Automated bootloop watchdog that tracks boot startup attempts and automatically disables culprit modules with whitelist and OTA delay protection.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v221204",
     "publishedAt": "2022-12-04T00:00:00Z",
-    "url": "https://www.52pojie.cn/thread-1600094-1-1.html",
+    "url": null,
     "downloadUrl": "https://apk.magisk.vip/download.php?id=795",
     "assetName": "Automatic_brick_rescue-v221204.zip"
   },

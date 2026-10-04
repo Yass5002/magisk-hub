@@ -4,7 +4,7 @@
   "repo": null,
   "author": "Chestnut EBQO",
   "sourceType": "community",
-  "sourceUrl": "https://github.com/dpejoh/apple-typography-for-android",
+  "sourceUrl": null,
   "category": "system-typography-fonts",
   "softwareType": "flashable-module",
   "description": "Systemless typography replacement overlaying Apple SF Pro and SF Compact typefaces across Android system UI and apps.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v2.0",
     "publishedAt": "2021-08-10T00:00:00Z",
-    "url": "https://github.com/dpejoh/apple-typography-for-android",
+    "url": null,
     "downloadUrl": "https://apk.magisk.vip/download.php?id=736",
     "assetName": "ios-san-francisco-fonts-v2.0.zip"
   },

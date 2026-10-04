@@ -35,7 +35,7 @@ faq:
 
 ## Overview
 
-**ViPER4Android & Dolby Atmos Coexistence** (authored by LazyBug, release portal: http://www.romleyuan.com/news/readnews?newsid=2055) resolves the longstanding architectural conflict between Android's two most revered audio digital signal processing (DSP) suites: **ViPER4Android FX** and **Dolby Atmos (Dolby Digital Plus / Dsplus)**.
+**ViPER4Android & Dolby Atmos Coexistence** (authored by LazyBug) resolves the longstanding architectural conflict between Android's two most revered audio digital signal processing (DSP) suites: **ViPER4Android FX** and **Dolby Atmos (Dolby Digital Plus / Dsplus)**.
 
 On standard Android installations, running both engines concurrently is fraught with failure. Because both engines require direct registration in `/vendor/etc/audio_effects.xml` and `/system/etc/audio_effects.conf`, standard module installations inevitably replace each other's configuration files. Furthermore, strict SELinux enforcement in modern Android versions denies the `audioserver` and `hal_audio_default` daemons permission to load third-party shared libraries (`.so` files) with executable memory mappings (`execmod`/`execmem`).
 

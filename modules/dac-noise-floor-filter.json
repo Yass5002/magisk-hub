@@ -4,7 +4,7 @@
   "repo": null,
   "author": "FK",
   "sourceType": "community",
-  "sourceUrl": "https://mi.fiime.cn/libcangku/2904.html",
+  "sourceUrl": null,
   "category": "audio-dsp-acoustics",
   "softwareType": "flashable-module",
   "description": "Calibrates Qualcomm WCD9335/Tasha DAC audio mixer paths to filter out low-volume analog hiss and ground loop interference on IEMs.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v3.0",
     "publishedAt": "2021-07-01T00:00:00Z",
-    "url": "https://mi.fiime.cn/libcangku/2904.html",
+    "url": null,
     "downloadUrl": "https://apk.magisk.vip/download.php?id=476",
     "assetName": "dac-noise-floor-filter-v3.0.zip"
   },

@@ -35,7 +35,7 @@ faq:
 
 ## Overview
 
-**Redmi K20 Pro Stereo Dual Speaker & Harman Tuning** (authored by Eriol Sakura, upstream project: https://github.com/jackkyyh/MIOpt) is an exhaustive hardware-specific audio modification tailored specifically for the **Redmi K20 Pro** and **Xiaomi Mi 9T Pro** (code-named `raphael` / `raphaelin`).
+**Redmi K20 Pro Stereo Dual Speaker & Harman Tuning** (authored by Eriol Sakura) is an exhaustive hardware-specific audio modification tailored specifically for the **Redmi K20 Pro** and **Xiaomi Mi 9T Pro** (code-named `raphael` / `raphaelin`).
 
 While the Redmi K20 Pro was acclaimed for its flagship Snapdragon 855 processor and pop-up selfie camera, one of its primary cost-cutting compromises was the inclusion of a single bottom-firing loudspeaker. This module bridges that hardware deficit by pairing the bottom loudspeaker with the top earpiece receiver, creating a rich stereo soundfield.
 

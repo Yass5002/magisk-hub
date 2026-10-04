@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**Touch Optimization Turbo** (authored by Xiaojian, upstream tuner: https://github.com/rakarmp/ReactTouch) is a systemless performance module focused on reducing input-to-display latency across the Android rendering pipeline.
+**Touch Optimization Turbo** (authored by Xiaojian) is a systemless performance module focused on reducing input-to-display latency across the Android rendering pipeline.
 
 In stock Android configurations, the graphics subsystem frequently relies on triple-buffering (`debug.egl.buffcount=4`, triple buffer SurfaceFlinger queues) to guard against UI micro-stutters during heavy GPU workloads. While triple-buffering prevents frame tearing, holding queued buffers can add 16ms to 33ms of end-to-end touch latency, making user interactions feel slightly detached or floaty compared to tighter touch subsystems.
 

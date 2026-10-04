@@ -4,7 +4,7 @@ import path from 'node:path';
 export interface ModuleRelease {
   tag: string;
   publishedAt: string;
-  url: string;
+  url: string | null;
   downloadUrl: string;
   assetName: string;
 }
@@ -23,7 +23,7 @@ export interface ModuleData {
   repo: string | null;
   author?: string;
   sourceType?: 'github' | 'community';
-  sourceUrl?: string;
+  sourceUrl?: string | null;
   category: string;
   softwareType: SoftwareType;
   description: string;

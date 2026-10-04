@@ -4,7 +4,7 @@
   "repo": null,
   "author": "LazyBug",
   "sourceType": "community",
-  "sourceUrl": "http://www.romleyuan.com/news/readnews?newsid=2055",
+  "sourceUrl": null,
   "category": "audio-dsp-acoustics",
   "softwareType": "flashable-module",
   "description": "Merges ViPER4Android FX and Dolby Atmos audio DSP engines into a unified audio HAL pipeline with dynamic SELinux policy injection.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v2.0",
     "publishedAt": "2019-11-04T00:00:00Z",
-    "url": "http://www.romleyuan.com/news/readnews?newsid=2055",
+    "url": null,
     "downloadUrl": "https://apk.magisk.vip/download.php?id=475",
     "assetName": "viper4android-dolby-coexistence-v2.0.zip"
   },

@@ -4,7 +4,7 @@
   "repo": null,
   "author": "Eriol Sakura",
   "sourceType": "community",
-  "sourceUrl": "https://github.com/jackkyyh/MIOpt",
+  "sourceUrl": null,
   "category": "audio-dsp-acoustics",
   "softwareType": "flashable-module",
   "description": "Hardware-specific audio enhancement for Redmi K20 Pro enabling dual stereo speakers, 25-step volume control, and Harman Kardon sound profiles.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v13.0",
     "publishedAt": "2024-01-17T00:00:00Z",
-    "url": "https://github.com/jackkyyh/MIOpt",
+    "url": null,
     "downloadUrl": "https://apk.magisk.vip/download.php?id=477",
     "assetName": "redmi-k20pro-dual-speaker-v13.0.zip"
   },

@@ -56,8 +56,7 @@
       "description": "Origin distribution channel classification"
     },
     "sourceUrl": {
-      "type": "string",
-      "format": "uri",
+      "type": ["string", "null"],
       "description": "Direct link to upstream thread or community download page"
     },
     "category": {
@@ -150,9 +149,8 @@
           "description": "ISO 8601 timestamp of release publication"
         },
         "url": {
-          "type": "string",
-          "format": "uri",
-          "description": "Direct URL to GitHub release page"
+          "type": ["string", "null"],
+          "description": "Direct URL to GitHub release page or source page"
         },
         "downloadUrl": {
           "type": "string",
