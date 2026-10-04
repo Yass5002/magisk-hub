@@ -9,7 +9,7 @@
     "Magisk"
   ],
   "license": "GPL-2.0",
-  "icon": null,
+  "icon": "assets/icons/fingerprintpay.png",
   "stars": 4522,
   "latestRelease": {
     "tag": "6.1.0-ci",

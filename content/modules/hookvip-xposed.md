@@ -38,7 +38,10 @@ Inspecting the 6.8 MB APK (`HookVip-3.5.6.Apk`) confirms robust modular hook arc
 - **LSPosed Framework** running in Zygisk mode.
 
 ### Step 1: Install APK
-Install `HookVip-3.5.6.Apk` onto your device.
+Install `HookVip-3.5.6.Apk` onto your device via ADB or package installer:
+```bash
+adb install HookVip-3.5.6.Apk
+```
 
 ### Step 2: LSPosed Scope Activation
 1. Launch **LSPosed Manager**.
@@ -46,10 +49,17 @@ Install `HookVip-3.5.6.Apk` onto your device.
 3. Enable the module.
 4. Select the target applications you wish to enhance (e.g. your chosen reader, media player, or utility).
 
-### Step 3: Configure Module Options
+### Step 3: Configure Module Options & Verification
 1. Open the **HookVip** app launcher icon.
 2. Browse the application catalog and toggle on the desired unlock features for each app.
-3. Force stop and restart the target applications.
+3. Force stop and restart the target applications:
+```bash
+# Verify active package registration
+dumpsys package Hook.JiuWu.Xp | grep -E "versionName|userId"
+
+# Force-stop and restart target app to bind runtime hooks
+am force-stop <target.app.package>
+```
 
 ## Safety & Best Practices
 

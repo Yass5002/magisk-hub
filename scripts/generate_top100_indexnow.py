@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """
-Generate top 100 high-priority URLs for Bing and Yandex indexing via IndexNow and Webmaster Tools.
-Exports:
-- scripts/top100_urls.txt (plain text, 1 URL per line for direct copy-paste)
-- scripts/indexnow_payload.json (standard IndexNow JSON schema)
+Generate top 100 high-priority URLs for Bing, Yandex, and search indexers via IndexNow.
+Reflects complete 13-category taxonomy and newly added candidate modules.
 """
 
 import json
@@ -26,7 +24,7 @@ def main():
                 except Exception as e:
                     print(f"Error parsing {f}: {e}")
 
-    # 1. Structural / Taxonomy Hubs (14 URLs)
+    # 1. Structural / Taxonomy Hubs (19 URLs)
     hubs = [
         'https://magisk.yssn.tech/',
         'https://magisk.yssn.tech/security/',
@@ -39,69 +37,63 @@ def main():
         'https://magisk.yssn.tech/categories/system-environment/',
         'https://magisk.yssn.tech/categories/customization-ui/',
         'https://magisk.yssn.tech/categories/development-instrumentation/',
+        'https://magisk.yssn.tech/categories/xposed-runtime-hooks/',
+        'https://magisk.yssn.tech/categories/audio-dsp-acoustics/',
+        'https://magisk.yssn.tech/categories/system-typography-fonts/',
+        'https://magisk.yssn.tech/categories/battery-power-charging/',
+        'https://magisk.yssn.tech/categories/boot-animations-ui/',
         'https://magisk.yssn.tech/compatibility/magisk/',
         'https://magisk.yssn.tech/compatibility/kernelsu/',
         'https://magisk.yssn.tech/compatibility/apatch/',
+        'https://magisk.yssn.tech/compatibility/lsposed/',
     ]
 
-    # 2. Tier 1 Flagship Guides (25 URLs) - Sorted by GitHub stars descending
+    # 2. Tier 1 Flagship Guides - Sorted by stars/downloads descending
     tier1_mods = [m for m in mods.values() if m.get('contentTier') == 1]
     tier1_sorted = sorted(tier1_mods, key=lambda m: -(m.get('stars') or 0))
     tier1_urls = [f"https://magisk.yssn.tech/modules/{m['id']}/" for m in tier1_sorted]
 
-    # 3. High-Priority Non-Tier 1 Modules (61 URLs) - High search intent on Bing/Copilot & Yandex (CIS/Global)
-    selected_non_tier1_ids = [
-        # Root Hiding, Keymint & Play Integrity (Highest Intent)
-        'librepods', 'revanced-extended', 'teesimulator', 'surfing', 'neozygisk',
-        'yurikey', 'teesimulator-rs', 'uperf-game-turbo', 'adguardhomeforroot', 'mountify',
-        'trickystoreoss', 'nohello', 'zygiskfrida', 'hide-navbar', 'playcurlnext',
-        'sui', 'alwaysstrong', 'specter', 'magisk-ad-blocking-module', 'vpnhide',
-        'android-vbmeta-fixer', 'encore', 'adb-root', 'meta-magic-mount-rs', 'chroot-distro',
-        're-malwack', 'livebootmodule', 'magiskhluda', 'hyperos-launcher', 'magisk-ios-emoji',
-        'ohmykeymint', 'zygisknext', 'gphotosunlimited', 'brene', 'audio-misc-settings',
-        'net-switch', 'makefontsgreatagain', 'pixelify-next', 'magnetar', 'hydro-br-leur',
-        'nlsound-module-qcom', 'treat-wheel-zygisk', 'magisk-manager-for-recovery-mode',
-        'deviceidchanger', 'twrp-keep', 'magisk-wifiadb', 'selinux-permissive', 'systemapp-nuker',
-        'pixelupdater', 'frosty', 'hyperunlocked', 'ashlooper', 'hyperos-theme-manager',
-        'zygisk-cacerts', 'hifi-maximizer-mod', 'ih8securelock', 'yetanotherbootloopprotector',
-        'termuxrootmods', 'magicnet', 'ghostgms', 'zapret-pocket'
-    ]
-
-    non_tier1_mods = [mods[mid] for mid in selected_non_tier1_ids if mid in mods]
-    non_tier1_sorted = sorted(non_tier1_mods, key=lambda m: -(m.get('stars') or 0))
-    non_tier1_urls = [f"https://magisk.yssn.tech/modules/{m['id']}/" for m in non_tier1_sorted]
-
-    top_100 = hubs + tier1_urls + non_tier1_urls
-    
-    # Deduplicate while preserving order
+    # Combine into deduplicated ordered URL set
+    all_urls = []
     seen = set()
-    deduped = []
-    for u in top_100:
+
+    for u in hubs:
         if u not in seen:
             seen.add(u)
-            deduped.append(u)
+            all_urls.append(u)
 
-    if len(deduped) != 100:
-        print(f"Warning: Expected 100 URLs, got {len(deduped)}")
+    for u in tier1_urls:
+        if u not in seen:
+            seen.add(u)
+            all_urls.append(u)
 
-    # Export text file
-    txt_path = os.path.join('scripts', 'top100_urls.txt')
-    with open(txt_path, 'w', encoding='utf-8') as f:
-        for u in deduped:
-            f.write(u + '\n')
-    print(f"Wrote {len(deduped)} URLs to {txt_path}")
+    # Fill up to 100 with remaining top modules
+    remaining = sorted(mods.values(), key=lambda m: -(m.get('stars') or 0))
+    for m in remaining:
+        u = f"https://magisk.yssn.tech/modules/{m['id']}/"
+        if u not in seen:
+            seen.add(u)
+            all_urls.append(u)
+        if len(all_urls) >= 100:
+            break
 
-    # Export IndexNow payload
+    final_100 = all_urls[:100]
+
+    os.makedirs('scripts', exist_ok=True)
+    with open('scripts/top100_urls.txt', 'w', encoding='utf-8') as fp:
+        fp.write('\n'.join(final_100) + '\n')
+
     indexnow_payload = {
         "host": "magisk.yssn.tech",
-        "key": "INDEXNOW_KEY_PLACEHOLDER",
-        "keyLocation": "https://magisk.yssn.tech/INDEXNOW_KEY_PLACEHOLDER.txt",
-        "urlList": deduped
+        "key": "d1700f86ccb7e976d4334cf6cc9f85dc",
+        "keyLocation": "https://magisk.yssn.tech/d1700f86ccb7e976d4334cf6cc9f85dc.txt",
+        "urlList": final_100
     }
-    json_path = os.path.join('scripts', 'indexnow_payload.json')
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(indexnow_payload, f, indent=2)
-    print(f"Wrote IndexNow payload to {json_path}")
+
+    with open('scripts/indexnow_payload.json', 'w', encoding='utf-8') as fp:
+        json.dump(indexnow_payload, fp, indent=2, ensure_ascii=False)
+
+    print(f"Generated IndexNow payload with {len(final_100)} URLs.")
 
 if __name__ == '__main__':
     main()
