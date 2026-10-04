@@ -15,6 +15,22 @@ const allCategories = Object.values(CATEGORIES);
 const allPlatforms = Object.values(PLATFORMS);
 const allSoftwareTypes = Object.entries(SOFTWARE_TYPE_CONFIG);
 
+// Server-side module counts per platform, software type, and category
+const platformCounts = allPlatforms.reduce((acc, p) => {
+  acc[p.name] = modules.filter(m => m.compatibility.includes(p.name)).length;
+  return acc;
+}, {} as Record<string, number>);
+
+const typeCounts = allSoftwareTypes.reduce((acc, [typeKey]) => {
+  acc[typeKey] = modules.filter(m => m.softwareType === typeKey).length;
+  return acc;
+}, {} as Record<string, number>);
+
+const categoryCounts = allCategories.reduce((acc, cat) => {
+  acc[cat.id] = modules.filter(m => m.category === cat.id).length;
+  return acc;
+}, {} as Record<string, number>);
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -85,26 +101,25 @@ const itemListSchema = {
   ]}
   structuredData={[faqSchema, itemListSchema]}
 >
-  <!-- Sleek Developer Hero with Crisp Off-White / White Background -->
-  <section id="heroSection" class="border-b border-zinc-200 bg-white py-6 sm:py-12 transition-all duration-200">
+  <!-- Sleek Developer Hero: Compact on mobile to maximize viewport efficiency -->
+  <section id="heroSection" class="border-b border-zinc-200 bg-white py-5 sm:py-10 transition-all duration-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center">
         <!-- Hero Text that condenses when search is active -->
         <div id="heroText" class="transition-all duration-200">
-          <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-zinc-900">
+          <h1 class="text-xl sm:text-4xl font-extrabold tracking-tight text-zinc-900">
             Magisk Modules Directory
           </h1>
-          <p class="mt-1.5 sm:mt-2 text-xs sm:text-base text-zinc-500">
+          <p class="mt-1 sm:mt-2 text-xs sm:text-base text-zinc-500">
             Discover and download {modules.length} active root modules, Xposed hooks, and privileged apps.
           </p>
         </div>
 
-
-        <!-- Search Bar with Ctrl+K -->
-        <div class="mt-4 sm:mt-6 max-w-2xl mx-auto">
-          <div class="relative flex items-center h-11 sm:h-14 rounded-xl border border-zinc-200 bg-[#fafafa] shadow-xs focus-within:border-zinc-900 focus-within:ring-2 focus-within:ring-zinc-900/10 transition-all">
-            <div class="pl-4 pr-2 text-zinc-400 pointer-events-none">
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- Search Bar with Instant Clear Button (✕) -->
+        <div class="mt-3.5 sm:mt-6 max-w-2xl mx-auto">
+          <div class="relative flex items-center h-10 sm:h-13 rounded-xl border border-zinc-200 bg-[#fafafa] shadow-2xs focus-within:border-zinc-900 focus-within:ring-2 focus-within:ring-zinc-900/10 transition-all">
+            <div class="pl-3.5 pr-2 text-zinc-400 pointer-events-none">
+              <svg class="h-4.5 w-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
             </div>
@@ -113,9 +128,20 @@ const itemListSchema = {
               id="searchInput"
               placeholder={`Search ${modules.length} modules by name, keyword, or author...`}
               autocomplete="off"
-              class="w-full bg-transparent py-3 pr-4 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
+              class="w-full bg-transparent py-2 pr-2 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
             />
-            <div class="pr-3.5 hidden sm:flex items-center">
+            <!-- Instant Clear Button (Visible when typing) -->
+            <button
+              id="searchClearBtn"
+              type="button"
+              class="hidden mr-2 p-1 rounded-full text-zinc-400 hover:text-zinc-700 hover:bg-zinc-200/60 transition-colors"
+              aria-label="Clear search"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+            <div class="pr-3 hidden sm:flex items-center">
               <kbd class="inline-flex items-center rounded border border-zinc-200 bg-white px-2 py-0.5 text-[11px] font-mono text-zinc-500">
                 Ctrl K
               </kbd>
@@ -127,55 +153,53 @@ const itemListSchema = {
   </section>
 
   <!-- Main Content Container -->
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 sm:py-8">
-    <!-- Download Magisk Spotlight Section (Hidden during active search) -->
-    <section id="featuredMagiskBanner" class="mb-6 sm:mb-8 rounded-xl border border-zinc-200 bg-white p-4 sm:p-6 shadow-xs transition-all">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-5">
-        <div class="flex items-start sm:items-center gap-3.5 sm:gap-4">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+    
+    <!-- Smart Magisk Spotlight Banner (Automatically hides when searching or filtering other platforms/types) -->
+    <section id="featuredMagiskBanner" class="mb-4 sm:mb-8 rounded-xl border border-zinc-200 bg-white p-3.5 sm:p-6 shadow-2xs transition-all">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-5">
+        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
           <img 
             src="/magisk-logo.svg" 
             alt="Magisk Logo" 
             width="44" 
             height="44" 
-            class="h-10 w-10 sm:h-12 sm:w-12 shrink-0 object-contain"
+            class="h-9 w-9 sm:h-12 sm:w-12 shrink-0 object-contain"
           />
           <div class="min-w-0">
             <div class="flex items-center gap-2 flex-wrap">
-              <h2 class="text-lg sm:text-xl font-bold text-zinc-900 tracking-tight">Magisk</h2>
-              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+              <h2 class="text-base sm:text-xl font-bold text-zinc-900 tracking-tight">Magisk</h2>
+              <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] sm:text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
                 {magiskRelease.tag}
               </span>
-              <span class="text-xs text-zinc-500 font-mono">
-                • 62.9k stars on GitHub
+              <span class="text-[11px] sm:text-xs text-zinc-500 font-mono">
+                • 62.9k stars
               </span>
             </div>
-            <p class="mt-1 text-xs sm:text-sm text-zinc-600 line-clamp-2 sm:line-clamp-none max-w-2xl leading-relaxed">
+            <p class="mt-0.5 sm:mt-1 text-xs sm:text-sm text-zinc-600 line-clamp-2 sm:line-clamp-none max-w-2xl leading-relaxed">
               The universal open-source root suite for Android devices. Boot image patching, Zygisk framework, and module management.
             </p>
           </div>
         </div>
 
-        <!-- Download Action Group: Full width primary button on mobile + secondary links underneath -->
-        <div class="flex flex-col sm:flex-row sm:items-center gap-2.5 shrink-0 w-full md:w-auto">
+        <!-- Download Action Group -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-2 shrink-0 w-full md:w-auto">
           <a 
             href={magiskRelease.downloadUrl}
             data-umami-event="download-magisk-apk"
             data-umami-event-tag={magiskRelease.tag}
             data-download-button
-            class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black data-[state=downloading]:bg-zinc-800 text-white px-4 py-2.5 text-sm font-semibold transition-all duration-150 shadow-xs hover:shadow-sm active:scale-[0.98] select-none"
+            class="group relative w-full sm:w-auto inline-flex items-center justify-center rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black data-[state=downloading]:bg-zinc-800 text-white px-3.5 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-semibold transition-all duration-150 shadow-2xs hover:shadow-xs active:scale-[0.98] select-none"
           >
             <span class="grid grid-cols-1 grid-rows-1 items-center justify-items-center">
-              <!-- Default state -->
-              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-150 group-data-[state=downloading]:opacity-0 group-data-[state=downloading]:scale-95 group-data-[state=downloading]:pointer-events-none">
-                <svg class="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-1.5 sm:gap-2 transition-all duration-150 group-data-[state=downloading]:opacity-0 group-data-[state=downloading]:scale-95 group-data-[state=downloading]:pointer-events-none">
+                <svg class="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
                 </svg>
                 <span>Download APK ({magiskRelease.tag})</span>
               </span>
-
-              <!-- Downloading / In-progress state -->
-              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-150 opacity-0 scale-95 pointer-events-none group-data-[state=downloading]:opacity-100 group-data-[state=downloading]:scale-100">
-                <svg class="h-4 w-4 shrink-0 animate-spin text-zinc-300" fill="none" viewBox="0 0 24 24">
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-1.5 sm:gap-2 transition-all duration-150 opacity-0 scale-95 pointer-events-none group-data-[state=downloading]:opacity-100 group-data-[state=downloading]:scale-100">
+                <svg class="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 animate-spin text-zinc-300" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
@@ -184,12 +208,12 @@ const itemListSchema = {
             </span>
           </a>
 
-          <div class="flex items-center justify-center sm:justify-start gap-4 sm:gap-2 pt-1 sm:pt-0">
+          <div class="flex items-center justify-center sm:justify-start gap-3 sm:gap-2">
             <a 
               href="/modules/magisk/"
               data-umami-event="hero-guide-click"
               data-umami-event-module="magisk"
-              class="inline-flex items-center gap-1.5 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3.5 sm:py-2.5 sm:text-sm sm:font-medium sm:text-zinc-700 transition-colors"
+              class="inline-flex items-center gap-1 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3 sm:py-2 sm:text-xs sm:font-medium sm:text-zinc-700 transition-colors"
             >
               <svg class="h-3.5 w-3.5 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
@@ -205,7 +229,7 @@ const itemListSchema = {
               rel="noopener noreferrer"
               data-umami-event="hero-github-click"
               data-umami-event-repo="topjohnwu/Magisk"
-              class="inline-flex items-center gap-1.5 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3.5 sm:py-2.5 sm:text-sm sm:font-medium sm:text-zinc-700 transition-colors"
+              class="inline-flex items-center gap-1 text-xs text-zinc-600 hover:text-zinc-900 sm:rounded-lg sm:border sm:border-zinc-200 sm:bg-white sm:hover:bg-zinc-50 sm:px-3 sm:py-2 sm:text-xs sm:font-medium sm:text-zinc-700 transition-colors"
             >
               <svg class="h-3.5 w-3.5 sm:hidden" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
@@ -217,79 +241,162 @@ const itemListSchema = {
       </div>
     </section>
 
-    <!-- Filter Bar: Fully Dynamic Controls for Platform, Software Type, Category, and Sorter -->
-    <div class="flex flex-col gap-3.5 pb-5 mb-6 border-b border-zinc-200">
-      <!-- Upper Controls Row: Platform Pills & Type Pills -->
-      <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-3">
-        <!-- Platform Pill Group (Mobile Horizontal Scrollable) -->
-        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
-          <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Platform:</span>
-          <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
-            <button class="compat-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-xs" data-compat="all">
-              All
+    <!-- Re-Engineered Filtering Controls Architecture -->
+    <div class="flex flex-col gap-3 pb-3 mb-6 border-b border-zinc-200">
+      
+      <!-- MOBILE VIEW (< md): Quick Platform Strip + Mobile Action Bar -->
+      <div class="flex flex-col gap-2.5 md:hidden">
+        <!-- Quick Horizontal Platform Scroll Strip with Dynamic Counts -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 -mx-4 px-4">
+          <button 
+            type="button"
+            class="mobile-platform-btn active shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold bg-zinc-900 text-white shadow-2xs transition-all active:scale-95" 
+            data-compat="all"
+          >
+            All <span class="ml-1 opacity-70 font-mono text-[10px]">{modules.length}</span>
+          </button>
+          {allPlatforms.map(p => (
+            <button 
+              type="button"
+              class="mobile-platform-btn shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold bg-white border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 transition-all active:scale-95" 
+              data-compat={p.name}
+            >
+              {p.shortName} <span class="ml-1 text-zinc-400 font-mono text-[10px]">{platformCounts[p.name] || 0}</span>
             </button>
-            {allPlatforms.map(p => (
-              <button class="compat-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat={p.name}>
-                {p.shortName}
-              </button>
-            ))}
-          </div>
+          ))}
         </div>
 
-        <!-- Software Type Pill Group -->
-        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
-          <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Type:</span>
-          <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
-            <button class="type-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-xs" data-type="all">
-              All Types
+        <!-- Mobile Controls Row: Filters Trigger + Sort Dropdown + Live Counter -->
+        <div class="flex items-center justify-between gap-2 pt-0.5">
+          <div class="flex items-center gap-2">
+            <!-- Open Mobile Filters Drawer Button -->
+            <button
+              id="mobileFilterToggleBtn"
+              type="button"
+              class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-800 shadow-2xs hover:bg-zinc-50 active:bg-zinc-100 transition-colors"
+            >
+              <svg class="h-3.5 w-3.5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+              </svg>
+              <span>Filters</span>
+              <span id="mobileFilterBadge" class="hidden rounded-full bg-zinc-900 px-1.5 py-0.2 text-[10px] font-mono font-bold text-white">0</span>
             </button>
-            {allSoftwareTypes.map(([typeKey, cfg]) => (
-              <button class="type-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-type={typeKey}>
-                {cfg.label}
-              </button>
-            ))}
+
+            <!-- Mobile Sort Select -->
+            <div class="relative">
+              <select
+                id="mobileSortSelect"
+                class="rounded-lg border border-zinc-200 bg-white pl-2.5 pr-7 py-1.5 text-xs font-medium text-zinc-800 appearance-none focus:outline-none focus:border-zinc-900 cursor-pointer shadow-2xs"
+              >
+                <option value="trending">Trending</option>
+                <option value="stars">Most Stars</option>
+                <option value="recent">Recently Updated</option>
+                <option value="name">Alphabetical</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-zinc-400">
+                <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-[11px] font-mono text-zinc-500 shrink-0">
+            <span id="mobileModuleCount">{modules.length} modules</span>
           </div>
         </div>
       </div>
 
-      <!-- Lower Controls Row: Category Dropdown, Sorter, and Counter -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
-        <div class="flex items-center gap-4 flex-wrap">
-          <div class="flex items-center gap-2">
-            <label for="categorySelect" class="text-xs font-medium text-zinc-500">Category:</label>
-            <select 
-              id="categorySelect" 
-              class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
-            >
-              <option value="all">All Categories ({modules.length})</option>
-              {allCategories.map(c => (
-                <option value={c.id}>{c.name}</option>
+      <!-- DESKTOP VIEW (≥ md): Unified Toolbar -->
+      <div class="hidden md:flex flex-col gap-3">
+        <!-- Upper Desktop Controls Row: Platforms & Software Types -->
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+          <!-- Platform Pills -->
+          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Platform:</span>
+            <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
+              <button class="desktop-compat-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-2xs" data-compat="all">
+                All ({modules.length})
+              </button>
+              {allPlatforms.map(p => (
+                <button class="desktop-compat-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-compat={p.name}>
+                  {p.shortName} ({platformCounts[p.name] || 0})
+                </button>
               ))}
-            </select>
+            </div>
           </div>
 
-          <div class="flex items-center gap-2">
-            <label for="sortSelect" class="text-xs font-medium text-zinc-500">Sort:</label>
-            <select 
-              id="sortSelect" 
-              class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
-            >
-              <option value="trending">Trending</option>
-              <option value="stars">Most Stars</option>
-              <option value="recent">Recently Updated</option>
-              <option value="name">Alphabetical</option>
-            </select>
+          <!-- Software Type Pills -->
+          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <span class="text-xs font-medium text-zinc-500 mr-1 shrink-0">Type:</span>
+            <div class="inline-flex items-center gap-1 p-0.5 rounded-lg border border-zinc-200/80 bg-zinc-100 shrink-0">
+              <button class="desktop-type-filter active rounded-md bg-zinc-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-zinc-800 transition-colors shadow-2xs" data-type="all">
+                All Types
+              </button>
+              {allSoftwareTypes.map(([typeKey, cfg]) => (
+                <button class="desktop-type-filter rounded-md bg-transparent px-2.5 py-1 text-xs font-mono font-medium text-zinc-600 hover:bg-zinc-200/60 hover:text-zinc-900 transition-colors" data-type={typeKey}>
+                  {cfg.label} ({typeCounts[typeKey] || 0})
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div class="text-xs font-mono text-zinc-500">
-          <span id="moduleCount" class="font-medium">Showing {modules.length} modules</span>
+        <!-- Lower Desktop Controls Row: Category Dropdown, Sorter, and Counter -->
+        <div class="flex items-center justify-between gap-4 pt-1">
+          <div class="flex items-center gap-4 flex-wrap">
+            <div class="flex items-center gap-2">
+              <label for="desktopCategorySelect" class="text-xs font-medium text-zinc-500">Category:</label>
+              <select 
+                id="desktopCategorySelect" 
+                class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+              >
+                <option value="all">All Categories ({modules.length})</option>
+                {allCategories.map(c => (
+                  <option value={c.id}>{c.name} ({categoryCounts[c.id] || 0})</option>
+                ))}
+              </select>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <label for="desktopSortSelect" class="text-xs font-medium text-zinc-500">Sort:</label>
+              <select 
+                id="desktopSortSelect" 
+                class="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
+              >
+                <option value="trending">Trending</option>
+                <option value="stars">Most Stars</option>
+                <option value="recent">Recently Updated</option>
+                <option value="name">Alphabetical</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="text-xs font-mono text-zinc-500">
+            <span id="desktopModuleCount" class="font-medium">Showing {modules.length} modules</span>
+          </div>
         </div>
       </div>
+
+      <!-- ACTIVE FILTER CHIPS BAR (Visible across all screens when any filter is active) -->
+      <div id="activeFiltersBar" class="hidden flex items-center gap-2 flex-wrap pt-2 border-t border-zinc-100">
+        <span class="text-[11px] font-medium text-zinc-400">Active filters:</span>
+        <div id="activeChipsContainer" class="flex items-center gap-1.5 flex-wrap">
+          <!-- Dynamic chips injected here via client JS -->
+        </div>
+        <button
+          id="clearAllChipsBtn"
+          type="button"
+          class="text-[11px] font-medium text-zinc-500 hover:text-zinc-900 underline underline-offset-2 ml-1 cursor-pointer"
+        >
+          Clear all
+        </button>
+      </div>
+
     </div>
 
     <!-- Balanced 3-Column Card Grid on Desktop -->
-    <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
       {modules.map(module => (
         <div 
           class="module-card-wrapper h-full" 
@@ -318,15 +425,15 @@ const itemListSchema = {
         </svg>
       </div>
       <p class="text-zinc-900 text-base font-semibold">No modules found</p>
-      <p class="text-zinc-500 text-xs mt-1">Try adjusting your search terms or filters.</p>
+      <p class="text-zinc-500 text-xs mt-1">Try adjusting your search terms or clearing filters.</p>
       <div class="mt-4 flex flex-wrap items-center justify-center gap-2">
-        <button id="resetBtn" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-800 hover:bg-zinc-50 transition-colors shadow-2xs">
-          Reset filters
+        <button id="resetBtn" class="inline-flex items-center gap-1.5 rounded-lg border border-zinc-200 bg-white px-3.5 py-2 text-xs font-semibold text-zinc-800 hover:bg-zinc-50 transition-colors shadow-2xs cursor-pointer">
+          Reset all filters
         </button>
         <button 
           id="quickRequestBtn" 
           type="button" 
-          class="hidden inline-flex items-center gap-1.5 rounded-lg bg-zinc-900 text-white px-3 py-1.5 text-xs font-medium hover:bg-zinc-800 transition-colors shadow-2xs"
+          class="hidden inline-flex items-center gap-1.5 rounded-lg bg-zinc-900 text-white px-3.5 py-2 text-xs font-semibold hover:bg-zinc-800 transition-colors shadow-2xs cursor-pointer"
         >
           <svg class="h-3.5 w-3.5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
@@ -337,33 +444,33 @@ const itemListSchema = {
     </div>
 
     <!-- SEO FAQ Section: Answers Primary User Queries & Targets High-Intent Keywords -->
-    <section class="mt-16 border-t border-zinc-200/80 pt-12 pb-6">
+    <section class="mt-14 border-t border-zinc-200/80 pt-10 pb-6">
       <div class="max-w-3xl">
-        <h2 class="text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl mb-6">
+        <h2 class="text-lg font-bold tracking-tight text-zinc-900 sm:text-2xl mb-5">
           Frequently Asked Questions
         </h2>
-        <div class="space-y-6">
+        <div class="space-y-5">
           <div>
-            <h3 class="text-sm font-semibold text-zinc-900">What are Magisk modules and how do they work?</h3>
-            <p class="mt-1.5 text-sm text-zinc-600 leading-relaxed">
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">What are Magisk modules and how do they work?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
               Magisk modules are systemless zip packages that modify system settings, add features, or improve device performance without altering the Android <code class="font-mono text-xs bg-zinc-100 text-zinc-800 px-1 py-0.5 rounded border border-zinc-200">/system</code> partition directly.
             </p>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-zinc-900">Are these modules compatible with KernelSU and APatch?</h3>
-            <p class="mt-1.5 text-sm text-zinc-600 leading-relaxed">
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">Are these modules compatible with KernelSU and APatch?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
               Yes, many modern modules support KernelSU and APatch alongside Magisk. Use the platform filters above to verify compatibility for your specific root solution before flashing.
             </p>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-zinc-900">Where can I download the official Magisk release?</h3>
-            <p class="mt-1.5 text-sm text-zinc-600 leading-relaxed">
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">Where can I download the official Magisk release?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
               The official Magisk app and root manager can be downloaded directly from the official topjohnwu GitHub releases or via our featured download link above.
             </p>
           </div>
           <div>
-            <h3 class="text-sm font-semibold text-zinc-900">How do I install a module in Magisk, KernelSU, or APatch?</h3>
-            <p class="mt-1.5 text-sm text-zinc-600 leading-relaxed">
+            <h3 class="text-xs sm:text-sm font-semibold text-zinc-900">How do I install a module in Magisk, KernelSU, or APatch?</h3>
+            <p class="mt-1 text-xs sm:text-sm text-zinc-600 leading-relaxed">
               Download the module zip package, open your root manager app, navigate to the Modules tab, tap <em>Install from storage</em>, select the zip file, and reboot after flashing completes.
             </p>
           </div>
@@ -371,55 +478,459 @@ const itemListSchema = {
       </div>
     </section>
   </div>
+
+  <!-- Mobile Filter Bottom Sheet Modal -->
+  <div 
+    id="mobileFilterModal" 
+    class="fixed inset-0 z-50 flex flex-col justify-end md:hidden opacity-0 pointer-events-none transition-opacity duration-200"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Filter modules"
+  >
+    <!-- Dimmed Backdrop -->
+    <div id="mobileFilterBackdrop" class="fixed inset-0 bg-black/50 backdrop-blur-xs transition-opacity"></div>
+
+    <!-- Sheet Container -->
+    <div 
+      id="mobileFilterSheet" 
+      class="relative z-10 w-full max-h-[85vh] bg-white rounded-t-2xl shadow-2xl flex flex-col transform translate-y-full transition-transform duration-200 ease-out"
+    >
+      <!-- Drag Handle & Header -->
+      <div class="px-5 pt-3 pb-2.5 border-b border-zinc-100 shrink-0">
+        <div class="w-10 h-1 bg-zinc-300 rounded-full mx-auto mb-3"></div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <h3 class="text-base font-bold text-zinc-900">Filters</h3>
+            <span id="mobileFilterModalBadge" class="hidden rounded-full bg-zinc-100 border border-zinc-200 px-2 py-0.5 text-xs font-mono font-medium text-zinc-700">0 active</span>
+          </div>
+          <button
+            id="mobileFilterCloseBtn"
+            type="button"
+            class="p-1.5 -mr-1.5 rounded-full text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
+            aria-label="Close filters"
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scrollable Options Area -->
+      <div class="overflow-y-auto px-5 py-4 space-y-6 flex-1 overscroll-contain">
+        
+        <!-- Platform Section -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500">Platform Compatibility</h4>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              class="sheet-platform-btn active flex items-center justify-between p-2.5 rounded-xl border border-zinc-900 bg-zinc-900 text-white text-xs font-semibold transition-all"
+              data-compat="all"
+            >
+              <span>All Platforms</span>
+              <span class="font-mono text-[10px] opacity-80">{modules.length}</span>
+            </button>
+            {allPlatforms.map(p => (
+              <button
+                type="button"
+                class="sheet-platform-btn flex items-center justify-between p-2.5 rounded-xl border border-zinc-200 bg-white text-zinc-700 text-xs font-medium hover:bg-zinc-50 transition-all"
+                data-compat={p.name}
+              >
+                <span>{p.name}</span>
+                <span class="font-mono text-[10px] text-zinc-400">{platformCounts[p.name] || 0}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <!-- Software Type Section -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500">Software Type</h4>
+          </div>
+          <div class="space-y-1.5">
+            <button
+              type="button"
+              class="sheet-type-btn active w-full flex items-center justify-between p-2.5 rounded-xl border border-zinc-900 bg-zinc-900 text-white text-xs font-semibold transition-all"
+              data-type="all"
+            >
+              <span>All Software Types</span>
+              <span class="font-mono text-[10px] opacity-80">{modules.length}</span>
+            </button>
+            {allSoftwareTypes.map(([typeKey, cfg]) => (
+              <button
+                type="button"
+                class="sheet-type-btn w-full flex items-center justify-between p-2.5 rounded-xl border border-zinc-200 bg-white text-zinc-700 text-xs font-medium hover:bg-zinc-50 transition-all"
+                data-type={typeKey}
+              >
+                <span>{cfg.label}</span>
+                <span class="font-mono text-[10px] text-zinc-400">{typeCounts[typeKey] || 0}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <!-- Category Section -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-500">Category</h4>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              class="sheet-category-btn active flex items-center justify-between p-2.5 rounded-xl border border-zinc-900 bg-zinc-900 text-white text-xs font-semibold transition-all"
+              data-category="all"
+            >
+              <span>All Categories</span>
+              <span class="font-mono text-[10px] opacity-80">{modules.length}</span>
+            </button>
+            {allCategories.map(cat => (
+              <button
+                type="button"
+                class="sheet-category-btn flex items-center justify-between p-2.5 rounded-xl border border-zinc-200 bg-white text-zinc-700 text-xs font-medium hover:bg-zinc-50 transition-all text-left"
+                data-category={cat.id}
+              >
+                <span class="truncate mr-1">{cat.name}</span>
+                <span class="font-mono text-[10px] text-zinc-400 shrink-0">{categoryCounts[cat.id] || 0}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sticky Sheet Footer -->
+      <div class="p-4 border-t border-zinc-200 bg-zinc-50 flex items-center gap-3 shrink-0">
+        <button
+          id="sheetResetBtn"
+          type="button"
+          class="w-1/3 py-2.5 rounded-xl border border-zinc-300 bg-white text-xs font-semibold text-zinc-700 hover:bg-zinc-100 active:bg-zinc-200 transition-colors cursor-pointer"
+        >
+          Reset All
+        </button>
+        <button
+          id="sheetApplyBtn"
+          type="button"
+          class="w-2/3 py-2.5 rounded-xl bg-zinc-900 text-white text-xs font-semibold hover:bg-zinc-800 active:bg-black transition-colors shadow-xs cursor-pointer"
+        >
+          Show <span id="sheetApplyCount">{modules.length}</span> Modules
+        </button>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
 
 <script>
+  // DOM References
   const searchInput = document.getElementById('searchInput') as HTMLInputElement | null;
+  const searchClearBtn = document.getElementById('searchClearBtn') as HTMLButtonElement | null;
   const heroSection = document.getElementById('heroSection') as HTMLElement | null;
   const heroText = document.getElementById('heroText') as HTMLElement | null;
   const featuredMagiskBanner = document.getElementById('featuredMagiskBanner') as HTMLElement | null;
 
-  const categorySelect = document.getElementById('categorySelect') as HTMLSelectElement | null;
-  const sortSelect = document.getElementById('sortSelect') as HTMLSelectElement | null;
-  const compatButtons = document.querySelectorAll('.compat-filter');
-  const typeButtons = document.querySelectorAll('.type-filter');
+  // Desktop Controls
+  const desktopCompatButtons = document.querySelectorAll('.desktop-compat-filter');
+  const desktopTypeButtons = document.querySelectorAll('.desktop-type-filter');
+  const desktopCategorySelect = document.getElementById('desktopCategorySelect') as HTMLSelectElement | null;
+  const desktopSortSelect = document.getElementById('desktopSortSelect') as HTMLSelectElement | null;
+  const desktopModuleCount = document.getElementById('desktopModuleCount');
+
+  // Mobile Controls
+  const mobilePlatformButtons = document.querySelectorAll('.mobile-platform-btn');
+  const mobileSortSelect = document.getElementById('mobileSortSelect') as HTMLSelectElement | null;
+  const mobileModuleCount = document.getElementById('mobileModuleCount');
+  const mobileFilterToggleBtn = document.getElementById('mobileFilterToggleBtn');
+  const mobileFilterBadge = document.getElementById('mobileFilterBadge');
+  const mobileFilterModal = document.getElementById('mobileFilterModal');
+  const mobileFilterSheet = document.getElementById('mobileFilterSheet');
+  const mobileFilterBackdrop = document.getElementById('mobileFilterBackdrop');
+  const mobileFilterCloseBtn = document.getElementById('mobileFilterCloseBtn');
+  const mobileFilterModalBadge = document.getElementById('mobileFilterModalBadge');
+
+  // Mobile Sheet Option Buttons
+  const sheetPlatformButtons = document.querySelectorAll('.sheet-platform-btn');
+  const sheetTypeButtons = document.querySelectorAll('.sheet-type-btn');
+  const sheetCategoryButtons = document.querySelectorAll('.sheet-category-btn');
+  const sheetResetBtn = document.getElementById('sheetResetBtn');
+  const sheetApplyBtn = document.getElementById('sheetApplyBtn');
+  const sheetApplyCount = document.getElementById('sheetApplyCount');
+
+  // Active Chips Bar & Grid Elements
+  const activeFiltersBar = document.getElementById('activeFiltersBar');
+  const activeChipsContainer = document.getElementById('activeChipsContainer');
+  const clearAllChipsBtn = document.getElementById('clearAllChipsBtn');
   const cardWrappers = Array.from(document.querySelectorAll('.module-card-wrapper')) as HTMLElement[];
   const moduleGrid = document.getElementById('moduleGrid');
-  const moduleCount = document.getElementById('moduleCount');
   const noResults = document.getElementById('noResults');
   const resetBtn = document.getElementById('resetBtn');
   const quickRequestBtn = document.getElementById('quickRequestBtn') as HTMLButtonElement | null;
   const quickRequestLabel = document.getElementById('quickRequestLabel');
   const requestedQueries = new Set<string>();
 
+  // Central State
   let currentSearch = '';
-  let currentCategory = 'all';
   let currentCompat = 'all';
   let currentType = 'all';
+  let currentCategory = 'all';
   let currentSort = 'trending';
 
+  // Mapping labels for chips
+  const typeLabelMap: Record<string, string> = {
+    'flashable-zip': 'Flashable Module',
+    'xposed-module': 'Xposed Hook',
+    'privileged-app': 'Privileged App',
+    'kernel-module': 'Kernel Object'
+  };
+
+  const categoryLabelMap: Record<string, string> = {};
+  if (desktopCategorySelect) {
+    Array.from(desktopCategorySelect.options).forEach(opt => {
+      if (opt.value !== 'all') {
+        categoryLabelMap[opt.value] = opt.text.split(' (')[0];
+      }
+    });
+  }
+
+  // Mobile Drawer Open / Close Handlers
+  function openMobileFilterDrawer() {
+    if (!mobileFilterModal || !mobileFilterSheet) return;
+    mobileFilterModal.classList.remove('opacity-0', 'pointer-events-none');
+    mobileFilterSheet.classList.remove('translate-y-full');
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeMobileFilterDrawer() {
+    if (!mobileFilterModal || !mobileFilterSheet) return;
+    mobileFilterModal.classList.add('opacity-0', 'pointer-events-none');
+    mobileFilterSheet.classList.add('translate-y-full');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  mobileFilterToggleBtn?.addEventListener('click', openMobileFilterDrawer);
+  mobileFilterCloseBtn?.addEventListener('click', closeMobileFilterDrawer);
+  mobileFilterBackdrop?.addEventListener('click', closeMobileFilterDrawer);
+  sheetApplyBtn?.addEventListener('click', () => {
+    closeMobileFilterDrawer();
+    // Smooth scroll to top of module grid if needed on mobile
+    if (moduleGrid) {
+      const topPos = moduleGrid.getBoundingClientRect().top + window.scrollY - 80;
+      if (window.scrollY > topPos) {
+        window.scrollTo({ top: topPos, behavior: 'smooth' });
+      }
+    }
+  });
+
+  // Synchronize URL query parameters
+  function syncUrlParams() {
+    const params = new URLSearchParams();
+    if (currentSearch) params.set('q', currentSearch);
+    if (currentCompat !== 'all') params.set('platform', currentCompat);
+    if (currentType !== 'all') params.set('type', currentType);
+    if (currentCategory !== 'all') params.set('category', currentCategory);
+    if (currentSort !== 'trending') params.set('sort', currentSort);
+
+    const queryStr = params.toString();
+    const newUrl = queryStr ? `${window.location.pathname}?${queryStr}` : window.location.pathname;
+    window.history.replaceState({}, '', newUrl);
+  }
+
+  // Load state from URL parameters
+  function loadStateFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    currentSearch = (params.get('q') || '').toLowerCase().trim();
+    currentCompat = params.get('platform') || 'all';
+    currentType = params.get('type') || 'all';
+    currentCategory = params.get('category') || 'all';
+    currentSort = params.get('sort') || 'trending';
+
+    if (searchInput) searchInput.value = currentSearch;
+  }
+
+  // Update UI Controls across Desktop and Mobile
+  function updateUIControls() {
+    // Search Clear Button visibility
+    if (searchClearBtn) {
+      if (currentSearch.length > 0) {
+        searchClearBtn.classList.remove('hidden');
+      } else {
+        searchClearBtn.classList.add('hidden');
+      }
+    }
+
+    // Desktop Platform Pills
+    desktopCompatButtons.forEach(b => {
+      const compat = b.getAttribute('data-compat');
+      if (compat === currentCompat) {
+        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      } else {
+        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      }
+    });
+
+    // Mobile Platform Quick Strip
+    mobilePlatformButtons.forEach(b => {
+      const compat = b.getAttribute('data-compat');
+      if (compat === currentCompat) {
+        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.remove('bg-white', 'border-zinc-200', 'text-zinc-600');
+      } else {
+        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.add('bg-white', 'border-zinc-200', 'text-zinc-600');
+      }
+    });
+
+    // Mobile Sheet Platform Buttons
+    sheetPlatformButtons.forEach(b => {
+      const compat = b.getAttribute('data-compat');
+      if (compat === currentCompat) {
+        b.classList.add('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.remove('border-zinc-200', 'bg-white', 'text-zinc-700');
+      } else {
+        b.classList.remove('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.add('border-zinc-200', 'bg-white', 'text-zinc-700');
+      }
+    });
+
+    // Desktop Software Type Pills
+    desktopTypeButtons.forEach(b => {
+      const type = b.getAttribute('data-type');
+      if (type === currentType) {
+        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      } else {
+        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-2xs');
+        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
+      }
+    });
+
+    // Mobile Sheet Software Type Buttons
+    sheetTypeButtons.forEach(b => {
+      const type = b.getAttribute('data-type');
+      if (type === currentType) {
+        b.classList.add('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.remove('border-zinc-200', 'bg-white', 'text-zinc-700');
+      } else {
+        b.classList.remove('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.add('border-zinc-200', 'bg-white', 'text-zinc-700');
+      }
+    });
+
+    // Mobile Sheet Category Buttons
+    sheetCategoryButtons.forEach(b => {
+      const cat = b.getAttribute('data-category');
+      if (cat === currentCategory) {
+        b.classList.add('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.remove('border-zinc-200', 'bg-white', 'text-zinc-700');
+      } else {
+        b.classList.remove('active', 'border-zinc-900', 'bg-zinc-900', 'text-white', 'font-semibold');
+        b.classList.add('border-zinc-200', 'bg-white', 'text-zinc-700');
+      }
+    });
+
+    // Dropdowns
+    if (desktopCategorySelect) desktopCategorySelect.value = currentCategory;
+    if (desktopSortSelect) desktopSortSelect.value = currentSort;
+    if (mobileSortSelect) mobileSortSelect.value = currentSort;
+
+    // Active Filters Counter & Chips
+    let activeFilterCount = 0;
+    const chips: { type: string; label: string }[] = [];
+
+    if (currentSearch) {
+      activeFilterCount++;
+      chips.push({ type: 'search', label: `"${currentSearch}"` });
+    }
+    if (currentCompat !== 'all') {
+      activeFilterCount++;
+      chips.push({ type: 'compat', label: `Platform: ${currentCompat}` });
+    }
+    if (currentType !== 'all') {
+      activeFilterCount++;
+      chips.push({ type: 'type', label: `Type: ${typeLabelMap[currentType] || currentType}` });
+    }
+    if (currentCategory !== 'all') {
+      activeFilterCount++;
+      chips.push({ type: 'category', label: `Category: ${categoryLabelMap[currentCategory] || currentCategory}` });
+    }
+
+    // Badges
+    if (mobileFilterBadge) {
+      if (activeFilterCount > 0) {
+        mobileFilterBadge.textContent = activeFilterCount.toString();
+        mobileFilterBadge.classList.remove('hidden');
+      } else {
+        mobileFilterBadge.classList.add('hidden');
+      }
+    }
+    if (mobileFilterModalBadge) {
+      if (activeFilterCount > 0) {
+        mobileFilterModalBadge.textContent = `${activeFilterCount} active`;
+        mobileFilterModalBadge.classList.remove('hidden');
+      } else {
+        mobileFilterModalBadge.classList.add('hidden');
+      }
+    }
+
+    // Active Chips Bar rendering
+    if (activeFiltersBar && activeChipsContainer) {
+      if (chips.length > 0) {
+        activeFiltersBar.classList.remove('hidden');
+        activeChipsContainer.innerHTML = chips.map(chip => `
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-zinc-100 border border-zinc-200/80 px-2.5 py-0.5 text-xs text-zinc-700 font-medium">
+            <span>${chip.label}</span>
+            <button 
+              type="button" 
+              data-remove-filter="${chip.type}" 
+              class="text-zinc-400 hover:text-zinc-900 transition-colors font-bold cursor-pointer"
+              aria-label="Remove filter"
+            >✕</button>
+          </span>
+        `).join('');
+      } else {
+        activeFiltersBar.classList.add('hidden');
+        activeChipsContainer.innerHTML = '';
+      }
+    }
+
+    syncUrlParams();
+  }
+
+  // Core Filtering & Sorting Engine
   function applyFiltersAndSort() {
     let visibleCount = 0;
     const isSearching = currentSearch.length > 0;
 
-    // Visibility of Hero & Featured Banner when searching
+    // Smart Spotlight Magisk Banner Visibility:
+    // Only display when user has NOT searched and is browsing all or Magisk modules
+    const shouldShowSpotlight = 
+      !isSearching && 
+      (currentCompat === 'all' || currentCompat === 'Magisk') &&
+      (currentType === 'all' || currentType === 'flashable-zip') &&
+      currentCategory === 'all';
+
     if (featuredMagiskBanner) {
-      featuredMagiskBanner.style.display = isSearching ? 'none' : '';
+      featuredMagiskBanner.style.display = shouldShowSpotlight ? '' : 'none';
     }
 
+    // Condense hero padding when actively searching
     if (heroSection && heroText) {
       if (isSearching) {
-        heroSection.classList.remove('py-10', 'sm:py-12');
-        heroSection.classList.add('py-5', 'sm:py-6');
+        heroSection.classList.remove('py-5', 'sm:py-10');
+        heroSection.classList.add('py-4', 'sm:py-5');
         heroText.classList.add('hidden');
       } else {
-        heroSection.classList.add('py-10', 'sm:py-12');
-        heroSection.classList.remove('py-5', 'sm:py-6');
+        heroSection.classList.add('py-5', 'sm:py-10');
+        heroSection.classList.remove('py-4', 'sm:py-5');
         heroText.classList.remove('hidden');
       }
     }
 
-    // Filter module cards in the grid directly
+    // Filter module cards directly in DOM
     cardWrappers.forEach(el => {
       const id = el.getAttribute('data-id') || '';
       const name = el.getAttribute('data-name') || '';
@@ -429,8 +940,8 @@ const itemListSchema = {
       const type = el.getAttribute('data-type') || '';
       const compat = (el.getAttribute('data-compat') || '').split(',');
 
-      // If not searching, hide the duplicate Magisk card because spotlight banner is active
-      if (!isSearching && id === 'magisk') {
+      // If spotlight banner is visible, hide duplicate Magisk card in grid
+      if (shouldShowSpotlight && id === 'magisk') {
         el.style.display = 'none';
         return;
       }
@@ -452,7 +963,7 @@ const itemListSchema = {
       }
     });
 
-    // Sort visible elements in the DOM
+    // Reorder visible DOM cards based on currentSort
     const sorted = [...cardWrappers].sort((a, b) => {
       if (currentSort === 'trending') {
         const K = 3;
@@ -493,10 +1004,13 @@ const itemListSchema = {
       if (moduleGrid) moduleGrid.appendChild(el);
     });
 
-    if (moduleCount) {
-      moduleCount.textContent = `Showing ${visibleCount} modules`;
-    }
+    // Update Counters
+    const countText = `Showing ${visibleCount} modules`;
+    if (desktopModuleCount) desktopModuleCount.textContent = countText;
+    if (mobileModuleCount) mobileModuleCount.textContent = `${visibleCount} modules`;
+    if (sheetApplyCount) sheetApplyCount.textContent = visibleCount.toString();
 
+    // No Results State
     if (noResults) {
       if (visibleCount === 0) {
         noResults.classList.remove('hidden');
@@ -521,20 +1035,30 @@ const itemListSchema = {
     }
   }
 
-  // Ctrl+K keyboard shortcut
+  // Keyboard Shortcuts (Ctrl+K to focus search, Escape to close modal or clear search)
   window.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
       e.preventDefault();
       searchInput?.focus();
       searchInput?.select();
+    } else if (e.key === 'Escape') {
+      if (mobileFilterModal && !mobileFilterModal.classList.contains('pointer-events-none')) {
+        closeMobileFilterDrawer();
+      } else if (currentSearch) {
+        currentSearch = '';
+        if (searchInput) searchInput.value = '';
+        applyFiltersAndSort();
+        updateUIControls();
+      }
     }
   });
 
-  // Search input events: instant live filtering with debounced analytics
+  // Search Input Handler with instant clear button
   let searchAnalyticsTimeout: any;
   searchInput?.addEventListener('input', (e) => {
     currentSearch = (e.target as HTMLInputElement).value.toLowerCase().trim();
     applyFiltersAndSort();
+    updateUIControls();
 
     clearTimeout(searchAnalyticsTimeout);
     if (currentSearch.length >= 2) {
@@ -544,83 +1068,140 @@ const itemListSchema = {
     }
   });
 
-  categorySelect?.addEventListener('change', (e) => {
-    currentCategory = (e.target as HTMLSelectElement).value;
+  searchClearBtn?.addEventListener('click', () => {
+    currentSearch = '';
+    if (searchInput) {
+      searchInput.value = '';
+      searchInput.focus();
+    }
     applyFiltersAndSort();
-    (window as any).umami?.track('filter-category', { category: currentCategory });
+    updateUIControls();
+    (window as any).umami?.track('clear-search');
   });
 
-  sortSelect?.addEventListener('change', (e) => {
-    currentSort = (e.target as HTMLSelectElement).value;
-    applyFiltersAndSort();
-    (window as any).umami?.track('sort-modules', { sort: currentSort });
-  });
-
-  compatButtons.forEach(btn => {
+  // Desktop Platform Filter Buttons
+  desktopCompatButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      compatButtons.forEach(b => {
-        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      });
-      btn.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-      btn.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      
       currentCompat = btn.getAttribute('data-compat') || 'all';
       applyFiltersAndSort();
+      updateUIControls();
       (window as any).umami?.track('filter-platform', { platform: currentCompat });
     });
   });
 
-  typeButtons.forEach(btn => {
+  // Mobile Platform Quick Strip Buttons
+  mobilePlatformButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      typeButtons.forEach(b => {
-        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      });
-      btn.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-      btn.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      
+      currentCompat = btn.getAttribute('data-compat') || 'all';
+      applyFiltersAndSort();
+      updateUIControls();
+      (window as any).umami?.track('filter-platform', { platform: currentCompat });
+    });
+  });
+
+  // Mobile Sheet Platform Buttons
+  sheetPlatformButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentCompat = btn.getAttribute('data-compat') || 'all';
+      applyFiltersAndSort();
+      updateUIControls();
+      (window as any).umami?.track('filter-platform', { platform: currentCompat });
+    });
+  });
+
+  // Desktop Software Type Filter Buttons
+  desktopTypeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
       currentType = btn.getAttribute('data-type') || 'all';
       applyFiltersAndSort();
+      updateUIControls();
       (window as any).umami?.track('filter-type', { type: currentType });
     });
   });
 
-  resetBtn?.addEventListener('click', () => {
-    if (searchInput) searchInput.value = '';
-    if (categorySelect) categorySelect.value = 'all';
-    if (sortSelect) sortSelect.value = 'trending';
-    
-    currentSearch = '';
-    currentCategory = 'all';
-    currentSort = 'trending';
-    currentCompat = 'all';
-    currentType = 'all';
-
-    compatButtons.forEach((b, idx) => {
-      if (idx === 0) {
-        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      } else {
-        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      }
+  // Mobile Sheet Software Type Buttons
+  sheetTypeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentType = btn.getAttribute('data-type') || 'all';
+      applyFiltersAndSort();
+      updateUIControls();
+      (window as any).umami?.track('filter-type', { type: currentType });
     });
-
-    typeButtons.forEach((b, idx) => {
-      if (idx === 0) {
-        b.classList.add('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.remove('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      } else {
-        b.classList.remove('active', 'bg-zinc-900', 'text-white', 'shadow-xs', 'hover:bg-zinc-800');
-        b.classList.add('bg-transparent', 'text-zinc-600', 'hover:bg-zinc-200/60', 'hover:text-zinc-900');
-      }
-    });
-
-    applyFiltersAndSort();
-    (window as any).umami?.track('reset-filters');
   });
 
+  // Mobile Sheet Category Buttons
+  sheetCategoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentCategory = btn.getAttribute('data-category') || 'all';
+      applyFiltersAndSort();
+      updateUIControls();
+      (window as any).umami?.track('filter-category', { category: currentCategory });
+    });
+  });
+
+  // Desktop Category Select
+  desktopCategorySelect?.addEventListener('change', (e) => {
+    currentCategory = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+    updateUIControls();
+    (window as any).umami?.track('filter-category', { category: currentCategory });
+  });
+
+  // Sorters
+  desktopSortSelect?.addEventListener('change', (e) => {
+    currentSort = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+    updateUIControls();
+    (window as any).umami?.track('sort-modules', { sort: currentSort });
+  });
+
+  mobileSortSelect?.addEventListener('change', (e) => {
+    currentSort = (e.target as HTMLSelectElement).value;
+    applyFiltersAndSort();
+    updateUIControls();
+    (window as any).umami?.track('sort-modules', { sort: currentSort });
+  });
+
+  // Reset Actions
+  function resetAllFilters() {
+    if (searchInput) searchInput.value = '';
+    currentSearch = '';
+    currentCompat = 'all';
+    currentType = 'all';
+    currentCategory = 'all';
+    currentSort = 'trending';
+
+    applyFiltersAndSort();
+    updateUIControls();
+    (window as any).umami?.track('reset-filters');
+  }
+
+  resetBtn?.addEventListener('click', resetAllFilters);
+  sheetResetBtn?.addEventListener('click', resetAllFilters);
+  clearAllChipsBtn?.addEventListener('click', resetAllFilters);
+
+  // Active Chip Removal Delegation
+  activeChipsContainer?.addEventListener('click', (e) => {
+    const target = (e.target as HTMLElement).closest('[data-remove-filter]');
+    if (!target) return;
+    const filterType = target.getAttribute('data-remove-filter');
+
+    if (filterType === 'search') {
+      currentSearch = '';
+      if (searchInput) searchInput.value = '';
+    } else if (filterType === 'compat') {
+      currentCompat = 'all';
+    } else if (filterType === 'type') {
+      currentType = 'all';
+    } else if (filterType === 'category') {
+      currentCategory = 'all';
+    }
+
+    applyFiltersAndSort();
+    updateUIControls();
+  });
+
+  // Quick Request Button
   quickRequestBtn?.addEventListener('click', () => {
     if (!currentSearch || currentSearch.length < 2) return;
     (window as any).umami?.track('request-module', { query: currentSearch });
@@ -629,11 +1210,15 @@ const itemListSchema = {
     quickRequestBtn.classList.add('opacity-75', 'pointer-events-none');
   });
 
-  // Parse initial query params (e.g. from 404 recovery or external links)
-  const initialQuery = new URLSearchParams(window.location.search).get('q');
-  if (initialQuery && searchInput) {
-    searchInput.value = initialQuery;
-    currentSearch = initialQuery.toLowerCase().trim();
+  // History Popstate Handling (Browser back/forward buttons)
+  window.addEventListener('popstate', () => {
+    loadStateFromUrl();
     applyFiltersAndSort();
-  }
+    updateUIControls();
+  });
+
+  // Initial Load from URL parameters
+  loadStateFromUrl();
+  applyFiltersAndSort();
+  updateUIControls();
 </script>
