@@ -1,0 +1,31 @@
+{
+  "id": "miku-luotianyi-boot-animation",
+  "name": "Hatsune Miku & Luo Tianyi Boot Animation",
+  "repo": null,
+  "author": "Fu Chen Ran Xi",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "High-definition Vocaloid anime startup animation showcasing Hatsune Miku and Luo Tianyi with fluid frame dynamics.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "icon": "assets/icons/miku-luotianyi-boot-animation.png",
+  "stars": 1015,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=352",
+    "assetName": "miku-luotianyi-boot-animation-v1.0.zip"
+  },
+  "seo": {
+    "title": "Hatsune Miku & Luo Tianyi Boot Animation for Magisk & KernelSU",
+    "description": "Vocaloid anime boot sequence featuring Hatsune Miku and Luo Tianyi with vibrant 60FPS startup visuals."
+  }
+}

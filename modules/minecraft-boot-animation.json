@@ -1,0 +1,31 @@
+{
+  "id": "minecraft-boot-animation",
+  "name": "Minecraft Pixel Boot Animation",
+  "repo": null,
+  "author": "Wei Bin Guo",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Retro 8-bit Minecraft block generation and crafting animation systemless replacement for Android boot sequences.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "icon": "assets/icons/minecraft-boot-animation.png",
+  "stars": 1045,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.1",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=447",
+    "assetName": "minecraft-boot-animation-v1.1.zip"
+  },
+  "seo": {
+    "title": "Minecraft Pixel Boot Animation for Magisk & KernelSU",
+    "description": "Transform your phone startup with retro pixel Minecraft block building animations on Magisk, KernelSU, and APatch."
+  }
+}

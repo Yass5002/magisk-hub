@@ -1,0 +1,31 @@
+{
+  "id": "auto-skip-splash-screens",
+  "name": "Auto Skip Splash Screen Ads",
+  "repo": null,
+  "author": "Shui Nian Hua Lou Ta Yan",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-utilities",
+  "softwareType": "flashable-module",
+  "description": "Systemless privileged background utility that detects application launch splash screens and automatically clicks skip countdown timers.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/auto-skip-splash-screens.png",
+  "stars": 2367,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=426",
+    "assetName": "auto-skip-splash-screens-v2.0.zip"
+  },
+  "seo": {
+    "title": "Auto Skip Splash Screen Ads for Magisk & KernelSU",
+    "description": "Instantly bypass 3-to-5 second opening splash ads across Android apps with privileged automated click interception."
+  }
+}

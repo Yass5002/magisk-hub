@@ -1,0 +1,31 @@
+{
+  "id": "super-charge-210w-booster",
+  "name": "210W Screen-On Extreme Fast Charging Mod",
+  "repo": null,
+  "author": "He Zheng & Class 6 Grade 1",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Unlocks maximum charging current and wattage (up to 210W) during active screen-on time on Xiaomi and Redmi devices by overriding thermal policies with 80°C hardware protection.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/super-charge-210w-booster.png",
+  "stars": 1903,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v3.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=21",
+    "assetName": "super-charge-210w-booster-v3.0.zip"
+  },
+  "seo": {
+    "title": "210W Screen-On Extreme Fast Charging Mod for Magisk & KernelSU",
+    "description": "Bypass screen-on charging wattage caps on Xiaomi and Redmi devices while maintaining safety thermal limits."
+  }
+}

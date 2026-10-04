@@ -1,0 +1,31 @@
+{
+  "id": "adblock-miui-speed-limit-remover",
+  "name": "AdBlock & MIUI Download Speed Limit Remover",
+  "repo": null,
+  "author": "ZiXuan & MoLiRanRan",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "networking-proxies",
+  "softwareType": "flashable-module",
+  "description": "Deep systemless adblocking engine and MIUI network throttling remover utilizing iptables, chattr, and hosts redirection to eliminate bloatware ads and bypass download restrictions.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/adblock-miui-speed-limit-remover.png",
+  "stars": 3706,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.7.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=359",
+    "assetName": "adblock-miui-speed-limit-remover-v1.7.0.zip"
+  },
+  "seo": {
+    "title": "AdBlock & MIUI Download Speed Limit Remover for Magisk & KernelSU",
+    "description": "Eliminate MIUI bloatware ads and bypass download speed throttling with systemless hosts, iptables, and stub APK replacement."
+  }
+}

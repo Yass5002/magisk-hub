@@ -1,0 +1,31 @@
+{
+  "id": "harmonyos-boot-animation",
+  "name": "HarmonyOS Boot Animation & Chime",
+  "repo": null,
+  "author": "Yu Kong",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Replaces the default Android second-stage boot animation and startup sound with Huawei HarmonyOS concentric luminous ring animation and boot chime.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/harmonyos-boot-animation.png",
+  "stars": 3266,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=453",
+    "assetName": "harmonyos-boot-animation-v1.0.zip"
+  },
+  "seo": {
+    "title": "HarmonyOS Boot Animation & Chime for Magisk & KernelSU",
+    "description": "Transform your Android startup sequence with authentic Huawei HarmonyOS luminous boot animation and startup audio."
+  }
+}

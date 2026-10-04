@@ -1,0 +1,31 @@
+{
+  "id": "apple-ios-boot-animation",
+  "name": "Apple iOS Classic Boot Animation",
+  "repo": null,
+  "author": "Xiao Bai Yang",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Minimalist Apple iOS boot sequence featuring the classic monochrome Apple logo with dynamic progress bar on a pure black OLED background.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/apple-ios-boot-animation.png",
+  "stars": 1100,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v7.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=427",
+    "assetName": "apple-ios-boot-animation-v7.0.zip"
+  },
+  "seo": {
+    "title": "Apple iOS Classic Boot Animation for Magisk & KernelSU",
+    "description": "Authentic Apple iOS boot sequence with minimalist white Apple silhouette and startup progress bar for rooted Android."
+  }
+}

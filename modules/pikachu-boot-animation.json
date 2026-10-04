@@ -1,0 +1,31 @@
+{
+  "id": "pikachu-boot-animation",
+  "name": "Pikachu Animated Boot Sequence",
+  "repo": null,
+  "author": "Ao Jiao Xiao Zheng Tai",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Vibrant 1080x1920 60 FPS animated Pikachu boot sequence replacing standard OEM startup graphics with fluid lightning animations.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "icon": "assets/icons/pikachu-boot-animation.png",
+  "stars": 1285,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=417",
+    "assetName": "pikachu-boot-animation-v1.0.zip"
+  },
+  "seo": {
+    "title": "Pikachu Animated Boot Sequence for Magisk & KernelSU",
+    "description": "High-definition 60FPS Pikachu animated boot sequence systemless replacement for Android devices."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "miui-camera-feature-expansion",
+  "name": "MIUI Camera Feature Completion & Expansion",
+  "repo": null,
+  "author": "Xiao Chen Tong Xue & xing1225",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless privileged MIUI Camera upgrade unlocking 480FPS slow motion, Super Moon, Clone, Movie Frame, Multi-Camera concurrent recording, and Pro photography profiles.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/miui-camera-feature-expansion.png",
+  "stars": 1494,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v4.3.001951.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=290",
+    "assetName": "miui-camera-feature-expansion-v4.3.001951.0.zip"
+  },
+  "seo": {
+    "title": "MIUI Camera Feature Completion & Expansion for Magisk & KernelSU",
+    "description": "Unlock premium photographic features including Super Moon, Vlog, 480FPS slow-motion, and Multi-Cam capture on Xiaomi devices."
+  }
+}
