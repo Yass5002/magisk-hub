@@ -28,7 +28,7 @@ faq:
   - question: "Why doesn't Android trust user-installed CA certificates by default?"
     answer: "Starting in Android 7.0 (Nougat), Google updated the default Network Security Configuration to ignore user-installed CA certificates for application traffic. Apps only trust certificates stored in the read-only /system/etc/security/cacerts/ directory. This module bridges that gap by mounting user certificates directly into the system trust store."
   - question: "Why does this module fail on Android 14?"
-    answer: "In Android 14+, Google moved root CA certificates out of /system/etc/security/cacerts/ and into an immutable, updatable APEX container (com.android.conscrypt). Standard systemless overlay mounts cannot modify the Conscrypt APEX. On Android 14 and newer, use the MoveCertificate module instead."
+    answer: "In Android 14+, Google moved root CA certificates out of /system/etc/security/cacerts/ and into an immutable, updatable APEX container (com.android.conscrypt). Standard systemless overlay mounts cannot modify the Conscrypt APEX. On Android 14 and newer, use the [MoveCertificate](/modules/movecertificate/) module instead."
 ---
 
 ## Overview

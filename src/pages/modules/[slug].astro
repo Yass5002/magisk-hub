@@ -64,6 +64,98 @@ function parseInlineMarkdown(text: string): string {
   return text.replace(/`([^`]+)`/g, '<code class="bg-zinc-100 text-zinc-800 border border-zinc-200 text-xs font-mono px-1.5 py-0.5 rounded">$1</code>');
 }
 
+// Verified legitimate target modules (strictly module-to-module dependencies & conflicts)
+const VERIFIED_MODULE_TARGETS: Record<string, string[]> = {
+  'lsposed': ['LSPosed Framework', 'LSPosed', 'Xposed Framework', 'Xposed runtime', 'EdXposed'],
+  'shizuku': ['Shizuku service', 'Shizuku'],
+  'dhizuku': ['Dhizuku'],
+  'playintegrityfix': ['Play Integrity Fix', 'PlayIntegrityFix', 'PIF'],
+  'playintegrityfork': ['Play Integrity Fork', 'PlayIntegrityFork'],
+  'trickystore': ['TrickyStore', 'Tricky Store', 'Tricky_Store'],
+  'trickystoreoss': ['TrickyStoreOSS', 'Tricky Store OSS'],
+  'teesimulator': ['TEESimulator', 'TEE Simulator'],
+  'teesimulator-rs': ['TEESimulator-RS', 'TEE Simulator RS'],
+  'shamiko': ['Shamiko'],
+  'zygisknext': ['ZygiskNext', 'Zygisk Next', 'Zygisk-Next'],
+  'rezygisk': ['ReZygisk'],
+  'neozygisk': ['NeoZygisk'],
+  'onyxzygisk': ['OnyxZygisk'],
+  'vexzygisk': ['VexZygisk'],
+  'zygisk-assistant': ['Zygisk Assistant', 'Zygisk-Assistant'],
+  'bindhosts': ['bindhosts', 'Systemless hosts'],
+  'acc': ['Advanced Charging Controller', 'ACC'],
+  'hyperos-theme-manager': ['HyperOS Theme Manager', 'HyperOS-Theme-Manager'],
+  'hyperos-app-vault': ['App Vault mod', 'HyperOS App Vault', 'HyperOS-App-Vault'],
+  'miui-theme-rights-enabler': ['Apk Protection Patch', 'Theme Rights Enabler', 'MIUI Theme Rights', 'Core Patch'],
+  'viper4android-dolby-coexistence': ['ViPER4Android & Dolby Atmos Coexistence', 'ViPER4Android', 'Viper4Android'],
+  'viperfx-re': ['ViPERFX_RE', 'ViPERFX-RE'],
+  'dsp-audiofix': ['DSP Audio Fix', 'dsp-audiofix'],
+  'leica-camera-port': ['Leica Camera', 'Leica camera'],
+  'miui-gallery-feature-unlocker': ['MIUI Gallery Feature Unlocker', 'Gallery AI feature', 'Gallery AI'],
+  'app-manager': ['App Manager'],
+  'canta': ['Canta'],
+  'hail': ['Hail'],
+  'adguardhomeforroot': ['AdGuard Home for Root', 'AdGuardHome'],
+  'freepps-xiaomi-fast-charge': ['FreePPS', 'FreePPS Xiaomi'],
+  'battery-health-query': ['Battery Health Query'],
+  'quantitative-charge-cutoff': ['Quantitative Charge Cutoff', 'BH Quantitative Charging Cutoff'],
+  'movecertificate': ['MoveCertificate'],
+  'alwaystrustusercerts': ['AlwaysTrustUserCerts'],
+  'drc-remover': ['drc-remover'],
+  'usb-samplerate-unlocker': ['usb-samplerate-unlocker'],
+  'yetanotherbootloopprotector': ['YetAnotherBootloopProtector'],
+  'ashlooper': ['AshLooper', 'AshReXcue'],
+  'knoxpatch': ['KnoxPatch'],
+  'ohmykeymint': ['OhMyKeymint'],
+  'stealthdebug': ['StealthDebug'],
+  'stevenblock': ['StevenBlock'],
+  'magicalprotection': ['MagicalProtection'],
+  'sui': ['Sui'],
+  'alwaysstrong': ['AlwaysStrong'],
+  'yurikey': ['YuriKey'],
+  'specter': ['Specter'],
+  'playcurlnext': ['playcurlNEXT', 'playcurlnext'],
+  'tricky-addon-update-target-list': ['Tricky Addon', 'tricky-addon-update-target-list'],
+  'mountify': ['mountify'],
+  'nohello': ['NoHello'],
+  'makefontsgreatagain': ['MakeFontsGreatAgain'],
+  'material-files': ['Material Files'],
+  'install-with-options': ['Install with Options'],
+  'vpnhide': ['vpnhide', 'VpnHide'],
+  'librepods': ['librepods', 'LibrePods'],
+  'locusmimic': ['LocusMimic'],
+  'lspdoze': ['LSPDoze'],
+  'qishui-music-svip-unlocker': ['Soda Music SVIP', 'Qishui Music SVIP', 'qishui-music-svip-unlocker'],
+  'treat-wheel-zygisk': ['Treat-Wheel-Zygisk'],
+  'iunlockergl': ['iUnlockerGL'],
+  'magisk-ad-blocking-module': ['Magisk-Ad-Blocking-Module']
+};
+
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function renderEntityMarkdown(text: string, currentSlug: string, isConflict: boolean = false): string {
+  if (!text) return '';
+  let html = parseInlineMarkdown(text);
+  
+  for (const [targetSlug, aliases] of Object.entries(VERIFIED_MODULE_TARGETS)) {
+    if (targetSlug === currentSlug) continue; // Never self-link
+    for (const alias of aliases) {
+      const regex = new RegExp(`\\b(${escapeRegExp(alias)})\\b`, 'i');
+      if (regex.test(html)) {
+        const linkClass = isConflict
+          ? "font-medium text-rose-700 underline underline-offset-2 hover:text-rose-900 transition-colors"
+          : "font-medium text-zinc-900 underline underline-offset-2 hover:text-black transition-colors";
+        html = html.replace(regex, `<a href="/modules/${targetSlug}/" class="${linkClass}">$1</a>`);
+        break; // Match first occurrence per target
+      }
+    }
+  }
+  return html;
+}
+
+
 // Category icon map for fallback
 const iconMap: Record<string, string> = {
   'root-management': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
@@ -519,7 +611,7 @@ const seo = generateModuleSEO(module);
                 <h4 class="text-xs font-medium text-zinc-700">Prerequisites</h4>
                 <ul class="mt-1.5 list-disc list-inside text-xs text-zinc-600 space-y-1">
                   {frontmatter.prerequisites.map((p: string) => (
-                    <li set:html={parseInlineMarkdown(p)} />
+                    <li set:html={renderEntityMarkdown(p, module.id, false)} />
                   ))}
                 </ul>
               </div>
@@ -530,7 +622,7 @@ const seo = generateModuleSEO(module);
                 <h4 class="text-xs font-medium text-rose-600">Known Conflicts</h4>
                 <ul class="mt-1.5 list-disc list-inside text-xs text-zinc-600 space-y-1">
                   {frontmatter.conflicts.map((c: string) => (
-                    <li set:html={parseInlineMarkdown(c)} />
+                    <li set:html={renderEntityMarkdown(c, module.id, true)} />
                   ))}
                 </ul>
               </div>
