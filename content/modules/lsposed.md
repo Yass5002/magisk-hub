@@ -49,25 +49,11 @@ However, earlier frameworks like the original Xposed and EdXposed suffered from 
 
 LSPosed operates during early Android boot through Magisk or KernelSU's **Zygisk** (Zygote Injection) lifecycle:
 
-```
-┌────────────────────────────────────────────────────────┐
-│                      init (PID 1)                      │
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                  app_process / Zygote                  │
-│  - Loads libart.so & core system classes               │
-│  - Zygisk loads LSPosed core library (zygisk_lsposed)  │
-└───────────────────────────┬────────────────────────────┘
-                            │ Forking process
-              ┌─────────────┴─────────────┐
-              ▼                           ▼
-┌───────────────────────────┐ ┌───────────────────────────┐
-│ Target App (In Scope)     │ │ Normal App (Out of Scope) │
-│ - LSPosed hooks activated │ │ - Zero hooks injected     │
-│ - Module dex loaded in RAM│ │ - Native execution speed  │
-└───────────────────────────┘ └───────────────────────────┘
-```
+- **init (PID 1)**: System initialization boots the OS and spawns core system daemons.
+- **app_process / Zygote**: Loads `libart.so` and runtime classes; Zygisk dynamically loads the LSPosed core library (`zygisk_lsposed`).
+- **Selective Process Forking**:
+  - **Target App (In Scope)**: LSPosed hooks activated; module DEX loaded directly in RAM; method hooks executed via LSPlant.
+  - **Normal App (Out of Scope)**: Zero hooks injected; zero overhead with native execution speed.
 
 1. **Zygisk Injection**: When Android spawns the `zygote` (and `zygote64`) daemon, LSPosed injects its core hooking library (`liblspd.so`).
 2. **Pre-Fork Evaluation**: Before Zygote forks a child process to run an application, LSPosed checks `/data/adb/lspd/` to see whether the target package name is present in the module's scope database.

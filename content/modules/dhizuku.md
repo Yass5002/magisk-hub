@@ -52,26 +52,14 @@ Because Android enforces a strict one-owner rule, users historically had to choo
 
 ## Technical Architecture & Binder Proxying
 
-```
-┌────────────────────────────────────────────────────────┐
-│               Android System Framework                 │
-│         android.app.admin.DevicePolicyManager          │
-└───────────────────────────▲────────────────────────────┘
-                            │ native DPM Binder
-┌───────────────────────────┴────────────────────────────┐
-│                    Dhizuku Server                      │
-│     (Holds Device Owner status via DAReceiver)         │
-│  - Enforces per-app permission tokens                  │
-│  - Multiplexes IPC requests                            │
-└───────────────▲────────────────────────▲───────────────┘
-                │                        │
-       Dhizuku Binder IPC       Dhizuku Binder IPC
-                │                        │
-┌───────────────┴────────┐      ┌────────┴───────────────┐
-│     Hail (Freezer)     │      │   App Manager / Canta  │
-│  Freezes apps via DPM  │      │ Uninstalls bloatware   │
-└────────────────────────┘      └────────────────────────┘
-```
+- **Android System Framework**: Hosts `android.app.admin.DevicePolicyManager` (DPM) providing enterprise-grade administrative APIs.
+- **Dhizuku Server**:
+  - Holds official Device Owner status via `DeviceAdminReceiver`.
+  - Enforces per-application permission tokens and access policies.
+  - Multiplexes IPC Binder requests between unprivileged clients and DPM.
+- **Delegated Client Applications**:
+  - **Hail**: Freezes, hides, or suspends apps using Device Policy Manager APIs without root.
+  - **App Manager / Canta**: Manages user policies and system package lifecycles cleanly.
 
 ---
 

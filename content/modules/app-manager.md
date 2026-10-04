@@ -47,17 +47,14 @@ Power users, privacy advocates, reverse engineers, and developers require surgic
 
 App Manager dynamically configures its capabilities based on available execution backends:
 
-```
-┌────────────────────────────────────────────────────────┐
-│                    App Manager UI                      │
-├───────────────────────────┬────────────────────────────┤
-│ Shizuku Mode (UID 2000)   │ Full Root Mode (UID 0)     │
-│ • Install / Uninstall APKs│ • Block Internal Components│
-│ • View Manifests & DEX    │ • Modify /data/data files  │
-│ • Clear App Data / Caches │ • Edit SharedPreferences   │
-│ • Control AppOps / Perms  │ • Full App + Data Backups  │
-└───────────────────────────┴────────────────────────────┘
-```
+- **Shizuku Mode (UID 2000 - Privileged Shell)**:
+  - Install / uninstall APK packages without prompts
+  - Inspect application manifests, certificates, and DEX code
+  - Clear app data, cache, and configure AppOps permissions
+- **Full Root Mode (UID 0 - Superuser)**:
+  - Block internal app components (Activities, Services, Broadcast Receivers, Providers)
+  - Inspect and modify private `/data/data/<package>` databases and SharedPreferences
+  - Perform complete system-level app and encrypted data backups
 
 1. **No-Root Mode**: Basic inspection of installed packages, viewing permissions, extracting public APKs, and scanning Exodus tracker signatures.
 2. **Shizuku / Wireless ADB Mode**: Executes shell-level commands without a desktop computer. Enables freezing, user-0 uninstallation, AppOps configuration, and batch operations.

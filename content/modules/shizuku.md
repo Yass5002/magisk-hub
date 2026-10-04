@@ -51,18 +51,9 @@ Shizuku eliminates the shell intermediary entirely by establishing an inter-proc
 
 Android's system architecture organizes core OS capabilities into system services running inside `system_server` (e.g., `PackageManagerService`, `ActivityManagerService`, `AppOpsService`). User applications interact with these services by obtaining `IBinder` handles:
 
-```
-┌─────────────────┐       IPC Binder Token        ┌──────────────────────┐
-│   Client App    ├──────────────────────────────►│    Shizuku Server    │
-│  (e.g., Canta)  │◄──────────────────────────────┤ (app_process / Java) │
-└─────────────────┘                               └──────────┬───────────┘
-                                                             │ Direct AIDL
-                                                             ▼ Call
-                                                  ┌──────────────────────┐
-                                                  │    system_server     │
-                                                  │ (PackageManager, etc)│
-                                                  └──────────────────────┘
-```
+- **Client App** (e.g. Canta, Hail, Material Files): Authenticates via Shizuku IPC binder token with user approval.
+- **Shizuku Server** (`app_process` daemon): Runs under UID 2000 (Shell) or UID 0 (Root) and brokers privileged Binder handles.
+- **Android `system_server`**: Receives direct AIDL system calls (PackageManager, ActivityManager, AppOps) delegated by the Shizuku server on behalf of the client app.
 
 1. **Daemon Spawning**: Shizuku launches a standalone Java process using Android's native `app_process` binary running under either the `shell` UID (`2000` via ADB) or the `root` UID (`0` via su).
 2. **Binder Delegation**: Once the daemon is active, it obtains privileged Binder interfaces from the system server.

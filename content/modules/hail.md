@@ -47,27 +47,15 @@ While stock Android includes battery optimization modes, aggressive apps often c
 
 Hail provides three distinct primitives for halting applications:
 
-```
-┌────────────────────────────────────────────────────────┐
-│                        Hail UI                         │
-│   (Selects apps & triggers Freeze / Unfreeze action)   │
-└───────────────────────────┬────────────────────────────┘
-                            │ Dispatches call via
-              ┌─────────────┼─────────────┐
-              ▼             ▼             ▼
-       ┌─────────────┐┌───────────┐┌──────────────┐
-       │   Shizuku   ││ Root (su) ││ Device Owner │
-       └──────┬──────┘└─────┬─────┘└──────┬───────┘
-              │             │             │
-              ▼             ▼             ▼
-┌────────────────────────────────────────────────────────┐
-│             Android PackageManagerService              │
-├────────────────────────────────────────────────────────┤
-│ 1. Disable: setApplicationEnabledSetting()             │
-│ 2. Hide:    setApplicationHiddenSettingAsUser()        │
-│ 3. Suspend: setPackagesSuspendedAsUser() (Android 7+)  │
-└────────────────────────────────────────────────────────┘
-```
+- **Hail UI**: Manages application lists, tags, and one-tap Freeze / Unfreeze actions.
+- **Dispatch Mechanisms**:
+  - **Shizuku**: Privileged ADB shell execution without persistent root.
+  - **Root (`su`)**: Direct superuser execution via Magisk, KernelSU, or APatch.
+  - **Device Owner**: Enterprise-grade management via Dhizuku or Knox.
+- **Android PackageManagerService Methods**:
+  - **Disable**: `setApplicationEnabledSetting()` (standard component disabling)
+  - **Hide**: `setApplicationHiddenSettingAsUser()` (makes the app completely invisible in launcher and settings)
+  - **Suspend**: `setPackagesSuspendedAsUser()` (Android 7+ freeze mode; grays out app icon and halts execution)
 
 ### 1. Suspend Mode (`setPackagesSuspendedAsUser`)
 - **Recommended for modern Android (7.0+)**: This is the cleanest, most responsive method.

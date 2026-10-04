@@ -51,21 +51,8 @@ While these safeguards protect end users against malicious APK hijacking, they c
 
 Rather than modifying `/system/framework/services.jar` or flashing patched ROMs, CorePatch executes inside the `system_server` process via LSPosed:
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   system_server (PID)                  │
-├────────────────────────────────────────────────────────┤
-│  PackageManagerService (PMS)                           │
-│  - KeySetManagerService                                │
-│  - PackageSignatures                                   │
-│  - SigningDetails.checkCapability()                    │
-└───────────────────────────▲────────────────────────────┘
-                            │
-              ┌─────────────┴─────────────┐
-              │      CorePatch Hooks      │
-              │  (via LSPosed Framework)  │
-              └───────────────────────────┘
-```
+- **`system_server` Process**: Hosts Android's core `PackageManagerService` (PMS), `KeySetManagerService`, and signature verification logic (`SigningDetails.checkCapability()`).
+- **CorePatch Hooks (via LSPosed Framework)**: Injected directly into the `system_server` runtime to intercept and override signature verification methods before package installation decisions are finalized.
 
 When an installation intent is dispatched via `adb install` or the PackageInstaller UI, CorePatch intercepts the following PMS methods:
 - **`SigningDetails.checkCapability()`**: Forces the capability check to return `true` regardless of certificate differences.

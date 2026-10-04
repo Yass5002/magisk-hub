@@ -47,27 +47,16 @@ Key Attestation generates an asymmetric key pair inside your device's hardware k
 
 When Key Attestation prompts KeyStore to generate an attested key pair, the hardware security module signs a leaf certificate using its factory-provisioned private key. The leaf certificate contains a custom X.509 extension (OID `1.3.6.1.4.1.11129.2.1.17`):
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Key Attestation App                  │
-│       Generates EC/RSA key with Attestation Challenge  │
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│                  KeyMint / Hardware TEE                │
-│  - Generates key pair inside secure hardware enclave   │
-│  - Signs certificate chain using batch attestation key │
-│  - Embeds immutable security parameters into ASN.1     │
-└───────────────────────────┬────────────────────────────┘
-                            │ returns X.509 Certificate Chain
-┌───────────────────────────▼────────────────────────────┐
-│              Parsed Security Attestation               │
-│  • Security Level: TrustedEnvironment / StrongBox      │
-│  • Verified Boot State: Verified / SelfSigned / Locked │
-│  • OS Version & Security Patch Level: YYYY-MM          │
-│  • Verified Boot Key (SHA-256): [OEM Root Hash]        │
-└────────────────────────────────────────────────────────┘
-```
+- **Key Attestation App**: Initiates cryptographic key generation request with a randomized attestation challenge.
+- **KeyMint / Hardware TEE Enclave**:
+  - Generates an EC/RSA key pair inside isolated hardware (Trusted Execution Environment or StrongBox).
+  - Signs the X.509 attestation certificate chain using Google/OEM factory batch attestation private keys.
+  - Embeds immutable hardware parameters into ASN.1 certificate extensions.
+- **Parsed Security Attestation Output**:
+  - **Security Level**: `TrustedEnvironment` or dedicated `StrongBox` hardware.
+  - **Verified Boot State**: `Verified`, `SelfSigned`, or `Failed`.
+  - **OS Version & Security Patch Level**: Target OS build date and patch level.
+  - **Verified Boot Key**: SHA-256 digest of the root signing public key.
 
 ### Critical Authorization Tags
 

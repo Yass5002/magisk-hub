@@ -47,26 +47,11 @@ However, Tricky Store relies on a plain-text configuration file located at `/dat
 
 ## Technical Mechanics & Keystore Interception
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Target Application                   │
-│        (e.g. Google Play Services / Banking App)       │
-└───────────────────────────┬────────────────────────────┘
-                            │ requests KeyGen / Attestation
-┌───────────────────────────▼────────────────────────────┐
-│                  Android Keystore 2.0                  │
-│                     (keystore2)                        │
-└───────────────────────────┬────────────────────────────┘
-                            │ intercepted by Tricky Store
-┌───────────────────────────▼────────────────────────────┐
-│                      Tricky Store                      │
-│   Checks: Is calling package in target.txt?            │
-├───────────────────────────┬────────────────────────────┤
-│           MATCH           │          NO MATCH          │
-│   Injects valid hardware  │   Passes request directly  │
-│   attestation certificate │   to native TEE/KeyMint    │
-└───────────────────────────┴────────────────────────────┘
-```
+- **Target Application**: Requests KeyGen or hardware attestation (e.g., Google Play Services, Google Wallet, or banking apps).
+- **Android Keystore 2.0 (`keystore2`)**: Intercepted at the HAL binder layer by Tricky Store.
+- **Tricky Store Target Evaluation**:
+  - **Match** (package listed in `target.txt`): Injects valid hardware attestation certificate chain and keybox credentials.
+  - **No Match** (package not in `target.txt`): Passes request directly to stock device TEE / KeyMint hardware.
 
 Tricky Addon interfaces directly with `/data/adb/tricky_store/target.txt`:
 

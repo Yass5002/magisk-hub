@@ -19,6 +19,7 @@ conflicts:
 configPaths:
   - "/data/adb/copg/"
   - "/data/adb/modules/copg/"
+  - "/data/adb/modules/COPG/COPG.json"
 features:
   - "Per-app spoofing: spoof a Xiaomi 14 Ultra or ROG Phone 8 exclusively for games while your phone remains stock everywhere else"
   - "Interactive on-device WebUI accessible through root managers to select device templates"

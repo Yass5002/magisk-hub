@@ -19,6 +19,7 @@ conflicts:
 configPaths:
   - "/data/adb/tricky_store/keybox.xml"
   - "/data/adb/tricky_store/target.txt"
+  - "/data/adb/tricky_store/security_patch.txt"
   - "/data/adb/modules/trickystore/"
 features:
   - "Hooks into Android Keystore 2.0 and Keymaster HAL daemons"
@@ -91,6 +92,14 @@ com.google.android.gms.unstable
 com.android.vending
 ```
 *(Append any specific banking or enterprise app package names that perform direct Key Attestation).*
+
+### Step 4: Configure Security Patch Level (Optional, v1.2.1+)
+To customize the OS, vendor, or boot security patch date reported during attestation, create `/data/adb/tricky_store/security_patch.txt`:
+```text
+# Format: os/vendor/boot patch levels (e.g., YYYYMM or YYYYMMDD)
+# Set to '!' to avoid hacking a specific field
+```
+Changes take effect immediately without rebooting.
 
 ---
 

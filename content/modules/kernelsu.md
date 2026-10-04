@@ -47,25 +47,13 @@ Instead of running an always-on `magiskd` daemon in userspace, KernelSU patches 
 
 ## Technical Architecture: Ring 0 vs Ring 3 Root
 
-```
-┌────────────────────────────────────────────────────────┐
-│                      APPLICATIONS                      │
-├───────────────────────────┬────────────────────────────┤
-│ Authorized Root App (UID) │ Non-Root App (e.g. Banking)│
-│ • Full Root Shell Access  │ • No su binary visible     │
-│ • Custom App Profile      │ • Clean mounts & processes │
-└───────────────────────────┴────────────────────────────┘
-                             │
-                             ▼ System Calls (execve, stat)
-┌────────────────────────────────────────────────────────┐
-│              LINUX KERNEL SPACE (Ring 0)               │
-├────────────────────────────────────────────────────────┤
-│  KernelSU Core Engine                                  │
-│  - Intercepts sys_execve & privilege escalation calls  │
-│  - Overrides struct cred for authorized UIDs only      │
-│  - OverlayFS Systemless Layering                       │
-└────────────────────────────────────────────────────────┘
-```
+- **Application Layer (Userspace)**:
+  - **Authorized Root App (UID)**: Granted full root shell access and custom App Profile mount namespaces.
+  - **Non-Root App (e.g. Banking App)**: Stock environment; `su` binary does not exist in filesystem; clean mounts and unmodified process table.
+- **Linux Kernel Space (Ring 0)**:
+  - **KernelSU Core Engine**: Intercepts `sys_execve` and privilege escalation system calls directly in kernel code.
+  - **Credential Elevation**: Overrides `struct cred` exclusively for authorized caller UIDs.
+  - **OverlayFS Systemless Layering**: Merges systemless partitions at the Virtual File System (VFS) layer.
 
 ### 1. Zero File System Exposure
 In KernelSU, the `su` binary does not exist on `/system/bin` or standard PATH directories for normal apps. When an unauthorized app attempts to run `which su` or `stat("/system/xbin/su")`, the kernel returns `ENOENT` (No such file or directory).

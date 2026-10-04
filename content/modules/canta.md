@@ -47,27 +47,12 @@ Historically, removing these pre-installed packages required acquiring full root
 
 When Canta removes an application, it does not execute destructive file system operations. Instead, it instructs Android's `PackageManagerService` to remove the package exclusively for the primary user profile (`UserHandle.USER_SYSTEM` / `0`):
 
-```
-┌────────────────────────────────────────────────────────┐
-│                        Canta UI                        │
-│  - Queries Universal Debloat List database             │
-│  - Displays safety badge (Recommended, Expert, etc)    │
-└───────────────────────────┬────────────────────────────┘
-                            │ Dispatches Binder call
-┌───────────────────────────▼────────────────────────────┐
-│                     Shizuku Broker                     │
-│  - Translates request into IPackageManager call        │
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│             Android PackageManagerService              │
-├────────────────────────────────────────────────────────┤
-│ Executes: pm uninstall -k --user 0 <package_name>      │
-│ - Halts package processes & removes user data          │
-│ - Marks package as NOT installed for User 0            │
-│ - Preserves original read-only APK in /system/app/     │
-└────────────────────────────────────────────────────────┘
-```
+- **Canta UI**: Queries the Universal Debloat List database and displays package safety classifications (`[Recommended]`, `[Advanced]`, `[Expert]`, `[Unsafe]`).
+- **Shizuku Broker**: Dispatches privileged Binder calls to Android's `IPackageManager` interface without requiring root.
+- **PackageManagerService Execution**:
+  - Executes package removal via `pm uninstall -k --user 0 <package_name>`
+  - Halts package processes and deletes user state data
+  - Marks the package as uninstalled for User 0 while preserving the immutable APK on `/system/app/` for safe factory recovery
 
 Benefits of this architecture:
 1. **Safety**: Because the factory APK remains untouched on the read-only system partition, a factory reset will always restore all original apps.
@@ -80,10 +65,10 @@ Benefits of this architecture:
 
 Canta categorizes every package on your device into one of four safety tiers based on crowd-sourced community research:
 
-- **🟢 Recommended**: Completely safe to remove. Removing these packages (e.g. Facebook services, diagnostic loggers, promotional games) will never cause functional degradation.
-- **🟡 Advanced**: Safe to remove if you do not use the specific dependent feature (e.g., removing the stock calendar when using Google Calendar).
-- **🟠 Expert**: Requires caution. Removing these may break minor subsystem features (e.g., removing speech synthesis or print spooler).
-- **🔴 Unsafe**: Critical system packages (e.g., SystemUI, Android Framework, TelephonyProvider). Canta highlights these in red and warns you that removing them will cause immediate bootloops.
+- **[Recommended]**: Completely safe to remove. Removing these packages (e.g. Facebook services, diagnostic loggers, promotional games) will never cause functional degradation.
+- **[Advanced]**: Safe to remove if you do not use the specific dependent feature (e.g., removing the stock calendar when using Google Calendar).
+- **[Expert]**: Requires caution. Removing these may break minor subsystem features (e.g., removing speech synthesis or print spooler).
+- **[Unsafe]**: Critical system packages (e.g., SystemUI, Android Framework, TelephonyProvider). Canta highlights these in red and warns you that removing them will cause immediate bootloops.
 
 ---
 

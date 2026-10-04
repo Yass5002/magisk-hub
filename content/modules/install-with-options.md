@@ -50,28 +50,13 @@ adb install --bypass-low-target-sdk-block -t app.apk
 
 When an APK or split bundle is opened in Install with Options, the application passes parameters directly to `PackageInstaller.SessionParams` via Shizuku's privileged shell IPC:
 
-```
-┌────────────────────────────────────────────────────────┐
-│               Install with Options UI                  │
-│  - Select APK / Split Bundle (.apks, .xapk)            │
-│  - User selects flags: [x] Bypass Low SDK  [x] Test    │
-└───────────────────────────┬────────────────────────────┘
-                            │ Dispatches via Shizuku
-┌───────────────────────────▼────────────────────────────┐
-│                    Shizuku Service                     │
-│  - Gains android.permission.INSTALL_PACKAGES (UID 2000)│
-└───────────────────────────┬────────────────────────────┘
-                            │
-┌───────────────────────────▼────────────────────────────┐
-│         Android PackageInstaller Session               │
-├────────────────────────────────────────────────────────┤
-│ Flags Applied:                                         │
-│ • --bypass-low-target-sdk-block                        │
-│ • -t (INSTALL_ALLOW_TEST)                              │
-│ • -d (INSTALL_REQUEST_DOWNGRADE)                       │
-│ • --dont-kill (Keep existing process alive)            │
-└────────────────────────────────────────────────────────┘
-```
+- **Install with Options UI**: User selects an APK or split bundle (`.apks`, `.xapk`) and configures targeted installation flags (e.g. Bypass Low SDK, Allow Test, Request Downgrade).
+- **Shizuku Service**: Dispatches the session parameters utilizing privileged shell IPC (`android.permission.INSTALL_PACKAGES` under UID 2000).
+- **Android PackageInstaller Session**: Executes installation applying selected flags:
+  - `--bypass-low-target-sdk-block` (installs legacy apps targeting Android 5.1 and below on Android 14+)
+  - `-t` (`INSTALL_ALLOW_TEST` - allows test-only packages)
+  - `-d` (`INSTALL_REQUEST_DOWNGRADE` - allows lower version codes)
+  - `--dont-kill` (preserves existing running process during updates)
 
 ---
 

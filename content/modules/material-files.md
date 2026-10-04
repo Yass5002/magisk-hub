@@ -61,17 +61,10 @@ Material Files implements the **Java NIO2 File API** and binds directly to nativ
 
 Material Files supports multiple elevation backends:
 
-```
-┌────────────────────────────────────────────────────────┐
-│                   Material Files UI                    │
-├────────────────────────────────────────────────────────┤
-│ Storage Providers:                                     │
-│ • Local Storage (Java NIO2)                            │
-│ • Root Superuser (/system, /data/adb, /data/data)      │
-│ • Shizuku Provider (Bypasses Scoped Storage)           │
-│ • Network Storage (SMB, SFTP, FTP, WebDAV)             │
-└────────────────────────────────────────────────────────┘
-```
+- **Local Storage Provider**: High-performance local file operations via Java NIO2 filesystem APIs.
+- **Root Superuser Provider**: Direct read/write access to protected partitions (`/system`, `/data/adb`, `/data/data`) via Magisk / KernelSU / APatch `su`.
+- **Shizuku Provider**: Bypasses Android Scoped Storage restrictions for non-root access to `/Android/data` and `/Android/obb`.
+- **Network Storage Providers**: Native client implementations for SMB (v1/v2/v3), SFTP, FTP, and WebDAV protocols.
 
 ### 1. Root Mode (Magisk / KernelSU / APatch)
 - Open Material Files -> Tap **Root directory** (`/`) from the drawer.
