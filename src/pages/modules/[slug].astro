@@ -284,6 +284,12 @@ const seo = generateModuleSEO(module);
                 </span>
               )}
 
+              {!module.repo && (
+                <span class="inline-flex items-center rounded bg-indigo-50 px-2.5 py-0.5 text-xs font-mono font-medium text-indigo-700 border border-indigo-200/80">
+                  community
+                </span>
+              )}
+
               {module.softwareType && module.softwareType !== 'flashable-module' && (
                 <span class="inline-flex items-center rounded bg-zinc-100 px-2.5 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
                   {module.softwareType === 'xposed-module' ? 'xposed' : module.softwareType === 'standalone-app' ? 'app' : 'kernel'}
@@ -296,18 +302,33 @@ const seo = generateModuleSEO(module);
 
             <!-- Badges & Links Line -->
             <div class="flex items-center gap-3 text-xs font-mono text-zinc-500 flex-wrap pt-1">
-              <div class="flex items-center gap-1 text-zinc-900 font-medium">
-                <span class="text-amber-500">★</span>
-                <span>{module.stars ? module.stars.toLocaleString() : 0} stars</span>
-              </div>
-              <span class="text-zinc-300">•</span>
+              {module.repo ? (
+                <>
+                  <div class="flex items-center gap-1 text-zinc-900 font-medium">
+                    <span class="text-amber-500">★</span>
+                    <span>{module.stars ? module.stars.toLocaleString() : 0} stars</span>
+                  </div>
+                  <span class="text-zinc-300">•</span>
+                </>
+              ) : (
+                <>
+                  <span class="rounded bg-indigo-50 px-2 py-0.5 text-xs font-mono font-medium text-indigo-700 border border-indigo-200/80">
+                    Community Package
+                  </span>
+                  <span class="text-zinc-300">•</span>
+                </>
+              )}
               <a href={`/categories/${module.category}/`} class="text-zinc-700 hover:text-zinc-900 hover:underline">
                 {category.name}
               </a>
               <span class="text-zinc-300">•</span>
-              <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 transition-colors">
-                by {author}
-              </a>
+              {module.repo ? (
+                <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 transition-colors">
+                  by {author}
+                </a>
+              ) : (
+                <span class="text-zinc-700">by {author}</span>
+              )}
               <span class="text-zinc-300">•</span>
               <span class="text-zinc-600 bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded text-[11px]">
                 {module.license}
@@ -638,9 +659,15 @@ const seo = generateModuleSEO(module);
                       {rel.name}
                     </span>
                   </div>
-                  <span class="text-[11px] font-mono text-zinc-600 font-medium shrink-0">
-                    ★ {rel.stars || 0}
-                  </span>
+                  {rel.repo ? (
+                    <span class="text-[11px] font-mono text-zinc-600 font-medium shrink-0">
+                      ★ {rel.stars || 0}
+                    </span>
+                  ) : (
+                    <span class="text-[10px] font-mono font-medium text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-100 shrink-0">
+                      pkg
+                    </span>
+                  )}
                 </a>
               ))}
             </div>

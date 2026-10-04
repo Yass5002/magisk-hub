@@ -14,8 +14,8 @@
     "APatch"
   ],
   "license": "MIT",
-  "icon": null,
-  "stars": 0,
+  "icon": "assets/icons/touch-optimization-turbo.png",
+  "stars": 12110,
   "contentTier": 1,
   "latestRelease": {
     "tag": "v3.0",

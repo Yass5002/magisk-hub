@@ -14,8 +14,8 @@
     "APatch"
   ],
   "license": "GPL-3.0-only",
-  "icon": null,
-  "stars": 0,
+  "icon": "assets/icons/auto-rescue.png",
+  "stars": 19260,
   "contentTier": 1,
   "latestRelease": {
     "tag": "v221204",

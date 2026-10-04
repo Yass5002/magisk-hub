@@ -14,8 +14,8 @@
     "APatch"
   ],
   "license": "GPL-3.0-only",
-  "icon": null,
-  "stars": 0,
+  "icon": "assets/icons/battery-fuel-gauge-fix.png",
+  "stars": 7326,
   "contentTier": 1,
   "latestRelease": {
     "tag": "v1.3.0",

@@ -14,8 +14,8 @@
     "APatch"
   ],
   "license": "MIT",
-  "icon": null,
-  "stars": 0,
+  "icon": "assets/icons/multi-oem-bootanimation.png",
+  "stars": 6761,
   "contentTier": 1,
   "latestRelease": {
     "tag": "v2.0",

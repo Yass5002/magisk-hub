@@ -38,10 +38,13 @@ function formatStars(count?: number): string {
 }
 
 const isTier1 = module.contentTier === 1;
+const isCommunity = !module.repo;
 ---
 
-<div class={`relative group flex flex-col justify-between h-full rounded-xl border bg-white p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
-  isTier1 ? 'border-zinc-300 hover:border-zinc-400' : 'border-zinc-200 hover:border-zinc-300'
+<div class={`relative group flex flex-col justify-between h-full rounded-xl border p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
+  isCommunity 
+    ? 'border-indigo-100 bg-white hover:border-indigo-300' 
+    : (isTier1 ? 'border-zinc-300 hover:border-zinc-400 bg-white' : 'border-zinc-200 hover:border-zinc-300 bg-white')
 }`}>
   <!-- Interactive Overlay Link -->
   <a 
@@ -102,6 +105,11 @@ const isTier1 = module.contentTier === 1;
                 guide
               </span>
             )}
+            {isCommunity && (
+              <span class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-mono font-medium text-indigo-700 border border-indigo-200/70 shrink-0">
+                community
+              </span>
+            )}
           </div>
 
           <!-- Normalized Version Badge: Clean, muted monospace data stamp -->
@@ -143,13 +151,23 @@ const isTier1 = module.contentTier === 1;
         <span class="truncate hover:text-zinc-900 transition-colors font-mono">{author}</span>
       </div>
 
-      <span class="text-zinc-300 shrink-0">•</span>
-
-      <!-- Compact Stars -->
-      <div class="inline-flex items-center gap-1 font-mono font-medium text-zinc-800 shrink-0">
-        <span class="text-amber-500">★</span>
-        <span>{formatStars(module.stars)}</span>
-      </div>
+      {module.repo ? (
+        <>
+          <span class="text-zinc-300 shrink-0">•</span>
+          <!-- Compact Stars (Only for GitHub-backed repositories) -->
+          <div class="inline-flex items-center gap-1 font-mono font-medium text-zinc-800 shrink-0">
+            <span class="text-amber-500">★</span>
+            <span>{formatStars(module.stars)}</span>
+          </div>
+        </>
+      ) : (
+        <>
+          <span class="text-zinc-300 shrink-0">•</span>
+          <span class="text-[10px] font-mono font-medium text-indigo-600 bg-indigo-50/80 px-1.5 py-0.5 rounded border border-indigo-100 shrink-0">
+            pkg
+          </span>
+        </>
+      )}
     </div>
 
     <!-- Right: Platform Compatibility Badges -->

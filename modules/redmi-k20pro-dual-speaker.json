@@ -14,8 +14,8 @@
     "APatch"
   ],
   "license": "GPL-3.0-only",
-  "icon": null,
-  "stars": 0,
+  "icon": "assets/icons/redmi-k20pro-dual-speaker.png",
+  "stars": 891,
   "contentTier": 1,
   "latestRelease": {
     "tag": "v13.0",

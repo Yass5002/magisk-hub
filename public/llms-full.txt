@@ -12,7 +12,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/magisk/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk
-- GitHub Stars: 63,062
+- GitHub Stars: 63,060
 - Latest Release: v30.7
 - Download Asset: https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk
 - Upstream Source: https://github.com/topjohnwu/Magisk
@@ -22,7 +22,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/shizuku/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 30,990
+- GitHub Stars: 31,007
 - Latest Release: v13.6.0
 - Download Asset: https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk
 - Upstream Source: https://github.com/RikkaApps/Shizuku
@@ -32,7 +32,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/librepods/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 30,139
+- GitHub Stars: 30,144
 - Latest Release: v1.0.0-rc1
 - Download Asset: https://github.com/librepods-org/librepods/releases/download/v1.0.0-rc1/LibrePods-FOSS-v1.0.0-rc1-release.zip
 - Upstream Source: https://github.com/librepods-org/librepods
@@ -42,17 +42,26 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/lsposed/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 24,909
+- GitHub Stars: 24,913
 - Latest Release: v1.9.2
 - Download Asset: https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-zygisk-release.zip
 - Upstream Source: https://github.com/LSPosed/LSPosed
+
+### Auto Rescue (`auto-rescue`)
+- Description: Automated bootloop watchdog that tracks boot startup attempts and automatically disables culprit modules with whitelist and OTA delay protection.
+- Module URL: https://magisk.yssn.tech/modules/auto-rescue/
+- Category: https://magisk.yssn.tech/categories/system-utilities/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 19,260
+- Latest Release: v221204
+- Download Asset: https://apk.magisk.vip/download.php?id=795
 
 ### KernelSU (`kernelsu`)
 - Description: A Kernel based root solution for Android
 - Module URL: https://magisk.yssn.tech/modules/kernelsu/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: KernelSU
-- GitHub Stars: 18,823
+- GitHub Stars: 18,839
 - Latest Release: v3.3.0
 - Download Asset: https://github.com/tiann/KernelSU/releases/download/v3.3.0/KernelSU_v3.3.0_32601-release.apk
 - Upstream Source: https://github.com/tiann/KernelSU
@@ -66,6 +75,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v2.2
 - Download Asset: https://github.com/JingMatrix/Vector/releases/download/v2.2/Vector-v2.2-3080-Release.zip
 - Upstream Source: https://github.com/JingMatrix/Vector
+
+### Touch Optimization Turbo (`touch-optimization-turbo`)
+- Description: Reduces Android SurfaceFlinger frame pipeline latency and optimizes touch responsiveness using Qualcomm QTI input tuners.
+- Module URL: https://magisk.yssn.tech/modules/touch-optimization-turbo/
+- Category: https://magisk.yssn.tech/categories/performance-kernel/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 12,110
+- Latest Release: v3.0
+- Download Asset: https://apk.magisk.vip/download.php?id=822
 
 ### Material Files (`material-files`)
 - Description: Material Design file manager for Android
@@ -82,7 +100,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/app-manager/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
 - Supported Platforms: Shizuku, Magisk, KernelSU, APatch
-- GitHub Stars: 9,124
+- GitHub Stars: 9,128
 - Latest Release: v4.1.1
 - Download Asset: https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk
 - Upstream Source: https://github.com/MuntashirAkon/AppManager
@@ -92,20 +110,47 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/apatch/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: APatch
-- GitHub Stars: 7,999
+- GitHub Stars: 8,001
 - Latest Release: 11224
 - Download Asset: https://github.com/bmax121/APatch/releases/download/11224/APatch_11224_9a63e0f_HEAD-release-signed.apk
 - Upstream Source: https://github.com/bmax121/APatch
+
+### iOS San Francisco Font Suite (`ios-san-francisco-fonts`)
+- Description: Systemless typography replacement overlaying Apple SF Pro and SF Compact typefaces across Android system UI and apps.
+- Module URL: https://magisk.yssn.tech/modules/ios-san-francisco-fonts/
+- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 7,906
+- Latest Release: v2.0
+- Download Asset: https://apk.magisk.vip/download.php?id=736
+
+### Battery Fuel Gauge Fix (`battery-fuel-gauge-fix`)
+- Description: Synchronizes Android system UI battery percentage with Qualcomm kernel BMS coulomb counter registers to prevent battery level drift.
+- Module URL: https://magisk.yssn.tech/modules/battery-fuel-gauge-fix/
+- Category: https://magisk.yssn.tech/categories/battery-power-charging/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 7,326
+- Latest Release: v1.3.0
+- Download Asset: https://apk.magisk.vip/download.php?id=820
 
 ### Hail (`hail`)
 - Description: Disable / Hide / Suspend / Uninstall Android apps without root.
 - Module URL: https://magisk.yssn.tech/modules/hail/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 6,816
+- GitHub Stars: 6,819
 - Latest Release: v1.11.0
 - Download Asset: https://github.com/aistra0528/Hail/releases/download/v1.11.0/Hail-v1.11.0.apk
 - Upstream Source: https://github.com/aistra0528/Hail
+
+### Multi-OEM Dynamic Boot Animation (`multi-oem-bootanimation`)
+- Description: Systemless boot animation engine for MIUI, ColorOS, and Realme UI with random animation cycling and 60-second crash-rescue watchdog.
+- Module URL: https://magisk.yssn.tech/modules/multi-oem-bootanimation/
+- Category: https://magisk.yssn.tech/categories/boot-animations-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 6,761
+- Latest Release: v2.0
+- Download Asset: https://apk.magisk.vip/download.php?id=651
 
 ### TrickyStore (`trickystore`)
 - Description: TrickyStore active root module.
@@ -122,7 +167,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/shamiko/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 6,349
+- GitHub Stars: 6,350
 - Latest Release: shamiko-414
 - Download Asset: https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-414/Shamiko-v1.2.5-414-release.zip
 - Upstream Source: https://github.com/LSPosed/LSPosed.github.io
@@ -132,7 +177,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/canta/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 6,049
+- GitHub Stars: 6,055
 - Latest Release: v4.0.0
 - Download Asset: https://github.com/samolego/Canta/releases/download/v4.0.0/androidApp-release.apk
 - Upstream Source: https://github.com/samolego/Canta
@@ -152,7 +197,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/fingerprintpay/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
 - Supported Platforms: Magisk
-- GitHub Stars: 4,521
+- GitHub Stars: 4,522
 - Latest Release: 6.1.0-ci
 - Download Asset: https://github.com/eritpchy/FingerprintPay/releases/download/6.1.0-ci/zygisk-module-xfingerprint-pay-taobao-v6.1.0-release.zip
 - Upstream Source: https://github.com/eritpchy/FingerprintPay
@@ -162,7 +207,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/revanced-extended/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 4,220
+- GitHub Stars: 4,221
 - Latest Release: 158
 - Download Asset: https://github.com/NoName-exe/revanced-extended/releases/download/158/youtube-morphe-module-v21.16.256-all.zip
 - Upstream Source: https://github.com/NoName-exe/revanced-extended
@@ -172,7 +217,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/rezygisk/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 4,017
+- GitHub Stars: 4,019
 - Latest Release: v1.0.0
 - Download Asset: https://github.com/PerformanC/ReZygisk/releases/download/v1.0.0/ReZygisk-v1.0.0-release.zip
 - Upstream Source: https://github.com/PerformanC/ReZygisk
@@ -212,7 +257,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/hma-oss/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 3,429
+- GitHub Stars: 3,433
 - Latest Release: oss-173
 - Download Asset: https://github.com/frknkrc44/HMA-OSS/releases/download/oss-173/HMA-OSS-ZYGISK-oss-173-debug.zip
 - Upstream Source: https://github.com/frknkrc44/HMA-OSS
@@ -222,7 +267,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/corepatch/
 - Category: https://magisk.yssn.tech/categories/xposed-runtime-hooks/
 - Supported Platforms: LSPosed
-- GitHub Stars: 3,416
+- GitHub Stars: 3,418
 - Latest Release: N-1.0
 - Download Asset: https://github.com/LSPosed/CorePatch/releases/download/N-1.0/app-release.apk
 - Upstream Source: https://github.com/coderstory/CorePatch
@@ -232,7 +277,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/install-with-options/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 3,299
+- GitHub Stars: 3,301
 - Latest Release: 0.9.2
 - Download Asset: https://github.com/zacharee/InstallWithOptions/releases/download/0.9.2/InstallWithOptions_0.9.2-release.apk
 - Upstream Source: https://github.com/zacharee/InstallWithOptions
@@ -242,7 +287,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/bcr/
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,935
+- GitHub Stars: 2,934
 - Latest Release: v3.9
 - Download Asset: https://github.com/chenxiaolong/BCR/releases/download/v3.9/BCR-3.9-release.zip
 - Upstream Source: https://github.com/chenxiaolong/BCR
@@ -252,7 +297,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/magisk-asoulopt/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
 - Supported Platforms: Magisk
-- GitHub Stars: 2,714
+- GitHub Stars: 2,715
 - Latest Release: Kana
 - Download Asset: https://github.com/nakixii/Magisk_AsoulOpt/releases/download/Kana/Magisk_AsoulOpt_Kana.zip
 - Upstream Source: https://github.com/nakixii/Magisk_AsoulOpt
@@ -272,7 +317,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/susfs4ksu-module/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,604
+- GitHub Stars: 2,606
 - Latest Release: v1.5.2+_R28
 - Download Asset: https://github.com/sidex15/susfs4ksu-module/releases/download/v1.5.2%2B_R28/ksu_module_susfs_1.5.2%2B.zip
 - Upstream Source: https://github.com/sidex15/susfs4ksu-module
@@ -292,7 +337,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/teesimulator/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,542
+- GitHub Stars: 2,543
 - Latest Release: v4.0
 - Download Asset: https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Debug.zip
 - Upstream Source: https://github.com/JingMatrix/TEESimulator
@@ -322,7 +367,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/acc/
 - Category: https://magisk.yssn.tech/categories/battery-power-charging/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 2,416
+- GitHub Stars: 2,415
 - Latest Release: v2023.10.16
 - Download Asset: https://github.com/VR-25/acc/releases/download/v2023.10.16/acc_flashable_uninstaller.zip
 - Upstream Source: https://github.com/VR-25/acc
@@ -362,7 +407,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/movecertificate/
 - Category: https://magisk.yssn.tech/categories/security-certificates/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,984
+- GitHub Stars: 1,985
 - Latest Release: v1.6.2
 - Download Asset: https://github.com/ys1231/MoveCertificate/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip
 - Upstream Source: https://github.com/ys1231/MoveCertificate
@@ -372,7 +417,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/yurikey/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,911
+- GitHub Stars: 1,912
 - Latest Release: v3.0.6
 - Download Asset: https://github.com/Yurii0307/yurikey/releases/download/v3.0.6/Yurikey-v3.0.6.signed.zip
 - Upstream Source: https://github.com/Yurii0307/yurikey
@@ -386,6 +431,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v6.0.1-282
 - Download Asset: https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Debug.zip
 - Upstream Source: https://github.com/Enginex0/TEESimulator-RS
+
+### ViPER4Android & Dolby Atmos Coexistence (`viper4android-dolby-coexistence`)
+- Description: Merges ViPER4Android FX and Dolby Atmos audio DSP engines into a unified audio HAL pipeline with dynamic SELinux policy injection.
+- Module URL: https://magisk.yssn.tech/modules/viper4android-dolby-coexistence/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,781
+- Latest Release: v2.0
+- Download Asset: https://apk.magisk.vip/download.php?id=475
 
 ### Uperf-Game-Turbo (`uperf-game-turbo`)
 - Description: Userspace performance controller for android
@@ -412,9 +466,9 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/magisk-frida/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,463
-- Latest Release: 17.22.0-1
-- Download Asset: https://github.com/ViRb3/magisk-frida/releases/download/17.22.0-1/MagiskFrida-17.22.0-1.zip
+- GitHub Stars: 1,464
+- Latest Release: 17.22.1-1
+- Download Asset: https://github.com/ViRb3/magisk-frida/releases/download/17.22.1-1/MagiskFrida-17.22.1-1.zip
 - Upstream Source: https://github.com/ViRb3/magisk-frida
 
 ### bindhosts (`bindhosts`)
@@ -422,7 +476,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/bindhosts/
 - Category: https://magisk.yssn.tech/categories/networking-proxies/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,453
+- GitHub Stars: 1,454
 - Latest Release: v2.1.5
 - Download Asset: https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip
 - Upstream Source: https://github.com/bindhosts/bindhosts
@@ -432,7 +486,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/adguardhomeforroot/
 - Category: https://magisk.yssn.tech/categories/networking-proxies/
 - Supported Platforms: Magisk
-- GitHub Stars: 1,443
+- GitHub Stars: 1,444
 - Latest Release: 20260825
 - Download Asset: https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20260825/AdGuardHomeForRoot_arm64.zip
 - Upstream Source: https://github.com/twoone-3/AdGuardHomeForRoot
@@ -442,7 +496,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/trickystoreoss/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,428
+- GitHub Stars: 1,429
 - Latest Release: v3.1.0
 - Download Asset: https://github.com/beakthoven/TrickyStoreOSS/releases/download/v3.1.0/Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip
 - Upstream Source: https://github.com/beakthoven/TrickyStoreOSS
@@ -452,7 +506,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/mountify/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 1,418
+- GitHub Stars: 1,419
 - Latest Release: 204
 - Download Asset: https://github.com/backslashxx/mountify/releases/download/204/mountify.zip
 - Upstream Source: https://github.com/backslashxx/mountify
@@ -497,6 +551,34 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/lico-n/ZygiskFrida/releases/download/v1.9.0/ZygiskFrida-v1.9.0-release.zip
 - Upstream Source: https://github.com/lico-n/ZygiskFrida
 
+### Earpiece Stereo & Volume Boost (`earpiece-stereo-volume-boost`)
+- Description: Routes media audio through the front call earpiece for pseudo-stereo playback while boosting ALSA mixer analog gain and digital registers.
+- Module URL: https://magisk.yssn.tech/modules/earpiece-stereo-volume-boost/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,007
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=474
+
+### Redmi K20 Pro Stereo Dual Speaker & Harman Tuning (`redmi-k20pro-dual-speaker`)
+- Description: Hardware-specific audio enhancement for Redmi K20 Pro enabling dual stereo speakers, 25-step volume control, and Harman Kardon sound profiles.
+- Module URL: https://magisk.yssn.tech/modules/redmi-k20pro-dual-speaker/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 891
+- Latest Release: v13.0
+- Download Asset: https://apk.magisk.vip/download.php?id=477
+
+### AlwaysStrong (`alwaysstrong`)
+- Description: Always Strong: Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled.
+- Module URL: https://magisk.yssn.tech/modules/alwaysstrong/
+- Category: https://magisk.yssn.tech/categories/root-management/
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 811
+- Latest Release: v1.0.4
+- Download Asset: https://github.com/evoker0/AlwaysStrong/releases/download/v1.0.4/AlwaysStrong-v1.0.4-inject.zip
+- Upstream Source: https://github.com/evoker0/AlwaysStrong
+
 ### Hide-Navbar (`hide-navbar`)
 - Description: Hide Navbar
 - Module URL: https://magisk.yssn.tech/modules/hide-navbar/
@@ -507,18 +589,8 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/DanGLVK/Hide-Navbar/releases/download/v30.0/HideNavBar.zip
 - Upstream Source: https://github.com/DanGLVK/Hide-Navbar
 
-### AlwaysStrong (`alwaysstrong`)
-- Description: Always Strong: Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled.
-- Module URL: https://magisk.yssn.tech/modules/alwaysstrong/
-- Category: https://magisk.yssn.tech/categories/root-management/
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 807
-- Latest Release: v1.0.4
-- Download Asset: https://github.com/evoker0/AlwaysStrong/releases/download/v1.0.4/AlwaysStrong-v1.0.4-inject.zip
-- Upstream Source: https://github.com/evoker0/AlwaysStrong
-
 ### device_faker (`device-faker`)
-- Description: Granular per-application Zygisk device model spoofing and hardware masking module
+- Description: 自定义配置Zygisk机型伪装
 - Module URL: https://magisk.yssn.tech/modules/device-faker/
 - Category: https://magisk.yssn.tech/categories/security-certificates/
 - Supported Platforms: Magisk, KernelSU
@@ -537,6 +609,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/daboynb/playcurlNEXT/releases/download/v1.19/playcurlNEXT.zip
 - Upstream Source: https://github.com/daboynb/playcurlNEXT
 
+### DAC Noise Floor Filter & Stereo Fix (`dac-noise-floor-filter`)
+- Description: Calibrates Qualcomm WCD9335/Tasha DAC audio mixer paths to filter out low-volume analog hiss and ground loop interference on IEMs.
+- Module URL: https://magisk.yssn.tech/modules/dac-noise-floor-filter/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 761
+- Latest Release: v3.0
+- Download Asset: https://apk.magisk.vip/download.php?id=476
+
 ### Sui (`sui`)
 - Description: Modern super user interface implementation on Android.
 - Module URL: https://magisk.yssn.tech/modules/sui/
@@ -552,7 +633,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/specter/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 707
+- GitHub Stars: 709
 - Latest Release: v1.5.0
 - Download Asset: https://github.com/dpejoh/specter/releases/download/v1.5.0/specter-v1.5.0.zip
 - Upstream Source: https://github.com/dpejoh/specter
@@ -562,7 +643,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/zygisknext/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 608
+- GitHub Stars: 616
 - Latest Release: 1.5.0
 - Download Asset: https://github.com/LSPosed/ZygiskNext/releases/download/1.5.0/Zygisk-Next-1.5.0-843-5217106-release.zip
 - Upstream Source: https://github.com/LSPosed/ZygiskNext
@@ -612,7 +693,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/meta-magic-mount-rs/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 524
+- GitHub Stars: 525
 - Latest Release: v4.0.11
 - Download Asset: https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.0.11/magic_mount_rs-4.0.11-930-arm64.zip
 - Upstream Source: https://github.com/Tools-cx-app/meta-magic_mount-rs
@@ -622,7 +703,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/encore/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
 - Supported Platforms: Magisk
-- GitHub Stars: 513
+- GitHub Stars: 514
 - Latest Release: 5.2.1
 - Download Asset: https://github.com/Rem01Gaming/encore/releases/download/5.2.1/encore-5.2.1-1533-361ab0e-main.zip
 - Upstream Source: https://github.com/Rem01Gaming/encore
@@ -652,7 +733,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/kpatch-next-module/
 - Category: https://magisk.yssn.tech/categories/root-management/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 490
+- GitHub Stars: 491
 - Latest Release: v0.0.1
 - Download Asset: https://github.com/KernelSU-Next/KPatch-Next-Module/releases/download/v0.0.1/KPatch-Next-Module.zip
 - Upstream Source: https://github.com/KernelSU-Next/KPatch-Next-Module
@@ -732,7 +813,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/magisk-ios-emoji/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
 - Supported Platforms: Magisk
-- GitHub Stars: 392
+- GitHub Stars: 393
 - Latest Release: v26.4
 - Download Asset: https://github.com/Keinta15/Magisk-iOS-Emoji/releases/download/v26.4/Magisk_iOS_Emoji_26.4.zip
 - Upstream Source: https://github.com/Keinta15/Magisk-iOS-Emoji
@@ -782,7 +863,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/makefontsgreatagain/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 326
+- GitHub Stars: 327
 - Latest Release: 1717180003
 - Download Asset: https://github.com/Numbersf/MakeFontsGreatAgain/releases/download/1717180003/MFGA-17.0.1.08-31-alpha2.1717180003.zip
 - Upstream Source: https://github.com/Numbersf/MakeFontsGreatAgain
@@ -902,7 +983,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/frosty/
 - Category: https://magisk.yssn.tech/categories/performance-kernel/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 241
+- GitHub Stars: 242
 - Latest Release: 4.4
 - Download Asset: https://github.com/Drsexo/Frosty/releases/download/4.4/Frosty-4.4.zip
 - Upstream Source: https://github.com/Drsexo/Frosty
@@ -962,7 +1043,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/ih8securelock/
 - Category: https://magisk.yssn.tech/categories/security-certificates/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 199
+- GitHub Stars: 200
 - Latest Release: v10
 - Download Asset: https://github.com/j-hc/ih8SecureLock/releases/download/v10/ih8SecureLock-v10.zip
 - Upstream Source: https://github.com/j-hc/ih8SecureLock
@@ -1002,7 +1083,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/termuxrootmods/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
 - Supported Platforms: Magisk
-- GitHub Stars: 186
+- GitHub Stars: 187
 - Latest Release: v.1.0.22
 - Download Asset: https://github.com/rompelhd/TermuxRootMods/releases/download/v.1.0.22/TermuxRootMods-v1.0.22.zip
 - Upstream Source: https://github.com/rompelhd/TermuxRootMods
@@ -1032,7 +1113,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Module URL: https://magisk.yssn.tech/modules/ubuntu-chroot/
 - Category: https://magisk.yssn.tech/categories/development-instrumentation/
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 162
+- GitHub Stars: 163
 - Latest Release: v4.4
 - Download Asset: https://github.com/ravindu644/Ubuntu-Chroot/releases/download/v4.4/update-GUI.zip
 - Upstream Source: https://github.com/ravindu644/Ubuntu-Chroot
@@ -1167,6 +1248,16 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation/releases/download/V8/video-to-bootanimation-online-V8.zip
 - Upstream Source: https://github.com/Magisk-Modules-Alt-Repo/video-to-bootanimation
 
+### OnyxZygisk (`onyxzygisk`)
+- Description: Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI
+- Module URL: https://magisk.yssn.tech/modules/onyxzygisk/
+- Category: https://magisk.yssn.tech/categories/root-management/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 125
+- Latest Release: v1.09
+- Download Asset: https://github.com/OnyxZygisk/OnyxZygisk/releases/download/v1.09/OnyxZygisk-v1.09-399-820b68b-release.zip
+- Upstream Source: https://github.com/OnyxZygisk/OnyxZygisk
+
 ### Simple-Flag-Secure (`simple-flag-secure`)
 - Description: 👀 Lightweight root module that disables FLAG_SECURE, enabling screenshots & screen recording in restricted apps. Hides screenshot detection on Android 14+. Includes a toggleable privacy mode to block screenshots system-wide. Supports Magisk, KernelSU, APatch & forks with no extra dependencies.
 - Module URL: https://magisk.yssn.tech/modules/simple-flag-secure/
@@ -1186,16 +1277,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v28.2.1
 - Download Asset: https://github.com/mgksu/dockerd/releases/download/v28.2.1/Magisk-Dockerd-v28.2.1.zip
 - Upstream Source: https://github.com/mgksu/dockerd
-
-### OnyxZygisk (`onyxzygisk`)
-- Description: Zygote injection via ptrace - Zygisk API for APatch/KernelSU/Magisk, with FN (Functional Node) modules and a webroot WebUI
-- Module URL: https://magisk.yssn.tech/modules/onyxzygisk/
-- Category: https://magisk.yssn.tech/categories/root-management/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 121
-- Latest Release: v1.09
-- Download Asset: https://github.com/OnyxZygisk/OnyxZygisk/releases/download/v1.09/OnyxZygisk-v1.09-399-820b68b-release.zip
-- Upstream Source: https://github.com/OnyxZygisk/OnyxZygisk
 
 ### drc-remover (`drc-remover`)
 - Description: A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices
@@ -1223,8 +1304,8 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Category: https://magisk.yssn.tech/categories/system-utilities/
 - Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 104
-- Latest Release: v1.2.8
-- Download Asset: https://github.com/Xocio/CZero/releases/download/v1.2.8/CZero_v1.2.8.zip
+- Latest Release: v1.2.9
+- Download Asset: https://github.com/Xocio/CZero/releases/download/v1.2.9/CZero_v1.2.9.zip
 - Upstream Source: https://github.com/Xocio/CZero
 
 ### wadbd (`wadbd`)
@@ -1507,16 +1588,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn/releases/download/v5.1.1.3/Greenify4Magisk-KSU-Reborn-v5.1.1.3.zip
 - Upstream Source: https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn
 
-### HyperOS-AOD (`hyperos-aod`)
-- Description: Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices.
-- Module URL: https://magisk.yssn.tech/modules/hyperos-aod/
-- Category: https://magisk.yssn.tech/categories/customization-ui/
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 62
-- Latest Release: V3
-- Download Asset: https://github.com/Mods-Center/HyperOS-AOD/releases/download/V3/HyperOS_AOD_V3%40kashis_cringey_stuffs.zip
-- Upstream Source: https://github.com/Mods-Center/HyperOS-AOD
-
 ### OOSGMS-OPTIMISER (`oosgms-optimiser`)
 - Description: Magisk module to optimise and remove trackers for GMS and OOS
 - Module URL: https://magisk.yssn.tech/modules/oosgms-optimiser/
@@ -1527,14 +1598,24 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/epicmann24/OOSGMS-OPTIMISER/releases/download/v1.0.8/OOSGMS-OPTIMISER.zip
 - Upstream Source: https://github.com/epicmann24/OOSGMS-OPTIMISER
 
+### HyperOS-AOD (`hyperos-aod`)
+- Description: Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices.
+- Module URL: https://magisk.yssn.tech/modules/hyperos-aod/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 61
+- Latest Release: V3
+- Download Asset: https://github.com/Mods-Center/HyperOS-AOD/releases/download/V3/HyperOS_AOD_V3%40kashis_cringey_stuffs.zip
+- Upstream Source: https://github.com/Mods-Center/HyperOS-AOD
+
 ### HyperOS-App-Vault (`hyperos-app-vault`)
 - Description: Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur adjustments, and scrolling animations.
 - Module URL: https://magisk.yssn.tech/modules/hyperos-app-vault/
 - Category: https://magisk.yssn.tech/categories/customization-ui/
 - Supported Platforms: Magisk, KernelSU
 - GitHub Stars: 61
-- Latest Release: V4.5
-- Download Asset: https://github.com/Mods-Center/HyperOS-App-Vault/releases/download/V4.5/HyperOS_AppVaultV4.5%40kashis_cringey_stuffs.zip
+- Latest Release: V5
+- Download Asset: https://github.com/Mods-Center/HyperOS-App-Vault/releases/download/V5/HyperOS_AppVaultV5%40kashis_cringey_stuffs.zip
 - Upstream Source: https://github.com/Mods-Center/HyperOS-App-Vault
 
 ### KernelEnhancer (`kernelenhancer`)
@@ -2144,84 +2225,3 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Supported Platforms: 
 - GitHub Stars: 0
 - Latest Release: 
-
-### Auto Rescue (`auto-rescue`)
-- Description: Automated bootloop watchdog that tracks boot startup attempts and automatically disables culprit modules with whitelist and OTA delay protection.
-- Module URL: https://magisk.yssn.tech/modules/auto-rescue/
-- Category: https://magisk.yssn.tech/categories/system-utilities/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v221204
-- Download Asset: https://apk.magisk.vip/download.php?id=795
-
-### Battery Fuel Gauge Fix (`battery-fuel-gauge-fix`)
-- Description: Synchronizes Android system UI battery percentage with Qualcomm kernel BMS coulomb counter registers to prevent battery level drift.
-- Module URL: https://magisk.yssn.tech/modules/battery-fuel-gauge-fix/
-- Category: https://magisk.yssn.tech/categories/battery-power-charging/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v1.3.0
-- Download Asset: https://apk.magisk.vip/download.php?id=820
-
-### DAC Noise Floor Filter & Stereo Fix (`dac-noise-floor-filter`)
-- Description: Calibrates Qualcomm WCD9335/Tasha DAC audio mixer paths to filter out low-volume analog hiss and ground loop interference on IEMs.
-- Module URL: https://magisk.yssn.tech/modules/dac-noise-floor-filter/
-- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v3.0
-- Download Asset: https://apk.magisk.vip/download.php?id=476
-
-### Earpiece Stereo & Volume Boost (`earpiece-stereo-volume-boost`)
-- Description: Routes media audio through the front call earpiece for pseudo-stereo playback while boosting ALSA mixer analog gain and digital registers.
-- Module URL: https://magisk.yssn.tech/modules/earpiece-stereo-volume-boost/
-- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v1.0
-- Download Asset: https://apk.magisk.vip/download.php?id=474
-
-### Multi-OEM Dynamic Boot Animation (`multi-oem-bootanimation`)
-- Description: Systemless boot animation engine for MIUI, ColorOS, and Realme UI with random animation cycling and 60-second crash-rescue watchdog.
-- Module URL: https://magisk.yssn.tech/modules/multi-oem-bootanimation/
-- Category: https://magisk.yssn.tech/categories/boot-animations-ui/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v2.0
-- Download Asset: https://apk.magisk.vip/download.php?id=651
-
-### Redmi K20 Pro Stereo Dual Speaker & Harman Tuning (`redmi-k20pro-dual-speaker`)
-- Description: Hardware-specific audio enhancement for Redmi K20 Pro enabling dual stereo speakers, 25-step volume control, and Harman Kardon sound profiles.
-- Module URL: https://magisk.yssn.tech/modules/redmi-k20pro-dual-speaker/
-- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v13.0
-- Download Asset: https://apk.magisk.vip/download.php?id=477
-
-### Touch Optimization Turbo (`touch-optimization-turbo`)
-- Description: Reduces Android SurfaceFlinger frame pipeline latency and optimizes touch responsiveness using Qualcomm QTI input tuners.
-- Module URL: https://magisk.yssn.tech/modules/touch-optimization-turbo/
-- Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v3.0
-- Download Asset: https://apk.magisk.vip/download.php?id=822
-
-### ViPER4Android & Dolby Atmos Coexistence (`viper4android-dolby-coexistence`)
-- Description: Merges ViPER4Android FX and Dolby Atmos audio DSP engines into a unified audio HAL pipeline with dynamic SELinux policy injection.
-- Module URL: https://magisk.yssn.tech/modules/viper4android-dolby-coexistence/
-- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v2.0
-- Download Asset: https://apk.magisk.vip/download.php?id=475
-
-### iOS San Francisco Font Suite (`ios-san-francisco-fonts`)
-- Description: Systemless typography replacement overlaying Apple SF Pro and SF Compact typefaces across Android system UI and apps.
-- Module URL: https://magisk.yssn.tech/modules/ios-san-francisco-fonts/
-- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
-- Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 0
-- Latest Release: v2.0
-- Download Asset: https://apk.magisk.vip/download.php?id=736
