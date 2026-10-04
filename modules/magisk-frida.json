@@ -11,13 +11,13 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 1463,
+  "stars": 1464,
   "latestRelease": {
-    "tag": "17.22.0-1",
-    "publishedAt": "2026-10-03T06:49:50Z",
-    "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.22.0-1",
-    "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.22.0-1/MagiskFrida-17.22.0-1.zip",
-    "assetName": "MagiskFrida-17.22.0-1.zip"
+    "tag": "17.22.1-1",
+    "publishedAt": "2026-10-04T10:29:14Z",
+    "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.22.1-1",
+    "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.22.1-1/MagiskFrida-17.22.1-1.zip",
+    "assetName": "MagiskFrida-17.22.1-1.zip"
   },
   "seo": {
     "title": "magisk-frida – Download (Magisk/KSU) | Magisk Hub",
