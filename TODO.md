@@ -25,38 +25,17 @@ Audited and cleaned all 25 guide files (`content/modules/*.md`) corresponding to
 
 ---
 
-## 2. Remaining Modules to Add from apk.magisk.vip & Ecosystem
-
-Out of the 185 top packages evaluated on `apk.magisk.vip`, 59 were already present and 25 core modules were ingested. The remaining high-priority candidates to add to the catalog are:
+## 2. Catalog Tasks & Legitimate Modules
 
 ### A. Immediate Quick-Win
 - [ ] **`aclipboardmanager` (A Clipboard Manager)**:
-  - Guide file already exists at `content/modules/aclipboardmanager.md`.
-  - Missing `modules/aclipboardmanager.json`. Create metadata to officially index it and increase module catalog to 216.
+  - Guide file already authored and present at `content/modules/aclipboardmanager.md`.
+  - Create `modules/aclipboardmanager.json` to officially index it and increase catalog to 216 modules.
 
-### B. Audio & DSP Enhancement Modules
-- [ ] **Viper & Dolby Coexistence Pack (蝰蛇杜比共存版)**:
-  - Pre-configured module allowing ViPER4Android FX and Dolby Atmos audio engines to run concurrently without audio policy HAL conflicts.
-- [ ] **Hi-Res Audio HAL Enabler / USB DAC Patcher**:
-  - Unlocks native 24-bit/192kHz audio output over USB-C and 3.5mm DACs for high-fidelity audio playback.
-
-### C. System & Touch Performance
-- [ ] **Touch Optimization / Turbo Boost (触控优化)**:
-  - Tweaks touch sampling rate, display touch driver parameters (`/sys/class/touch/`), and reduces touch latency in competitive mobile titles.
-- [ ] **Auto-Rescue / Unbrick Whitelist Engine (自动神仙救砖)**:
-  - Bootloop rescue module that monitors system boot progress and automatically disables faulty modules if the device fails to reach `sys.boot_completed=1` within 120 seconds.
-- [ ] **Battery Capacity Recalibration (电池容量纠正)**:
-  - Calibrates kernel battery fuel gauge parameters and resets battery stats without requiring full system wipes.
-
-### D. Consumer Customization (Typography & UI)
-- [ ] **iOS San Francisco Typography Module (iOS 字体)**:
-  - High-demand systemless font replacement substituting stock Roboto/MiSans with Apple's SF Pro font family.
-- [ ] **MiSans Global / HarmonyOS Sans Pack**:
-  - Clean multilingual font packages with full Unicode and glyph coverage.
-
-### E. Extended Platform Runtimes
-- [ ] **KernelSU Next / SukiSU Variants**:
-  - Document and index emerging KernelSU forks (e.g. KernelSU Next) with dedicated compatibility tags.
+### B. Catalog Integrity & Clean Up
+- [x] **Audit 25 Top Chinese Modules**: Completed technical audit, removed all emojis and mobile-breaking ASCII diagrams.
+- [x] **Fix Chinese Metatag on `device-faker`**: Updated `modules/device-faker.json` to pure English descriptions and SEO tags.
+- [ ] **Audit Remaining Module JSON Descriptions**: Normalize any remaining mixed/Chinese descriptions in `modules/*.json` (e.g. `vbmetadisguiser`, `clearbox`, `rotationsuggestionstoggle`) to clean English.
 
 ---
 
