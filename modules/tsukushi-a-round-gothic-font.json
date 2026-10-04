@@ -1,0 +1,31 @@
+{
+  "id": "tsukushi-a-round-gothic-font",
+  "name": "Tsukushi A Round Gothic Typography Suite",
+  "repo": null,
+  "author": "Xin Yu",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-typography-fonts",
+  "softwareType": "flashable-module",
+  "description": "Elegant Japanese Tsukushi A Round Gothic typeface adapted for Android with simplified Chinese glyph harmonization and calibrated 85% UI optical scaling.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/tsukushi-a-round-gothic-font.png",
+  "stars": 1276,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v20210226",
+    "publishedAt": "2021-02-26T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=219",
+    "assetName": "tsukushi-a-round-gothic-font-v20210226.zip"
+  },
+  "seo": {
+    "title": "Tsukushi A Round Gothic Font for Magisk & KernelSU",
+    "description": "Experience clean, rounded typography with Tsukushi A Round Gothic for Android, featuring simplified Chinese harmonization and balanced 85% scale."
+  }
+}

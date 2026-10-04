@@ -1,0 +1,31 @@
+{
+  "id": "miui-gallery-feature-unlocker",
+  "name": "MIUI Gallery AI Feature Unlocker",
+  "repo": null,
+  "author": "Xiao Chen Tongxue",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-utilities",
+  "softwareType": "flashable-module",
+  "description": "Unlocks advanced flagship AI camera and editing features in MIUI Gallery, including AI cutout, object removal, ID photos, dynamic sky filters, and document de-moiré enhancement.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/miui-gallery-feature-unlocker.png",
+  "stars": 1967,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.2.21.5",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=197",
+    "assetName": "miui-gallery-feature-unlocker-v2.2.21.5.zip"
+  },
+  "seo": {
+    "title": "MIUI Gallery AI Feature Unlocker for Magisk & KernelSU",
+    "description": "Unlock flagship Xiaomi AI photo editing, sky replacement, and object removal features across all MIUI and HyperOS devices."
+  }
+}

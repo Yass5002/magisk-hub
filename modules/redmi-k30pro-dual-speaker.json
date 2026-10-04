@@ -1,0 +1,31 @@
+{
+  "id": "redmi-k30pro-dual-speaker",
+  "name": "Redmi K30 Pro Symmetric Dual Speakers",
+  "repo": null,
+  "author": "Qiancheng Mobai & CallMeMiao",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Enables stereo dual speaker audio output on Redmi K30 Pro / POCO F2 Pro by routing media channels through the top earpiece receiver.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/redmi-k30pro-dual-speaker.png",
+  "stars": 509,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=478",
+    "assetName": "redmi-k30pro-dual-speaker-v2.0.zip"
+  },
+  "seo": {
+    "title": "Redmi K30 Pro Dual Speaker Mod - Stereo Earpiece Audio for Magisk",
+    "description": "Transform your Redmi K30 Pro / POCO F2 Pro mono audio into rich stereo sound by activating the earpiece as a secondary speaker."
+  }
+}

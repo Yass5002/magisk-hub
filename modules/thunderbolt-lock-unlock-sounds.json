@@ -1,0 +1,31 @@
+{
+  "id": "thunderbolt-lock-unlock-sounds",
+  "name": "Thunderbolt Lock & Unlock Sound Effects",
+  "repo": null,
+  "author": "ZHB",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Replaces stock Android lock and unlock audio cues with crisp, electric Thunderbolt acoustic effects.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/thunderbolt-lock-unlock-sounds.png",
+  "stars": 734,
+  "contentTier": 2,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=480",
+    "assetName": "thunderbolt-lock-unlock-sounds-v1.0.zip"
+  },
+  "seo": {
+    "title": "Thunderbolt Lock & Unlock Sound Effects - Magisk Audio Mod",
+    "description": "Customize Android system audio cues with electric Thunderbolt lock and unlock acoustic sound effects."
+  }
+}

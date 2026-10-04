@@ -1,0 +1,31 @@
+{
+  "id": "google-mobile-services-core",
+  "name": "Google Mobile Services Core Suite",
+  "repo": null,
+  "author": "Shiguang",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Systemless Google Mobile Services (GMS) framework and Google Play Store suite that eliminates regional restrictions on Chinese firmware.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/google-mobile-services-core.png",
+  "stars": 4665,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v11.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=221",
+    "assetName": "google-mobile-services-core-android11.zip"
+  },
+  "seo": {
+    "title": "Google Mobile Services (GMS) Core Suite for Magisk & KernelSU",
+    "description": "Systemless GMS and Google Play framework installation with China regional restriction removal and full location history support."
+  }
+}

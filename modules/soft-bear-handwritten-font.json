@@ -1,0 +1,31 @@
+{
+  "id": "soft-bear-handwritten-font",
+  "name": "Soft Bear Handwritten Typography Suite",
+  "repo": null,
+  "author": "SummerRain",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-typography-fonts",
+  "softwareType": "flashable-module",
+  "description": "Charming and playful handwritten system font replacement featuring smooth glyph outlines, custom numeric characters, and full Roboto font map overriding.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/soft-bear-handwritten-font.png",
+  "stars": 1193,
+  "contentTier": 2,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=224",
+    "assetName": "soft-bear-handwritten-font-v1.0.zip"
+  },
+  "seo": {
+    "title": "Soft Bear Handwritten Font for Magisk & KernelSU",
+    "description": "Personalize your Android device with the cute and elegant Soft Bear handwritten font across all apps and system interfaces."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "harmonyos-sans-dynamic-font",
+  "name": "HarmonyOS Sans Variable Typography Suite",
+  "repo": null,
+  "author": "Quiet Rain",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-typography-fonts",
+  "softwareType": "flashable-module",
+  "description": "Complete systemless port of Huawei HarmonyOS Sans variable font with 9 dynamic weight axes, global ColorOS/OxygenOS compatibility, and bilingual glyph support.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "OFL-1.1",
+  "icon": "assets/icons/harmonyos-sans-dynamic-font.png",
+  "stars": 3394,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=228",
+    "assetName": "harmonyos-sans-dynamic-font-v1.0.zip"
+  },
+  "seo": {
+    "title": "HarmonyOS Sans Variable Font for Magisk & KernelSU",
+    "description": "Install Huawei HarmonyOS Sans 9-weight dynamic variable typography systemlessly across Android devices."
+  }
+}

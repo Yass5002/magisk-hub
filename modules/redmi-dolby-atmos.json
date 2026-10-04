@@ -1,0 +1,31 @@
+{
+  "id": "redmi-dolby-atmos",
+  "name": "Redmi Dolby Atmos Sound Enhancement",
+  "repo": null,
+  "author": "Skai6087",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Configures vendor audio properties and DAX profiles to unlock Dolby Atmos spatial surround sound and acoustic enhancements on Redmi devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/redmi-dolby-atmos.png",
+  "stars": 470,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v23.11.08",
+    "publishedAt": "2023-11-08T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=469",
+    "assetName": "redmi-dolby-atmos-v23.11.08.zip"
+  },
+  "seo": {
+    "title": "Redmi Dolby Atmos Enhancement - Spatial Audio for Magisk",
+    "description": "Unlock Dolby Atmos spatial audio processing and tuned acoustic speaker profiles for compatible Redmi smartphones."
+  }
+}

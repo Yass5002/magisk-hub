@@ -182,6 +182,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/samolego/Canta/releases/download/v4.0.0/androidApp-release.apk
 - Upstream Source: https://github.com/samolego/Canta
 
+### Google Mobile Services Core Suite (`google-mobile-services-core`)
+- Description: Systemless Google Mobile Services (GMS) framework and Google Play Store suite that eliminates regional restrictions on Chinese firmware.
+- Module URL: https://magisk.yssn.tech/modules/google-mobile-services-core/
+- Category: https://magisk.yssn.tech/categories/system-environment/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 4,665
+- Latest Release: v11.0
+- Download Asset: https://apk.magisk.vip/download.php?id=221
+
 ### PlayIntegrityFork (`playintegrityfork`)
 - Description: Fix Play Integrity <A13 verdicts, allowing custom fields and props
 - Module URL: https://magisk.yssn.tech/modules/playintegrityfork/
@@ -271,6 +280,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: N-1.0
 - Download Asset: https://github.com/LSPosed/CorePatch/releases/download/N-1.0/app-release.apk
 - Upstream Source: https://github.com/coderstory/CorePatch
+
+### HarmonyOS Sans Variable Typography Suite (`harmonyos-sans-dynamic-font`)
+- Description: Complete systemless port of Huawei HarmonyOS Sans variable font with 9 dynamic weight axes, global ColorOS/OxygenOS compatibility, and bilingual glyph support.
+- Module URL: https://magisk.yssn.tech/modules/harmonyos-sans-dynamic-font/
+- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 3,394
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=228
 
 ### Install with Options (`install-with-options`)
 - Description: Simple-ish app using Shizuku to install APKs on-device with advanced options
@@ -412,6 +430,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/ys1231/MoveCertificate/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip
 - Upstream Source: https://github.com/ys1231/MoveCertificate
 
+### MIUI Gallery AI Feature Unlocker (`miui-gallery-feature-unlocker`)
+- Description: Unlocks advanced flagship AI camera and editing features in MIUI Gallery, including AI cutout, object removal, ID photos, dynamic sky filters, and document de-moiré enhancement.
+- Module URL: https://magisk.yssn.tech/modules/miui-gallery-feature-unlocker/
+- Category: https://magisk.yssn.tech/categories/system-utilities/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,967
+- Latest Release: v2.2.21.5
+- Download Asset: https://apk.magisk.vip/download.php?id=197
+
 ### yurikey (`yurikey`)
 - Description: A systemless module to get strong integrity easily
 - Module URL: https://magisk.yssn.tech/modules/yurikey/
@@ -521,6 +548,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/MhmRdd/NoHello/releases/download/0.0.7/Nohello-v0.0.7-53-4d53ecf-release.zip
 - Upstream Source: https://github.com/MhmRdd/NoHello
 
+### Tsukushi A Round Gothic Typography Suite (`tsukushi-a-round-gothic-font`)
+- Description: Elegant Japanese Tsukushi A Round Gothic typeface adapted for Android with simplified Chinese glyph harmonization and calibrated 85% UI optical scaling.
+- Module URL: https://magisk.yssn.tech/modules/tsukushi-a-round-gothic-font/
+- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,276
+- Latest Release: v20210226
+- Download Asset: https://apk.magisk.vip/download.php?id=219
+
 ### NetProxy-Magisk (`netproxy-magisk`)
 - Description: Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices.
 - Module URL: https://magisk.yssn.tech/modules/netproxy-magisk/
@@ -530,6 +566,24 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v8.2.0
 - Download Asset: https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.2.0/NetProxy_v8.2.0_964_with-manager.zip
 - Upstream Source: https://github.com/Fanju6/NetProxy-Magisk
+
+### Soft Bear Handwritten Typography Suite (`soft-bear-handwritten-font`)
+- Description: Charming and playful handwritten system font replacement featuring smooth glyph outlines, custom numeric characters, and full Roboto font map overriding.
+- Module URL: https://magisk.yssn.tech/modules/soft-bear-handwritten-font/
+- Category: https://magisk.yssn.tech/categories/system-typography-fonts/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,193
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=224
+
+### MIUI Theme & Font Rights Enabler (`miui-theme-rights-enabler`)
+- Description: Systemless patch for Xiaomi Theme Manager that unlocks third-party and premium theme importation, permanent font persistence, and removes account authentication checks.
+- Module URL: https://magisk.yssn.tech/modules/miui-theme-rights-enabler/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 1,145
+- Latest Release: v2.0.0.0
+- Download Asset: https://apk.magisk.vip/download.php?id=194
 
 ### FAS-RS (`fas-rs`)
 - Description: Frame aware scheduling for android.
@@ -617,6 +671,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - GitHub Stars: 761
 - Latest Release: v3.0
 - Download Asset: https://apk.magisk.vip/download.php?id=476
+
+### Thunderbolt Lock & Unlock Sound Effects (`thunderbolt-lock-unlock-sounds`)
+- Description: Replaces stock Android lock and unlock audio cues with crisp, electric Thunderbolt acoustic effects.
+- Module URL: https://magisk.yssn.tech/modules/thunderbolt-lock-unlock-sounds/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 734
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=480
 
 ### Sui (`sui`)
 - Description: Modern super user interface implementation on Android.
@@ -718,6 +781,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/evdenis/adb_root/releases/download/v2.0/adb_root-v2.0.zip
 - Upstream Source: https://github.com/evdenis/adb_root
 
+### Redmi K30 Pro Symmetric Dual Speakers (`redmi-k30pro-dual-speaker`)
+- Description: Enables stereo dual speaker audio output on Redmi K30 Pro / POCO F2 Pro by routing media channels through the top earpiece receiver.
+- Module URL: https://magisk.yssn.tech/modules/redmi-k30pro-dual-speaker/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 509
+- Latest Release: v2.0
+- Download Asset: https://apk.magisk.vip/download.php?id=478
+
 ### chroot-distro (`chroot-distro`)
 - Description: Install Gnu/Linux distributions on Android
 - Module URL: https://magisk.yssn.tech/modules/chroot-distro/
@@ -738,6 +810,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/KernelSU-Next/KPatch-Next-Module/releases/download/v0.0.1/KPatch-Next-Module.zip
 - Upstream Source: https://github.com/KernelSU-Next/KPatch-Next-Module
 
+### Redmi Dolby Atmos Sound Enhancement (`redmi-dolby-atmos`)
+- Description: Configures vendor audio properties and DAX profiles to unlock Dolby Atmos spatial surround sound and acoustic enhancements on Redmi devices.
+- Module URL: https://magisk.yssn.tech/modules/redmi-dolby-atmos/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 470
+- Latest Release: v23.11.08
+- Download Asset: https://apk.magisk.vip/download.php?id=469
+
 ### Re-Malwack (`re-malwack`)
 - Description: A fully-fledged adblock root/no-root suite. Contains all your needs ✨
 - Module URL: https://magisk.yssn.tech/modules/re-malwack/
@@ -747,6 +828,15 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v8.2
 - Download Asset: https://github.com/ZG089/Re-Malwack/releases/download/v8.2/Re-Malwack_v8.2.zip
 - Upstream Source: https://github.com/ZG089/Re-Malwack
+
+### Redmi K20 Pro Dual Speaker Low-Latency Edition (`redmi-k20pro-dual-speaker-low-latency`)
+- Description: Optimized stereo earpiece speaker mod for Redmi K20 Pro / Xiaomi Mi 9T Pro that resolves audio playback latency and eliminates distortion.
+- Module URL: https://magisk.yssn.tech/modules/redmi-k20pro-dual-speaker-low-latency/
+- Category: https://magisk.yssn.tech/categories/audio-dsp-acoustics/
+- Supported Platforms: Magisk, KernelSU, APatch
+- GitHub Stars: 453
+- Latest Release: v1.0
+- Download Asset: https://apk.magisk.vip/download.php?id=471
 
 ### livebootmodule (`livebootmodule`)
 - Description: A Magisk, KernelSU and APatch module that enables unix-style (verbose) boot animation for Android devices

@@ -1,0 +1,31 @@
+{
+  "id": "redmi-k20pro-dual-speaker-low-latency",
+  "name": "Redmi K20 Pro Dual Speaker Low-Latency Edition",
+  "repo": null,
+  "author": "Pi Xiaogui",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Optimized stereo earpiece speaker mod for Redmi K20 Pro / Xiaomi Mi 9T Pro that resolves audio playback latency and eliminates distortion.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/redmi-k20pro-dual-speaker-low-latency.png",
+  "stars": 453,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=471",
+    "assetName": "redmi-k20pro-dual-speaker-low-latency-v1.0.zip"
+  },
+  "seo": {
+    "title": "Redmi K20 Pro Dual Speaker Low Latency - Stereo Audio for Mi 9T Pro",
+    "description": "Eliminate audio lag and enjoy balanced stereo sound on Redmi K20 Pro and Xiaomi Mi 9T Pro with low-latency mixer path tuning."
+  }
+}

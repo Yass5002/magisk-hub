@@ -1,0 +1,31 @@
+{
+  "id": "miui-theme-rights-enabler",
+  "name": "MIUI Theme & Font Rights Enabler",
+  "repo": null,
+  "author": "Qiangzi Loner",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless patch for Xiaomi Theme Manager that unlocks third-party and premium theme importation, permanent font persistence, and removes account authentication checks.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/miui-theme-rights-enabler.png",
+  "stars": 1145,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0.0.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=194",
+    "assetName": "miui-theme-rights-enabler-v2.0.0.0.zip"
+  },
+  "seo": {
+    "title": "MIUI Theme & Font Rights Enabler for Magisk & KernelSU",
+    "description": "Unlock permanent third-party theme and font application on Xiaomi HyperOS and MIUI devices systemlessly."
+  }
+}
