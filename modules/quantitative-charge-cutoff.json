@@ -1,0 +1,31 @@
+{
+  "id": "quantitative-charge-cutoff",
+  "name": "BH Quantitative Charging Cutoff & Battery Guard",
+  "repo": null,
+  "author": "Bu Tai Hui Qi Wang Ming & HChai",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Automated charging controller that enforces customizable upper charge termination thresholds (e.g. stopping at 80% and resuming at 70%) to maximize lithium battery lifespan.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/quantitative-charge-cutoff.png",
+  "stars": 1224,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.46",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=26",
+    "assetName": "quantitative-charge-cutoff-v1.46.zip"
+  },
+  "seo": {
+    "title": "BH Quantitative Charging Cutoff & Battery Guard for Magisk & KernelSU",
+    "description": "Protect lithium battery health by automatically cutting off charging power at designated thresholds (such as 80%) on rooted Android devices."
+  }
+}

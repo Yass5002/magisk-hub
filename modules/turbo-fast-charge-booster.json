@@ -1,0 +1,31 @@
+{
+  "id": "turbo-fast-charge-booster",
+  "name": "Turbo Fast Charge Current Step Booster",
+  "repo": null,
+  "author": "XLIVE",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Low-level power delivery tuning script modulating thermal thresholds to maintain 2000mA AC charging current and 1100mA USB/wireless charging rates.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/turbo-fast-charge-booster.png",
+  "stars": 655,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.79",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=11",
+    "assetName": "turbo-fast-charge-booster-v1.79.zip"
+  },
+  "seo": {
+    "title": "Turbo Fast Charge Current Step Booster for Magisk & KernelSU",
+    "description": "Maximize charging current steps across AC, USB, and wireless power inputs using init.d kernel power supply tuning."
+  }
+}

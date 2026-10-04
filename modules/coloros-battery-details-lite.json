@@ -1,0 +1,31 @@
+{
+  "id": "coloros-battery-details-lite",
+  "name": "ColorOS Battery Details & Usage Display Lite",
+  "repo": null,
+  "author": "Everything by the sun",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-utilities",
+  "softwareType": "flashable-module",
+  "description": "Lightweight notification center daemon displaying comprehensive real-time power metrics, battery drain velocity, and hardware sensor telemetry.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/coloros-battery-details-lite.png",
+  "stars": 1087,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.1",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=28",
+    "assetName": "coloros-battery-details-lite-v1.1.zip"
+  },
+  "seo": {
+    "title": "ColorOS Battery Details & Usage Display Lite for Magisk & KernelSU",
+    "description": "Monitor live discharge rates, battery health metrics, and charging current via an intuitive notification center widget."
+  }
+}

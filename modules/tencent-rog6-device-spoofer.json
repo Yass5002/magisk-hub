@@ -1,0 +1,31 @@
+{
+  "id": "tencent-rog6-device-spoofer",
+  "name": "Tencent ROG Phone 6 Dimensity Edition Device Spoofer",
+  "repo": null,
+  "author": "Shi Chang Liang Nian Ban De Kun",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Overrides build fingerprint and manufacturer properties to ASUS ROG Phone 6 Dimensity Supreme Edition (ASUS_AI2203_B) to bypass game graphics caps.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/tencent-rog6-device-spoofer.png",
+  "stars": 1317,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=185",
+    "assetName": "tencent-rog6-device-spoofer-v1.0.zip"
+  },
+  "seo": {
+    "title": "Tencent ROG Phone 6 Dimensity Edition Device Spoofer for Magisk & KernelSU",
+    "description": "Bypass mobile game device model checks by spoofing ASUS ROG Phone 6 Dimensity Supreme Edition (ASUS_AI2203_B) identity."
+  }
+}

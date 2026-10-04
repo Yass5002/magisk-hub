@@ -1,0 +1,31 @@
+{
+  "id": "nintendo-switch-system-sounds",
+  "name": "Nintendo Switch System Sound Effects Mod",
+  "repo": null,
+  "author": "Aimer (艾米)",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Systemless audio replacement overriding Android UI sounds with Nintendo Switch Joy-Con clicks, screen locks, volume chimes, and charging notifications.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "icon": "assets/icons/nintendo-switch-system-sounds.png",
+  "stars": 1012,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.1",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=27",
+    "assetName": "nintendo-switch-system-sounds-v1.1.zip"
+  },
+  "seo": {
+    "title": "Nintendo Switch System Sound Effects Mod for Magisk & KernelSU",
+    "description": "Transform your Android device audio with iconic Nintendo Switch lock, unlock, click, and charging sound effects."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "auto-charge-disconnect",
+  "name": "Automated Full-Charge Disconnect Guard",
+  "repo": null,
+  "author": "Jiu Shi Long Xia",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Zero-dependency shell watchdog that toggles charging input switches upon reaching 100% and automatically reconnects power when charge drops to 95%.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/auto-charge-disconnect.png",
+  "stars": 626,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.2",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=8",
+    "assetName": "auto-charge-disconnect-v1.2.zip"
+  },
+  "seo": {
+    "title": "Automated Full-Charge Disconnect Guard for Magisk & KernelSU",
+    "description": "Prevent battery overcharging and high-voltage stress by cutting charging input at 100% and resuming at 95% automatically."
+  }
+}

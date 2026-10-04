@@ -1,0 +1,31 @@
+{
+  "id": "battery-health-query",
+  "name": "Battery Health Diagnostics & Cycle Monitor",
+  "repo": null,
+  "author": "Wo Bu Shi Chen Sang & Duo Rou Yu Yuan Pu Tao",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Real-time battery health calculation daemon polling Linux power supply sysfs nodes to track charge cycles, true capacity retention, and health percentages.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": "assets/icons/battery-health-query.png",
+  "stars": 1573,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v0.5",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=4",
+    "assetName": "battery-health-query-v0.5.zip"
+  },
+  "seo": {
+    "title": "Battery Health Diagnostics & Cycle Monitor for Magisk & KernelSU",
+    "description": "Track real-time battery health percentage, true charge cycles, and hardware degradation metrics directly from Linux power supply kernel nodes."
+  }
+}

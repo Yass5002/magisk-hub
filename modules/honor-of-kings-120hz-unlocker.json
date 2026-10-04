@@ -1,0 +1,31 @@
+{
+  "id": "honor-of-kings-120hz-unlocker",
+  "name": "Honor of Kings 120Hz Ultra High Frame Rate Unlocker",
+  "repo": null,
+  "author": "YouLinw de ROM Ri Chang",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Systemless iQOO 8 Pro device profile spoofing that unlocks native 120 FPS ultra-high frame rate graphics in Tencent Honor of Kings / Arena of Valor.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/honor-of-kings-120hz-unlocker.png",
+  "stars": 1007,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=175",
+    "assetName": "honor-of-kings-120hz-unlocker-v1.0.zip"
+  },
+  "seo": {
+    "title": "Honor of Kings 120Hz Ultra High Frame Rate Unlocker for Magisk & KernelSU",
+    "description": "Unlock smooth 120 FPS frame rates in Honor of Kings and Arena of Valor via systemless iQOO 8 Pro device spoofing."
+  }
+}

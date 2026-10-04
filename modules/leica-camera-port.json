@@ -1,0 +1,31 @@
+{
+  "id": "leica-camera-port",
+  "name": "Leica Camera MIUI Port & Color Profiles",
+  "repo": null,
+  "author": "Wan Feng Qiu Ci (挽风秋辞)",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless privileged MIUI Camera replacement injecting authentic Leica Authentic and Leica Vibrant color profiles, Leica watermark processing, and custom ISP tuning.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/leica-camera-port.png",
+  "stars": 7691,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v4.3.04750.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=167",
+    "assetName": "leica-camera-port-v4.3.04750.0.zip"
+  },
+  "seo": {
+    "title": "Leica Camera MIUI Port & Color Profiles for Magisk & KernelSU",
+    "description": "Unlock authentic Leica Authentic and Vibrant color science, exclusive filters, and watermarks on Xiaomi and Redmi smartphones."
+  }
+}

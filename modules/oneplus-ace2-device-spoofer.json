@@ -1,0 +1,31 @@
+{
+  "id": "oneplus-ace2-device-spoofer",
+  "name": "OnePlus Ace 2 Device Identity Spoofer",
+  "repo": null,
+  "author": "You Xi Li Jie 6 (酷安游戏李姐6)",
+  "sourceType": "community",
+  "sourceUrl": null,
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Systemless build property override injecting OnePlus Ace 2 (PHK110) hardware signatures to unlock 90FPS/120FPS options in competitive mobile games.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/oneplus-ace2-device-spoofer.png",
+  "stars": 1319,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2023-01-01T00:00:00Z",
+    "url": null,
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=169",
+    "assetName": "oneplus-ace2-device-spoofer-v1.0.zip"
+  },
+  "seo": {
+    "title": "OnePlus Ace 2 Device Identity Spoofer for Magisk & KernelSU",
+    "description": "Spoof your device build properties to OnePlus Ace 2 (PHK110) to unlock 120 FPS high refresh rate gaming modes."
+  }
+}
