@@ -8,7 +8,7 @@ export interface Props {
 
 const { module } = Astro.props;
 const category = CATEGORIES[module.category] || { name: module.category, id: module.category, icon: 'Layers' };
-const author = module.repo.split('/')[0];
+const author = module.repo ? module.repo.split('/')[0] : (module.author || 'Community');
 
 const iconMap: Record<string, string> = {
   'root-management': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
@@ -69,16 +69,18 @@ const isTier1 = module.contentTier === 1;
           />
         ) : (
           <div class="relative h-11 w-11">
-            <img 
-              src={`https://github.com/${author}.png?size=96`} 
-              alt={author}
-              width="44" 
-              height="44" 
-              loading="lazy"
-              class="h-11 w-11 rounded-lg object-cover bg-zinc-50 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
-              onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
-            />
-            <div class="hidden h-11 w-11 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-200">
+            {module.repo ? (
+              <img 
+                src={`https://github.com/${author}.png?size=96`} 
+                alt={author}
+                width="44" 
+                height="44" 
+                loading="lazy"
+                class="h-11 w-11 rounded-lg object-cover bg-zinc-50 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
+                onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
+              />
+            ) : null}
+            <div class={`${module.repo ? 'hidden' : 'flex'} h-11 w-11 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-200`}>
               <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={categorySvgPath} />
               </svg>

@@ -35,9 +35,30 @@
       "description": "Human-readable display name of the module"
     },
     "repo": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
-      "description": "GitHub repository path in owner/repo format"
+      "description": "GitHub repository path in owner/repo format or null for community modules"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Maintainer or creator display name (used for non-GitHub or community modules)"
+    },
+    "sourceType": {
+      "type": "string",
+      "enum": [
+        "github",
+        "community"
+      ],
+      "description": "Origin distribution channel classification"
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direct link to upstream thread or community download page"
     },
     "category": {
       "type": "string",

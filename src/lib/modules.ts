@@ -20,7 +20,10 @@ export type PlatformCompatibility = 'Magisk' | 'KernelSU' | 'APatch' | 'LSPosed'
 export interface ModuleData {
   id: string;
   name: string;
-  repo: string;
+  repo: string | null;
+  author?: string;
+  sourceType?: 'github' | 'community';
+  sourceUrl?: string;
   category: string;
   softwareType: SoftwareType;
   description: string;

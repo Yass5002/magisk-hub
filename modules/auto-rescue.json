@@ -1,0 +1,31 @@
+{
+  "id": "auto-rescue",
+  "name": "Auto Rescue",
+  "repo": null,
+  "author": "Fendou Youth",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=795",
+  "category": "system-utilities",
+  "softwareType": "flashable-module",
+  "description": "Automated bootloop watchdog that tracks boot startup attempts and automatically disables culprit modules with whitelist and OTA delay protection.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v221204",
+    "publishedAt": "2022-12-04T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=795",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=795",
+    "assetName": "Automatic_brick_rescue-v221204.zip"
+  },
+  "seo": {
+    "title": "Auto Rescue - Automated Bootloop Protection for Magisk & KernelSU",
+    "description": "Prevent soft bricks and bootloops automatically. Auto Rescue detects startup failures and safely disables culprit root modules."
+  }
+}

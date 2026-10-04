@@ -1,0 +1,31 @@
+{
+  "id": "dac-noise-floor-filter",
+  "name": "DAC Noise Floor Filter & Stereo Fix",
+  "repo": null,
+  "author": "FK",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=476",
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Calibrates Qualcomm WCD9335/Tasha DAC audio mixer paths to filter out low-volume analog hiss and ground loop interference on IEMs.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v3.0",
+    "publishedAt": "2021-07-01T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=476",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=476",
+    "assetName": "dac-noise-floor-filter-v3.0.zip"
+  },
+  "seo": {
+    "title": "DAC Noise Floor Filter & Stereo Fix - Eliminate Earphone Hiss",
+    "description": "Filter out audio background hiss and ground noise on sensitive earphones. Tunes Qualcomm DAC mixer paths for clean, uncolored sound."
+  }
+}

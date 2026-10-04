@@ -372,7 +372,11 @@ def main():
 
     print(f"Loaded {len(candidates)} candidate modules from modules/ directory.", flush=True)
 
-    repo_list = [c["repo"] for c in candidates]
+    github_candidates = [c for c in candidates if c.get("repo")]
+    community_candidates = [c for c in candidates if not c.get("repo")]
+    print(f"GitHub modules: {len(github_candidates)}, Community modules: {len(community_candidates)}", flush=True)
+
+    repo_list = [c["repo"] for c in github_candidates]
     batch_size = 25
     github_data = {}
 
@@ -390,7 +394,7 @@ def main():
     pruned_modules = []
 
     print("Evaluating active bar (archive, push dates, releases)...", flush=True)
-    for c in candidates:
+    for c in github_candidates:
         repo = c["repo"]
         raw_id = c["id"]
         repo_name = repo.split('/')[1]
@@ -533,8 +537,8 @@ def main():
             entry["contentTier"] = c["contentTier"]
         final_module_entries.append((slug, entry))
 
-    # Clean existing module files if they got pruned
-    active_slugs = {s for s, _ in final_module_entries}
+    # Clean existing module files if they got pruned (preserving community modules)
+    active_slugs = {s for s, _ in final_module_entries} | {c["id"] for c in community_candidates}
     for existing_file in os.listdir(MODULES_DIR):
         if existing_file.endswith(".json") and existing_file != "schema.json":
             file_slug = existing_file[:-5]

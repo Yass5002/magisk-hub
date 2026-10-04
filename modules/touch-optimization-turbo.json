@@ -1,0 +1,31 @@
+{
+  "id": "touch-optimization-turbo",
+  "name": "Touch Optimization Turbo",
+  "repo": null,
+  "author": "Xiaojian",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=822",
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Reduces Android SurfaceFlinger frame pipeline latency and optimizes touch responsiveness using Qualcomm QTI input tuners.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v3.0",
+    "publishedAt": "2022-02-15T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=822",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=822",
+    "assetName": "touch-optimization-turbo-v3.0.zip"
+  },
+  "seo": {
+    "title": "Touch Optimization Turbo - Low Latency SurfaceFlinger & Touch Module",
+    "description": "Cut display pipeline latency and eliminate input jitter. Injects SurfaceFlinger and Qualcomm input optimizations for instant touch response."
+  }
+}

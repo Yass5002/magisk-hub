@@ -36,7 +36,7 @@ export interface Props {
 
 const { module, contentEntry } = Astro.props;
 const category = CATEGORIES[module.category] || { name: module.category, id: module.category };
-const author = module.repo.split('/')[0];
+const author = module.repo ? module.repo.split('/')[0] : (module.author || 'Community');
 
 // Related modules in same category (excluding current)
 const relatedModules = getAllModules()
@@ -365,15 +365,22 @@ const seo = generateModuleSEO(module);
             href={module.latestRelease.url}
             target="_blank"
             rel="noopener noreferrer"
-            data-umami-event="github-release-click"
+            data-umami-event={module.repo ? "github-release-click" : "community-release-click"}
             data-umami-event-module={module.id}
-            data-umami-event-repo={module.repo}
+            data-umami-event-repo={module.repo || "community"}
             class="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 px-4 py-2 text-xs font-mono font-medium text-zinc-800 transition-colors shadow-2xs"
           >
-            <svg class="h-3.5 w-3.5 text-zinc-700" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
-            </svg>
-            <span>GitHub Source</span>
+            {module.repo ? (
+              <svg class="h-3.5 w-3.5 text-zinc-700" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span>GitHub Source</span>
+            ) : (
+              <svg class="h-3.5 w-3.5 text-zinc-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span>Community Release Source</span>
+            )}
           </a>
 
           <!-- Release Asset Monospace Container with Full Visibility and Copy Action -->
@@ -535,23 +542,29 @@ const seo = generateModuleSEO(module);
           </div>
         )}
 
-        <!-- Upstream Repository Details Card (Key-Value Rows) -->
+        <!-- Upstream Repository / Package Details Card (Key-Value Rows) -->
         <div class="rounded-xl border border-zinc-200 bg-white p-5 space-y-4 shadow-xs">
           <h3 class="text-sm font-semibold text-zinc-900 border-b border-zinc-200 pb-2">
-            Repository Details
+            {module.repo ? "Repository Details" : "Package Details"}
           </h3>
           
           <div class="space-y-2.5 text-xs font-mono">
             <div class="flex items-center justify-between py-1 border-b border-zinc-100">
-              <span class="text-zinc-500">Maintainer</span>
-              <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="text-zinc-800 hover:text-zinc-900 hover:underline">
-                {author}
-              </a>
+              <span class="text-zinc-500">{module.repo ? "Maintainer" : "Author"}</span>
+              {module.repo ? (
+                <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="text-zinc-800 hover:text-zinc-900 hover:underline">
+                  {author}
+                </a>
+              ) : (
+                <span class="text-zinc-800 font-medium">{author}</span>
+              )}
             </div>
-            <div class="flex items-center justify-between py-1 border-b border-zinc-100">
-              <span class="text-zinc-500">Repository</span>
-              <span class="text-zinc-900 font-medium">{module.repo.split('/')[1]}</span>
-            </div>
+            {module.repo && (
+              <div class="flex items-center justify-between py-1 border-b border-zinc-100">
+                <span class="text-zinc-500">Repository</span>
+                <span class="text-zinc-900 font-medium">{module.repo.split('/')[1]}</span>
+              </div>
+            )}
             <div class="flex items-center justify-between py-1 border-b border-zinc-100">
               <span class="text-zinc-500">Latest Release</span>
               <span class="bg-zinc-100 text-zinc-800 text-[11px] px-2 py-0.5 rounded border border-zinc-200/80">
@@ -570,17 +583,30 @@ const seo = generateModuleSEO(module);
             </div>
           </div>
 
-          <a 
-            href={`https://github.com/${module.repo}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-umami-event="github-repo-click"
-            data-umami-event-module={module.id}
-            data-umami-event-repo={module.repo}
-            class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
-          >
-            Open GitHub Repository →
-          </a>
+          {module.repo ? (
+            <a 
+              href={`https://github.com/${module.repo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="github-repo-click"
+              data-umami-event-module={module.id}
+              data-umami-event-repo={module.repo}
+              class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
+            >
+              Open GitHub Repository →
+            </a>
+          ) : (
+            <a 
+              href={module.latestRelease.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="community-source-click"
+              data-umami-event-module={module.id}
+              class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
+            >
+              Open Distribution Source →
+            </a>
+          )}
         </div>
 
         <!-- Related Category Modules -->
@@ -601,8 +627,12 @@ const seo = generateModuleSEO(module);
                   <div class="flex items-center gap-2.5 truncate">
                     {rel.icon ? (
                       <img src={`/${rel.icon}`} alt={`${rel.name} icon`} width="24" height="24" class="h-6 w-6 rounded object-contain shrink-0 bg-white border border-zinc-200 p-0.5" />
-                    ) : (
+                    ) : rel.repo ? (
                       <img src={`https://github.com/${rel.repo.split('/')[0]}.png?size=48`} alt={`${rel.name} author icon`} width="24" height="24" class="h-6 w-6 rounded object-cover shrink-0 bg-white border border-zinc-200" />
+                    ) : (
+                      <div class="h-6 w-6 rounded bg-zinc-100 flex items-center justify-center border border-zinc-200 shrink-0 text-[10px] font-mono text-zinc-500 font-bold">
+                        {(rel.author || rel.name)[0].toUpperCase()}
+                      </div>
                     )}
                     <span class="text-xs font-medium text-zinc-800 group-hover:text-zinc-900 truncate">
                       {rel.name}

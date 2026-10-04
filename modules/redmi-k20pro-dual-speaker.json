@@ -1,0 +1,31 @@
+{
+  "id": "redmi-k20pro-dual-speaker",
+  "name": "Redmi K20 Pro Stereo Dual Speaker & Harman Tuning",
+  "repo": null,
+  "author": "Eriol Sakura",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=477",
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Hardware-specific audio enhancement for Redmi K20 Pro enabling dual stereo speakers, 25-step volume control, and Harman Kardon sound profiles.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v13.0",
+    "publishedAt": "2024-01-17T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=477",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=477",
+    "assetName": "redmi-k20pro-dual-speaker-v13.0.zip"
+  },
+  "seo": {
+    "title": "Redmi K20 Pro Stereo Dual Speaker & Harman Kardon Audio Mod",
+    "description": "Unlock earpiece stereo speaker, 25 volume steps, and Harman Kardon acoustic tuning on Redmi K20 Pro and Mi 9T Pro."
+  }
+}

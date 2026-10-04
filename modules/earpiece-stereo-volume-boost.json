@@ -1,0 +1,31 @@
+{
+  "id": "earpiece-stereo-volume-boost",
+  "name": "Earpiece Stereo & Volume Boost",
+  "repo": null,
+  "author": "Stir-Fried Pufferfish",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=474",
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Routes media audio through the front call earpiece for pseudo-stereo playback while boosting ALSA mixer analog gain and digital registers.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0",
+    "publishedAt": "2019-07-02T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=474",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=474",
+    "assetName": "earpiece-stereo-volume-boost-v1.0.zip"
+  },
+  "seo": {
+    "title": "Earpiece Stereo & Volume Boost - Dual Speaker Mod & Mixer Booster",
+    "description": "Enable dual speaker stereo sound on mono phones. Boosts earpiece amplifier gain and ALSA mixer paths for louder calls and media."
+  }
+}

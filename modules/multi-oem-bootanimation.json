@@ -1,0 +1,31 @@
+{
+  "id": "multi-oem-bootanimation",
+  "name": "Multi-OEM Dynamic Boot Animation",
+  "repo": null,
+  "author": "Stinky Panda",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=651",
+  "category": "boot-animations-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless boot animation engine for MIUI, ColorOS, and Realme UI with random animation cycling and 60-second crash-rescue watchdog.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2023-05-17T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=651",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=651",
+    "assetName": "multi-oem-bootanimation-v2.0.zip"
+  },
+  "seo": {
+    "title": "Multi-OEM Dynamic Boot Animation - Custom Boot Engine with Anti-Bootloop",
+    "description": "Custom boot animation manager with automatic animation shuffling and built-in 60-second crash watchdog for MIUI, OPPO, and Realme."
+  }
+}

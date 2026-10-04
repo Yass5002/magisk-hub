@@ -1,0 +1,31 @@
+{
+  "id": "battery-fuel-gauge-fix",
+  "name": "Battery Fuel Gauge Fix",
+  "repo": null,
+  "author": "DuduSki",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=820",
+  "category": "battery-power-charging",
+  "softwareType": "flashable-module",
+  "description": "Synchronizes Android system UI battery percentage with Qualcomm kernel BMS coulomb counter registers to prevent battery level drift.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.3.0",
+    "publishedAt": "2022-09-23T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=820",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=820",
+    "assetName": "battery-fuel-gauge-fix-v1.3.0.zip"
+  },
+  "seo": {
+    "title": "Battery Fuel Gauge Fix - Qualcomm BMS Calibration for Android",
+    "description": "Fix inaccurate Android battery percentages. Reads kernel BMS raw capacity registers and synchronizes UI battery indicators in real time."
+  }
+}

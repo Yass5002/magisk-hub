@@ -1,0 +1,31 @@
+{
+  "id": "viper4android-dolby-coexistence",
+  "name": "ViPER4Android & Dolby Atmos Coexistence",
+  "repo": null,
+  "author": "LazyBug",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=475",
+  "category": "audio-dsp-acoustics",
+  "softwareType": "flashable-module",
+  "description": "Merges ViPER4Android FX and Dolby Atmos audio DSP engines into a unified audio HAL pipeline with dynamic SELinux policy injection.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0-only",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2019-11-04T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=475",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=475",
+    "assetName": "viper4android-dolby-coexistence-v2.0.zip"
+  },
+  "seo": {
+    "title": "ViPER4Android & Dolby Atmos Coexistence - Dual Audio DSP Module",
+    "description": "Run ViPER4Android and Dolby Atmos simultaneously. Merges audio effects configuration and injects necessary SELinux audio policies."
+  }
+}

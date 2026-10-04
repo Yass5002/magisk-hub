@@ -1,0 +1,31 @@
+{
+  "id": "ios-san-francisco-fonts",
+  "name": "iOS San Francisco Font Suite",
+  "repo": null,
+  "author": "Chestnut EBQO",
+  "sourceType": "community",
+  "sourceUrl": "https://apk.magisk.vip/app.php?id=736",
+  "category": "system-typography-fonts",
+  "softwareType": "flashable-module",
+  "description": "Systemless typography replacement overlaying Apple SF Pro and SF Compact typefaces across Android system UI and apps.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "OFL-1.1",
+  "icon": null,
+  "stars": 0,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v2.0",
+    "publishedAt": "2021-08-10T00:00:00Z",
+    "url": "https://apk.magisk.vip/app.php?id=736",
+    "downloadUrl": "https://apk.magisk.vip/download.php?id=736",
+    "assetName": "ios-san-francisco-fonts-v2.0.zip"
+  },
+  "seo": {
+    "title": "iOS San Francisco Font Suite - Systemless Apple SF Pro for Android",
+    "description": "Transform your Android system typography with Apple San Francisco Pro fonts. Systemless font replacement with complete weight support."
+  }
+}

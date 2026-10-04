@@ -39,7 +39,7 @@ def generate():
         stars = m.get('stars', 0)
         tag = m.get('latestRelease', {}).get('tag', '')
         download = m.get('latestRelease', {}).get('downloadUrl', '')
-        repo = m.get('repo', '')
+        repo = m.get('repo') or ''
         category = m.get('category', '')
 
         lines.append(f"### {name} (`{mid}`)")
