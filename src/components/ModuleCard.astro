@@ -151,7 +151,7 @@ const isTier1 = module.contentTier === 1;
     </div>
 
     <!-- Right: Platform Compatibility Badges -->
-    <div class="flex items-center gap-1 shrink-0">
+    <div class="flex items-center gap-1 flex-wrap justify-end">
       {module.compatibility.map(c => (
         <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] font-mono text-zinc-600 border border-zinc-200/80">
           {c}

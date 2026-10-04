@@ -242,7 +242,7 @@ const itemListSchema = {
         <!-- 2. Category (SECOND) -->
         <select 
           id="categorySelect" 
-          class="w-full sm:w-auto rounded-lg border border-zinc-200 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs truncate"
+          class="w-full sm:w-auto rounded-lg border border-zinc-200 bg-white px-2.5 sm:px-3 py-2 text-xs sm:text-sm font-medium text-zinc-800 focus:outline-none focus:border-zinc-900 cursor-pointer hover:border-zinc-300 transition-colors shadow-2xs"
           aria-label="Filter by Category"
         >
           <option value="all">All Categories</option>
@@ -452,12 +452,14 @@ const itemListSchema = {
       if (moduleGrid) moduleGrid.appendChild(el);
     });
 
+    const totalVisible = visibleCount + (shouldShowSpotlight ? 1 : 0);
+
     if (moduleCount) {
-      moduleCount.textContent = `${visibleCount} modules`;
+      moduleCount.textContent = `${totalVisible} modules`;
     }
 
     if (noResults) {
-      if (visibleCount === 0) {
+      if (totalVisible === 0) {
         noResults.classList.remove('hidden');
       } else {
         noResults.classList.add('hidden');

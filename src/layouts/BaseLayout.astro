@@ -55,7 +55,7 @@ const baseWebSiteSchema = {
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-[#fafafa]">
+<html lang="en" class="scroll-smooth bg-[#fafafa] overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -115,7 +115,7 @@ const baseWebSiteSchema = {
     )}
     <slot name="head" />
   </head>
-  <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900">
+  <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 overflow-x-hidden">
     <Navbar />
     
     <main class="flex-1">
