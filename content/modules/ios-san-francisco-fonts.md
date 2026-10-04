@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**iOS San Francisco Font Suite** (packaged and maintained by Chestnut EBQO) delivers Apple's proprietary San Francisco (SF Pro) typography to rooted Android devices through systemless overlay mounting.
+**iOS San Francisco Font Suite** (packaged by Chestnut EBQO, upstream typography suite: https://github.com/dpejoh/apple-typography-for-android) delivers Apple's proprietary San Francisco (SF Pro) typography to rooted Android devices through systemless overlay mounting.
 
 In stock Android configurations, Google uses Roboto as the default system font across applications and UI chrome. While functional, many users prefer the geometry, optical sizing, and legibility of Apple's San Francisco typeface. Replacing system fonts via traditional recovery flashing risks bricking font services or corrupting `fonts.xml`. This module implements a safe, modular override that mounts verified SF Pro TrueType assets over `/system/fonts/`.
 

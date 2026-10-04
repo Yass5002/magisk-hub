@@ -4,7 +4,7 @@
   "repo": null,
   "author": "Xiaojian",
   "sourceType": "community",
-  "sourceUrl": "https://apk.magisk.vip/app.php?id=822",
+  "sourceUrl": "https://github.com/rakarmp/ReactTouch",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
   "description": "Reduces Android SurfaceFlinger frame pipeline latency and optimizes touch responsiveness using Qualcomm QTI input tuners.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v3.0",
     "publishedAt": "2022-02-15T00:00:00Z",
-    "url": "https://apk.magisk.vip/app.php?id=822",
+    "url": "https://github.com/rakarmp/ReactTouch",
     "downloadUrl": "https://apk.magisk.vip/download.php?id=822",
     "assetName": "touch-optimization-turbo-v3.0.zip"
   },

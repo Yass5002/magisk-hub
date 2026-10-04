@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**Battery Fuel Gauge Fix** (authored by DuduSki) is a low-level battery calibration module designed to eliminate discrepancies between Android's status bar battery percentage and the physical battery management system (BMS).
+**Battery Fuel Gauge Fix** (authored by DuduSki, Coolapk profile: https://www.coolapk.com/u/1004314) is a low-level battery calibration module designed to eliminate discrepancies between Android's status bar battery percentage and the physical battery management system (BMS).
 
 On devices powered by Qualcomm Snapdragon platforms, the Power Management Integrated Circuit (PMIC) maintains a dedicated Battery Monitoring System (BMS). The hardware BMS measures charge entering and exiting the cell via a precision sense resistor (coulomb counting). However, Android's framework daemon (`BatteryService`) applies complex smoothing algorithms that can become desynchronized after custom ROM installations, kernel swaps, or aging battery health.
 

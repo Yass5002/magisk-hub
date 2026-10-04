@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**Earpiece Stereo & Volume Boost** (authored by Stir-Fried Pufferfish) is an acoustic enhancement module engineered to convert single-speaker Android phones into dual stereo sound systems without physical hardware alterations.
+**Earpiece Stereo & Volume Boost** (authored by Stir-Fried Pufferfish, upstream repository: https://mi.fiime.cn/libcangku/2834.html) is an acoustic enhancement module engineered to convert single-speaker Android phones into dual stereo sound systems without physical hardware alterations.
 
 Many mid-range and legacy flagship smartphones feature only one bottom-firing loudspeaker for music, videos, and games, while the front earpiece sits idle during media playback. By reconfiguring the device's Advanced Linux Sound Architecture (ALSA) mixer paths, this module commands the Qualcomm audio codec to route the left audio channel to the front earpiece transducer while directing the right channel to the bottom speaker.
 

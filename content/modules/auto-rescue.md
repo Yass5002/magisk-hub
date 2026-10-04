@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**Auto Rescue** (originally authored by Han and Qingfeideyic, maintained by Fendou Youth) is an automated systemless watchdog designed to recover Android devices from soft bricks and bootloops caused by incompatible Magisk, KernelSU, or APatch modules.
+**Auto Rescue** (originally authored by Han and Qingfeideyic, maintained by Fendou Youth on 52pojie: https://www.52pojie.cn/thread-1600094-1-1.html) is an automated systemless watchdog designed to recover Android devices from soft bricks and bootloops caused by incompatible Magisk, KernelSU, or APatch modules.
 
 When modifying low-level Android framework libraries, audio effects, or system properties, a malfunctioning script can cause the Zygote process to crash or the SystemUI daemon to hang indefinitely. Without custom recovery (TWRP/OrangeFox) or USB debugging enabled, users often face full data wipes to restore booting. Auto Rescue eliminates this risk by executing autonomous health checks during the bootloader handoff and init sequence.
 

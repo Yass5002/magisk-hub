@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**Multi-OEM Dynamic Boot Animation** (authored by Stinky Panda) provides a reliable, systemless framework for customizing Android boot sequences across diverse OEM interfaces, including Xiaomi (MIUI/HyperOS), OPPO (ColorOS), Realme (Realme UI), and generic AOSP firmware.
+**Multi-OEM Dynamic Boot Animation** (authored by Stinky Panda, Coolapk profile: https://www.coolapk.com/u/22627121) provides a reliable, systemless framework for customizing Android boot sequences across diverse OEM interfaces, including Xiaomi (MIUI/HyperOS), OPPO (ColorOS), Realme (Realme UI), and generic AOSP firmware.
 
 Installing custom boot animations has traditionally been one of the most common causes of bootloops for modders. Mismatched frame dimensions, unsupported image compression (such as deflated rather than store-only ZIP compression), or missing `desc.txt` terminating newlines cause the native Android `bootanimation` binary to fault or enter infinite replay loops.
 

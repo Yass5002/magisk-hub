@@ -4,7 +4,7 @@
   "repo": null,
   "author": "DuduSki",
   "sourceType": "community",
-  "sourceUrl": "https://apk.magisk.vip/app.php?id=820",
+  "sourceUrl": "https://www.coolapk.com/u/1004314",
   "category": "battery-power-charging",
   "softwareType": "flashable-module",
   "description": "Synchronizes Android system UI battery percentage with Qualcomm kernel BMS coulomb counter registers to prevent battery level drift.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v1.3.0",
     "publishedAt": "2022-09-23T00:00:00Z",
-    "url": "https://apk.magisk.vip/app.php?id=820",
+    "url": "https://www.coolapk.com/u/1004314",
     "downloadUrl": "https://apk.magisk.vip/download.php?id=820",
     "assetName": "battery-fuel-gauge-fix-v1.3.0.zip"
   },

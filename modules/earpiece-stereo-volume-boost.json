@@ -4,7 +4,7 @@
   "repo": null,
   "author": "Stir-Fried Pufferfish",
   "sourceType": "community",
-  "sourceUrl": "https://apk.magisk.vip/app.php?id=474",
+  "sourceUrl": "https://mi.fiime.cn/libcangku/2834.html",
   "category": "audio-dsp-acoustics",
   "softwareType": "flashable-module",
   "description": "Routes media audio through the front call earpiece for pseudo-stereo playback while boosting ALSA mixer analog gain and digital registers.",
@@ -20,7 +20,7 @@
   "latestRelease": {
     "tag": "v1.0",
     "publishedAt": "2019-07-02T00:00:00Z",
-    "url": "https://apk.magisk.vip/app.php?id=474",
+    "url": "https://mi.fiime.cn/libcangku/2834.html",
     "downloadUrl": "https://apk.magisk.vip/download.php?id=474",
     "assetName": "earpiece-stereo-volume-boost-v1.0.zip"
   },
