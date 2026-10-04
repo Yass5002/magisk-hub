@@ -3,6 +3,7 @@
   "name": "magisk-frida",
   "repo": "ViRb3/magisk-frida",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "🔐 Run frida-server on boot with Magisk, always up-to-date",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "magisk-frida – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download magisk-frida for Magisk and KernelSU. 🔐 Run frida-server on boot with Magisk, always up-to-date."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

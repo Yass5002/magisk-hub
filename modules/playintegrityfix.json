@@ -3,13 +3,14 @@
   "name": "PlayIntegrityFix",
   "repo": "KOWX712/PlayIntegrityFix",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Fix Play Integrity verdicts.",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/playintegrityfix.png",
-  "stars": 3959,
+  "stars": 3960,
   "latestRelease": {
     "tag": "v4.7-inject-s",
     "publishedAt": "2026-07-11T09:58:43Z",
@@ -21,6 +22,5 @@
     "title": "PlayIntegrityFix – Download (Magisk) | Magisk Hub",
     "description": "Download PlayIntegrityFix for Magisk. Fix Play Integrity verdicts."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "BatteryHoney",
   "repo": "kaminarich/BatteryHoney",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A Magisk module to Optimize Battery Saving without interrupting Performance",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "BatteryHoney – Download (Magisk) | Magisk Hub",
     "description": "Download BatteryHoney for Magisk. A Magisk module to Optimize Battery Saving without interrupting Performance."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

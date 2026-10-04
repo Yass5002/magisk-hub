@@ -3,6 +3,7 @@
   "name": "resampling-for-cheapies",
   "repo": "Magisk-Modules-Alt-Repo/resampling-for-cheapies",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC Bluetooth earphones and DAC's under $30 (probably), this module sets near ideal re-sampling which involves special digital filtering at the system-wide mixer.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "resampling-for-cheapies – Download (Magisk) | Magisk Hub",
     "description": "Download resampling-for-cheapies for Magisk. For avoiding \"cheapie sound\" distortion like a thin veiling smokescreen specific to LDAC..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

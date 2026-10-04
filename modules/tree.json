@@ -3,6 +3,7 @@
   "name": "tree",
   "repo": "Magisk-Modules-Alt-Repo/tree",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "tree for android",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "tree – Download (Magisk) | Magisk Hub",
     "description": "Download tree for Magisk. tree for android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

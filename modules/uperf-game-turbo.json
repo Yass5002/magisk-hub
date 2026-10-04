@@ -3,6 +3,7 @@
   "name": "Uperf-Game-Turbo",
   "repo": "yinwanxi/Uperf-Game-Turbo",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Userspace performance controller for android",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Uperf-Game-Turbo – Download (Magisk) | Magisk Hub",
     "description": "Download Uperf-Game-Turbo for Magisk. Userspace performance controller for android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

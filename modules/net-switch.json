@@ -3,6 +3,7 @@
   "name": "net-switch",
   "repo": "Rem01Gaming/net-switch",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "Magisk Module to isolate any app from Internet access",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "net-switch – Download (Magisk) | Magisk Hub",
     "description": "Download net-switch for Magisk. Magisk Module to isolate any app from Internet access."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

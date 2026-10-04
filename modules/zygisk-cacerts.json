@@ -3,6 +3,7 @@
   "name": "zygisk_cacerts",
   "repo": "vvb2060/zygisk_cacerts",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "zygisk_cacerts active root module.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "zygisk_cacerts – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download zygisk_cacerts for Magisk and KernelSU. zygisk_cacerts active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

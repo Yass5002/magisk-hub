@@ -3,6 +3,7 @@
   "name": "ih8SecureLock",
   "repo": "j-hc/ih8SecureLock",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "Prevent apps from blocking and listening to your screenshots with Zygisk",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "ih8SecureLock – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download ih8SecureLock for Magisk and KernelSU. Prevent apps from blocking and listening to your screenshots with Zygisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

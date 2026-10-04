@@ -3,6 +3,7 @@
   "name": "Frosty",
   "repo": "Drsexo/Frosty",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Frosty – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Frosty for Magisk and KernelSU. Advanced Magisk/KSU/APatch module to enhance battery saving and stop Google services drain."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

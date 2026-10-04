@@ -3,6 +3,7 @@
   "name": "AshLooper",
   "repo": "RipperHybrid/AshLooper",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "A module designed to prevent boot loops caused by problematic modules installed via KernelSU or Magisk on Android devices.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "AshLooper – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AshLooper for Magisk and KernelSU. A module designed to prevent boot loops caused by problematic modules installed via KernelSU..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

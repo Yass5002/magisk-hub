@@ -3,6 +3,7 @@
   "name": "BRENE",
   "repo": "rrr333nnn333/BRENE",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "BRENE - A SuSFS/KernelSU module for SuSFS patched kernels",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "BRENE – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BRENE for Magisk and KernelSU. A SuSFS/KernelSU module for SuSFS patched kernels."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

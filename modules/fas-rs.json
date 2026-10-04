@@ -4,7 +4,7 @@
   "repo": "shadow3aaa/fas-rs",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
-  "description": "High-performance Frame Aware Scheduling daemon written in Rust that monitors real-time SurfaceFlinger frame delivery to optimize Android gaming performance.",
+  "description": "Frame aware scheduling for android.",
   "compatibility": [
     "KernelSU",
     "APatch",
@@ -21,8 +21,8 @@
     "assetName": "fas-rs.zip"
   },
   "seo": {
-    "title": "FAS-RS – Download (KernelSU/APatch/Magisk) | Magisk Hub",
-    "description": "Download FAS-RS for Android. Rust-based frame-aware scheduling daemon optimizing gaming FPS stability and thermal efficiency."
+    "title": "FAS-RS – Download (KSU/APatch/Magisk) | Magisk Hub",
+    "description": "Download FAS-RS for KernelSU, APatch, and Magisk. Frame aware scheduling for android."
   },
   "contentTier": 1
 }

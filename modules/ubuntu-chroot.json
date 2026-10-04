@@ -3,6 +3,7 @@
   "name": "Ubuntu-Chroot",
   "repo": "ravindu644/Ubuntu-Chroot",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Run Ubuntu 24.04 on Android With full Hardware Access and pure namespace isolation..!",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Ubuntu-Chroot – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Ubuntu-Chroot for Magisk and KernelSU. Run Ubuntu on Android With full Hardware Access and pure namespace isolation..!."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

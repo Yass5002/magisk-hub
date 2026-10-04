@@ -3,6 +3,7 @@
   "name": "magisk-samsung-dex-standalone-mode",
   "repo": "supermarsx/magisk-samsung-dex-standalone-mode",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "A Magisk module to systemlessly enable Samsung DeX standalone mode",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "magisk-samsung-dex-standalone-mode – Download | Magisk Hub",
     "description": "Download magisk-samsung-dex-standalone-mode for Magisk and KernelSU. A Magisk module to systemlessly enable Samsung DeX standalone mode."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

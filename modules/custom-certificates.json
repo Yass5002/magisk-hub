@@ -3,6 +3,7 @@
   "name": "custom-certificates",
   "repo": "YujiaCheng1996/custom-certificates",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "A Magisk module which adds custom certificates to the system trust store.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "custom-certificates – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download custom-certificates for Magisk and KernelSU. A Magisk module which adds custom certificates to the system trust store."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

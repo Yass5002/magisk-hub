@@ -3,6 +3,7 @@
   "name": "OplusKey",
   "repo": "ItosEO/OplusKey",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "OplusKey active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "OplusKey – Download (Magisk) | Magisk Hub",
     "description": "Download OplusKey for Magisk. OplusKey active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

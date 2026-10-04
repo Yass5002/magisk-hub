@@ -3,6 +3,7 @@
   "name": "adb_root",
   "repo": "evdenis/adb_root",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Magisk Module that allows you to run \"adb root\". Android 10 only. Probably will work with Android 9. Definitely not with Android 11/12.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "adb_root – Download (Magisk) | Magisk Hub",
     "description": "Download adb_root for Magisk. Magisk Module that allows you to run \"adb root\". Android 10 only. Probably will work with Android 9...."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

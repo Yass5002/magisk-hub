@@ -3,6 +3,7 @@
   "name": "AlwaysTrustUserCerts",
   "repo": "NVISOsecurity/AlwaysTrustUserCerts",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "A Magisk/KernelSU module that automatically adds user certificates to the system root CA store",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "AlwaysTrustUserCerts – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AlwaysTrustUserCerts for Magisk and KernelSU. A Magisk/KernelSU module that automatically adds user certificates to the system..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "PlayStoreSelfUpdateBlocker",
   "repo": "himanshujjp/PlayStoreSelfUpdateBlocker",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Blocks Google Play Store self-updates on rooted Android devices. Supports Magisk, APatch, and KernelSU. Useful for maintaining device attestation and Play Integrity compliance.",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "PlayStoreSelfUpdateBlocker – Download | Magisk Hub",
     "description": "Download PlayStoreSelfUpdateBlocker for Magisk, KernelSU, and APatch. Blocks Google Play Store self-updates on rooted Android devices...."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

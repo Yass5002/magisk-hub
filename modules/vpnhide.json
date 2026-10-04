@@ -3,6 +3,7 @@
   "name": "vpnhide",
   "repo": "okhsunrog/vpnhide",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "vpnhide – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download vpnhide for Magisk and KernelSU. Hide active VPN from selected Android apps (kernel module + LSPosed + Zygisk)."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

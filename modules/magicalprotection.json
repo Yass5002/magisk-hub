@@ -3,6 +3,7 @@
   "name": "MagicalProtection",
   "repo": "programminghoch10/MagicalProtection",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Magisk-only completely systemless adblocking.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "MagicalProtection – Download (Magisk) | Magisk Hub",
     "description": "Download MagicalProtection for Magisk. Magisk-only completely systemless adblocking."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

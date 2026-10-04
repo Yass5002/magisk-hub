@@ -3,6 +3,7 @@
   "name": "dozedisabler",
   "repo": "draumaz/dozedisabler",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Disable Doze optimizations at boot (Magisk)",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "dozedisabler – Download (Magisk) | Magisk Hub",
     "description": "Download dozedisabler for Magisk. Disable Doze optimizations at boot (Magisk)."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

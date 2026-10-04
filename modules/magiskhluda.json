@@ -3,6 +3,7 @@
   "name": "MagiskHluda",
   "repo": "Exo1i/MagiskHluda",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Run a more undetectable frida server on boot using magisk 🔐✅",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "MagiskHluda – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download MagiskHluda for Magisk, KernelSU, and APatch. Run a more undetectable frida server on boot using magisk 🔐✅."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

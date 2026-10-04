@@ -3,6 +3,7 @@
   "name": "mountify",
   "repo": "backslashxx/mountify",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Globally mounted modules via OverlayFS.",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "Unlicense",
   "icon": null,
-  "stars": 1419,
+  "stars": 1418,
   "latestRelease": {
     "tag": "204",
     "publishedAt": "2026-08-25T05:14:18Z",
@@ -23,6 +24,5 @@
     "title": "mountify – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download mountify for Magisk, KernelSU, and APatch. Globally mounted modules via OverlayFS."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

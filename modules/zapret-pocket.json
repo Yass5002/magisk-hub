@@ -3,6 +3,7 @@
   "name": "zapret-pocket",
   "repo": "sevcator/zapret-pocket",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "⚡ Bypass censorship via zapret on rooted Android devices",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "zapret-pocket – Download (Magisk) | Magisk Hub",
     "description": "Download zapret-pocket for Magisk. ⚡ Bypass censorship via zapret on rooted Android devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

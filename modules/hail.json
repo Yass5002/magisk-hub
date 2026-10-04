@@ -4,7 +4,7 @@
   "repo": "aistra0528/Hail",
   "category": "system-utilities",
   "softwareType": "standalone-app",
-  "description": "Flexible application freezer for Android supporting disable, hide, and suspend modes via Shizuku, root, or Device Owner without battery-draining daemons.",
+  "description": "Disable / Hide / Suspend / Uninstall Android apps without root.",
   "compatibility": [
     "Shizuku",
     "Rootless",
@@ -14,7 +14,7 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/hail.png",
-  "stars": 6815,
+  "stars": 6816,
   "latestRelease": {
     "tag": "v1.11.0",
     "publishedAt": "2026-08-26T07:23:01Z",
@@ -24,7 +24,7 @@
   },
   "seo": {
     "title": "Hail – Download | Magisk Hub",
-    "description": "Download Hail for Android. Freeze, hide, and suspend background apps on demand via Shizuku, root, or Device Owner mode."
+    "description": "Download Hail for Shizuku, Rootless, Magisk, KernelSU, and APatch. Disable / Hide / Suspend / Uninstall Android apps without root."
   },
   "contentTier": 1
 }

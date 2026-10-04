@@ -3,6 +3,7 @@
   "name": "DeepSuppressor",
   "repo": "Aurora-Nasa-1/DeepSuppressor",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A Magisk Module",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "DeepSuppressor – Download (Magisk) | Magisk Hub",
     "description": "Download DeepSuppressor for Magisk. A Magisk Module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

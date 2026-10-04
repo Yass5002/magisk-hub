@@ -3,6 +3,7 @@
   "name": "TermuxRootMods",
   "repo": "rompelhd/TermuxRootMods",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "A module that enhances the Termux experience for rooted devices.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "TermuxRootMods – Download (Magisk) | Magisk Hub",
     "description": "Download TermuxRootMods for Magisk. A module that enhances the Termux experience for rooted devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

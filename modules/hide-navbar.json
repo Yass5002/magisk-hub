@@ -3,6 +3,7 @@
   "name": "Hide-Navbar",
   "repo": "DanGLVK/Hide-Navbar",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Hide Navbar",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Hide-Navbar – Download (Magisk) | Magisk Hub",
     "description": "Download Hide-Navbar for Magisk. Hide Navbar."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "ZygiskNext",
   "repo": "LSPosed/ZygiskNext",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Standalone implementation of Zygisk",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 605,
+  "stars": 608,
   "latestRelease": {
     "tag": "1.5.0",
     "publishedAt": "2026-09-20T04:19:50Z",
@@ -23,6 +24,5 @@
     "title": "ZygiskNext – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download ZygiskNext for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

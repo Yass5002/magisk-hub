@@ -3,6 +3,7 @@
   "name": "twrp-keep",
   "repo": "Magisk-Modules-Repo/twrp-keep",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "twrp-keep",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "twrp-keep – Download (Magisk) | Magisk Hub",
     "description": "Download twrp-keep for Magisk. twrp-keep."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

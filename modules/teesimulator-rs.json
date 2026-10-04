@@ -3,6 +3,7 @@
   "name": "TEESimulator-RS",
   "repo": "Enginex0/TEESimulator-RS",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Software simulation for Android hardware-backed key pairs with key attestation | https://t.me/superpowers9",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 1888,
+  "stars": 1886,
   "latestRelease": {
     "tag": "v6.0.1-282",
     "publishedAt": "2026-06-19T15:54:47Z",
@@ -22,6 +23,5 @@
     "title": "TEESimulator-RS – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download TEESimulator-RS for Magisk and KernelSU. Software simulation for Android hardware-backed key pairs with key attestation |..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

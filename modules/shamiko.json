@@ -3,6 +3,7 @@
   "name": "Shamiko",
   "repo": "LSPosed/LSPosed.github.io",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Zygisk-based root hiding module by LSPosed developers to conceal root, zygisk, and sensitive props from banking apps and integrity checks.",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 6350,
+  "stars": 6349,
   "latestRelease": {
     "tag": "shamiko-414",
     "publishedAt": "2025-06-18T11:37:10Z",
@@ -23,6 +24,5 @@
     "title": "Shamiko – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Shamiko for Magisk, KernelSU, and APatch. Zygisk-based root hiding module by LSPosed developers to conceal root, zygisk, and..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

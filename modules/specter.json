@@ -3,6 +3,7 @@
   "name": "specter",
   "repo": "dpejoh/specter",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Unified Play Integrity and root hiding stack for Android",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 706,
+  "stars": 707,
   "latestRelease": {
     "tag": "v1.5.0",
     "publishedAt": "2026-09-12T11:41:38Z",
@@ -22,6 +23,5 @@
     "title": "specter – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download specter for Magisk and KernelSU. Unified Play Integrity and root hiding stack for Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

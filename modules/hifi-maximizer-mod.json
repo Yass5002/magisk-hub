@@ -3,6 +3,7 @@
   "name": "hifi-maximizer-mod",
   "repo": "yzyhk904/hifi-maximizer-mod",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A Magisk module for maximizing the digital audio fidelity by reducing jitters on audio outputs (USB DACs, Bluetooth a2dp, DLNA, etc.)",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "hifi-maximizer-mod – Download (Magisk) | Magisk Hub",
     "description": "Download hifi-maximizer-mod for Magisk. A Magisk module for maximizing the digital audio fidelity by reducing jitters on audio outputs..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

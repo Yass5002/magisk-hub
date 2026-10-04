@@ -3,6 +3,7 @@
   "name": "NetProxy-Magisk",
   "repo": "Fanju6/NetProxy-Magisk",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent proxy and is designed for Android devices.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "NetProxy-Magisk – Download (Magisk) | Magisk Hub",
     "description": "Download NetProxy-Magisk for Magisk. Based on the sing-box core, this Android proxy module supports one-click start/stop of transparent..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

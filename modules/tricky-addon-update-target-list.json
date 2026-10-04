@@ -4,7 +4,7 @@
   "repo": "KOWX712/Tricky-Addon-Update-Target-List",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "Interactive WebUI management addon for Tricky Store, TEESimulator, and OhMyKeymint to configure target.txt package spoofing lists.",
+  "description": "A KSU WebUI to configure Tricky Store target.txt",
   "compatibility": [
     "KernelSU",
     "APatch",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "Tricky Addon - Update Target List – Download | Magisk Hub",
-    "description": "Download Tricky Addon WebUI module for KernelSU, APatch, and Magisk. Configure Tricky Store and TEESimulator target.txt spoofing packages."
+    "description": "Download Tricky Addon - Update Target List for KernelSU, APatch, and Magisk. A KSU WebUI to configure Tricky Store target.txt."
   },
   "contentTier": 1
 }

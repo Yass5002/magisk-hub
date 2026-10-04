@@ -3,6 +3,7 @@
   "name": "Greenify4Magisk-KSU-Reborn",
   "repo": "Drsexo/Greenify4Magisk-KSU-Reborn",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Integrate Greenify as a privileged system app to enable boost mode™, with automatic bulk app list generation and multi-user support. Works seamlessly with Magisk, KernelSU, and APatch.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Greenify4Magisk-KSU-Reborn – Download | Magisk Hub",
     "description": "Download Greenify4Magisk-KSU-Reborn for Magisk and KernelSU. Integrate Greenify as a privileged system app to enable boost mode™, with..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

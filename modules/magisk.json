@@ -3,13 +3,14 @@
   "name": "Magisk",
   "repo": "topjohnwu/Magisk",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "The Magic Mask for Android",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/magisk.png",
-  "stars": 63060,
+  "stars": 63062,
   "latestRelease": {
     "tag": "v30.7",
     "publishedAt": "2026-02-23T08:07:01Z",
@@ -21,6 +22,5 @@
     "title": "Magisk – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk for Magisk. The Magic Mask for Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

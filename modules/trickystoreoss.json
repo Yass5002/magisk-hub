@@ -3,6 +3,7 @@
   "name": "TrickyStoreOSS",
   "repo": "beakthoven/TrickyStoreOSS",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Open source alternative to proprietary Tricky Store module",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "TrickyStoreOSS – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download TrickyStoreOSS for Magisk and KernelSU. Open source alternative to proprietary Tricky Store module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

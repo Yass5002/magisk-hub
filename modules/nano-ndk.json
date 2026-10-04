@@ -3,6 +3,7 @@
   "name": "nano-ndk",
   "repo": "Magisk-Modules-Repo/nano-ndk",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "nano-ndk",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "nano-ndk – Download (Magisk) | Magisk Hub",
     "description": "Download nano-ndk for Magisk. nano-ndk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

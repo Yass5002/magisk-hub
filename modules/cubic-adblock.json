@@ -3,6 +3,7 @@
   "name": "Cubic-AdBlock",
   "repo": "Vaz15k/Cubic-AdBlock",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "AdBlock Based in /etc/hosts",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Cubic-AdBlock – Download (Magisk) | Magisk Hub",
     "description": "Download Cubic-AdBlock for Magisk. AdBlock Based in /etc/hosts."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

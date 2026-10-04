@@ -3,6 +3,7 @@
   "name": "AZenith",
   "repo": "Liliya2727/AZenith",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Universal perf modules",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "AZenith – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AZenith for Magisk and KernelSU. Universal perf modules."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

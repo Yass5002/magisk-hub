@@ -3,6 +3,7 @@
   "name": "Extreme-Gms-Doze",
   "repo": "Skyghost090/Extreme-Gms-Doze",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A Magisk Module for Kill gms on screen off",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Extreme-Gms-Doze – Download (Magisk) | Magisk Hub",
     "description": "Download Extreme-Gms-Doze for Magisk. A Magisk Module for Kill gms on screen off."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

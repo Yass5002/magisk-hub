@@ -3,6 +3,7 @@
   "name": "Magisk Tailscaled",
   "repo": "anasfanani/Magisk-Tailscaled",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Magisk/KernelSU module for running Tailscale on rooted Android devices. The easiest, most secure way to use WireGuard and 2FA.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Magisk Tailscaled – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Magisk Tailscaled for Magisk and KernelSU. Magisk/KernelSU module for running Tailscale on rooted Android devices. The easiest..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

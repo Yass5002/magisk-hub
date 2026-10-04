@@ -3,6 +3,7 @@
   "name": "Hydro-Br-leur",
   "repo": "AestasBritannia/Hydro-Br-leur",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A magisk module for Android devices",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Hydro-Br-leur – Download (Magisk) | Magisk Hub",
     "description": "Download Hydro-Br-leur for Magisk. A magisk module for Android devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "Magisk-Minecraft-Font",
   "repo": "DethByte64/Magisk-Minecraft-Font",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "A Magisk Module that changes your default font to the Minecraft font",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Magisk-Minecraft-Font – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk-Minecraft-Font for Magisk. A Magisk Module that changes your default font to the Minecraft font."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

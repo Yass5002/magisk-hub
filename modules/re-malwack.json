@@ -3,6 +3,7 @@
   "name": "Re-Malwack",
   "repo": "ZG089/Re-Malwack",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "A fully-fledged adblock root/no-root suite. Contains all your needs ✨",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Re-Malwack – Download (Magisk) | Magisk Hub",
     "description": "Download Re-Malwack for Magisk. A fully-fledged adblock root/no-root suite. Contains all your needs ✨."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

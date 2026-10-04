@@ -3,6 +3,7 @@
   "name": "SwapBoost-Pro",
   "repo": "yadavnikhil03/SwapBoost-Pro",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile optimization with VM tweaks.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "SwapBoost-Pro – Download (Magisk) | Magisk Hub",
     "description": "Download SwapBoost-Pro for Magisk. A magisk module that optimizes your device's memory performance through persistent zRAM + Swapfile..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

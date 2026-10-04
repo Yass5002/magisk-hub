@@ -3,6 +3,7 @@
   "name": "usb-samplerate-unlocker",
   "repo": "Magisk-Modules-Alt-Repo/usb-samplerate-unlocker",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "USB (HAL) Audio Class drivers on Android have a limiter of sample rates at 96kHz. This magisk module unlocks the limiter.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "usb-samplerate-unlocker – Download (Magisk) | Magisk Hub",
     "description": "Download usb-samplerate-unlocker for Magisk. USB (HAL) Audio Class drivers on Android have a limiter of sample rates at 96kHz. This..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

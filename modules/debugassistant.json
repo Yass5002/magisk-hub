@@ -3,6 +3,7 @@
   "name": "DebugAssistant",
   "repo": "ThePedroo/DebugAssistant",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "The simplest yet powerful logcat capture system as Magisk module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "DebugAssistant – Download (Magisk) | Magisk Hub",
     "description": "Download DebugAssistant for Magisk. The simplest yet powerful logcat capture system as Magisk module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

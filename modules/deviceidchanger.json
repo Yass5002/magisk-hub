@@ -3,6 +3,7 @@
   "name": "deviceidchanger",
   "repo": "sidex15/deviceidchanger",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch, KSU (And its forks), or Magisk.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "deviceidchanger – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download deviceidchanger for Magisk and KernelSU. A simple WebUI Module to change SSAID/DeviceID on Rooted Android Devices with Apatch..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

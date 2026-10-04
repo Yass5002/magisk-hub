@@ -3,6 +3,7 @@
   "name": "supl-replacer",
   "repo": "Magisk-Modules-Alt-Repo/supl-replacer",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Magisk module to replace the SUPL provider in gps.conf",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "supl-replacer – Download (Magisk) | Magisk Hub",
     "description": "Download supl-replacer for Magisk. Magisk module to replace the SUPL provider in gps.conf."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

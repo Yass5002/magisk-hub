@@ -3,6 +3,7 @@
   "name": "AlterInstaller",
   "repo": "chenxiaolong/AlterInstaller",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Spoof Android package manager installer fields",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "AlterInstaller – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AlterInstaller for Magisk and KernelSU. Spoof Android package manager installer fields."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

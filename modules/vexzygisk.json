@@ -3,6 +3,7 @@
   "name": "VexZygisk",
   "repo": "Lxiaoyao077/VexZygisk",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per root solution, with Zygisk Next module support and HyperOS runtime support.",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "AGPL-3.0",
   "icon": null,
-  "stars": 70,
+  "stars": 71,
   "latestRelease": {
     "tag": "v2.2.0",
     "publishedAt": "2026-09-28T08:45:52Z",
@@ -23,6 +24,5 @@
     "title": "VexZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download VexZygisk for Magisk, KernelSU, and APatch. Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

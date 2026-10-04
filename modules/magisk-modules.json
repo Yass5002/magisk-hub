@@ -3,6 +3,7 @@
   "name": "magisk-modules",
   "repo": "NewFuture/magisk-modules",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "magisk-modules – Download (Magisk) | Magisk Hub",
     "description": "Download magisk-modules for Magisk. Future Magisk modules for network switching, battery emulation, ddns, and automated ADB startup."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

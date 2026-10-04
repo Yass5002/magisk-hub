@@ -3,6 +3,7 @@
   "name": "SAM",
   "repo": "5MayRain/SAM",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/sam.png",
-  "stars": 149,
+  "stars": 150,
   "latestRelease": {
     "tag": "20260907",
     "publishedAt": "2026-09-07T11:48:00Z",
@@ -22,6 +23,5 @@
     "title": "SAM – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download SAM for Magisk and KernelSU. SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

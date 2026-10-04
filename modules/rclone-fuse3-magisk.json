@@ -3,6 +3,7 @@
   "name": "rclone-fuse3-magisk",
   "repo": "NewFuture/rclone-fuse3-magisk",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "magisk rclone module (with libfuse3)",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "rclone-fuse3-magisk – Download (Magisk) | Magisk Hub",
     "description": "Download rclone-fuse3-magisk for Magisk. magisk rclone module (with libfuse3)."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

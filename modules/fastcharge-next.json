@@ -3,6 +3,7 @@
   "name": "Fastcharge-next",
   "repo": "Dev97633/Fastcharge-next",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "⚡ Magisk Module to boost charging speed with smart tweaks.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Fastcharge-next – Download (Magisk) | Magisk Hub",
     "description": "Download Fastcharge-next for Magisk. ⚡ Magisk Module to boost charging speed with smart tweaks."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "video-to-bootanimation",
   "repo": "Magisk-Modules-Alt-Repo/video-to-bootanimation",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "A Magisk Module Which Can Set Videos as Android Device BootAnimation",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "video-to-bootanimation – Download (Magisk) | Magisk Hub",
     "description": "Download video-to-bootanimation for Magisk. A Magisk Module Which Can Set Videos as Android Device BootAnimation."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

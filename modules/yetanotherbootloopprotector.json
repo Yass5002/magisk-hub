@@ -3,6 +3,7 @@
   "name": "YetAnotherBootloopProtector",
   "repo": "Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "A Magisk Module to monitor and fix potential Bootloops and SystemUI failures.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "YetAnotherBootloopProtector – Download (Magisk) | Magisk Hub",
     "description": "Download YetAnotherBootloopProtector for Magisk. A Magisk Module to monitor and fix potential Bootloops and SystemUI failures."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

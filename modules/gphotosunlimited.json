@@ -3,6 +3,7 @@
   "name": "GPhotosUnlimited",
   "repo": "Rev4N1/GPhotosUnlimited",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Unlimited Google Photos Magisk Module works with Zygisk",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "GPhotosUnlimited – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download GPhotosUnlimited for Magisk and KernelSU. Unlimited Google Photos Magisk Module works with Zygisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

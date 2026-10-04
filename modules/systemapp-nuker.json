@@ -3,6 +3,7 @@
   "name": "systemapp_nuker",
   "repo": "chisewaguri/systemapp_nuker",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A KernelSU module to debloat system apps with WebUI Interface",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "systemapp_nuker – Download (Magisk) | Magisk Hub",
     "description": "Download systemapp_nuker for Magisk. A KernelSU module to debloat system apps with WebUI Interface."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

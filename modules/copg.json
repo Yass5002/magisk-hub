@@ -3,13 +3,14 @@
   "name": "COPG",
   "repo": "AlirezaParsi/COPG",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Advanced per-app device / CPU / GPU spoofer for rooted Android — device profiles, per-app CPU models, prop & Android-ID spoofing, all driven by a full on-device WebUI. Zygisk module for KernelSU / Magisk / APatch.",
   "compatibility": [
     "Magisk"
   ],
   "license": "Apache-2.0",
   "icon": "assets/icons/copg.png",
-  "stars": 397,
+  "stars": 398,
   "latestRelease": {
     "tag": "v7.3.0",
     "publishedAt": "2026-09-29T14:16:25Z",
@@ -21,6 +22,5 @@
     "title": "COPG – Download (Magisk) | Magisk Hub",
     "description": "Download COPG for Magisk. Advanced per-app device / CPU / GPU spoofer for rooted Android — device profiles, per-app CPU models, prop &..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "Sortify",
   "repo": "xCaptaiN09/Sortify",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "✨Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Sortify – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Sortify for Magisk and KernelSU. ✨Automatically organizes files in your Download folder for Magisk/KernelSU/SukiSU ultra."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

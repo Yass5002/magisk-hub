@@ -3,6 +3,7 @@
   "name": "Magisk_AsoulOpt",
   "repo": "nakixii/Magisk_AsoulOpt",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Magisk_AsoulOpt active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Magisk_AsoulOpt – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk_AsoulOpt for Magisk. Magisk_AsoulOpt active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

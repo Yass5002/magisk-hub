@@ -3,6 +3,7 @@
   "name": "EvilFont",
   "repo": "dedeadend/EvilFont",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "A systemless module to change default Arabic/Persian font + Apple emojis.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "EvilFont – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download EvilFont for Magisk and KernelSU. A systemless module to change default Arabic/Persian font + Apple emojis."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

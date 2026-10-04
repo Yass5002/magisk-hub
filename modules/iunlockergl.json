@@ -3,6 +3,7 @@
   "name": "iUnlockerGL",
   "repo": "i-Taylo/iUnlockerGL",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "iUnlocker GLTool is a Magisk module designed to spoof GPU information, allowing users to modify GPU informations for unlocking graphics in games and testing.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "iUnlockerGL – Download (Magisk) | Magisk Hub",
     "description": "Download iUnlockerGL for Magisk. iUnlocker GLTool is a Magisk module designed to spoof GPU information, allowing users to modify GPU..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

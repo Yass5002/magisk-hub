@@ -3,6 +3,7 @@
   "name": "HyperOS-App-Vault",
   "repo": "Mods-Center/HyperOS-App-Vault",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur adjustments, and scrolling animations.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "HyperOS-App-Vault – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-App-Vault for Magisk and KernelSU. Enhanced HyperOS App Vault with unlocked widgets, high-end device features, blur..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

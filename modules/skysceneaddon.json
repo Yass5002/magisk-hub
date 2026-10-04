@@ -3,6 +3,7 @@
   "name": "SkySceneAddon",
   "repo": "WeirdMidas/SkySceneAddon",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A Magisk module for optimizing memory management for legacy and modern ARM devices.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "SkySceneAddon – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download SkySceneAddon for Magisk and KernelSU. A Magisk module for optimizing memory management for legacy and modern ARM devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

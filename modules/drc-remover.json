@@ -3,6 +3,7 @@
   "name": "drc-remover",
   "repo": "Magisk-Modules-Alt-Repo/drc-remover",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major devices",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "drc-remover – Download (Magisk) | Magisk Hub",
     "description": "Download drc-remover for Magisk. A remover of DRC (Dynamic Range Control, i.e., compression) sticking to all audio outputs on some major..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

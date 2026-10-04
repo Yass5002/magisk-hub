@@ -3,6 +3,7 @@
   "name": "DSP-AudioFix",
   "repo": "ahmed-alnassif/DSP-AudioFix",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "DSP-AudioFix active root module.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "DSP-AudioFix – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download DSP-AudioFix for Magisk and KernelSU. DSP-AudioFix active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

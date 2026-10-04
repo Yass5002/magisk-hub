@@ -3,6 +3,7 @@
   "name": "revanced-extended",
   "repo": "NoName-exe/revanced-extended",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users.",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 4219,
+  "stars": 4220,
   "latestRelease": {
     "tag": "158",
     "publishedAt": "2026-10-03T00:44:14Z",
@@ -22,6 +23,5 @@
     "title": "revanced-extended – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download revanced-extended for Magisk and KernelSU. ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

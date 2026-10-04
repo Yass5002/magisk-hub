@@ -3,6 +3,7 @@
   "name": "disable-low-ram",
   "repo": "Magisk-Modules-Alt-Repo/disable-low-ram",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Magisk module to disable Low-RAM flag on Android Go devices",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "disable-low-ram – Download (Magisk) | Magisk Hub",
     "description": "Download disable-low-ram for Magisk. Magisk module to disable Low-RAM flag on Android Go devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

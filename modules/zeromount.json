@@ -3,6 +3,7 @@
   "name": "zeromount",
   "repo": "Enginex0/zeromount",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Mountless module loading for rooted Android. Kernel-level VFS path redirection — zero mount table pollution. SUSFS integration, WebUI, bootloop guard, and strategy fallback.",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "zeromount – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download zeromount for Magisk, KernelSU, and APatch. Mountless module loading for rooted Android. Kernel-level VFS path redirection —..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

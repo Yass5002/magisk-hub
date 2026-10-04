@@ -3,6 +3,7 @@
   "name": "BasicCleaner",
   "repo": "WeirdMidas/BasicCleaner",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "BasicCleaner – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BasicCleaner for Magisk and KernelSU. A magisk/KSU module that applies a set of cleanups and fixups every 7-15-30 days."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

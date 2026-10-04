@@ -3,6 +3,7 @@
   "name": "AuditPatch",
   "repo": "silvzr/AuditPatch",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Replace sensitive context in audit log",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "AuditPatch – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AuditPatch for Magisk and KernelSU. Replace sensitive context in audit log."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "Treat-Wheel-Zygisk",
   "repo": "PerformanC/Treat-Wheel-Zygisk",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "The wheel to reinvent the new light.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Treat-Wheel-Zygisk – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Treat-Wheel-Zygisk for Magisk and KernelSU. The wheel to reinvent the new light."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

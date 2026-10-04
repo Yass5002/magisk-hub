@@ -3,6 +3,7 @@
   "name": "librepods",
   "repo": "librepods-org/librepods",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "AirPods liberated from Apple's ecosystem.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "librepods – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download librepods for Magisk and KernelSU. AirPods liberated from Apple's ecosystem."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

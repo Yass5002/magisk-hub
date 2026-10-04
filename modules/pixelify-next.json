@@ -3,6 +3,7 @@
   "name": "Pixelify-Next",
   "repo": "BasGame1/Pixelify-Next",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Magisk /KSU module to enables pixel exclusive features up to android 17",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Pixelify-Next – Download (Magisk) | Magisk Hub",
     "description": "Download Pixelify-Next for Magisk. Magisk /KSU module to enables pixel exclusive features up to android 17."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "wadbd",
   "repo": "Magisk-Modules-Alt-Repo/wadbd",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Allows you to enable or disable wireless ADB for the current session or at boot.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "wadbd – Download (Magisk) | Magisk Hub",
     "description": "Download wadbd for Magisk. Allows you to enable or disable wireless ADB for the current session or at boot."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

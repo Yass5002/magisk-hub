@@ -3,6 +3,7 @@
   "name": "PerfGame",
   "repo": "adivenxnataly/PerfGame",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Enable custom resolution & frame-rate mechanism for your games.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "PerfGame – Download (Magisk) | Magisk Hub",
     "description": "Download PerfGame for Magisk. Enable custom resolution & frame-rate mechanism for your games."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

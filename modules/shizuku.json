@@ -4,7 +4,7 @@
   "repo": "RikkaApps/Shizuku",
   "category": "root-management",
   "softwareType": "standalone-app",
-  "description": "Privileged system API broker allowing applications to execute direct Binder IPC calls with ADB or root permissions without su overhead.",
+  "description": "Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.",
   "compatibility": [
     "Shizuku",
     "Rootless",
@@ -14,7 +14,7 @@
   ],
   "license": "Apache-2.0",
   "icon": "assets/icons/shizuku.png",
-  "stars": 30983,
+  "stars": 30990,
   "latestRelease": {
     "tag": "v13.6.0",
     "publishedAt": "2025-05-25T13:19:47Z",
@@ -24,7 +24,7 @@
   },
   "seo": {
     "title": "Shizuku – Download | Magisk Hub",
-    "description": "Download Shizuku for Android. Privileged system API broker allowing applications direct Binder IPC with ADB or root permissions."
+    "description": "Download Shizuku for Shizuku, Rootless, Magisk, KernelSU, and APatch. Using system APIs directly with adb/root privileges from normal..."
   },
   "contentTier": 1
 }

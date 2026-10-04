@@ -3,6 +3,7 @@
   "name": "partition-backup",
   "repo": "rhythmcache/partition-backup",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "*Magisk Module To Backup or Save Android Device Partition",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "partition-backup – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download partition-backup for Magisk, KernelSU, and APatch. *Magisk Module To Backup or Save Android Device Partition."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

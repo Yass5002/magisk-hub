@@ -3,6 +3,7 @@
   "name": "FingerprintPay",
   "repo": "eritpchy/FingerprintPay",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "FingerprintPay – Download (Magisk) | Magisk Hub",
     "description": "Download FingerprintPay for Magisk. 让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

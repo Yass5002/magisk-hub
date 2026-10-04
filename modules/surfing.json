@@ -3,6 +3,7 @@
   "name": "Surfing",
   "repo": "GitMetaio/Surfing",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Magisk and KernelSU modules for  Clash/mihomo services.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Surfing – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Surfing for Magisk and KernelSU. Magisk and KernelSU modules for Clash/mihomo services."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

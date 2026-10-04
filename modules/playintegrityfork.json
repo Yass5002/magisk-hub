@@ -3,13 +3,14 @@
   "name": "PlayIntegrityFork",
   "repo": "osm0sis/PlayIntegrityFork",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Fix Play Integrity <A13 verdicts, allowing custom fields and props",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 4550,
+  "stars": 4548,
   "latestRelease": {
     "tag": "v18",
     "publishedAt": "2026-08-29T17:33:56Z",
@@ -21,6 +22,5 @@
     "title": "PlayIntegrityFork – Download (Magisk) | Magisk Hub",
     "description": "Download PlayIntegrityFork for Magisk. Fix Play Integrity <A13 verdicts, allowing custom fields and props."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

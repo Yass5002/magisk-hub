@@ -3,6 +3,7 @@
   "name": "magisk-cromite-webview",
   "repo": "hddq/magisk-cromite-webview",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Magisk/KernelSU module that automatically replaces Android System WebView with Cromite. Auto-built daily via GitHub Actions.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "magisk-cromite-webview – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download magisk-cromite-webview for Magisk and KernelSU. Magisk/KernelSU module that automatically replaces Android System WebView with..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

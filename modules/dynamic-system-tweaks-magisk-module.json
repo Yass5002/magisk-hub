@@ -3,6 +3,7 @@
   "name": "Dynamic-System-Tweaks-Magisk-Module",
   "repo": "g7755726/Dynamic-System-Tweaks-Magisk-Module",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Dynamic-System-Tweaks-Magisk-Module active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Dynamic-System-Tweaks-Magisk-Module – Download | Magisk Hub",
     "description": "Download Dynamic-System-Tweaks-Magisk-Module for Magisk. Dynamic-System-Tweaks-Magisk-Module active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "custom-certificate-authorities",
   "repo": "Magisk-Modules-Alt-Repo/custom-certificate-authorities",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "Custom Certificate Authorities is a Magisk module that moves user-installed certificate authorities into the system trust store, making them trusted by all apps.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "custom-certificate-authorities – Download | Magisk Hub",
     "description": "Download custom-certificate-authorities for Magisk. Custom Certificate Authorities is a Magisk module that moves user-installed..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

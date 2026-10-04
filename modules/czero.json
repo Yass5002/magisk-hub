@@ -3,6 +3,7 @@
   "name": "CZero",
   "repo": "Xocio/CZero",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A system cache cleaning and optimisation module made just for Android.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "CZero – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download CZero for Magisk and KernelSU. A system cache cleaning and optimisation module made just for Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

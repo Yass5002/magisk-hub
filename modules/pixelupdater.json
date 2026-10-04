@@ -3,6 +3,7 @@
   "name": "PixelUpdater",
   "repo": "PixelUpdater/PixelUpdater",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Android A/B OTA updater app for rooted Pixels",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "PixelUpdater – Download (Magisk) | Magisk Hub",
     "description": "Download PixelUpdater for Magisk. Android A/B OTA updater app for rooted Pixels."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

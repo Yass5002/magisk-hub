@@ -3,6 +3,7 @@
   "name": "charging-bypass-magisk",
   "repo": "AbhishekTor55/charging-bypass-magisk",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Charging Bypass Magisk Module — Android 14–16 supported. Disables charging when screen is ON and re-enables when OFF. Useful for gaming/dev use. Kernel-level control. Tested on Miatoll (AOSP 16). Logs saved to /sdcard/charging_bypass.log",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "charging-bypass-magisk – Download (Magisk) | Magisk Hub",
     "description": "Download charging-bypass-magisk for Magisk. Charging Bypass Magisk Module — Android 14–16 supported. Disables charging when screen is ON..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "GhostGMS",
   "repo": "kaushikieeee/GhostGMS",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "GhostGMS is a Magisk module designed to disable unnecessary Google Mobile Services (GMS) background processes, reducing active drain to as low as 6-7% while maintaining essential functionality.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "GhostGMS – Download (Magisk) | Magisk Hub",
     "description": "Download GhostGMS for Magisk. GhostGMS is a Magisk module designed to disable unnecessary Google Mobile Services (GMS) background..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

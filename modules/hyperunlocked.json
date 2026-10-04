@@ -3,13 +3,14 @@
   "name": "HyperUnlocked",
   "repo": "ukriu/HyperUnlocked",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "A Magisk/KernelSU/APatch module to unlock high-end features on all Xiaomi devices.",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 235,
+  "stars": 237,
   "latestRelease": {
     "tag": "v2.3.1",
     "publishedAt": "2026-09-23T15:50:41Z",
@@ -21,6 +22,5 @@
     "title": "HyperUnlocked – Download (Magisk) | Magisk Hub",
     "description": "Download HyperUnlocked for Magisk. A Magisk/KernelSU/APatch module to unlock high-end features on all Xiaomi devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

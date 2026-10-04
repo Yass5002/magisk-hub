@@ -3,6 +3,7 @@
   "name": "FontLoader",
   "repo": "JingMatrix/FontLoader",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "FontLoader active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "FontLoader – Download (Magisk) | Magisk Hub",
     "description": "Download FontLoader for Magisk. FontLoader active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

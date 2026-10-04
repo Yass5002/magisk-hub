@@ -4,7 +4,7 @@
   "repo": "coderstory/CorePatch",
   "category": "xposed-runtime-hooks",
   "softwareType": "xposed-module",
-  "description": "Xposed module for LSPosed that hooks PackageManagerService to disable APK signature verification, digest checks, and application downgrade restrictions.",
+  "description": "Disable signature verification For Android",
   "compatibility": [
     "LSPosed"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "CorePatch – Download (LSPosed) | Magisk Hub",
-    "description": "Download CorePatch for LSPosed. Disable APK signature verification, bypass downgrade restrictions, and install mismatched-keystore apps."
+    "description": "Download CorePatch for LSPosed. Disable signature verification For Android."
   },
   "contentTier": 1
 }

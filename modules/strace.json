@@ -3,6 +3,7 @@
   "name": "Strace",
   "repo": "evdenis/strace",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Magisk Module with strace",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Strace – Download (Magisk) | Magisk Hub",
     "description": "Download Strace for Magisk. Magisk Module with strace."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

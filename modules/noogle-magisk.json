@@ -3,6 +3,7 @@
   "name": "noogle-magisk",
   "repo": "SelfRef/noogle-magisk",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Degoogling Magisk modules for stock Android (powered by microG)",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "noogle-magisk – Download (Magisk) | Magisk Hub",
     "description": "Download noogle-magisk for Magisk. Degoogling Magisk modules for stock Android (powered by microG)."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

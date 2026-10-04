@@ -3,6 +3,7 @@
   "name": "device_faker",
   "repo": "Seyud/device_faker",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "自定义配置Zygisk机型伪装",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "device_faker – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download device_faker for Magisk and KernelSU. 自定义配置Zygisk机型伪装."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

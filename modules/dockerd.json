@@ -3,6 +3,7 @@
   "name": "dockerd",
   "repo": "mgksu/dockerd",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Magisk Docker",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "dockerd – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download dockerd for Magisk and KernelSU. Magisk Docker."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

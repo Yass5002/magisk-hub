@@ -3,6 +3,7 @@
   "name": "meta-magic_mount-rs",
   "repo": "Tools-cx-app/meta-magic_mount-rs",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "An implementation of a metamodule using Magic Mount, Based on MKSU, Template is from meta-overlay.",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "meta-magic_mount-rs – Download | Magisk Hub",
     "description": "Download meta-magic_mount-rs for Magisk, KernelSU, and APatch. An implementation of a metamodule using Magic Mount, Based on MKSU..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

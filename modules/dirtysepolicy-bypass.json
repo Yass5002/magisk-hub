@@ -3,6 +3,7 @@
   "name": "DirtySepolicy_Bypass",
   "repo": "flipphoneguy/DirtySepolicy_Bypass",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "bypass new DirtySepolicy on rooted Android devices to keep apps working",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "DirtySepolicy_Bypass – Download | Magisk Hub",
     "description": "Download DirtySepolicy_Bypass for Magisk, KernelSU, and APatch. bypass new DirtySepolicy on rooted Android devices to keep apps working."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

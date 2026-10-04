@@ -3,6 +3,7 @@
   "name": "Infamick-script",
   "repo": "Infamousmick/Infamick-script",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Infamick-script active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Infamick-script – Download (Magisk) | Magisk Hub",
     "description": "Download Infamick-script for Magisk. Infamick-script active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

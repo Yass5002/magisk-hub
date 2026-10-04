@@ -4,7 +4,7 @@
   "repo": "zacharee/InstallWithOptions",
   "category": "system-utilities",
   "softwareType": "standalone-app",
-  "description": "Advanced Android APK installer powered by Shizuku that bypasses target SDK limits, permits test-only builds, and installs split APKs on-device without ADB.",
+  "description": "Simple-ish app using Shizuku to install APKs on-device with advanced options",
   "compatibility": [
     "Shizuku",
     "Rootless",
@@ -24,7 +24,7 @@
   },
   "seo": {
     "title": "Install with Options – Download | Magisk Hub",
-    "description": "Download Install with Options for Android. Install split APKs, bypass Android 14 target SDK limits, and allow test-only apps via Shizuku."
+    "description": "Download Install with Options for Shizuku, Rootless, Magisk, KernelSU, and APatch. Simple-ish app using Shizuku to install APKs..."
   },
   "contentTier": 1
 }

@@ -3,13 +3,14 @@
   "name": "NoHello",
   "repo": "MhmRdd/NoHello",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "A Zygisk module to hide root.",
   "compatibility": [
     "Magisk"
   ],
   "license": "MIT",
   "icon": null,
-  "stars": 1356,
+  "stars": 1357,
   "latestRelease": {
     "tag": "0.0.7",
     "publishedAt": "2025-05-31T03:11:57Z",
@@ -21,6 +22,5 @@
     "title": "NoHello – Download (Magisk) | Magisk Hub",
     "description": "Download NoHello for Magisk. A Zygisk module to hide root."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

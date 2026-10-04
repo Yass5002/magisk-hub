@@ -3,6 +3,7 @@
   "name": "encore",
   "repo": "Rem01Gaming/encore",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Special performance module for your device",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "encore – Download (Magisk) | Magisk Hub",
     "description": "Download encore for Magisk. Special performance module for your device."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

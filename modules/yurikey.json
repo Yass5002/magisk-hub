@@ -3,6 +3,7 @@
   "name": "yurikey",
   "repo": "Yurii0307/yurikey",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "A systemless module to get strong integrity easily",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "yurikey – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download yurikey for Magisk and KernelSU. A systemless module to get strong integrity easily."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

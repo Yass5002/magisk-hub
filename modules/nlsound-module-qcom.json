@@ -3,6 +3,7 @@
   "name": "NLSound_module_QCom",
   "repo": "Briclyaz/NLSound_module_QCom",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "System-level Android audio enhancement module for Magisk, KernelSU & APatch. Removes DSP limiters, unlocks 4Hz sub-bass, and tunes hardware registers.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "NLSound_module_QCom – Download (Magisk) | Magisk Hub",
     "description": "Download NLSound_module_QCom for Magisk. System-level Android audio enhancement module for Magisk, KernelSU & APatch. Removes DSP..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

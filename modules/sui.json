@@ -3,6 +3,7 @@
   "name": "Sui",
   "repo": "XiaoTong6666/Sui",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Modern super user interface implementation on Android.",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 715,
+  "stars": 717,
   "latestRelease": {
     "tag": "nightly",
     "publishedAt": "2026-02-06T05:03:12Z",
@@ -22,6 +23,5 @@
     "title": "Sui – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Sui for Magisk and KernelSU. Modern super user interface implementation on Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

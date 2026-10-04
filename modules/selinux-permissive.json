@@ -3,6 +3,7 @@
   "name": "selinux_permissive",
   "repo": "evdenis/selinux_permissive",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Magisk Module that switches SELinux to permissive mode",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "selinux_permissive – Download (Magisk) | Magisk Hub",
     "description": "Download selinux_permissive for Magisk. Magisk Module that switches SELinux to permissive mode."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

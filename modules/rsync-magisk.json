@@ -3,6 +3,7 @@
   "name": "rsync-magisk",
   "repo": "AdalynAstatine/rsync-magisk",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Installs a statically compiled rsync binary systemlessly into /system/bin.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "rsync-magisk – Download (Magisk) | Magisk Hub",
     "description": "Download rsync-magisk for Magisk. Installs a statically compiled rsync binary systemlessly into /system/bin."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

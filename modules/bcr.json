@@ -3,6 +3,7 @@
   "name": "BCR",
   "repo": "chenxiaolong/BCR",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A Basic Call Recorder for rooted Android devices",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "BCR – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download BCR for Magisk and KernelSU. A Basic Call Recorder for rooted Android devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

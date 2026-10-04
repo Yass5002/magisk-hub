@@ -3,6 +3,7 @@
   "name": "susfs4ksu-module",
   "repo": "sidex15/susfs4ksu-module",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "An addon root hiding service for KernelSU",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "AGPL-3.0",
   "icon": "assets/icons/susfs4ksu-module.png",
-  "stars": 2603,
+  "stars": 2604,
   "latestRelease": {
     "tag": "v1.5.2+_R28",
     "publishedAt": "2026-07-26T09:11:01Z",
@@ -22,6 +23,5 @@
     "title": "susfs4ksu-module – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download susfs4ksu-module for Magisk and KernelSU. An addon root hiding service for KernelSU."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

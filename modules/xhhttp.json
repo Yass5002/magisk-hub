@@ -3,6 +3,7 @@
   "name": "xhhttp",
   "repo": "Magisk-Modules-Alt-Repo/xhhttp",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "xhhttp – Download (Magisk) | Magisk Hub",
     "description": "Download xhhttp for Magisk. Friendly and fast tool for sending HTTP requests as Magisk module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

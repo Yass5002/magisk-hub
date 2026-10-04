@@ -3,6 +3,7 @@
   "name": "Android-VBMeta-Fixer",
   "repo": "reveny/Android-VBMeta-Fixer",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Android-VBMeta-Fixer – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Android-VBMeta-Fixer for Magisk and KernelSU. A Magisk/KernelSU/Apatch module to fix VBMeta detections on Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

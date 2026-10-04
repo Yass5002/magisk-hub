@@ -3,6 +3,7 @@
   "name": "zygisk-detach",
   "repo": "j-hc/zygisk-detach",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "Zygisk module to detach installed apps from Play Store, hooking binder",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "zygisk-detach – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download zygisk-detach for Magisk and KernelSU. Zygisk module to detach installed apps from Play Store, hooking binder."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

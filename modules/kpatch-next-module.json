@@ -3,6 +3,7 @@
   "name": "KPatch-Next-Module",
   "repo": "KernelSU-Next/KPatch-Next-Module",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Standalone implementation of KPM support for Magisk/KernelSU",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "KPatch-Next-Module – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download KPatch-Next-Module for Magisk and KernelSU. Standalone implementation of KPM support for Magisk/KernelSU."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

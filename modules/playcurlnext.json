@@ -3,6 +3,7 @@
   "name": "playcurlNEXT",
   "repo": "daboynb/playcurlNEXT",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Magisk module that auto-downloads working Play Integrity fingerprints at every boot",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "playcurlNEXT – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download playcurlNEXT for Magisk and KernelSU. Magisk module that auto-downloads working Play Integrity fingerprints at every boot."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

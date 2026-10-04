@@ -3,6 +3,7 @@
   "name": "hid-gadget-module",
   "repo": "kelexine/hid-gadget-module",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "hid-gadget-module – Download (Magisk) | Magisk Hub",
     "description": "Download hid-gadget-module for Magisk. A magisk Module for enabling Human Interface Device (HID) emulation/support on Android Devices."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

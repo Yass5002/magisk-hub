@@ -3,6 +3,7 @@
   "name": "Scalpel",
   "repo": "Enginex0/Scalpel",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "Scalpel – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Scalpel for Magisk, KernelSU, and APatch. Precision debloat & systemize for rooted Android — Magisk, KernelSU, APatch."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

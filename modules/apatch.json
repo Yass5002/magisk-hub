@@ -4,13 +4,13 @@
   "repo": "bmax121/APatch",
   "category": "root-management",
   "softwareType": "standalone-app",
-  "description": "KernelPatch-based root solution for Android kernel and system patching, providing APM overlay modules and KPM kernel inline-hooking.",
+  "description": "The patching of Android kernel and Android system",
   "compatibility": [
     "APatch"
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/apatch.png",
-  "stars": 8000,
+  "stars": 7999,
   "latestRelease": {
     "tag": "11224",
     "publishedAt": "2026-08-07T06:17:03Z",
@@ -19,8 +19,8 @@
     "assetName": "APatch_11224_9a63e0f_HEAD-release-signed.apk"
   },
   "seo": {
-    "title": "APatch – Download Official Root Manager APK | Magisk Hub",
-    "description": "Download the official APatch APK for Android. KernelPatch-based root management with APM overlay modules and KPM kernel hooking."
+    "title": "APatch – Download (APatch) | Magisk Hub",
+    "description": "Download APatch for APatch. The patching of Android kernel and Android system."
   },
   "contentTier": 1
 }

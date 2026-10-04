@@ -3,6 +3,7 @@
   "name": "Swap-Disabler",
   "repo": "rompelhd/Swap-Disabler",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A module designed to disable swap at system startup. Is particularly beneficial for devices equipped with a substantial amount of RAM, where the use of swap is unnecessary and may even hinder performance.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Swap-Disabler – Download (Magisk) | Magisk Hub",
     "description": "Download Swap-Disabler for Magisk. A module designed to disable swap at system startup. Is particularly beneficial for devices equipped..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

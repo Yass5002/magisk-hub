@@ -3,6 +3,7 @@
   "name": "HyperOptimize",
   "repo": "TatshSiow/HyperOptimize",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Tune HyperOS System and Kernel parameters to reduce power consumption",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "HyperOptimize – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOptimize for Magisk and KernelSU. Tune HyperOS System and Kernel parameters to reduce power consumption."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

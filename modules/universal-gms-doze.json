@@ -3,6 +3,7 @@
   "name": "universal-gms-doze",
   "repo": "MarsPatrick/universal-gms-doze",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Patches Google Play services app and certain processes/services to be able to use battery optimization",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "universal-gms-doze – Download | Magisk Hub",
     "description": "Download universal-gms-doze for Magisk, KernelSU, and APatch. Patches Google Play services app and certain processes/services to be able..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

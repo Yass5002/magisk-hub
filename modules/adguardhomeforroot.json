@@ -3,13 +3,14 @@
   "name": "AdGuardHomeForRoot",
   "repo": "twoone-3/AdGuardHomeForRoot",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "A module to easily execute AdGuardHome on Android",
   "compatibility": [
     "Magisk"
   ],
   "license": "MIT",
   "icon": null,
-  "stars": 1442,
+  "stars": 1443,
   "latestRelease": {
     "tag": "20260825",
     "publishedAt": "2026-08-25T01:39:41Z",
@@ -21,6 +22,5 @@
     "title": "AdGuardHomeForRoot – Download (Magisk) | Magisk Hub",
     "description": "Download AdGuardHomeForRoot for Magisk. A module to easily execute AdGuardHome on Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

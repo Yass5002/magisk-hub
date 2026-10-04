@@ -3,6 +3,7 @@
   "name": "OhMyKeymint",
   "repo": "qwq233/OhMyKeymint",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "OhMyKeymint active root module.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "OhMyKeymint – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download OhMyKeymint for Magisk and KernelSU. OhMyKeymint active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

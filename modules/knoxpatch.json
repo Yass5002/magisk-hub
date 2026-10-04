@@ -3,13 +3,14 @@
   "name": "KnoxPatch",
   "repo": "salvogiangri/KnoxPatch",
   "category": "system-environment",
+  "softwareType": "flashable-module",
   "description": "LSPosed module to get Samsung apps/features working again in your rooted Galaxy device.",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/knoxpatch.png",
-  "stars": 1525,
+  "stars": 1526,
   "latestRelease": {
     "tag": "v0.8.3",
     "publishedAt": "2026-06-24T18:40:29Z",
@@ -21,6 +22,5 @@
     "title": "KnoxPatch – Download (Magisk) | Magisk Hub",
     "description": "Download KnoxPatch for Magisk. LSPosed module to get Samsung apps/features working again in your rooted Galaxy device."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

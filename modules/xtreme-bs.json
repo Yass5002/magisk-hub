@@ -3,6 +3,7 @@
   "name": "Xtreme Battery Saver",
   "repo": "DethByte64/Xtreme-Battery-Saver",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "An extreme battery saver Magisk Module for users who want to really stretch their battery life",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Xtreme Battery Saver – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Xtreme Battery Saver for Magisk and KernelSU. An extreme battery saver Magisk Module for users who want to really stretch their..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

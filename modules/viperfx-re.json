@@ -3,6 +3,7 @@
   "name": "ViPERFX_RE",
   "repo": "likelikeslike/ViPERFX_RE",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Reverse Engineering of ViPER4Android FX",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 352,
+  "stars": 353,
   "latestRelease": {
     "tag": "v2.1.0",
     "publishedAt": "2026-09-13T15:46:04Z",
@@ -22,6 +23,5 @@
     "title": "ViPERFX_RE – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download ViPERFX_RE for Magisk and KernelSU. Reverse Engineering of ViPER4Android FX."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

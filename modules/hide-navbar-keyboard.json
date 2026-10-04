@@ -3,6 +3,7 @@
   "name": "Hide-Navbar-Keyboard",
   "repo": "UNKNUW/Hide-Navbar-Keyboard",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+ (Based AOSP, MIUI, HyperOS)",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Hide-Navbar-Keyboard – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Hide-Navbar-Keyboard for Magisk and KernelSU. Magisk module to hide navbar when keyboard appears. Supports Android 10 -15+..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

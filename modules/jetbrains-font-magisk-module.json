@@ -3,6 +3,7 @@
   "name": "jetbrains-font-magisk-module",
   "repo": "Mars-Wave/jetbrains-font-magisk-module",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Make your phone prettier with jetbrains mono and magisk",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "jetbrains-font-magisk-module – Download | Magisk Hub",
     "description": "Download jetbrains-font-magisk-module for Magisk. Make your phone prettier with jetbrains mono and magisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

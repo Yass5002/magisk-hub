@@ -3,6 +3,7 @@
   "name": "HyperOS-AOD",
   "repo": "Mods-Center/HyperOS-AOD",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved transitions, and expanded customization options for all devices.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "HyperOS-AOD – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download HyperOS-AOD for Magisk and KernelSU. Enhanced HyperOS AOD and Lock Screen Editor app with unlocked features, improved..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

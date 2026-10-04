@@ -22,8 +22,8 @@
     "assetName": "KeyAttestation-v1.8.4.apk"
   },
   "seo": {
-    "title": "Key Attestation – Download Keystore Diagnostic APK | Magisk Hub",
-    "description": "Download Key Attestation APK by vvb2060 for Android. Inspect hardware keystore attestation, KeyMint, StrongBox, and verified boot state."
+    "title": "Key Attestation – Download | Magisk Hub",
+    "description": "Download Key Attestation for Rootless, Magisk, KernelSU, and APatch. Diagnostic security application by vvb2060 for generating, parsing..."
   },
   "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "Komodo-Build-Prop",
   "repo": "Elcapitanoe/Komodo-Build-Prop",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Magisk and KernelSU module that spoofs your Android device as Google Pixel 9 Pro XL.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Komodo-Build-Prop – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download Komodo-Build-Prop for Magisk and KernelSU. Magisk and KernelSU module that spoofs your Android device as Google Pixel 9 Pro XL."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

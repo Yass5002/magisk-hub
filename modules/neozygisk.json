@@ -3,6 +3,7 @@
   "name": "NeoZygisk",
   "repo": "JingMatrix/NeoZygisk",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Zygote injection with ptrace",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 2389,
+  "stars": 2392,
   "latestRelease": {
     "tag": "v2.4",
     "publishedAt": "2026-08-08T19:03:47Z",
@@ -23,6 +24,5 @@
     "title": "NeoZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download NeoZygisk for Magisk, KernelSU, and APatch. Zygote injection with ptrace."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

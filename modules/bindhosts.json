@@ -3,6 +3,7 @@
   "name": "bindhosts",
   "repo": "bindhosts/bindhosts",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Systemless hosts for APatch / KernelSU / Magisk",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "WTFPL",
   "icon": "assets/icons/bindhosts.png",
-  "stars": 1454,
+  "stars": 1453,
   "latestRelease": {
     "tag": "v2.1.5",
     "publishedAt": "2026-08-24T01:43:48Z",
@@ -22,6 +23,5 @@
     "title": "bindhosts – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download bindhosts for Magisk and KernelSU. Systemless hosts for APatch / KernelSU / Magisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

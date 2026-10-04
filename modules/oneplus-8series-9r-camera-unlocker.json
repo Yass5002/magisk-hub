@@ -3,6 +3,7 @@
   "name": "oneplus-8series-9r-camera-unlocker",
   "repo": "Magisk-Modules-Alt-Repo/oneplus-8series-9r-camera-unlocker",
   "category": "customization-ui",
+  "softwareType": "flashable-module",
   "description": "oneplus-8series-9r-camera-unlocker active root module.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "oneplus-8series-9r-camera-unlocker – Download | Magisk Hub",
     "description": "Download oneplus-8series-9r-camera-unlocker for Magisk. oneplus-8series-9r-camera-unlocker active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

@@ -3,6 +3,7 @@
   "name": "AlwaysStrong",
   "repo": "evoker0/AlwaysStrong",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Always Strong: Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled.",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 802,
+  "stars": 807,
   "latestRelease": {
     "tag": "v1.0.4",
     "publishedAt": "2026-09-06T10:39:50Z",
@@ -22,6 +23,5 @@
     "title": "AlwaysStrong – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download AlwaysStrong for Magisk and KernelSU. Strong Play Integrity in one drop in module TEESimulator-RS + PlayIntegrityFork bundled."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

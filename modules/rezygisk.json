@@ -3,6 +3,7 @@
   "name": "ReZygisk",
   "repo": "PerformanC/ReZygisk",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "Transparent implementation of Zygisk.",
   "compatibility": [
     "Magisk",
@@ -11,7 +12,7 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 4015,
+  "stars": 4017,
   "latestRelease": {
     "tag": "v1.0.0",
     "publishedAt": "2026-05-10T23:08:58Z",
@@ -23,6 +24,5 @@
     "title": "ReZygisk – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download ReZygisk for Magisk, KernelSU, and APatch. Transparent implementation of Zygisk."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

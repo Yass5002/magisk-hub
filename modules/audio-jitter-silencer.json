@@ -3,6 +3,7 @@
   "name": "audio-jitter-silencer",
   "repo": "Magisk-Modules-Alt-Repo/audio-jitter-silencer",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "For avoiding foggy sound like (jitter) distortion on all digital audio outputs, this Magisk module disables very large audio jitter generators (w.r.t. battery draining & optimizations, and wireless connectivity).",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "audio-jitter-silencer – Download (Magisk) | Magisk Hub",
     "description": "Download audio-jitter-silencer for Magisk. For avoiding foggy sound like (jitter) distortion on all digital audio outputs, this Magisk..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

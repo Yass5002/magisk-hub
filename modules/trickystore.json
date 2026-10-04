@@ -3,6 +3,7 @@
   "name": "TrickyStore",
   "repo": "5ec1cff/TrickyStore",
   "category": "root-management",
+  "softwareType": "flashable-module",
   "description": "TrickyStore active root module.",
   "compatibility": [
     "Magisk",
@@ -10,7 +11,7 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 6389,
+  "stars": 6390,
   "latestRelease": {
     "tag": "1.4.1",
     "publishedAt": "2025-11-02T09:56:37Z",
@@ -22,6 +23,5 @@
     "title": "TrickyStore – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download TrickyStore for Magisk and KernelSU. TrickyStore active root module."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

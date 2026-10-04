@@ -4,7 +4,7 @@
   "repo": "samolego/Canta",
   "category": "system-utilities",
   "softwareType": "standalone-app",
-  "description": "User-friendly Android debloater powered by Shizuku that uninstalls system and user bloatware with crowd-sourced Universal Android Debloater safety ratings.",
+  "description": "Uninstall any Android app without root (with power of Shizuku). Debloat your device as you wish, with Android app or even from your browser!",
   "compatibility": [
     "Shizuku",
     "Rootless",
@@ -24,7 +24,7 @@
   },
   "seo": {
     "title": "Canta – Download | Magisk Hub",
-    "description": "Download Canta for Android. Safely uninstall system bloatware without root using Shizuku and Universal Android Debloater ratings."
+    "description": "Download Canta for Shizuku, Rootless, Magisk, KernelSU, and APatch. Uninstall any Android app without root (with power of Shizuku)...."
   },
   "contentTier": 1
 }

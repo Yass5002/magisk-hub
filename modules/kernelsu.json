@@ -4,13 +4,13 @@
   "repo": "tiann/KernelSU",
   "category": "root-management",
   "softwareType": "standalone-app",
-  "description": "Kernel-based root solution for Android GKI devices providing kernel-space su privilege management, App Profile isolation, and OverlayFS module mounting.",
+  "description": "A Kernel based root solution for Android",
   "compatibility": [
     "KernelSU"
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/kernelsu.png",
-  "stars": 18816,
+  "stars": 18823,
   "latestRelease": {
     "tag": "v3.3.0",
     "publishedAt": "2026-08-28T14:49:30Z",
@@ -19,8 +19,8 @@
     "assetName": "KernelSU_v3.3.0_32601-release.apk"
   },
   "seo": {
-    "title": "KernelSU – Download | Magisk Hub",
-    "description": "Download KernelSU for Android. Next-generation kernel-based root solution for GKI devices with kernel-space su and App Profile security."
+    "title": "KernelSU – Download (KSU) | Magisk Hub",
+    "description": "Download KernelSU for KernelSU. A Kernel based root solution for Android."
   },
   "contentTier": 1
 }

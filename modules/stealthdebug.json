@@ -3,6 +3,7 @@
   "name": "StealthDebug",
   "repo": "sp11xy/StealthDebug",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "Magisk module to hide USB debugging properties",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "StealthDebug – Download (Magisk) | Magisk Hub",
     "description": "Download StealthDebug for Magisk. Magisk module to hide USB debugging properties."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

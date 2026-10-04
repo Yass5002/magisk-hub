@@ -3,6 +3,7 @@
   "name": "ttf-twemoji",
   "repo": "Magisk-Modules-Alt-Repo/ttf-twemoji",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Changes your system emoji to Twemoji!",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "ttf-twemoji – Download (Magisk) | Magisk Hub",
     "description": "Download ttf-twemoji for Magisk. Changes your system emoji to Twemoji!."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

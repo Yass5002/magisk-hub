@@ -3,6 +3,7 @@
   "name": "Simple_BootloopSaver",
   "repo": "Magisk-Modules-Alt-Repo/Simple_BootloopSaver",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "Protect your system from bootloop caused by Magisk modules by turning off all your modules and restart your system if bootloop is detected.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Simple_BootloopSaver – Download (Magisk) | Magisk Hub",
     "description": "Download Simple_BootloopSaver for Magisk. Protect your system from bootloop caused by Magisk modules by turning off all your modules and..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

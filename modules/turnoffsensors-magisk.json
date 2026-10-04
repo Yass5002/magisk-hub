@@ -3,6 +3,7 @@
   "name": "TurnOffSensors-Magisk",
   "repo": "AdalynAstatine/TurnOffSensors-Magisk",
   "category": "security-certificates",
+  "softwareType": "flashable-module",
   "description": "Automatically disables device hardware sensors on startup via Android's native sensor_privacy service.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "TurnOffSensors-Magisk – Download (Magisk) | Magisk Hub",
     "description": "Download TurnOffSensors-Magisk for Magisk. Automatically disables device hardware sensors on startup via Android's native sensor_privacy..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

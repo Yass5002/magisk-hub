@@ -3,6 +3,7 @@
   "name": "ClearBox",
   "repo": "FLYCOM-E/ClearBox",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A Magisk module dedicated to automatic cleaning and optimization of Android   |   一个致力于 Android 自动清理优化的 Magisk 模块",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "ClearBox – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download ClearBox for Magisk and KernelSU. A Magisk module dedicated to automatic cleaning and optimization of Android | 一个致力于 Android..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

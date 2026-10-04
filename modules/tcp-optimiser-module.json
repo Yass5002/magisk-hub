@@ -3,6 +3,7 @@
   "name": "TCP_Optimiser_Module",
   "repo": "fatalcoder524/TCP_Optimiser_Module",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "A Magisk/KernelSU module to change tcp congestion algorithm based on current active internet type and some network enhancements.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "TCP_Optimiser_Module – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download TCP_Optimiser_Module for Magisk and KernelSU. A Magisk/KernelSU module to change tcp congestion algorithm based on current..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

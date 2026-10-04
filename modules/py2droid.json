@@ -3,6 +3,7 @@
   "name": "py2droid",
   "repo": "Mrakorez/py2droid",
   "category": "development-instrumentation",
+  "softwareType": "flashable-module",
   "description": "Magisk/KernelSU/APatch module to install Python 3 on Android.",
   "compatibility": [
     "Magisk",
@@ -23,6 +24,5 @@
     "title": "py2droid – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download py2droid for Magisk, KernelSU, and APatch. Magisk/KernelSU/APatch module to install Python 3 on Android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

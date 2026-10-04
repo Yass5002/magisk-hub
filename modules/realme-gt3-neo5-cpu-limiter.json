@@ -3,6 +3,7 @@
   "name": "Realme-GT3-neo5-CPU-limiter",
   "repo": "Quantom2/Realme-GT3-neo5-CPU-limiter",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "A Magisk/KSU bazed module to slow down your CPU to make your screen time better. Highly customizable.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "Realme-GT3-neo5-CPU-limiter – Download | Magisk Hub",
     "description": "Download Realme-GT3-neo5-CPU-limiter for Magisk and KernelSU. A Magisk/KSU bazed module to slow down your CPU to make your screen time..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

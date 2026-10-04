@@ -3,6 +3,7 @@
   "name": "audio-samplerate-changer",
   "repo": "Magisk-Modules-Alt-Repo/audio-samplerate-changer",
   "category": "system-utilities",
+  "softwareType": "flashable-module",
   "description": "A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi experience.",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "audio-samplerate-changer – Download (Magisk) | Magisk Hub",
     "description": "Download audio-samplerate-changer for Magisk. A Magisk module changing audio samplerates at the system-wide mixer for the best Hi-Fi..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

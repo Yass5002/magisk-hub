@@ -3,6 +3,7 @@
   "name": "LMK Controller",
   "repo": "ferrdishx/LMK-Controller",
   "category": "performance-kernel",
+  "softwareType": "flashable-module",
   "description": "Magisk module to control Android's Low Memory Killer. Three modes (Performance, Stability, Default) with a clean WebUI via MMRL and automatic boot persistence.",
   "compatibility": [
     "Magisk",
@@ -22,6 +23,5 @@
     "title": "LMK Controller – Download (Magisk/KSU) | Magisk Hub",
     "description": "Download LMK Controller for Magisk and KernelSU. Magisk module to control Android's Low Memory Killer. Three modes (Performance..."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

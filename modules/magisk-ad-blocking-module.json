@@ -3,6 +3,7 @@
   "name": "Magisk-Ad-Blocking-Module",
   "repo": "pantsufan/Magisk-Ad-Blocking-Module",
   "category": "networking-proxies",
+  "softwareType": "flashable-module",
   "description": "Magisk module to block ads on android",
   "compatibility": [
     "Magisk"
@@ -21,6 +22,5 @@
     "title": "Magisk-Ad-Blocking-Module – Download (Magisk) | Magisk Hub",
     "description": "Download Magisk-Ad-Blocking-Module for Magisk. Magisk module to block ads on android."
   },
-  "contentTier": 1,
-  "softwareType": "flashable-module"
+  "contentTier": 1
 }

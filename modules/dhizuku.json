@@ -4,7 +4,7 @@
   "repo": "iamr0s/Dhizuku",
   "category": "system-utilities",
   "softwareType": "standalone-app",
-  "description": "System service daemon sharing Android Device Owner (DevicePolicyManager) enterprise privileges with authorized third-party applications without requiring full root access.",
+  "description": "A tool that can share DeviceOwner permissions to other application.",
   "compatibility": [
     "Rootless",
     "Shizuku",
@@ -14,7 +14,7 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/dhizuku.png",
-  "stars": 3908,
+  "stars": 3909,
   "latestRelease": {
     "tag": "v2.12.0",
     "publishedAt": "2026-06-24T14:49:02Z",
@@ -23,8 +23,8 @@
     "assetName": "Dhizuku_v2.12.0.apk"
   },
   "seo": {
-    "title": "Dhizuku – Download Official Device Owner Manager APK | Magisk Hub",
-    "description": "Download Dhizuku APK for Android. Share Device Owner enterprise management permissions with third-party apps via root, Shizuku, or ADB."
+    "title": "Dhizuku – Download | Magisk Hub",
+    "description": "Download Dhizuku for Rootless, Shizuku, Magisk, KernelSU, and APatch. A tool that can share DeviceOwner permissions to other application."
   },
   "contentTier": 1
 }
