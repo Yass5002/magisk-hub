@@ -2,30 +2,27 @@
   "id": "freepps-xiaomi-fast-charge",
   "name": "FreePPS Xiaomi Public PPS Fast Charge Protocol Unlocker",
   "repo": "Seyud/FreePPS",
-  "author": "Seyud",
-  "sourceType": "github",
-  "sourceUrl": "https://github.com/Seyud/FreePPS",
   "category": "battery-power-charging",
   "softwareType": "flashable-module",
-  "description": "KernelSU & Magisk module unlocking open standard USB-PD Programmable Power Supply (PPS) protocol fast charging on Xiaomi and Redmi smartphones.",
+  "description": "启用搭载米系设备的公版 PPS 支持",
   "compatibility": [
     "KernelSU",
     "APatch",
     "Magisk"
   ],
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0",
   "icon": "assets/icons/freepps-xiaomi-fast-charge.png",
   "stars": 293,
-  "contentTier": 1,
   "latestRelease": {
     "tag": "v1.7.0",
-    "publishedAt": "2024-06-01T00:00:00Z",
+    "publishedAt": "2026-08-21T10:52:20Z",
     "url": "https://github.com/Seyud/FreePPS/releases/tag/v1.7.0",
     "downloadUrl": "https://github.com/Seyud/FreePPS/releases/download/v1.7.0/FreePPS_v1.7.0.zip",
     "assetName": "FreePPS_v1.7.0.zip"
   },
   "seo": {
-    "title": "FreePPS – Unlock Public PPS Fast Charging on Xiaomi Devices",
-    "description": "Unlock high-wattage USB Power Delivery PPS fast charging on Xiaomi, Redmi, and POCO devices using third-party GaN chargers."
-  }
+    "title": "FreePPS Xiaomi Public PPS Fast Charge Protocol Unlocker – Download | Magisk Hub",
+    "description": "Download FreePPS Xiaomi Public PPS Fast Charge Protocol Unlocker for KernelSU, APatch, and Magisk. 启用搭载米系设备的公版 PPS 支持."
+  },
+  "contentTier": 1
 }

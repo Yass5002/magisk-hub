@@ -2,19 +2,15 @@
   "id": "lspdoze",
   "name": "LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze)",
   "repo": "Xposed-Modules-Repo/com.op.lspdoze",
-  "author": "ItosEO",
-  "sourceType": "github",
-  "sourceUrl": "https://github.com/Xposed-Modules-Repo/com.op.lspdoze",
   "category": "xposed-runtime-hooks",
   "softwareType": "xposed-module",
-  "description": "LSPosed battery optimization module that forces deep doze mode upon screen-off, optimizes standby power consumption, and enables full-screen always-on display (AOD).",
+  "description": "LSPDoze - 优化你的待机续航，开启常亮全屏AOD",
   "compatibility": [
     "LSPosed"
   ],
   "license": "GPL-3.0-or-later",
   "icon": "assets/icons/lspdoze.png",
   "stars": 124,
-  "contentTier": 1,
   "latestRelease": {
     "tag": "162-5.4",
     "publishedAt": "2026-02-27T12:00:16Z",
@@ -23,7 +19,8 @@
     "assetName": "162-5.4.apk"
   },
   "seo": {
-    "title": "LSPDoze – Deep Sleep Standby & Fullscreen AOD via LSPosed",
-    "description": "Optimize overnight standby battery life with instant Deep Doze on screen-off, deep sleep acceleration, and fullscreen AOD for ColorOS, OxygenOS, and realme UI."
-  }
+    "title": "LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze) – Download | Magisk Hub",
+    "description": "Download LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze) for LSPosed. LSPDoze - 优化你的待机续航，开启常亮全屏AOD."
+  },
+  "contentTier": 1
 }
