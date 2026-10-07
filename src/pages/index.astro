@@ -477,14 +477,14 @@ const itemListSchema = {
 
   // Search input handler
   searchInput?.addEventListener('input', (e) => {
+    const q = (e.target as HTMLInputElement).value.trim();
     clearTimeout(window.searchUmamiTimeout);
     window.searchUmamiTimeout = setTimeout(() => {
-      const q = (e.target).value;
       if (q.length >= 3 && window.umami) {
-        window.umami.track("search", { query: q });
+        window.umami.track("search-modules", { query: q });
       }
     }, 1000);
-    currentSearch = (e.target as HTMLInputElement).value.trim().toLowerCase();
+    currentSearch = q.toLowerCase();
     if (searchClearBtn) {
       if (currentSearch.length > 0) {
         searchClearBtn.classList.remove('hidden');
