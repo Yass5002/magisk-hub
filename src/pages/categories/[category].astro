@@ -83,6 +83,9 @@ const categorySchema = {
           .map(c => (
             <a 
               href={`/categories/${c.id}/`} 
+              data-umami-event="category-switch-click"
+              data-umami-event-from={category.id}
+              data-umami-event-to={c.id}
               class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
             >
               <span>{c.name}</span>

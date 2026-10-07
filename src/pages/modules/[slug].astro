@@ -807,4 +807,24 @@ const seo = generateModuleSEO(module);
       }
     });
   });
+
+  // Documentation read depth tracking
+  const docArticle = document.querySelector('article');
+  if (docArticle && 'IntersectionObserver' in window) {
+    let readTracked = false;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !readTracked) {
+          readTracked = true;
+          const pathParts = window.location.pathname.split('/').filter(Boolean);
+          const modSlug = pathParts[1] || '';
+          if (window.umami && modSlug) {
+            window.umami.track('doc-read-complete', { module: modSlug });
+          }
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.75 });
+    observer.observe(docArticle);
+  }
 </script>

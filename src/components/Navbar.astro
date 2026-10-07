@@ -135,6 +135,8 @@ const platformList = Object.values(PLATFORMS);
     <nav class="flex flex-col space-y-1.5 text-sm font-medium">
       <a 
         href="/" 
+        data-umami-event="navbar-modules-click"
+        data-umami-event-device="mobile"
         class={`px-3 py-2 rounded-lg transition-colors ${
           isModules 
             ? 'bg-zinc-100 text-zinc-900 font-semibold border border-zinc-200' 
@@ -145,6 +147,8 @@ const platformList = Object.values(PLATFORMS);
       </a>
       <a 
         href="/categories/" 
+        data-umami-event="navbar-categories-click"
+        data-umami-event-device="mobile"
         class={`px-3 py-2 rounded-lg transition-colors ${
           isCategories 
             ? 'bg-zinc-100 text-zinc-900 font-semibold border border-zinc-200' 
@@ -160,6 +164,9 @@ const platformList = Object.values(PLATFORMS);
           {platformList.map(p => (
             <a 
               href={`/compatibility/${p.id}/`} 
+              data-umami-event="navbar-platform-click"
+              data-umami-event-platform={p.id}
+              data-umami-event-device="mobile"
               class="block px-3 py-1.5 rounded-md text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50"
             >
               {p.label}
@@ -176,6 +183,8 @@ const platformList = Object.values(PLATFORMS);
         href="https://github.com/topjohnwu/Magisk/releases/latest" 
         target="_blank" 
         rel="noopener noreferrer"
+        data-umami-event="navbar-download-magisk"
+        data-umami-event-device="mobile"
         class="group w-full flex items-center justify-center gap-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black text-white px-4 py-2.5 text-sm font-semibold shadow-xs transition-all duration-150 active:scale-[0.98]"
       >
         <svg class="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,6 +197,8 @@ const platformList = Object.values(PLATFORMS);
         href="https://github.com/Yass5002/magisk-hub" 
         target="_blank" 
         rel="noopener noreferrer"
+        data-umami-event="navbar-github-click"
+        data-umami-event-device="mobile"
         class="w-full flex items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 active:bg-zinc-100 px-4 py-2.5 text-sm font-medium text-zinc-700 hover:text-zinc-900 shadow-2xs transition-colors"
       >
         <svg class="h-4 w-4 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -365,6 +365,7 @@ const itemListSchema = {
   let currentCompat = 'all';
   let currentCategory = 'all';
   let currentSort = 'trending';
+  let currentTotalVisible = 0;
 
   function applyFiltersAndSort() {
     let visibleCount = 0;
@@ -453,6 +454,7 @@ const itemListSchema = {
     });
 
     const totalVisible = visibleCount + (shouldShowSpotlight ? 1 : 0);
+    currentTotalVisible = totalVisible;
 
     if (moduleCount) {
       moduleCount.textContent = `${totalVisible} modules`;
@@ -478,12 +480,6 @@ const itemListSchema = {
   // Search input handler
   searchInput?.addEventListener('input', (e) => {
     const q = (e.target as HTMLInputElement).value.trim();
-    clearTimeout(window.searchUmamiTimeout);
-    window.searchUmamiTimeout = setTimeout(() => {
-      if (q.length >= 3 && window.umami) {
-        window.umami.track("search-modules", { query: q });
-      }
-    }, 1000);
     currentSearch = q.toLowerCase();
     if (searchClearBtn) {
       if (currentSearch.length > 0) {
@@ -493,6 +489,16 @@ const itemListSchema = {
       }
     }
     applyFiltersAndSort();
+
+    clearTimeout(window.searchUmamiTimeout);
+    window.searchUmamiTimeout = setTimeout(() => {
+      if (q.length >= 2 && window.umami) {
+        window.umami.track("search-modules", { query: q, results_count: currentTotalVisible });
+        if (currentTotalVisible === 0) {
+          window.umami.track("search-zero-results", { query: q });
+        }
+      }
+    }, 750);
   });
 
   // Clear button
@@ -510,18 +516,27 @@ const itemListSchema = {
   compatSelect?.addEventListener('change', (e) => {
     currentCompat = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
+    if (window.umami) {
+      window.umami.track('filter-platform', { platform: currentCompat });
+    }
   });
 
   // 2. Category select (SECOND)
   categorySelect?.addEventListener('change', (e) => {
     currentCategory = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
+    if (window.umami) {
+      window.umami.track('filter-category', { category: currentCategory });
+    }
   });
 
   // 3. Sort select (THIRD)
   sortSelect?.addEventListener('change', (e) => {
     currentSort = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
+    if (window.umami) {
+      window.umami.track('sort-modules', { sort: currentSort });
+    }
   });
 
   // Reset button
@@ -538,6 +553,9 @@ const itemListSchema = {
     if (sortSelect) sortSelect.value = 'trending';
 
     applyFiltersAndSort();
+    if (window.umami) {
+      window.umami.track('reset-filters');
+    }
   });
 
   // Initial render
