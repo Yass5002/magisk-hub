@@ -477,6 +477,13 @@ const itemListSchema = {
 
   // Search input handler
   searchInput?.addEventListener('input', (e) => {
+    clearTimeout(window.searchUmamiTimeout);
+    window.searchUmamiTimeout = setTimeout(() => {
+      const q = (e.target).value;
+      if (q.length >= 3 && window.umami) {
+        window.umami.track("search", { query: q });
+      }
+    }, 1000);
     currentSearch = (e.target as HTMLInputElement).value.trim().toLowerCase();
     if (searchClearBtn) {
       if (currentSearch.length > 0) {

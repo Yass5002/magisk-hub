@@ -10,6 +10,7 @@ import '@fontsource/inter/800.css';
 import '@fontsource/jetbrains-mono/400.css';
 import '@fontsource/jetbrains-mono/500.css';
 import '@fontsource/jetbrains-mono/600.css';
+import SpriteDefs from '../components/SpriteDefs.astro';
 
 export interface Props {
   title: string;
@@ -32,9 +33,9 @@ const {
 } = Astro.props;
 
 const rawCanonical = canonicalUrl || Astro.url.href;
-const finalCanonical = rawCanonical.split('?')[0].endsWith('/') 
-  ? rawCanonical 
-  : (rawCanonical.includes('?') ? rawCanonical.replace('?', '/?') : `${rawCanonical}/`);
+// Strip all query strings and strictly normalize the trailing slash
+const baseUrl = rawCanonical.split('?')[0];
+const finalCanonical = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
 const siteName = 'Magisk Hub';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
@@ -84,6 +85,7 @@ const baseWebSiteSchema = {
     <link rel="preconnect" href="https://analytics.mehro.me" crossorigin />
     <link rel="dns-prefetch" href="https://analytics.mehro.me" />
     <script defer src="https://analytics.mehro.me/mehro.js" data-website-id="190ae8fe-29af-471c-977d-e255344c0938"></script>
+    <script defer src="https://analytics.mehro.me/recorder.js" data-website-id="190ae8fe-29af-471c-977d-e255344c0938"></script>
 
     <meta name="theme-color" content="#fafafa" />
 
@@ -123,6 +125,8 @@ const baseWebSiteSchema = {
     </main>
 
     <Footer />
+    
+    <SpriteDefs />
 
     <script>
       document.addEventListener('click', (event) => {

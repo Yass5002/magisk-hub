@@ -85,7 +85,7 @@ const isCommunity = !module.repo;
             ) : null}
             <div class={`${module.repo ? 'hidden' : 'flex'} h-11 w-11 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-200`}>
               <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={categorySvgPath} />
+                <use href={`#icon-${module.category}`} />
               </svg>
             </div>
           </div>
@@ -146,7 +146,7 @@ const isCommunity = !module.repo;
     <div class="flex items-center gap-2.5 truncate max-w-[55%]">
       <div class="flex items-center gap-1 truncate text-zinc-500">
         <svg class="h-3.5 w-3.5 text-zinc-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          <use href="#icon-author" />
         </svg>
         <span class="truncate hover:text-zinc-900 transition-colors font-mono">{author}</span>
       </div>

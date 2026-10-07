@@ -55,4 +55,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </a>
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.umami) {
+        window.umami.track("404-error", { path: window.location.pathname });
+      }
+    });
+  </script>
 </BaseLayout>

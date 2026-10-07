@@ -38,10 +38,18 @@ const { module, contentEntry } = Astro.props;
 const category = CATEGORIES[module.category] || { name: module.category, id: module.category };
 const author = module.repo ? module.repo.split('/')[0] : (module.author || 'Community');
 
-// Related modules in same category (excluding current)
-const relatedModules = getAllModules()
-  .filter(m => m.category === module.category && m.id !== module.id)
-  .slice(0, 4);
+// Related modules in same category (deterministic ring selection for internal link graph balance)
+const allCategoryModules = getAllModules().filter(m => m.category === module.category);
+const currentIndex = allCategoryModules.findIndex(m => m.id === module.id);
+const relatedModules = [];
+if (allCategoryModules.length > 1) {
+  const N = allCategoryModules.length;
+  // Get up to 4 peers
+  const peersCount = Math.min(4, N - 1);
+  for (let offset = 1; offset <= peersCount; offset++) {
+    relatedModules.push(allCategoryModules[(currentIndex + offset) % N]);
+  }
+}
 
 // Render markdown content if available
 let ContentComponent = null;

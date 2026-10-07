@@ -73,5 +73,22 @@ const categorySchema = {
         ))}
       </div>
     </div>
+
+    <!-- Explore Other Categories -->
+    <div class="mt-12 pt-8 border-t border-zinc-200">
+      <h2 class="text-xl font-bold text-zinc-900 mb-4">Explore Other Categories</h2>
+      <div class="flex flex-wrap gap-3">
+        {Object.values(CATEGORIES)
+          .filter(c => c.id !== category.id)
+          .map(c => (
+            <a 
+              href={`/categories/${c.id}/`} 
+              class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
+            >
+              <span>{c.name}</span>
+            </a>
+          ))}
+      </div>
+    </div>
   </div>
 </BaseLayout>
