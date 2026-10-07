@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**MIUI Camera Feature Completion & Expansion** (authored by Xiao Chen Tong Xue & xing1225 / 小陳同學 & xing1225) unlocks the rich suite of photographic and video recording algorithms developed by Xiaomi that are artificially disabled on mid-tier and regional ROM variants.
+**MIUI Camera Feature Completion & Expansion** (authored by Xiao Chen Tong Xue & xing1225) unlocks the rich suite of photographic and video recording algorithms developed by Xiaomi that are artificially disabled on mid-tier and regional ROM variants.
 
 Xiaomi's camera codebase shares a unified engine across flagship and budget devices, with advanced features selectively toggled via device feature configuration tables. This module provides a fully patched `MiuiCamera.apk` that enables advanced imaging capabilities across supported Snapdragon and MediaTek hardware.
 

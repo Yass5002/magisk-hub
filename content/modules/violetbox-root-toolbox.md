@@ -1,6 +1,6 @@
 ---
 id: "violetbox-root-toolbox"
-title: "VioletBox Root Toolbox (紫罗兰Box)"
+title: "VioletBox Root Toolbox: Advanced All-in-One Root Administration Utility"
 description: "Comprehensive all-in-one Android root utility by Smart-Paocai featuring SELinux mode management, raw partition reading/flashing, baseband font backup, module batch flashing, and device ID modification."
 category: "system-utilities"
 author: "Smart-Paocai"
@@ -11,7 +11,7 @@ compatibility: ["Magisk", "KernelSU", "APatch"]
 
 ## Overview & System Architecture
 
-**VioletBox (紫罗兰Box)**, authored by developer Smart-Paocai, is an advanced mobile root utility toolbox created for power users, ROM modders, and device maintainers. Built as the mobile standalone counterpart to the Violet PC Toolkit, VioletBox consolidates dozens of low-level Android administration operations into a unified graphical interface requiring no tethered computer.
+**VioletBox**, authored by developer Smart-Paocai, is an advanced mobile root utility toolbox created for power users, ROM modders, and device maintainers. Built as the mobile standalone counterpart to the Violet PC Toolkit, VioletBox consolidates dozens of low-level Android administration operations into a unified graphical interface requiring no tethered computer.
 
 ## Key Built-in Capabilities
 

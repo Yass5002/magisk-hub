@@ -1,8 +1,8 @@
 {
   "id": "thermal-controller-bypass",
-  "name": "Thermal Controller Disabler (温控拜拜)",
+  "name": "Thermal Controller Disabler",
   "repo": null,
-  "author": "Xiao Bai Yang / AiWanJi (小白杨(爱玩机))",
+  "author": "Xiao Bai Yang / AiWanJi",
   "sourceType": "community",
   "sourceUrl": null,
   "category": "performance-kernel",
@@ -25,7 +25,7 @@
     "assetName": "thermal-controller-bypass-183.72.zip"
   },
   "seo": {
-    "title": "Thermal Controller Disabler (温控拜拜) for Magisk & KernelSU",
+    "title": "Thermal Controller Disabler for Magisk & KernelSU",
     "description": "Bypass aggressive Android thermal throttling and prevent screen dimming, CPU downclocking, and frame drops during heavy gaming."
   }
 }

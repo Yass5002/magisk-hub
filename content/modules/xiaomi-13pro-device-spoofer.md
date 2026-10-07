@@ -3,7 +3,7 @@ id: "xiaomi-13pro-device-spoofer"
 title: "Xiaomi 13 Pro Device Identity Spoofer"
 description: "Systemless device identity spoofer masquerading device properties as Xiaomi 13 Pro (2210132C) to unlock 120 FPS high refresh rates and flagship gaming profiles."
 category: "system-environment"
-author: "Da Feng Mei Le Yun Bu Fei (大风没了云不飞)"
+author: "Da Feng Mei Le Yun Bu Fei"
 version: "v1.0"
 updatedAt: "2026-10-04"
 compatibility: ["Magisk", "KernelSU", "APatch"]
@@ -11,9 +11,9 @@ compatibility: ["Magisk", "KernelSU", "APatch"]
 
 ## Overview & System Architecture
 
-The **Xiaomi 13 Pro Device Identity Spoofer** is a lightweight, systemless property injection module developed by Da Feng Mei Le Yun Bu Fei (大风没了云不飞). It modifies Android product identification properties to match the Chinese domestic flagship **Xiaomi 13 Pro** (`2210132C`, Snapdragon 8 Gen 2).
+The **Xiaomi 13 Pro Device Identity Spoofer** is a lightweight, systemless property injection module developed by Da Feng Mei Le Yun Bu Fei. It modifies Android product identification properties to match the Chinese domestic flagship **Xiaomi 13 Pro** (`2210132C`, Snapdragon 8 Gen 2).
 
-Modern mobile titles—including *Honor of Kings* (王者荣耀), *Peace Elite / PUBG Mobile* (和平精英), and *Genshin Impact* (原神)—maintain server-side hardware whitelists. Devices not explicitly identified as top-tier flagships are locked to 60 FPS or low graphic presets. By spoofing the device identity at boot via `system.prop`, this module enables extreme frame rate modes (90 FPS, 120 FPS) and ultra-high graphical fidelity.
+Modern mobile titles—including *Honor of Kings*, *Peace Elite / PUBG Mobile*, and *Genshin Impact*—maintain server-side hardware whitelists. Devices not explicitly identified as top-tier flagships are locked to 60 FPS or low graphic presets. By spoofing the device identity at boot via `system.prop`, this module enables extreme frame rate modes (90 FPS, 120 FPS) and ultra-high graphical fidelity.
 
 ## Injected System Properties
 

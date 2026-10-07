@@ -20,7 +20,7 @@ configPaths:
   - "/data/adb/modules/ZDTG_9384/"
 features:
   - "System-privileged deployment preventing background execution termination"
-  - "High-speed UI node inspection detecting 'Skip' / '跳过' text nodes"
+  - "High-speed UI node inspection detecting 'Skip' and ad-dismiss text nodes"
   - "Zero battery drain: activates strictly on foreground app launch window events"
   - "Standalone local execution with zero cloud telemetry or data extraction"
 faq:
@@ -32,9 +32,9 @@ faq:
 
 ## Overview
 
-**Auto Skip Splash Screen Ads** (authored by Shui Nian Hua Lou Ta Yan / 谁念画楼她颜) is a lightweight utility engineered to save time and bandwidth by eliminating commercial splash ads that delay application startup.
+**Auto Skip Splash Screen Ads** (authored by Shui Nian Hua Lou Ta Yan) is a lightweight utility engineered to save time and bandwidth by eliminating commercial splash ads that delay application startup.
 
-Commercial apps frequently enforce 3-to-5 second splash screens displaying commercial banners with tiny, hard-to-hit "Skip" buttons. This module deploys the optimized `自动跳过` engine directly into the Android `/system/app/` hierarchy, granting it persistent privileged status without requiring manual background battery whitelisting.
+Commercial apps frequently enforce 3-to-5 second splash screens displaying commercial banners with tiny, hard-to-hit "Skip" buttons. This module deploys the optimized Auto Skip engine directly into the Android `/system/app/` hierarchy, granting it persistent privileged status without requiring manual background battery whitelisting.
 
 ---
 
@@ -55,7 +55,7 @@ The Android runtime (`system_server`) treats the package as a pre-installed vend
 
 Rather than polling the screen continuously (which causes high CPU load and battery consumption), the engine registers an event listener for `TYPE_WINDOW_STATE_CHANGED`:
 
-The algorithm evaluates active UI node text and content descriptions against regex patterns matching skip prompts (`跳过`, `Skip`, `关闭`, `\d+s`), locating the exact bounding coordinates and dispatching an instant simulated click.
+The algorithm evaluates active UI node text and content descriptions against regex patterns matching skip prompts (`Skip`, `Close`, countdown timers), locating the exact bounding coordinates and dispatching an instant simulated click.
 
 ---
 
@@ -63,5 +63,5 @@ The algorithm evaluates active UI node text and content descriptions against reg
 
 1. Flash the module and restart the device.
 2. Navigate to **Settings -> Accessibility -> Downloaded Apps / Installed Services**.
-3. Toggle **Auto Skip** (`自动跳过`) to **On**.
+3. Toggle **Auto Skip** to **On**.
 4. Launch any ad-supported application to confirm instant launch bypass.

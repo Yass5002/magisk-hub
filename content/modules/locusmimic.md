@@ -35,7 +35,7 @@ Download and install the latest `LocusMimic` release APK from GitHub.
 
 ### Step 2: LSPosed Activation
 1. Open **LSPosed Manager**.
-2. Select **LocusMimic·位置模拟**.
+2. Select **LocusMimic**.
 3. Toggle the module **ON**.
 4. Check the applications you intend to simulate locations for (e.g. social networking, delivery, or fitness tracking apps).
 

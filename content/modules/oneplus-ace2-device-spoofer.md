@@ -29,7 +29,7 @@ faq:
 
 ## Overview
 
-**OnePlus Ace 2 Device Identity Spoofer** (authored by You Xi Li Jie 6 / 酷安游戏李姐6) allows mobile gamers to access ultra-high frame rate modes (90 FPS / 120 FPS) that game publishers restrict to specific promotional partner hardware.
+**OnePlus Ace 2 Device Identity Spoofer** (authored by You Xi Li Jie 6) allows mobile gamers to access ultra-high frame rate modes (90 FPS / 120 FPS) that game publishers restrict to specific promotional partner hardware.
 
 ---
 

@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**Ultraman Tiga Charging Animation & SFX** (authored by Fu Chen Ran Xi / 酷安@浮尘染溪) transforms the standard device lockscreen battery connection experience into an energetic tribute to Ultraman Tiga's iconic transformation sequence.
+**Ultraman Tiga Charging Animation & SFX** (authored by Fu Chen Ran Xi) transforms the standard device lockscreen battery connection experience into an energetic tribute to Ultraman Tiga's iconic transformation sequence.
 
 Using Android's native **Runtime Resource Overlay (RRO)** framework, this module swaps the stock OEM charging visual assets and connection sound effects cleanly without altering system APK signatures or modifying core system libraries.
 

@@ -31,7 +31,7 @@ faq:
 
 ## Overview
 
-**Pikachu Animated Boot Sequence** (authored by Ao Jiao Xiao Zheng Tai / 酷安@傲娇小正太) is a high-energy visual customization module that replaces drab manufacturer boot logos with a fluid, 60 frames-per-second animation of Pikachu unleashing electric lightning sparks.
+**Pikachu Animated Boot Sequence** (authored by Ao Jiao Xiao Zheng Tai) is a high-energy visual customization module that replaces drab manufacturer boot logos with a fluid, 60 frames-per-second animation of Pikachu unleashing electric lightning sparks.
 
 ---
 

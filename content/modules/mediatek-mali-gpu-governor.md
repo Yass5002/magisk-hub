@@ -1,6 +1,6 @@
 ---
 id: "mediatek-mali-gpu-governor"
-title: "Mediatek Mali GPU Governor (天玑GPU调速器)"
+title: "Mediatek Mali GPU Governor"
 description: "Dynamic GPU governor module for MediaTek Dimensity processors featuring ARM Mali GPUs, optimizing frequency scaling, power consumption, and thermal stability under heavy gaming loads."
 category: "performance-kernel"
 author: "Seyud & Tools-cx-app"
@@ -11,7 +11,7 @@ compatibility: ["KernelSU", "APatch", "Magisk"]
 
 ## Overview & System Architecture
 
-The **MediaTek Mali GPU Governor (天玑GPU调速器)**, developed by Seyud in collaboration with Tools-cx-app, is a low-level kernel governor optimization module designed specifically for MediaTek Dimensity SoCs utilizing ARM Mali graphics architectures (Valhall and 5th Gen Mali, such as Mali-G77, G78, G610, G710, G715, and Immortalis-G720).
+The **MediaTek Mali GPU Governor**, developed by Seyud in collaboration with Tools-cx-app, is a low-level kernel governor optimization module designed specifically for MediaTek Dimensity SoCs utilizing ARM Mali graphics architectures (Valhall and 5th Gen Mali, such as Mali-G77, G78, G610, G710, G715, and Immortalis-G720).
 
 Stock MediaTek GPU governors (such as `ged` and `simple_ondemand`) frequently suffer from either excessive thermal throttle step-downs or sluggish frequency ramp-up latency. This module interacts directly with MediaTek kernel sysfs nodes (`/sys/devices/platform/13000000.mali/` or `/sys/kernel/ged/hal/`) to implement fine-grained frequency tuning, power-aware rendering queues, and adaptive workload balancing.
 

@@ -1,9 +1,9 @@
 ---
 id: "thermal-controller-bypass"
-title: "Thermal Controller Disabler (温控拜拜)"
+title: "Thermal Controller Disabler: Systemless Thermal Throttling Bypass"
 description: "Systemless thermal management remover created by AiWanJi ToolBox to bypass thermal throttling, eliminate thermal limit configuration files, and prevent aggressive CPU/GPU downclocking."
 category: "performance-kernel"
-author: "Xiao Bai Yang / AiWanJi (小白杨(爱玩机))"
+author: "Xiao Bai Yang / AiWanJi"
 version: "183.72"
 updatedAt: "2026-10-04"
 compatibility: ["Magisk", "KernelSU", "APatch"]
@@ -11,7 +11,7 @@ compatibility: ["Magisk", "KernelSU", "APatch"]
 
 ## Overview & System Architecture
 
-**Thermal Controller Disabler (温控拜拜)** is a performance optimization module developed by Xiao Bai Yang (小白杨), creator of the acclaimed AiWanJi ToolBox (爱玩机工具箱). Android OEMs implement restrictive thermal daemon policies that aggressively throttle CPU and GPU frequencies, dim screen brightness, and limit charging currents once battery temperature reaches 38°C–42°C.
+**Thermal Controller Disabler** is a performance optimization module developed by Xiao Bai Yang, creator of the acclaimed AiWanJi ToolBox. Android OEMs implement restrictive thermal daemon policies that aggressively throttle CPU and GPU frequencies, dim screen brightness, and limit charging currents once battery temperature reaches 38°C–42°C.
 
 This module uses systemless overlay mounting to neutralize vendor thermal policy files located in `/vendor/etc/`. By substituting active thermal control tables with clean dummy files, the operating system's thermal engine (`thermald` / `thermal-engine`) cannot trigger frequency capping policies, allowing devices to sustain peak performance during competitive gaming and intensive 3D rendering.
 

@@ -35,7 +35,7 @@ faq:
 
 ## Overview
 
-**Battery Health Diagnostics & Cycle Monitor** (authored by Wo Bu Shi Chen Sang & Duo Rou Yu Yuan Pu Tao / 酷安@我不是尘桑 & 酷安@多肉芋圆葡萄) provides accurate, hardware-level battery health information on rooted Android devices.
+**Battery Health Diagnostics & Cycle Monitor** (authored by Wo Bu Shi Chen Sang & Duo Rou Yu Yuan Pu Tao) provides accurate, hardware-level battery health information on rooted Android devices.
 
 Instead of relying on proprietary OEM health estimates or third-party battery monitor apps that keep wakelocks active, this module interacts directly with kernel sysfs nodes exposed by the hardware power management IC (PMIC).
 

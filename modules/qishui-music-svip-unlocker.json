@@ -4,7 +4,7 @@
   "repo": "Xposed-Modules-Repo/me.bingyue.fuckqishui",
   "category": "xposed-runtime-hooks",
   "softwareType": "xposed-module",
-  "description": "汽水音乐Svip+去除广告 / Unlock Luna Music SVIP and remove ads",
+  "description": "LSPosed module to unlock SVIP privileges and remove in-app advertisements in Soda Music (Luna Music).",
   "compatibility": [
     "LSPosed"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "Soda Music SVIP & AdBlock (me.bingyue.fuckqishui) – Download | Magisk Hub",
-    "description": "Download Soda Music SVIP & AdBlock (me.bingyue.fuckqishui) for LSPosed. 汽水音乐Svip+去除广告 / Unlock Luna Music SVIP and remove ads."
+    "description": "Download Soda Music SVIP & AdBlock (me.bingyue.fuckqishui) for LSPosed. Unlocks VIP privileges and removes advertisements in Soda Music."
   },
   "contentTier": 1
 }

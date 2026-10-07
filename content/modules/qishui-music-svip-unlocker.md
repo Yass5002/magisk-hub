@@ -1,7 +1,7 @@
 ---
 id: "qishui-music-svip-unlocker"
 title: "Soda Music SVIP & AdBlock (me.bingyue.fuckqishui)"
-description: "LSPosed Xposed module for Soda Music (汽水音乐 / Luna Music) that unlocks SVIP privileges, removes in-app advertisements, and enables lossless audio streaming."
+description: "LSPosed Xposed module for Soda Music (Luna Music) that unlocks SVIP privileges, removes in-app advertisements, and enables lossless audio streaming."
 category: "xposed-runtime-hooks"
 author: "bingqiu456"
 version: "3.0"
@@ -11,7 +11,7 @@ compatibility: ["LSPosed"]
 
 ## Overview & System Architecture
 
-**Soda Music SVIP & AdBlock** (`me.bingyue.fuckqishui`), authored by developer bingqiu456, is an Xposed/LSPosed runtime hooking module created for ByteDance's music streaming platform **Soda Music** (汽水音乐 / international counterpart *Luna Music*).
+**Soda Music SVIP & AdBlock** (`me.bingyue.fuckqishui`), authored by developer bingqiu456, is an Xposed/LSPosed runtime hooking module created for ByteDance's music streaming platform **Soda Music** (international counterpart *Luna Music*).
 
 Operating within the target application's ART process runtime via LSPosed hooks, the module dynamically intercepts account authorization routines, feature flag verifications, and advertising SDK dispatchers. Because modifications take place in volatile process memory, no APK re-signing or application patching is required, preserving original package signature integrity and auto-update compatibility.
 
@@ -44,9 +44,9 @@ adb install _3.0.apk
 
 ### Step 2: Activate Scope in LSPosed Manager
 1. Open the **LSPosed Manager** notification or application.
-2. Navigate to the **Modules** tab and locate **汽水音乐Svip+去除广告**.
+2. Navigate to the **Modules** tab and locate **Soda Music SVIP & AdBlock**.
 3. Toggle the module **ON**.
-4. Check the scope checkbox for **汽水音乐** (`com.luna.music` / `com.ss.android.ugc.aweme.music`).
+4. Check the scope checkbox for **Soda Music** (`com.luna.music` / `com.ss.android.ugc.aweme.music`).
 
 ### Step 3: Restart Target Application
 Force stop and relaunch the music app to load hooks:

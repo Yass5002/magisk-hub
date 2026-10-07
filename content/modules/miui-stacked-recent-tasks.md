@@ -31,7 +31,7 @@ faq:
 
 ## Overview
 
-**MIUI Stacked Recent Tasks Launcher** (engineered by Xposeded and packaged for Magisk by Nanju Beizhi / 酷安:南橘北彘) is a specialized user interface modification that replaces Xiaomi's vertical 2-column task switcher with a horizontal, overlapping stacked card deck inspired by iOS multitasking.
+**MIUI Stacked Recent Tasks Launcher** (engineered by Xposeded and packaged for Magisk by Nanju Beizhi) is a specialized user interface modification that replaces Xiaomi's vertical 2-column task switcher with a horizontal, overlapping stacked card deck inspired by iOS multitasking.
 
 For users accustomed to horizontal task switching or who find small dual-column previews difficult to read, this module reprograms the layout manager inside `MiuiHome.apk`, providing large, detailed app windows with smooth gesture inertia.
 

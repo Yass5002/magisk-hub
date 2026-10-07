@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**Automated Full-Charge Disconnect Guard** (authored by Jiu Shi Long Xia / 就是龙虾) protects smartphones that remain connected to chargers for extended periods (such as overnight charging).
+**Automated Full-Charge Disconnect Guard** (authored by Jiu Shi Long Xia) protects smartphones that remain connected to chargers for extended periods (such as overnight charging).
 
 ---
 

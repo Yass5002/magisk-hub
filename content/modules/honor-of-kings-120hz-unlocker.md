@@ -29,7 +29,7 @@ faq:
 
 ## Overview
 
-**Honor of Kings 120Hz Ultra High Frame Rate Unlocker** (authored by YouLinw de ROM Ri Chang / @YouLinw的ROM日常) unlocks the native 120 FPS display option in Tencent's flagship MOBA title.
+**Honor of Kings 120Hz Ultra High Frame Rate Unlocker** (authored by YouLinw de ROM Ri Chang) unlocks the native 120 FPS display option in Tencent's flagship MOBA title.
 
 ---
 

@@ -3,7 +3,7 @@ id: "redmagic-8pro-device-spoofer"
 title: "Nubia RedMagic 8 Pro Device Identity Spoofer"
 description: "Systemless device identity spoofer masquerading device properties as Nubia RedMagic 8 Pro (NX729J) to unlock gaming high refresh rates up to 165Hz and extreme gaming profiles."
 category: "system-environment"
-author: "Da Feng Qi Xi Yun Fei Yang (大风起兮云飞扬)"
+author: "Da Feng Qi Xi Yun Fei Yang"
 version: "v1"
 updatedAt: "2026-10-04"
 compatibility: ["Magisk", "KernelSU", "APatch"]
@@ -11,7 +11,7 @@ compatibility: ["Magisk", "KernelSU", "APatch"]
 
 ## Overview & System Architecture
 
-The **Nubia RedMagic 8 Pro Device Identity Spoofer** is a systemless hardware identity module authored by Da Feng Qi Xi Yun Fei Yang (大风起兮云飞扬). It dynamically modifies system properties to identify the host device as the **Nubia RedMagic 8 Pro** (`NX729J`), Nubia's premier gaming smartphone powered by the Qualcomm Snapdragon 8 Gen 2 platform.
+The **Nubia RedMagic 8 Pro Device Identity Spoofer** is a systemless hardware identity module authored by Da Feng Qi Xi Yun Fei Yang. It dynamically modifies system properties to identify the host device as the **Nubia RedMagic 8 Pro** (`NX729J`), Nubia's premier gaming smartphone powered by the Qualcomm Snapdragon 8 Gen 2 platform.
 
 Because the RedMagic brand represents dedicated mobile esports hardware, numerous mobile games grant special graphics privileges to `NX729J` hardware identifiers—including 120Hz, 144Hz, and 165Hz frame rate toggles, enhanced touch sampling rates, and low-latency audio rendering.
 

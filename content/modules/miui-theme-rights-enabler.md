@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**MIUI Theme & Font Rights Enabler** (authored by Qiangzi Loner / 强子Loner) is a systemless patch for Xiaomi's proprietary Theme Manager on MIUI and HyperOS devices.
+**MIUI Theme & Font Rights Enabler** (authored by Qiangzi Loner) is a systemless patch for Xiaomi's proprietary Theme Manager on MIUI and HyperOS devices.
 
 Xiaomi enforces strict digital rights management (DRM) on device customization. Applying third-party themes, imported `.mtz` theme packages, or premium fonts normally results in an automatic reversion to the stock theme after a 5 to 10-minute trial period unless the user holds verified Xiaomi Designer status. This module eliminates these restrictions, granting complete freedom over device visual styling.
 

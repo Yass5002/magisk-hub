@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**Leica Camera MIUI Port & Color Profiles** (ported and packaged by Wan Feng Qiu Ci / 酷安@挽风秋辞) brings Xiaomi's prestigious Leica imaging partnership experience to devices that shipped without native Leica licensing.
+**Leica Camera MIUI Port & Color Profiles** (ported and packaged by Wan Feng Qiu Ci) brings Xiaomi's prestigious Leica imaging partnership experience to devices that shipped without native Leica licensing.
 
 ---
 

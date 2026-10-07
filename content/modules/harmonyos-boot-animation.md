@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**HarmonyOS Boot Animation & Chime** (packaged by Yu Kong / 余空) provides a clean, elegant visual and acoustic modernization for Android devices by implementing Huawei's signature HarmonyOS startup experience.
+**HarmonyOS Boot Animation & Chime** (packaged by Yu Kong) provides a clean, elegant visual and acoustic modernization for Android devices by implementing Huawei's signature HarmonyOS startup experience.
 
 The module packages both the graphic animation archive (`bootanimation.zip`) and the accompanying high-fidelity stereo startup audio (`bootaudio.mp3`), mounting them systemlessly over the standard Android media directory.
 

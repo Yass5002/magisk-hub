@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**Tsukushi A Round Gothic Typography Suite** (packaged by Xin Yu / 字由心雨) is a systemless typography module bringing the aesthetic craftsmanship of Tsukushi Round Gothic to Android.
+**Tsukushi A Round Gothic Typography Suite** (packaged by Xin Yu) is a systemless typography module bringing the aesthetic craftsmanship of Tsukushi Round Gothic to Android.
 
 Renowned for its gentle, rounded stroke terminations and balanced counters, Tsukushi Round Gothic offers a warm yet sophisticated visual hierarchy. This edition specifically resolves common issues encountered when porting Japanese typefaces to Chinese Android environments by replacing conflicting kanji forms with standard mainland simplified glyphs, while applying an optical 85% scale for crisp UI balance.
 

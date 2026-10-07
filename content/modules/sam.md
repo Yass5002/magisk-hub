@@ -29,7 +29,7 @@ features:
 
 ## Overview
 
-SAM (SmartDNS + AdGuardHome + Mihomo), developed by 5MayRain (棕果核), is a comprehensive networking, ad-blocking, and transparent proxy suite built for rooted Android platforms. While running standalone instances of DNS engines or proxy tools often leads to port conflicts, DNS routing loops, and battery drain, SAM orchestrates all three tools into a single, cohesive systemless pipeline.
+SAM (SmartDNS + AdGuardHome + Mihomo), developed by 5MayRain, is a comprehensive networking, ad-blocking, and transparent proxy suite built for rooted Android platforms. While running standalone instances of DNS engines or proxy tools often leads to port conflicts, DNS routing loops, and battery drain, SAM orchestrates all three tools into a single, cohesive systemless pipeline.
 
 Depending on your requirements, services can be run individually, paired together, or operated concurrently as a full filtering and proxy stack.
 

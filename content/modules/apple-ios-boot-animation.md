@@ -31,7 +31,7 @@ faq:
 
 ## Overview
 
-**Apple iOS Classic Boot Animation** (packaged by Xiao Bai Yang / 小白杨) offers an ultra-clean, minimalist startup experience modeled after Apple's iOS boot sequence.
+**Apple iOS Classic Boot Animation** (packaged by Xiao Bai Yang) offers an ultra-clean, minimalist startup experience modeled after Apple's iOS boot sequence.
 
 Designed with minimalist aesthetics in mind, it provides an authentic monochrome Apple logo centered on a pure black background, accompanied by a dynamic progress bar that animates until Android finishes loading core system daemons.
 

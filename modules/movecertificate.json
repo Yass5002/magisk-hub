@@ -4,7 +4,7 @@
   "repo": "ys1231/MoveCertificate",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with magiskv20.4+/kernelsu/APatch",
+  "description": "Automatically moves user-installed SSL/TLS certificates to the system trust store on Android 7 to 16, supporting Magisk, KernelSU, and APatch.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "MoveCertificate – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download MoveCertificate for Magisk and KernelSU. 支持Android7-16移动证书，兼容magiskv20.4+/kernelsu/APatch, Support Android7-16, compatible with..."
+    "description": "Download MoveCertificate for Magisk and KernelSU. Moves user SSL certificates to the system trust store on Android 7 to 16."
   },
   "contentTier": 1
 }

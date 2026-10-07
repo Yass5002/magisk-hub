@@ -29,7 +29,7 @@ faq:
 
 ## Overview
 
-**Hatsune Miku & Luo Tianyi Boot Animation** (authored by Fu Chen Ran Xi / 酷安@浮尘染溪) delivers a stunning dual-character Vocaloid startup sequence celebrating Hatsune Miku and Chinese Vocaloid sensation Luo Tianyi.
+**Hatsune Miku & Luo Tianyi Boot Animation** (authored by Fu Chen Ran Xi) delivers a stunning dual-character Vocaloid startup sequence celebrating Hatsune Miku and Chinese Vocaloid sensation Luo Tianyi.
 
 ---
 

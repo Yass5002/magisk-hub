@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**MIUI Alpha Launcher Mod** (compiled and modified by Hanhan Hatsune / 酷安@憨憨初音酱, with upstream contributions from Sipollo and Xposeded) upgrades the stock Xiaomi desktop into a feature-rich, high-performance launcher.
+**MIUI Alpha Launcher Mod** (compiled and modified by Hanhan Hatsune, with upstream contributions from Sipollo and Xposeded) upgrades the stock Xiaomi desktop into a feature-rich, high-performance launcher.
 
 Xiaomi regularly restricts experimental features—such as high-density grid layouts, fluid folder blur, gesture shortcuts, and icon hiding—to internal beta testing channels or specific flagship hardware. This module systemlessly mounts an optimized Alpha release that enables these hidden customization toggles for all devices.
 

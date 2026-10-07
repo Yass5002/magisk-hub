@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**AdBlock & MIUI Download Speed Limit Remover** (authored by ZiXuan & MoLiRanRan / 橴炫 & 莫离然然) is an advanced systemless network filtering and ROM debloating suite engineered specifically for Xiaomi MIUI and HyperOS environments, while retaining full compatibility with generic AOSP-based firmwares.
+**AdBlock & MIUI Download Speed Limit Remover** (authored by ZiXuan & MoLiRanRan) is an advanced systemless network filtering and ROM debloating suite engineered specifically for Xiaomi MIUI and HyperOS environments, while retaining full compatibility with generic AOSP-based firmwares.
 
 In stock MIUI, Xiaomi implements system-level telemetry and ad networks primarily routed through `AnalyticsCore`, coupled with download bandwidth caps inside the system package installer and browser unless users possess VIP service tiers. This module addresses both issues simultaneously without modifying the physical `/system` block device.
 

@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**HarmonyOS Sans Variable Typography Suite** (curated and packaged by Quiet Rain / 宁静之雨) brings Huawei's modern, highly legible HarmonyOS Sans typography engine to all rooted Android devices systemlessly.
+**HarmonyOS Sans Variable Typography Suite** (curated and packaged by Quiet Rain) brings Huawei's modern, highly legible HarmonyOS Sans typography engine to all rooted Android devices systemlessly.
 
 Designed specifically for multi-device cross-screen readability, HarmonyOS Sans combines crisp geometric Western letterforms with well-balanced, high-legibility Chinese, Japanese, and Korean (CJK) characters. Its 9-weight variable design ensures that headings, subheadings, and body text render with balanced optical weight across varying display densities.
 

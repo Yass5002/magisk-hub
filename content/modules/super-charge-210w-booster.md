@@ -35,7 +35,7 @@ faq:
 
 ## Overview
 
-**210W Screen-On Extreme Fast Charging Mod** (authored by He Zheng & Class 6 Grade 1 / 酷安@鹤征 二改@六年级一班) is a comprehensive low-level charging power unlocker designed for Xiaomi, Redmi, and POCO smartphones.
+**210W Screen-On Extreme Fast Charging Mod** (authored by He Zheng & Class 6 Grade 1) is a comprehensive low-level charging power unlocker designed for Xiaomi, Redmi, and POCO smartphones.
 
 In stock MIUI and HyperOS builds, Xiaomi aggressively throttles fast charging whenever the display screen is turned on—often reducing a 67W or 120W connection down to a sluggish 15W–18W to minimize surface temperatures. This module reconstructs the device thermal engine rules, allowing users to experience full-speed charging while gaming, navigating, or streaming videos.
 

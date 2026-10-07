@@ -42,9 +42,9 @@ Download and install `162-5.4.apk`.
 
 ### Step 2: LSPosed Activation (System Framework Scope)
 1. Open **LSPosed Manager**.
-2. Locate and tap **LSPDoze - 优化你的待机续航，开启常亮全屏AOD**.
+2. Locate and tap **LSPDoze**.
 3. Toggle the module **ON**.
-4. Ensure **系统框架 (System Framework - `android`)** is selected in the scope checklist.
+4. Ensure **System Framework (`android`)** is selected in the scope checklist.
 
 ### Step 3: Reboot Device
 Because LSPDoze hooks core system power management services, a system reboot is mandatory:

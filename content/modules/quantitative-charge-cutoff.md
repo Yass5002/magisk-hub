@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**BH Quantitative Charging Cutoff & Battery Guard** (authored by Bu Tai Hui Qi Wang Ming & HChai / 不太会起网名 && HChai) is an automated charge controller engineered to protect lithium-ion batteries from overcharging and high-voltage heat stress.
+**BH Quantitative Charging Cutoff & Battery Guard** (authored by Bu Tai Hui Qi Wang Ming & HChai) is an automated charge controller engineered to protect lithium-ion batteries from overcharging and high-voltage heat stress.
 
 The module runs as a background watchdog that continuously samples battery state-of-charge (SOC). Upon reaching the user-configured limit, it dispatches a hardware cutoff command directly to the Linux kernel power supply subsystem.
 

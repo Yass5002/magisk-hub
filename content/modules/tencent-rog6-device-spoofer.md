@@ -29,7 +29,7 @@ faq:
 
 ## Overview
 
-**Tencent ROG Phone 6 Dimensity Edition Device Spoofer** (authored by Shi Chang Liang Nian Ban De Kun / 酷安@时长两年半的坤) bypasses manufacturer graphics limits by impersonating ASUS's flagship gaming device.
+**Tencent ROG Phone 6 Dimensity Edition Device Spoofer** (authored by Shi Chang Liang Nian Ban De Kun) bypasses manufacturer graphics limits by impersonating ASUS's flagship gaming device.
 
 ---
 

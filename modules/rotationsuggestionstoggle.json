@@ -4,7 +4,7 @@
   "repo": "Astoritin/RotationSuggestionsToggle",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "A Magisk module to toggle the showing of rotation suggestions button / 一个用于切换旋转建议按钮显示的 Magisk 模块",
+  "description": "A Magisk module to toggle the display of the system navigation bar rotation suggestions button.",
   "compatibility": [
     "Magisk",
     "KernelSU",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "RotationSuggestionsToggle – Download | Magisk Hub",
-    "description": "Download RotationSuggestionsToggle for Magisk, KernelSU, and APatch. A Magisk module to toggle the showing of rotation suggestions..."
+    "description": "Download RotationSuggestionsToggle for Magisk, KernelSU, and APatch. Easily toggle the floating screen rotation suggestion button."
   },
   "contentTier": 1
 }

@@ -33,7 +33,7 @@ faq:
 
 ## Overview
 
-**Soft Bear Handwritten Typography Suite** (created by SummerRain / 夏雨_SummerRain) is a lightweight, personalized systemless font module that transforms standard Android interface text into an inviting, warm handwritten aesthetic.
+**Soft Bear Handwritten Typography Suite** (created by SummerRain) is a lightweight, personalized systemless font module that transforms standard Android interface text into an inviting, warm handwritten aesthetic.
 
 Unlike standard utilitarian sans-serif fonts, Soft Bear features organic strokes, rounded terminals, and slight playful angles. The font is carefully hinted and optimized for digital screens, ensuring sustained readability in chat applications, browser reading, and system menus.
 

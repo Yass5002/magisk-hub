@@ -4,7 +4,7 @@
   "repo": "Xposed-Modules-Repo/com.op.lspdoze",
   "category": "xposed-runtime-hooks",
   "softwareType": "xposed-module",
-  "description": "LSPDoze - 优化你的待机续航，开启常亮全屏AOD",
+  "description": "Optimizes standby battery endurance and enables always-on fullscreen AOD (Always-On Display) via LSPosed.",
   "compatibility": [
     "LSPosed"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze) – Download | Magisk Hub",
-    "description": "Download LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze) for LSPosed. LSPDoze - 优化你的待机续航，开启常亮全屏AOD."
+    "description": "Download LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze) for LSPosed. Optimizes standby battery life and enables fullscreen AOD."
   },
   "contentTier": 1
 }

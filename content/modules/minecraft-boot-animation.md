@@ -29,7 +29,7 @@ faq:
 
 ## Overview
 
-**Minecraft Pixel Boot Animation** (packaged by Wei Bin Guo / 魏斌过) brings nostalgic pixelated gaming flair to rooted Android devices.
+**Minecraft Pixel Boot Animation** (packaged by Wei Bin Guo) brings nostalgic pixelated gaming flair to rooted Android devices.
 
 The module replaces standard OEM splash sequences with an animated pixel-art Minecraft block crafting progression, rendering an isometric dirt and grass block assembled piece by piece before transitioning into the Android system lockscreen.
 

@@ -31,7 +31,7 @@ faq:
 
 ## Overview
 
-**Google Pixel Boot Animation (Dark)** (packaged by Kuku de RCOL / 酷酷的RCOL) is a refined visual customization module that brings Google's minimalist dark-mode Pixel startup sequence to any rooted Android device.
+**Google Pixel Boot Animation (Dark)** (packaged by Kuku de RCOL) is a refined visual customization module that brings Google's minimalist dark-mode Pixel startup sequence to any rooted Android device.
 
 Stock OEM boot animations from manufacturers like Samsung, Xiaomi, and Oppo often feature high-contrast, bright white splash screens and prolonged visual branding. This module replaces those assets with the iconic Google 4-color morphing geometry on a pitch-black background, reducing visual fatigue during nighttime reboots while providing a stock Google experience.
 

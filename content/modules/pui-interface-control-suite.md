@@ -32,7 +32,7 @@ faq:
 
 ## Overview
 
-**PUI System Interface & Control Suite** (created by Tiansansha & PanL / 天伞桜&PanL) is a bespoke theme modification tailored for the new generation of Oppo, OnePlus, and Realme devices running ColorOS 15 and OxygenOS 15.
+**PUI System Interface & Control Suite** (created by Tiansansha & PanL) is a bespoke theme modification tailored for the new generation of Oppo, OnePlus, and Realme devices running ColorOS 15 and OxygenOS 15.
 
 Android 15 introduces significant architectural changes to SystemUI layout hierarchies and notification shade compositions. PUI Suite introduces an elegant, unified visual theme that enhances the transparency effects, slider dynamics, and quick-toggle geometry of the ColorOS 15 Control Center.
 

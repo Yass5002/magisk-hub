@@ -11,7 +11,7 @@ compatibility: ["Magisk", "KernelSU", "APatch"]
 
 ## Overview & System Architecture
 
-The **Xiaomi 12 Pro Speaker & ADSP Audio Booster** is a specialized audio tuning module created by Huber_HaYu (with collaborative contributions from casca, 世界和平吧, ろめいひ, Linbingwei, and 草莓钙片). Specifically designed for the Xiaomi 12 Pro (code-named `zeus` / `taro` / `waipio`), this module unlocks the full potential of the quadruple-speaker acoustic hardware (dual tweeters and dual woofers) tuned in partnership with Harman Kardon.
+The **Xiaomi 12 Pro Speaker & ADSP Audio Booster** is a specialized audio tuning module created by Huber_HaYu (with collaborative contributions from casca, Shijiehepingba, Romeihi, Linbingwei, and Caomeigaipian). Specifically designed for the Xiaomi 12 Pro (code-named `zeus` / `taro` / `waipio`), this module unlocks the full potential of the quadruple-speaker acoustic hardware (dual tweeters and dual woofers) tuned in partnership with Harman Kardon.
 
 Stock MIUI software limits speaker output volume and aggressive dynamic range compression (DRC) to prevent thermal rise. This module injects modified ADSP XML mixer paths, revised resource managers, enhanced Dolby configuration files, and system property overrides to deliver higher output clarity, wider spatial staging, and enhanced low-frequency resonance.
 

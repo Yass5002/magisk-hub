@@ -4,7 +4,7 @@
   "repo": "powerAn2020/crond4android",
   "category": "development-instrumentation",
   "softwareType": "flashable-module",
-  "description": "支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on KernelSU, APatch and Magisk.",
+  "description": "A crond background job scheduler service with a graphical UI for KernelSU, APatch, and Magisk.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "crond4android – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download crond4android for Magisk and KernelSU. 支持 KernelSU、APatch、Magisk下运行的Crond。带UI界面/The Crond program that supports running on..."
+    "description": "Download crond4android for Magisk and KernelSU. A crond background job scheduler service with a graphical UI for Android."
   },
   "contentTier": 1
 }

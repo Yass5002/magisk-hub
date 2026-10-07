@@ -31,7 +31,7 @@ faq:
 
 ## Overview
 
-**iOS Status Bar & Control Center Theme** (authored by Jiuhen / 旧痕) is a visual customization module that brings Apple's clean, cohesive status bar aesthetics to rooted Android smartphones.
+**iOS Status Bar & Control Center Theme** (authored by Jiuhen) is a visual customization module that brings Apple's clean, cohesive status bar aesthetics to rooted Android smartphones.
 
 Android's stock status bar often feels cluttered with varying icon weights, dual-row signal meters, and disconnected percentage numbers. This module overlays authentic iOS status indicators—including the iconic 4-tier vertical signal bars, rounded Wi-Fi arcs, and pill-shaped battery meter with internal numeric percentage.
 

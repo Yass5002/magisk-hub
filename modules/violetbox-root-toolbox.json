@@ -1,6 +1,6 @@
 {
   "id": "violetbox-root-toolbox",
-  "name": "VioletBox Root Toolbox (紫罗兰Box)",
+  "name": "VioletBox Root Toolbox",
   "repo": null,
   "author": "Smart-Paocai",
   "sourceType": "community",
@@ -25,7 +25,7 @@
     "assetName": "VioletBox_V1.0.0_release.apk"
   },
   "seo": {
-    "title": "VioletBox Root Toolbox (紫罗兰Box) for Magisk & KernelSU",
+    "title": "VioletBox Root Toolbox for Magisk & KernelSU",
     "description": "All-in-one mobile root utility for SELinux switching, partition read/write, baseband/font backup, batch module management, and device spoofing."
   }
 }

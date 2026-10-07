@@ -4,7 +4,7 @@
   "repo": "wchunlin1006/LocusMimic",
   "category": "xposed-runtime-hooks",
   "softwareType": "xposed-module",
-  "description": "LocusMimic·位置模拟 是一款面向已 Root Android 设备的 Xposed/LSPosed 定位模拟模块。它支持地图选点、地点搜索、常用地点收藏、位置参数配置，并可向用户在 LSPosed 中选择的目标应用提供模拟位置。",
+  "description": "Xposed and LSPosed location simulation module supporting map selection, location search, favorites, and per-app mock location spoofing on rooted devices.",
   "compatibility": [
     "LSPosed"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "LocusMimic Location & Route Simulator (com.locusmimic.app) – Download | Magisk Hub",
-    "description": "Download LocusMimic Location & Route Simulator (com.locusmimic.app) for LSPosed. LocusMimic·位置模拟 是一款面向已 Root Android 设备的 Xposed/LSPosed..."
+    "description": "Download LocusMimic Location & Route Simulator (com.locusmimic.app) for LSPosed. GPS location spoofing module with map selection and route simulation."
   },
   "contentTier": 1
 }

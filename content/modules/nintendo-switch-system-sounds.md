@@ -34,7 +34,7 @@ faq:
 
 ## Overview
 
-**Nintendo Switch System Sound Effects Mod** (authored by Aimer / 艾米) provides a playful, high-quality acoustic overhaul for Android devices by implementing Nintendo Switch UI audio effects.
+**Nintendo Switch System Sound Effects Mod** (authored by Aimer) provides a playful, high-quality acoustic overhaul for Android devices by implementing Nintendo Switch UI audio effects.
 
 ---
 
