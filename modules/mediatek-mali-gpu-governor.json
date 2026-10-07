@@ -4,7 +4,7 @@
   "repo": "Seyud/Mediatek_Mali_GPU_Governor",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
-  "description": "Dynamic GPU governor for MediaTek Dimensity Mali GPUs, optimizing power consumption and performance balance.",
+  "description": "适用于Mediatek_Mali_GPU的GPU动态调速器，优化全场景下的功耗与性能平衡",
   "compatibility": [
     "KernelSU",
     "APatch",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "Mediatek Mali GPU Governor – Download | Magisk Hub",
-    "description": "Download Mediatek Mali GPU Governor for KernelSU, APatch, and Magisk. Dynamic GPU governor optimizing power and performance balance."
+    "description": "Download Mediatek Mali GPU Governor for KernelSU, APatch, and Magisk. 适用于Mediatek_Mali_GPU的GPU动态调速器，优化全场景下的功耗与性能平衡."
   },
   "contentTier": 1
 }

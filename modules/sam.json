@@ -4,7 +4,7 @@
   "repo": "5MayRain/SAM",
   "category": "networking-proxies",
   "softwareType": "flashable-module",
-  "description": "Integrated networking suite combining SmartDNS, AdGuardHome, and Mihomo for Android.",
+  "description": "SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "SAM – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download SAM for Magisk and KernelSU. Integrated networking suite combining SmartDNS, AdGuardHome, and Mihomo for Android."
+    "description": "Download SAM for Magisk and KernelSU. SmartDNS、AdGuardHome 和 mihomo 三种结合的模块，适用于Magisk 和 KernelSU."
   },
   "contentTier": 1
 }

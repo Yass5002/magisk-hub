@@ -4,7 +4,7 @@
   "repo": "Seyud/device_faker",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "Customizable Zygisk module for system property modification and hardware device model spoofing.",
+  "description": "自定义配置Zygisk机型伪装",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "device_faker – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download device_faker for Magisk and KernelSU. Customizable Zygisk module for system property and hardware device spoofing."
+    "description": "Download device_faker for Magisk and KernelSU. 自定义配置Zygisk机型伪装."
   },
   "contentTier": 1
 }

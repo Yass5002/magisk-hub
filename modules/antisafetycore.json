@@ -4,7 +4,7 @@
   "repo": "Astoritin/AntiSafetyCore",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "A Magisk module to fight against Google silently installing Android System SafetyCore and Android System Key Verifier.",
+  "description": "A Magisk module to fight against the behavior of installing Android System SafetyCore and Android System Key Verifier by Google quietly / 一个对抗 Google 静默安装 SafetyCore 和 Key Verifier 这一行为的 Magisk 模块",
   "compatibility": [
     "Magisk",
     "KernelSU",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "AntiSafetyCore – Download (Magisk/KSU/APatch) | Magisk Hub",
-    "description": "Download AntiSafetyCore for Magisk, KernelSU, and APatch. Prevents Google from silently installing Android System SafetyCore and Key Verifier."
+    "description": "Download AntiSafetyCore for Magisk, KernelSU, and APatch. A Magisk module to fight against the behavior of installing Android System..."
   },
   "contentTier": 1
 }

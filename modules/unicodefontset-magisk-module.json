@@ -4,13 +4,13 @@
   "repo": "Losketch/UnicodeFontSet-magisk-module",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "A comprehensive full Unicode font set Magisk module providing complete glyph and script coverage.",
+  "description": "A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块",
   "compatibility": [
     "Magisk"
   ],
   "license": "Apache-2.0",
   "icon": null,
-  "stars": 74,
+  "stars": 75,
   "latestRelease": {
     "tag": "v2.0.0-beta.1",
     "publishedAt": "2026-08-18T14:54:47Z",
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "UnicodeFontSet-magisk-module – Download | Magisk Hub",
-    "description": "Download UnicodeFontSet-magisk-module for Magisk. Comprehensive full Unicode font set module providing complete glyph coverage."
+    "description": "Download UnicodeFontSet-magisk-module for Magisk. A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块."
   },
   "contentTier": 1
 }

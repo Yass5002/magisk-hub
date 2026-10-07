@@ -4,13 +4,13 @@
   "repo": "eritpchy/FingerprintPay",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "Enables fingerprint biometric payment authentication for WeChat, QQ, Alipay, Taobao, and UnionPay.",
+  "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付",
   "compatibility": [
     "Magisk"
   ],
   "license": "GPL-2.0",
   "icon": "assets/icons/fingerprintpay.png",
-  "stars": 4521,
+  "stars": 4520,
   "latestRelease": {
     "tag": "6.1.0-ci",
     "publishedAt": "2026-03-06T17:18:43Z",
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "FingerprintPay – Download (Magisk) | Magisk Hub",
-    "description": "Download FingerprintPay for Magisk. Enables fingerprint biometric payment authentication for WeChat, Alipay, and supported apps."
+    "description": "Download FingerprintPay for Magisk. 让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付."
   },
   "contentTier": 1
 }
