@@ -19,7 +19,7 @@ conflicts:
 configPaths:
   - "/data/adb/modules/neozygisk/"
   - "Per-application 'Umount modules' toggles in KernelSU / APatch Manager"
-  - "Configure DenyList menu in Magisk Manager"
+  - "Configure DenyList menu in Magisk"
 features:
   - "Ptrace-based Zygote injection: hooks into the Android zygote process at the Linux syscall level without modifying the core zygote binary"
   - "Complete trace cleaning: cleans all injection artifacts and unmaps loader memory once modules finish execution"
@@ -71,7 +71,7 @@ NeoZygisk operates with four foundational design principles:
 Hiding root and modules from sensitive applications is controlled through your root manager's native user interface:
 
 - **On APatch or KernelSU**: Open your manager app, find your target application in the list, and turn on the **Umount modules** toggle.
-- **On Magisk**: Open Magisk Manager, navigate to **Configure DenyList**, and check the target application along with its individual sub-processes. Do not enable "Enforce DenyList" in settings.
+- **On Magisk**: Open Magisk, navigate to **Configure DenyList**, and check the target application along with its individual sub-processes. Do not enable "Enforce DenyList" in settings.
 
 Once configured, NeoZygisk isolates the selected packages inside clean mount namespaces automatically upon launch.
 

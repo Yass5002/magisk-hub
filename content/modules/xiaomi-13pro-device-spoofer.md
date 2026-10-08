@@ -36,7 +36,7 @@ ro.product.device=2210132C
 ## Installation & Verification
 
 ### Step 1: Flashing the Module
-Install through Magisk Manager, KernelSU app, or APatch Manager.
+Install through Magisk, KernelSU app, or APatch Manager.
 
 ### Step 2: Verify Injected Properties
 After rebooting, run the following verification commands via ADB shell or local terminal:

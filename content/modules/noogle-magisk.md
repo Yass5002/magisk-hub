@@ -50,7 +50,7 @@ There are no documented module conflicts.
 
 1. Ensure **ADB debugging** is enabled on your phone as a best practice before beginning.
 2. Download the latest `noogle-microg.zip` package from the repository releases.
-3. Install the module in Magisk Manager and reboot your device.
+3. Install the module in Magisk and reboot your device.
 4. Open the Magisk app, navigate to the **Modules** tab, and press the **Action** button next to Noogle Magisk to automatically grant permissions.
 5. Open the **microG Settings** app from your launcher and enter **Self-Check**:
    - Verify that all checkboxes are ticked.

@@ -53,7 +53,7 @@ There are no documented module conflicts; it coexists peacefully alongside third
 ## Installation & Configuration
 
 1. Download the `zerotier-magisk.zip` module package and the companion `controller.apk` from the GitHub releases page.
-2. Install the module in Magisk Manager and install the Controller APK as a standard user application.
+2. Install the module in Magisk and install the Controller APK as a standard user application.
 3. Reboot your device to initialize the networking daemon.
 4. Launch the **ZeroTier Controller** app:
    - Enter your 16-character ZeroTier Network ID.

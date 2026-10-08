@@ -30,7 +30,7 @@ faq:
   - question: "What is the difference between listing a package as 'com.example.app' versus 'com.example.app!'?"
     answer: "In Tricky Store and TEESimulator, appending an exclamation mark (`!`) instructs the keystore hook to spoof only the leaf certificate rather than generating a complete synthetic hardware certificate chain. This is critical for certain banking apps and security verifiers that cross-check intermediate CA fingerprints against known root stores."
   - question: "Does this module work on Magisk?"
-    answer: "Yes. In Magisk environments, Tricky Addon automatically provisions KSUWebUIStandalone or WebUI X, exposing an action trigger button in the Magisk Manager to launch the configuration interface in your browser."
+    answer: "Yes. In Magisk environments, Tricky Addon automatically provisions KSUWebUIStandalone or WebUI X, exposing an action trigger button in the Magisk app to launch the configuration interface in your browser."
   - question: "Does uninstalling this module erase my configured targets?"
     answer: "No. The actual targets file is stored independently at `/data/adb/tricky_store/target.txt`. Removing or updating the Tricky Addon module leaves your configured target list and keystore certificates untouched."
 ---

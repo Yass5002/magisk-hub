@@ -20,7 +20,7 @@ configPaths:
   - "/data/adb/shamiko/whitelist"
   - "/data/adb/modules/shamiko/"
 features:
-  - "Deep root environment concealment (hides su binaries, magisk mount points, and modified init processes)"
+  - "Deep root environment concealment (hides su binaries, Magisk mount points, and modified init processes)"
   - "Supports Blacklist mode (hide root from selected apps) and Whitelist mode (hide root globally except for specified apps)"
   - "Advanced ptrace and memory inspection protection against anti-cheat and banking security SDKs"
   - "Bypasses detectors like Native Root Checker, Momo, and Riru/Zygisk detection probes"

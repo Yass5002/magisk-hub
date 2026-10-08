@@ -41,6 +41,6 @@ In the Android audio architecture, **AudioFlinger** acts as the system-wide soft
 ## Installation
 
 1. Download the latest `resampling-for-cheapies-*.zip` package from GitHub releases.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device.
 4. Plug in your USB DAC or connect your LDAC Bluetooth headphones to experience improved audio fidelity.

@@ -41,7 +41,7 @@ Maintained by NewFuture, **rclone-fuse3-magisk** is a systemless Magisk module t
 ## Quick Start & Usage
 
 1. Download the latest `magisk-rclone_arm64-v8a.zip` release from GitHub.
-2. Install the module in **Magisk Manager** and reboot.
+2. Install the module in **Magisk** and reboot.
 3. Generate your Rclone remote configuration:
    ```bash
    su -c rclone config

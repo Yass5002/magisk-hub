@@ -57,7 +57,7 @@ SELinux Permissive applies a hardened two-pronged approach:
 ## Installation & Verification
 
 1. Download the latest release from the repository or Magisk repository.
-2. Flash the module within Magisk Manager and reboot.
+2. Flash the module within Magisk and reboot.
 3. To verify current SELinux status from a root shell (`su`):
    ```bash
    getenforce
@@ -72,5 +72,5 @@ SELinux Permissive applies a hardened two-pronged approach:
 ## Uninstallation
 
 To remove the module and revert SELinux to default enforcing security:
-1. Uninstall the module via Magisk Manager.
+1. Uninstall the module via Magisk.
 2. The module's `uninstall.sh` automatically restores standard world-read permissions on `/sys/fs/selinux/enforce` and resets properties before the device reboots.

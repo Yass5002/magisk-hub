@@ -50,6 +50,6 @@ The module includes sample shell actions that you can tailor to your preferences
 ## Installation
 
 1. Download the latest `OplusKey-*.zip` release from GitHub.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device.
 4. Customize your trigger actions in the module's script directory to suit your workflow.

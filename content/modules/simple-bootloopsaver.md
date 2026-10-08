@@ -47,7 +47,7 @@ The module operates as follows:
 4. **Automated Remediation**:
    - If Zygote PID instability is conclusively verified, the script writes a `disable` marker file into every module directory under `/data/adb/modules/`.
    - It issues an immediate hardware reboot command (`/system/bin/reboot`).
-5. **Clean Recovery**: The phone boots back into Android with all modules disabled, allowing the user to open Magisk Manager, isolate the offending package, and remove it safely.
+5. **Clean Recovery**: The phone boots back into Android with all modules disabled, allowing the user to open Magisk, isolate the offending package, and remove it safely.
 
 ## Installation & Deployment
 

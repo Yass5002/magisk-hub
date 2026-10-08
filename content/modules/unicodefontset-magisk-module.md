@@ -44,5 +44,5 @@ Unlike basic font mods that overwrite your main system font, Unicode Font Set ac
 ## Installation
 
 1. Download the latest `UnicodeFontSet-COLRv1-module.zip` from GitHub releases.
-2. Open **Magisk Manager**, navigate to **Modules > Install from storage**, and flash the package.
+2. Open **Magisk**, navigate to **Modules > Install from storage**, and flash the package.
 3. Reboot your device to load the expanded font fallback definitions.

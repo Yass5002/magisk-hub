@@ -44,7 +44,7 @@ Rather than applying a crude global build fingerprint across the entire operatin
 Before flashing Pixelify Next, ensure your operating environment satisfies these baseline constraints:
 
 1. **Root Manager**: Magisk v24.0 or higher, or KernelSU with a functioning Zygisk implementation.
-2. **Installation Requirement**: Flashing **must** take place within the Magisk Manager or KernelSU application. Flashing through custom recoveries like TWRP, OrangeFox, or PBRP is explicitly unsupported and causes installation failures.
+2. **Installation Requirement**: Flashing **must** take place within the Magisk app or KernelSU application. Flashing through custom recoveries like TWRP, OrangeFox, or PBRP is explicitly unsupported and causes installation failures.
 3. **Android Version**: Android 7.0 (Nougat) through Android 16.
 4. **DenyList / Exclusions**: Ensure Google Play Services (`com.google.android.gms`) and its unstable process (`com.google.android.gms.unstable`) are configured in your DenyList / Shamiko hide lists to avoid integrity verification conflicts.
 

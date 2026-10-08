@@ -42,7 +42,7 @@ Developed by AdalynAstatine, **rsync-magisk** is a lightweight systemless utilit
 ## Installation & Verification
 
 1. Download the latest `rsync-magisk.zip` release from GitHub.
-2. Open **Magisk Manager**, navigate to **Modules > Install from storage**, and flash the package.
+2. Open **Magisk**, navigate to **Modules > Install from storage**, and flash the package.
 3. Reboot your device.
 4. Verify the executable inside Termux or an ADB shell:
    ```bash

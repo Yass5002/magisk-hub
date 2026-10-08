@@ -34,7 +34,7 @@ ro.product.model=NX729J
 ## Installation & Verification
 
 ### Step 1: Flashing
-Install the package via Magisk Manager, KernelSU, or APatch Manager.
+Install the package via Magisk, KernelSU, or APatch Manager.
 
 ### Step 2: Verification via Terminal
 Reboot the device, then verify the active model and brand properties:

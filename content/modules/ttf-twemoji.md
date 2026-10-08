@@ -22,7 +22,7 @@ features:
   - "CBDT/CBLC bitmap compatibility: encoded in Android's native color glyph format for crisp rendering across high-DPI displays"
   - "System-wide integration: displays Twemoji glyphs inside Gboard, social media apps, web browsers, and notifications"
   - "Zero partition modification: mounted systemlessly via Magisk Magic Mount to preserve system partition integrity"
-  - "Clean removal: simply disable or remove the module from Magisk Manager to restore the stock emoji typeface"
+  - "Clean removal: simply disable or remove the module from Magisk to restore the stock emoji typeface"
 ---
 
 ## Overview
@@ -40,6 +40,6 @@ Maintained by Magisk-Modules-Alt-Repo (incorporating builds based on JoeBlakeB a
 ## Installation
 
 1. Download the latest `ttf-twemoji-*.zip` archive from GitHub releases.
-2. Open **Magisk Manager**, navigate to **Modules > Install from storage**, and select the zip file.
+2. Open **Magisk**, navigate to **Modules > Install from storage**, and select the zip file.
 3. Confirm flashing and reboot your phone.
 4. Open your keyboard or messaging apps to view the newly active Twemoji artwork.

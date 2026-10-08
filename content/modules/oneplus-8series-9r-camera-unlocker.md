@@ -41,6 +41,6 @@ On OnePlus 8, 8 Pro, 8T, and 9R devices, stock OxygenOS restricts access to seco
 ## Installation & Configuration
 
 1. Download the latest `oneplus-8series-9r-camera-unlocker.zip` from releases.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device.
 4. Launch your preferred GCam port and enable auxiliary cameras in the developer settings or lens configuration menu.

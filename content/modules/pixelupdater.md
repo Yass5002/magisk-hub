@@ -56,7 +56,7 @@ To interact with Android's low-level `update_engine` without creating system sec
 
 ## Installation & Workflow
 
-1. Flash the `PixelUpdater-*-release.zip` package via Magisk Manager and reboot.
+1. Flash the `PixelUpdater-*-release.zip` package via Magisk and reboot.
 2. Launch the **Pixel Updater** application from your app drawer.
 3. Tap **Check for updates** to poll Google's official update servers.
 4. When an update is detected, press **Install**. Pixel Updater will stream the payload to the inactive slot, verify partition checksums, and patch Magisk root into the new slot.

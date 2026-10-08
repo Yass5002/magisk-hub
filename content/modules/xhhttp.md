@@ -60,7 +60,7 @@ su -c xh --curl POST httpbin.org/post user=admin
 ## Installation & Verification
 
 1. Download the latest `xh-magisk-module.zip` package from GitHub releases.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device.
 4. Verify the executable in your terminal:
    ```bash

@@ -67,7 +67,7 @@ The patch isolates multimedia playback paths (`deep-buffer-playback`, `compress-
 
 ## Installation & Verification
 
-1. Flash the module zip file in Magisk Manager, KernelSU, or APatch.
+1. Flash the module zip file in Magisk, KernelSU, or APatch.
 2. Reboot the device.
 3. Test stereo separation with a stereo test track on YouTube or an audio player.
 4. Verify that audio emanates clearly from both the top grille and the bottom speaker grille.

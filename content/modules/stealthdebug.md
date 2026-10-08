@@ -45,6 +45,6 @@ StealthDebug intercepts these system property reads, reporting standard non-debu
 ## Installation
 
 1. Download `StealthDebug.zip` from GitHub releases.
-2. In **Magisk Manager**, navigate to **Modules > Install from storage**.
+2. In **Magisk**, navigate to **Modules > Install from storage**.
 3. Select the zip file and confirm flashing.
 4. Reboot your phone. The module will run automatically in the background on every boot.

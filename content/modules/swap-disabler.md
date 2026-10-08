@@ -44,7 +44,7 @@ Developed by rompelhd, **Swap-Disabler** is a systemless Magisk module that auto
 
 1. Verify that your device has at least 8 GB of physical RAM.
 2. Download the latest `Swap-Disabler-v*.zip` archive from GitHub releases.
-3. Flash the package in **Magisk Manager**.
+3. Flash the package in **Magisk**.
 4. Reboot your device.
 5. In Termux or an ADB shell, verify that swap has been disabled:
    ```bash

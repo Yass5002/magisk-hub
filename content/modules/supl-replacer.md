@@ -41,6 +41,6 @@ However, standard Android implementations default to `supl.google.com`. Every ti
 ## Installation
 
 1. Download the latest `supl-replacer-v*.zip` archive from GitHub releases.
-2. Install the module in **Magisk Manager**.
+2. Install the module in **Magisk**.
 3. Reboot your device.
 4. Launch any GPS test application (such as GPSTest) to verify that A-GPS satellite fixes resolve promptly.

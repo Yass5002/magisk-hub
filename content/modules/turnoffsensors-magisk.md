@@ -52,5 +52,5 @@ To re-enable sensors temporarily:
 
 1. Verify your device runs Android 10 or newer.
 2. Download the latest `TurnOffSensors-Magisk.zip` release from GitHub.
-3. Install the module in **Magisk Manager**.
+3. Install the module in **Magisk**.
 4. Reboot your phone. Hardware sensors will be immediately muted upon startup.

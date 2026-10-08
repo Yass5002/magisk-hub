@@ -43,6 +43,6 @@ Instead of brute-forcing CPU/GPU clocks to maximum frequency (which quickly indu
 
 1. Verify that your device runs Android 12 or newer.
 2. Download `PerfGamev*.zip` from GitHub releases.
-3. Install the module in **Magisk Manager**.
+3. Install the module in **Magisk**.
 4. Reboot your device.
 5. Launch your game. Android will automatically load the optimized intervention parameters defined in the module's configuration tables.

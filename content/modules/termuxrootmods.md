@@ -53,7 +53,7 @@ Under Android, interactive root shells execute `/system/etc/mkshrc` on startup:
 ## Installation & Usage
 
 1. Download the latest `TermuxRootMods-v*.zip` package from the repository releases.
-2. Install via Magisk Manager and reboot your device.
+2. Install via Magisk and reboot your device.
 3. Launch the **Termux** app.
 4. Type `su` and press Enter.
 5. Grant root permissions when prompted by Magisk.
@@ -65,7 +65,7 @@ Under Android, interactive root shells execute `/system/etc/mkshrc` on startup:
 
 ## Troubleshooting & Verification
 
-- **Standard Shell Still Appears After `su`**: Verify that the module is enabled in Magisk Manager and that the device was rebooted after installation. Check that `/system/etc/mkshrc` is being overlaid correctly:
+- **Standard Shell Still Appears After `su`**: Verify that the module is enabled in Magisk and that the device was rebooted after installation. Check that `/system/etc/mkshrc` is being overlaid correctly:
   ```bash
   grep -i "TermuxRootMods" /system/etc/mkshrc
   ```

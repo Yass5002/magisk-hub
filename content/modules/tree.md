@@ -68,5 +68,5 @@ Outputs:
 ## Installation
 
 1. Download `tree-main.zip` from GitHub releases.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device to access `tree` in your terminal shell.

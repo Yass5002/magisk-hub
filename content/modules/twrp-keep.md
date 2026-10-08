@@ -42,7 +42,7 @@ On modern A/B devices, stock OTA updates download the complete new operating sys
 As explicitly documented by osm0sis:
 > **This is NOT a normal module - it will NOT install any actual files.**
 
-The zip acts purely as an automated script runner. While it may register in the Magisk Manager module list with a placeholder version to allow update tracking, it does not maintain active runtime daemons or persistent directories in `/data/adb/modules/twrp-keep/`.
+The zip acts purely as an automated script runner. While it may register in the Magisk module list with a generic version number to allow update tracking, it does not maintain active runtime daemons or persistent directories in `/data/adb/modules/twrp-keep/`.
 
 ## The Exact OTA Update Workflow
 

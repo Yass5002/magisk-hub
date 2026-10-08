@@ -45,6 +45,6 @@ To ensure proper symbol resolution and performance, modern Chromium engines use 
 - **Requirements**: Android 10+ (API 29+), Magisk or KernelSU.
 - **Installation**:
   1. Download the latest `Vanadium-WebViewBrowser_v*.zip` archive from GitHub releases.
-  2. Flash the zip in **Magisk Manager** or **KernelSU Manager**.
+  2. Flash the zip in **Magisk** or **KernelSU Manager**.
   3. Reboot your device.
   4. Navigate to **Settings > System > Developer options > WebView implementation** and verify that **Vanadium WebView** is selected as the active provider.

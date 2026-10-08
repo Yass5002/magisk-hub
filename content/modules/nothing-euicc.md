@@ -48,6 +48,6 @@ Developed by reindex-ot, **nothing-euicc** (Nothing EUICC Force Enabler) is a sp
 
 1. Insert your physical programmable eSIM card into the SIM tray of your Nothing device.
 2. Download the latest `nothing-euicc.zip` from GitHub releases.
-3. Flash the module in **Magisk Manager**.
+3. Flash the module in **Magisk**.
 4. Reboot your phone.
 5. Open **Settings > Network & internet > SIMs**. The native Android eSIM setup and QR-code scanning interface will now be available.

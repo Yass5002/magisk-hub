@@ -40,6 +40,6 @@ Developed by yadavnikhil03, **SwapBoost Pro** is an intelligent memory optimizat
 ## Installation & Configuration
 
 1. Download the latest `SwapBoost-Pro-v*.zip` from GitHub releases.
-2. Flash the module in **Magisk Manager**.
+2. Flash the module in **Magisk**.
 3. Reboot your device.
 4. *(Optional)*: Fine-tune swapfile size or swappiness in `/data/adb/modules/SwapBoost-Pro/` if desired.
