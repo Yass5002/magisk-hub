@@ -10,13 +10,13 @@
   ],
   "license": "Apache-2.0",
   "icon": "assets/icons/copg.png",
-  "stars": 397,
+  "stars": 396,
   "latestRelease": {
-    "tag": "v7.3.0",
-    "publishedAt": "2026-09-29T14:16:25Z",
-    "url": "https://github.com/AlirezaParsi/COPG/releases/tag/v7.3.0",
-    "downloadUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.3.0/COPG-v7.3.0.zip",
-    "assetName": "COPG-v7.3.0.zip"
+    "tag": "v7.5.0",
+    "publishedAt": "2026-10-08T18:08:37Z",
+    "url": "https://github.com/AlirezaParsi/COPG/releases/tag/v7.5.0",
+    "downloadUrl": "https://github.com/AlirezaParsi/COPG/releases/download/v7.5.0/COPG-v7.5.0.zip",
+    "assetName": "COPG-v7.5.0.zip"
   },
   "seo": {
     "title": "COPG – Download (Magisk) | Magisk Hub",

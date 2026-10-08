@@ -13,11 +13,11 @@
   "icon": "assets/icons/magicnet.png",
   "stars": 185,
   "latestRelease": {
-    "tag": "v1.5.21",
-    "publishedAt": "2026-10-03T00:55:37Z",
-    "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.5.21",
-    "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.5.21/MagicNet-component-bin-jq-64b47114d97556740c0994d1520fef6eb438ff919ae9eae2d47f3948269bd8a2.zip",
-    "assetName": "MagicNet-component-bin-jq-64b47114d97556740c0994d1520fef6eb438ff919ae9eae2d47f3948269bd8a2.zip"
+    "tag": "v1.5.22",
+    "publishedAt": "2026-10-08T17:28:38Z",
+    "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.5.22",
+    "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.5.22/MagicNet-component-bin-magicnet-cli-c4c4d0f09023354eb96b78ab21265ff28dd38de39e883c113b7193400fb9f119.zip",
+    "assetName": "MagicNet-component-bin-magicnet-cli-c4c4d0f09023354eb96b78ab21265ff28dd38de39e883c113b7193400fb9f119.zip"
   },
   "seo": {
     "title": "MagicNet – Download (Magisk/KSU) | Magisk Hub",
