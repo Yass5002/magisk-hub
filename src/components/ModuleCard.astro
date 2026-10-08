@@ -41,7 +41,7 @@ const isTier1 = module.contentTier === 1;
 const isCommunity = !module.repo;
 ---
 
-<div class={`relative group flex flex-col justify-between h-full rounded-xl border p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
+<article class={`relative group flex flex-col justify-between h-full rounded-xl border p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
   isCommunity 
     ? 'border-indigo-100 bg-white hover:border-indigo-300' 
     : (isTier1 ? 'border-zinc-300 hover:border-zinc-400 bg-white' : 'border-zinc-200 hover:border-zinc-300 bg-white')
@@ -179,4 +179,4 @@ const isCommunity = !module.repo;
       ))}
     </div>
   </div>
-</div>
+</article>

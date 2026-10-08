@@ -27,7 +27,7 @@ const platformList = Object.values(PLATFORMS);
       </div>
 
       <div>
-        <h4 class="font-semibold text-zinc-900 text-xs">Platforms</h4>
+        <h2 class="font-semibold text-zinc-900 text-xs">Platforms</h2>
         <ul class="mt-4 space-y-2 font-mono">
           {platformList.map(p => (
             <li>
@@ -46,7 +46,7 @@ const platformList = Object.values(PLATFORMS);
       </div>
 
       <div class="col-span-2">
-        <h4 class="font-semibold text-zinc-900 text-xs">Categories</h4>
+        <h2 class="font-semibold text-zinc-900 text-xs">Categories</h2>
         <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 font-mono">
           {Object.values(CATEGORIES).map(c => (
             <li>
@@ -59,7 +59,7 @@ const platformList = Object.values(PLATFORMS);
       </div>
 
       <div>
-        <h4 class="font-semibold text-zinc-900 text-xs">Repository</h4>
+        <h2 class="font-semibold text-zinc-900 text-xs">Repository</h2>
         <ul class="mt-4 space-y-2 font-mono">
           <li>
             <a href="/security/" data-umami-event="footer-security-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">

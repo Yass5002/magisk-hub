@@ -67,6 +67,7 @@ const categorySchema = {
 
     <!-- Modules Grid (3-Column Desktop Grid) -->
     <div class="mt-6">
+      <h2 class="sr-only">Modules in {category.name}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {modules.map(mod => (
           <ModuleCard module={mod} />

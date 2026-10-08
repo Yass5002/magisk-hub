@@ -31,7 +31,7 @@ const platformList = Object.values(PLATFORMS);
       </a>
 
       <!-- Navigation Links -->
-      <nav class="hidden md:flex items-center gap-6 text-sm sm:text-base font-medium">
+      <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-6 text-sm sm:text-base font-medium">
         <a 
           href="/" 
           data-umami-event="navbar-modules-click"
@@ -55,7 +55,10 @@ const platformList = Object.values(PLATFORMS);
           Categories
         </a>
         <div class="relative group">
-          <button class={`relative py-1.5 flex items-center gap-1 transition-colors ${
+          <button 
+            aria-haspopup="true" 
+            aria-expanded="false" 
+            class={`relative py-1.5 flex items-center gap-1 transition-colors ${
             isPlatforms 
               ? 'text-zinc-900 font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-zinc-900 after:rounded-full' 
               : 'text-zinc-600 hover:text-zinc-900'
@@ -113,12 +116,13 @@ const platformList = Object.values(PLATFORMS);
         </svg>
       </a>
 
-      <!-- Mobile Hamburger Menu Button -->
       <button 
         id="mobile-menu-btn" 
         type="button"
         class="flex md:hidden items-center justify-center h-9 w-9 rounded-lg border border-zinc-200 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 transition-colors"
         aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <svg id="menu-icon-open" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -132,7 +136,7 @@ const platformList = Object.values(PLATFORMS);
 
   <!-- Mobile Navigation Drawer -->
   <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-200 bg-white px-4 py-4 space-y-4">
-    <nav class="flex flex-col space-y-1.5 text-sm font-medium">
+    <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1.5 text-sm font-medium">
       <a 
         href="/" 
         data-umami-event="navbar-modules-click"
@@ -218,6 +222,7 @@ const platformList = Object.values(PLATFORMS);
 
   toggleBtn?.addEventListener('click', () => {
     const isHidden = mobileMenu?.classList.toggle('hidden');
+    toggleBtn?.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
     if (isHidden) {
       iconOpen?.classList.remove('hidden');
       iconClose?.classList.add('hidden');
