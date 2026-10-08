@@ -1,8 +1,15 @@
 ---
+import fs from 'node:fs';
+
 const currentPath = Astro.url.pathname;
 const isModules = currentPath === '/' || currentPath.startsWith('/modules');
 const isCategories = currentPath.startsWith('/categories');
 const isPlatforms = currentPath.startsWith('/compatibility');
+
+// Base64 platform icons from prototype
+const magiskIcon = `data:image/png;base64,${fs.readFileSync('assets/icons/magisk.png').toString('base64')}`;
+const kernelsuIcon = `data:image/png;base64,${fs.readFileSync('assets/icons/kernelsu.png').toString('base64')}`;
+const apatchIcon = `data:image/png;base64,${fs.readFileSync('assets/icons/apatch.png').toString('base64')}`;
 ---
 
 <!-- Icon sprite -->
@@ -77,19 +84,19 @@ const isPlatforms = currentPath.startsWith('/compatibility');
           <div class="rounded-xl border border-zinc-200 bg-white p-1.5 shadow-lg">
             <a href="#" class="dd-item">
               <span class="flex h-7 w-7 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 p-1">
-                <img src="/assets/icons/magisk.png" alt="" class="h-5 w-5 object-contain">
+                <img src={magiskIcon} alt="" class="h-5 w-5 object-contain">
               </span>
               Magisk
             </a>
             <a href="#" class="dd-item">
               <span class="flex h-7 w-7 items-center justify-center rounded-md border border-blue-200/60 bg-blue-50/50 p-1">
-                <img src="/assets/icons/kernelsu.png" alt="" class="h-5 w-5 object-contain">
+                <img src={kernelsuIcon} alt="" class="h-5 w-5 object-contain">
               </span>
               KernelSU
             </a>
             <a href="#" class="dd-item">
               <span class="flex h-7 w-7 items-center justify-center rounded-md border border-amber-200/60 bg-amber-50/50 p-1">
-                <img src="/assets/icons/apatch.png" alt="" class="h-5 w-5 object-contain">
+                <img src={apatchIcon} alt="" class="h-5 w-5 object-contain">
               </span>
               APatch
             </a>
@@ -188,15 +195,15 @@ const isPlatforms = currentPath.startsWith('/compatibility');
       </button>
       <div id="m-install" hidden class="ml-4 flex flex-col gap-0.5 border-l border-zinc-200 pl-2">
         <a href="#" class="m-sub flex items-center gap-2">
-          <img src="/assets/icons/magisk.png" alt="" class="h-4 w-4 object-contain">
+          <img src={magiskIcon} alt="" class="h-4 w-4 object-contain">
           Magisk
         </a>
         <a href="#" class="m-sub flex items-center gap-2">
-          <img src="/assets/icons/kernelsu.png" alt="" class="h-4 w-4 object-contain">
+          <img src={kernelsuIcon} alt="" class="h-4 w-4 object-contain">
           KernelSU
         </a>
         <a href="#" class="m-sub flex items-center gap-2">
-          <img src="/assets/icons/apatch.png" alt="" class="h-4 w-4 object-contain">
+          <img src={apatchIcon} alt="" class="h-4 w-4 object-contain">
           APatch
         </a>
       </div>
