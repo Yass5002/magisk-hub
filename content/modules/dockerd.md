@@ -25,6 +25,7 @@ features:
   - "Service lifecycle utility: provides dockerd.service helper script to start, stop, restart, or tail live container logs"
   - "Native CLI toolchain: packages static docker client binaries accessible directly inside Termux or ADB shells"
   - "Standard socket integration: listens on a local Unix socket at unix:///data/adb/docker/run/docker.sock"
+faq: []
 ---
 
 ## Overview

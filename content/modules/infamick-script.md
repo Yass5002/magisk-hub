@@ -23,6 +23,7 @@ features:
   - "Hardware key remapper: easily remap Bixby, Power, Volume Up, and Volume Down key bindings"
   - "Low-level partition backup: dump and backup any physical partition directly using raw dd imaging"
   - "System maintenance & optimization: multiple cache-trim passes, boot counter resets, SELinux mode toggling, and display DPI scaling"
+faq: []
 ---
 
 ## Overview

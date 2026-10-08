@@ -24,6 +24,7 @@ features:
   - "Lightweight logcat monitor: detects system AccessibilityManagerService lifecycle events with minimal CPU and battery footprint"
   - "Ultra Battery Saver protection: counters Xiaomi's LockScreenClean routine that unceremoniously revokes accessibility privileges"
   - "Zero configuration needed: functions out of the box with automatic state persistence across reboots"
+faq: []
 ---
 
 ## Overview

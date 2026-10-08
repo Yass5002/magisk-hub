@@ -23,6 +23,7 @@ features:
   - "Terminal CLI commands: inspect status or switch states using 'gnc' and 'gnc switch'"
   - "Google App integrity preserved: disables the minus-one feed while keeping Google Search, Lens, and Assistant 100% operational"
   - "Persistent memory: remembers your preferred feed visibility state across system reboots"
+faq: []
 ---
 
 ## Overview

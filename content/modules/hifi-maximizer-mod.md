@@ -24,6 +24,7 @@ features:
   - "Thermal daemon suppression: terminates OEM thermal throttlers (`thermald`, `mi_thermald`, `thermal-engine`) that introduce scheduler jitter"
   - "Audio effect chain neutralization: cleanly bypasses `audio_effects.xml` to eliminate distortion-causing vendor equalizers and virtualizers"
   - "Dynamic Range Control (DRC) disablement: modifies audio policy XML files to remove hardware dynamic range compression"
+faq: []
 ---
 
 ## Overview

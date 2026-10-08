@@ -23,6 +23,7 @@ features:
   - "Thermal throttle curve relaxation: prevents the kernel from slashing charging speeds during moderate ambient warmth"
   - "Integrated battery safety boundaries: respects maximum voltage ceilings and emergency cutoff temperatures to prevent cell swelling"
   - "Universal root framework compatibility: functions identically across Magisk, KernelSU, and APatch"
+faq: []
 ---
 
 ## Overview

@@ -22,6 +22,7 @@ features:
   - "Three-cycle rolling retention: rotates logs across DebugAssistant.log, DebugAssistant-Boot1.log, and DebugAssistant-Boot2.log"
   - "Crash & bootloop diagnosis: preserves previous boot traces so logs from a crash or sudden panic survive the subsequent reboot"
   - "Automated redaction: filters out common user-sensitive tokens before writing traces to disk"
+faq: []
 ---
 
 ## Overview

@@ -24,6 +24,7 @@ features:
   - "Daily automated CI/CD: GitHub Actions pipeline checks for upstream Cromite releases every 24 hours to deliver prompt security patches"
   - "Integrated updateJson: provides automatic update notifications and in-app upgrades directly inside Magisk Manager"
   - "Native 64-bit performance: compiled specifically for arm64-v8a architectures for maximum page rendering speed and security"
+faq: []
 ---
 
 ## Overview

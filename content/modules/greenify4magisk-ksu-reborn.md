@@ -23,6 +23,7 @@ features:
   - "Boost Mode™ activation: enables privileged hibernation hooks without requiring legacy Xposed framework installations"
   - "Automated background app freezing: smoothly transitions dormant applications into hibernation when the screen turns off"
   - "Cross-root engine support: verified and maintained for Magisk, KernelSU, and APatch"
+faq: []
 ---
 
 ## Overview

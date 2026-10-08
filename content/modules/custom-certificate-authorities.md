@@ -25,6 +25,7 @@ features:
   - "Full BoringSSL & Flutter compatibility: injects certificates into legacy system paths required by non-Conscrypt TLS engines"
   - "Modern APEX Conscrypt support: handles Android 14+ updatable Conscrypt APEX trust stores via bind mounting"
   - "Multi-user profile support: sweeps and integrates certificates configured across secondary user and work profiles"
+faq: []
 ---
 
 ## Overview

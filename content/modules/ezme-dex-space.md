@@ -23,6 +23,7 @@ features:
   - "Space-optimized bytecode compilation: shifts AOT compilation profiles from aggressive 'speed' to compact 'space-profile'"
   - "Prevents low-memory thrashing: smaller compiled application code footprints reduce Out-of-Memory (OOM) app kills"
   - "Multi-gigabyte storage reclamation: saves substantial space in /data/dalvik-cache on devices with dozens of installed apps"
+faq: []
 ---
 
 ## Overview

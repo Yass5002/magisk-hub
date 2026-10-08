@@ -7,6 +7,14 @@ author: "wchunlin1006"
 version: "2.1.0"
 updatedAt: "2026-10-04"
 compatibility: ["LSPosed"]
+sidebarTitle: "LocusMimic Location & Route Simulator (com.locusmimic.app)"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

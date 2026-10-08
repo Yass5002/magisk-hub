@@ -22,6 +22,7 @@ features:
   - "Eliminates notification delays: stops Android from batching high-priority FCM/GCM messages during screen-off periods"
   - "Continuous background processing: ensures VoIP clients, SSH servers, torrent downloaders, and sync tools run without sleeping"
   - "Pure systemless execution: applies settings via framework IPC calls without modifying system partition files"
+faq: []
 ---
 
 ## Overview

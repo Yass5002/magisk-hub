@@ -25,6 +25,7 @@ features:
   - "Non-destructive architecture: avoids deleting system packages, applying all modifications systemlessly via property and service controls"
   - "Full uninstallation reversibility: tracks pre-install states and restores original settings and services cleanly during uninstallation"
   - "Dual variant availability: offers GhostGMS Core for maximum stability alongside GhostGMS Legacy for aggressive deep tweaks"
+faq: []
 ---
 
 ## Overview

@@ -23,6 +23,7 @@ features:
   - "Interactive CLI tool (magiskswap): inspect swap status, activate, disable, or resize swap spaces directly from Termux"
   - "Priority chaining: set custom swap priority levels to orchestrate paging hierarchy alongside zRAM"
   - "Preservation flags: toggle swapfiles on and off without needlessly re-allocating or re-writing storage blocks"
+faq: []
 ---
 
 ## Overview

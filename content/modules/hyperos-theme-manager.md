@@ -27,6 +27,7 @@ features:
   - "Premium resource unlocking: removes payment barriers and advertisements for premium themes, fonts, and icon sets"
   - "Super Icons & Widget integration: unlocks dynamic Super Icons and customizable widget shapes on both flagship and budget devices"
   - "AI wallpaper integration: exposes hidden AI generative wallpaper and depth wallpaper styling controls"
+faq: []
 ---
 
 ## Overview

@@ -22,6 +22,7 @@ features:
   - "Three calibrated aggression tiers: toggle between Normal (safe), Aggressive (deep closure), and Extreme (complete background termination)"
   - "Plaintext configuration: customize app whitelists and operational parameters using simple text configuration files"
   - "Zero terminal dependencies: runs autonomously after boot without requiring manual Termux command invocations"
+faq: []
 ---
 
 ## Overview

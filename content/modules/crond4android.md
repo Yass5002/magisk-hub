@@ -26,6 +26,7 @@ features:
   - "Anti-detection installation toggle: allows users to omit the global /system/bin/crontab binary to evade root scanners"
   - "Data persistence safeguards: supports KEEP_ON_UNINSTALL flag to protect custom task configurations across module updates"
   - "Granular boot control: disable automated boot execution at will by creating a simple MANUAL flag file"
+faq: []
 ---
 
 ## Overview

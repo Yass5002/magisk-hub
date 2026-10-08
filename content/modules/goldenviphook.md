@@ -7,6 +7,14 @@ author: "Cliencer"
 version: "v1.0.3"
 updatedAt: "2026-10-04"
 compatibility: ["LSPosed"]
+sidebarTitle: "GoldenVipHook (com.nxdxfg.GoldenVipHook)"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

@@ -25,6 +25,7 @@ features:
   - "Hookless XML manipulation: modifies `/data/system/packages.xml` directly during early boot before PackageManagerService initializes, requiring zero Zygisk overhead"
   - "Anti-sideload detection bypass: satisfies security checks in banking and enterprise apps that require installation through the official Google Play Store"
   - "App store update control: binds sideloaded open-source packages to specific managers (e.g. F-Droid, Droid-ify) to prevent accidental Play Store updates"
+faq: []
 ---
 
 ## Overview

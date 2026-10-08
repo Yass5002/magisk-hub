@@ -23,6 +23,7 @@ features:
   - "Offline local file browser: browse, select, and test custom .ttf files stored on device storage without internet access"
   - "Hybrid build queue: simultaneous queuing and installation of custom UI fonts alongside Apple/Google emoji packages"
   - "Real-time terminal telemetry: displays live flashing logs, XML parsing status, and font replacement diagnostics"
+faq: []
 ---
 
 ## Overview

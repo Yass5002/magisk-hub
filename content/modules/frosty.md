@@ -26,6 +26,7 @@ features:
   - "Screen-off automation: optionally suspends radios (Wi-Fi, Bluetooth, cellular data, GPS) and executes memory compaction after a user-configured delay"
   - "Kernel & RAM tuning: auto-optimizes ZRAM compression, LMKD / PSI pressure thresholds, and VM writeback parameters"
   - "Battery Saver refresh rate preservation: allows fine-tuning Android's native Battery Saver to maintain high refresh rates (90/120Hz) while saving power"
+faq: []
 ---
 
 ## Overview

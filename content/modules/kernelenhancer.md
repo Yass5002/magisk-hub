@@ -24,6 +24,7 @@ features:
   - "Memory & multitasking optimization: tunes dirty page writeback ratios and caching pressure for better background app retention"
   - "Universal silicon architecture: utilizes standard Linux `/sys/` and `/proc/sys/` parameters compatible with Qualcomm, MediaTek, and Exynos SoCs"
   - "Systemless execution: cleanly executes late boot shell scripts without modifying vendor or system image binaries"
+faq: []
 ---
 
 ## Overview

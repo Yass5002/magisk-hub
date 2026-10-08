@@ -25,6 +25,7 @@ features:
   - "Bytecode zip alignment (15 days): aligns uncompressed APK asset offsets on 4-byte boundaries for faster memory mapping"
   - "ART runtime optimization (30 days): synchronizes runtime profiles, prunes stale compilation artifacts, and executes background dexopt passes"
   - "Delayed boot initiation: waits 2 minutes after device startup before running checks to prevent boot-time CPU contention"
+faq: []
 ---
 
 ## Overview

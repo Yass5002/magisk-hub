@@ -24,6 +24,7 @@ features:
   - "Systemless overlay: replaces standard font definitions at /system/fonts/ without touching system partitions"
   - "Frictionless rollback: safely reverting to stock device typography requires only disabling or uninstalling the module"
   - "Open source font assets: utilizes official, freely distributable JetBrains Mono font weights"
+faq: []
 ---
 
 ## Overview

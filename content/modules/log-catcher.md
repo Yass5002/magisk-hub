@@ -23,6 +23,7 @@ features:
   - "Configurable buffer streams: selectively collect main, system, radio, and crash logcat buffers"
   - "Automated rotation & pruning: enforces maximum file limits and prunes archives older than a designated number of days (default: 7 days)"
   - "Root manager integration: native WebUI for KernelSU and APatch alongside simple text configuration for Magisk"
+faq: []
 ---
 
 ## Overview

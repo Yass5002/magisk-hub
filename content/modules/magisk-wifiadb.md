@@ -23,6 +23,7 @@ features:
   - "Configurable listening port: allows setting custom port numbers (1–65535) via a root configuration file to avoid standard port conflicts"
   - "Magisk toggle control: easily pause or activate wireless debugging via the module switch in Magisk Manager"
   - "Live diagnostic logging: writes connection states, network interfaces, and error traces to `/data/local/tmp/wifiadb.log`"
+faq: []
 ---
 
 ## Overview

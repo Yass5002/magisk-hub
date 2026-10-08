@@ -24,6 +24,7 @@ features:
   - "Interactive Terminal TUI (hid-tui): renders an interactive 75% keyboard layout and trackpad navigation inside Termux"
   - "DuckyScript 3.0 execution engine: injects automated keystroke payloads for rapid system administration, recovery scripts, and penetration testing"
   - "Automated driver self-healing: automatically resets and rebinds the Linux ConfigFS gadget subsystem if a host USB reset occurs"
+faq: []
 ---
 
 ## Overview

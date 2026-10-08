@@ -22,6 +22,7 @@ features:
   - "Restores multi-tasking capabilities: unlocks native split-screen multi-window and picture-in-picture (PiP) modes"
   - "Enables overlay permissions: removes the block on 'Display over other apps' used by chat bubbles and floating utilities"
   - "Unlocks full UI elements: restores notification app badges, launcher shortcuts, and rich system animations disabled by Android Go"
+faq: []
 ---
 
 ## Overview

@@ -23,6 +23,7 @@ features:
   - "Solves amplifier race conditions: ensures Awinic smart amps initialize only after the MediaTek DSP firmware is fully loaded"
   - "Zero ongoing CPU footprint: completes its work during the initial startup window and shuts down cleanly"
   - "Zero configuration needed: operates completely autonomously upon installation without manual tweaking"
+faq: []
 ---
 
 ## Overview

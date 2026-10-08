@@ -28,6 +28,7 @@ features:
   - "Dynamic Bluetooth codec matching: synchronizes AOSP Bluetooth sample rates directly to active wireless codecs (LDAC, aptX HD) without double resampling"
   - "Speaker DAC unlocking: boosts internal speaker mixing pipelines to 384kHz on Qualcomm chipsets (48kHz on other platforms)"
   - "Integrated DRC & HAL suppression: strips Dynamic Range Control and disables the call screening audio framework to eliminate processing latency"
+faq: []
 ---
 
 ## Overview

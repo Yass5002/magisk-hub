@@ -7,6 +7,14 @@ author: "ItosEO"
 version: "5.4"
 updatedAt: "2026-10-04"
 compatibility: ["LSPosed"]
+sidebarTitle: "LSPDoze Standby Battery & Fullscreen AOD (com.op.lspdoze)"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

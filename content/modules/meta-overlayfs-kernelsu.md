@@ -7,6 +7,14 @@ author: "AshBorn & KernelSU Devs"
 version: "1.3.4"
 updatedAt: "2026-10-04"
 compatibility: ["KernelSU", "APatch"]
+sidebarTitle: "OverlayFS MetaModule for KernelSU"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

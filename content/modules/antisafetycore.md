@@ -27,6 +27,7 @@ features:
   - "Targeted component suppression: blocks Android System SafetyCore and Android System Key Verifier"
   - "Persistent background daemon (keep_running): continuously monitors package states and re-injects placeholders if Play Services attempts a purge"
   - "Systemless systemization (systemize): mounts placeholders into system partitions to prevent user-space deletion attempts"
+faq: []
 ---
 
 ## Overview

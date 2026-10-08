@@ -28,6 +28,7 @@ features:
   - "Camera & Gallery unlocks: enables flagship camera shooting modes, super resolution, and AI photo editing tools"
   - "Display & performance tuning: unlocks unthrottled refresh rate selectors and extended battery performance profiles"
   - "Control Center modernization: upgrades low-end control centers with camera and microphone hardware privacy toggles"
+faq: []
 ---
 
 ## Overview

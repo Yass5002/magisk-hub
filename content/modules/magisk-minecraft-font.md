@@ -22,6 +22,7 @@ features:
   - "Public domain typeface: built using clean, publicly distributable pixel fonts"
   - "Systemless overlay: safely overlays /system/fonts/ via Magisk without modifying core partition files"
   - "Easy recovery: uninstall or toggle off via Magisk Manager to immediately return to default system typography"
+faq: []
 ---
 
 ## Overview

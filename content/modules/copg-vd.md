@@ -24,6 +24,7 @@ features:
   - "Complete build property emulation: overrides BRAND, DEVICE, MODEL, FINGERPRINT, BOOTLOADER, SECURITY_PATCH, and UUID"
   - "Play Integrity & Google Photos consolidation: eliminates the need for standalone spoofing modules when supplied with valid Google device hashes"
   - "Modular JSON declarative schema: easily edit or omit individual device identity keys without modifying module source code"
+faq: []
 ---
 
 ## Overview

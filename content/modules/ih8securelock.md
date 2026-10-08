@@ -24,6 +24,7 @@ features:
   - "Screenshot listener blocking: intercepts Android IPC binder interfaces to prevent applications from detecting or reporting screenshot capture events"
   - "Broad Android generation support: maintained for compatibility across Android 10 up to Android 17"
   - "Stand-alone Zygisk operation: requires no heavy Xposed or LSPosed framework layers, operating via lightweight C++ binder hooks"
+faq: []
 ---
 
 ## Overview

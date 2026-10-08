@@ -24,6 +24,7 @@ features:
   - "Advanced network modes: supports high-throughput TProxy (TCP + UDP) and TUN virtual interface routing"
   - "Automated firewall rule management: applies and clears iptables routing tables dynamically during startup and teardown"
   - "Modular configuration structure: custom configuration files stored safely under /data/adb/aurora/ across updates"
+faq: []
 ---
 
 ## Overview

@@ -26,6 +26,7 @@ features:
   - "High-definition Apple emojis: embeds complete, up-to-date iOS emoji glyph sets into the Android font rendering pipeline"
   - "Flexible modular deployment: install Arabic fonts only, Apple emojis only, or both concurrently"
   - "Zero partition footprint: overlays assets cleanly onto /system/fonts/ without touching system partitions"
+faq: []
 ---
 
 ## Overview

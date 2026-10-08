@@ -24,6 +24,7 @@ features:
   - "Global mode toggles: instantly switch Core-Only Mode or Magic Mount settings on or off directly from recovery"
   - "Interactive CLI wizard: straightforward numeric menus navigable in TWRP's built-in touchscreen terminal or via `adb shell`"
   - "Universal Magisk support: continuously maintained for compatibility across Magisk versions from v19.0 to modern v30.X builds"
+faq: []
 ---
 
 ## Overview

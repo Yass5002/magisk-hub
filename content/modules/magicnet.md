@@ -25,6 +25,7 @@ features:
   - "Universal subscription intake: supports up to five simultaneous sources across remote HTTPS links, Clash/Mihomo YAML, sing-box JSON, and base64 strings"
   - "Per-app policy routing: assign applications into Proxy, Direct, or Bypass groups with hotspot tethering sharing support"
   - "Rich administration tooling: full-featured multilingual WebUI, comprehensive terminal CLI (`cli`), and authenticated MCP server integration"
+faq: []
 ---
 
 ## Overview

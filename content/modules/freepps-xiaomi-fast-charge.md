@@ -7,6 +7,14 @@ author: "Seyud"
 version: "v1.7.0"
 updatedAt: "2026-10-04"
 compatibility: ["KernelSU", "APatch", "Magisk"]
+sidebarTitle: "FreePPS Xiaomi Public PPS Fast Charge Protocol Unlocker"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

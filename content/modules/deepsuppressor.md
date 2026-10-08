@@ -24,6 +24,7 @@ features:
   - "AMMF2 modular framework: engineered on Aurora-Magisk-Modules-Framework-2 for low CPU and RAM footprint"
   - "KernelSU WebUI integration: provides a graphical dashboard to toggle suppression policies on a per-app basis"
   - "JSON rule configuration: customize targeted processes and enabled states in suppress_config.json"
+faq: []
 ---
 
 ## Overview

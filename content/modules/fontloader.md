@@ -23,6 +23,7 @@ features:
   - "Android 12+ lazy-loading crash fix: resolves font-rendering exceptions caused by Android's modern lazy font loader"
   - "DenyList compatibility: allows sensitive applications (such as banking apps) to run on custom fonts without crashing"
   - "Transparent operation: works seamlessly alongside any existing systemless font or emoji module"
+faq: []
 ---
 
 ## Overview

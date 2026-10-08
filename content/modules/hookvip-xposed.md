@@ -7,6 +7,14 @@ author: "lovejiuwu & suzhelan"
 version: "v3.5.6"
 updatedAt: "2026-10-04"
 compatibility: ["LSPosed"]
+sidebarTitle: "HookVip Feature & Premium Unlocker (Hook.JiuWu.Xp)"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

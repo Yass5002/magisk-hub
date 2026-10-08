@@ -23,6 +23,7 @@ features:
   - "True floating multi-window: run and resize multiple apps side-by-side in desktop windowed mode"
   - "Dual root compatibility: operates identically across Magisk and KernelSU environments"
   - "Non-destructive implementation: preserves Knox security flags and stock system image integrity"
+faq: []
 ---
 
 ## Overview

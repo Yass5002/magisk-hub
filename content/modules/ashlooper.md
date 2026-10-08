@@ -23,6 +23,7 @@ features:
   - "SystemUI watchdog: monitors `com.android.systemui` health and triggers automated remediation if a crash loop is detected (3-strike policy)"
   - "Interactive local WebUI: feature-complete management panel for whitelisting modules, reviewing boot activity logs, and editing protection thresholds"
   - "Quarantine recovery vault: isolates failing scripts into a secure recovery vault, preserving their code for post-boot debugging rather than deleting them"
+faq: []
 ---
 
 ## Overview

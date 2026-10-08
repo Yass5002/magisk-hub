@@ -27,6 +27,7 @@ features:
   - "Hardware diagnostic unlocks: exposes File-based Optimization (FBO) and detailed per-app screen battery consumption statistics"
   - "Root suppression: removes the internal root and unlocked bootloader detection routine embedded in stock Security Center"
   - "Account independence: eliminates mandatory Xiaomi Account or active SIM card validation checks"
+faq: []
 ---
 
 ## Overview

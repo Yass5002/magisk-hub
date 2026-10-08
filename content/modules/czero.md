@@ -25,6 +25,7 @@ features:
   - "High-frequency app cache sweeping: targets bloated social, video, and e-commerce application caches automatically"
   - "Filesystem F2FS garbage collection: triggers storage controller GC routines to reduce flash fragmentation and maintain high write speeds"
   - "Empty tree pruning & background suppression: sweeps dead folders and throttles rogue background services from waking CPU cores"
+faq: []
 ---
 
 ## Overview

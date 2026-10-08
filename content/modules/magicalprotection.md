@@ -23,6 +23,7 @@ features:
   - "Automated CI/CD releases: updates and filter consolidations are generated automatically via GitHub Actions pipelines"
   - "Dual-component versioning: tracks both the core module codebase (mv) and the underlying filter hostlist database (hv)"
   - "Comprehensive domain protection: blocks advertising networks, third-party analytics trackers, telemetry endpoints, and known malicious domains"
+faq: []
 ---
 
 ## Overview

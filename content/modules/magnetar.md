@@ -24,6 +24,7 @@ features:
   - "Full hardware scope: synchronizes CPU cluster scaling, GPU render thresholds, memory compaction, and I/O scheduler queues"
   - "Zero configuration necessity: self-calibrating background daemon operates out of the box without requiring manual profile switching"
   - "Integrated diagnostic CLI: built-in command line tooling (`magnetar --bugreport`) captures system metrics and kernel node status for triage"
+faq: []
 ---
 
 ## Overview

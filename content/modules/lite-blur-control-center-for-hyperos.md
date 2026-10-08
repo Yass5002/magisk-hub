@@ -24,6 +24,7 @@ features:
   - "Frosted power menu: renders smooth background blur behind the HyperOS reboot and shutdown menu"
   - "Optimized for budget silicon: tailored specifically for low-end and mid-range Helio, Dimensity, and Snapdragon chipsets"
   - "Systemless overlay: applies changes via runtime resource overlays without touching system partition integrity"
+faq: []
 ---
 
 ## Overview

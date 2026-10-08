@@ -25,6 +25,7 @@ features:
   - "Gaming thermal mitigation: prevents battery cell overheating and thermal throttling during long gaming sessions while plugged into power"
   - "Developer workstation friendly: protects device batteries from degradation during prolonged continuous ADB development sessions"
   - "Transparent event telemetry: logs screen state transitions and battery driver responses to /sdcard/charging_bypass.log"
+faq: []
 ---
 
 ## Overview

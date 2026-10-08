@@ -23,6 +23,7 @@ features:
   - "Procedure Linkage Table (PLT) interception: leverages PerformanC PLTI to intercept formatting functions before log records hit buffers"
   - "SELinux context sanitization: scrubs revealing root signatures, package names, and proprietary domain names from system audit traces"
   - "Anti-detection defense: prevents anti-cheat and banking applications from scraping SELinux audit logs to identify root modifications"
+faq: []
 ---
 
 ## Overview

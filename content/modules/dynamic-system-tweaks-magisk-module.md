@@ -23,6 +23,7 @@ features:
   - "Thermal-aware scaling: boosts CPU responsiveness and frame render queues while preventing thermal saturation"
   - "Virtual memory calibration: adjusts Linux vm.dirty ratios and swappiness parameters for smoother app transitions"
   - "Broad distribution compatibility: hosted on trusted repositories including the IzzySoft Magisk repository"
+faq: []
 ---
 
 ## Overview

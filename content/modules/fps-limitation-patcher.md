@@ -24,6 +24,7 @@ features:
   - "Thermal throttling bypass: removes hardcoded 60 FPS downclocking ceilings enforced during battery saver or elevated temperatures"
   - "System-wide high refresh rate: forces 90Hz, 120Hz, and 144Hz panel refresh rates across games and third-party apps"
   - "Zero partition modification: overlays the patched PowerKeeper binary systemlessly over /system/app/ or /product/app/"
+faq: []
 ---
 
 ## Overview

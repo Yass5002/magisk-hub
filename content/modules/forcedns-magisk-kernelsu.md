@@ -24,6 +24,7 @@ features:
   - "Zero battery overhead: functions entirely inside the Linux networking stack without persistent background VPN tunnels"
   - "NextDNS DoT integration: provides dedicated native DNS-over-TLS linking for NextDNS accounts alongside Cloudflare and AdGuard profiles"
   - "Local WebUI management: select upstream DNS resolvers directly inside Magisk and KernelSU manager dashboards"
+faq: []
 ---
 
 ## Overview

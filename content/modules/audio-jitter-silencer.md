@@ -25,6 +25,7 @@ features:
   - "Wi-Fi suspend prevention: disables Wi-Fi suspend optimizations in the network manager to ensure steady data streaming to network DACs"
   - "Automated Doze whitelist integration: merges audio players, audio servers, and DAC HALs into Android's power exemption list (`deviceidle.xml`)"
   - "Safe state restoration: maintains clean backups of `/data/system/deviceidle.xml` and restores them automatically upon uninstallation"
+faq: []
 ---
 
 ## Overview

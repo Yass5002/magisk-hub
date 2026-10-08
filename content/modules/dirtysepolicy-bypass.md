@@ -23,6 +23,7 @@ features:
   - "Virtual SELinux filesystem virtualization: intercepts direct open/read/write calls to /sys/fs/selinux/access and context nodes"
   - "Sequence counter spoofing: masks policy load counter changes in /sys/fs/selinux/status to conceal runtime sepolicy mutations"
   - "App-Zygote sandbox isolation: prevents isolated service processes from enumerating custom framework injection types"
+faq: []
 ---
 
 ## Overview

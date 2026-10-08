@@ -24,6 +24,7 @@ features:
   - "Display pipeline overrides: fakes panel refresh rate ceilings, HDR10/Dolby Vision compliance, and wide color gamuts (DCI-P3)"
   - "Hardware profile masquerading: reports flagship device brands, SoC architecture capabilities, and simulated RAM pools"
   - "Bundled manager application: includes graphical companion APK inside the archive for profile selection and per-app injection"
+faq: []
 ---
 
 ## Overview

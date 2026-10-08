@@ -26,6 +26,7 @@ features:
   - "Stealth tmpfs concealment: integrates with meta-hybrid_mount to eliminate detectable tmpfs mount points"
   - "APEX partition compatibility: handles modern Android 14+ updatable Conscrypt APEX trust stores"
   - "Simple two-step workflow: install certificate in Android Settings and reboot to achieve global application trust"
+faq: []
 ---
 
 ## Overview

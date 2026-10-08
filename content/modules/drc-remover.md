@@ -25,6 +25,7 @@ features:
   - "Precision XML patching: substitutes speaker_drc_enabled='true' declarations with 'false' across all hardware sinks"
   - "Wide output coverage: disables dynamic compression across internal speakers, wired 3.5mm analog outputs, Bluetooth A2DP, and USB DACs"
   - "Zero audio latency overhead: acts solely on vendor XML declarations without running persistent background daemons"
+faq: []
 ---
 
 ## Overview

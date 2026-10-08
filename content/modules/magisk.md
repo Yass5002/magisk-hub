@@ -38,7 +38,7 @@ faq:
 
 ## Overview
 
-Created by John Wu (@topjohnwu), **Magisk** is the defacto standard rooting platform for modern Android devices. Unlike legacy rooting utilities that physically modified the `/system` block device, Magisk operates **systemlessly**. It intercepts the Linux boot sequence by modifying the kernel ramdisk (`init`), pivoting the root filesystem into an overlay, and mounting custom binaries and module assets on top of existing system paths.
+Created by John Wu (@topjohnwu), **Magisk** is the de facto standard rooting platform for modern Android devices. Unlike legacy rooting utilities that physically modified the `/system` block device, Magisk operates **systemlessly**. It intercepts the Linux boot sequence by modifying the kernel ramdisk (`init`), pivoting the root filesystem into an overlay, and mounting custom binaries and module assets on top of existing system paths.
 
 Magisk includes:
 1. **`magiskd`**: The background root daemon handling superuser privilege escalation.

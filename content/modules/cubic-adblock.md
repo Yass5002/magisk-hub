@@ -23,6 +23,7 @@ features:
   - "Essential service compatibility: meticulously whitelists required API endpoints for Google services, Microsoft accounts, Facebook login, and Samsung cloud features"
   - "System-wide coverage: blocks banners, tracking scripts, and video interstitials across both web browsers and native third-party apps"
   - "Automated list maintenance: upstream hosts definitions actively maintained and updated via automated CI workflows"
+faq: []
 ---
 
 ## Overview

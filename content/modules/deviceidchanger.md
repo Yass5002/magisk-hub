@@ -23,6 +23,7 @@ features:
   - "Stealthy systemless operation: eliminates the need for third-party ID-changer APKs that often trigger banking anti-fraud scanners"
   - "FOSS and ad-free: lightweight open-source architecture with zero analytics, trackers, or commercial monetization"
   - "Intuitive WebUI: retro-themed 7.css user interface accessible directly from root manager dashboards"
+faq: []
 ---
 
 ## Overview

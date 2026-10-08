@@ -24,6 +24,7 @@ features:
   - "Multi-ROM compatibility: universally functions across AOSP, LineageOS, MIUI, and HyperOS without hardcoded OEM string checks"
   - "Integrated gesture overlays: incorporates Android Q and R gesture styles for smooth entry and exit animations"
   - "Systemless installation: overlays display framework configurations without modifying core system partitions"
+faq: []
 ---
 
 ## Overview

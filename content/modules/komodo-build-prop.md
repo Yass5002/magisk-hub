@@ -26,6 +26,7 @@ features:
   - "TrickyStore integration: generates and maintains /data/adb/tricky_store/target.txt with automatic broken-TEE detection"
   - "Custom ROM sanitization: scrubs tell-tale custom ROM markers (such as test-keys, lineage, and userdebug prefixes)"
   - "Pixel sysconfig integration: bundles permission and config files for Google Adaptive Charging, Quick Tap, and Next-Generation Assistant"
+faq: []
 ---
 
 ## Overview

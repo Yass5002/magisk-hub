@@ -23,6 +23,7 @@ features:
   - "RaiRin-AI battery heuristics: dynamically aligns core power states to active foreground workload patterns"
   - "Devfreq & GPU bus modulation: scales down memory bus frequencies and GPU clock idle floors during lightweight UI tasks"
   - "Integrated webroot WebUI: provides an interactive browser-based dashboard rendered directly inside supported root managers"
+faq: []
 ---
 
 ## Overview

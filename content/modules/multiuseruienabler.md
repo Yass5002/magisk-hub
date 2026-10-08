@@ -23,6 +23,7 @@ features:
   - "Zero Zygisk requirement: operates purely through system property overlays without needing Zygisk runtime hooks"
   - "Isolated sandboxes: provides separate application data, storage, and home screens for secondary users or guest accounts"
   - "Proven OEM compatibility: successfully verified on Samsung One UI Core and custom OEM builds"
+faq: []
 ---
 
 ## Overview

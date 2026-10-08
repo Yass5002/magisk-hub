@@ -26,6 +26,7 @@ features:
   - "MediaTek fpsgo & perfmgr tuning: remaps DDR frequency tables and targets 48, 60, 90, and 120 FPS targets for consistent frame pacing"
   - "Pixelworks Iris display chip calibration: injects tuned `iris_configs.xml` and helper routines to optimize MEMC and display engine pipelines"
   - "Dynamic cloud mode routing: switches booster configuration JSON files based on detected kernel build timestamps and revision flags"
+faq: []
 ---
 
 ## Overview

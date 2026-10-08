@@ -24,6 +24,7 @@ features:
   - "Unlocked system widgets: provides access to the complete library of clock, weather, battery, and quick-tool widgets"
   - "Smooth scroll physics: refines scrolling animations and frame pacing throughout the widget feed"
   - "Xiaomi.eu base integration: incorporates multi-language improvements and debloated card assets from the Xiaomi.eu community base"
+faq: []
 ---
 
 ## Overview

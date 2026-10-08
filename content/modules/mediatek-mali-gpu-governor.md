@@ -7,6 +7,14 @@ author: "Seyud & Tools-cx-app"
 version: "v2.12.3"
 updatedAt: "2026-10-04"
 compatibility: ["KernelSU", "APatch", "Magisk"]
+sidebarTitle: "Mediatek Mali GPU Governor"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

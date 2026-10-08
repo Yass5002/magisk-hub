@@ -23,6 +23,7 @@ features:
   - "Material You visual design: dynamic thematic styling matching Android wallpaper color palettes"
   - "Offline & private storage: stores all copied items locally without analytics or remote cloud synchronizations"
   - "Searchable clip archive: instant full-text filtering and quick re-copying directly from a single-screen dashboard"
+faq: []
 ---
 
 ## Overview

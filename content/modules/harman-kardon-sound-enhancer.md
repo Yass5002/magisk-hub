@@ -7,6 +7,14 @@ author: "xiaoran777"
 version: "bate1"
 updatedAt: "2026-10-04"
 compatibility: ["Magisk", "KernelSU", "APatch"]
+sidebarTitle: "Harman Kardon Sound Enhancement & Dolby Driver"
+tier: 1
+searchQueries: []
+prerequisites: []
+conflicts: []
+configPaths: []
+features: []
+faq: []
 ---
 
 ## Overview & System Architecture

@@ -26,6 +26,7 @@ features:
   - "Logging and wakelock suppression: lowers redundant debugging logcat overhead and mitigates aggressive background wakeups"
   - "I/O and CPU governor scheduling: adjusts Linux scheduler energy profiles to favor energy-efficient CPU cluster residency"
   - "Pure systemless execution: applies configuration scripts at late service boot without modifying the physical system or vendor partitions"
+faq: []
 ---
 
 ## Overview

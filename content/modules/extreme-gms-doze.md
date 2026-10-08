@@ -23,6 +23,7 @@ features:
   - "Standby endurance boost: prevents wakelock churn to keep the processor in deep sleep states during idle hours"
   - "Automatic service recovery: immediately restores Play Services APIs when the user unlocks or illuminates the display"
   - "Install-and-forget operation: executes autonomously without requiring manual background service whitelisting"
+faq: []
 ---
 
 ## Overview

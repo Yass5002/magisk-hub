@@ -24,6 +24,7 @@ features:
   - "Enhanced animation transitions: smooths the visual handover between the AOD clock state, the lock screen, and the primary launcher"
   - "Universal hardware deployment: functions across AMOLED displays regardless of budget or mid-range market segmentation"
   - "Non-destructive systemless replacement: overlays the stock com.miui.aod package systemlessly"
+faq: []
 ---
 
 ## Overview

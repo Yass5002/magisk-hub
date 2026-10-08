@@ -25,6 +25,7 @@ features:
   - "Automated game profile switching: transitions between ECO, Balanced, and Performance modes upon package launch"
   - "Shared library preloading: accelerates game stage and level loading times by pre-caching critical native libraries in memory"
   - "Kernel subsystem control: exposes direct tuning for CPU frequency caps, CPU governors, and block I/O schedulers"
+faq: []
 ---
 
 ## Overview

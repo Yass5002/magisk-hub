@@ -27,6 +27,7 @@ features:
   - "Deep file categorization & size filters: groups and purges specific file extensions based on min/max byte thresholds in FileConfigs"
   - "Ultra-low-overhead scheduler: automated maintenance managed by a lightweight Timed background process without daemon bloat"
   - "Full terminal TUI: launch an interactive, colorized management dashboard by typing ClearBox in any root terminal"
+faq: []
 ---
 
 ## Overview

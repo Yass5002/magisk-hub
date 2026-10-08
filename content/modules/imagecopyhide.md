@@ -24,6 +24,7 @@ features:
   - "Configurable scan cadence: adjust polling intervals directly through a plain-text configuration file (default: 45 seconds)"
   - "Toggleable execution: enable or disable the copying routine at runtime without uninstalling the module"
   - "Zero-overhead shell service: runs as a background service initiated at late system boot"
+faq: []
 ---
 
 ## Overview

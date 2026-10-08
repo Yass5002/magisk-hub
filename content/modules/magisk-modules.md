@@ -22,6 +22,7 @@ features:
   - "Magisk Auto ADB: automatically starts the Android Debug Bridge (ADB) daemon listening on designated ports upon device startup"
   - "Autonomous operation: clean, lightweight shell daemons executing during system boot without requiring third-party companion apps"
   - "Open source MIT license: auditable POSIX-compliant scripting designed for embedded Android systems and media boxes"
+faq: []
 ---
 
 ## Overview
