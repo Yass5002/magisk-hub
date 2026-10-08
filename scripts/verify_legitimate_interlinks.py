@@ -97,7 +97,8 @@ for slug, m in sorted(catalog.items()):
                     fm_prereqs = fm.get('prerequisites', []) or []
                     fm_conflicts = fm.get('conflicts', []) or []
                     body_lines = parts[2].splitlines()
-                except Exception:
+                except Exception as e:
+                    print(f"Error parsing YAML in {md_path}: {e}")
                     body_lines = raw.splitlines()
         else:
             body_lines = raw.splitlines()

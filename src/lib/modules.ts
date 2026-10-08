@@ -275,7 +275,7 @@ export function getModulesByCategory(category: string): ModuleData[] {
 }
 
 export function getModulesByCompatibility(platform: string): ModuleData[] {
-  return getAllModules().filter(m => m.compatibility.includes(platform as any));
+  return getAllModules().filter(m => m.compatibility.includes(platform as PlatformCompatibility));
 }
 
 export function getStats() {

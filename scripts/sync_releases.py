@@ -108,8 +108,8 @@ if os.path.isfile('/tmp/deep_tree_icons.json'):
                     ic_list = v.get('icons', [])
                     if ic_list:
                         KNOWN_ICONS[r] = ic_list[0]
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Error reading deep_tree_icons.json: {e}", file=sys.stderr)
 
 
 
@@ -203,10 +203,12 @@ def check_asset_head(url):
             try:
                 with urllib.request.urlopen(get_req, timeout=10) as get_resp:
                     return get_resp.status in (200, 206)
-            except Exception:
+            except Exception as get_e:
+                print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
                 return False
         return False
-    except Exception:
+    except Exception as e:
+        print(f"HEAD check failed for {url}: {e}", file=sys.stderr)
         return False
 
 
@@ -222,7 +224,8 @@ def download_file(url, dest_path):
                 with open(dest_path, "wb") as f:
                     f.write(resp.read())
                 return True
-    except Exception:
+    except Exception as e:
+        print(f"Failed to download {url}: {e}", file=sys.stderr)
         return False
     return False
 
@@ -250,8 +253,8 @@ def get_github_token():
         proc = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True)
         if proc.returncode == 0 and proc.stdout.strip():
             return proc.stdout.strip()
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Failed to get GitHub token via CLI: {e}", file=sys.stderr)
     return None
 
 
@@ -315,8 +318,8 @@ def fetch_graphql_batch(batch_repos):
                     if orig_r:
                         results[orig_r] = repo_data
                 return results
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"GraphQL API request failed: {e}", file=sys.stderr)
 
     # Fallback to gh CLI
     try:
@@ -330,8 +333,8 @@ def fetch_graphql_batch(batch_repos):
                         results[orig_r] = repo_data
                 if results:
                     return results
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"gh CLI JSON parsing failed: {e}", file=sys.stderr)
 
         for orig_r in batch_repos:
             parts = orig_r.split('/')

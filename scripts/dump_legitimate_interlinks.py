@@ -99,7 +99,8 @@ def analyze_module(slug, module_data, content_dir, aliases, catalog):
                     fm_prereqs = fm.get('prerequisites', []) or []
                     fm_conflicts = fm.get('conflicts', []) or []
                     body_text = parts[2]
-                except Exception:
+                except Exception as e:
+                    print(f"Error parsing YAML in {md_path}: {e}")
                     body_text = raw
         else:
             body_text = raw
