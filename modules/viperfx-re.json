@@ -11,13 +11,13 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 361,
+  "stars": 362,
   "latestRelease": {
-    "tag": "v2.1.0",
-    "publishedAt": "2026-09-13T15:46:04Z",
-    "url": "https://github.com/likelikeslike/ViPERFX_RE/releases/tag/v2.1.0",
-    "downloadUrl": "https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.0/ViPER4Android-RE-v2.1.0.zip",
-    "assetName": "ViPER4Android-RE-v2.1.0.zip"
+    "tag": "v2.1.1",
+    "publishedAt": "2026-10-09T15:39:21Z",
+    "url": "https://github.com/likelikeslike/ViPERFX_RE/releases/tag/v2.1.1",
+    "downloadUrl": "https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.1/ViPER4Android-RE-AIDL-v2.1.1.zip",
+    "assetName": "ViPER4Android-RE-AIDL-v2.1.1.zip"
   },
   "seo": {
     "title": "ViPERFX_RE – Download (Magisk/KSU) | Magisk Hub",
