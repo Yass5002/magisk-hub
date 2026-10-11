@@ -1,0 +1,46 @@
+---
+title: Magisk Documentation
+description: Complete step-by-step guides for installing Magisk, unlocking bootloaders, extracting partitions, and fixing Android boot errors.
+template: splash
+hero:
+  title: Magisk Documentation
+  tagline: Complete step-by-step guides for installing Magisk, unlocking bootloaders, extracting partitions, and fixing Android boot errors.
+  image:
+    file: ../../assets/magisk.png
+  actions:
+    - text: Get Started
+      link: /magisk/guide/what-is-magisk
+      icon: right-arrow
+      variant: primary
+    - text: Device Guides
+      link: /magisk/install/xiaomi-boot
+      icon: right-arrow
+    - text: Download Magisk
+      link: /magisk/guide/download
+      icon: external
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <LinkCard
+    title="Device-Specific Installation"
+    description="Step-by-step guides for Xiaomi, Redmi, OnePlus, Realme, Motorola, Google Pixel, Samsung, and LightSpeed Virtual Machine."
+    href="/magisk/install/xiaomi-boot"
+  />
+  <LinkCard
+    title="Bootloader Unlocking"
+    description="Official BL unlock workflows for Xiaomi, Snapdragon and MediaTek OnePlus/Realme models, Motorola, Pixel, and Samsung."
+    href="/magisk/unlock/xiaomi"
+  />
+  <LinkCard
+    title="Image Extraction & ROMs"
+    description="How to extract boot.img and init_boot.img using payload-dumper-go, Compose, MT Manager, and official ROM tools."
+    href="/magisk/extract/payload-dumper-boot"
+  />
+  <LinkCard
+    title="Troubleshooting & Error Fixes"
+    description="Fix fastboot 'waiting for any device', Samsung One UI error -45, AVB verification bootloops, and Android 15 issues."
+    href="/magisk/troubleshooting/waiting-for-device"
+  />
+</CardGrid>

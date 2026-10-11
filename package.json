@@ -2,10 +2,16 @@
   "name": "magisk-hub",
   "version": "1.0.0",
   "description": "An active-source directory for Magisk, KernelSU, and APatch modules",
+  "workspaces": [
+    "docs/magisk"
+  ],
   "scripts": {
     "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets', 'public/assets', {recursive:true});\"",
-    "dev": "npm run copy-assets && astro dev",
-    "build": "npm run copy-assets && astro build",
+    "build:hub": "astro build",
+    "build:magisk": "npm --workspace=docs/magisk run build",
+    "build": "npm run copy-assets && npm run build:hub && npm run build:magisk",
+    "dev:hub": "npm run copy-assets && astro dev",
+    "dev:magisk": "npm --workspace=docs/magisk run dev",
     "preview": "astro preview",
     "validate": "python3 scripts/validate_module.py"
   },

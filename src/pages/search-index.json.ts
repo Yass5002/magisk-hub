@@ -39,7 +39,7 @@ export const GET: APIRoute = async () => {
       type: 'install' as const,
       title: 'Install Magisk',
       subtitle: 'Systemless root & Zygisk environment',
-      url: '#',
+      url: '/magisk/',
       badge: 'Install',
       icon: '/assets/icons/magisk.png',
       keywords: 'install magisk root'
@@ -72,7 +72,7 @@ export const GET: APIRoute = async () => {
       type: 'guide' as const,
       title: 'Guides & Articles',
       subtitle: 'Rooting tutorials, setup workflows, and best practices',
-      url: '#',
+      url: '/guides/',
       badge: 'Guides',
       keywords: 'guides articles tutorials blog'
     }

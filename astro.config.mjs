@@ -11,4 +11,7 @@ export default defineConfig({
     sitemap(),
   ],
   output: 'static',
+  redirects: {
+    '/modules/magisk': '/magisk',
+  },
 });
