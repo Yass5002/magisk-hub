@@ -4,7 +4,12 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/modules/magisk/?",
+      "source": "/modules/magisk",
+      "destination": "/magisk/",
+      "permanent": true
+    },
+    {
+      "source": "/modules/magisk/(.*)",
       "destination": "/magisk/",
       "permanent": true
     }
