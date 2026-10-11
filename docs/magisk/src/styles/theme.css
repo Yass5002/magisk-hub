@@ -10,37 +10,14 @@
 @tailwind utilities;
 
 :root {
-  /* Dynamic header height matching Magisk Hub navbar */
-  --sl-nav-height: 3.5rem;
-  
-  /* Color theme matching Magisk Hub */
-  color-scheme: light;
-  --sl-color-white: #09090b;
-  --sl-color-gray-1: #18181b;
-  --sl-color-gray-2: #27272a;
-  --sl-color-gray-3: #52525b;
-  --sl-color-gray-4: #71717a;
-  --sl-color-gray-5: #a1a1aa;
-  --sl-color-gray-6: #e4e4e7;
-  --sl-color-gray-7: #f4f4f5;
-  --sl-color-black: #ffffff;
-
-  --sl-color-accent-low: #fef3c7;
-  --sl-color-accent: #d97706;
-  --sl-color-accent-high: #78350f;
-
-  --sl-color-bg: #fafafa;
-  --sl-color-bg-nav: #ffffff;
-  --sl-color-bg-sidebar: #fafafa;
-  --sl-color-hairline: #e4e4e7;
-  --sl-color-hairline-light: #f4f4f5;
-
+  /* Dynamic header height: 3.5rem navbar + 2.5rem subheader on mobile = 6rem */
+  --sl-nav-height: 6rem;
   --sl-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --sl-font-mono: 'JetBrains Mono', monospace;
-  --sl-content-width: 52rem;
+  --sl-content-width: 56rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 50rem) {
   :root {
     --sl-nav-height: 4rem;
   }
@@ -52,46 +29,14 @@
   }
 }
 
-/* Force light appearance to match Magisk Hub */
-:root[data-theme='dark'],
-:root[data-theme='light'] {
-  --sl-color-white: #09090b;
-  --sl-color-gray-1: #18181b;
-  --sl-color-gray-2: #27272a;
-  --sl-color-gray-3: #52525b;
-  --sl-color-gray-4: #71717a;
-  --sl-color-gray-5: #a1a1aa;
-  --sl-color-gray-6: #e4e4e7;
-  --sl-color-gray-7: #f4f4f5;
-  --sl-color-black: #ffffff;
-
-  --sl-color-accent-low: #fef3c7;
-  --sl-color-accent: #d97706;
-  --sl-color-accent-high: #78350f;
-
-  --sl-color-bg: #fafafa;
-  --sl-color-bg-nav: #ffffff;
-  --sl-color-bg-sidebar: #fafafa;
-  --sl-color-hairline: #e4e4e7;
-  --sl-color-hairline-light: #f4f4f5;
-}
-
-body {
-  background-color: var(--sl-color-bg) !important;
-  color: var(--sl-color-gray-1) !important;
-  font-family: var(--sl-font-sans) !important;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Starlight header container reset so our custom header spans full width without padding clipping */
+/* Starlight header container reset so custom header spans full width without clipping */
 header.header {
   padding: 0 !important;
   border-bottom: 0 !important;
-  height: var(--sl-nav-height) !important;
+  height: auto !important;
   background-color: transparent !important;
 }
 
-/* Hide Starlight default search, title and theme select inside the overridden header slot */
 .starlight-header-wrapper {
   width: 100%;
 }
@@ -99,12 +44,6 @@ header.header {
 /* Code block typography */
 pre, code {
   font-family: var(--sl-font-mono) !important;
-}
-
-/* Smooth active sidebar links */
-[aria-current='page'] {
-  font-weight: 600 !important;
-  color: #18181b !important;
 }
 
 /* Clean scrollbar */

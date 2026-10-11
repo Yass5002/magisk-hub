@@ -42,6 +42,6 @@ If you are new to GitHub:
 ## Next Steps
 
 Once the Magisk app is installed on your device:
-- Follow the [Universal Installation Overview](/magisk/guide/overview) to unlock your bootloader and patch your boot partition.
+- Follow the [Universal Installation Overview](/magisk/) to unlock your bootloader and patch your boot partition.
 - Or jump directly to your brand in the [Device-Specific Installation Guides](/magisk/install/xiaomi-boot).
 - If you want to update or switch branches later, see [Switching Magisk Versions](/magisk/guide/switch-version).

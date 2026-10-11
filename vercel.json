@@ -12,6 +12,16 @@
       "source": "/modules/magisk/(.*)",
       "destination": "/magisk/",
       "permanent": true
+    },
+    {
+      "source": "/magisk/guide/overview",
+      "destination": "/magisk/",
+      "permanent": true
+    },
+    {
+      "source": "/magisk/guide/overview/(.*)",
+      "destination": "/magisk/",
+      "permanent": true
     }
   ],
   "headers": [

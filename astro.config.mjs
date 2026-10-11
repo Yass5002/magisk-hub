@@ -13,5 +13,6 @@ export default defineConfig({
   output: 'static',
   redirects: {
     '/modules/magisk': '/magisk',
+    '/magisk/guide/overview': '/magisk',
   },
 });

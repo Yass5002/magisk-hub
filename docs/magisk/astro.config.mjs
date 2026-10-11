@@ -33,8 +33,7 @@ export default defineConfig({
         {
           label: 'Guide',
           items: [
-            { label: 'What is Magisk?', slug: 'guide/what-is-magisk' },
-            { label: 'Installation Overview', slug: 'guide/overview' },
+            { label: 'Installation Overview', link: '/magisk/' },
             { label: 'Download Magisk', slug: 'guide/download' },
             { label: 'Switch / Update Version', slug: 'guide/switch-version' },
           ],
