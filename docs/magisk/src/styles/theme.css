@@ -5,11 +5,62 @@
 @import '@fontsource/jetbrains-mono/400.css';
 @import '@fontsource/jetbrains-mono/500.css';
 
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* Enforce Starlight's authentic default light/white theme everywhere */
+:root,
+:root[data-theme='light'],
+:root[data-theme='dark'] {
+  color-scheme: light !important;
+
+  /* Official Starlight default light mode tokens from props.css */
+  --sl-color-white: hsl(224, 10%, 10%);
+  --sl-color-gray-1: hsl(224, 14%, 16%);
+  --sl-color-gray-2: hsl(224, 10%, 23%);
+  --sl-color-gray-3: hsl(224, 7%, 36%);
+  --sl-color-gray-4: hsl(224, 6%, 56%);
+  --sl-color-gray-5: hsl(224, 6%, 77%);
+  --sl-color-gray-6: hsl(224, 20%, 94%);
+  --sl-color-gray-7: hsl(224, 19%, 97%);
+  --sl-color-black: hsl(0, 0%, 100%);
+
+  --sl-color-orange-high: hsl(var(--sl-hue-orange, 41), 80%, 25%);
+  --sl-color-orange: hsl(var(--sl-hue-orange, 41), 90%, 60%);
+  --sl-color-orange-low: hsl(var(--sl-hue-orange, 41), 90%, 88%);
+  --sl-color-green-high: hsl(var(--sl-hue-green, 140), 80%, 22%);
+  --sl-color-green: hsl(var(--sl-hue-green, 140), 90%, 46%);
+  --sl-color-green-low: hsl(var(--sl-hue-green, 140), 85%, 90%);
+  --sl-color-blue-high: hsl(var(--sl-hue-blue, 212), 80%, 30%);
+  --sl-color-blue: hsl(var(--sl-hue-blue, 212), 90%, 60%);
+  --sl-color-blue-low: hsl(var(--sl-hue-blue, 212), 88%, 90%);
+  --sl-color-purple-high: hsl(var(--sl-hue-purple, 270), 90%, 30%);
+  --sl-color-purple: hsl(var(--sl-hue-purple, 270), 90%, 60%);
+  --sl-color-purple-low: hsl(var(--sl-hue-purple, 270), 80%, 90%);
+  --sl-color-red-high: hsl(var(--sl-hue-red, 350), 80%, 30%);
+  --sl-color-red: hsl(var(--sl-hue-red, 350), 90%, 60%);
+  --sl-color-red-low: hsl(var(--sl-hue-red, 350), 80%, 90%);
+
+  /* Default Starlight signature Royal Blue accent */
+  --sl-color-accent-high: hsl(234, 80%, 30%);
+  --sl-color-accent: hsl(234, 90%, 60%);
+  --sl-color-accent-low: hsl(234, 88%, 90%);
+
+  --sl-color-text: var(--sl-color-gray-1);
+  --sl-color-text-accent: var(--sl-color-accent);
+  --sl-color-text-invert: var(--sl-color-black);
+  --sl-color-bg: var(--sl-color-black);
+  --sl-color-bg-nav: var(--sl-color-gray-7);
+  --sl-color-bg-sidebar: var(--sl-color-bg);
+  --sl-color-bg-inline-code: var(--sl-color-gray-6);
+  --sl-color-bg-accent: var(--sl-color-accent);
+  --sl-color-hairline-light: var(--sl-color-gray-6);
+  --sl-color-hairline-shade: var(--sl-color-gray-6);
+
+  --sl-shadow-sm: 0px 1px 1px hsla(0, 0%, 0%, 0.06), 0px 2px 1px hsla(0, 0%, 0%, 0.06);
+  --sl-shadow-md: 0px 8px 4px hsla(0, 0%, 0%, 0.03), 0px 5px 2px hsla(0, 0%, 0%, 0.03),
+    0px 3px 2px hsla(0, 0%, 0%, 0.06), 0px 1px 1px hsla(0, 0%, 0%, 0.06);
+
   /* Dynamic header height: 3.5rem navbar + 2.5rem subheader on mobile = 6rem */
   --sl-nav-height: 6rem;
   --sl-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -18,15 +69,24 @@
 }
 
 @media (min-width: 50rem) {
-  :root {
+  :root,
+  :root[data-theme='light'],
+  :root[data-theme='dark'] {
     --sl-nav-height: 4rem;
   }
 }
 
 @media (min-width: 1024px) {
-  :root {
+  :root,
+  :root[data-theme='light'],
+  :root[data-theme='dark'] {
     --sl-nav-height: 5rem;
   }
+}
+
+html, body {
+  background-color: #ffffff !important;
+  color: hsl(224, 14%, 16%) !important;
 }
 
 /* Starlight header container reset so custom header spans full width without clipping */
@@ -39,11 +99,6 @@ header.header {
 
 .starlight-header-wrapper {
   width: 100%;
-}
-
-/* Code block typography */
-pre, code {
-  font-family: var(--sl-font-mono) !important;
 }
 
 /* Clean scrollbar */

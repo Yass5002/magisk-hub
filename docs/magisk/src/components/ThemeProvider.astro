@@ -1,0 +1,10 @@
+---
+---
+{/* Force permanent light theme matching Magisk Hub pure white style */}
+<script is:inline>
+  document.documentElement.dataset.theme = 'light';
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('starlight-theme', 'light');
+  }
+</script>
+<template id="theme-icons"></template>

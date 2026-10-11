@@ -28,12 +28,13 @@ export default defineConfig({
       ],
       components: {
         Header: './src/components/Header.astro',
+        ThemeProvider: './src/components/ThemeProvider.astro',
       },
       sidebar: [
         {
           label: 'Guide',
           items: [
-            { label: 'Installation Overview', link: '/magisk/' },
+            { label: 'Installation Overview', link: '/' },
             { label: 'Download Magisk', slug: 'guide/download' },
             { label: 'Switch / Update Version', slug: 'guide/switch-version' },
           ],
