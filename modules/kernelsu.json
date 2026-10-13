@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/kernelsu.png",
-  "stars": 19094,
+  "stars": 19107,
   "latestRelease": {
-    "tag": "v3.3.0",
-    "publishedAt": "2026-08-28T14:49:30Z",
-    "url": "https://github.com/tiann/KernelSU/releases/tag/v3.3.0",
-    "downloadUrl": "https://github.com/tiann/KernelSU/releases/download/v3.3.0/KernelSU_v3.3.0_32601-release.apk",
-    "assetName": "KernelSU_v3.3.0_32601-release.apk"
+    "tag": "v3.3.1",
+    "publishedAt": "2026-10-12T22:52:06Z",
+    "url": "https://github.com/tiann/KernelSU/releases/tag/v3.3.1",
+    "downloadUrl": "https://github.com/tiann/KernelSU/releases/download/v3.3.1/KernelSU_v3.3.1_32680-release.apk",
+    "assetName": "KernelSU_v3.3.1_32680-release.apk"
   },
   "seo": {
     "title": "KernelSU – Download (KSU) | Magisk Hub",

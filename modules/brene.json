@@ -4,14 +4,14 @@
   "repo": "rrr333nnn333/BRENE",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "BRENE - A SuSFS/KernelSU module for SuSFS patched kernels",
+  "description": "KernelSU module with SuSFS support and more",
   "compatibility": [
     "Magisk",
     "KernelSU"
   ],
   "license": "AGPL-3.0",
   "icon": null,
-  "stars": 385,
+  "stars": 386,
   "latestRelease": {
     "tag": "v0.0.71",
     "publishedAt": "2026-10-11T22:15:49Z",
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "BRENE – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download BRENE for Magisk and KernelSU. A SuSFS/KernelSU module for SuSFS patched kernels."
+    "description": "Download BRENE for Magisk and KernelSU. KernelSU module with SuSFS support and more."
   },
   "contentTier": 1
 }
