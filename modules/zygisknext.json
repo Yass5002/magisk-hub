@@ -12,13 +12,13 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 858,
+  "stars": 871,
   "latestRelease": {
-    "tag": "v1.5.1",
-    "publishedAt": "2026-10-12T14:34:55Z",
-    "url": "https://github.com/LSPosed/ZygiskNext/releases/tag/v1.5.1",
-    "downloadUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.1/Zygisk-Next-1.5.1-862-56ae062-release.zip",
-    "assetName": "Zygisk-Next-1.5.1-862-56ae062-release.zip"
+    "tag": "v1.5.2",
+    "publishedAt": "2026-10-13T14:24:46Z",
+    "url": "https://github.com/LSPosed/ZygiskNext/releases/tag/v1.5.2",
+    "downloadUrl": "https://github.com/LSPosed/ZygiskNext/releases/download/v1.5.2/Zygisk-Next-1.5.2-864-a4a72ce-release.zip",
+    "assetName": "Zygisk-Next-1.5.2-864-a4a72ce-release.zip"
   },
   "seo": {
     "title": "ZygiskNext – Download (Magisk/KSU/APatch) | Magisk Hub",
