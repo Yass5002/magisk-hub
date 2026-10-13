@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/netproxy-magisk.png",
-  "stars": 1245,
+  "stars": 1249,
   "latestRelease": {
-    "tag": "v8.5.2",
-    "publishedAt": "2026-10-11T14:27:45Z",
-    "url": "https://github.com/Fanju6/NetProxy-Magisk/releases/tag/v8.5.2",
-    "downloadUrl": "https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.5.2/NetProxy_v8.5.2_1080.zip",
-    "assetName": "NetProxy_v8.5.2_1080.zip"
+    "tag": "v8.5.3",
+    "publishedAt": "2026-10-13T01:54:21Z",
+    "url": "https://github.com/Fanju6/NetProxy-Magisk/releases/tag/v8.5.3",
+    "downloadUrl": "https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.5.3/NetProxy_v8.5.3_1082.zip",
+    "assetName": "NetProxy_v8.5.3_1082.zip"
   },
   "seo": {
     "title": "NetProxy-Magisk – Download (Magisk) | Magisk Hub",
