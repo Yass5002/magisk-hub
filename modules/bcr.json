@@ -13,11 +13,11 @@
   "icon": "assets/icons/bcr.png",
   "stars": 2945,
   "latestRelease": {
-    "tag": "v3.10",
-    "publishedAt": "2026-10-13T23:47:42Z",
-    "url": "https://github.com/chenxiaolong/BCR/releases/tag/v3.10",
-    "downloadUrl": "https://github.com/chenxiaolong/BCR/releases/download/v3.10/BCR-3.10-release.zip",
-    "assetName": "BCR-3.10-release.zip"
+    "tag": "v3.11",
+    "publishedAt": "2026-10-15T02:53:41Z",
+    "url": "https://github.com/chenxiaolong/BCR/releases/tag/v3.11",
+    "downloadUrl": "https://github.com/chenxiaolong/BCR/releases/download/v3.11/BCR-3.11-release.zip",
+    "assetName": "BCR-3.11-release.zip"
   },
   "seo": {
     "title": "BCR – Download (Magisk/KSU) | Magisk Hub",
