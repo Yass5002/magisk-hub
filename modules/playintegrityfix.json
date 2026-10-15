@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/playintegrityfix.png",
-  "stars": 4016,
+  "stars": 4022,
   "latestRelease": {
-    "tag": "v4.8-inject-s",
-    "publishedAt": "2026-10-12T13:56:06Z",
-    "url": "https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v4.8-inject-s",
-    "downloadUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.8-inject-s/PlayIntegrityFix_v4.8-inject-s.zip",
-    "assetName": "PlayIntegrityFix_v4.8-inject-s.zip"
+    "tag": "v4.9-inject-s",
+    "publishedAt": "2026-10-15T14:11:46Z",
+    "url": "https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v4.9-inject-s",
+    "downloadUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.9-inject-s/PlayIntegrityFix_v4.9-inject-s.zip",
+    "assetName": "PlayIntegrityFix_v4.9-inject-s.zip"
   },
   "seo": {
     "title": "PlayIntegrityFix – Download (Magisk) | Magisk Hub",
