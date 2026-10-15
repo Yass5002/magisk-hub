@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/apatch.png",
-  "stars": 8042,
+  "stars": 8047,
   "latestRelease": {
-    "tag": "11224",
-    "publishedAt": "2026-08-07T06:17:03Z",
-    "url": "https://github.com/bmax121/APatch/releases/tag/11224",
-    "downloadUrl": "https://github.com/bmax121/APatch/releases/download/11224/APatch_11224_9a63e0f_HEAD-release-signed.apk",
-    "assetName": "APatch_11224_9a63e0f_HEAD-release-signed.apk"
+    "tag": "11282",
+    "publishedAt": "2026-10-15T08:18:29Z",
+    "url": "https://github.com/bmax121/APatch/releases/tag/11282",
+    "downloadUrl": "https://github.com/bmax121/APatch/releases/download/11282/APatch_11282_e8e4651_HEAD-release-signed.apk",
+    "assetName": "APatch_11282_e8e4651_HEAD-release-signed.apk"
   },
   "seo": {
     "title": "APatch – Download (APatch) | Magisk Hub",
