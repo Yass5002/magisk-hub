@@ -4,7 +4,7 @@
   "repo": "SelfRef/noogle-magisk",
   "category": "system-environment",
   "softwareType": "flashable-module",
-  "description": "Degoogling Magisk modules for stock Android (powered by microG)",
+  "description": "Magisk modules replacing Google Play Services with microG and unbundling Google apps on stock Android 11-17",
   "compatibility": [
     "Magisk"
   ],
@@ -12,15 +12,15 @@
   "icon": null,
   "stars": 134,
   "latestRelease": {
-    "tag": "v2.1",
-    "publishedAt": "2025-04-04T09:46:00Z",
-    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2.1",
-    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2.1/noogle-microg-v2.1.zip",
-    "assetName": "noogle-microg-v2.1.zip"
+    "tag": "v2026.10.15.1",
+    "publishedAt": "2026-10-15T23:34:22Z",
+    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2026.10.15.1",
+    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2026.10.15.1/noogle-unbundle-v2026.10.15.1.zip",
+    "assetName": "noogle-unbundle-v2026.10.15.1.zip"
   },
   "seo": {
     "title": "noogle-magisk – Download (Magisk) | Magisk Hub",
-    "description": "Download noogle-magisk for Magisk. Degoogling Magisk modules for stock Android (powered by microG)."
+    "description": "Download noogle-magisk for Magisk. Magisk modules replacing Google Play Services with microG and unbundling Google apps on stock Android..."
   },
   "contentTier": 1
 }
