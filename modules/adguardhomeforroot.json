@@ -10,12 +10,12 @@
   ],
   "license": "MIT",
   "icon": null,
-  "stars": 1473,
+  "stars": 1475,
   "latestRelease": {
-    "tag": "20260825",
-    "publishedAt": "2026-08-25T01:39:41Z",
-    "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20260825",
-    "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20260825/AdGuardHomeForRoot_arm64.zip",
+    "tag": "20261016",
+    "publishedAt": "2026-10-16T03:13:51Z",
+    "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20261016",
+    "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20261016/AdGuardHomeForRoot_arm64.zip",
     "assetName": "AdGuardHomeForRoot_arm64.zip"
   },
   "seo": {

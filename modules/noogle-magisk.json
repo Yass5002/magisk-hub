@@ -12,11 +12,11 @@
   "icon": null,
   "stars": 134,
   "latestRelease": {
-    "tag": "v2026.10.15.1",
-    "publishedAt": "2026-10-15T23:34:22Z",
-    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2026.10.15.1",
-    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2026.10.15.1/noogle-unbundle-v2026.10.15.1.zip",
-    "assetName": "noogle-unbundle-v2026.10.15.1.zip"
+    "tag": "v2026.10.16",
+    "publishedAt": "2026-10-16T03:10:07Z",
+    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2026.10.16",
+    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2026.10.16/noogle-microg-v2026.10.16.zip",
+    "assetName": "noogle-microg-v2026.10.16.zip"
   },
   "seo": {
     "title": "noogle-magisk – Download (Magisk) | Magisk Hub",
