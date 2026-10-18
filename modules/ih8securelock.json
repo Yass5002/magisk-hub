@@ -11,13 +11,13 @@
   ],
   "license": "Apache-2.0",
   "icon": null,
-  "stars": 205,
+  "stars": 206,
   "latestRelease": {
-    "tag": "v10",
-    "publishedAt": "2026-09-24T12:28:10Z",
-    "url": "https://github.com/j-hc/ih8SecureLock/releases/tag/v10",
-    "downloadUrl": "https://github.com/j-hc/ih8SecureLock/releases/download/v10/ih8SecureLock-v10.zip",
-    "assetName": "ih8SecureLock-v10.zip"
+    "tag": "v11",
+    "publishedAt": "2026-10-17T21:08:05Z",
+    "url": "https://github.com/j-hc/ih8SecureLock/releases/tag/v11",
+    "downloadUrl": "https://github.com/j-hc/ih8SecureLock/releases/download/v11/ih8SecureLock-v11.zip",
+    "assetName": "ih8SecureLock-v11.zip"
   },
   "seo": {
     "title": "ih8SecureLock – Download (Magisk/KSU) | Magisk Hub",
