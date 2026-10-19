@@ -4,14 +4,14 @@
   "repo": "ShivamXD6/Simple-Flag-Secure",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "👀 Lightweight root module that disables FLAG_SECURE, enabling screenshots & screen recording in restricted apps. Hides screenshot detection on Android 14+. Includes a toggleable privacy mode to block screenshots system-wide. Supports Magisk, KernelSU, APatch & forks with no extra dependencies.",
+  "description": "👀 Lightweight root module that disables FLAG_SECURE, enabling screenshots & screen recording in restricted apps. Hides screenshot detection. Includes a toggleable privacy mode to block screenshots system-wide. Supports Magisk, KernelSU, APatch & forks with no extra dependencies.",
   "compatibility": [
     "Magisk",
     "KernelSU"
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 146,
+  "stars": 147,
   "latestRelease": {
     "tag": "v10.0",
     "publishedAt": "2026-10-18T13:02:10Z",
