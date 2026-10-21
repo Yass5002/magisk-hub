@@ -10,13 +10,13 @@
   ],
   "license": "GPL-2.0",
   "icon": "assets/icons/fingerprintpay.png",
-  "stars": 4523,
+  "stars": 4528,
   "latestRelease": {
-    "tag": "6.1.0-ci",
-    "publishedAt": "2026-03-06T17:18:43Z",
-    "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/6.1.0-ci",
-    "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/6.1.0-ci/riru-module-xfingerprint-pay-wechat-v6.1.0-release.zip",
-    "assetName": "riru-module-xfingerprint-pay-wechat-v6.1.0-release.zip"
+    "tag": "7.0.0-ci",
+    "publishedAt": "2026-10-21T15:13:28Z",
+    "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/7.0.0-ci",
+    "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/7.0.0-ci/zygisk-module-xfingerprint-pay-all-v7.0.0-release.zip",
+    "assetName": "zygisk-module-xfingerprint-pay-all-v7.0.0-release.zip"
   },
   "seo": {
     "title": "FingerprintPay – Download (Magisk) | Magisk Hub",
