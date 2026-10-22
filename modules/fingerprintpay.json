@@ -10,13 +10,13 @@
   ],
   "license": "GPL-2.0",
   "icon": "assets/icons/fingerprintpay.png",
-  "stars": 4530,
+  "stars": 4535,
   "latestRelease": {
-    "tag": "7.0.0-ci",
-    "publishedAt": "2026-10-21T15:13:28Z",
-    "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/7.0.0-ci",
-    "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/7.0.0-ci/zygisk-module-xfingerprint-pay-all-v7.0.0-release.zip",
-    "assetName": "zygisk-module-xfingerprint-pay-all-v7.0.0-release.zip"
+    "tag": "7.0.1-ci",
+    "publishedAt": "2026-10-22T02:43:24Z",
+    "url": "https://github.com/eritpchy/FingerprintPay/releases/tag/7.0.1-ci",
+    "downloadUrl": "https://github.com/eritpchy/FingerprintPay/releases/download/7.0.1-ci/zygisk-module-xfingerprint-pay-all-v7.0.1-release.zip",
+    "assetName": "zygisk-module-xfingerprint-pay-all-v7.0.1-release.zip"
   },
   "seo": {
     "title": "FingerprintPay – Download (Magisk) | Magisk Hub",
