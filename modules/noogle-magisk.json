@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 139,
+  "stars": 140,
   "latestRelease": {
-    "tag": "v2026.10.18.2",
-    "publishedAt": "2026-10-18T23:21:39Z",
-    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2026.10.18.2",
-    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2026.10.18.2/noogle-unbundle-fossify-v2026.10.18.2.zip",
-    "assetName": "noogle-unbundle-fossify-v2026.10.18.2.zip"
+    "tag": "v2026.10.26",
+    "publishedAt": "2026-10-26T03:19:17Z",
+    "url": "https://github.com/SelfRef/noogle-magisk/releases/tag/v2026.10.26",
+    "downloadUrl": "https://github.com/SelfRef/noogle-magisk/releases/download/v2026.10.26/noogle-microg-v2026.10.26.zip",
+    "assetName": "noogle-microg-v2026.10.26.zip"
   },
   "seo": {
     "title": "noogle-magisk – Download (Magisk) | Magisk Hub",
