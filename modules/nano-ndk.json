@@ -12,11 +12,11 @@
   "icon": null,
   "stars": 201,
   "latestRelease": {
-    "tag": "9200",
-    "publishedAt": "2026-08-17T20:06:54Z",
-    "url": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/tag/9200",
-    "downloadUrl": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/download/9200/UPDATE-nano.Terminal.Editor.v9.2-signed.zip",
-    "assetName": "UPDATE-nano.Terminal.Editor.v9.2-signed.zip"
+    "tag": "9300",
+    "publishedAt": "2026-10-26T01:11:01Z",
+    "url": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/tag/9300",
+    "downloadUrl": "https://github.com/Magisk-Modules-Repo/nano-ndk/releases/download/9300/UPDATE-nano.Terminal.Editor.v9.3-signed.zip",
+    "assetName": "UPDATE-nano.Terminal.Editor.v9.3-signed.zip"
   },
   "seo": {
     "title": "nano-ndk – Download (Magisk) | Magisk Hub",
