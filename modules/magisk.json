@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/magisk.png",
-  "stars": 63498,
+  "stars": 63509,
   "latestRelease": {
-    "tag": "v30.7",
-    "publishedAt": "2026-02-23T08:07:01Z",
-    "url": "https://github.com/topjohnwu/Magisk/releases/tag/v30.7",
-    "downloadUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk",
-    "assetName": "Magisk-v30.7.apk"
+    "tag": "v31.1",
+    "publishedAt": "2026-10-25T02:03:45Z",
+    "url": "https://github.com/topjohnwu/Magisk/releases/tag/v31.1",
+    "downloadUrl": "https://github.com/topjohnwu/Magisk/releases/download/v31.1/Magisk-v31.1.apk",
+    "assetName": "Magisk-v31.1.apk"
   },
   "seo": {
     "title": "Magisk – Download (Magisk) | Magisk Hub",

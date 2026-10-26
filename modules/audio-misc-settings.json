@@ -10,13 +10,13 @@
   ],
   "license": "AGPL-3.0",
   "icon": null,
-  "stars": 345,
+  "stars": 346,
   "latestRelease": {
-    "tag": "v1.3.11",
-    "publishedAt": "2025-06-07T14:48:38Z",
-    "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/tag/v1.3.11",
-    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/download/v1.3.11/magisk-module-audio-misc-v1.3.11.zip",
-    "assetName": "magisk-module-audio-misc-v1.3.11.zip"
+    "tag": "v1.3.12",
+    "publishedAt": "2026-10-26T14:45:37Z",
+    "url": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/tag/v1.3.12",
+    "downloadUrl": "https://github.com/Magisk-Modules-Alt-Repo/audio-misc-settings/releases/download/v1.3.12/magisk-module-audio-misc-v1.3.12.zip",
+    "assetName": "magisk-module-audio-misc-v1.3.12.zip"
   },
   "seo": {
     "title": "audio-misc-settings – Download (Magisk) | Magisk Hub",
