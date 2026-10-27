@@ -12,11 +12,11 @@
   "icon": null,
   "stars": 1504,
   "latestRelease": {
-    "tag": "20261016",
-    "publishedAt": "2026-10-16T03:13:51Z",
-    "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20261016",
-    "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20261016/AdGuardHomeForRoot_arm64.zip",
-    "assetName": "AdGuardHomeForRoot_arm64.zip"
+    "tag": "20261027",
+    "publishedAt": "2026-10-27T13:11:11Z",
+    "url": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/tag/20261027",
+    "downloadUrl": "https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20261027/AdGuardHomeForRoot_armv7.zip",
+    "assetName": "AdGuardHomeForRoot_armv7.zip"
   },
   "seo": {
     "title": "AdGuardHomeForRoot – Download (Magisk) | Magisk Hub",
