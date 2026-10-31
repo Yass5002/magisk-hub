@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/czero.png",
-  "stars": 147,
+  "stars": 148,
   "latestRelease": {
-    "tag": "v1.3.1",
-    "publishedAt": "2026-10-09T15:41:42Z",
-    "url": "https://github.com/Xocio/CZero/releases/tag/v1.3.1",
-    "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.3.1/CZero_v1.3.1.zip",
-    "assetName": "CZero_v1.3.1.zip"
+    "tag": "v1.3.2",
+    "publishedAt": "2026-10-31T05:59:08Z",
+    "url": "https://github.com/Xocio/CZero/releases/tag/v1.3.2",
+    "downloadUrl": "https://github.com/Xocio/CZero/releases/download/v1.3.2/CZero_v1.3.2.zip",
+    "assetName": "CZero_v1.3.2.zip"
   },
   "seo": {
     "title": "CZero – Download (Magisk/KSU) | Magisk Hub",
