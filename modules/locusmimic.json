@@ -10,13 +10,13 @@
   ],
   "license": "MIT",
   "icon": "assets/icons/locusmimic.png",
-  "stars": 136,
+  "stars": 137,
   "latestRelease": {
-    "tag": "20201-2.1.1",
-    "publishedAt": "2026-10-12T10:50:24Z",
-    "url": "https://github.com/wchunlin1006/LocusMimic/releases/tag/20201-2.1.1",
-    "downloadUrl": "https://github.com/wchunlin1006/LocusMimic/releases/download/20201-2.1.1/LocusMimic-2.1.1-20261012.apk",
-    "assetName": "LocusMimic-2.1.1-20261012.apk"
+    "tag": "20300-2.3.0",
+    "publishedAt": "2026-11-03T02:24:51Z",
+    "url": "https://github.com/wchunlin1006/LocusMimic/releases/tag/20300-2.3.0",
+    "downloadUrl": "https://github.com/wchunlin1006/LocusMimic/releases/download/20300-2.3.0/LocusMimic-2.3.0-20261103.apk",
+    "assetName": "LocusMimic-2.3.0-20261103.apk"
   },
   "seo": {
     "title": "LocusMimic Location & Route Simulator (com.locusmimic.app) – Download | Magisk Hub",

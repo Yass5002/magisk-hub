@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 798,
+  "stars": 800,
   "latestRelease": {
     "tag": "nightly",
     "publishedAt": "2026-02-06T05:03:12Z",
     "url": "https://github.com/XiaoTong6666/Sui/releases/tag/nightly",
-    "downloadUrl": "https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_573-cab27cf-release.zip",
-    "assetName": "Sui-v13.5.4.3_573-cab27cf-release.zip"
+    "downloadUrl": "https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_574-746c06c-debug.zip",
+    "assetName": "Sui-v13.5.4.3_574-746c06c-debug.zip"
   },
   "seo": {
     "title": "Sui – Download (Magisk/KSU) | Magisk Hub",

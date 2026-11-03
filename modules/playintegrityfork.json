@@ -10,13 +10,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 4638,
+  "stars": 4642,
   "latestRelease": {
-    "tag": "v18",
-    "publishedAt": "2026-08-29T17:33:56Z",
-    "url": "https://github.com/osm0sis/PlayIntegrityFork/releases/tag/v18",
-    "downloadUrl": "https://github.com/osm0sis/PlayIntegrityFork/releases/download/v18/PlayIntegrityFork-v18.zip",
-    "assetName": "PlayIntegrityFork-v18.zip"
+    "tag": "v19",
+    "publishedAt": "2026-11-03T02:01:41Z",
+    "url": "https://github.com/osm0sis/PlayIntegrityFork/releases/tag/v19",
+    "downloadUrl": "https://github.com/osm0sis/PlayIntegrityFork/releases/download/v19/PlayIntegrityFork-v19.zip",
+    "assetName": "PlayIntegrityFork-v19.zip"
   },
   "seo": {
     "title": "PlayIntegrityFork – Download (Magisk) | Magisk Hub",

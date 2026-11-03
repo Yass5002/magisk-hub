@@ -11,12 +11,12 @@
   ],
   "license": "MIT",
   "icon": "assets/icons/magicnet.png",
-  "stars": 217,
+  "stars": 218,
   "latestRelease": {
-    "tag": "v1.8.2",
-    "publishedAt": "2026-11-01T11:35:27Z",
-    "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.2",
-    "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.2/MagicNet-component-bin-proxylink-adf05d6e1355ce97f0695e88578dab40e9b82474f1a8a4ad6dafdcc5c0ab5bf5.zip",
+    "tag": "v1.8.4",
+    "publishedAt": "2026-11-03T03:52:07Z",
+    "url": "https://github.com/LIghtJUNction/MagicNet/releases/tag/v1.8.4",
+    "downloadUrl": "https://github.com/LIghtJUNction/MagicNet/releases/download/v1.8.4/MagicNet-component-bin-proxylink-adf05d6e1355ce97f0695e88578dab40e9b82474f1a8a4ad6dafdcc5c0ab5bf5.zip",
     "assetName": "MagicNet-component-bin-proxylink-adf05d6e1355ce97f0695e88578dab40e9b82474f1a8a4ad6dafdcc5c0ab5bf5.zip"
   },
   "seo": {
