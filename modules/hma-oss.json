@@ -12,13 +12,13 @@
   ],
   "license": "AGPL-3.0",
   "icon": "assets/icons/hma-oss.png",
-  "stars": 3923,
+  "stars": 3929,
   "latestRelease": {
-    "tag": "oss-173",
-    "publishedAt": "2026-09-30T00:43:24Z",
-    "url": "https://github.com/frknkrc44/HMA-OSS/releases/tag/oss-173",
-    "downloadUrl": "https://github.com/frknkrc44/HMA-OSS/releases/download/oss-173/HMA-OSS-ZYGISK-oss-173-debug.zip",
-    "assetName": "HMA-OSS-ZYGISK-oss-173-debug.zip"
+    "tag": "oss-175",
+    "publishedAt": "2026-11-06T10:37:27Z",
+    "url": "https://github.com/frknkrc44/HMA-OSS/releases/tag/oss-175",
+    "downloadUrl": "https://github.com/frknkrc44/HMA-OSS/releases/download/oss-175/HMA-OSS-ZYGISK-oss-175-release.zip",
+    "assetName": "HMA-OSS-ZYGISK-oss-175-release.zip"
   },
   "seo": {
     "title": "HMA-OSS – Download (Magisk/KSU/APatch) | Magisk Hub",
