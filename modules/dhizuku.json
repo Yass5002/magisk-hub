@@ -14,13 +14,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/dhizuku.png",
-  "stars": 4090,
+  "stars": 4094,
   "latestRelease": {
     "tag": "v2.13.0",
     "publishedAt": "2026-10-30T07:34:33Z",
     "url": "https://github.com/iamr0s/Dhizuku/releases/tag/v2.13.0",
-    "downloadUrl": "https://github.com/iamr0s/Dhizuku/releases/download/v2.13.0/Dhizuku-v2.13.0-testkey.apk",
-    "assetName": "Dhizuku-v2.13.0-testkey.apk"
+    "downloadUrl": "https://github.com/iamr0s/Dhizuku/releases/download/v2.13.0/Dhizuku_v2.13.0-testkey.apk",
+    "assetName": "Dhizuku_v2.13.0-testkey.apk"
   },
   "seo": {
     "title": "Dhizuku – Download | Magisk Hub",
