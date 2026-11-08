@@ -12,10 +12,10 @@
   "icon": null,
   "stars": 75,
   "latestRelease": {
-    "tag": "v1.75.2",
-    "publishedAt": "2026-10-10T08:11:29Z",
-    "url": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/tag/v1.75.2",
-    "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.75.2/magisk-rclone_x86_64.zip",
+    "tag": "v1.76.0",
+    "publishedAt": "2026-11-08T12:48:22Z",
+    "url": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/tag/v1.76.0",
+    "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.76.0/magisk-rclone_x86_64.zip",
     "assetName": "magisk-rclone_x86_64.zip"
   },
   "seo": {
