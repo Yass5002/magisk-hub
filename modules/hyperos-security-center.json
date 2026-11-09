@@ -11,13 +11,13 @@
   ],
   "license": "Proprietary",
   "icon": null,
-  "stars": 147,
+  "stars": 148,
   "latestRelease": {
-    "tag": "V7",
-    "publishedAt": "2026-08-14T03:09:26Z",
-    "url": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/tag/V7",
-    "downloadUrl": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/download/V7/HyperOS_SecurityV7%40kashis_cringey_stuffs.zip",
-    "assetName": "HyperOS_SecurityV7@kashis_cringey_stuffs.zip"
+    "tag": "V8",
+    "publishedAt": "2026-11-09T11:42:07Z",
+    "url": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/tag/V8",
+    "downloadUrl": "https://github.com/Mods-Center/HyperOS-Security-Center/releases/download/V8/HyperOS_SecurityV8%40kashis_cringey_stuffs.zip",
+    "assetName": "HyperOS_SecurityV8@kashis_cringey_stuffs.zip"
   },
   "seo": {
     "title": "HyperOS-Security-Center – Download (Magisk/KSU) | Magisk Hub",
