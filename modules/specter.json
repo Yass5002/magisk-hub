@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 819,
+  "stars": 822,
   "latestRelease": {
-    "tag": "v1.5.0",
-    "publishedAt": "2026-09-12T11:41:38Z",
-    "url": "https://github.com/dpejoh/specter/releases/tag/v1.5.0",
-    "downloadUrl": "https://github.com/dpejoh/specter/releases/download/v1.5.0/specter-v1.5.0.zip",
-    "assetName": "specter-v1.5.0.zip"
+    "tag": "v2.0.0",
+    "publishedAt": "2026-11-10T08:16:54Z",
+    "url": "https://github.com/dpejoh/specter/releases/tag/v2.0.0",
+    "downloadUrl": "https://github.com/dpejoh/specter/releases/download/v2.0.0/specter-v2.0.0.zip",
+    "assetName": "specter-v2.0.0.zip"
   },
   "seo": {
     "title": "specter – Download (Magisk/KSU) | Magisk Hub",
