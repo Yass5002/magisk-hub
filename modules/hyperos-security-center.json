@@ -4,7 +4,7 @@
   "repo": "Mods-Center/HyperOS-Security-Center",
   "category": "system-environment",
   "softwareType": "flashable-module",
-  "description": "Enhances HyperOS Security Center with advanced app info tools, system app Wi-Fi management, FBO unlocking, removal of root/account restrictions, extended security options, and additional customization features.",
+  "description": "Modded HyperOS Security Center: sidebar clipboard and Circle to Search shortcuts, charge limit, video toolbox extras, per-app data limits, Game Turbo features, Wi-Fi control for system apps, root and account restrictions removed. Magisk / KernelSU module.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "HyperOS-Security-Center – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download HyperOS-Security-Center for Magisk and KernelSU. Enhances HyperOS Security Center with advanced app info tools, system app..."
+    "description": "Download HyperOS-Security-Center for Magisk and KernelSU. Modded HyperOS Security Center: sidebar clipboard and Circle to Search..."
   },
   "contentTier": 1
 }

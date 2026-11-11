@@ -4,7 +4,7 @@
   "repo": "Mods-Center/HyperOS-Launcher",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent, dock background, and customization options for a refined user experience. Optimized for smoother performance and additional features on all devices.",
+  "description": "Modded HyperOS (2/3) launcher: widget stacks, super icons for any app, iOS-style app-open animation, icon shapes, auto-resizing dock, custom app names, better blur. Final release V7.5. Magisk / KernelSU module.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "HyperOS-Launcher – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download HyperOS-Launcher for Magisk and KernelSU. Enhanced HyperOS Launcher with improved blur effects, widget support, stacked recent..."
+    "description": "Download HyperOS-Launcher for Magisk and KernelSU. Modded HyperOS (2/3) launcher: widget stacks, super icons for any app, iOS-style..."
   },
   "contentTier": 1
 }

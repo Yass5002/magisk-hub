@@ -4,7 +4,7 @@
   "repo": "Mods-Center/FPS-Limitation-Patcher",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
-  "description": "Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS devices, enhancing gaming performance.",
+  "description": "Patches PowerKeeper on the device to remove MIUI/HyperOS FPS limits for smoother gaming. Android 16 supported. Magisk / KernelSU module.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "FPS-Limitation-Patcher – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download FPS-Limitation-Patcher for Magisk and KernelSU. Modifies the PowerKeeper app to remove FPS limitations on MIUI and HyperOS..."
+    "description": "Download FPS-Limitation-Patcher for Magisk and KernelSU. Patches PowerKeeper on the device to remove MIUI/HyperOS FPS limits for..."
   },
   "contentTier": 1
 }
