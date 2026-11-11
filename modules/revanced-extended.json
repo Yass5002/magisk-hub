@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 4245,
+  "stars": 4244,
   "latestRelease": {
-    "tag": "163",
-    "publishedAt": "2026-11-07T00:30:52Z",
-    "url": "https://github.com/NoName-exe/revanced-extended/releases/tag/163",
-    "downloadUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/163/youtube-morphe-module-v21.30.216-all.zip",
-    "assetName": "youtube-morphe-module-v21.30.216-all.zip"
+    "tag": "164",
+    "publishedAt": "2026-11-11T00:30:09Z",
+    "url": "https://github.com/NoName-exe/revanced-extended/releases/tag/164",
+    "downloadUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/164/youtube-music-morphe-module-v9.30.53-arm64-v8a.zip",
+    "assetName": "youtube-music-morphe-module-v9.30.53-arm64-v8a.zip"
   },
   "seo": {
     "title": "revanced-extended – Download (Magisk/KSU) | Magisk Hub",

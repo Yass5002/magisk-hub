@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/frosty.png",
-  "stars": 274,
+  "stars": 275,
   "latestRelease": {
-    "tag": "4.5",
-    "publishedAt": "2026-10-10T01:49:15Z",
-    "url": "https://github.com/Drsexo/Frosty/releases/tag/4.5",
-    "downloadUrl": "https://github.com/Drsexo/Frosty/releases/download/4.5/Frosty-4.5.zip",
-    "assetName": "Frosty-4.5.zip"
+    "tag": "4.6",
+    "publishedAt": "2026-11-10T23:23:37Z",
+    "url": "https://github.com/Drsexo/Frosty/releases/tag/4.6",
+    "downloadUrl": "https://github.com/Drsexo/Frosty/releases/download/4.6/Frosty-4.6.zip",
+    "assetName": "Frosty-4.6.zip"
   },
   "seo": {
     "title": "Frosty – Download (Magisk/KSU) | Magisk Hub",
