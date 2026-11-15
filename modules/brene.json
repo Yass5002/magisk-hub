@@ -4,7 +4,7 @@
   "repo": "rrr333nnn333/BRENE",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "KernelSU module with SuSFS support and more",
+  "description": "KernelSU module with SUSFS support and more",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -13,15 +13,15 @@
   "icon": null,
   "stars": 434,
   "latestRelease": {
-    "tag": "v0.0.75",
-    "publishedAt": "2026-11-02T01:23:04Z",
-    "url": "https://github.com/rrr333nnn333/BRENE/releases/tag/v0.0.75",
-    "downloadUrl": "https://github.com/rrr333nnn333/BRENE/releases/download/v0.0.75/BRENE-v0.0.75.zip",
-    "assetName": "BRENE-v0.0.75.zip"
+    "tag": "v0.0.76",
+    "publishedAt": "2026-11-15T21:13:53Z",
+    "url": "https://github.com/rrr333nnn333/BRENE/releases/tag/v0.0.76",
+    "downloadUrl": "https://github.com/rrr333nnn333/BRENE/releases/download/v0.0.76/BRENE-v0.0.76.zip",
+    "assetName": "BRENE-v0.0.76.zip"
   },
   "seo": {
     "title": "BRENE – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download BRENE for Magisk and KernelSU. KernelSU module with SuSFS support and more."
+    "description": "Download BRENE for Magisk and KernelSU. KernelSU module with SUSFS support and more."
   },
   "contentTier": 1
 }
