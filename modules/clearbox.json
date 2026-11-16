@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 55,
+  "stars": 56,
   "latestRelease": {
-    "tag": "101-V5.2.1",
-    "publishedAt": "2026-10-13T13:39:07Z",
-    "url": "https://github.com/FLYCOM-E/ClearBox/releases/tag/101-V5.2.1",
-    "downloadUrl": "https://github.com/FLYCOM-E/ClearBox/releases/download/101-V5.2.1/ClearBox-V5.2.1-101.zip",
-    "assetName": "ClearBox-V5.2.1-101.zip"
+    "tag": "102-V5.2.2",
+    "publishedAt": "2026-11-16T00:53:00Z",
+    "url": "https://github.com/FLYCOM-E/ClearBox/releases/tag/102-V5.2.2",
+    "downloadUrl": "https://github.com/FLYCOM-E/ClearBox/releases/download/102-V5.2.2/ClearBox-V5.2.2-102.zip",
+    "assetName": "ClearBox-V5.2.2-102.zip"
   },
   "seo": {
     "title": "ClearBox – Download (Magisk/KSU) | Magisk Hub",
