@@ -4,7 +4,7 @@
   "repo": "Lxiaoyao077/VexZygisk",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per root solution, with Zygisk Next module support and HyperOS runtime support.",
+  "description": "Standalone implementation of Zygisk for KernelSU and APatch - one arm64 build per root solution",
   "compatibility": [
     "Magisk",
     "KernelSU",
