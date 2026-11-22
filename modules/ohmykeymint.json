@@ -11,13 +11,13 @@
   ],
   "license": "AGPL-3.0",
   "icon": null,
-  "stars": 747,
+  "stars": 746,
   "latestRelease": {
-    "tag": "1.2.6-9069c6c",
-    "publishedAt": "2026-11-06T05:00:33Z",
-    "url": "https://github.com/qwq233/OhMyKeymint/releases/tag/1.2.6-9069c6c",
-    "downloadUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.2.6-9069c6c/OhMyKeymint-debug-arm64-v8a-1.2.6-9069c6c.zip",
-    "assetName": "OhMyKeymint-debug-arm64-v8a-1.2.6-9069c6c.zip"
+    "tag": "1.3.0-7742865",
+    "publishedAt": "2026-11-22T09:25:29Z",
+    "url": "https://github.com/qwq233/OhMyKeymint/releases/tag/1.3.0-7742865",
+    "downloadUrl": "https://github.com/qwq233/OhMyKeymint/releases/download/1.3.0-7742865/OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip",
+    "assetName": "OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip"
   },
   "seo": {
     "title": "OhMyKeymint – Download (Magisk/KSU) | Magisk Hub",
