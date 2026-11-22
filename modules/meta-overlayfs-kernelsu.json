@@ -13,11 +13,11 @@
   "icon": "assets/icons/meta-overlayfs-kernelsu.png",
   "stars": 2,
   "latestRelease": {
-    "tag": "v1.3.4",
-    "publishedAt": "2026-09-17T14:32:09Z",
-    "url": "https://github.com/MySU-org/meta-overlayfs/releases/tag/v1.3.4",
-    "downloadUrl": "https://github.com/MySU-org/meta-overlayfs/releases/download/v1.3.4/meta-overlayfs_v1.3.4_13400.zip",
-    "assetName": "meta-overlayfs_v1.3.4_13400.zip"
+    "tag": "v1.4.0",
+    "publishedAt": "2026-11-22T20:40:49Z",
+    "url": "https://github.com/MySU-org/meta-overlayfs/releases/tag/v1.4.0",
+    "downloadUrl": "https://github.com/MySU-org/meta-overlayfs/releases/download/v1.4.0/meta-overlayfs_v1.4.0_14000.zip",
+    "assetName": "meta-overlayfs_v1.4.0_14000.zip"
   },
   "seo": {
     "title": "OverlayFS MetaModule for KernelSU – Download | Magisk Hub",
