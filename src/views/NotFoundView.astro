@@ -70,7 +70,8 @@ const homeHref = localizePath('/', locale);
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       if ((window as any).umami) {
-        (window as any).umami.track("404-error", { path: window.location.pathname });
+        const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+        (window as any).umami.track("404-error", { path: window.location.pathname, locale: pageLocale });
       }
     });
   </script>

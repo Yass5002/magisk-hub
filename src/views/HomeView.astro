@@ -583,9 +583,10 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     clearTimeout((window as any).searchUmamiTimeout);
     (window as any).searchUmamiTimeout = setTimeout(() => {
       if (q.length >= 2 && (window as any).umami) {
-        (window as any).umami.track('search-modules', { query: q, results_count: currentTotalVisible });
+        const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+        (window as any).umami.track('search-modules', { query: q, results_count: currentTotalVisible, locale: pageLocale });
         if (currentTotalVisible === 0) {
-          (window as any).umami.track('search-zero-results', { query: q });
+          (window as any).umami.track('search-zero-results', { query: q, locale: pageLocale });
         }
       }
     }, 750);
@@ -605,7 +606,8 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     currentCompat = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
     if ((window as any).umami) {
-      (window as any).umami.track('filter-platform', { platform: currentCompat });
+      const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+      (window as any).umami.track('filter-platform', { platform: currentCompat, locale: pageLocale });
     }
   });
 
@@ -613,7 +615,8 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     currentCategory = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
     if ((window as any).umami) {
-      (window as any).umami.track('filter-category', { category: currentCategory });
+      const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+      (window as any).umami.track('filter-category', { category: currentCategory, locale: pageLocale });
     }
   });
 
@@ -621,7 +624,8 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     currentSort = (e.target as HTMLSelectElement).value;
     applyFiltersAndSort();
     if ((window as any).umami) {
-      (window as any).umami.track('sort-modules', { sort: currentSort });
+      const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+      (window as any).umami.track('sort-modules', { sort: currentSort, locale: pageLocale });
     }
   });
 
@@ -639,7 +643,8 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
 
     applyFiltersAndSort();
     if ((window as any).umami) {
-      (window as any).umami.track('reset-filters');
+      const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+      (window as any).umami.track('reset-filters', { locale: pageLocale });
     }
   });
 

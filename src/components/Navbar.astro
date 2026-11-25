@@ -109,6 +109,7 @@ const altHref = localizePath(currentPath, altLocale);
         hreflang={altLocale === 'zh' ? 'zh-Hans' : 'en'}
         data-locale-switch={altLocale}
         data-umami-event="navbar-language-switch"
+        data-umami-event-from={locale}
         data-umami-event-to={altLocale}
         title={ui.nav.langSwitchTitle}
         class="inline-flex items-center gap-1.5 h-9 px-2.5 sm:px-3 rounded-lg border border-zinc-200 bg-white text-xs font-medium text-zinc-700 hover:text-zinc-900 hover:bg-zinc-50 hover:border-zinc-300 shadow-2xs transition-colors"

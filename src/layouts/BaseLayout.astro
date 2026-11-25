@@ -164,6 +164,9 @@ const baseWebSiteSchema = {
             <a
               href={zhSwitchHref}
               id="zhBannerSwitchLink"
+              data-umami-event="zh-banner-switch"
+              data-umami-event-from="en"
+              data-umami-event-to="zh"
               class="inline-flex items-center rounded-md bg-zinc-900 px-2.5 py-1 text-[11px] font-semibold text-white hover:bg-zinc-800 transition-colors"
             >
               切换到简体中文版 →
@@ -172,6 +175,8 @@ const baseWebSiteSchema = {
           <button
             type="button"
             id="zhBannerDismissBtn"
+            data-umami-event="zh-banner-dismiss"
+            data-umami-event-locale="en"
             class="text-zinc-400 hover:text-zinc-700 px-1.5 py-0.5 rounded transition-colors shrink-0"
             aria-label="关闭语言提示"
           >
@@ -203,6 +208,21 @@ const baseWebSiteSchema = {
           const prefersZh = langs.some((l) => String(l).toLowerCase().startsWith('zh'));
           if (prefersZh && pref !== 'en' && dismissed !== '1') {
             banner.classList.remove('hidden');
+            const browserLang = langs.find((l) => String(l).toLowerCase().startsWith('zh')) || 'zh';
+            const fireBannerShown = () => {
+              if ((window as any).umami && !sessionStorage.getItem('magisk_hub_zh_banner_tracked')) {
+                sessionStorage.setItem('magisk_hub_zh_banner_tracked', '1');
+                (window as any).umami.track('zh-banner-shown', {
+                  browser_lang: String(browserLang),
+                  path: window.location.pathname,
+                });
+              }
+            };
+            if ((window as any).umami) {
+              fireBannerShown();
+            } else {
+              window.addEventListener('load', fireBannerShown, { once: true });
+            }
           }
           document.getElementById('zhBannerDismissBtn')?.addEventListener('click', () => {
             banner.classList.add('hidden');

@@ -123,3 +123,45 @@ test('Home search handles punctuation differences, asset names, URLs, prompts, a
   assert.equal(zero.length, 0, 'genuine miss returns zero results');
   assert.ok(noResults && !noResults.classList.contains('hidden'), 'noResults shown on zero results');
 });
+
+test('Localization analytics track zh-banner-shown and attach locale properties', () => {
+  const html = fs.readFileSync(path.join(DIST_DIR, 'index.html'), 'utf-8');
+  const trackedEvents = [];
+  const dom = new JSDOM(html, {
+    url: 'https://magisk.yssn.tech/',
+    runScripts: 'dangerously',
+    beforeParse(window) {
+      Object.defineProperty(window.navigator, 'language', { value: 'zh-CN', configurable: true });
+      Object.defineProperty(window.navigator, 'languages', { value: ['zh-CN', 'en-US'], configurable: true });
+      window.umami = {
+        track(name, props) {
+          trackedEvents.push({ name, props });
+        },
+      };
+    },
+  });
+  for (const s of dom.window.document.querySelectorAll('script[type="module"]')) {
+    if (!s.src && s.textContent) {
+      dom.window.eval(s.textContent);
+    } else if (s.src) {
+      const urlPath = new URL(s.src, 'https://magisk.yssn.tech').pathname;
+      if (urlPath.startsWith('/_astro/')) {
+        dom.window.eval(fs.readFileSync(path.join(DIST_DIR, urlPath.replace(/^\/+/, '')), 'utf-8'));
+      }
+    }
+  }
+
+  const doc = dom.window.document;
+  assert.ok(trackedEvents.some(e => e.name === 'zh-banner-shown' && e.props?.browser_lang === 'zh-CN'));
+  assert.equal(doc.getElementById('zhBannerSwitchLink')?.getAttribute('data-umami-event'), 'zh-banner-switch');
+  assert.equal(doc.getElementById('zhBannerDismissBtn')?.getAttribute('data-umami-event'), 'zh-banner-dismiss');
+  assert.equal(doc.querySelector('[data-umami-event="click-module-card"]')?.getAttribute('data-umami-event-locale'), 'en');
+
+  doc.getElementById('compatSelect').value = 'KernelSU';
+  doc.getElementById('compatSelect').dispatchEvent(new dom.window.Event('change', { bubbles: true }));
+  assert.ok(trackedEvents.some(e => e.name === 'filter-platform' && e.props?.locale === 'en'));
+
+  const zhDetail = loadDistDom('zh/modules/magisk/index.html', { url: 'https://magisk.yssn.tech/zh/modules/magisk/' });
+  assert.equal(zhDetail.window.document.querySelector('[data-umami-event="download-module"]')?.getAttribute('data-umami-event-locale'), 'zh');
+  assert.equal(zhDetail.window.document.querySelector('[data-umami-event="navbar-language-switch"]')?.getAttribute('data-umami-event-from'), 'zh');
+});
