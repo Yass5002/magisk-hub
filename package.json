@@ -41,5 +41,8 @@
     "apatch",
     "root",
     "modules"
-  ]
+  ],
+  "devDependencies": {
+    "jsdom": "^31.0.1"
+  }
 }

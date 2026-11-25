@@ -2,10 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
-import { createRequire } from 'node:module';
-
-const require = createRequire(import.meta.url);
-const { JSDOM } = require('/usr/lib/node_modules/jsdom');
+import { JSDOM } from 'jsdom';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 
