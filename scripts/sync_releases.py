@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import subprocess
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
@@ -265,6 +266,49 @@ def pick_best_asset(assets, sw_type, slug, c_type=None):
 
     pool.sort(key=score_asset)
     return pool[0]
+
+
+def fetch_gitlab_community_update(c):
+    """Sync latest release metadata from GitLab Releases API for community entries hosted on gitlab.com."""
+    source_url = (c.get("sourceUrl") or "").strip().rstrip("/")
+    m = re.match(r"^https://gitlab\.com/([A-Za-z0-9_.\-/]+)$", source_url)
+    if not m:
+        return None
+    project_path = urllib.parse.quote(m.group(1), safe="")
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)", "Accept": "application/json"}
+    try:
+        proj_req = urllib.request.Request(f"https://gitlab.com/api/v4/projects/{project_path}", headers=headers)
+        with urllib.request.urlopen(proj_req, timeout=15) as resp:
+            proj = json.loads(resp.read().decode("utf-8"))
+        rel_req = urllib.request.Request(f"https://gitlab.com/api/v4/projects/{project_path}/releases?per_page=1", headers=headers)
+        with urllib.request.urlopen(rel_req, timeout=15) as resp:
+            rels = json.loads(resp.read().decode("utf-8"))
+        if not rels:
+            return None
+        latest = rels[0]
+        raw_links = latest.get("assets", {}).get("links", [])
+        normalized_assets = [
+            {"name": l["name"], "downloadUrl": l.get("direct_asset_url") or l["url"]}
+            for l in raw_links
+            if l.get("name") and (l.get("direct_asset_url") or l.get("url"))
+        ]
+        chosen = pick_best_asset(normalized_assets, c.get("softwareType", "flashable-module"), c["id"])
+        if not chosen or not check_asset_head(chosen["downloadUrl"]):
+            return None
+        updated = dict(c)
+        if isinstance(proj.get("star_count"), int):
+            updated["stars"] = proj["star_count"]
+        updated["latestRelease"] = {
+            "tag": latest["tag_name"],
+            "publishedAt": latest.get("released_at") or c.get("latestRelease", {}).get("publishedAt"),
+            "url": (latest.get("_links") or {}).get("self") or c.get("latestRelease", {}).get("url"),
+            "downloadUrl": chosen["downloadUrl"],
+            "assetName": chosen["name"],
+        }
+        return updated
+    except Exception as e:
+        print(f"[community-gitlab] Warning checking {c.get('id')} ({source_url}): {e}", file=sys.stderr)
+        return None
 
 
 def download_file(url, dest_path):
@@ -600,12 +644,38 @@ def main():
                 zh_md = os.path.join(zh_content_dir, f"{file_slug}.md")
                 if os.path.isfile(zh_md):
                     os.remove(zh_md)
+                en_md = os.path.join(REPO_ROOT, "content", "modules", f"{file_slug}.md")
+                if os.path.isfile(en_md):
+                    os.remove(en_md)
 
     # Write surviving module entries
     for slug, doc in final_module_entries:
         out_path = os.path.join(MODULES_DIR, f"{slug}.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(doc, f, indent=2, ensure_ascii=False)
+
+    # Sync GitLab-hosted community modules and run non-destructive link health checks on remaining community entries
+    gitlab_updated = 0
+    community_broken = []
+    for comm in community_candidates:
+        slug = comm["id"]
+        src_url = comm.get("sourceUrl") or ""
+        if src_url.startswith("https://gitlab.com/"):
+            synced_comm = fetch_gitlab_community_update(comm)
+            if synced_comm:
+                with open(os.path.join(MODULES_DIR, f"{slug}.json"), "w", encoding="utf-8") as f:
+                    json.dump(synced_comm, f, indent=2, ensure_ascii=False)
+                gitlab_updated += 1
+        else:
+            dl_url = (comm.get("latestRelease") or {}).get("downloadUrl")
+            if dl_url and not check_asset_head(dl_url):
+                community_broken.append((slug, dl_url))
+
+    print(f"Community GitLab modules synced:    {gitlab_updated}", flush=True)
+    if community_broken:
+        print(f"Community links unreachable ({len(community_broken)}):", flush=True)
+        for slug, url in community_broken:
+            print(f"  ⚠️  {slug}: {url}", flush=True)
 
     print("\n" + "=" * 70, flush=True)
     print("SYNCHRONIZATION & SEEDING REPORT", flush=True)

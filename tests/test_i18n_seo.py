@@ -251,7 +251,7 @@ class TestBuiltDistSEOAndHreflang(unittest.TestCase):
             if ":" in dest:
                 # Parameterized wildcard redirects like /modules/:slug/
                 continue
-            rel = dest.strip("/")
+            rel = urlparse(dest).path.strip("/")
             html_path = os.path.join(DIST_DIR, rel, "index.html") if rel else os.path.join(DIST_DIR, "index.html")
             self.assertTrue(os.path.isfile(html_path), f"vercel.json redirect target missing in dist: {dest}")
 

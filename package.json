@@ -1,6 +1,7 @@
 {
   "name": "magisk-hub",
   "version": "1.0.0",
+  "type": "module",
   "description": "An active-source directory for Magisk, KernelSU, and APatch modules",
   "scripts": {
     "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets', 'public/assets', {recursive:true});\"",
@@ -9,7 +10,8 @@
     "build": "npm run copy-assets && astro build",
     "preview": "astro preview",
     "validate": "python3 scripts/validate_module.py",
-    "test": "node --experimental-strip-types --test tests/routing.test.mts && node --test tests/dom_runtime.test.mjs && python3 scripts/validate_module.py && python3 scripts/validate_seo_llm_discovery.py && python3 scripts/verify_production_dist.py && python3 -m unittest discover -s tests -p 'test_*.py' -v"
+    "test": "node --experimental-strip-types --test tests/routing.test.mts && node --test tests/dom_runtime.test.mjs && python3 scripts/validate_module.py && python3 scripts/validate_seo_llm_discovery.py && python3 scripts/verify_production_dist.py && python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "test:e2e": "python3 tests/e2e_playwright.py"
   },
   "repository": {
     "type": "git",
@@ -44,5 +46,8 @@
   ],
   "devDependencies": {
     "jsdom": "^31.0.1"
+  },
+  "overrides": {
+    "postcss-selector-parser": "^6.1.5"
   }
 }

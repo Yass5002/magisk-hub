@@ -6,6 +6,47 @@ import { JSDOM } from 'jsdom';
 
 const DIST_DIR = path.resolve(process.cwd(), 'dist');
 
+function inlineAstroChunk(filePath) {
+  let code = fs.readFileSync(filePath, 'utf-8');
+  const dir = path.dirname(filePath);
+  code = code.replace(
+    /import\s*\{([^}]+)\}\s*from\s*["'](\.\/[^"']+)["']\s*;?/g,
+    (_, specs, rel) => {
+      const target = path.resolve(dir, rel);
+      const depCode = inlineAstroChunk(target).replace(
+        /export\s*\{([^}]+)\}\s*;?/g,
+        (__, exSpecs) => {
+          const pairs = exSpecs.split(',').map((s) => {
+            const parts = s.trim().split(/\s+as\s+/);
+            return parts.length === 2 ? `${parts[1].trim()}: ${parts[0].trim()}` : parts[0].trim();
+          });
+          return `return { ${pairs.join(', ')} };`;
+        }
+      );
+      const bindings = specs.split(',').map((s) => {
+        const parts = s.trim().split(/\s+as\s+/);
+        return parts.length === 2 ? `${parts[0].trim()}: ${parts[1].trim()}` : parts[0].trim();
+      });
+      return `const { ${bindings.join(', ')} } = (() => {\n${depCode}\n})();`;
+    }
+  );
+  return code;
+}
+
+function evalModuleScript(dom, scriptEl) {
+  if (!scriptEl.src && scriptEl.textContent) {
+    dom.window.eval(scriptEl.textContent);
+    return;
+  }
+  if (scriptEl.src) {
+    const urlPath = new URL(scriptEl.src, 'https://magisk.yssn.tech').pathname;
+    if (urlPath.startsWith('/_astro/')) {
+      const assetPath = path.join(DIST_DIR, urlPath.replace(/^\/+/, ''));
+      dom.window.eval(inlineAstroChunk(assetPath));
+    }
+  }
+}
+
 function loadDistDom(relPath, options = {}) {
   const html = fs.readFileSync(path.join(DIST_DIR, relPath), 'utf-8');
   const dom = new JSDOM(html, {
@@ -24,17 +65,8 @@ function loadDistDom(relPath, options = {}) {
   });
 
   // JSDOM ignores <script type="module">; evaluate inline and built /_astro/ module scripts explicitly
-  const moduleScripts = Array.from(dom.window.document.querySelectorAll('script[type="module"]'));
-  for (const s of moduleScripts) {
-    if (!s.src && s.textContent) {
-      dom.window.eval(s.textContent);
-    } else if (s.src) {
-      const urlPath = new URL(s.src, 'https://magisk.yssn.tech').pathname;
-      if (urlPath.startsWith('/_astro/')) {
-        const assetPath = path.join(DIST_DIR, urlPath.replace(/^\/+/, ''));
-        dom.window.eval(fs.readFileSync(assetPath, 'utf-8'));
-      }
-    }
+  for (const s of dom.window.document.querySelectorAll('script[type="module"]')) {
+    evalModuleScript(dom, s);
   }
   return dom;
 }
@@ -141,14 +173,7 @@ test('Localization analytics track zh-banner-shown and attach locale properties'
     },
   });
   for (const s of dom.window.document.querySelectorAll('script[type="module"]')) {
-    if (!s.src && s.textContent) {
-      dom.window.eval(s.textContent);
-    } else if (s.src) {
-      const urlPath = new URL(s.src, 'https://magisk.yssn.tech').pathname;
-      if (urlPath.startsWith('/_astro/')) {
-        dom.window.eval(fs.readFileSync(path.join(DIST_DIR, urlPath.replace(/^\/+/, '')), 'utf-8'));
-      }
-    }
+    evalModuleScript(dom, s);
   }
 
   const doc = dom.window.document;
@@ -176,4 +201,68 @@ test('Localization analytics track zh-banner-shown and attach locale properties'
   searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
   const reqBtn = doc.getElementById('requestModuleBtn');
   assert.ok(reqBtn && reqBtn.href.includes('template=module-request.yml') && reqBtn.href.includes('RareCustomModule'));
+});
+
+test('Fuzzy typo search, URL state sync, category/platform filters, and archived/superseded UX work', () => {
+  const dom = loadDistDom('index.html', { url: 'https://magisk.yssn.tech/' });
+  const doc = dom.window.document;
+  const searchInput = doc.getElementById('searchInput');
+  const sortSelect = doc.getElementById('sortSelect');
+  const compatSelect = doc.getElementById('compatSelect');
+  const resetBtn = doc.getElementById('resetBtn');
+
+  const visibleIds = () =>
+    Array.from(doc.querySelectorAll('.module-card-wrapper'))
+      .filter(el => el.style.display !== 'none')
+      .map(el => el.getAttribute('data-id'));
+
+  // Fuzzy Levenshtein typo tolerance (1-2 edits)
+  searchInput.value = 'playintegriyfix';
+  searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
+  assert.ok(visibleIds().includes('playintegrityfix'), '1-char missing typo matches playintegrityfix');
+
+  searchInput.value = 'zygiskassitant';
+  searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
+  assert.ok(visibleIds().includes('zygisk-assistant'), 'typo matches zygisk-assistant');
+
+  // URL state sync
+  compatSelect.value = 'KernelSU';
+  compatSelect.dispatchEvent(new dom.window.Event('change', { bubbles: true }));
+  sortSelect.value = 'stars';
+  sortSelect.dispatchEvent(new dom.window.Event('change', { bubbles: true }));
+  assert.equal(dom.window.location.search, '?q=zygiskassitant&compat=KernelSU&sort=stars');
+
+  resetBtn.click();
+  assert.equal(dom.window.location.search, '');
+
+  // Category & Compatibility interactive filters
+  const catDom = loadDistDom('categories/root-management/index.html', {
+    url: 'https://magisk.yssn.tech/categories/root-management/',
+  });
+  const catSearch = catDom.window.document.getElementById('searchInput');
+  assert.ok(catSearch, 'category detail has search input');
+  catSearch.value = 'alwaysstrong';
+  catSearch.dispatchEvent(new catDom.window.Event('input', { bubbles: true }));
+  const catVisible = Array.from(catDom.window.document.querySelectorAll('.module-card-wrapper'))
+    .filter(el => el.style.display !== 'none')
+    .map(el => el.getAttribute('data-id'));
+  assert.ok(catVisible.includes('alwaysstrong'));
+
+  const platDom = loadDistDom('compatibility/kernelsu/index.html', {
+    url: 'https://magisk.yssn.tech/compatibility/kernelsu/',
+  });
+  assert.ok(platDom.window.document.getElementById('categorySelect'), 'platform detail has category filter');
+
+  // Superseded ?from= notice banner & archived module page
+  const supDom = loadDistDom('modules/disable-flag-secure/index.html', {
+    url: 'https://magisk.yssn.tech/modules/disable-flag-secure/?from=simple-flag-secure',
+  });
+  const supBanner = supDom.window.document.getElementById('supersededNoticeBanner');
+  assert.ok(supBanner && !supBanner.classList.contains('hidden'), 'superseded banner reveals when ?from= matches');
+  assert.match(supDom.window.document.getElementById('supersededNoticeTitle')?.textContent || '', /Simple Flag Secure/);
+
+  const archDom = loadDistDom('archived/perfgame/index.html', {
+    url: 'https://magisk.yssn.tech/archived/perfgame/',
+  });
+  assert.match(archDom.window.document.body.textContent || '', /Recommended Active Alternatives/);
 });

@@ -1,4 +1,5 @@
 import os
+import sys
 import glob
 import json
 import re
@@ -185,28 +186,30 @@ for l in deduped_links:
     cat = l['category']
     by_category.setdefault(cat, []).append(l)
 
-print(f"Total verified specific interlinks across all 275 modules: {len(deduped_links)}")
+print(f"Total verified specific interlinks across all {len(catalog)} modules: {len(deduped_links)}")
 print(f"Categories represented: {len(by_category)}")
 
-# Output detailed markdown audit report
-report_path = '/home/sentinel/wa-agy-bridge/workspaces/143371125416108/2026-10-04T10-37-39-617Z/magisk_hub_verified_interlinks_audit.md'
-with open(report_path, 'w', encoding='utf-8') as fp:
-    fp.write("# Magisk Hub - Verified Module-to-Module Interlinking Audit\n\n")
-    fp.write("Equal-attention technical verification across all 275 modules. Excludes generic root boilerplate.\n\n")
-    fp.write(f"Total Verified Specific Interlinks: **{len(deduped_links)}** across **{len(by_category)} categories**.\n\n")
-    
-    for cat, links in sorted(by_category.items()):
-        fp.write(f"## Category: `{cat}` ({len(links)} links)\n\n")
-        by_source = {}
-        for l in links:
-            by_source.setdefault(l['source_slug'], []).append(l)
-        
-        for src_slug, s_links in sorted(by_source.items()):
-            src_name = s_links[0]['source_name']
-            fp.write(f"### {src_name} (`{src_slug}`)\n")
-            fp.write(f"Source URL: `https://magisk.yssn.tech/modules/{src_slug}/`\n\n")
-            for item in s_links:
-                fp.write(f"- **[{item['type']}]** -> **{item['target_name']}** (`https://magisk.yssn.tech/modules/{item['target_slug']}/`)\n")
-                fp.write(f"  *Evidence*: \"{item['evidence']}\"\n\n")
+# Output detailed markdown audit report only when requested via --report PATH
+if len(sys.argv) > 2 and sys.argv[1] == '--report':
+    report_path = sys.argv[2]
+    os.makedirs(os.path.dirname(os.path.abspath(report_path)), exist_ok=True)
+    with open(report_path, 'w', encoding='utf-8') as fp:
+        fp.write("# Magisk Hub - Verified Module-to-Module Interlinking Audit\n\n")
+        fp.write(f"Equal-attention technical verification across all {len(modules)} modules. Excludes generic root boilerplate.\n\n")
+        fp.write(f"Total Verified Specific Interlinks: **{len(deduped_links)}** across **{len(by_category)} categories**.\n\n")
 
-print(f"Report written to: {report_path}")
+        for cat, links in sorted(by_category.items()):
+            fp.write(f"## Category: `{cat}` ({len(links)} links)\n\n")
+            by_source = {}
+            for l in links:
+                by_source.setdefault(l['source_slug'], []).append(l)
+
+            for src_slug, s_links in sorted(by_source.items()):
+                src_name = s_links[0]['source_name']
+                fp.write(f"### {src_name} (`{src_slug}`)\n")
+                fp.write(f"Source URL: `https://magisk.yssn.tech/modules/{src_slug}/`\n\n")
+                for item in s_links:
+                    fp.write(f"- **[{item['type']}]** -> **{item['target_name']}** (`https://magisk.yssn.tech/modules/{item['target_slug']}/`)\n")
+                    fp.write(f"  *Evidence*: \"{item['evidence']}\"\n\n")
+
+    print(f"Report written to: {report_path}")

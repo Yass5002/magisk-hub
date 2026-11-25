@@ -17,7 +17,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap({
-      filter: (page) => !page.endsWith('/404/') && !page.endsWith('/404.html'),
+      filter: (page) => !page.endsWith('/404/') && !page.endsWith('/404.html') && !page.includes('/archived/'),
       i18n: {
         defaultLocale: 'en',
         locales: {

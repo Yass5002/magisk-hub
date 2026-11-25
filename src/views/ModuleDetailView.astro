@@ -6,6 +6,7 @@ import { getAllModules, getCategoryInfo, generateModuleSEO, type ModuleData } fr
 import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
 import { getSoftwareTypeBadgeText } from '../i18n/taxonomy';
 import { getUI } from '../i18n/ui';
+import { SUPERSEDED_MODULES } from '../data/archivedModules';
 
 export interface Props {
   module: ModuleData;
@@ -269,6 +270,15 @@ const breadcrumbs = [
 ];
 
 const seo = generateModuleSEO(module, locale);
+const supersededForModule = Object.values(SUPERSEDED_MODULES)
+  .filter(s => s.replacementSlug === module.id)
+  .reduce<Record<string, { name: string; summary: string }>>((acc, s) => {
+    acc[s.slug] = {
+      name: locale === 'zh' ? s.zhName : s.name,
+      summary: locale === 'zh' ? s.zhSummary : s.enSummary,
+    };
+    return acc;
+  }, {});
 const keywords = locale === 'zh'
   ? [module.name, module.enName || module.id, category.name, ...module.compatibility, ...(module.searchAliases || []), 'Magisk 模块', 'KernelSU', 'APatch']
   : [module.name, module.category, ...module.compatibility, 'root module', 'magisk', 'kernelsu'];
@@ -283,6 +293,32 @@ const keywords = locale === 'zh'
 >
   <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
     <Breadcrumbs items={breadcrumbs} />
+
+    {Object.keys(supersededForModule).length > 0 && (
+      <div
+        id="supersededNoticeBanner"
+        data-superseded-map={JSON.stringify(supersededForModule)}
+        data-locale={locale}
+        data-replacement-name={module.name}
+        class="hidden mt-4 rounded-xl border border-amber-200 bg-amber-50/80 px-4 py-3 text-xs sm:text-sm text-amber-950"
+        role="status"
+      >
+        <div class="flex items-start justify-between gap-3">
+          <div class="space-y-0.5">
+            <p id="supersededNoticeTitle" class="font-semibold"></p>
+            <p id="supersededNoticeDesc" class="text-xs text-amber-800"></p>
+          </div>
+          <button
+            type="button"
+            id="supersededNoticeClose"
+            class="text-amber-700 hover:text-amber-950 px-1.5 py-0.5 rounded shrink-0"
+            aria-label={locale === 'zh' ? '关闭提示' : 'Dismiss notice'}
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    )}
 
     <!-- Technical Header Card -->
     <div class="mt-4 rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs">
@@ -769,6 +805,34 @@ const keywords = locale === 'zh'
       }
     });
   });
+
+  const supersededBanner = document.getElementById('supersededNoticeBanner');
+  if (supersededBanner) {
+    try {
+      const fromSlug = new URLSearchParams(window.location.search).get('from') || '';
+      const rawMap = supersededBanner.getAttribute('data-superseded-map');
+      const map = rawMap ? JSON.parse(rawMap) : {};
+      const match = map[fromSlug];
+      if (match) {
+        const isZh = supersededBanner.getAttribute('data-locale') === 'zh';
+        const replName = supersededBanner.getAttribute('data-replacement-name') || '';
+        const titleEl = document.getElementById('supersededNoticeTitle');
+        const descEl = document.getElementById('supersededNoticeDesc');
+        if (titleEl) {
+          titleEl.textContent = isZh
+            ? `已从「${match.name}」自动跳转至替代模块：${replName}`
+            : `Redirected from ${match.name} to its active replacement: ${replName}`;
+        }
+        if (descEl) descEl.textContent = match.summary || '';
+        supersededBanner.classList.remove('hidden');
+        document.getElementById('supersededNoticeClose')?.addEventListener('click', () => {
+          supersededBanner.classList.add('hidden');
+        });
+      }
+    } catch {
+      // Ignore query parsing errors
+    }
+  }
 
   const docArticle = document.querySelector('article[data-module-slug]');
   if (docArticle && 'IntersectionObserver' in window) {

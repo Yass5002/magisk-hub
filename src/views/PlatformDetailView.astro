@@ -2,9 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ModuleCard from '../components/ModuleCard.astro';
-import { type PlatformInfo, type ModuleData } from '../lib/modules';
+import { CATEGORIES, type PlatformInfo, type ModuleData } from '../lib/modules';
+import { loadSearchMetadataContext, buildModuleFilterAttributes } from '../lib/searchIndex';
 import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
-import { localizePlatform } from '../i18n/taxonomy';
+import { localizeCategory, localizePlatform } from '../i18n/taxonomy';
 import { getUI } from '../i18n/ui';
 
 export interface Props {
@@ -17,6 +18,10 @@ const { platform: rawPlatform, modules, locale = 'en' } = Astro.props;
 const ui = getUI(locale);
 const platform = localizePlatform(rawPlatform, locale);
 const canonicalPath = localizePath(`/compatibility/${platform.id}/`, locale);
+const searchCtx = await loadSearchMetadataContext();
+const allCategories = Object.values(CATEGORIES).map(c => localizeCategory(c, locale));
+const countPrefix = locale === 'zh' ? '共 ' : '';
+const countSuffix = locale === 'zh' ? ' 个模块' : ' modules';
 
 const breadcrumbs = [
   { name: ui.moduleDetail.home, url: localizePath('/', locale) },
@@ -61,14 +66,81 @@ const platformSchema = {
       </p>
     </div>
 
-    <!-- Modules Grid -->
-    <div class="mt-6">
-      <h2 class="sr-only">{ui.platformDetail.srHeading(platform.name)}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modules.map(mod => (
-          <ModuleCard module={mod} locale={locale} />
-        ))}
+    <!-- Search, Category & Sort Controls -->
+    <div class="mt-6 space-y-2.5">
+      <div class="flex flex-col sm:flex-row gap-2.5">
+        <div class="relative flex-1 flex items-center h-10 rounded-lg border border-zinc-200 bg-white shadow-2xs focus-within:border-zinc-900">
+          <div class="pl-3 pr-2 text-zinc-400 pointer-events-none">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder={ui.home.searchPlaceholder(modules.length)}
+            autocomplete="off"
+            class="w-full bg-transparent py-2 pr-8 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
+          />
+          <button id="searchClearBtn" type="button" class="hidden absolute right-2 p-1 text-zinc-400 hover:text-zinc-700 rounded" aria-label={ui.home.clearSearch}>
+            ✕
+          </button>
+        </div>
+        <select id="categorySelect" class="h-10 rounded-lg border border-zinc-200 bg-white px-3 text-xs font-medium text-zinc-700 focus:border-zinc-900 focus:outline-none">
+          <option value="all">{ui.home.allCategories}</option>
+          {allCategories.map(c => (
+            <option value={c.id}>{c.name}</option>
+          ))}
+        </select>
+        <select id="sortSelect" class="h-10 rounded-lg border border-zinc-200 bg-white px-3 text-xs font-medium text-zinc-700 focus:border-zinc-900 focus:outline-none">
+          <option value="trending">{ui.home.sortTrending}</option>
+          <option value="stars">{ui.home.sortStars}</option>
+          <option value="recent">{ui.home.sortRecent}</option>
+          <option value="name">{ui.home.sortName}</option>
+        </select>
+      </div>
+      <div class="text-xs font-mono text-zinc-400">
+        <span id="moduleCount" data-prefix={countPrefix} data-suffix={countSuffix}>{ui.platformDetail.modulesCount(modules.length)}</span>
       </div>
     </div>
+
+    <!-- Modules Grid -->
+    <div class="mt-4">
+      <h2 class="sr-only">{ui.platformDetail.srHeading(platform.name)}</h2>
+      <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {modules.map(mod => {
+          const attrs = buildModuleFilterAttributes(mod, searchCtx);
+          return (
+            <div
+              class="module-card-wrapper h-full"
+              data-id={mod.id}
+              data-name={attrs.nameLower}
+              data-search={attrs.searchIndex}
+              data-search-norm={attrs.searchNorm}
+              data-fuzzy-tokens={attrs.fuzzyTokens}
+              data-category={mod.category}
+              data-compat={mod.compatibility.join(',')}
+              data-stars={mod.stars || 0}
+              data-trending={mod.trendingDownloads || 0}
+              data-date={mod.latestRelease.publishedAt}
+            >
+              <ModuleCard module={mod} locale={locale} />
+            </div>
+          );
+        })}
+      </div>
+      <div id="noResults" class="hidden text-center py-12 bg-white rounded-xl border border-zinc-200 mt-4">
+        <p class="text-zinc-900 text-sm font-semibold">{ui.home.noResultsTitle}</p>
+        <p class="text-zinc-500 text-xs mt-1">{ui.home.noResultsDesc}</p>
+        <button id="resetBtn" type="button" class="mt-3 inline-flex items-center rounded-lg border border-zinc-200 bg-white px-3.5 py-1.5 text-xs font-semibold text-zinc-800 hover:bg-zinc-50">
+          {ui.home.resetFilters}
+        </button>
+      </div>
+    </div>
+
+    <script>
+      import { initCatalogFilter } from '../scripts/catalogFilter';
+      initCatalogFilter({ trackUmami: false, syncUrl: true });
+    </script>
   </div>
 </BaseLayout>

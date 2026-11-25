@@ -1,0 +1,15 @@
+---
+import ArchivedModuleView from '../../../views/ArchivedModuleView.astro';
+import { ARCHIVED_MODULES } from '../../../data/archivedModules';
+
+export async function getStaticPaths() {
+  return ARCHIVED_MODULES.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<ArchivedModuleView entry={entry} locale="zh" />
