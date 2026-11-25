@@ -1,0 +1,28 @@
+{
+  "id": "joyctl-android",
+  "name": "JoyCtl Android",
+  "repo": "308532806/joyctl-android",
+  "category": "performance-kernel",
+  "softwareType": "standalone-app",
+  "description": "Root utility reading and modifying Xiaomi/HyperOS Joyose cloud control database (teg_config.db) on-device for thermal thresholds, FPS locks, and migt tuning.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/joyctl-android.png",
+  "stars": 6,
+  "latestRelease": {
+    "tag": "v1.0.17",
+    "publishedAt": "2026-08-27T06:05:42Z",
+    "url": "https://github.com/308532806/joyctl-android/releases/tag/v1.0.17",
+    "downloadUrl": "https://github.com/308532806/joyctl-android/releases/download/v1.0.17/JoyCtl-Android-v1.0.17.apk",
+    "assetName": "JoyCtl-Android-v1.0.17.apk"
+  },
+  "seo": {
+    "title": "JoyCtl Android – Xiaomi Joyose Cloud Control Editor | Magisk Hub",
+    "description": "Download JoyCtl Android (com.hexwander.joyctl) for Magisk, KernelSU, and APatch. Edit Xiaomi/HyperOS Joyose teg_config.db thermal and FPS limits on-device via su."
+  },
+  "contentTier": 1
+}

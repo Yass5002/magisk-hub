@@ -1,0 +1,29 @@
+{
+  "id": "disable-flag-secure",
+  "name": "DisableFlagSecure (Enable Screenshot)",
+  "repo": "LSPosed/DisableFlagSecure",
+  "category": "xposed-runtime-hooks",
+  "softwareType": "xposed-module",
+  "description": "Official LSPosed module that enables screenshots and screen recording in FLAG_SECURE-protected apps while disabling Android 14+ screenshot and Android 15+ recording detection.",
+  "compatibility": [
+    "LSPosed",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/disable-flag-secure.png",
+  "stars": 1423,
+  "latestRelease": {
+    "tag": "v5.0.1",
+    "publishedAt": "2026-04-04T00:54:35Z",
+    "url": "https://github.com/LSPosed/DisableFlagSecure/releases/tag/v5.0.1",
+    "downloadUrl": "https://github.com/LSPosed/DisableFlagSecure/releases/download/v5.0.1/app-release.apk",
+    "assetName": "app-release.apk"
+  },
+  "seo": {
+    "title": "DisableFlagSecure (Enable Screenshot) – Download (LSPosed) | Magisk Hub",
+    "description": "Download LSPosed/DisableFlagSecure for Android 12–16 (HyperOS, ColorOS, One UI). Bypass FLAG_SECURE restrictions and block screenshot and screen-recording detection."
+  },
+  "contentTier": 1
+}

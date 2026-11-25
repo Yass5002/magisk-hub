@@ -2,83 +2,86 @@
 id: "librepods"
 title: "LibrePods: AirPods Feature Integration for Rooted Android"
 sidebarTitle: "LibrePods"
-description: "Open-source background service and system integration bringing Apple-exclusive AirPods features like listening mode switching, ear detection, and battery reporting to Android."
+description: "Open-source standalone Android app and LSPosed hook bringing Apple-exclusive AirPods features like ANC toggling, ear detection, and battery reporting to Android."
 category: "system-utilities"
 tier: 1
 searchQueries:
-  - "librepods magisk module"
+  - "librepods apk download"
   - "airpods features on android root"
-  - "librepods xposed bluetooth hook"
+  - "librepods lsposed bluetooth hook"
   - "airpods battery status android"
   - "librepods noise cancellation android"
 prerequisites:
-  - "Magisk, KernelSU, or APatch"
-  - "Xposed framework (LSPosed or Vector) with scope set to Bluetooth (com.android.bluetooth) on Android versions prior to Android 17"
+  - "Magisk, KernelSU, or APatch (for root-assisted privileged Bluetooth access)"
+  - "LSPosed (libxposed API 101) with scope set to Bluetooth (`com.android.bluetooth`) and Settings on Android versions prior to Android 17"
 conflicts:
-  - "Root-hiding modules configured to hide root from the system Bluetooth process (prevents LSPosed hooks from attaching)"
-  - "Google Play Store release of LibrePods installed concurrently with the root module (causes signature mismatch issues)"
+  - "Root-hiding modules configured to unmount or hide from `com.android.bluetooth` (prevents `libfluoride_hooks.so` from attaching)"
+  - "Incompatible older v1 zip-based builds signed with a different key"
 configPaths:
-  - "/system/priv-app/LibrePods/LibrePods.apk"
-  - "/system/etc/permissions/privapp-permissions-librepods.xml"
-  - "/data/adb/modules/librepods/"
+  - "/data/adb/lspd/"
+  - "/data/data/me.kavishdevar.librepods/"
 features:
-  - "Native listening mode toggling: Active Noise Cancellation, Transparency, and Off modes directly from Quick Settings or app interface"
-  - "Optical in-ear detection with automatic audio routing: pauses playback and routes sound back to device speaker when earbuds are removed"
-  - "Real-time battery monitoring for left bud, right bud, and charging case integrated into system notifications and widgets"
-  - "VendorID protocol emulation: unlocks Apple-exclusive proprietary Bluetooth commands without requiring macOS or iOS devices"
-  - "System-level privilege injection: grants BLUETOOTH_PRIVILEGED and MODIFY_PHONE_STATE permissions systemlessly"
+  - "v2 rewrite standalone APK (`me.kavishdevar.librepods`) shipping `AirPodsQSService` for Quick Settings listening-mode tiles and `LibrePodsService` for background protocol handling"
+  - "Native Fluoride Bluetooth stack hooking via `libfluoride_hooks.so` (arm64-v8a, armeabi-v7a, x86, x86_64) and libxposed API 101 (`KotlinModule`)"
+  - "Active Noise Cancellation, Transparency, Adaptive, and Off listening-mode toggling directly from Quick Settings, widgets (`NoiseControlWidget`), or the app UI"
+  - "Optical in-ear detection with automatic media pause/resume and loudspeaker routing via `MODIFY_AUDIO_ROUTING` and `LibrePodsAccessibilityService`"
+  - "Real-time left bud, right bud, and charging case battery monitoring with home-screen `BatteryWidget` support"
 faq:
-  - question: "Why does LibrePods require an Xposed framework on Android?"
-    answer: "Due to Apple's non-standard Bluetooth implementation and a documented bug in Android's Fluoride Bluetooth stack, standard third-party apps cannot establish the custom RFCOMM channel required for AirPods control packets. An Xposed module hook into com.android.bluetooth is necessary to patch the Bluetooth stack at runtime until the upstream fix lands in Android 17."
-  - question: "Can I use the Google Play Store build alongside this root module?"
-    answer: "No. The Play Store release and GitHub root module are signed with different cryptographic keys. Installing both creates package signature conflicts. Use the root module package directly if you require privileged Bluetooth permissions and status bar battery integration."
+  - question: "Why does LibrePods require LSPosed on current Android versions?"
+    answer: "Due to Apple's non-standard Bluetooth implementation and a bug in Android's Fluoride Bluetooth stack, standard third-party apps cannot establish the custom L2CAP/RFCOMM control channel required by AirPods. LibrePods bundles a libxposed API 101 module (`me.kavishdevar.librepods.XposedService`) and `libfluoride_hooks.so` to patch `com.android.bluetooth` at runtime until the upstream fix lands in Android 17."
+  - question: "What changed in the LibrePods v2 rewrite APK?"
+    answer: "Instead of shipping only a systemless flashable zip, the v2 rewrite distributes `LibrePods-FOSS-v2.0.0-alpha.4-200000004-release.apk` (`me.kavishdevar.librepods`) as a unified standalone app and embedded libxposed module, complete with `AirPodsQSService`, `LibrePodsService`, and native widgets (`BatteryWidget`, `NoiseControlWidget`)."
 ---
 
 ## Overview
 
-Developed by **kavishdevar**, **LibrePods** is a reverse-engineered implementation of Apple's proprietary accessory protocol for AirPods on Android. 
+Maintained under **librepods-org/librepods**, **LibrePods** is an open-source implementation of Apple's proprietary accessory communication protocol for AirPods on Android.
 
-While AirPods operate as standard Bluetooth A2DP audio sinks on any device, advanced hardware capabilities—such as switching between Active Noise Cancellation (ANC) and Transparency modes, optical ear-detection pausing, spatial audio head tracking, and real-time battery readouts—normally require Apple's private handshake. LibrePods reverse-engineers this protocol, handling the handshake directly on Android to unlock feature parity with iOS.
+While AirPods work as generic Bluetooth A2DP headphones on any Android device, hardware-level features—such as switching between Active Noise Cancellation (ANC) and Transparency modes, optical in-ear detection, conversational awareness, and accurate per-bud/case battery readouts—rely on Apple's private vendor protocol. The **v2 rewrite** (`me.kavishdevar.librepods`) packages the full Android client, Quick Settings tile service, widgets, and LSPosed Bluetooth stack hooks into a single FOSS APK (`LibrePods-FOSS-v2.0.0-alpha.4-200000004-release.apk`).
 
 ---
 
 ## Technical Architecture & How It Works
 
-### Bluetooth Stack Interception & Permissions
+### Unified App + libxposed API 101 Architecture
 
-LibrePods addresses two major architectural constraints on Android:
+Inspecting the `me.kavishdevar.librepods` APK reveals how the v2 rewrite coordinates app services with system Bluetooth hooking:
 
-1. **Privileged System Permissions**: By installing as a systemless overlay in `/system/priv-app/LibrePods/`, the app is granted `BLUETOOTH_PRIVILEGED` and `MODIFY_PHONE_STATE` via `/system/etc/permissions/privapp-permissions-librepods.xml`. This enables the module to switch audio streams to loudspeaker when earbuds are disengaged and display system-level battery metrics.
-2. **Fluoride Bluetooth Stack Hooking**: Android's standard Fluoride Bluetooth stack enforces strict SDP record lookups that drop connections with non-standard Apple vendor profiles. LibrePods hooks into `com.android.bluetooth` via an Xposed provider (LSPosed or Vector) to bypass this validation, intercepting the raw RFCOMM channel to exchange control packets with the Apple H1/H2 chips.
-3. **VendorID Spoofing**: To communicate bidirectional commands (such as stem click gestures or ambient awareness toggles), the module emulates the expected VendorID exchange that AirPods expect from an authentic Apple host.
+1. **Core Services (`LibrePodsService` & `AirPodsQSService`)**:
+   - `me.kavishdevar.librepods.services.LibrePodsService` runs as a `connectedDevice` foreground service (`FOREGROUND_SERVICE_CONNECTED_DEVICE`), maintaining the bidirectional AirPods control session, battery state parsing, and audio routing triggers.
+   - `me.kavishdevar.librepods.services.AirPodsQSService` implements Android's `TileService` (`BIND_QUICK_SETTINGS_TILE`), allowing one-tap switching of ANC, Transparency, and Off modes directly from the notification shade.
+   - `me.kavishdevar.librepods.services.LibrePodsAccessibilityService` assists with media/system interaction hooks when configured.
+2. **libxposed API 101 Integration (`XposedService` & `KotlinModule`)**:
+   - The APK declares `minApiVersion=101` and `targetApiVersion=101` with `staticScope=true` in `META-INF/xposed/module.prop`, exposing `io.github.libxposed.service.XposedProvider` and `me.kavishdevar.librepods.XposedService`.
+   - `me.kavishdevar.librepods.utils.KotlinModule` initializes Java-side hooks alongside `libfluoride_hooks.so` (`META-INF/xposed/native_init.list`) and `libhiddenapi.so` across `arm64-v8a`, `armeabi-v7a`, `x86`, and `x86_64`.
+3. **Bluetooth Stack Scope**:
+   - `META-INF/xposed/scope.list` targets `com.android.bluetooth`, `com.android.settings`, and `com.google.android.settings` so the Fluoride stack bypasses strict SDP filtering and allows Apple VendorID packet exchange.
 
 ---
 
 ## Installation & Setup
 
 ### 1. Prerequisites Check
-- Verify that your root environment (Magisk, KernelSU, or APatch) is operating normally.
-- Install an active Xposed environment such as **LSPosed** or **Vector**.
+- Ensure your device is rooted with **Magisk**, **KernelSU**, or **APatch**.
+- Install an **LSPosed** build supporting **libxposed API 101**.
 
-### 2. Flash Module
-1. Download the latest `LibrePods-FOSS-*-release.zip` from official releases.
-2. Flash the zip in your root manager and reboot the device.
-3. Upon reboot, launch your Xposed manager (LSPosed/Vector) and ensure LibrePods is enabled with the **Bluetooth** (`com.android.bluetooth`) scope checked.
-4. Perform a final soft reboot to initialize the hook.
+### 2. Install and Enable LibrePods
+1. Download `LibrePods-FOSS-v2.0.0-alpha.4-200000004-release.apk` from the official `librepods-org/librepods` release.
+2. Install the APK normally on your device (`adb install LibrePods-FOSS-v2.0.0-alpha.4-200000004-release.apk` or via your package installer).
+3. Open **LSPosed Manager** -> **Modules**, enable **LibrePods**, and verify that `com.android.bluetooth` (and Settings if prompted) is checked in the Scope list.
+4. Reboot your device so the native `libfluoride_hooks.so` hook loads cleanly into the Bluetooth process.
 
 ---
 
 ## Configuration & Usage
 
-Once installed:
-- **Pairing**: Connect your AirPods through Android's standard Bluetooth settings.
-- **Listening Modes**: Switch between Noise Cancellation, Transparency, and Off either inside the LibrePods app or by adding the provided Quick Settings tile to your notification shade.
-- **Ear Detection**: Enable automatic playback pause and speaker fallback when you remove one or both earbuds.
-- **Stem Actions**: Configure short-press and long-press stem functions to match your desired action mappings.
+- **Pairing & Permissions**: Pair your AirPods through Android Bluetooth settings, then open LibrePods (`MainActivity`) to grant nearby device (`BLUETOOTH_CONNECT` / `BLUETOOTH_SCAN`), notification, and optional root/accessibility permissions.
+- **Quick Settings & Widgets**: Add the **AirPods** Quick Settings tile backed by `AirPodsQSService`, or place `BatteryWidget` and `NoiseControlWidget` on your home screen.
+- **Listening Modes & Ear Detection**: Toggle ANC/Transparency modes, configure stem press actions, and enable automatic pause/resume on ear removal.
 
 ---
 
 ## Troubleshooting & Common Issues
 
-- **App fails to detect AirPods**: Ensure the `com.android.bluetooth` scope is actively selected in LSPosed. If you use a root-cloaking module (such as Shamiko or NeoZygisk DenyList), confirm that the system Bluetooth daemon is not being unmounted or isolated from Xposed.
-- **Renaming AirPods**: When renaming AirPods in the LibrePods interface, you must disconnect and re-pair the earbuds once for Android's Bluetooth cache to refresh the local broadcast name.
+- **AirPods features fail to connect**: Confirm LibrePods is enabled in LSPosed and that `com.android.bluetooth` is selected in Scope. If you use root-hiding tools (such as Shamiko or DenyList enforcement), verify that `com.android.bluetooth` is not excluded from Zygisk/LSPosed injection.
+- **Upgrading from older v1 builds**: Uninstall legacy v1 systemless zip modules or conflicting Play Store packages before installing the v2 rewrite APK to avoid signature mismatches.

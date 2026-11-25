@@ -1,0 +1,16 @@
+{
+  "id": "alwaysstrong",
+  "displayName": "AlwaysStrong",
+  "description": "由 Evokerr 维护的一体化 Strong Play Integrity 模块，整合 TEESimulator-RS 与 PlayIntegrityFork，支持自动刷新密钥盒与 WebUI 管理。",
+  "seo": {
+    "title": "AlwaysStrong 下载与配置指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 AlwaysStrong，支持 Magisk、KernelSU 与 APatch。集成 TEESimulator-RS 与 PlayIntegrityFork，配备 WebUI 与自动刷新以通过 Strong 认证。"
+  },
+  "searchAliases": [
+    "AlwaysStrong 下载",
+    "Strong Integrity 一体包",
+    "TEESimulator PlayIntegrityFork 合集",
+    "Evokerr AlwaysStrong",
+    "Play Integrity 强认证模块"
+  ]
+}

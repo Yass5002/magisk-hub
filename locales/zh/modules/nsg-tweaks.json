@@ -1,0 +1,16 @@
+{
+  "id": "nsg-tweaks",
+  "displayName": "NSG Tweaks (网络信号大师增强)",
+  "description": "面向 Network Signal Guru（com.qtrun.QuickTest v4.8.14）的 LSPosed 扩展模块，新增基站表扩展行数、ARFCN 与带宽列、信令搜索及回放控制等功能。",
+  "seo": {
+    "title": "NSG Tweaks 下载与 LSPosed 配置指南 (网络信号大师增强) | Magisk Hub",
+    "description": "下载 NSG Tweaks LSPosed 模块，支持扩展 Network Signal Guru v4.8.14 基站表行数、ARFCN/带宽列、信令搜索及回放控制功能。"
+  },
+  "searchAliases": [
+    "NSG Tweaks 下载",
+    "Network Signal Guru 增强模块",
+    "网络信号大师 LSPosed 插件",
+    "5G NR 基站表扩展",
+    "com.nsgmod.band"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "librepods",
+  "displayName": "LibrePods (AirPods 生态适配)",
+  "description": "开源 Android 客户端与 LSPosed 钩子模块，通过逆向还原苹果私有蓝牙协议，在安卓设备上解锁 AirPods 主动降噪切换、入耳检测、分体电量显示与手势控制。",
+  "seo": {
+    "title": "LibrePods 下载与配置指南 (AirPods 安卓生态适配) | Magisk Hub",
+    "description": "下载 LibrePods 开源客户端，兼容 Magisk、KernelSU、APatch 与 LSPosed。在安卓上完整解锁 AirPods 主动降噪、入耳检测、电量弹窗与对话感知等苹果生态特性。"
+  },
+  "searchAliases": [
+    "LibrePods 下载",
+    "安卓用 AirPods 降噪切换",
+    "AirPods 安卓入耳检测弹窗",
+    "AirPods 电量显示 LSPosed",
+    "苹果耳机安卓开源客户端"
+  ]
+}

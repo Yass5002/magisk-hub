@@ -1,0 +1,28 @@
+{
+  "id": "magisk-frida",
+  "name": "Magisk-Frida",
+  "repo": "ViRb3/magisk-frida",
+  "category": "development-instrumentation",
+  "softwareType": "flashable-module",
+  "description": "Packs and runs the official frida-server daemon systemlessly on boot across ARM, ARM64, x86, and x86_64 devices with Action toggle support.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/magisk-frida.png",
+  "stars": 1490,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "17.27.5-1",
+    "publishedAt": "2026-11-23T23:28:44Z",
+    "url": "https://github.com/ViRb3/magisk-frida/releases/tag/17.27.5-1",
+    "downloadUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.27.5-1/MagiskFrida-17.27.5-1.zip",
+    "assetName": "MagiskFrida-17.27.5-1.zip"
+  },
+  "seo": {
+    "title": "Magisk-Frida – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download Magisk-Frida for Magisk, KernelSU, and APatch. Automatically runs frida-server on boot with multi-architecture support and Action toggling."
+  }
+}

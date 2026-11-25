@@ -1,0 +1,28 @@
+{
+  "id": "meta-magic-mount-rs",
+  "name": "Magic Mount-rs",
+  "repo": "Tools-cx-app/meta-magic_mount-rs",
+  "category": "root-management",
+  "softwareType": "flashable-module",
+  "description": "Rust-based metamodule implementing Magic Mount systemless file overlays, custom bind rules, and WebUI configuration for KernelSU and APatch.",
+  "compatibility": [
+    "KernelSU",
+    "APatch",
+    "Magisk"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/meta-magic-mount-rs.png",
+  "stars": 632,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v4.1.12",
+    "publishedAt": "2026-10-30T21:41:55Z",
+    "url": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/tag/v4.1.12",
+    "downloadUrl": "https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.1.12/magic_mount_rs-4.1.12-959-universal.zip",
+    "assetName": "magic_mount_rs-4.1.12-959-universal.zip"
+  },
+  "seo": {
+    "title": "Magic Mount-rs – Download (KSU/APatch/Magisk) | Magisk Hub",
+    "description": "Download Magic Mount-rs metamodule for KernelSU, APatch, and Magisk. High-performance Rust systemless file mounter with custom bind rules and WebUI."
+  }
+}

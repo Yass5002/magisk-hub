@@ -2,117 +2,111 @@
 id: "corepatch"
 title: "CorePatch: Disable Android APK Signature & Downgrade Restrictions"
 sidebarTitle: "CorePatch"
-description: "Powerful Xposed runtime hook by coderstory that patches Android's PackageManagerService to permit APK downgrades, conflicting keystore overwrites, and unsigned packages."
+description: "LSPosed-maintained Xposed module (org.lsposed.corepatch) using libxposed API 101 to bypass APK signature verification, allow app downgrades without data loss, and permit cross-signature overwrites."
 category: "xposed-runtime-hooks"
 tier: 1
 searchQueries:
   - "corepatch lsposed apk"
+  - "lsposed corepatch download"
   - "disable signature verification android"
   - "downgrade android app without data loss"
-  - "corepatch module download"
   - "install conflicting signature apk root"
 prerequisites:
-  - "Android 9.0 (Pie) up to Android 15"
-  - "LSPosed framework running with libxposed API 101 support"
+  - "Android 9.0 (Pie) or higher with Magisk, KernelSU, or APatch"
+  - "Official LSPosed framework supporting libxposed API 101"
 conflicts:
-  - "Legacy Lucky Patcher core.jar binary patches (causes system_server crashes when combined with runtime ART hooks)"
-  - "Static framework.jar patches on custom ROMs"
+  - "Legacy Lucky Patcher static core.jar/services.jar binary patches (causes system_server crashes when combined with runtime ART hooks)"
+  - "Older coderstory/CorePatch package installations with conflicting package names or signatures"
 configPaths:
-  - "/data/system/users/0/lspd/modules/org.lsposed.lspd/"
+  - "/data/adb/lspd/"
+  - "/data/data/org.lsposed.corepatch/"
 features:
+  - "Official LSPosed/CorePatch N (`org.lsposed.corepatch`) build powered by libxposed API 101 (`XposedService` & `XposedProvider`)"
   - "Signature verification bypass: allows installation of modified, re-signed, or unsigned APKs over authentic store builds"
-  - "Direct app downgrading: bypasses PackageManager INSTALL_FAILED_VERSION_DOWNGRADE errors without wiping app data"
-  - "Cross-signature package overwrite: permits installing an APK signed with a debug certificate over a production release"
-  - "Digest check suppression: bypasses SHA-256 package manifest digest matching on Android 11+"
+  - "Direct app downgrading: bypasses PackageManager `INSTALL_FAILED_VERSION_DOWNGRADE` errors without wiping app data"
+  - "Cross-signature package overwrite: permits installing an APK signed with a debug key over a production release"
+  - "Digest check suppression: bypasses SHA-256 package manifest digest checks on modern Android releases"
 faq:
   - question: "Which scope must be selected in LSPosed for CorePatch to work?"
-    answer: "CorePatch hooks Android's package manager internals. In LSPosed Manager, you MUST select 'System Framework' (`android`) in the module's Scope list. Without selecting `android`, the hooks will never be injected into `system_server` and installations will continue to fail."
-  - question: "Can CorePatch allow downgrading system applications like Google Play Services?"
-    answer: "Yes, but downgrading core system components that have upgraded their internal SQLite databases can cause app crashes due to database schema incompatibility. Always make a data backup before downgrading critical system apps."
+    answer: "CorePatch (`org.lsposed.corepatch`) ships with `staticScope=true` and `scope.list` targeting `system` (System Framework). In LSPosed Manager, ensure **System Framework** (`system`) is checked in the module's Scope list and reboot so hooks attach inside `system_server`."
+  - question: "Why is CorePatch now hosted under LSPosed/CorePatch?"
+    answer: "Originally authored by coderstory, CorePatch was transferred to the official **LSPosed/CorePatch** repository and modernized into CorePatch N (`N-1.0`+), migrating to libxposed API 101 (`org.lsposed.corepatch.XposedService`) for clean compatibility with newer Android versions."
   - question: "Why do I see 'INSTALL_FAILED_DUPLICATE_PERMISSION' even with CorePatch active?"
-    answer: "CorePatch bypasses signature and version code checks, but Android enforces a strict permission tree rule: if an app declares a custom permission already claimed by another package with a different signature, the OS rejects it. You must temporarily freeze or remove the conflicting app declaring the permission."
+    answer: "CorePatch bypasses signature and version code checks, but Android enforces a strict permission tree rule: if an app declares a custom permission already claimed by another package with a different signature, the OS rejects it. Temporarily freeze or remove the conflicting app declaring that permission."
 ---
 
 ## Overview
 
-On stock Android, the operating system strictly enforces application provenance through digital signatures verified by the `PackageManagerService` (PMS). Whenever an application is installed or updated, the system compares the cryptographic certificate in the APK against the certificate on record in `/data/system/packages.xml`:
+On stock Android, `PackageManagerService` (PMS) strictly enforces application provenance using cryptographic signatures recorded in `/data/system/packages.xml`. When installing or updating an app, Android checks:
 
-1. **Signature Mismatch**: If an APK is re-signed with a different key, Android terminates installation with `INSTALL_FAILED_UPDATE_INCOMPATIBLE`.
-2. **Version Code Downgrade**: If the incoming APK has a `versionCode` lower than the currently installed version, Android aborts with `INSTALL_FAILED_VERSION_DOWNGRADE`.
-3. **Digest Integrity**: On modern Android releases, PMS validates SHA-256 APK digests against system manifest tables.
+1. **Signature Mismatch**: Re-signed or modified APKs trigger `INSTALL_FAILED_UPDATE_INCOMPATIBLE`.
+2. **Version Code Downgrade**: Lower `versionCode` packages fail with `INSTALL_FAILED_VERSION_DOWNGRADE`.
+3. **Manifest & Digest Integrity**: Modern Android validates APK signing blocks and digests against installed package records.
 
-While these safeguards protect end users against malicious APK hijacking, they create substantial friction for reverse engineers, Android developers, modders, and power users who need to test modified application binaries, test debug builds over release builds, or rollback bug-ridden updates without wiping app databases.
-
-**CorePatch** (officially succeeded by CorePatch N) is an Xposed module developed by coderstory that dynamically disables these restrictions inside Android Runtime memory without permanently modifying system partitions.
+Originally created by **coderstory** and now officially transferred to and maintained under **LSPosed/CorePatch** (`org.lsposed.corepatch`), **CorePatch** dynamically relaxes these checks inside Android Runtime memory via **libxposed API 101** without patching `/system/framework/services.jar` on disk.
 
 ---
 
-## Technical Hooking Mechanics
+## Technical Architecture & How It Works
 
-Rather than modifying `/system/framework/services.jar` or flashing patched ROMs, CorePatch executes inside the `system_server` process via LSPosed:
+### libxposed API 101 & `system_server` Hooking
 
-- **`system_server` Process**: Hosts Android's core `PackageManagerService` (PMS), `KeySetManagerService`, and signature verification logic (`SigningDetails.checkCapability()`).
-- **CorePatch Hooks (via LSPosed Framework)**: Injected directly into the `system_server` runtime to intercept and override signature verification methods before package installation decisions are finalized.
+Inspecting the `LSPosed/CorePatch` `N-1.0` release (`app-release.apk`) confirms a compact, modern libxposed architecture:
 
-When an installation intent is dispatched via `adb install` or the PackageInstaller UI, CorePatch intercepts the following PMS methods:
-- **`SigningDetails.checkCapability()`**: Forces the capability check to return `true` regardless of certificate differences.
-- **`PackageManagerService.checkDowngrade()`**: Suppresses downgrade rejections, allowing lower version codes to overwrite newer versions.
-- **`PackageParser.collectCertificates()`**: Bypasses signature parsing failures on malformed or unsigned APK packages.
+- **Package & Service Model**: `org.lsposed.corepatch` declares `io.github.libxposed.service.XposedProvider` and `org.lsposed.corepatch.XposedService` in its manifest, enabling direct module-to-framework preference synchronization via libxposed API 101 (`minApiVersion=101`, `targetApiVersion=101`).
+- **Static System Scope**: `META-INF/xposed/module.prop` sets `staticScope=true` with `META-INF/xposed/scope.list` fixed to `system` (`system_server`), where Android's `PackageManagerService`, `KeySetManagerService`, and `SigningDetails` live.
+- **Runtime Method Interception**: CorePatch hooks package verification paths (`SigningDetails.checkCapability()`, `PackageManagerService.checkDowngrade()`, and certificate collection routines) in memory so debug, re-signed, unsigned, or older-version APKs pass verification cleanly.
 
 ---
 
 ## Installation & Configuration
 
 ### Prerequisites
-- Android 9 through Android 15.
-- An operational root environment running **LSPosed**.
+- A rooted Android device running **Magisk**, **KernelSU**, or **APatch**.
+- **LSPosed** with **libxposed API 101** support.
 
 ### Step 1: Install the Module
-1. Download `app-release.apk` from the official CorePatch release.
-2. Install the APK normally on your Android device.
+1. Download `app-release.apk` from the official `LSPosed/CorePatch` release (`N-1.0` or newer).
+2. Install the APK normally on your device (uninstall any legacy pre-transfer `coderstory` CorePatch package first if you encounter signature conflicts).
 
-### Step 2: Configure Scope in LSPosed
-1. Open **LSPosed Manager**.
-2. Tap the **Modules** icon (puzzle piece) in the bottom navigation bar.
-3. Locate **CorePatch** and toggle it **ON**.
-4. In the Scope list, ensure **System Framework** (`android`) is checked.
-5. *(Optional)*: Open the CorePatch application UI from your launcher to toggle specific behaviors:
+### Step 2: Enable & Reboot
+1. Open **LSPosed Manager** -> **Modules**.
+2. Enable **CorePatch** and confirm **System Framework** (`system`) is selected in Scope.
+3. Open **CorePatch** (`org.lsposed.corepatch.MainActivity`) from your launcher (or LSPosed module settings) to configure individual toggles:
    - *Allow downgrade installation*
    - *Disable signature verification*
    - *Disable package digest checks*
    - *Allow overwrite across different signatures*
-6. Reboot your device to allow `system_server` to initialize with the active hooks.
+4. **Reboot** your device so `system_server` initializes with the updated hooks.
 
 ---
 
 ## Practical Use Cases
 
 ### 1. App Downgrades Without Data Loss
-When an update to an essential application introduces critical bugs, battery drain, or broken features:
+Roll back an updated app that introduced regressions while preserving local SQLite databases and login sessions:
 ```bash
-# Direct downgrade via root shell or ADB without -r or wipe:
-pm install -d /sdcard/Download/app-v1.0.apk
+# Install an older APK directly via ADB or root shell:
+pm install -d /sdcard/Download/app-older.apk
 ```
-The application will be downgraded immediately with all local SQLite databases, preferences, and session tokens preserved.
 
-### 2. Testing Modified or Debug APKs
-When modding an app or testing an open-source fork (e.g., custom YouTube or Spotify client), CorePatch allows installing the modified APK directly over the official build without uninstalling first, preserving login sessions.
+### 2. Installing Debug or Patched Builds Over Store Releases
+Install locally compiled debug builds or open-source forks directly on top of Play Store installations without clearing app data first.
 
 ---
 
 ## Troubleshooting & Recovery
 
-### Installation Still Fails with Signature Mismatch
-If an installation fails despite CorePatch being enabled:
-1. Open LSPosed and verify that **System Framework** (`android`) is selected in the scope.
-2. Verify that CorePatch is toggled ON inside LSPosed.
-3. Perform a clean reboot. Xposed hooks targeting `system_server` only attach during early boot when the system server process starts.
+### Installations Still Fail with Signature Mismatch
+1. Verify **CorePatch** is enabled in LSPosed and **System Framework** (`system`) is checked in Scope.
+2. Perform a full reboot after toggling options if `system_server` hooks were not yet attached.
+3. Ensure no legacy static `services.jar` patches or conflicting signature-spoofing tools are active.
 
-### System Server Crash / Bootloop Recovery
-If an incompatible Android version causes `system_server` to crash during startup:
+### Bootloop Recovery
+If an unsupported ROM build causes `system_server` instability during boot:
 ```bash
-# Connect via ADB and disable LSPosed:
+# Disable LSPosed via ADB during boot and reboot:
 adb wait-for-device shell touch /data/adb/modules/zygisk_lsposed/disable
 adb reboot
 ```
-Once booted, uninstall CorePatch or update to a newer compatible release.
+Once booted, disable or uninstall CorePatch from your device.

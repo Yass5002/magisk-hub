@@ -1,0 +1,16 @@
+{
+  "id": "disable-flag-secure",
+  "displayName": "DisableFlagSecure (解除截屏限制)",
+  "description": "由 LSPosed 官方维护的截屏增强模块（现名 Enable Screenshot），支持 Android 12–16 及各大定制系统，可绕过 FLAG_SECURE 限制并屏蔽截屏与录屏检测。",
+  "seo": {
+    "title": "DisableFlagSecure 解除截屏限制模块下载 (LSPosed) | Magisk Hub",
+    "description": "下载 LSPosed 官方出品的 DisableFlagSecure，支持 Android 12–16 原生及 HyperOS、ColorOS、One UI。解除应用禁止截屏录屏限制并屏蔽截屏与录屏检测通知。"
+  },
+  "searchAliases": [
+    "DisableFlagSecure 下载",
+    "Enable Screenshot LSPosed 模块",
+    "解除禁止截屏限制",
+    "HyperOS 绕过 FLAG_SECURE",
+    "屏蔽 Android 14 截屏检测"
+  ]
+}

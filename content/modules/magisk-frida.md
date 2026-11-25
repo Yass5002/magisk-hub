@@ -2,7 +2,7 @@
 id: "magisk-frida"
 title: "Magisk-Frida: Systemless Frida Server for Reverse Engineering"
 sidebarTitle: "Magisk-Frida"
-description: "Packs and runs the frida-server daemon systemlessly on rooted Android devices with auto-updating architecture and root companion scripts."
+description: "Packs and runs the official frida-server daemon systemlessly on boot across ARM, ARM64, x86, and x86_64 devices with Action toggle and custom port support."
 category: "development-instrumentation"
 tier: 1
 searchQueries:
@@ -13,62 +13,71 @@ searchQueries:
   - "android app dynamic instrumentation"
 prerequisites:
   - "Magisk, KernelSU, or APatch"
-  - "PC with Python and `frida-tools` installed (`pip install frida-tools`)"
+  - "Workstation with Python and `frida-tools` installed matching the module's Frida major/minor version"
 conflicts:
-  - "Manual background frida-server instances running on port 27042"
+  - "Manual background `frida-server` instances already listening on port 27042"
 configPaths:
   - "/data/adb/modules/magisk-frida/"
-  - "/data/local/tmp/frida-server"
+  - "/data/adb/modules/magisk-frida/bin/frida-server"
+  - "/data/adb/modules/magisk-frida/port"
+  - "/data/adb/modules/magisk-frida/logs/"
 features:
-  - "Automatically runs the official native `frida-server` binary on device boot"
-  - "Supports ARM, ARM64, x86, and x86_64 architectures with automatic CPU detection"
-  - "Binds to localhost or all interfaces (`0.0.0.0`) for tethered USB and wireless debugging"
-  - "Essential runtime instrumentation suite for dynamic security audits, hooking, and memory dumping"
+  - "Automated upstream tracking: synced directly to official Frida releases (v17.27.5-1)"
+  - "Multi-architecture universal zip: bundles frida-server binaries for arm, arm64, x86, and x86_64"
+  - "Action button start/stop toggle: start or kill frida-server on demand from your root manager without rebooting"
+  - "Live status indicator: updates module.prop description with active/failed runtime status"
+  - "Optional custom localhost port: place a port number (1-65535) in the module's port file to bind 127.0.0.1:<port>"
 faq:
   - question: "How do I connect to Frida from my computer?"
-    answer: "Ensure your phone has USB debugging enabled, connect it via USB, and run `frida-ps -U` on your computer terminal. You will immediately see a list of running processes."
-  - question: "Can banking apps detect frida-server running?"
-    answer: "Yes, many anti-tamper SDKs scan for standard Frida TCP ports (27042) or look for frida-server named pipes in /proc/net/tcp. If you need stealth Frida for protected apps, consider ZygiskFrida or patching the frida-server binary string names."
+    answer: "Enable USB debugging, connect your phone via USB, ensure `frida-tools` on your PC matches the installed Frida version, and run `frida-ps -U` to list running processes."
+  - question: "Can I toggle frida-server off without uninstalling the module?"
+    answer: "Yes. Tap the module's Action button in Magisk, KernelSU, or APatch—action.sh checks pgrep for frida-server and stops it if running or starts it if stopped."
+  - question: "Can banking or anti-cheat apps detect frida-server running?"
+    answer: "Yes. Standard Frida builds listen on default TCP port 27042 and expose recognizable strings and threads. Consider toggling frida-server off via Action when not debugging, or using a stealth injector like ZygiskFrida for hardened targets."
 ---
 
 ## Overview
 
-Maintained by **ViRb3**, **Magisk-Frida** is the premier module for security researchers, penetration testers, and reverse engineers who utilize the **Frida** dynamic instrumentation toolkit on Android.
+Maintained by **ViRb3** (with enovella), **Magisk-Frida** (`17.27.5-1`) is a universal root module for security researchers, penetration testers, and reverse engineers using the **Frida** dynamic instrumentation toolkit on Android.
 
-Ordinarily, running `frida-server` on Android requires manually pushing the binary to `/data/local/tmp/`, setting execute permissions, and running it inside an interactive ADB shell that dies as soon as the terminal is closed. Magisk-Frida integrates `frida-server` into Android's systemless boot sequence, launching it as a supervised background daemon whenever your device powers on.
+Running `frida-server` manually requires pushing architecture-matched binaries to `/data/local/tmp/`, setting executable permissions, and spawning an ADB shell daemon every reboot. Magisk-Frida packages official upstream `frida-server` binaries for all four ABIs, starts the daemon cleanly after boot (`SKIPMOUNT=true`), and lets you toggle it via the manager **Action** button.
 
 ---
 
 ## Technical Architecture & How It Works
 
-### Supervised Daemon Architecture
+### Supervised Boot & Action Lifecycle
 
-1. **Architecture Detection**: During module installation, Magisk-Frida probes `ro.product.cpu.abi` and selects the matching upstream `frida-server` binary for your hardware architecture.
-2. **Boot Service Initialization**: During the `service.sh` late-boot phase, the module starts `frida-server` using a detached daemon process:
-   ```bash
-   /data/adb/modules/magisk-frida/frida-server -D
-   ```
-3. **SELinux Domain Assignment**: Sets appropriate SELinux context (`u:r:magisk:s0`) so frida-server can attach to target processes, inject companion `.so` libraries, and read memory mappings without triggering kernel security violations.
+1. **Architecture Selection (`customize.sh`)**: Probes device ABI (`arm`, `arm64`, `x86`, `x86_64`), installs the matching `frida-server` binary to `/data/adb/modules/magisk-frida/bin/frida-server`, and creates `skip_mount` so no `/system` files are modified on Magisk, KernelSU, or APatch.
+2. **Late-Start Boot Execution (`service.sh` + `utils.sh`)**: Waits for `sys.boot_completed=1`, checks for an optional `/data/adb/modules/magisk-frida/port` file, and launches `"$FRIDA_BIN" -D` (or `-l 127.0.0.1:<PORT> -D` when a valid port `1–65535` is configured).
+3. **Live Status & Logs**: `check_frida_is_up` verifies `busybox pgrep 'frida-server'` and updates `module.prop` (`✅ (active)` or `❌ (failed)`). Diagnostic logs are written under `/data/adb/modules/magisk-frida/logs/` (`service.log`, `action.log`, `utils.log`).
 
 ---
 
 ## Installation & Quickstart
 
 ### Step 1: Install the Module
-1. Download `Magisk-Frida-vX.zip`.
+1. Download `MagiskFrida-17.27.5-1.zip` from `ViRb3/magisk-frida`.
 2. Flash it in **Magisk**, **KernelSU**, or **APatch** and reboot.
 
-### Step 2: Test from your Workstation
-1. Install Frida tools on your computer:
+### Step 2: Connect from Your Workstation
+1. Install the matching `frida-tools` version on your computer:
    ```bash
    pip install frida-tools
    ```
-2. Connect your phone via USB with ADB enabled.
-3. Verify connection:
+2. Connect your phone via USB with ADB debugging enabled and verify:
    ```bash
    frida-ps -U
    ```
-4. Hook an app:
+3. Attach or spawn a target package:
    ```bash
    frida -U -f com.example.targetapp -l hook.js
    ```
+
+---
+
+## Configuration & Troubleshooting
+
+- **Custom Port Binding**: To bind `127.0.0.1:<PORT>` instead of the default Frida interface, write a port number (`1–65535`) to `/data/adb/modules/magisk-frida/port` and toggle the **Action** button or reboot.
+- **Version Mismatch Errors**: If `frida-ps -U` reports a protocol or version mismatch, check the installed module tag (`17.27.5-1`) and upgrade/pin `frida` on your workstation to match `17.27.5`.
+- **Action Button Toggle**: Use the **Action** button in your root manager anytime to start or stop `frida-server` without a full reboot.

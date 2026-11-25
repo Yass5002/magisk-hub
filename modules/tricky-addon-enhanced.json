@@ -1,0 +1,28 @@
+{
+  "id": "tricky-addon-enhanced",
+  "name": "Tricky Addon Enhanced",
+  "repo": "Enginex0/tricky-addon-enhanced",
+  "category": "root-management",
+  "softwareType": "flashable-module",
+  "description": "Native Rust daemon and WebUI manager for TrickyStore and TEESimulator featuring dual-source keybox rotation, automated security patch spoofing, and conflict purging.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/tricky-addon-enhanced.png",
+  "stars": 1389,
+  "latestRelease": {
+    "tag": "v5.53.1",
+    "publishedAt": "2026-05-01T16:33:06Z",
+    "url": "https://github.com/Enginex0/tricky-addon-enhanced/releases/tag/v5.53.1",
+    "downloadUrl": "https://github.com/Enginex0/tricky-addon-enhanced/releases/download/v5.53.1/TA_enhanced-v5.53.1.zip",
+    "assetName": "TA_enhanced-v5.53.1.zip"
+  },
+  "seo": {
+    "title": "Tricky Addon Enhanced – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download Tricky Addon Enhanced for Magisk, KernelSU, and APatch. Automated Rust daemon and WebUI for TrickyStore and TEESimulator with dual-source keybox and security patch updates."
+  },
+  "contentTier": 1
+}

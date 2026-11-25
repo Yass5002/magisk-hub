@@ -1,0 +1,16 @@
+{
+  "id": "joyctl-android",
+  "displayName": "JoyCtl Android (小米 Joyose 云控修改)",
+  "description": "基于 hexwander/joyctl 移植的原生 Root 工具，直接通过 su 在小米及澎湃 OS 设备本地读写 Joyose 云控数据库 teg_config.db，调节温控阈值、帧率锁与 migt 调度规则。",
+  "seo": {
+    "title": "JoyCtl Android 下载与小米 Joyose 云控本地修改指南 | Magisk Hub",
+    "description": "下载 JoyCtl Android（com.hexwander.joyctl），通过 Root 权限在手机本地读写小米/澎湃 OS 的 Joyose 云控数据库，调整温控阈值与帧率锁。"
+  },
+  "searchAliases": [
+    "JoyCtl Android 下载",
+    "小米 Joyose 云控修改",
+    "澎湃 OS 温控解除工具",
+    "teg_config.db 编辑",
+    "Joyose 帧率锁解除"
+  ]
+}

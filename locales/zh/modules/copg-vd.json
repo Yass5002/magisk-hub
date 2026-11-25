@@ -1,0 +1,16 @@
+{
+  "id": "copg-vd",
+  "displayName": "COPG-VD",
+  "description": "基于 Zygisk 的全局设备指纹与系统属性伪装套件，支持 JSON 声明式规则、分进程覆盖、WebUI 管理与 VDLU 启动前增量更新。",
+  "seo": {
+    "title": "COPG-VD 下载与全局设备伪装指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 COPG-VD，兼容 Magisk、KernelSU 与 APatch。基于 Zygisk 的全局设备指纹与系统属性伪装套件，支持 JSON 规则、WebUI 与增量更新。"
+  },
+  "searchAliases": [
+    "COPG-VD 下载",
+    "VD171 COPG-VD",
+    "Zygisk 全局机型伪装",
+    "设备指纹 JSON 配置",
+    "Google Photos 无限空间伪装"
+  ]
+}

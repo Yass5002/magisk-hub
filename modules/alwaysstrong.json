@@ -1,0 +1,31 @@
+{
+  "id": "alwaysstrong",
+  "name": "AlwaysStrong",
+  "repo": null,
+  "author": "Evokerr",
+  "sourceType": "community",
+  "sourceUrl": "https://gitlab.com/Evokerr/AlwaysStrong",
+  "category": "root-management",
+  "softwareType": "flashable-module",
+  "description": "All-in-one Strong Play Integrity module bundling TEESimulator-RS and PlayIntegrityFork with automated keybox updates and WebUI management.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/alwaysstrong.png",
+  "stars": 103,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.0.6.1",
+    "publishedAt": "2026-11-12T00:21:42.219Z",
+    "url": "https://gitlab.com/Evokerr/AlwaysStrong/-/releases/v1.0.6.1",
+    "downloadUrl": "https://gitlab.com/api/v4/projects/87739512/packages/generic/AlwaysStrong/v1.0.6.1/AlwaysStrong-v1.0.6.1.zip",
+    "assetName": "AlwaysStrong-v1.0.6.1.zip"
+  },
+  "seo": {
+    "title": "AlwaysStrong – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download AlwaysStrong for Magisk, KernelSU, and APatch. All-in-one Strong Play Integrity bundle integrating TEESimulator-RS, PlayIntegrityFork, and WebUI."
+  }
+}

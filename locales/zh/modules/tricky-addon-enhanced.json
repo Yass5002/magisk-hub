@@ -1,0 +1,16 @@
+{
+  "id": "tricky-addon-enhanced",
+  "displayName": "Tricky Addon Enhanced (TrickyStore 自动化增强模块)",
+  "description": "基于原生 Rust 守护进程与 WebUI 的 TrickyStore 及 TEESimulator 增强伴侣模块，支持双源 Keybox 自动轮换、安全补丁同步、VBHash 提取及冲突模块清理。",
+  "seo": {
+    "title": "Tricky Addon Enhanced 下载与自动化指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 Tricky Addon Enhanced，支持 Magisk、KernelSU 与 APatch。集成原生 Rust 守护进程与 WebUI，提供双源 Keybox 自动轮换、安全补丁同步及冲突检测。"
+  },
+  "searchAliases": [
+    "Tricky Addon Enhanced 下载",
+    "TA Enhanced 模块配置",
+    "TrickyStore 自动更新 Keybox",
+    "TEESimulator WebUI 增强版",
+    "Play Integrity Strong 自动维护"
+  ]
+}

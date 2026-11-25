@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ModuleCard from '../components/ModuleCard.astro';
+import { getCollection } from 'astro:content';
 import { getAllModules, CATEGORIES, PLATFORMS } from '../lib/modules';
 import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
 import { localizeCategory } from '../i18n/taxonomy';
@@ -13,6 +14,26 @@ export interface Props {
 const { locale = 'en' } = Astro.props;
 const ui = getUI(locale);
 const modules = getAllModules(locale);
+const zhModulesMap = new Map(getAllModules('zh').map(m => [m.id, m]));
+let enDocs: Awaited<ReturnType<typeof getCollection<'modules'>>> = [];
+let zhDocs: Awaited<ReturnType<typeof getCollection<'modulesZh'>>> = [];
+try {
+  enDocs = await getCollection('modules');
+} catch {
+  enDocs = [];
+}
+try {
+  zhDocs = await getCollection('modulesZh');
+} catch {
+  zhDocs = [];
+}
+const searchQueriesById = new Map<string, string[]>();
+for (const entry of [...enDocs, ...zhDocs]) {
+  const prev = searchQueriesById.get(entry.data.id) || [];
+  const next = [entry.data.title, ...(entry.data.searchQueries || [])].filter(Boolean);
+  searchQueriesById.set(entry.data.id, [...prev, ...next]);
+}
+const normalizeSearchToken = (text: string) => text.toLowerCase().replace(/[-_.\s/\\:()[\]]+/g, '');
 const magiskModule = modules.find(m => m.id === 'magisk');
 const magiskRelease = magiskModule?.latestRelease || {
   tag: 'v30.7',
@@ -258,21 +279,36 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     <h2 class="sr-only">{ui.home.modulesDirectorySr}</h2>
     <div id="moduleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {modules.map(module => {
+        const zhModule = zhModulesMap.get(module.id);
+        const enCatInfo = CATEGORIES[module.category];
+        const zhCatInfo = enCatInfo ? localizeCategory(enCatInfo, 'zh') : undefined;
         const searchIndex = [
           module.id,
           module.name,
           module.enName || '',
+          zhModule?.name || '',
           module.description,
           module.enDescription || '',
+          zhModule?.description || '',
           module.repo || module.author || '',
+          module.latestRelease?.assetName || '',
+          module.latestRelease?.tag || '',
+          module.category,
+          enCatInfo?.name || '',
+          zhCatInfo?.name || '',
+          ...module.compatibility,
           ...(module.searchAliases || []),
-        ].join(' ').toLowerCase();
+          ...(zhModule?.searchAliases || []),
+          ...(searchQueriesById.get(module.id) || []),
+        ].filter(Boolean).join(' ').toLowerCase();
+        const searchNorm = normalizeSearchToken(searchIndex);
         return (
           <div 
             class="module-card-wrapper h-full" 
             data-id={module.id}
             data-name={module.name.toLowerCase()}
             data-search={searchIndex}
+            data-search-norm={searchNorm}
             data-category={module.category}
             data-type={module.softwareType}
             data-compat={module.compatibility.join(',')}
@@ -357,9 +393,66 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
     // ignore URL parsing errors
   }
 
+  const SEARCH_STOPWORDS = new Set([
+    'http', 'https', 'magisk', 'yssn', 'tech', 'modules', 'module', 'download',
+    'install', 'kernelsu', 'apatch', 'android', 'latest', 'release', 'github',
+    'from', 'with', 'this', 'that', 'your', 'reference', 'file', 'note', 'root'
+  ]);
+
+  function normalizeSearchText(s: string) {
+    return s.toLowerCase().replace(/[-_.\s/\\:()[\]]+/g, '');
+  }
+
+  function matchSmartFallback(rawQuery: string, wrappers: HTMLElement[]): Set<string> {
+    const matchedIds = new Set<string>();
+    const urlSlug = rawQuery.match(/\/modules\/([a-z0-9][a-z0-9_-]*)/i)?.[1];
+    if (urlSlug) {
+      const normUrlSlug = normalizeSearchText(urlSlug);
+      for (const el of wrappers) {
+        const id = el.getAttribute('data-id') || '';
+        const normId = normalizeSearchText(id);
+        if (normId === normUrlSlug || (normUrlSlug.length >= 6 && normId.includes(normUrlSlug))) {
+          matchedIds.add(id);
+        }
+      }
+      if (matchedIds.size > 0) return matchedIds;
+    }
+
+    const normQuery = normalizeSearchText(rawQuery);
+    const slugTokens = (rawQuery.match(/[a-z0-9]+[-_][a-z0-9_-]+/g) || [])
+      .map(t => normalizeSearchText(t))
+      .filter(t => t.length >= 4 && !SEARCH_STOPWORDS.has(t));
+    const words = [
+      ...(rawQuery.match(/[a-z0-9]{3,}/g) || []),
+      ...(rawQuery.match(/[\u4e00-\u9fff]{2,}/g) || []),
+    ]
+      .map(t => t.toLowerCase())
+      .filter(t => !SEARCH_STOPWORDS.has(t));
+
+    for (const el of wrappers) {
+      const id = el.getAttribute('data-id') || '';
+      const normId = normalizeSearchText(id);
+      const normBlob = el.getAttribute('data-search-norm') || '';
+
+      if (normId.length >= 5 && normQuery.includes(normId)) {
+        matchedIds.add(id);
+        continue;
+      }
+      if (slugTokens.some(st => normBlob.includes(st))) {
+        matchedIds.add(id);
+        continue;
+      }
+      if (words.length >= 2 && words.every(w => normBlob.includes(w))) {
+        matchedIds.add(id);
+      }
+    }
+    return matchedIds;
+  }
+
   function applyFiltersAndSort() {
     let visibleCount = 0;
     const isSearching = currentSearch.length > 0;
+    const normSearch = isSearching ? normalizeSearchText(currentSearch) : '';
 
     const shouldShowSpotlight = !isSearching && 
       (currentCompat === 'all' || currentCompat === 'Magisk') && 
@@ -381,9 +474,26 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
       }
     }
 
+    let directMatches = 0;
+    const directMatchedIds = new Set<string>();
+    if (isSearching) {
+      cardWrappers.forEach(el => {
+        const id = el.getAttribute('data-id') || '';
+        const searchBlob = el.getAttribute('data-search') || '';
+        const searchNorm = el.getAttribute('data-search-norm') || '';
+        if (searchBlob.includes(currentSearch) || (normSearch.length >= 2 && searchNorm.includes(normSearch))) {
+          directMatchedIds.add(id);
+          directMatches++;
+        }
+      });
+    }
+
+    const fallbackMatchedIds = (isSearching && directMatches === 0)
+      ? matchSmartFallback(currentSearch, cardWrappers)
+      : directMatchedIds;
+
     cardWrappers.forEach(el => {
       const id = el.getAttribute('data-id') || '';
-      const searchBlob = el.getAttribute('data-search') || '';
       const cat = el.getAttribute('data-category') || '';
       const compat = (el.getAttribute('data-compat') || '').split(',');
 
@@ -392,7 +502,7 @@ const countFormatSuffix = locale === 'zh' ? ' 个模块' : ' modules';
         return;
       }
 
-      const matchesSearch = !isSearching || searchBlob.includes(currentSearch);
+      const matchesSearch = !isSearching || fallbackMatchedIds.has(id);
       const matchesCategory = currentCategory === 'all' || cat === currentCategory;
       const matchesCompat = currentCompat === 'all' || compat.includes(currentCompat);
 

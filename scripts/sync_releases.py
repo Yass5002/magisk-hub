@@ -185,31 +185,86 @@ def generate_module_seo(name, compat, desc, ver_tag):
 
 
 
+def _url_probe(url, method="HEAD", extra_headers=None):
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)"}
+    if extra_headers:
+        headers.update(extra_headers)
+    req = urllib.request.Request(url, method=method, headers=headers)
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        return resp.status
+
+
 def check_asset_head(url):
-    req = urllib.request.Request(
-        url,
-        method="HEAD",
-        headers={"User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)"}
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.status in (200, 302)
-    except urllib.error.HTTPError as e:
-        if e.code in (403, 405):
-            get_req = urllib.request.Request(
-                url,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)", "Range": "bytes=0-0"}
-            )
-            try:
-                with urllib.request.urlopen(get_req, timeout=10) as get_resp:
-                    return get_resp.status in (200, 206)
-            except Exception as get_e:
-                print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
+    """Verify asset reachability via HEAD with retry and Range GET fallback."""
+    for attempt in range(2):
+        try:
+            status = _url_probe(url, method="HEAD")
+            if status in (200, 302):
+                return True
+        except urllib.error.HTTPError as e:
+            if e.code in (404, 410):
                 return False
-        return False
-    except Exception as e:
-        print(f"HEAD check failed for {url}: {e}", file=sys.stderr)
-        return False
+            # Many CDNs/proxies reject HEAD with 400/403/405 or transient 5xx; probe byte 0 via GET
+            try:
+                get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"})
+                if get_status in (200, 206):
+                    return True
+            except urllib.error.HTTPError as get_e:
+                if get_e.code in (404, 410):
+                    return False
+                if attempt == 1:
+                    print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
+            except Exception as get_e:
+                if attempt == 1:
+                    print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
+        except Exception as e:
+            # Retry once or fall back to Range GET on transient socket/timeout errors
+            try:
+                get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"})
+                if get_status in (200, 206):
+                    return True
+            except Exception:
+                pass
+            if attempt == 1:
+                print(f"HEAD check failed for {url}: {e}", file=sys.stderr)
+    return False
+
+
+def pick_best_asset(assets, sw_type, slug, c_type=None):
+    """Select the canonical release binary asset, skipping debug/emulator/auxiliary artifacts."""
+    if sw_type in ("xposed-module", "standalone-app"):
+        exts = (".apk",)
+    elif sw_type == "kernel-module":
+        exts = (".ko", ".kpm", ".zip", ".tar.gz")
+    elif slug == "magisk" or c_type == "root_manager":
+        preferred = [a for a in assets if a["name"].startswith("Magisk-v") and a["name"].endswith(".apk")]
+        if preferred:
+            return preferred[0]
+        exts = (".apk",)
+    else:
+        exts = (".zip",)
+
+    candidates = [a for a in assets if a["name"].endswith(exts)]
+    if not candidates:
+        return None
+
+    noisy_markers = ("debug", "source", "unaligned", "unsigned", "emulator", "symbols", "-business-")
+    clean = [a for a in candidates if not any(m in a["name"].lower() for m in noisy_markers)]
+    pool = clean or candidates
+
+    def score_asset(asset):
+        n = asset["name"].lower()
+        return (
+            0 if ("magisk" in n or "ksu" in n) else 1,
+            0 if "universal" in n else 1,
+            0 if ("arm64" in n or "aarch64" in n) else (2 if any(x in n for x in ("armv7", "armeabi", "x86", "riscv")) else 1),
+            0 if "release" in n else 1,
+            1 if any(x in n for x in ("nopif", "inject")) else 0,
+            len(n),
+        )
+
+    pool.sort(key=score_asset)
+    return pool[0]
 
 
 def download_file(url, dest_path):
@@ -431,25 +486,10 @@ def main():
         assets = latest_rel.get("releaseAssets", {}).get("nodes", [])
 
         # Check target asset based on softwareType
-        if sw_type in ("xposed-module", "standalone-app"):
-            valid_assets = [a for a in assets if a["name"].endswith(".apk") and not any(x in a["name"].lower() for x in ["source", "debug", "unaligned"])]
-            if not valid_assets:
-                valid_assets = [a for a in assets if a["name"].endswith(".apk")]
-        elif sw_type == "kernel-module":
-            valid_assets = [a for a in assets if a["name"].endswith((".ko", ".kpm", ".zip", ".tar.gz"))]
-        else:
-            if slug == "magisk" or c.get("type") == "root_manager":
-                valid_assets = [a for a in assets if a["name"].startswith("Magisk-v") and a["name"].endswith(".apk")]
-                if not valid_assets:
-                    valid_assets = [a for a in assets if a["name"].endswith(".apk")]
-            else:
-                valid_assets = [a for a in assets if a["name"].endswith(".zip")]
-
-        if not valid_assets:
+        chosen_asset = pick_best_asset(assets, sw_type, slug, c.get("type"))
+        if not chosen_asset:
             pruned_modules.append({"repo": repo, "slug": slug, "reason": f"Release {latest_rel['tagName']} lacks downloadable asset"})
             continue
-
-        chosen_asset = valid_assets[0]
 
         # License resolution (must be valid SPDX)
         spdx = None
@@ -516,7 +556,7 @@ def main():
         entry = {
             "id": slug,
             "name": c["name"],
-            "repo": repo,
+            "repo": cand["info"].get("nameWithOwner") or repo,
             "category": cand["category"],
             "softwareType": cand["sw_type"],
             "description": cand["desc"],

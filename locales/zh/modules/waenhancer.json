@@ -1,0 +1,16 @@
+{
+  "id": "waenhancer",
+  "displayName": "WaEnhancer (WhatsApp 增强)",
+  "description": "基于 YukiHookAPI 与 DexKit 构建的 WhatsApp Xposed 增强模块，在内存层面为官方原版 WhatsApp 及商业版注入隐私隐藏、消息防撤回、阅后即焚绕过与 CSS 主题定制能力。",
+  "seo": {
+    "title": "WaEnhancer 下载与 WhatsApp 增强配置指南 (LSPosed) | Magisk Hub",
+    "description": "下载 WaEnhancer 模块，兼容 LSPosed、Magisk、KernelSU 与 APatch。为 WhatsApp 与商业版提供消息防撤回、冻结最后上线、阅后即焚保存与自定义 CSS 主题。"
+  },
+  "searchAliases": [
+    "WaEnhancer 下载",
+    "WhatsApp LSPosed 模块",
+    "WhatsApp 消息防撤回",
+    "WhatsApp 隐藏已读蓝勾",
+    "WaEnhancer 配置教程"
+  ]
+}

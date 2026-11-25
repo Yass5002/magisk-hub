@@ -1,0 +1,28 @@
+{
+  "id": "blurclosed",
+  "name": "Blur Closed",
+  "repo": "Astoritin/BlurClosed",
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Systemless module disabling Android SurfaceFlinger, WindowManager, and OEM UI blur effects via resetprop and window blur commands.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/blurclosed.png",
+  "stars": 4,
+  "latestRelease": {
+    "tag": "1.1.1",
+    "publishedAt": "2026-02-03T15:07:00Z",
+    "url": "https://github.com/Astoritin/BlurClosed/releases/tag/1.1.1",
+    "downloadUrl": "https://github.com/Astoritin/BlurClosed/releases/download/1.1.1/BlurClosed-1.1.1.zip",
+    "assetName": "BlurClosed-1.1.1.zip"
+  },
+  "seo": {
+    "title": "Blur Closed – Disable Android UI Blur Effects | Magisk Hub",
+    "description": "Download Blur Closed for Magisk, KernelSU, and APatch. Systemlessly disable AOSP, MIUI, ColorOS, and OneUI background blur via resetprop and WindowManager."
+  },
+  "contentTier": 1
+}

@@ -1,0 +1,29 @@
+{
+  "id": "nsg-tweaks",
+  "name": "NSG Tweaks",
+  "repo": "h3nnes/nsg-tweaks",
+  "category": "xposed-runtime-hooks",
+  "softwareType": "xposed-module",
+  "description": "LSPosed module extending Network Signal Guru (com.qtrun.QuickTest v4.8.14) with 16-cell tables, ARFCN/BW columns, signaling search, and replay controls.",
+  "compatibility": [
+    "LSPosed",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "MIT",
+  "icon": "assets/icons/nsg-tweaks.png",
+  "stars": 27,
+  "latestRelease": {
+    "tag": "v12.0",
+    "publishedAt": "2026-11-17T21:30:43Z",
+    "url": "https://github.com/h3nnes/nsg-tweaks/releases/tag/v12.0",
+    "downloadUrl": "https://github.com/h3nnes/nsg-tweaks/releases/download/v12.0/nsg_tweaks_lsposed_v12-0.apk",
+    "assetName": "nsg_tweaks_lsposed_v12-0.apk"
+  },
+  "seo": {
+    "title": "NSG Tweaks – Network Signal Guru LSPosed Module | Magisk Hub",
+    "description": "Download NSG Tweaks v12.0 for LSPosed. Extends Network Signal Guru (com.qtrun.QuickTest v4.8.14) with 16-cell tables, ARFCN/BW columns, signaling search, and replay tools."
+  },
+  "contentTier": 1
+}

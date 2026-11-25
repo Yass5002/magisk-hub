@@ -241,6 +241,20 @@ class TestBuiltDistSEOAndHreflang(unittest.TestCase):
         self.assertIn("https://magisk.yssn.tech/zh/", zh_llms)
         self.assertTrue(CJK_RE.search(zh_llms))
 
+    def test_vercel_redirects_point_to_existing_dist_pages(self):
+        with open(os.path.join(REPO_ROOT, "vercel.json"), "r", encoding="utf-8") as fp:
+            cfg = json.load(fp)
+        redirects = cfg.get("redirects", [])
+        self.assertGreaterEqual(len(redirects), 10)
+        for rule in redirects:
+            dest = rule["destination"]
+            if ":" in dest:
+                # Parameterized wildcard redirects like /modules/:slug/
+                continue
+            rel = dest.strip("/")
+            html_path = os.path.join(DIST_DIR, rel, "index.html") if rel else os.path.join(DIST_DIR, "index.html")
+            self.assertTrue(os.path.isfile(html_path), f"vercel.json redirect target missing in dist: {dest}")
+
 
 if __name__ == "__main__":
     unittest.main()

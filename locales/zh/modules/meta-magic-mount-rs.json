@@ -1,0 +1,16 @@
+{
+  "id": "meta-magic-mount-rs",
+  "displayName": "Magic Mount-rs",
+  "description": "基于 Rust 编写的高性能元模块（Metamodule），为 KernelSU 与 APatch 提供无系统分区挂载（Magic Mount）、自定义绑定规则与 WebUI 配置。",
+  "seo": {
+    "title": "Magic Mount-rs 下载与挂载配置指南 (KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 Magic Mount-rs 元模块，兼容 KernelSU、APatch 与 Magisk。基于 Rust 的高性能无系统分区挂载器，支持自定义绑定规则与 WebUI。"
+  },
+  "searchAliases": [
+    "Magic Mount-rs 下载",
+    "KernelSU 元模块",
+    "APatch Metamodule",
+    "Rust 无系统挂载模块",
+    "Magic Mount 元模块配置"
+  ]
+}

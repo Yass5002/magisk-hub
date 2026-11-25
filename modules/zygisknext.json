@@ -1,0 +1,28 @@
+{
+  "id": "zygisknext",
+  "name": "Zygisk Next",
+  "repo": "Dr-TSNG/ZygiskNext",
+  "category": "root-management",
+  "softwareType": "flashable-module",
+  "description": "Standalone implementation of Zygisk providing modern Zygisk API support for KernelSU and APatch and replacing Magisk's built-in Zygisk.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/zygisknext.png",
+  "stars": 11160,
+  "contentTier": 1,
+  "latestRelease": {
+    "tag": "v1.5.3",
+    "publishedAt": "2026-11-07T16:32:11Z",
+    "url": "https://github.com/Dr-TSNG/ZygiskNext/releases/tag/v1.5.3",
+    "downloadUrl": "https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip",
+    "assetName": "Zygisk-Next-1.5.3-880-22a1bf5-release.zip"
+  },
+  "seo": {
+    "title": "Zygisk Next – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download Zygisk Next by Dr-TSNG for Magisk, KernelSU, and APatch. Standalone Zygisk API implementation with namespace unmounting and WebUI support."
+  }
+}

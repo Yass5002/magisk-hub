@@ -1,6 +1,6 @@
 # Magisk Hub - 中文完整模块索引 (llms-full.txt)
 
-> 收录 249 个适用于 Magisk、KernelSU、APatch 与 LSPosed 的活跃 Android Root 模块、Xposed 插件及特权应用中文索引与技术文档。
+> 收录 270 个适用于 Magisk、KernelSU、APatch 与 LSPosed 的活跃 Android Root 模块、Xposed 插件及特权应用中文索引与技术文档。
 
 中文主页: https://magisk.yssn.tech/zh/
 英文原版: https://magisk.yssn.tech/
@@ -31,6 +31,18 @@
 - 最新版本: v13.6.0
 - 官方下载地址: https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk
 - 上游仓库: https://github.com/RikkaApps/Shizuku
+
+### LibrePods (AirPods 生态适配) (`librepods`)
+- 模块简介: 开源 Android 客户端与 LSPosed 钩子模块，通过逆向还原苹果私有蓝牙协议，在安卓设备上解锁 AirPods 主动降噪切换、入耳检测、分体电量显示与手势控制。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/librepods/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch, LSPosed
+- GitHub Star: 30,960
+- 最新版本: rewrite-v2.0.0-alpha.4
+- 官方下载地址: https://github.com/librepods-org/librepods/releases/download/rewrite-v2.0.0-alpha.4/LibrePods-FOSS-v2.0.0-alpha.4-200000004-release.apk
+- 上游仓库: https://github.com/librepods-org/librepods
 
 ### LSPosed Framework (`lsposed`)
 - 模块简介: 基于 Zygisk 的现代 Android ART 运行时 Hook 框架，支持按应用精确划分作用域（Scope），在内存中动态修改方法逻辑而不改动系统分区。
@@ -89,6 +101,18 @@
 - GitHub Star: 12,110
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=822
+
+### Zygisk Next (`zygisknext`)
+- 模块简介: 由 Dr-TSNG / LSPosed 开发团队打造的独立 Zygisk 实现，为 KernelSU、APatch 与 Magisk 提供高性能 Zygisk API 注入与命名空间隔离支持。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/zygisknext/
+- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 11,160
+- 最新版本: v1.5.3
+- 官方下载地址: https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip
+- 上游仓库: https://github.com/Dr-TSNG/ZygiskNext
 
 ### App Manager (安卓高级应用管理与隐私控制) (`app-manager`)
 - 模块简介: Muntashir Akon 开发的开源 Android 应用管理、安全审计与隐私控制利器，支持组件禁用、追踪器拦截、AppOps 权限管控与加密备份。
@@ -160,6 +184,18 @@
 - 最新版本: v4.3.04750.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=167
 
+### InstallerX Revived (现代安装包管理器) (`installerx-revived`)
+- 模块简介: 社区持续维护的现代 Android 安装包管理器（InstallerX 续作），支持 APK、APKS、APKM、XAPK 与压缩包内批量安装，并可对接 Root、Shizuku 与 Dhizuku 后端。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/installerx-revived/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Rootless, Shizuku, Magisk, KernelSU, APatch
+- GitHub Star: 7,671
+- 最新版本: 26.11.caccb78
+- 官方下载地址: https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.11.caccb78/InstallerX-Revived-online-26.11.caccb78.apk
+- 上游仓库: https://github.com/wxxsfxyzm/InstallerX-Revived
+
 ### Hail (雹 - 应用冻结工具) (`hail`)
 - 模块简介: 开源轻量级 Android 应用冻结工具，支持通过 Shizuku、免 Root 设备所有者或 Root 权限停用、隐藏、暂停与卸载应用。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/hail/
@@ -182,6 +218,18 @@
 - GitHub Star: 7,326
 - 最新版本: v1.3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=820
+
+### Reqable (全平台 HTTP 抓包与 API 调试) (`reqable`)
+- 模块简介: 集 HTTP/HTTPS MITM 抓包与全功能 API 测试客户端于一体的调试工具，支持安卓免 Root 本地 VPN 抓包及 Magisk/KernelSU/APatch 系统 CA 根证书模式。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/reqable/
+- 所属分类: https://magisk.yssn.tech/zh/categories/networking-proxies/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Rootless, Magisk, KernelSU, APatch
+- GitHub Star: 6,980
+- 最新版本: 3.3.15
+- 官方下载地址: https://github.com/Reqable/reqable-app/releases/download/3.3.15/reqable-app-android-arm64.apk
+- 上游仓库: https://github.com/Reqable/reqable-app
 
 ### Multi-OEM Dynamic Boot Animation（多品牌随机开机动画引擎） (`multi-oem-bootanimation`)
 - 模块简介: 面向 MIUI、ColorOS 与 Realme UI 的无侵入式开机动画引擎，支持每次开机随机轮换动画与 60 秒防卡死看门狗。
@@ -356,6 +404,18 @@
 - GitHub Star: 3,706
 - 最新版本: v1.7.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=359
+
+### CorePatch (核心破解) (`corepatch`)
+- 模块简介: 现由 LSPosed 组织接管维护的 Xposed 核心破解模块，通过 Hook 系统框架实现禁用 APK 签名校验、保留数据降级安装与跨签名覆盖安装。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/corepatch/
+- 所属分类: https://magisk.yssn.tech/zh/categories/xposed-runtime-hooks/
+- 软件包类型: xposed-module
+- 收录渠道: github
+- 兼容平台: LSPosed, Magisk, KernelSU, APatch
+- GitHub Star: 3,601
+- 最新版本: N-1.0
+- 官方下载地址: https://github.com/LSPosed/CorePatch/releases/download/N-1.0/app-release.apk
+- 上游仓库: https://github.com/LSPosed/CorePatch
 
 ### Tricky Addon - Update Target List (`tricky-addon-update-target-list`)
 - 模块简介: 由 KOWX712 开发的 WebUI 配置伴侣模块，通过可视化界面一键管理 Tricky Store、TEESimulator 与 OhMyKeymint 的 target.txt 目标应用列表。
@@ -627,6 +687,18 @@
 - 最新版本: v2.2.21.5
 - 官方下载地址: https://apk.magisk.vip/download.php?id=197
 
+### WaEnhancer (WhatsApp 增强) (`waenhancer`)
+- 模块简介: 基于 YukiHookAPI 与 DexKit 构建的 WhatsApp Xposed 增强模块，在内存层面为官方原版 WhatsApp 及商业版注入隐私隐藏、消息防撤回、阅后即焚绕过与 CSS 主题定制能力。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/waenhancer/
+- 所属分类: https://magisk.yssn.tech/zh/categories/xposed-runtime-hooks/
+- 软件包类型: xposed-module
+- 收录渠道: github
+- 兼容平台: LSPosed, Magisk, KernelSU, APatch
+- GitHub Star: 1,909
+- 最新版本: 1.6.6-0352170c
+- 官方下载地址: https://github.com/Dev4Mod/WaEnhancer/releases/download/1.6.6-0352170c/WaEnhancer-1.6.6.0352170C.apk
+- 上游仓库: https://github.com/Dev4Mod/WaEnhancer
+
 ### 210W 亮屏极限快充模块 (Super Charge 210W Booster) (`super-charge-210w-booster`)
 - 模块简介: 重构小米及红米设备厂商温控策略，解除亮屏状态下的充电电流与功率限制（最高支持 210W），并内置 80°C 硬件级过热断充保护。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/super-charge-210w-booster/
@@ -742,6 +814,18 @@
 - 最新版本: v4.3.001951.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=290
 
+### Magisk-Frida (`magisk-frida`)
+- 模块简介: 无系统分区封装官方 frida-server 守护进程的通用模块，支持开机自启、四架构自动识别、Action 一键启停与自定义本地监听端口。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/magisk-frida/
+- 所属分类: https://magisk.yssn.tech/zh/categories/development-instrumentation/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 1,490
+- 最新版本: 17.27.5-1
+- 官方下载地址: https://github.com/ViRb3/magisk-frida/releases/download/17.27.5-1/MagiskFrida-17.27.5-1.zip
+- 上游仓库: https://github.com/ViRb3/magisk-frida
+
 ### NetProxy-Magisk (Sing-box WebUI 透明代理) (`netproxy-magisk`)
 - 模块简介: 基于 sing-box 核心的 Android 透明代理模块，支持一键启停，并内置本地 WebUI 仪表盘、订阅定时更新与智能分流。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/netproxy-magisk/
@@ -753,6 +837,30 @@
 - 最新版本: v8.7.2
 - 官方下载地址: https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.7.2/NetProxy_v8.7.2_1115.zip
 - 上游仓库: https://github.com/Fanju6/NetProxy-Magisk
+
+### DisableFlagSecure (解除截屏限制) (`disable-flag-secure`)
+- 模块简介: 由 LSPosed 官方维护的截屏增强模块（现名 Enable Screenshot），支持 Android 12–16 及各大定制系统，可绕过 FLAG_SECURE 限制并屏蔽截屏与录屏检测。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/disable-flag-secure/
+- 所属分类: https://magisk.yssn.tech/zh/categories/xposed-runtime-hooks/
+- 软件包类型: xposed-module
+- 收录渠道: github
+- 兼容平台: LSPosed, Magisk, KernelSU, APatch
+- GitHub Star: 1,423
+- 最新版本: v5.0.1
+- 官方下载地址: https://github.com/LSPosed/DisableFlagSecure/releases/download/v5.0.1/app-release.apk
+- 上游仓库: https://github.com/LSPosed/DisableFlagSecure
+
+### Tricky Addon Enhanced (TrickyStore 自动化增强模块) (`tricky-addon-enhanced`)
+- 模块简介: 基于原生 Rust 守护进程与 WebUI 的 TrickyStore 及 TEESimulator 增强伴侣模块，支持双源 Keybox 自动轮换、安全补丁同步、VBHash 提取及冲突模块清理。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/tricky-addon-enhanced/
+- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 1,389
+- 最新版本: v5.53.1
+- 官方下载地址: https://github.com/Enginex0/tricky-addon-enhanced/releases/download/v5.53.1/TA_enhanced-v5.53.1.zip
+- 上游仓库: https://github.com/Enginex0/tricky-addon-enhanced
 
 ### PUI System Interface & Control Suite (PUI 控制中心美化) (`pui-interface-control-suite`)
 - 模块简介: 专为 ColorOS 15 与 OxygenOS 15 打造的系统界面与控制中心美化套件，通过原生 RRO 机制优化滑块、状态栏与快捷磁贴样式。
@@ -864,6 +972,30 @@
 - GitHub Star: 1,187
 - 最新版本: v0.02
 - 官方下载地址: https://apk.magisk.vip/download.php?id=42
+
+### Busybox for Android NDK (`busybox-ndk`)
+- 模块简介: 由 osm0sis 使用 Android NDK 静态编译的 BusyBox 1.36.1 安装模块，覆盖 ARM/ARM64/x86/x86_64/MIPS 架构，支持 SELinux 版本及无系统分区修改（Systemless）符号链接管理。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/busybox-ndk/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 1,178
+- 最新版本: 13614
+- 官方下载地址: https://github.com/Magisk-Modules-Repo/busybox-ndk/releases/download/13614/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip
+- 上游仓库: https://github.com/Magisk-Modules-Repo/busybox-ndk
+
+### Unlock CN GMS (国行 GMS 限制解锁) (`unlock-cn-gms`)
+- 模块简介: 自动定位并移除国行 ROM 多个系统分区中的 cn.google.services 与 services_updater XML 权限限制，恢复 Google 位置记录、地图时间轴及网页版 Play 设备显示。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/unlock-cn-gms/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-environment/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 1,167
+- 最新版本: v3.9
+- 官方下载地址: https://github.com/fei-ke/unlock-cn-gms/releases/download/v3.9/unlock-cn-gms-v3.9.zip
+- 上游仓库: https://github.com/fei-ke/unlock-cn-gms
 
 ### MIUI Theme & Font Rights Enabler (小米主题字体权限解锁) (`miui-theme-rights-enabler`)
 - 模块简介: 面向小米 MIUI 与 HyperOS 主题商店的无侵入补丁模块，绕过设计师与小米账号鉴权检查，解锁第三方 MTZ 主题导入与收费字体永久应用。
@@ -1149,6 +1281,18 @@
 - 官方下载地址: https://github.com/okhsunrog/vpnhide/releases/download/v1.3.1/vpnhide-zygisk.zip
 - 上游仓库: https://github.com/okhsunrog/vpnhide
 
+### FDE.AI (FeraDroid Engine) (`fde-ai`)
+- 模块简介: 基于自适应 AI 负载识别的无侵入式 Android 优化工具，通过 CooldownService、DownscaleService 与 SoundService 动态调节内核、虚拟内存及温控策略。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/fde-ai/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 697
+- 最新版本: 26.08.1
+- 官方下载地址: https://github.com/feravolt/FDE.AI-docs/releases/download/26.08.1/FDE.AI-v26.08.1.apk
+- 上游仓库: https://github.com/feravolt/FDE.AI-docs
+
 ### Google Pixel Boot Animation (Dark)（纯黑开机动画） (`google-pixel-boot-animation-dark`)
 - 模块简介: 原汁原味的 Google Pixel 深色模式开机动画模块，提供流畅的 60 FPS 四色几何粒子过渡与 OLED 纯黑背景。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/google-pixel-boot-animation-dark/
@@ -1192,6 +1336,18 @@
 - GitHub Star: 650
 - 最新版本: v1.0.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=2252
+
+### Magic Mount-rs (`meta-magic-mount-rs`)
+- 模块简介: 基于 Rust 编写的高性能元模块（Metamodule），为 KernelSU 与 APatch 提供无系统分区挂载（Magic Mount）、自定义绑定规则与 WebUI 配置。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/meta-magic-mount-rs/
+- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: KernelSU, APatch, Magisk
+- GitHub Star: 632
+- 最新版本: v4.1.12
+- 官方下载地址: https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.1.12/magic_mount_rs-4.1.12-959-universal.zip
+- 上游仓库: https://github.com/Tools-cx-app/meta-magic_mount-rs
 
 ### 满电自动断充保护模块 (Auto Charge Disconnect) (`auto-charge-disconnect`)
 - 模块简介: 零依赖的纯 Shell 充电监控守护脚本，电量充至 100% 时自动切断充电输入开关，跌至 95% 时自动恢复充电，有效减少夜间过充损耗。
@@ -1632,6 +1788,18 @@
 - 官方下载地址: https://github.com/LIghtJUNction/MagicNet/releases/download/v1.9.3/MagicNet-component-bin-curl-d5e57885f1962a2cb92d0b2a0c2afe393165538e0df76417ba9c39ee74e0dd31.zip
 - 上游仓库: https://github.com/LIghtJUNction/MagicNet
 
+### Mesa Turnip Builder (Adreno 开源 Vulkan 驱动) (`mesa-turnip-builder`)
+- 模块简介: 基于 Android NDK 编译的 Freedreno Turnip 开源 Vulkan 驱动模块，在 Android 14+ 设备上无侵入式替换高通 Adreno 6xx–8xx 闭源驱动并自动清理着色器缓存。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/mesa-turnip-builder/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 226
+- 最新版本: 20_nov_2026
+- 官方下载地址: https://github.com/v3kt0r-87/Mesa-Turnip-Builder/releases/download/20_nov_2026/Turnip-26.3.1-MAGISK-KSU.zip
+- 上游仓库: https://github.com/v3kt0r-87/Mesa-Turnip-Builder
+
 ### AshReXcue (AshLooper 智能防卡米) (`ashlooper`)
 - 模块简介: 面向 Magisk、KernelSU 与 APatch 的智能防卡米保护引擎，通过差分状态分析精准定位并隔离异常模块与开机脚本。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/ashlooper/
@@ -1751,6 +1919,18 @@
 - 最新版本: 3-3.0
 - 官方下载地址: https://github.com/Xposed-Modules-Repo/me.bingyue.fuckqishui/releases/download/3-3.0/_3.0.apk
 - 上游仓库: https://github.com/Xposed-Modules-Repo/me.bingyue.fuckqishui
+
+### COPG-VD (`copg-vd`)
+- 模块简介: 基于 Zygisk 的全局设备指纹与系统属性伪装套件，支持 JSON 声明式规则、分进程覆盖、WebUI 管理与 VDLU 启动前增量更新。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/copg-vd/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 176
+- 最新版本: v6.18-vd
+- 官方下载地址: https://github.com/VD171/COPG-VD/releases/download/v6.18-vd/COPG-VD-v6.18-vd.zip
+- 上游仓库: https://github.com/VD171/COPG-VD
 
 ### OnyxZygisk (`onyxzygisk`)
 - 模块简介: 不依赖内核补丁的独立 ptrace Zygisk 运行时，支持免重启热插拔模块、FN 功能节点扩展与内置离线 WebUI 控制台。
@@ -1896,6 +2076,18 @@
 - 官方下载地址: https://github.com/Astoritin/AntiSafetyCore/releases/download/1.3.0/AntiSafetyCore-1.3.0.zip
 - 上游仓库: https://github.com/Astoritin/AntiSafetyCore
 
+### PixelXpert-Next (Pixel 原生系统定制模块) (`pixelxpert-next`)
+- 模块简介: 接棒原版 PixelXpert 的混合 Xposed 与 Root 定制模块，专为 Android 13 至 17+ 原生 Google Pixel 固件提供状态栏、快捷设置、锁屏及系统框架深度修改。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/pixelxpert-next/
+- 所属分类: https://magisk.yssn.tech/zh/categories/customization-ui/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch, LSPosed
+- GitHub Star: 136
+- 最新版本: v6.1.5
+- 官方下载地址: https://github.com/anirudhgupta109/PixelXpert-Next/releases/download/v6.1.5/PixelXpert-Next.zip
+- 上游仓库: https://github.com/anirudhgupta109/PixelXpert-Next
+
 ### Video To Bootanimation (视频转开机动画) (`video-to-bootanimation`)
 - 模块简介: 支持将本地 MP4 视频文件自动转换为高精度 Android 开机动画（bootanimation.zip）的 Magisk 模块与终端转换工具集。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/video-to-bootanimation/
@@ -2003,6 +2195,17 @@
 - 最新版本: V4.8
 - 官方下载地址: https://github.com/Magisk-Modules-Alt-Repo/wadbd/releases/download/V4.8/wadbd-4.8-11.zip
 - 上游仓库: https://github.com/Magisk-Modules-Alt-Repo/wadbd
+
+### AlwaysStrong (`alwaysstrong`)
+- 模块简介: 由 Evokerr 维护的一体化 Strong Play Integrity 模块，整合 TEESimulator-RS 与 PlayIntegrityFork，支持自动刷新密钥盒与 WebUI 管理。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/alwaysstrong/
+- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
+- 软件包类型: flashable-module
+- 收录渠道: community
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 103
+- 最新版本: v1.0.6.1
+- 官方下载地址: https://gitlab.com/api/v4/projects/87739512/packages/generic/AlwaysStrong/v1.0.6.1/AlwaysStrong-v1.0.6.1.zip
 
 ### Simple_BootloopSaver (轻量救砖防卡米) (`simple-bootloopsaver`)
 - 模块简介: 在系统启动后期持续监测 Zygote 进程 PID 稳定性，一旦检测到模块引发的 Bootloop 无限重启循环，自动禁用全部模块并重启恢复系统。
@@ -2580,6 +2783,18 @@
 - 官方下载地址: https://github.com/hddq/magisk-cromite-webview/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/CromiteSystemWebView-v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a.zip
 - 上游仓库: https://github.com/hddq/magisk-cromite-webview
 
+### NSG Tweaks (网络信号大师增强) (`nsg-tweaks`)
+- 模块简介: 面向 Network Signal Guru（com.qtrun.QuickTest v4.8.14）的 LSPosed 扩展模块，新增基站表扩展行数、ARFCN 与带宽列、信令搜索及回放控制等功能。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/nsg-tweaks/
+- 所属分类: https://magisk.yssn.tech/zh/categories/xposed-runtime-hooks/
+- 软件包类型: xposed-module
+- 收录渠道: github
+- 兼容平台: LSPosed, Magisk, KernelSU, APatch
+- GitHub Star: 27
+- 最新版本: v12.0
+- 官方下载地址: https://github.com/h3nnes/nsg-tweaks/releases/download/v12.0/nsg_tweaks_lsposed_v12-0.apk
+- 上游仓库: https://github.com/h3nnes/nsg-tweaks
+
 ### nothing-euicc (Nothing eSIM 启用器) (`nothing-euicc`)
 - 模块简介: 专为 Nothing OS 打造的 eUICC 强制启用模块，搭配 eSTK.me 或 5ber 实体可写 eSIM 卡激活系统级 LPA 管理功能。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/nothing-euicc/
@@ -2892,6 +3107,18 @@
 - 官方下载地址: https://github.com/draumaz/dozedisabler/releases/download/1.2/dozedisabler-1.2.zip
 - 上游仓库: https://github.com/draumaz/dozedisabler
 
+### JoyCtl Android (小米 Joyose 云控修改) (`joyctl-android`)
+- 模块简介: 基于 hexwander/joyctl 移植的原生 Root 工具，直接通过 su 在小米及澎湃 OS 设备本地读写 Joyose 云控数据库 teg_config.db，调节温控阈值、帧率锁与 migt 调度规则。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/joyctl-android/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 6
+- 最新版本: v1.0.17
+- 官方下载地址: https://github.com/308532806/joyctl-android/releases/download/v1.0.17/JoyCtl-Android-v1.0.17.apk
+- 上游仓库: https://github.com/308532806/joyctl-android
+
 ### Realme-GT3-neo5-CPU-limiter (真我 GT Neo5 降频省电) (`realme-gt3-neo5-cpu-limiter`)
 - 模块简介: 面向真我 GT3 与 GT Neo 5 的 Magisk/KernelSU 降频省电模块，支持自定义 CPU 频率上限、节能调度与核心离线，延长亮屏续航。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/realme-gt3-neo5-cpu-limiter/
@@ -2915,6 +3142,30 @@
 - 最新版本: Latest
 - 官方下载地址: https://github.com/AdalynAstatine/TurnOffSensors-Magisk/releases/download/Latest/TurnOffSensors-Magisk.zip
 - 上游仓库: https://github.com/AdalynAstatine/TurnOffSensors-Magisk
+
+### Blur Closed (关闭系统模糊效果) (`blurclosed`)
+- 模块简介: 通过 post-fs-data.sh 阶段执行 resetprop 与 WindowManager 命令禁用 Android 原生 SurfaceFlinger 及主流定制系统界面实时高斯模糊特效的无侵入式模块。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/blurclosed/
+- 所属分类: https://magisk.yssn.tech/zh/categories/customization-ui/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 4
+- 最新版本: 1.1.1
+- 官方下载地址: https://github.com/Astoritin/BlurClosed/releases/download/1.1.1/BlurClosed-1.1.1.zip
+- 上游仓库: https://github.com/Astoritin/BlurClosed
+
+### Camera2API HAL3 Universal MTK (`camera2api-hal3-mtk`)
+- 模块简介: 专为联发科（MediaTek）Android 8–14 设备打造的通用 Camera2 API HAL3 与 EIS 开启模块，通过属性修改与持久化守护进程防止厂商重置。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/camera2api-hal3-mtk/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-environment/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 2
+- 最新版本: v2026.0102.0421
+- 官方下载地址: https://github.com/anasbex-dev/Camera2API-HAL3---Universal-MTK/releases/download/v2026.0102.0421/Camera2API-MTK-v2026.0102.0421.zip
+- 上游仓库: https://github.com/anasbex-dev/Camera2API-HAL3---Universal-MTK
 
 ### OverlayFS MetaModule (KernelSU/APatch 挂载元模块) (`meta-overlayfs-kernelsu`)
 - 模块简介: 专为 KernelSU 与 APatch 打造的新一代 OverlayFS 元模块引擎，提供高性能无系统分区修改文件挂载、实时内核检查与原生 WebUI。

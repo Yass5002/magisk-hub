@@ -1,0 +1,16 @@
+{
+  "id": "busybox-ndk",
+  "displayName": "Busybox for Android NDK",
+  "description": "由 osm0sis 使用 Android NDK 静态编译的 BusyBox 1.36.1 安装模块，覆盖 ARM/ARM64/x86/x86_64/MIPS 架构，支持 SELinux 版本及无系统分区修改（Systemless）符号链接管理。",
+  "seo": {
+    "title": "Busybox for Android NDK 下载与安装指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 osm0sis 编译的 Busybox for Android NDK 1.36.1 模块，支持 Magisk、KernelSU 与 APatch，提供全架构静态二进制与 SELinux 编译版本。"
+  },
+  "searchAliases": [
+    "BusyBox NDK 下载",
+    "osm0sis BusyBox 模块",
+    "Android 静态 BusyBox 1.36.1",
+    "Magisk BusyBox 安装",
+    "KernelSU BusyBox 工具集"
+  ]
+}

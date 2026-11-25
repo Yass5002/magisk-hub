@@ -1,0 +1,28 @@
+{
+  "id": "camera2api-hal3-mtk",
+  "name": "Camera2API HAL3 Enabler - Universal MTK",
+  "repo": "anasbex-dev/Camera2API-HAL3---Universal-MTK",
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Force-enables Camera2 API HAL3 and EIS on MediaTek Android 8–14 devices with vendor detection and a persistent resetprop enforcement daemon.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Apache-2.0",
+  "icon": "assets/icons/camera2api-hal3-mtk.png",
+  "stars": 2,
+  "latestRelease": {
+    "tag": "v2026.0102.0421",
+    "publishedAt": "2026-01-02T04:21:32Z",
+    "url": "https://github.com/anasbex-dev/Camera2API-HAL3---Universal-MTK/releases/tag/v2026.0102.0421",
+    "downloadUrl": "https://github.com/anasbex-dev/Camera2API-HAL3---Universal-MTK/releases/download/v2026.0102.0421/Camera2API-MTK-v2026.0102.0421.zip",
+    "assetName": "Camera2API-MTK-v2026.0102.0421.zip"
+  },
+  "seo": {
+    "title": "Camera2API HAL3 Enabler (Universal MTK) | Magisk Hub",
+    "description": "Download Camera2API HAL3 Universal MTK for Magisk, KernelSU, and APatch. Force-enable Camera2 HAL3 and EIS on MediaTek Android 8–14 devices."
+  },
+  "contentTier": 1
+}

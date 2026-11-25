@@ -1,0 +1,16 @@
+{
+  "id": "camera2api-hal3-mtk",
+  "displayName": "Camera2API HAL3 Universal MTK",
+  "description": "专为联发科（MediaTek）Android 8–14 设备打造的通用 Camera2 API HAL3 与 EIS 开启模块，通过属性修改与持久化守护进程防止厂商重置。",
+  "seo": {
+    "title": "Camera2API HAL3 Universal MTK 下载与联发科开启指南 | Magisk Hub",
+    "description": "下载 Camera2API HAL3 Universal MTK 模块，支持 Magisk、KernelSU 与 APatch，为联发科设备强开 Camera2 HAL3 与 EIS 防抖并防重置。"
+  },
+  "searchAliases": [
+    "联发科开启 Camera2API",
+    "MTK HAL3 模块下载",
+    "谷歌相机联发科支持",
+    "Camera2API EIS 开启",
+    "camera2api_mtk_universal"
+  ]
+}

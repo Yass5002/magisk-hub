@@ -1,0 +1,16 @@
+{
+  "id": "unlock-cn-gms",
+  "displayName": "Unlock CN GMS (国行 GMS 限制解锁)",
+  "description": "自动定位并移除国行 ROM 多个系统分区中的 cn.google.services 与 services_updater XML 权限限制，恢复 Google 位置记录、地图时间轴及网页版 Play 设备显示。",
+  "seo": {
+    "title": "Unlock CN GMS 下载与国行 GMS 解锁指南 | Magisk Hub",
+    "description": "下载最新版 Unlock CN GMS，支持 Magisk、KernelSU 与 APatch。自动清除国行 ROM 各分区 cn.google.services 限制，恢复谷歌位置记录与时间轴功能。"
+  },
+  "searchAliases": [
+    "Unlock CN GMS 模块下载",
+    "国行手机解锁谷歌位置记录",
+    "Google Map Timeline 时间轴恢复",
+    "cn.google.services 限制移除",
+    "国行 ROM GMS 功能完整解锁"
+  ]
+}

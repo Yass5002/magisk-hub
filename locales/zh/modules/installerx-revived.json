@@ -1,0 +1,16 @@
+{
+  "id": "installerx-revived",
+  "displayName": "InstallerX Revived (现代安装包管理器)",
+  "description": "社区持续维护的现代 Android 安装包管理器（InstallerX 续作），支持 APK、APKS、APKM、XAPK 与压缩包内批量安装，并可对接 Root、Shizuku 与 Dhizuku 后端。",
+  "seo": {
+    "title": "InstallerX Revived 下载与高级安装器配置指南 | Magisk Hub",
+    "description": "下载 InstallerX Revived 现代安卓包安装器，支持免 Root、Shizuku、Dhizuku 及 Magisk/KernelSU/APatch。原生支持 APK、APKS、APKM、XAPK 批量与静默安装。"
+  },
+  "searchAliases": [
+    "InstallerX Revived 下载",
+    "Shizuku 替代系统安装器",
+    "APKS XAPK APKM 安装器",
+    "Dhizuku 静默安装工具",
+    "Android 第三方包安装器"
+  ]
+}

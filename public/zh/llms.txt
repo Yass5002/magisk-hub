@@ -1,6 +1,6 @@
 # Magisk Hub（简体中文版）
 
-> Magisk Hub 是面向 Magisk、KernelSU、APatch 与 LSPosed 生态的开源 Root 模块中文目录与技术文档中心，累计收录 249 个活跃模块。
+> Magisk Hub 是面向 Magisk、KernelSU、APatch 与 LSPosed 生态的开源 Root 模块中文目录与技术文档中心，累计收录 270 个活跃模块。
 
 ## 项目概览与验证机制
 所有收录模块均通过 JSON Schema Draft-07 数据规范校验与真实发布包载荷核查，提供官方直链下载、中文技术原理解析、配置文件路径与救砖排查指南。

@@ -1,0 +1,16 @@
+{
+  "id": "corepatch",
+  "displayName": "CorePatch (核心破解)",
+  "description": "现由 LSPosed 组织接管维护的 Xposed 核心破解模块，通过 Hook 系统框架实现禁用 APK 签名校验、保留数据降级安装与跨签名覆盖安装。",
+  "seo": {
+    "title": "CorePatch 下载与核心破解教程 (LSPosed) | Magisk Hub",
+    "description": "下载官方维护版 CorePatch (LSPosed 核心破解模块)，支持 Magisk、KernelSU 与 APatch。一键禁用安卓 APK 签名校验、允许保留数据降级安装与不同签名覆盖。"
+  },
+  "searchAliases": [
+    "CorePatch 核心破解下载",
+    "LSPosed 禁用签名校验",
+    "安卓保留数据降级安装",
+    "不同签名覆盖安装 APK",
+    "CorePatch N 模块"
+  ]
+}

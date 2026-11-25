@@ -1,0 +1,28 @@
+{
+  "id": "unlock-cn-gms",
+  "name": "Unlock CN GMS",
+  "repo": "fei-ke/unlock-cn-gms",
+  "category": "system-environment",
+  "softwareType": "flashable-module",
+  "description": "Systemless module that strips cn.google.services and services_updater feature restrictions across OEM partitions to restore Google Location History and Maps Timeline on China-ROM devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/unlock-cn-gms.png",
+  "stars": 1167,
+  "latestRelease": {
+    "tag": "v3.9",
+    "publishedAt": "2026-11-16T12:31:33Z",
+    "url": "https://github.com/fei-ke/unlock-cn-gms/releases/tag/v3.9",
+    "downloadUrl": "https://github.com/fei-ke/unlock-cn-gms/releases/download/v3.9/unlock-cn-gms-v3.9.zip",
+    "assetName": "unlock-cn-gms-v3.9.zip"
+  },
+  "seo": {
+    "title": "Unlock CN GMS – Download (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "Download Unlock CN GMS for Magisk, KernelSU, and APatch. Remove cn.google.services XML restrictions on Chinese ROMs to enable Google Location History and Maps Timeline."
+  },
+  "contentTier": 1
+}

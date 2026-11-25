@@ -1,0 +1,28 @@
+{
+  "id": "fde-ai",
+  "name": "FDE.AI",
+  "repo": "feravolt/FDE.AI-docs",
+  "category": "performance-kernel",
+  "softwareType": "standalone-app",
+  "description": "Systemless AI-driven Android optimizer tuning kernel, VM, CPU/GPU governors, thermal throttling, and charging behavior for rooted devices.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "Proprietary",
+  "icon": "assets/icons/fde-ai.png",
+  "stars": 697,
+  "latestRelease": {
+    "tag": "26.08.1",
+    "publishedAt": "2026-08-19T16:48:46Z",
+    "url": "https://github.com/feravolt/FDE.AI-docs/releases/tag/26.08.1",
+    "downloadUrl": "https://github.com/feravolt/FDE.AI-docs/releases/download/26.08.1/FDE.AI-v26.08.1.apk",
+    "assetName": "FDE.AI-v26.08.1.apk"
+  },
+  "seo": {
+    "title": "FDE.AI – Systemless Kernel & AI Optimizer (APK) | Magisk Hub",
+    "description": "Download FDE.AI (FeraDroid Engine) for Magisk, KernelSU, and APatch. Adaptive AI kernel, VM, CPU/GPU governor, and thermal optimizer APK."
+  },
+  "contentTier": 1
+}

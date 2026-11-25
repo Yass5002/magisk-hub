@@ -1,0 +1,16 @@
+{
+  "id": "magisk-frida",
+  "displayName": "Magisk-Frida",
+  "description": "无系统分区封装官方 frida-server 守护进程的通用模块，支持开机自启、四架构自动识别、Action 一键启停与自定义本地监听端口。",
+  "seo": {
+    "title": "Magisk-Frida 下载与动态插桩指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 Magisk-Frida，支持 Magisk、KernelSU 与 APatch。开机自动拉起官方 frida-server 守护进程，支持多架构识别与 Action 一键启停。"
+  },
+  "searchAliases": [
+    "Magisk-Frida 下载",
+    "MagiskFrida 模块",
+    "frida-server 开机自启",
+    "Android Frida 逆向插桩",
+    "KernelSU Frida 模块"
+  ]
+}

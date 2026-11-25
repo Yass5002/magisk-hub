@@ -1,0 +1,16 @@
+{
+  "id": "reqable",
+  "displayName": "Reqable (全平台 HTTP 抓包与 API 调试)",
+  "description": "集 HTTP/HTTPS MITM 抓包与全功能 API 测试客户端于一体的调试工具，支持安卓免 Root 本地 VPN 抓包及 Magisk/KernelSU/APatch 系统 CA 根证书模式。",
+  "seo": {
+    "title": "Reqable 安卓抓包下载与 Root 系统证书配置指南 | Magisk Hub",
+    "description": "下载最新版 Reqable 安卓端（arm64），支持免 Root VPN 与 Magisk/KernelSU/APatch 系统证书抓包模式。集 HTTP/HTTPS MITM 抓包、断点调试与 API 测试于一体。"
+  },
+  "searchAliases": [
+    "Reqable 安卓版 APK 下载",
+    "Android HTTPS MITM 抓包工具",
+    "Reqable Magisk 系统证书安装",
+    "手机端 API 调试与重放软件",
+    "Android 14 系统 CA 证书抓包"
+  ]
+}

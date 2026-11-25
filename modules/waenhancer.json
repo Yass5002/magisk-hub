@@ -1,0 +1,29 @@
+{
+  "id": "waenhancer",
+  "name": "WaEnhancer",
+  "repo": "Dev4Mod/WaEnhancer",
+  "category": "xposed-runtime-hooks",
+  "softwareType": "xposed-module",
+  "description": "Feature-rich Xposed module built on YukiHookAPI and DexKit that enhances WhatsApp and WhatsApp Business in memory with privacy controls, anti-revoke, and custom CSS theming.",
+  "compatibility": [
+    "LSPosed",
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/waenhancer.png",
+  "stars": 1909,
+  "latestRelease": {
+    "tag": "1.6.6-0352170c",
+    "publishedAt": "2026-11-19T03:01:55Z",
+    "url": "https://github.com/Dev4Mod/WaEnhancer/releases/tag/1.6.6-0352170c",
+    "downloadUrl": "https://github.com/Dev4Mod/WaEnhancer/releases/download/1.6.6-0352170c/WaEnhancer-1.6.6.0352170C.apk",
+    "assetName": "WaEnhancer-1.6.6.0352170C.apk"
+  },
+  "seo": {
+    "title": "WaEnhancer – WhatsApp Privacy & UI Xposed Module | Magisk Hub",
+    "description": "Download WaEnhancer for LSPosed, Magisk, KernelSU, and APatch. Enhance WhatsApp and WhatsApp Business with anti-revoke, freeze last seen, view-once bypass, and custom CSS themes."
+  },
+  "contentTier": 1
+}

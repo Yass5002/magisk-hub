@@ -1,0 +1,16 @@
+{
+  "id": "blurclosed",
+  "displayName": "Blur Closed (关闭系统模糊效果)",
+  "description": "通过 post-fs-data.sh 阶段执行 resetprop 与 WindowManager 命令禁用 Android 原生 SurfaceFlinger 及主流定制系统界面实时高斯模糊特效的无侵入式模块。",
+  "seo": {
+    "title": "Blur Closed 下载与关闭系统高斯模糊指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Blur Closed 模块，支持 Magisk、KernelSU 与 APatch。通过 resetprop 与 WindowManager 禁用安卓原生及主流定制系统的实时高斯模糊特效。"
+  },
+  "searchAliases": [
+    "Blur Closed 下载",
+    "关闭安卓高斯模糊 Magisk 模块",
+    "禁用系统毛玻璃模糊效果",
+    "disableBlurs 渲染优化",
+    "MIUI ColorOS 模糊关闭"
+  ]
+}

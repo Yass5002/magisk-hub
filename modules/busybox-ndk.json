@@ -1,0 +1,28 @@
+{
+  "id": "busybox-ndk",
+  "name": "Busybox for Android NDK",
+  "repo": "Magisk-Modules-Repo/busybox-ndk",
+  "category": "system-utilities",
+  "softwareType": "flashable-module",
+  "description": "Static NDK-built BusyBox 1.36.1 binary installer for ARM, ARM64, x86, x86_64, and MIPS with SELinux support and systemless symlink management.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-2.0",
+  "icon": "assets/icons/busybox-ndk.png",
+  "stars": 1178,
+  "latestRelease": {
+    "tag": "13614",
+    "publishedAt": "2026-08-08T13:18:21Z",
+    "url": "https://github.com/Magisk-Modules-Repo/busybox-ndk/releases/tag/13614",
+    "downloadUrl": "https://github.com/Magisk-Modules-Repo/busybox-ndk/releases/download/13614/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip",
+    "assetName": "UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip"
+  },
+  "seo": {
+    "title": "Busybox for Android NDK – Static 1.36.1 Module | Magisk Hub",
+    "description": "Download Busybox for Android NDK (osm0sis) for Magisk, KernelSU, and APatch. Static 1.36.1 binaries with SELinux support for ARM, ARM64, x86, x86_64, and MIPS."
+  },
+  "contentTier": 1
+}

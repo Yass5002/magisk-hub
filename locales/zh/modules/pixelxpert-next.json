@@ -1,0 +1,16 @@
+{
+  "id": "pixelxpert-next",
+  "displayName": "PixelXpert-Next (Pixel 原生系统定制模块)",
+  "description": "接棒原版 PixelXpert 的混合 Xposed 与 Root 定制模块，专为 Android 13 至 17+ 原生 Google Pixel 固件提供状态栏、快捷设置、锁屏及系统框架深度修改。",
+  "seo": {
+    "title": "PixelXpert-Next 下载与配置指南 (Magisk/LSPosed) | Magisk Hub",
+    "description": "下载最新版 PixelXpert-Next，支持 Magisk、KernelSU、APatch 与 LSPosed。专为原生 Pixel 固件打造的 Xposed 系统界面定制模块，涵盖状态栏、锁屏与快捷设置增强。"
+  },
+  "searchAliases": [
+    "PixelXpert-Next 模块下载",
+    "Pixel 原生系统状态栏定制",
+    "PixelXpert Android 16 17 分支",
+    "LSPosed Pixel 界面美化模块",
+    "Google Pixel 快捷设置修改"
+  ]
+}

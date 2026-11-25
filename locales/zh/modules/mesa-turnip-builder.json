@@ -1,0 +1,16 @@
+{
+  "id": "mesa-turnip-builder",
+  "displayName": "Mesa Turnip Builder (Adreno 开源 Vulkan 驱动)",
+  "description": "基于 Android NDK 编译的 Freedreno Turnip 开源 Vulkan 驱动模块，在 Android 14+ 设备上无侵入式替换高通 Adreno 6xx–8xx 闭源驱动并自动清理着色器缓存。",
+  "seo": {
+    "title": "Mesa Turnip Builder 下载与 Adreno Vulkan 驱动指南 | Magisk Hub",
+    "description": "下载最新版 Mesa Turnip Builder，支持 Magisk、KernelSU 与 APatch。为 Android 14+ 高通 Adreno 6xx-8xx GPU 替换开源 Turnip Vulkan 驱动。"
+  },
+  "searchAliases": [
+    "Mesa Turnip Builder 模块下载",
+    "Adreno Turnip Vulkan 驱动刷入",
+    "高通 GPU 开源 Vulkan 驱动模块",
+    "Android 14 15 模拟器 Turnip 驱动",
+    "vulkan.adreno.so 替换模块"
+  ]
+}

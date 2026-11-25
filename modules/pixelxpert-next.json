@@ -1,0 +1,29 @@
+{
+  "id": "pixelxpert-next",
+  "name": "PixelXpert-Next",
+  "repo": "anirudhgupta109/PixelXpert-Next",
+  "category": "customization-ui",
+  "softwareType": "flashable-module",
+  "description": "Xposed-based SystemUI and framework customization suite for stock Google Pixel ROMs (Android 13–17+), bundled with an auto-configured companion app.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch",
+    "LSPosed"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/pixelxpert-next.png",
+  "stars": 136,
+  "latestRelease": {
+    "tag": "v6.1.5",
+    "publishedAt": "2026-11-16T10:50:50Z",
+    "url": "https://github.com/anirudhgupta109/PixelXpert-Next/releases/tag/v6.1.5",
+    "downloadUrl": "https://github.com/anirudhgupta109/PixelXpert-Next/releases/download/v6.1.5/PixelXpert-Next.zip",
+    "assetName": "PixelXpert-Next.zip"
+  },
+  "seo": {
+    "title": "PixelXpert-Next – Download (Magisk/KSU/LSPosed) | Magisk Hub",
+    "description": "Download PixelXpert-Next for Magisk, KernelSU, APatch, and LSPosed. Xposed and root customization suite for stock Google Pixel ROMs on Android 13 to 17+."
+  },
+  "contentTier": 1
+}

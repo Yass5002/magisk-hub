@@ -1,42 +1,45 @@
 ---
 id: "meta-magic-mount-rs"
-title: "Magic Mount Metamodule (Rust): Systemless File Mounter"
+title: "Magic Mount-rs: Rust Systemless Metamodule"
 sidebarTitle: "Magic Mount RS"
-description: "High-performance Rust metamodule providing systemless file modification capabilities for KernelSU and APatch."
+description: "High-performance Rust metamodule from Tools-cx-app implementing Magic Mount systemless file overlays, custom bind rules, and WebUI configuration."
 category: "root-management"
 tier: 1
 searchQueries:
   - "magic mount metamodule rust"
   - "meta magic mount rs"
-  - "tools cx app magic mount"
-  - "kernelsu apatch magic mount"
+  - "tools-cx-app magic mount"
+  - "kernelsu apatch metamodule"
   - "custom bind rules metamodule"
 prerequisites:
-  - "KernelSU or APatch with metamodule support"
-  - "Kernel with basic mount and tmpfs support"
+  - "KernelSU or APatch with metamodule support (primary target; Magisk already provides native Magic Mount)"
+  - "Supported architecture: arm64-v8a, armeabi-v7a, x86_64, or riscv64"
 conflicts:
-  - "Other competing metamodules that manage global file overlays (e.g. Mountify in metamodule mode)"
+  - "Other competing metamodules managing global module file overlays (e.g., meta-overlayfs or Mountify in metamodule mode)"
 configPaths:
   - "/data/adb/magic_mount/config.toml"
   - "/data/adb/magic_mount/custom"
+  - "/data/adb/modules/magic_mount_rs/"
 features:
-  - "Rust-native metamodule: engineered in Rust for extreme memory safety and instant boot execution"
-  - "Custom rule system: define explicit ignore, bind, and file inclusion rules in /data/adb/magic_mount/custom"
-  - "Partition isolation: specify target partitions (such as mi_ext or my_stock) for granular systemless modification"
-  - "WebUI configuration: visual management dashboard for editing config.toml and reviewing active mounts"
-  - "Atomic rollback: automatically rolls back and detaches temporary mounts if a bind operation fails"
+  - "Rust-native metamodule: compiles native magic_mount_rs binaries for arm64-v8a, armeabi-v7a, x86_64, and riscv64"
+  - "Metamodule lifecycle integration: implements metainstall.sh, metamount.sh, and metauninstall.sh with SHA-256 verification"
+  - "Custom rule engine: define ignore, bind, and external file inclusion directives without rebuilding full modules"
+  - "WebUI management: built-in webroot dashboard to edit config.toml and inspect mount state"
+  - "APatch & KernelSU tuned defaults: ships dedicated config.toml (KSU) and config_apatch.toml (APatch) templates"
 faq:
   - question: "Why is a metamodule required for KernelSU and APatch?"
-    answer: "Unlike traditional Magisk which includes a built-in magic mount daemon in its init binary, modern kernel-based root solutions like KernelSU and APatch delegate overlay mounting to modular metamodules, giving users control over how files are injected."
-  - question: "How do custom bind rules work in Magic Mount Metamodule?"
-    answer: "You can create customized bind instructions in /data/adb/magic_mount/custom. For example, using 'bind /data/local/tmp/file /system/etc/file' allows you to mount individual files without packaging them into a full module directory."
+    answer: "Unlike Magisk which builds Magic Mount into its init binary, modern KernelSU and APatch architectures delegate module filesystem mounting to a dedicated metamodule, letting users choose between OverlayFS and Magic Mount."
+  - question: "Does Magic Mount-rs work on Magisk?"
+    answer: "Note that Magisk ships its own built-in Magic Mount engine, and meta-magic_mount-rs's customize.sh explicitly checks for KernelSU ($KSU) or APatch ($APATCH) during installation."
+  - question: "How do custom bind rules work?"
+    answer: "Rules placed under /data/adb/magic_mount/custom allow directives such as ignoring specific module paths or binding individual files without packaging a separate module."
 ---
 
 ## Overview
 
-Developed by **Tools-cx-app**, **Magic Mount Metamodule (Rust)** is a standalone implementation of Magisk's classic magic mount logic rewritten in Rust for **KernelSU** and **APatch**.
+Developed by **Tools-cx-app**, **Magic Mount-rs** (`v4.1.12`) is a standalone implementation of Magisk's Magic Mount systemless mounting logic written in **Rust** (`id=magic_mount_rs`, `metamodule=1`).
 
-While KernelSU and APatch provide powerful kernel-level root and namespace isolation, they intentionally do not force a specific module mounting mechanism into the kernel core. Magic Mount Metamodule steps in as a metamodule, intercepting early boot initialization to construct clean systemless filesystem overlays for all installed modules.
+While **KernelSU** and **APatch** provide kernel-level root and namespace isolation, they delegate systemless module filesystem mounting to a user-selected metamodule. Magic Mount-rs acts as that metamodule, handling module installation layout normalization (`metainstall.sh`), early-boot mounting (`metamount.sh`), and cleanup (`metauninstall.sh`).
 
 ---
 
@@ -44,21 +47,19 @@ While KernelSU and APatch provide powerful kernel-level root and namespace isola
 
 ### Rust-Powered Metamodule Engine
 
-The module functions as a core boot coordinator:
+Magic Mount-rs coordinates module overlays cleanly during early Android boot:
 
-1. **Metamodule Lifecycle**: Launches during early Android initialization via KernelSU/APatch metamodule hooks.
-2. **Overlay Construction**: Traverses installed modules in `/data/adb/modules/`, mirror-binding files over system partitions (including vendor, product, and OEM-specific partitions like `mi_ext`).
-3. **Custom Rule Parser**: Reads `/data/adb/magic_mount/custom` to execute fine-grained user directives:
-   - `ignore <path>`: Skips mounting a specific file from a module.
-   - `bind <source> <target>`: Creates a read-only bind mount from a custom location.
-   - `file <rules_file>`: Recursively includes external rule files with circular loop protection.
+1. **Verified Extraction (`customize.sh` + `verify.sh`)**: Checks for an active KernelSU or APatch environment, selects the matching `magic_mount_rs` binary (`arm64-v8a`, `armeabi-v7a`, `x86_64`, or `riscv64`), and verifies package integrity against `.sha256` digests.
+2. **Partition Symlink Normalization (`metainstall.sh`)**: Exports `KSU_HAS_METAMODULE="true"` (`KSU_METAMODULE="mmrs"`), handles self-mounting blocklisted modules by marking `skip_mount`, and normalizes `/system/{vendor,product,system_ext}` paths when `/system/$part` is a symlink.
+3. **Boot Mounting (`metamount.sh`)**: Invokes the native Rust binary and calls `/data/adb/ksud kernel notify-module-mounted` upon success so KernelSU/APatch track mounted state accurately.
+4. **WebUI & Soft Reboot Helper**: Includes `webroot/` for GUI configuration and `emulated-soft-reboot.sh` for faster iteration.
 
 ---
 
 ## Installation & Setup
 
-1. Verify that your device runs **KernelSU** or **APatch**.
-2. Download the latest `meta-magic_mount-rs-*.zip` release.
+1. Ensure your device runs **KernelSU** or **APatch** with metamodule support (and remove any competing metamodule first).
+2. Download `magic_mount_rs-4.1.12-959-universal.zip` from `Tools-cx-app/meta-magic_mount-rs`.
 3. Flash the module in your root manager.
 4. Reboot your device.
 
@@ -66,18 +67,22 @@ The module functions as a core boot coordinator:
 
 ## Configuration & Usage
 
-Settings are stored in `/data/adb/magic_mount/config.toml`:
+Default settings live in `/data/adb/magic_mount/config.toml` (with `mountsource = "APatch"` when initialized from `config_apatch.toml`):
+
 ```toml
 mountsource = "KSU"
 umount = false
-partitions = ["system", "vendor", "product"]
+partitions = []
+extra_mount = []
 ```
-- **mountsource**: Mount source identifier (defaults to `"KSU"`).
-- **umount**: Whether to attempt unmounting from DenyList apps via KernelSU umount.
-- **partitions**: Array of partitions targeted for systemless overlays.
+
+- **`mountsource`**: Mount source label (`"KSU"` or `"APatch"`).
+- **`umount`**: Controls whether mounts should be unmounted for non-root target apps.
+- **`partitions`** & **`extra_mount`**: Arrays specifying additional partitions (such as `mi_ext` or `my_stock`) and custom mount entries.
 
 ---
 
 ## Troubleshooting & Common Issues
 
-- **Mount Fails with Error**: The target path in custom bind rules must be an absolute path and must not contain relative `..` segments. If a mount operation fails, the engine safely rolls back.
+- **Unsupported Platform Abort**: If `customize.sh` prints `! unsupported root platform`, ensure you are flashing inside KernelSU or APatch rather than Magisk or a custom recovery.
+- **Mount Failures**: Check that custom rule paths in `/data/adb/magic_mount/custom` are valid absolute paths without relative `..` segments.

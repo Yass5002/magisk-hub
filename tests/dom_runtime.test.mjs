@@ -23,11 +23,17 @@ function loadDistDom(relPath, options = {}) {
     },
   });
 
-  // JSDOM ignores <script type="module">; evaluate inline module scripts explicitly
+  // JSDOM ignores <script type="module">; evaluate inline and built /_astro/ module scripts explicitly
   const moduleScripts = Array.from(dom.window.document.querySelectorAll('script[type="module"]'));
   for (const s of moduleScripts) {
     if (!s.src && s.textContent) {
       dom.window.eval(s.textContent);
+    } else if (s.src) {
+      const urlPath = new URL(s.src, 'https://magisk.yssn.tech').pathname;
+      if (urlPath.startsWith('/_astro/')) {
+        const assetPath = path.join(DIST_DIR, urlPath.replace(/^\/+/, ''));
+        dom.window.eval(fs.readFileSync(assetPath, 'utf-8'));
+      }
     }
   }
   return dom;
@@ -90,4 +96,30 @@ test('Chinese module detail copy button uses localized labels', () => {
   assert.equal(textSpan.textContent.trim(), '复制');
   copyBtn.click();
   assert.equal(textSpan.textContent.trim(), '已复制');
+});
+
+test('Home search handles punctuation differences, asset names, URLs, prompts, and cross-locale queries', () => {
+  const dom = loadDistDom('index.html', { url: 'https://magisk.yssn.tech/' });
+  const doc = dom.window.document;
+  const searchInput = doc.getElementById('searchInput');
+  const noResults = doc.getElementById('noResults');
+
+  const queryVisible = (q) => {
+    searchInput.value = q;
+    searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
+    return Array.from(doc.querySelectorAll('.module-card-wrapper'))
+      .filter(el => el.style.display !== 'none')
+      .map(el => el.getAttribute('data-id'));
+  };
+
+  assert.ok(queryVisible('zygisk assistant').includes('zygisk-assistant'), 'space vs hyphen query');
+  assert.ok(queryVisible('harman-kardon').includes('harman-kardon-sound-enhancer'), 'hyphen vs space query');
+  assert.ok(queryVisible('bindhosts.zip').includes('bindhosts'), 'assetName search');
+  assert.ok(queryVisible('https://magisk.yssn.tech/modules/ohmykeymint/').includes('ohmykeymint'), 'pasted URL search');
+  assert.ok(queryVisible('Please install playintegrityfix on KernelSU').includes('playintegrityfix'), 'pasted prompt extraction');
+  assert.ok(queryVisible('旁路供电').includes('acc'), 'cross-locale Chinese query on EN home');
+
+  const zero = queryVisible('zzzznonexistentmodule999');
+  assert.equal(zero.length, 0, 'genuine miss returns zero results');
+  assert.ok(noResults && !noResults.classList.contains('hidden'), 'noResults shown on zero results');
 });

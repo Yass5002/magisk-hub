@@ -1,0 +1,16 @@
+{
+  "id": "fde-ai",
+  "displayName": "FDE.AI (FeraDroid Engine)",
+  "description": "基于自适应 AI 负载识别的无侵入式 Android 优化工具，通过 CooldownService、DownscaleService 与 SoundService 动态调节内核、虚拟内存及温控策略。",
+  "seo": {
+    "title": "FDE.AI 下载与系统级性能调度指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 FDE.AI（FeraDroid Engine），支持 Magisk、KernelSU 与 APatch。详解自适应内核调优、虚拟内存管理、温控冷却及旁路供电功能。"
+  },
+  "searchAliases": [
+    "FDE.AI 下载",
+    "FeraDroid Engine 优化",
+    "安卓 AI 内核调度",
+    "充电旁路供电与温控解除",
+    "Root 性能省电工具"
+  ]
+}

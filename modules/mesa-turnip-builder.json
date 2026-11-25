@@ -1,0 +1,28 @@
+{
+  "id": "mesa-turnip-builder",
+  "name": "Mesa Turnip Builder",
+  "repo": "v3kt0r-87/Mesa-Turnip-Builder",
+  "category": "performance-kernel",
+  "softwareType": "flashable-module",
+  "description": "Systemless Mesa Freedreno Turnip Vulkan driver module compiled with Android NDK for Adreno 6xx–8xx GPUs on Android 14+ (SDK 34+) with automatic GPU shader cache cleanup.",
+  "compatibility": [
+    "Magisk",
+    "KernelSU",
+    "APatch"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/icons/mesa-turnip-builder.png",
+  "stars": 226,
+  "latestRelease": {
+    "tag": "20_nov_2026",
+    "publishedAt": "2026-11-20T18:50:16Z",
+    "url": "https://github.com/v3kt0r-87/Mesa-Turnip-Builder/releases/tag/20_nov_2026",
+    "downloadUrl": "https://github.com/v3kt0r-87/Mesa-Turnip-Builder/releases/download/20_nov_2026/Turnip-26.3.1-MAGISK-KSU.zip",
+    "assetName": "Turnip-26.3.1-MAGISK-KSU.zip"
+  },
+  "seo": {
+    "title": "Mesa Turnip Builder – Adreno Vulkan Driver (Magisk/KSU) | Magisk Hub",
+    "description": "Download Mesa Turnip Builder Vulkan driver module for Magisk, KernelSU, and APatch. Systemless Freedreno Turnip replacement for Adreno 6xx-8xx GPUs on Android 14+."
+  },
+  "contentTier": 1
+}
