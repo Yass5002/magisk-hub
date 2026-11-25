@@ -10,13 +10,13 @@
   ],
   "license": "MIT",
   "icon": null,
-  "stars": 98,
+  "stars": 99,
   "latestRelease": {
     "tag": "3.1.0",
     "publishedAt": "2026-08-30T00:22:24Z",
     "url": "https://github.com/John0n1/SMbootFX/releases/tag/3.1.0",
-    "downloadUrl": "https://github.com/John0n1/SMbootFX/releases/download/3.1.0/android-black-on-pink-bootfx-3.1.0-magisk.zip",
-    "assetName": "android-black-on-pink-bootfx-3.1.0-magisk.zip"
+    "downloadUrl": "https://github.com/John0n1/SMbootFX/releases/download/3.1.0/aokp-bootfx-3.1.0-magisk.zip",
+    "assetName": "aokp-bootfx-3.1.0-magisk.zip"
   },
   "seo": {
     "title": "SMbootFX – Download (Magisk) | Magisk Hub",

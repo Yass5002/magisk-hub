@@ -13,7 +13,6 @@
   "license": "Proprietary",
   "icon": "assets/icons/magisk-frida.png",
   "stars": 1490,
-  "contentTier": 1,
   "latestRelease": {
     "tag": "17.27.5-1",
     "publishedAt": "2026-11-23T23:28:44Z",
@@ -24,5 +23,6 @@
   "seo": {
     "title": "Magisk-Frida – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Magisk-Frida for Magisk, KernelSU, and APatch. Automatically runs frida-server on boot with multi-architecture support and Action toggling."
-  }
+  },
+  "contentTier": 1
 }

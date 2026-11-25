@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 2078,
+  "stars": 2081,
   "latestRelease": {
     "tag": "v6.0.1-282",
     "publishedAt": "2026-06-19T15:54:47Z",
     "url": "https://github.com/Enginex0/TEESimulator-RS/releases/tag/v6.0.1-282",
-    "downloadUrl": "https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Debug.zip",
-    "assetName": "TEESimulator-RS-v6.0.1-282-Debug.zip"
+    "downloadUrl": "https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Release.zip",
+    "assetName": "TEESimulator-RS-v6.0.1-282-Release.zip"
   },
   "seo": {
     "title": "TEESimulator-RS – Download (Magisk/KSU) | Magisk Hub",

@@ -11,13 +11,13 @@
   ],
   "license": "Proprietary",
   "icon": "assets/icons/vpnhide.png",
-  "stars": 704,
+  "stars": 706,
   "latestRelease": {
     "tag": "v1.3.1",
     "publishedAt": "2026-10-12T15:25:23Z",
     "url": "https://github.com/okhsunrog/vpnhide/releases/tag/v1.3.1",
-    "downloadUrl": "https://github.com/okhsunrog/vpnhide/releases/download/v1.3.1/vpnhide-zygisk.zip",
-    "assetName": "vpnhide-zygisk.zip"
+    "downloadUrl": "https://github.com/okhsunrog/vpnhide/releases/download/v1.3.1/vpnhide-kpm.zip",
+    "assetName": "vpnhide-kpm.zip"
   },
   "seo": {
     "title": "vpnhide – Download (Magisk/KSU) | Magisk Hub",

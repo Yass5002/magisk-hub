@@ -15,8 +15,8 @@
     "tag": "v1.76.0",
     "publishedAt": "2026-11-08T12:48:22Z",
     "url": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/tag/v1.76.0",
-    "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.76.0/magisk-rclone_x86_64.zip",
-    "assetName": "magisk-rclone_x86_64.zip"
+    "downloadUrl": "https://github.com/NewFuture/rclone-fuse3-magisk/releases/download/v1.76.0/magisk-rclone_arm64-v8a.zip",
+    "assetName": "magisk-rclone_arm64-v8a.zip"
   },
   "seo": {
     "title": "rclone-fuse3-magisk – Download (Magisk) | Magisk Hub",

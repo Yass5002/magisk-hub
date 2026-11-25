@@ -12,8 +12,7 @@
   ],
   "license": "Proprietary",
   "icon": "assets/icons/zygisknext.png",
-  "stars": 11160,
-  "contentTier": 1,
+  "stars": 11170,
   "latestRelease": {
     "tag": "v1.5.3",
     "publishedAt": "2026-11-07T16:32:11Z",
@@ -24,5 +23,6 @@
   "seo": {
     "title": "Zygisk Next – Download (Magisk/KSU/APatch) | Magisk Hub",
     "description": "Download Zygisk Next by Dr-TSNG for Magisk, KernelSU, and APatch. Standalone Zygisk API implementation with namespace unmounting and WebUI support."
-  }
+  },
+  "contentTier": 1
 }

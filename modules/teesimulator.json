@@ -11,13 +11,13 @@
   ],
   "license": "GPL-3.0",
   "icon": null,
-  "stars": 2839,
+  "stars": 2843,
   "latestRelease": {
     "tag": "v4.0",
     "publishedAt": "2026-08-11T09:02:26Z",
     "url": "https://github.com/JingMatrix/TEESimulator/releases/tag/v4.0",
-    "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Debug.zip",
-    "assetName": "TEESimulator-v4.0-34-Debug.zip"
+    "downloadUrl": "https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Release.zip",
+    "assetName": "TEESimulator-v4.0-34-Release.zip"
   },
   "seo": {
     "title": "TEESimulator – Download (Magisk/KSU) | Magisk Hub",

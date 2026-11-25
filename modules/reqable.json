@@ -1,7 +1,7 @@
 {
   "id": "reqable",
   "name": "Reqable",
-  "repo": "Reqable/reqable-app",
+  "repo": "reqable/reqable-app",
   "category": "networking-proxies",
   "softwareType": "standalone-app",
   "description": "All-in-one Android HTTP/HTTPS MITM traffic capture and API debugging client supporting rootless local VPN mode as well as Root/Magisk system CA installation.",
@@ -13,12 +13,12 @@
   ],
   "license": "Proprietary",
   "icon": "assets/icons/reqable.png",
-  "stars": 6980,
+  "stars": 6984,
   "latestRelease": {
     "tag": "3.3.15",
     "publishedAt": "2026-11-24T12:28:01Z",
     "url": "https://github.com/reqable/reqable-app/releases/tag/3.3.15",
-    "downloadUrl": "https://github.com/Reqable/reqable-app/releases/download/3.3.15/reqable-app-android-arm64.apk",
+    "downloadUrl": "https://github.com/reqable/reqable-app/releases/download/3.3.15/reqable-app-android-arm64.apk",
     "assetName": "reqable-app-android-arm64.apk"
   },
   "seo": {

@@ -12,13 +12,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/lsposed.png",
-  "stars": 25633,
+  "stars": 25644,
   "latestRelease": {
     "tag": "v1.9.2",
     "publishedAt": "2023-10-11T15:11:13Z",
     "url": "https://github.com/LSPosed/LSPosed/releases/tag/v1.9.2",
-    "downloadUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-zygisk-release.zip",
-    "assetName": "LSPosed-v1.9.2-7024-zygisk-release.zip"
+    "downloadUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-riru-release.zip",
+    "assetName": "LSPosed-v1.9.2-7024-riru-release.zip"
   },
   "seo": {
     "title": "LSPosed Framework – Download | Magisk Hub",

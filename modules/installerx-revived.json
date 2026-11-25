@@ -14,13 +14,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/installerx-revived.png",
-  "stars": 7671,
+  "stars": 7678,
   "latestRelease": {
-    "tag": "26.11.caccb78",
-    "publishedAt": "2026-11-12T14:44:39Z",
-    "url": "https://github.com/wxxsfxyzm/InstallerX-Revived/releases/tag/26.11.caccb78",
-    "downloadUrl": "https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.11.caccb78/InstallerX-Revived-online-26.11.caccb78.apk",
-    "assetName": "InstallerX-Revived-online-26.11.caccb78.apk"
+    "tag": "26.09",
+    "publishedAt": "2026-09-30T05:04:25Z",
+    "url": "https://github.com/wxxsfxyzm/InstallerX-Revived/releases/tag/26.09",
+    "downloadUrl": "https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.09/InstallerX-Revived-online-26.09.apk",
+    "assetName": "InstallerX-Revived-online-26.09.apk"
   },
   "seo": {
     "title": "InstallerX Revived – Modern Android App Installer | Magisk Hub",
