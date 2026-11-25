@@ -1,0 +1,16 @@
+{
+  "id": "miui-camera-feature-expansion",
+  "displayName": "MIUI Camera Feature Completion & Expansion (小米相机功能补全与扩展)",
+  "description": "面向小米 MIUI 与 HyperOS 的无侵入特权相机增强模块，解锁 480FPS 慢动作、超级月亮、魔法分身、电影画幅、多摄同开与专业摄影配置文件。",
+  "seo": {
+    "title": "MIUI Camera Feature Expansion 下载与功能指南 | Magisk Hub",
+    "description": "下载 MIUI 相机功能补全与扩展模块，支持 Magisk、KernelSU 与 APatch。为小米、Redmi 及 POCO 设备解锁超级月亮、魔法分身、电影画幅、多摄同开与 480FPS 慢动作拍摄。"
+  },
+  "searchAliases": [
+    "MIUI 相机功能补全模块",
+    "小米相机解锁超级月亮 Magisk",
+    "MIUI 480FPS 慢动作解锁",
+    "小米 10 多摄同开模块",
+    "MIUI 相机扩展功能包"
+  ]
+}

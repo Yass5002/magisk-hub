@@ -1,0 +1,16 @@
+{
+  "id": "viper4android-dolby-coexistence",
+  "displayName": "ViPER4Android & Dolby Atmos 共存版（蝰蛇+杜比双音效）",
+  "description": "将 ViPER4Android FX（蝰蛇音效）与 Dolby Atmos（杜比全景声）整合至同一套音频 HAL 管线，并自动注入 SELinux 动态策略解决驱动冲突。",
+  "seo": {
+    "title": "ViPER4Android 蝰蛇与杜比共存模块下载配置指南 | Magisk Hub",
+    "description": "下载 ViPER4Android 与 Dolby Atmos 共存整合模块，支持 Magisk、KernelSU 与 APatch。合并音频效果配置文件并动态注入 SELinux 策略，彻底解决双音效驱动失效与处理异常。"
+  },
+  "searchAliases": [
+    "蝰蛇音效与杜比共存模块",
+    "ViPER4Android 杜比共存 Magisk",
+    "V4A 驱动未安装 SELinux 修复",
+    "Android 双音效同时开启",
+    "蝰蛇杜比二合一模块下载"
+  ]
+}

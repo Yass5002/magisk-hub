@@ -1,0 +1,15 @@
+{
+  "id": "rotationsuggestionstoggle",
+  "displayName": "RotationSuggestionsToggle (屏幕旋转建议开关)",
+  "description": "无系统分区控制或隐藏 Android 导航栏与手势提示条角落浮动“屏幕旋转建议”按钮的 Root 模块，避免横屏误触。",
+  "seo": {
+    "title": "RotationSuggestionsToggle 模块下载与指南 | Magisk Hub",
+    "description": "下载 RotationSuggestionsToggle 模块，支持 Magisk、KernelSU 与 APatch。轻松关闭或切换安卓导航栏角落的浮动旋转建议图标，彻底告别躺卧刷机时的误触旋转。"
+  },
+  "searchAliases": [
+    "关闭安卓屏幕旋转建议按钮 Magisk",
+    "RotationSuggestionsToggle 模块下载",
+    "隐藏导航栏旋转提示图标 Root",
+    "KernelSU 屏蔽屏幕旋转建议"
+  ]
+}

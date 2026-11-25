@@ -1,0 +1,16 @@
+{
+  "id": "antisafetycore",
+  "displayName": "AntiSafetyCore",
+  "description": "通过部署签名冲突的占位 APK，阻止 Google Play 服务在后台静默安装 Android System SafetyCore 与 Key Verifier 遥测组件的 Root 模块。",
+  "seo": {
+    "title": "AntiSafetyCore 下载与拦截谷歌静默安装配置 | Magisk Hub",
+    "description": "下载 AntiSafetyCore 模块，支持 Magisk、KernelSU 与 APatch。利用安卓签名校验冲突机制拦截 Google 静默安装 SafetyCore 与 Key Verifier。"
+  },
+  "searchAliases": [
+    "AntiSafetyCore 下载",
+    "禁用 Android System SafetyCore",
+    "屏蔽谷歌静默安装",
+    "拦截 Key Verifier 模块",
+    "阻止 Play 服务后台安装 APK"
+  ]
+}

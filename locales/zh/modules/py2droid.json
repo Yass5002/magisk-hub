@@ -1,0 +1,16 @@
+{
+  "id": "py2droid",
+  "displayName": "py2droid (Android 原生 Python 3 运行时)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的无侵入式模块，直接部署基于 Bionic 编译的独立 Python 3 运行时与 pip 包管理工具。",
+  "seo": {
+    "title": "py2droid 模块下载与原生 Python3 配置指南 | Magisk Hub",
+    "description": "下载 py2droid 模块，支持 Magisk、KernelSU 与 APatch。无需 Termux 或 Linux 容器即可在系统环境全局使用原生 Python 3 与 pip，轻松运行 Root 脚本。"
+  },
+  "searchAliases": [
+    "py2droid Magisk 模块下载",
+    "Android 系统全局安装 Python3",
+    "KernelSU APatch Python 模块",
+    "安卓免 Termux 运行 Python pip",
+    "Bionic 原生编译 Python 运行时"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "extreme-gms-doze",
+  "displayName": "Extreme GMS Doze",
+  "description": "熄屏时自动挂起 Google Play 服务后台活动与唤醒锁的省电优化模块，有效提升待机深度休眠率，亮屏即刻恢复。",
+  "seo": {
+    "title": "Extreme GMS Doze 模块下载与谷歌服务省电指南 | Magisk Hub",
+    "description": "下载 Extreme GMS Doze 模块，支持 Magisk、KernelSU 与 APatch。在设备熄屏时自动暂停非必要谷歌服务后台唤醒，显著改善待机耗电。"
+  },
+  "searchAliases": [
+    "Extreme GMS Doze 下载",
+    "谷歌服务熄屏省电模块",
+    "GMS Doze 深度休眠",
+    "抑制谷歌后台耗电 Root",
+    "Play 服务唤醒锁清理"
+  ]
+}

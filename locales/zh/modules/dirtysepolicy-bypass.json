@@ -1,0 +1,16 @@
+{
+  "id": "dirtysepolicy-bypass",
+  "displayName": "DirtySepolicy_Bypass",
+  "description": "专为对抗 App-Zygote SELinux 探测而设计的 Zygisk 模块，可拦截 /sys/fs/selinux/ 查询与策略序列号校验以绕过 DirtySepolicy 检测。",
+  "seo": {
+    "title": "DirtySepolicy Bypass 下载与 SELinux 过检指南 | Magisk Hub",
+    "description": "下载 DirtySepolicy_Bypass 模块，兼容 Magisk、KernelSU 与 APatch 的 Zygisk 环境。全面拦截 App-Zygote 对 SELinux 节点与策略加载次数的探测。"
+  },
+  "searchAliases": [
+    "DirtySepolicy Bypass 下载",
+    "SELinux 策略检测绕过",
+    "App-Zygote 探测拦截",
+    "Momo SELinux 过检测",
+    "Zygisk 隐藏策略修改"
+  ]
+}

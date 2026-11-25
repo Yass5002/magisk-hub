@@ -1,0 +1,16 @@
+{
+  "id": "redmi-k20pro-dual-speaker-low-latency",
+  "displayName": "Redmi K20 Pro 双扬声器低延迟版（Low-Latency Edition）",
+  "description": "针对 Redmi K20 Pro / 小米 9T Pro 优化的低延迟听筒双扬声器模块，重构 Tavil 混音路径以消除音频起播卡顿延迟与高音量破音。",
+  "seo": {
+    "title": "Redmi K20 Pro 低延迟双扬声器模块下载与排查 | Magisk Hub",
+    "description": "下载 Redmi K20 Pro 双扬声器低延迟版模块，支持 Magisk、KernelSU 与 APatch。深度调优 WCD9340 Tavil 音频缓冲与数字增益，解决游戏影音音画不同步与破音，兼容 MIUI 与 AOSP。"
+  },
+  "searchAliases": [
+    "Redmi K20 Pro 双扬声器低延迟版",
+    "K20 Pro 听筒双扬音画同步",
+    "皮小鬼 K20 Pro 双扬模块",
+    "raphael 低延迟立体声 Magisk",
+    "K20 Pro 双扬破音修复"
+  ]
+}

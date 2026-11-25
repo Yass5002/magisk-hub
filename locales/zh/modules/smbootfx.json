@@ -1,0 +1,16 @@
+{
+  "id": "smbootfx",
+  "displayName": "SMbootFX (三星 One UI QMG 开机动画框架)",
+  "description": "专为已 Root 的三星 Galaxy 设备打造的开/关机动画无侵入式替换框架，直接兼容三星私有 QMG 图像格式并内置多款主题风格。",
+  "seo": {
+    "title": "SMbootFX 下载与三星 QMG 开机动画替换指南 | Magisk Hub",
+    "description": "下载 SMbootFX 模块，支持三星 Galaxy One UI 设备。采用无系统分区修改方式直接挂载替换私有 QMG 开机与关机动画，告别传统 bootanimation.zip 兼容难题。"
+  },
+  "searchAliases": [
+    "SMbootFX 下载",
+    "三星 One UI 修改开机动画模块",
+    "三星 QMG 开机动画 Magisk",
+    "bootsamsung.qmg 替换教程",
+    "Galaxy 定制关机动画模块"
+  ]
+}

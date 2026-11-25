@@ -1,0 +1,15 @@
+{
+  "id": "pui-interface-control-suite",
+  "displayName": "PUI System Interface & Control Suite (PUI 控制中心美化)",
+  "description": "专为 ColorOS 15 与 OxygenOS 15 打造的系统界面与控制中心美化套件，通过原生 RRO 机制优化滑块、状态栏与快捷磁贴样式。",
+  "seo": {
+    "title": "PUI 界面与控制中心美化模块下载 (ColorOS 15) | Magisk Hub",
+    "description": "下载 PUI 界面与控制中心美化套件，支持 Magisk、KernelSU 与 APatch。基于 RRO 无侵入机制重绘 ColorOS 15 与 OxygenOS 15 控制中心滑块及状态栏图标。"
+  },
+  "searchAliases": [
+    "PUI 主题模块下载",
+    "ColorOS 15 控制中心美化 Magisk",
+    "OxygenOS 15 状态栏修改模块",
+    "一加控制中心美化 Root 模块"
+  ]
+}

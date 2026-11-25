@@ -1,0 +1,15 @@
+{
+  "id": "playintegrityfix",
+  "displayName": "PlayIntegrityFix (PIF)",
+  "description": "社区主流维护的 PlayIntegrityFix 分支，通过 Zygisk 注入与设备指纹伪装修复 Android 设备的 Play Integrity 认证。",
+  "seo": {
+    "title": "PlayIntegrityFix 下载与 PIF 指纹配置指南 | Magisk Hub",
+    "description": "下载最新版 PlayIntegrityFix，支持 Magisk 等 Root 环境。详解 Zygisk 注入原理、pif.json 指纹更新与 Play Integrity 过检排查。"
+  },
+  "searchAliases": [
+    "Play Integrity 过检测",
+    "PIF 模块",
+    "谷歌完整性认证修复",
+    "设备指纹伪装"
+  ]
+}

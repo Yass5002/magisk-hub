@@ -1,0 +1,15 @@
+{
+  "id": "fingerprintpay",
+  "displayName": "FingerprintPay（第三方 ROM 指纹支付模块）",
+  "description": "通过桥接 Android 标准 BiometricPrompt API，为类原生及第三方 ROM 上的支付宝、微信、QQ 等应用解锁指纹支付。",
+  "seo": {
+    "title": "FingerprintPay 下载与指纹支付配置指南 | Magisk Hub",
+    "description": "下载 FingerprintPay 模块，支持在 LineageOS 等类原生 ROM 上模拟 IFAA 与 Soter 服务，恢复微信、支付宝、QQ、淘宝及云闪付指纹支付。"
+  },
+  "searchAliases": [
+    "FingerprintPay 模块下载",
+    "类原生 ROM 微信支付宝指纹支付",
+    "LineageOS 开启指纹支付",
+    "IFAA Soter 模拟模块"
+  ]
+}

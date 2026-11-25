@@ -1,0 +1,16 @@
+{
+  "id": "perfmtk",
+  "displayName": "PerfMTK",
+  "description": "专为搭载 Mali GPU 的联发科天玑与 Helio 设备打造的性能与温控调度套件，支持触控超频、旁路供电与预测式温控守护。",
+  "seo": {
+    "title": "PerfMTK 联发科性能调度与温控旁路模块下载指南 | Magisk Hub",
+    "description": "下载 PerfMTK 模块，支持 Magisk、KernelSU 与 APatch。专为联发科天玑/Helio 芯片打造，提供 Mali GPU 加速、触控超频、硬件旁路供电与预测式温控守护。"
+  },
+  "searchAliases": [
+    "PerfMTK Magisk 模块",
+    "联发科天玑性能优化模块",
+    "Mali GPU 调度超频模块",
+    "PerfMTK 旁路供电教程",
+    "天玑芯片温控旁路 Root"
+  ]
+}

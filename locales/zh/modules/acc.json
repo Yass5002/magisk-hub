@@ -1,0 +1,16 @@
+{
+  "id": "acc",
+  "displayName": "Advanced Charging Controller (ACC 高级充电控制)",
+  "description": "VR25 开发的电源管理守护进程，直接读写内核 power_supply 节点实现充电上限控制、限流限压与旁路供电（Idle Mode）。",
+  "seo": {
+    "title": "ACC 高级充电控制下载与阈值设置指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 Advanced Charging Controller (ACC)，支持 Magisk、KernelSU 与 APatch。包含 80% 充电保护、游戏旁路供电与开关测试教程。"
+  },
+  "searchAliases": [
+    "ACC 充电控制",
+    "限制充电 80%",
+    "旁路供电模块",
+    "电池保护模块",
+    "VR25 ACC"
+  ]
+}

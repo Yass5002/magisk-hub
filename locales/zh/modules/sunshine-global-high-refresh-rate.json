@@ -1,0 +1,16 @@
+{
+  "id": "sunshine-global-high-refresh-rate",
+  "displayName": "Sunshine 全局高刷解锁 (Sunshine Rate)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的全局高刷新率解锁模块，强制所有应用、视频播放器与系统界面保持 120Hz/144Hz 不降频。",
+  "seo": {
+    "title": "Sunshine 全局高刷模块下载与 120Hz/144Hz 锁定指南 | Magisk Hub",
+    "description": "下载 Sunshine 全局高刷解锁模块，支持 Magisk、KernelSU 与 APatch。强制解锁所有应用、视频播放器与相机界面的 120Hz/144Hz 高刷新率，消除系统 60Hz 锁帧。"
+  },
+  "searchAliases": [
+    "Sunshine 全局高刷模块",
+    "Magisk 全局锁定 120Hz",
+    "解除应用 60Hz 锁帧 Root",
+    "安卓强制全局 144Hz",
+    "Sunshine Rate 模块下载"
+  ]
+}

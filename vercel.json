@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "/(llms.txt|llms-full.txt|robots.txt)",
+      "source": "/(llms.txt|llms-full.txt|robots.txt|zh/llms.txt|zh/llms-full.txt)",
       "headers": [
         {
           "key": "Content-Type",

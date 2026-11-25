@@ -1,0 +1,16 @@
+{
+  "id": "basiccleaner",
+  "displayName": "BasicCleaner (定时清理与 ART 优化)",
+  "description": "自动化周期系统维护模块，每隔 7/15/30 天自动执行全分区 fstrim、应用缓存清理、APK zipalign 字节对齐以及 ART 运行时编译优化。",
+  "seo": {
+    "title": "BasicCleaner 定时清理与 ART 优化模块下载指南 | Magisk Hub",
+    "description": "下载 BasicCleaner 自动化系统维护模块，兼容 Magisk 与 KernelSU。按周期自动执行分区 fstrim、缓存清理、APK zipalign 对齐与 ART 编译优化。"
+  },
+  "searchAliases": [
+    "BasicCleaner 模块下载",
+    "Magisk 定时 fstrim 清理模块",
+    "KernelSU 自动 ART 编译优化",
+    "Android 周期清理缓存 zipalign 模块",
+    "WeirdMidas BasicCleaner"
+  ]
+}

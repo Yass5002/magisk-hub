@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import ModuleDetailView from '../../../views/ModuleDetailView.astro';
+import { getAllModules, type ModuleData } from '../../../lib/modules';
+
+export async function getStaticPaths() {
+  const allModules = getAllModules('zh');
+
+  let zhEntries: any[] = [];
+  try {
+    zhEntries = await getCollection('modulesZh');
+  } catch (e) {
+    console.warn('No modulesZh collection found or empty:', e);
+  }
+
+  let enEntries: any[] = [];
+  try {
+    enEntries = await getCollection('modules');
+  } catch (e) {
+    console.warn('No modules collection found or empty:', e);
+  }
+
+  const zhMap = new Map(zhEntries.map(e => [e.data.id || e.id, e]));
+  const enMap = new Map(enEntries.map(e => [e.data.id || e.id, e]));
+
+  return allModules.map(module => ({
+    params: { slug: module.id },
+    props: {
+      module,
+      contentEntry: zhMap.get(module.id) || enMap.get(module.id),
+    },
+  }));
+}
+
+export interface Props {
+  module: ModuleData;
+  contentEntry?: any;
+}
+
+const { module, contentEntry } = Astro.props;
+---
+
+<ModuleDetailView module={module} contentEntry={contentEntry} locale="zh" />

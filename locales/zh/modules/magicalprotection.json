@@ -1,0 +1,16 @@
+{
+  "id": "magicalprotection",
+  "displayName": "MagicalProtection (零配置系统级去广告)",
+  "description": "仅支持 Magisk 的零配置无系统分区修改（Systemless）hosts 去广告模块，刷入重启即可屏蔽广告与追踪域名。",
+  "seo": {
+    "title": "MagicalProtection 下载与去广告模块指南 (Magisk) | Magisk Hub",
+    "description": "下载最新版 MagicalProtection，专为 Magisk 打造的零配置 Systemless hosts 去广告模块，无需配套应用或额外开关，刷入重启即可全局屏蔽广告与追踪器。"
+  },
+  "searchAliases": [
+    "MagicalProtection 下载",
+    "Magisk 零配置去广告模块",
+    "Systemless hosts 去广告",
+    "安卓 Root 全局屏蔽广告",
+    "EnergizedProtection 替代模块"
+  ]
+}

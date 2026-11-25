@@ -1,0 +1,15 @@
+{
+  "id": "unicodefontset-magisk-module",
+  "displayName": "UnicodeFontSet (完整 Unicode 字符集字体)",
+  "description": "扩展 Android 系统回退字体配置的 Magisk 模块，补全冷僻文字、数学符号与 COLRv1 矢量字体，彻底消除方框乱码（豆腐块）。",
+  "seo": {
+    "title": "UnicodeFontSet 完整字体回退模块下载与配置 | Magisk Hub",
+    "description": "下载 UnicodeFontSet Magisk 模块，无侵入扩展 fonts.xml 回退字体列表。全面覆盖古文字、数学符号及 COLRv1 彩色矢量字符，彻底修复网页与应用方框乱码。"
+  },
+  "searchAliases": [
+    "UnicodeFontSet Magisk 模块下载",
+    "安卓修复方框乱码字体模块",
+    "安卓消除豆腐块字体 Root",
+    "UFS 全字符集回退字体模块"
+  ]
+}

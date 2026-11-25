@@ -139,7 +139,19 @@ Module definitions must strictly adhere to `modules/schema.json` (Draft-07):
 
 ---
 
-## 7. Verification & Quality Gates
+## 7. Simplified Chinese (`zh`) Localization Parity
+
+Every active module in `modules/<slug>.json` must also maintain Simplified Chinese (`zh`) localization artifacts following [docs/i18n/zh-glossary.md](./docs/i18n/zh-glossary.md):
+- `locales/zh/modules/<slug>.json`: Localized `displayName`, `description`, `seo.title`, `seo.description`, and Chinese `searchAliases`.
+- `content/zh/modules/<slug>.md`: Full Simplified Chinese translation of the technical guide, preserving `id`, `category`, `tier`, `configPaths`, code blocks, and CLI commands verbatim.
+- Regenerate bilingual LLM discovery feeds after module changes:
+  ```bash
+  npm run generate-llms
+  ```
+
+---
+
+## 8. Verification & Quality Gates
 
 Before committing any batch or changes, execute both quality gates:
 
@@ -149,15 +161,15 @@ Before committing any batch or changes, execute both quality gates:
    ```
    *Requirement: 100% of modules pass with zero errors.*
 
-2. **Static Compilation**:
+2. **Static Compilation & Full i18n/SEO Verification**:
    ```bash
-   npm run build
+   npm run build && npm test
    ```
-   *Requirement: All static routes, sitemaps, and pages compile with zero errors.*
+   *Requirement: All EN + ZH static routes, sitemaps, `hreflang` alternates, and localization checks pass with zero errors.*
 
 ---
 
-## 8. Execution & Delivery Discipline
+## 9. Execution & Delivery Discipline
 
 - **No Detached / Background Jobs**: Execute all commands synchronously under direct supervision.
 - **Commit Format**: Follow Conventional Commits:

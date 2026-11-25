@@ -1,0 +1,16 @@
+{
+  "id": "dhizuku",
+  "displayName": "Dhizuku (Device Owner 权限共享工具)",
+  "description": "面向 Android 系统的 Device Owner 权限代理服务，可将 DevicePolicyManager 企业级管理接口安全共享给多个第三方应用。",
+  "seo": {
+    "title": "Dhizuku 下载与激活指南 (Device Owner 共享) | Magisk Hub",
+    "description": "下载 Dhizuku 应用，支持免 Root、Shizuku、Magisk、KernelSU 与 APatch。通过共享 Android Device Owner 权限，让多个应用协同执行静默安装与冻结。"
+  },
+  "searchAliases": [
+    "Dhizuku 下载",
+    "Dhizuku 激活教程",
+    "Device Owner 权限共享",
+    "Dhizuku 和 Shizuku 区别",
+    "Android 免 Root 冻结权限"
+  ]
+}

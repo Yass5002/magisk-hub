@@ -1,0 +1,755 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getAllModules, getCategoryInfo, generateModuleSEO, type ModuleData } from '../lib/modules';
+import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
+import { getSoftwareTypeBadgeText } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
+
+export interface Props {
+  module: ModuleData;
+  contentEntry?: any;
+  locale?: Locale;
+}
+
+const { module, contentEntry, locale = 'en' } = Astro.props;
+const ui = getUI(locale);
+const category = getCategoryInfo(module.category, locale);
+const author = module.repo ? module.repo.split('/')[0] : (module.author || (locale === 'zh' ? '社区' : 'Community'));
+
+// Related modules in same category (deterministic ring selection)
+const allCategoryModules = getAllModules(locale).filter(m => m.category === module.category);
+const currentIndex = allCategoryModules.findIndex(m => m.id === module.id);
+const relatedModules = [];
+if (allCategoryModules.length > 1) {
+  const N = allCategoryModules.length;
+  const peersCount = Math.min(4, N - 1);
+  for (let offset = 1; offset <= peersCount; offset++) {
+    relatedModules.push(allCategoryModules[(currentIndex + offset) % N]);
+  }
+}
+
+let ContentComponent = null;
+let frontmatter = contentEntry?.data;
+
+if (contentEntry) {
+  try {
+    const rendered = await render(contentEntry);
+    ContentComponent = rendered.Content;
+  } catch (err) {
+    console.error(`Failed to render markdown for ${module.id}:`, err);
+  }
+}
+
+const isTier1 = module.contentTier === 1 && ContentComponent;
+
+function parseInlineMarkdown(text: string): string {
+  if (!text) return '';
+  return text.replace(/`([^`]+)`/g, '<code class="bg-zinc-100 text-zinc-800 border border-zinc-200 text-xs font-mono px-1.5 py-0.5 rounded">$1</code>');
+}
+
+const VERIFIED_MODULE_TARGETS: Record<string, string[]> = {
+  'lsposed': ['LSPosed Framework', 'LSPosed', 'Xposed Framework', 'Xposed runtime', 'EdXposed'],
+  'shizuku': ['Shizuku service', 'Shizuku'],
+  'dhizuku': ['Dhizuku'],
+  'playintegrityfix': ['Play Integrity Fix', 'PlayIntegrityFix', 'PIF'],
+  'playintegrityfork': ['Play Integrity Fork', 'PlayIntegrityFork'],
+  'trickystore': ['TrickyStore', 'Tricky Store', 'Tricky_Store'],
+  'trickystoreoss': ['TrickyStoreOSS', 'Tricky Store OSS'],
+  'teesimulator': ['TEESimulator', 'TEE Simulator'],
+  'teesimulator-rs': ['TEESimulator-RS', 'TEE Simulator RS'],
+  'shamiko': ['Shamiko'],
+  'zygisknext': ['ZygiskNext', 'Zygisk Next', 'Zygisk-Next'],
+  'rezygisk': ['ReZygisk'],
+  'neozygisk': ['NeoZygisk'],
+  'onyxzygisk': ['OnyxZygisk'],
+  'vexzygisk': ['VexZygisk'],
+  'zygisk-assistant': ['Zygisk Assistant', 'Zygisk-Assistant'],
+  'bindhosts': ['bindhosts', 'Systemless hosts'],
+  'acc': ['Advanced Charging Controller', 'ACC'],
+  'hyperos-theme-manager': ['HyperOS Theme Manager', 'HyperOS-Theme-Manager'],
+  'hyperos-app-vault': ['App Vault mod', 'HyperOS App Vault', 'HyperOS-App-Vault'],
+  'miui-theme-rights-enabler': ['Apk Protection Patch', 'Theme Rights Enabler', 'MIUI Theme Rights', 'Core Patch'],
+  'viper4android-dolby-coexistence': ['ViPER4Android & Dolby Atmos Coexistence', 'ViPER4Android', 'Viper4Android'],
+  'viperfx-re': ['ViPERFX_RE', 'ViPERFX-RE'],
+  'dsp-audiofix': ['DSP Audio Fix', 'dsp-audiofix'],
+  'leica-camera-port': ['Leica Camera', 'Leica camera'],
+  'miui-gallery-feature-unlocker': ['MIUI Gallery Feature Unlocker', 'Gallery AI feature', 'Gallery AI'],
+  'app-manager': ['App Manager'],
+  'canta': ['Canta'],
+  'hail': ['Hail'],
+  'adguardhomeforroot': ['AdGuard Home for Root', 'AdGuardHome'],
+  'freepps-xiaomi-fast-charge': ['FreePPS', 'FreePPS Xiaomi'],
+  'battery-health-query': ['Battery Health Query'],
+  'quantitative-charge-cutoff': ['Quantitative Charge Cutoff', 'BH Quantitative Charging Cutoff'],
+  'movecertificate': ['MoveCertificate'],
+  'alwaystrustusercerts': ['AlwaysTrustUserCerts'],
+  'drc-remover': ['drc-remover'],
+  'usb-samplerate-unlocker': ['usb-samplerate-unlocker'],
+  'yetanotherbootloopprotector': ['YetAnotherBootloopProtector'],
+  'ashlooper': ['AshLooper', 'AshReXcue'],
+  'knoxpatch': ['KnoxPatch'],
+  'ohmykeymint': ['OhMyKeymint'],
+  'stealthdebug': ['StealthDebug'],
+  'stevenblock': ['StevenBlock'],
+  'magicalprotection': ['MagicalProtection'],
+  'sui': ['Sui'],
+  'alwaysstrong': ['AlwaysStrong'],
+  'yurikey': ['YuriKey'],
+  'specter': ['Specter'],
+  'playcurlnext': ['playcurlNEXT', 'playcurlnext'],
+  'tricky-addon-update-target-list': ['Tricky Addon', 'tricky-addon-update-target-list'],
+  'mountify': ['mountify'],
+  'nohello': ['NoHello'],
+  'makefontsgreatagain': ['MakeFontsGreatAgain'],
+  'material-files': ['Material Files'],
+  'install-with-options': ['Install with Options'],
+  'vpnhide': ['vpnhide', 'VpnHide'],
+  'librepods': ['librepods', 'LibrePods'],
+  'locusmimic': ['LocusMimic'],
+  'lspdoze': ['LSPDoze'],
+  'qishui-music-svip-unlocker': ['Soda Music SVIP', 'Qishui Music SVIP', 'qishui-music-svip-unlocker'],
+  'treat-wheel-zygisk': ['Treat-Wheel-Zygisk'],
+  'iunlockergl': ['iUnlockerGL'],
+  'magisk-ad-blocking-module': ['Magisk-Ad-Blocking-Module']
+};
+
+function escapeRegExp(s: string) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function renderEntityMarkdown(text: string, currentSlug: string, isConflict: boolean = false): string {
+  if (!text) return '';
+  let html = parseInlineMarkdown(text);
+  
+  for (const [targetSlug, aliases] of Object.entries(VERIFIED_MODULE_TARGETS)) {
+    if (targetSlug === currentSlug) continue;
+    for (const alias of aliases) {
+      const regex = new RegExp(`\\b(${escapeRegExp(alias)})\\b`, 'i');
+      const parts = html.split(/(<a\b[^>]*>.*?<\/a>|<[^>]+>)/gi);
+      let matched = false;
+      html = parts
+        .map(part => {
+          if (part.startsWith('<') || matched) return part;
+          if (regex.test(part)) {
+            matched = true;
+            const linkClass = isConflict
+              ? "font-medium text-rose-700 underline underline-offset-2 hover:text-rose-900 transition-colors"
+              : "font-medium text-zinc-900 underline underline-offset-2 hover:text-black transition-colors";
+            const targetHref = localizePath(`/modules/${targetSlug}/`, locale);
+            return part.replace(regex, `<a href="${targetHref}" class="${linkClass}">$1</a>`);
+          }
+          return part;
+        })
+        .join('');
+      if (matched) break;
+    }
+  }
+  return html;
+}
+
+const iconMap: Record<string, string> = {
+  'root-management': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+  'performance-kernel': 'M13 10V3L4 14h7v7l9-11h-7z',
+  'system-environment': 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
+  'customization-ui': 'M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4',
+  'development-instrumentation': 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
+  'system-utilities': 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
+  'networking-proxies': 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9',
+  'security-certificates': 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z',
+  'xposed-runtime-hooks': 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z',
+  'audio-dsp-acoustics': 'M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z',
+  'system-typography-fonts': 'M4 6h16M4 12h16M4 18h7',
+  'battery-power-charging': 'M13 10V3L4 14h7v7l9-11h-7z',
+  'boot-animations-ui': 'M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+};
+const categorySvgPath = iconMap[module.category] || iconMap['system-environment'];
+
+const releaseDate = new Date(module.latestRelease.publishedAt).toLocaleDateString(
+  locale === 'zh' ? 'zh-CN' : 'en-US',
+  {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
+);
+
+const moduleCanonicalPath = localizePath(`/modules/${module.id}/`, locale);
+const moduleCanonicalUrl = `${SITE_URL}${moduleCanonicalPath}`;
+
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  'name': module.name,
+  'url': moduleCanonicalUrl,
+  'inLanguage': ui.inLanguage,
+  'operatingSystem': 'Android',
+  'applicationCategory': 'UtilitiesApplication',
+  'softwareVersion': module.latestRelease.tag,
+  'datePublished': module.latestRelease.publishedAt,
+  'downloadUrl': module.latestRelease.downloadUrl,
+  'license': module.license,
+  'description': module.description,
+  'offers': {
+    '@type': 'Offer',
+    'price': '0',
+    'priceCurrency': 'USD'
+  },
+  'author': {
+    '@type': 'Person',
+    'name': author,
+    ...(module.repo ? { 'url': `https://github.com/${author}` } : {})
+  }
+};
+
+const stepTemplates =
+  module.softwareType === 'xposed-module'
+    ? ui.moduleDetail.schemaSteps.xposed
+    : module.softwareType === 'standalone-app'
+      ? ui.moduleDetail.schemaSteps.standalone
+      : module.softwareType === 'kernel-module'
+        ? ui.moduleDetail.schemaSteps.kernel
+        : ui.moduleDetail.schemaSteps.flashable;
+
+const howToSteps = stepTemplates.map((st, idx) => ({
+  '@type': 'HowToStep',
+  'name': st.name,
+  'text': idx === 0
+    ? st.text(module.latestRelease.assetName)
+    : st.text(module.name),
+  ...(idx === 0 ? { 'url': module.latestRelease.downloadUrl } : {}),
+}));
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'inLanguage': ui.inLanguage,
+  'name': ui.moduleDetail.howToTitle(module.name),
+  'description': ui.moduleDetail.howToDesc(module.name),
+  'step': howToSteps
+};
+
+const faqSchema = (frontmatter?.faq && frontmatter.faq.length > 0) ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'inLanguage': ui.inLanguage,
+  'mainEntity': frontmatter.faq.map((item: any) => ({
+    '@type': 'Question',
+    'name': item.question.replace(/`([^`]+)`/g, '$1'),
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': item.answer.replace(/`([^`]+)`/g, '$1')
+    }
+  }))
+} : null;
+
+const breadcrumbs = [
+  { name: ui.moduleDetail.home, url: localizePath('/', locale) },
+  { name: category.name, url: localizePath(`/categories/${category.id}/`, locale) },
+  { name: module.name, url: moduleCanonicalPath },
+];
+
+const seo = generateModuleSEO(module, locale);
+const keywords = locale === 'zh'
+  ? [module.name, module.enName || module.id, category.name, ...module.compatibility, ...(module.searchAliases || []), 'Magisk 模块', 'KernelSU', 'APatch']
+  : [module.name, module.category, ...module.compatibility, 'root module', 'magisk', 'kernelsu'];
+---
+
+<BaseLayout
+  locale={locale}
+  title={seo.title}
+  description={seo.description}
+  keywords={keywords}
+  structuredData={[softwareSchema, howToSchema, ...(faqSchema ? [faqSchema] : [])]}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <!-- Technical Header Card -->
+    <div class="mt-4 rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs">
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <div class="flex items-start gap-5">
+          <!-- Icon / Avatar -->
+          <div class="shrink-0">
+            {module.icon ? (
+              <img 
+                src={`/${module.icon}`} 
+                alt={`${module.name} icon`}
+                width="64" 
+                height="64" 
+                class="h-16 w-16 rounded-xl object-contain bg-zinc-50 p-1.5 border border-zinc-200"
+              />
+            ) : (
+              <div class="relative h-16 w-16">
+                <img 
+                  src={`https://github.com/${author}.png?size=96`} 
+                  alt={author}
+                  width="64" 
+                  height="64" 
+                  class="h-16 w-16 rounded-xl object-cover bg-zinc-50 border border-zinc-200"
+                  onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
+                />
+                <div class="hidden h-16 w-16 items-center justify-center rounded-xl bg-zinc-50 text-zinc-400 border border-zinc-200">
+                  <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={categorySvgPath} />
+                  </svg>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <!-- Stack Details -->
+          <div class="space-y-2">
+            <div class="flex items-center gap-3 flex-wrap">
+              <h1 class="text-2xl sm:text-3xl font-bold text-zinc-900 tracking-tight">
+                {module.name}
+              </h1>
+
+              <span class="bg-zinc-100 text-zinc-800 font-mono text-xs px-2.5 py-0.5 rounded border border-zinc-200/80 font-medium">
+                {module.latestRelease.tag}
+              </span>
+
+              {isTier1 && (
+                <span class="inline-flex items-center rounded bg-zinc-100 px-2.5 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+                  {ui.moduleDetail.guideBadge}
+                </span>
+              )}
+
+              {!module.repo && (
+                <span class="inline-flex items-center rounded bg-indigo-50 px-2.5 py-0.5 text-xs font-mono font-medium text-indigo-700 border border-indigo-200/80">
+                  {ui.moduleDetail.communityBadge}
+                </span>
+              )}
+
+              {module.softwareType && module.softwareType !== 'flashable-module' && (
+                <span class="inline-flex items-center rounded bg-zinc-100 px-2.5 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+                  {getSoftwareTypeBadgeText(module.softwareType, locale)}
+                </span>
+              )}
+            </div>
+
+            <!-- Description parsed with inline code -->
+            <p class="text-sm text-zinc-600 max-w-2xl leading-relaxed" set:html={parseInlineMarkdown(module.description)} />
+
+            <!-- Badges & Links Line -->
+            <div class="flex items-center gap-3 text-xs font-mono text-zinc-500 flex-wrap pt-1">
+              {module.repo ? (
+                <>
+                  <div class="flex items-center gap-1 text-zinc-900 font-medium">
+                    <span class="text-amber-500">★</span>
+                    <span>{module.stars ? module.stars.toLocaleString() : 0} {ui.moduleDetail.starsLabel}</span>
+                  </div>
+                  <span class="text-zinc-300">•</span>
+                </>
+              ) : (
+                <>
+                  <span class="rounded bg-indigo-50 px-2 py-0.5 text-xs font-mono font-medium text-indigo-700 border border-indigo-200/80">
+                    {ui.moduleDetail.communityPkg}
+                  </span>
+                  <span class="text-zinc-300">•</span>
+                </>
+              )}
+              <a href={localizePath(`/categories/${module.category}/`, locale)} class="text-zinc-700 hover:text-zinc-900 hover:underline">
+                {category.name}
+              </a>
+              <span class="text-zinc-300">•</span>
+              {module.repo ? (
+                <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="hover:text-zinc-900 transition-colors">
+                  {ui.moduleDetail.byAuthor(author)}
+                </a>
+              ) : (
+                <span class="text-zinc-700">{ui.moduleDetail.byAuthor(author)}</span>
+              )}
+              <span class="text-zinc-300">•</span>
+              <span class="text-zinc-600 bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded text-[11px]">
+                {module.license}
+              </span>
+              <span class="text-zinc-300">•</span>
+              <span>{ui.moduleDetail.updated(releaseDate)}</span>
+            </div>
+
+            <!-- Platform compatibility tags -->
+            <div class="flex items-center gap-2 pt-2">
+              <span class="text-xs font-medium text-zinc-500">{ui.moduleDetail.platforms}</span>
+              <div class="flex items-center gap-1.5 flex-wrap">
+                {module.compatibility.map(platform => (
+                  <span class="inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-mono border bg-zinc-100 text-zinc-800 border-zinc-200/80 font-medium">
+                    ✓ {platform}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Action Buttons -->
+        <div class="flex flex-col gap-2.5 w-full md:w-56 shrink-0">
+          <a 
+            href={module.latestRelease.downloadUrl}
+            data-umami-event="download-module"
+            data-umami-event-module={module.id}
+            data-umami-event-version={module.latestRelease.tag}
+            data-umami-event-category={module.category}
+            data-download-button
+            class="group relative w-full inline-flex items-center justify-center rounded-lg bg-zinc-900 hover:bg-zinc-800 active:bg-black data-[state=downloading]:bg-zinc-800 text-white px-4 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-150 shadow-xs hover:shadow-sm active:scale-[0.98] select-none"
+          >
+            <span class="grid grid-cols-1 grid-rows-1 items-center justify-items-center">
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-150 group-data-[state=downloading]:opacity-0 group-data-[state=downloading]:scale-95 group-data-[state=downloading]:pointer-events-none">
+                <svg class="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                <span>{ui.moduleDetail.downloadTag(module.latestRelease.tag)}</span>
+              </span>
+
+              <span class="col-start-1 row-start-1 inline-flex items-center gap-2 transition-all duration-150 opacity-0 scale-95 pointer-events-none group-data-[state=downloading]:opacity-100 group-data-[state=downloading]:scale-100">
+                <svg class="h-4 w-4 shrink-0 animate-spin text-zinc-300" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>{ui.moduleDetail.startingDownload}</span>
+              </span>
+            </span>
+          </a>
+
+          {module.latestRelease.url && (
+            <a 
+              href={module.latestRelease.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event={module.repo ? "github-release-click" : "community-release-click"}
+              data-umami-event-module={module.id}
+              data-umami-event-repo={module.repo || "community"}
+              class="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-200 bg-white hover:bg-zinc-50 px-4 py-2 text-xs font-mono font-medium text-zinc-800 transition-colors shadow-2xs"
+            >
+              {module.repo ? (
+                <svg class="h-3.5 w-3.5 text-zinc-700" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>{ui.moduleDetail.githubSource}</span>
+              ) : (
+                <svg class="h-3.5 w-3.5 text-zinc-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+                <span>{ui.moduleDetail.communitySource}</span>
+              )}
+            </a>
+          )}
+
+          <!-- Release Asset Monospace Container -->
+          <div class="flex items-center justify-between gap-1.5 rounded-lg border border-zinc-200 bg-zinc-50 px-2.5 py-1.5 text-[11px] font-mono text-zinc-600">
+            <span class="truncate select-all" title={module.latestRelease.assetName}>
+              {module.latestRelease.assetName}
+            </span>
+            <button 
+              type="button" 
+              class="copy-asset-btn inline-flex items-center text-zinc-400 hover:text-zinc-900 shrink-0 p-1 rounded hover:bg-zinc-200/60 transition-colors"
+              data-asset={module.latestRelease.assetName}
+              data-umami-event="copy-asset-name"
+              data-umami-event-module={module.id}
+              title={ui.moduleDetail.copyFilenameTitle}
+            >
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area: Balanced 2-Column Split -->
+    <article class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start" data-module-slug={module.id}>
+      <!-- Left 2 Cols: Main Documentation / Technical Guide -->
+      <div class="lg:col-span-2 space-y-6">
+        {isTier1 ? (
+          <div>
+            <article class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs prose prose-zinc max-w-none prose-headings:font-bold prose-headings:text-zinc-900 prose-h2:text-xl prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-2 prose-h3:text-base prose-p:text-zinc-600 prose-p:leading-relaxed prose-code:text-zinc-800 prose-code:bg-zinc-100 prose-code:border prose-code:border-zinc-200 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-zinc-900 prose-pre:text-zinc-100">
+              <ContentComponent />
+            </article>
+
+            {frontmatter.faq && frontmatter.faq.length > 0 && (
+              <div class="mt-8 rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs">
+                <h2 class="text-lg font-bold text-zinc-900 mb-4">{ui.moduleDetail.faqHeading}</h2>
+                <div class="space-y-4">
+                  {frontmatter.faq.map((item: any) => (
+                    <div class="rounded-lg border border-zinc-200 bg-zinc-50 p-4">
+                      <h3 class="font-semibold text-zinc-900 text-sm" set:html={parseInlineMarkdown(item.question)} />
+                      <p class="mt-2 text-xs text-zinc-600 leading-relaxed" set:html={parseInlineMarkdown(item.answer)} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div class="space-y-6">
+            <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs">
+              <h2 class="text-lg font-bold text-zinc-900 mb-3">{ui.moduleDetail.aboutHeading(module.name)}</h2>
+              <p class="text-sm text-zinc-600 leading-relaxed" set:html={parseInlineMarkdown(module.description)} />
+              
+              <div class="mt-5 rounded-lg border border-zinc-200 bg-zinc-50 p-4">
+                <h3 class="text-xs font-semibold text-zinc-700 mb-1">{ui.moduleDetail.ecosystemCategory}</h3>
+                <p class="text-xs text-zinc-600 leading-relaxed">
+                  {ui.moduleDetail.categorizedUnderPrefix} <strong class="text-zinc-900 font-semibold">{category.name}</strong>{locale === 'zh' ? '。' : '. '}{category.description}
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-xs">
+              <h2 class="text-lg font-bold text-zinc-900 mb-4">{ui.moduleDetail.installHeading}</h2>
+              <ol class="space-y-3.5">
+                <li class="flex items-start gap-3">
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-xs font-bold font-mono text-zinc-800 border border-zinc-200/80">1</span>
+                  <div>
+                    <h3 class="text-sm font-semibold text-zinc-900">{ui.moduleDetail.standardSteps.downloadTitle}</h3>
+                    <p class="text-xs text-zinc-600 mt-0.5">
+                      {ui.moduleDetail.standardSteps.downloadBodyPrefix} <code class="text-zinc-800 bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded text-xs font-mono">{module.latestRelease.assetName}</code> {ui.moduleDetail.standardSteps.downloadBodySuffix}
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-xs font-bold font-mono text-zinc-800 border border-zinc-200/80">2</span>
+                  <div>
+                    <h3 class="text-sm font-semibold text-zinc-900">{ui.moduleDetail.standardSteps.openManagerTitle}</h3>
+                    <p class="text-xs text-zinc-600 mt-0.5">
+                      {ui.moduleDetail.standardSteps.openManagerBody}
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-xs font-bold font-mono text-zinc-800 border border-zinc-200/80">3</span>
+                  <div>
+                    <h3 class="text-sm font-semibold text-zinc-900">{ui.moduleDetail.standardSteps.flashTitle}</h3>
+                    <p class="text-xs text-zinc-600 mt-0.5">
+                      {ui.moduleDetail.standardSteps.flashBody}
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <!-- Right Column: Sticky Sidebar -->
+      <aside class="space-y-6 lg:sticky lg:top-24 lg:self-start w-full">
+        {isTier1 && (frontmatter.prerequisites?.length > 0 || frontmatter.conflicts?.length > 0 || frontmatter.configPaths?.length > 0) && (
+          <div class="rounded-xl border border-zinc-200 bg-white p-5 space-y-4 shadow-xs">
+            <h2 class="text-sm font-semibold text-zinc-900 border-b border-zinc-200 pb-2">
+              {ui.moduleDetail.specifications}
+            </h2>
+
+            {frontmatter.prerequisites && frontmatter.prerequisites.length > 0 && (
+              <div>
+                <h3 class="text-xs font-medium text-zinc-700">{ui.moduleDetail.prerequisites}</h3>
+                <ul class="mt-1.5 list-disc list-inside text-xs text-zinc-600 space-y-1">
+                  {frontmatter.prerequisites.map((p: string) => (
+                    <li set:html={renderEntityMarkdown(p, module.id, false)} />
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {frontmatter.conflicts && frontmatter.conflicts.length > 0 && (
+              <div>
+                <h3 class="text-xs font-medium text-rose-600">{ui.moduleDetail.knownConflicts}</h3>
+                <ul class="mt-1.5 list-disc list-inside text-xs text-zinc-600 space-y-1">
+                  {frontmatter.conflicts.map((c: string) => (
+                    <li set:html={renderEntityMarkdown(c, module.id, true)} />
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {frontmatter.configPaths && frontmatter.configPaths.length > 0 && (
+              <div>
+                <h3 class="text-xs font-medium text-zinc-700 mb-2">{ui.moduleDetail.configPaths}</h3>
+                <div class="rounded-lg border border-zinc-200 bg-zinc-50 p-2 space-y-1.5 font-mono text-xs">
+                  {frontmatter.configPaths.map((cp: string) => (
+                    <div class="flex items-center justify-between py-1.5 px-2.5 gap-2 rounded bg-white hover:bg-zinc-100 border border-zinc-200 transition-colors group">
+                      <span class="text-zinc-800 text-[11px] truncate select-all">{cp}</span>
+                      <button 
+                        type="button" 
+                        class="copy-path-btn inline-flex items-center gap-1 text-[11px] font-medium text-zinc-500 hover:text-zinc-900 px-1.5 py-0.5 rounded hover:bg-zinc-200 transition-colors shrink-0" 
+                        data-path={cp}
+                        data-copy-label={ui.moduleDetail.copy}
+                        data-copied-label={ui.moduleDetail.copied}
+                        data-umami-event="copy-config-path"
+                        data-umami-event-module={module.id}
+                        title={ui.moduleDetail.copyPathTitle}
+                      >
+                        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                        <span class="copy-text">{ui.moduleDetail.copy}</span>
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        <!-- Upstream Repository / Package Details Card -->
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 space-y-4 shadow-xs">
+          <h2 class="text-sm font-semibold text-zinc-900 border-b border-zinc-200 pb-2">
+            {module.repo ? ui.moduleDetail.repoDetails : ui.moduleDetail.pkgDetails}
+          </h2>
+          
+          <div class="space-y-2.5 text-xs font-mono">
+            <div class="flex items-center justify-between py-1 border-b border-zinc-100">
+              <span class="text-zinc-500">{module.repo ? ui.moduleDetail.maintainer : ui.moduleDetail.author}</span>
+              {module.repo ? (
+                <a href={`https://github.com/${author}`} target="_blank" rel="noopener noreferrer" class="text-zinc-800 hover:text-zinc-900 hover:underline">
+                  {author}
+                </a>
+              ) : (
+                <span class="text-zinc-800 font-medium">{author}</span>
+              )}
+            </div>
+            {module.repo && (
+              <div class="flex items-center justify-between py-1 border-b border-zinc-100">
+                <span class="text-zinc-500">{ui.moduleDetail.repository}</span>
+                <span class="text-zinc-900 font-medium">{module.repo.split('/')[1]}</span>
+              </div>
+            )}
+            <div class="flex items-center justify-between py-1 border-b border-zinc-100">
+              <span class="text-zinc-500">{ui.moduleDetail.latestRelease}</span>
+              <span class="bg-zinc-100 text-zinc-800 text-[11px] px-2 py-0.5 rounded border border-zinc-200/80">
+                {module.latestRelease.tag}
+              </span>
+            </div>
+            <div class="flex items-center justify-between py-1 border-b border-zinc-100">
+              <span class="text-zinc-500">{ui.moduleDetail.releaseDate}</span>
+              <span class="text-zinc-800">{releaseDate}</span>
+            </div>
+            <div class="flex items-center justify-between py-1">
+              <span class="text-zinc-500">{ui.moduleDetail.license}</span>
+              <span class="text-zinc-600 bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded text-[11px]">
+                {module.license}
+              </span>
+            </div>
+          </div>
+
+          {module.repo ? (
+            <a 
+              href={`https://github.com/${module.repo}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="github-repo-click"
+              data-umami-event-module={module.id}
+              data-umami-event-repo={module.repo}
+              class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
+            >
+              {ui.moduleDetail.openGithubRepo}
+            </a>
+          ) : module.latestRelease.url ? (
+            <a 
+              href={module.latestRelease.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="community-source-click"
+              data-umami-event-module={module.id}
+              class="block w-full text-center rounded-lg border border-zinc-200 bg-zinc-50 py-2 text-xs font-mono font-medium text-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 transition-colors"
+            >
+              {ui.moduleDetail.openDistSource}
+            </a>
+          ) : null}
+        </div>
+
+        <!-- Related Category Modules -->
+        {relatedModules.length > 0 && (
+          <div class="rounded-xl border border-zinc-200 bg-white p-5 shadow-xs">
+            <h2 class="text-sm font-semibold text-zinc-900 border-b border-zinc-200 pb-2 mb-3">
+              {ui.moduleDetail.moreInCategory(category.name)}
+            </h2>
+            <div class="space-y-2">
+              {relatedModules.map(rel => (
+                <a 
+                  href={localizePath(`/modules/${rel.id}/`, locale)}
+                  data-umami-event="related-module-click"
+                  data-umami-event-module={rel.id}
+                  data-umami-event-source={module.id}
+                  class="flex items-center justify-between p-2 rounded-lg border border-zinc-200 bg-zinc-50 hover:border-zinc-300 hover:bg-zinc-100/80 transition-all group"
+                >
+                  <div class="flex items-center gap-2.5 truncate">
+                    {rel.icon ? (
+                      <img src={`/${rel.icon}`} alt={`${rel.name} icon`} width="24" height="24" class="h-6 w-6 rounded object-contain shrink-0 bg-white border border-zinc-200 p-0.5" />
+                    ) : rel.repo ? (
+                      <img src={`https://github.com/${rel.repo.split('/')[0]}.png?size=48`} alt={`${rel.name} author icon`} width="24" height="24" class="h-6 w-6 rounded object-cover shrink-0 bg-white border border-zinc-200" />
+                    ) : (
+                      <div class="h-6 w-6 rounded bg-zinc-100 flex items-center justify-center border border-zinc-200 shrink-0 text-[10px] font-mono text-zinc-500 font-bold">
+                        {(rel.author || rel.name)[0].toUpperCase()}
+                      </div>
+                    )}
+                    <span class="text-xs font-medium text-zinc-800 group-hover:text-zinc-900 truncate">
+                      {rel.name}
+                    </span>
+                  </div>
+                  {rel.repo ? (
+                    <span class="text-[11px] font-mono text-zinc-600 font-medium shrink-0">
+                      ★ {rel.stars || 0}
+                    </span>
+                  ) : (
+                    <span class="text-[10px] font-mono font-medium text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-100 shrink-0">
+                      {ui.card.pkgBadge}
+                    </span>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </aside>
+    </article>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.copy-path-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = btn.getAttribute('data-path');
+      const copyLabel = btn.getAttribute('data-copy-label') || 'Copy';
+      const copiedLabel = btn.getAttribute('data-copied-label') || 'Copied!';
+      if (path) {
+        navigator.clipboard.writeText(path);
+        const text = btn.querySelector('.copy-text');
+        if (text) {
+          text.textContent = copiedLabel;
+          setTimeout(() => { text.textContent = copyLabel; }, 1500);
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('.copy-asset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const asset = btn.getAttribute('data-asset');
+      if (asset) {
+        navigator.clipboard.writeText(asset);
+        btn.classList.add('text-zinc-900');
+        setTimeout(() => { btn.classList.remove('text-zinc-900'); }, 1500);
+      }
+    });
+  });
+
+  const docArticle = document.querySelector('article[data-module-slug]');
+  if (docArticle && 'IntersectionObserver' in window) {
+    let readTracked = false;
+    const modSlug = docArticle.getAttribute('data-module-slug') || '';
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !readTracked) {
+          readTracked = true;
+          if ((window as any).umami && modSlug) {
+            (window as any).umami.track('doc-read-complete', { module: modSlug });
+          }
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.75 });
+    observer.observe(docArticle);
+  }
+</script>

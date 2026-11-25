@@ -1,0 +1,16 @@
+{
+  "id": "hyperunlocked",
+  "displayName": "HyperUnlocked (小米旗舰特性解锁)",
+  "description": "面向小米、红米与 POCO 机型的系统特性解锁模块，通过 WebUI 无侵入启用高级实时模糊、景深锁屏、旗舰相机模式与高刷选项。",
+  "seo": {
+    "title": "HyperUnlocked 模块下载与 WebUI 配置指南 | Magisk Hub",
+    "description": "下载 HyperUnlocked 特性解锁模块，支持 Magisk、KernelSU 与 APatch。为小米与红米中端机型开启高级模糊质感、景深锁屏与旗舰相机功能。"
+  },
+  "searchAliases": [
+    "HyperUnlocked 下载",
+    "小米中端机解锁高级模糊",
+    "澎湃 OS 旗舰特性解锁模块",
+    "MIUI 景深锁屏 Magisk 模块",
+    "HyperUnlocked WebUI 配置"
+  ]
+}

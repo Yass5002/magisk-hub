@@ -1,0 +1,16 @@
+{
+  "id": "hyperoptimize",
+  "displayName": "HyperOptimize",
+  "description": "面向小米澎湃 OS（HyperOS）的系统与内核参数调优模块，通过优化 SurfaceFlinger 渲染、唤醒锁与 I/O 调度降低日常及待机功耗。",
+  "seo": {
+    "title": "HyperOptimize 下载与 HyperOS 省电优化配置 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 HyperOptimize 模块，支持 Magisk 与 KernelSU。针对小米澎湃 OS 深度调校内核参数、SurfaceFlinger 渲染与唤醒锁，有效降低后台功耗并延长电池续航。"
+  },
+  "searchAliases": [
+    "HyperOptimize 模块下载",
+    "小米澎湃 OS 省电模块",
+    "HyperOS 内核调优省电",
+    "TatshSiow HyperOptimize",
+    "HyperOS 续航优化 Magisk"
+  ]
+}

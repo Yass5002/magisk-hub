@@ -1,0 +1,16 @@
+{
+  "id": "log-catcher",
+  "displayName": "Log-Catcher (开机系统与内核日志收集)",
+  "description": "自动捕获设备启动阶段的 logcat 与内核 dmesg 日志，并在解锁存储后自动打包归档为带时间戳的压缩包。",
+  "seo": {
+    "title": "Log-Catcher 模块下载与开机日志归档指南 | Magisk Hub",
+    "description": "下载 Log-Catcher 模块，全面支持 Magisk、KernelSU 与 APatch。开机自动记录 dmesg 与 logcat 缓冲区，解锁后归档至下载目录并提供 WebUI 配置。"
+  },
+  "searchAliases": [
+    "Log-Catcher 模块下载",
+    "Android 开机抓取 dmesg logcat",
+    "Magisk KernelSU 开机日志收集",
+    "APatch 日志自动打包归档",
+    "Root 手机排错日志提取工具"
+  ]
+}

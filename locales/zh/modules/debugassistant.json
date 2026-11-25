@@ -1,0 +1,16 @@
+{
+  "id": "debugassistant",
+  "displayName": "DebugAssistant (开机日志自动抓取)",
+  "description": "面向 Root 设备的自动化 logcat 日志抓取模块，从系统早期启动阶段持续记录并轮转保留最近三次重启周期的诊断日志。",
+  "seo": {
+    "title": "DebugAssistant 模块下载与开机抓日志指南 | Magisk Hub",
+    "description": "下载 Magisk/KernelSU 版 DebugAssistant 模块，免连电脑即可在系统早期启动阶段自动抓取 logcat，并轮转保留三次重启日志以排查卡米与随机重启故障。"
+  },
+  "searchAliases": [
+    "DebugAssistant 模块下载",
+    "Magisk 开机自动抓取 logcat",
+    "Android 卡米无限重启日志排查",
+    "KernelSU 早期启动日志记录",
+    "Root 手机崩溃日志保留工具"
+  ]
+}

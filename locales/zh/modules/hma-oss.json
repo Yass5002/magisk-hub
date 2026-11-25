@@ -1,0 +1,16 @@
+{
+  "id": "hma-oss",
+  "displayName": "HMA-OSS (隐藏应用列表开源版)",
+  "description": "开源的 Zygisk 隐藏应用列表模块，无需依赖 LSPosed 即可为指定应用过滤已安装应用列表、系统设置及包安装器查询。",
+  "seo": {
+    "title": "HMA-OSS (隐藏应用列表) 下载与配置教程 (Zygisk) | Magisk Hub",
+    "description": "下载 HMA-OSS (Hide My Applist 开源版) Zygisk 模块，支持 Magisk、KernelSU 与 APatch。无需 LSPosed 即可过滤应用列表与无障碍检测，附模板配置教程。"
+  },
+  "searchAliases": [
+    "HMA-OSS 下载",
+    "隐藏应用列表 Zygisk 版",
+    "无需 LSPosed 隐藏应用列表",
+    "银行应用隐藏 Root 应用",
+    "HMA-OSS 模板配置教程"
+  ]
+}

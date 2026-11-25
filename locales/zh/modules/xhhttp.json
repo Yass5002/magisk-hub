@@ -1,0 +1,16 @@
+{
+  "id": "xhhttp",
+  "displayName": "xhhttp (xh 终端 HTTP 客户端)",
+  "description": "将 Rust 编写的轻量级 HTTPie 替代品 xh 无侵入集成至 Android 系统，在 Root 终端或 Termux 中直接发送 REST API 请求并高亮排版 JSON。",
+  "seo": {
+    "title": "xhhttp 模块下载与安卓终端 HTTP 请求指南 (Magisk) | Magisk Hub",
+    "description": "下载 xhhttp Magisk 模块，将高速轻量的 Rust HTTP 客户端 xh 无侵入部署到 Android 终端，支持直观的 REST API 调试、JSON 语法高亮与会话管理。"
+  },
+  "searchAliases": [
+    "xhhttp Magisk 模块",
+    "安卓终端 HTTPie 替代工具",
+    "Termux Root 调试 API 工具",
+    "xh Android CLI 下载",
+    "curl 替代品 Magisk 模块"
+  ]
+}

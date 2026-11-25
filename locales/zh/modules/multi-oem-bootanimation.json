@@ -1,0 +1,15 @@
+{
+  "id": "multi-oem-bootanimation",
+  "displayName": "Multi-OEM Dynamic Boot Animation（多品牌随机开机动画引擎）",
+  "description": "面向 MIUI、ColorOS 与 Realme UI 的无侵入式开机动画引擎，支持每次开机随机轮换动画与 60 秒防卡死看门狗。",
+  "seo": {
+    "title": "Multi-OEM 随机开机动画与防卡米引擎下载配置 | Magisk Hub",
+    "description": "下载 Multi-OEM Dynamic Boot Animation 模块，支持 MIUI、HyperOS、ColorOS 与 Realme UI。内置随机开机动画轮换与 60 秒防 Bootloop 守护。"
+  },
+  "searchAliases": [
+    "MIUI 随机开机动画 Magisk",
+    "ColorOS 自定义开机动画模块",
+    "Realme UI 开机动画防卡米",
+    "安卓开机动画看门狗模块"
+  ]
+}

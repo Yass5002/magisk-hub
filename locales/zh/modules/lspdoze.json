@@ -1,0 +1,16 @@
+{
+  "id": "lspdoze",
+  "displayName": "LSPDoze (待机省电与全屏 AOD)",
+  "description": "面向 Android 11–15 的 LSPosed 省电与息屏增强模块，支持熄屏秒进深度 Doze 模式、拦截非必要唤醒锁，并在 ColorOS/OPlus 设备强制启用全屏 AOD。",
+  "seo": {
+    "title": "LSPDoze 下载与深度 Doze 待机省电配置指南 | Magisk Hub",
+    "description": "下载 LSPDoze 待机优化模块，支持 LSPosed 与 Magisk/KernelSU/APatch。通过系统框架 Hook 实现熄屏秒进深度睡眠、抑制唤醒耗电并解锁全屏常亮 AOD。"
+  },
+  "searchAliases": [
+    "LSPDoze 下载",
+    "LSPosed 深度睡眠省电模块",
+    "ColorOS 全屏 AOD 解锁",
+    "安卓熄屏秒进 Doze",
+    "Xposed 压制唤醒锁续航"
+  ]
+}

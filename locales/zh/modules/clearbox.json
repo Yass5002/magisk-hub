@@ -1,0 +1,16 @@
+{
+  "id": "clearbox",
+  "displayName": "ClearBox (系统清理与磁盘 GC)",
+  "description": "由 FLYCOM-E 开发的开源 Android 系统清理与维护套件，支持自定义清理规则、按后缀与体积分类过滤、F2FS 磁盘垃圾回收（GC）以及交互式终端 TUI 管理面板。",
+  "seo": {
+    "title": "ClearBox 系统清理与磁盘 GC 模块下载配置指南 | Magisk Hub",
+    "description": "下载 ClearBox 高速系统清理与维护模块，兼容 Magisk、KernelSU 与 APatch。提供基于规则的缓存清理、文件分类过滤、F2FS 磁盘 GC 与终端 TUI 控制。"
+  },
+  "searchAliases": [
+    "ClearBox 模块下载",
+    "Magisk 自动清理优化模块",
+    "Android F2FS 磁盘 GC 模块",
+    "ClearBox CleanConfigs 配置规则",
+    "FLYCOM-E ClearBox 终端清理"
+  ]
+}

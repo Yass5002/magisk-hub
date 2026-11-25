@@ -1,0 +1,16 @@
+{
+  "id": "nohello",
+  "displayName": "NoHello",
+  "description": "基于 Zygisk 的反检测隐藏 Root 模块，通过动态卸载模块挂载与清理注入痕迹，向银行和风控应用隐藏 Root 与 Zygisk 环境。",
+  "seo": {
+    "title": "NoHello 模块下载与隐藏 Root 规则配置指南 | Magisk Hub",
+    "description": "下载 NoHello Zygisk 隐藏 Root 模块，兼容 Magisk、KernelSU 与 APatch。支持自定义挂载规则、白名单隔离模式及注入痕迹擦除，助你绕过风控检测。"
+  },
+  "searchAliases": [
+    "NoHello 模块下载",
+    "Zygisk 隐藏 Root 模块",
+    "NoHello 白名单模式配置",
+    "安卓绕过银行风控检测",
+    "NoHello 替代 Shamiko"
+  ]
+}

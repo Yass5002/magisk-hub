@@ -1,0 +1,16 @@
+{
+  "id": "re-malwack",
+  "displayName": "Re-Malwack (多模式去广告与隐私防护)",
+  "description": "功能全面的 Android 隐私保护与 Systemless 去广告套件，提供多档位规则模式、WebUI 控制台与 hosts 自动同步。",
+  "seo": {
+    "title": "Re-Malwack 下载与 WebUI 隐私去广告配置指南 | Magisk Hub",
+    "description": "下载 Re-Malwack 去广告与反恶意软件模块，支持 Magisk、KernelSU 与 APatch。提供 Lite/Full/Ultimate 多档位规则、本地白名单及 WebUI 控制面板。"
+  },
+  "searchAliases": [
+    "Re-Malwack 下载",
+    "ZG089 Re-Malwack 模块",
+    "Android 系统级反恶意软件 hosts",
+    "Re-Malwack WebUI 去广告",
+    "多档位去广告 Magisk 模块"
+  ]
+}

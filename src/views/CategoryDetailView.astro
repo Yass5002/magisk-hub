@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ModuleCard from '../components/ModuleCard.astro';
+import { CATEGORIES, type CategoryInfo, type ModuleData } from '../lib/modules';
+import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
+import { localizeCategory } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
+
+export interface Props {
+  category: CategoryInfo;
+  modules: ModuleData[];
+  locale?: Locale;
+}
+
+const { category: rawCategory, modules, locale = 'en' } = Astro.props;
+const ui = getUI(locale);
+const category = localizeCategory(rawCategory, locale);
+const canonicalPath = localizePath(`/categories/${category.id}/`, locale);
+
+const breadcrumbs = [
+  { name: ui.moduleDetail.home, url: localizePath('/', locale) },
+  { name: ui.categoriesIndex.breadcrumb, url: localizePath('/categories/', locale) },
+  { name: category.name, url: canonicalPath },
+];
+
+const categorySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  'name': ui.categoryDetail.schemaName(category.name),
+  'description': category.description,
+  'inLanguage': ui.inLanguage,
+  'url': `${SITE_URL}${canonicalPath}`,
+  'numberOfItems': modules.length,
+};
+
+const otherCategories = Object.values(CATEGORIES)
+  .filter(c => c.id !== category.id)
+  .map(c => localizeCategory(c, locale));
+---
+
+<BaseLayout
+  locale={locale}
+  title={ui.categoryDetail.seoTitle(category.name)}
+  description={ui.categoryDetail.seoDescription(category.name, category.description)}
+  structuredData={categorySchema}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <!-- Category Header -->
+    <div class="py-6 border-b border-zinc-200">
+      <div class="flex items-center gap-2.5">
+        <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+          {ui.categoryDetail.badge}
+        </span>
+        <span class="text-xs font-mono text-zinc-500">{ui.categoryDetail.modulesCount(modules.length)}</span>
+      </div>
+
+      <h1 class="mt-2 text-3xl font-extrabold text-zinc-900 tracking-tight">
+        {category.name}
+      </h1>
+
+      <p class="mt-1.5 text-sm text-zinc-600 max-w-2xl leading-relaxed">
+        {category.description}
+      </p>
+    </div>
+
+    <!-- Modules Grid -->
+    <div class="mt-6">
+      <h2 class="sr-only">{ui.categoryDetail.srHeading(category.name)}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {modules.map(mod => (
+          <ModuleCard module={mod} locale={locale} />
+        ))}
+      </div>
+    </div>
+
+    <!-- Explore Other Categories -->
+    <div class="mt-12 pt-8 border-t border-zinc-200">
+      <h2 class="text-xl font-bold text-zinc-900 mb-4">{ui.categoryDetail.exploreOthers}</h2>
+      <div class="flex flex-wrap gap-3">
+        {otherCategories.map(c => (
+          <a 
+            href={localizePath(`/categories/${c.id}/`, locale)} 
+            data-umami-event="category-switch-click"
+            data-umami-event-from={category.id}
+            data-umami-event-to={c.id}
+            class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
+          >
+            <span>{c.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

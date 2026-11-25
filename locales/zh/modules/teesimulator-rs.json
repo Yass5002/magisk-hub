@@ -1,0 +1,16 @@
+{
+  "id": "teesimulator-rs",
+  "displayName": "TEESimulator-RS",
+  "description": "Enginex0 基于 Rust 重写的高性能 TEESimulator 分支，在 keystore 守护进程内直接运行 AOSP 参考 KeyMint 引擎，降低内存开销并加速密钥证明响应。",
+  "seo": {
+    "title": "TEESimulator-RS 模块下载与 Rust 版配置指南 | Magisk Hub",
+    "description": "下载 Rust 原生实现的 TEESimulator-RS 模块，兼容 Magisk、KernelSU 与 APatch。支持 kmr-ta 进程内路由、target.txt 精准分流与安全补丁日期对齐。"
+  },
+  "searchAliases": [
+    "TEESimulator-RS 下载",
+    "TEESimulator Rust 版",
+    "Enginex0 TEESimulator",
+    "Android Strong Integrity 模块",
+    "keybox 密钥模拟"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "jetbrains-font-magisk-module",
+  "displayName": "jetbrains-font-magisk-module (JetBrains Mono 字体)",
+  "description": "将开发者广受好评的 JetBrains Mono 等宽字体以 Systemless 方式应用到 Android 系统界面、终端模拟器与代码编辑器中。",
+  "seo": {
+    "title": "JetBrains Mono 系统字体 Magisk 模块下载与安装 | Magisk Hub",
+    "description": "下载 jetbrains-font-magisk-module 字体模块，支持 Magisk。无系统分区修改替换 Android 等宽与系统字体，提升终端、编辑器及 0/O、1/l/I 字符辨识度。"
+  },
+  "searchAliases": [
+    "JetBrains Mono Magisk 模块",
+    "Android 替换等宽编程字体",
+    "面具 JetBrains 字体下载",
+    "Android 终端代码字体模块",
+    "Systemless 字体替换模块"
+  ]
+}

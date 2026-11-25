@@ -1,0 +1,16 @@
+{
+  "id": "gphotosunlimited",
+  "displayName": "GPhotosUnlimited (Google 相册无限空间)",
+  "description": "基于 Zygisk 的无系统分区修改（Systemless）模块，仅对 Google 相册进程定向伪装 Pixel 机型属性，解锁无限量原画质或省空间云端备份。",
+  "seo": {
+    "title": "GPhotosUnlimited 下载与 Google 相册无限备份教程 | Magisk Hub",
+    "description": "下载 GPhotosUnlimited 模块，支持 Magisk 与 KernelSU。仅面向 Google 相册定向伪装 Pixel 设备指纹，无损解锁无限原图或高画质备份，不影响其他应用识别。"
+  },
+  "searchAliases": [
+    "GPhotosUnlimited 下载",
+    "Google 相册无限备份模块",
+    "谷歌相册解锁原图空间",
+    "Pixel 机型伪装 Magisk",
+    "Zygisk 谷歌相册无限存储"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "turnoffsensors-magisk",
+  "displayName": "TurnOffSensors-Magisk",
+  "description": "基于 Android 原生 sensor_privacy 服务的安全模块，开机时自动关闭摄像头、麦克风及陀螺仪等硬件传感器，防止后台静默窃听与追踪。",
+  "seo": {
+    "title": "TurnOffSensors-Magisk 下载与使用指南（开机自动关闭传感器）| Magisk Hub",
+    "description": "下载 TurnOffSensors-Magisk 模块，支持 Magisk Root 环境。利用系统原生 sensor_privacy 服务在开机时自动禁用摄像头、麦克风与惯性传感器，保障硬件级隐私安全。"
+  },
+  "searchAliases": [
+    "TurnOffSensors-Magisk 下载",
+    "Magisk 开机自动关闭传感器",
+    "Android Root 禁用麦克风摄像头",
+    "sensor_privacy 隐私开关模块",
+    "防止应用后台调用陀螺仪模块"
+  ]
+}

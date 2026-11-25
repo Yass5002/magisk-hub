@@ -1,0 +1,16 @@
+{
+  "id": "redmi-dolby-atmos",
+  "displayName": "Redmi Dolby Atmos（红米杜比全景声增强）",
+  "description": "专为 Redmi 机型调校的供应商底层 Dolby Atmos 数字信号处理模块，通过配置系统属性与 DAX 声学文件解锁空间环绕声与全场景音效。",
+  "seo": {
+    "title": "Redmi 杜比全景声（Dolby Atmos）模块下载与配置 | Magisk Hub",
+    "description": "下载 Redmi Dolby Atmos 音效增强模块，支持 Magisk、KernelSU 与 APatch。为兼容的红米设备写入 vendor 声学属性与定制 DAX 配置文件，开启空间音频与多场景杜比全景声。"
+  },
+  "searchAliases": [
+    "红米杜比全景声 Magisk 模块",
+    "Redmi Dolby Atmos 下载",
+    "小米开启空间音频杜比音效",
+    "dax-default.xml 杜比配置",
+    "MIUI 杜比全景声解锁模块"
+  ]
+}

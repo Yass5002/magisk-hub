@@ -1,0 +1,16 @@
+{
+  "id": "auto-skip-splash-screens",
+  "displayName": "Auto Skip (自动跳过开屏广告)",
+  "description": "将自动跳过引擎以 Systemless 方式部署至系统应用目录，具备高 OOM 优先级防止被厂商杀后台，通过监听窗口状态变化秒级点击开屏广告跳过按钮。",
+  "seo": {
+    "title": "Auto Skip 自动跳过开屏广告模块下载与使用指南 | Magisk Hub",
+    "description": "下载 Auto Skip 自动跳过开屏广告模块，支持 Magisk、KernelSU 与 APatch。通过系统特权级部署与无障碍节点识别，自动触发跳过按钮并防止后台被杀。"
+  },
+  "searchAliases": [
+    "自动跳过开屏广告 Magisk 模块",
+    "Auto Skip Splash Screen Ads 下载",
+    "ZDTG 自动跳过系统化模块",
+    "防杀后台开屏跳广告 Root",
+    "KernelSU 跳过应用启动广告"
+  ]
+}

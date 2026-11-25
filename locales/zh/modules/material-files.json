@@ -1,0 +1,16 @@
+{
+  "id": "material-files",
+  "displayName": "Material Files (质感文件)",
+  "description": "开源极简 Material Design 文件管理器，基于原生 Linux 系统调用构建，支持 Root、Shizuku 访问 Android/data 及网络存储。",
+  "seo": {
+    "title": "Material Files 下载与 Root/Shizuku 配置指南 | Magisk Hub",
+    "description": "下载开源文件管理器 Material Files，支持 Shizuku、Magisk、KernelSU 与 APatch。基于原生 Linux 系统调用，安全管理 Root 分区与 Android/data 目录。"
+  },
+  "searchAliases": [
+    "Material Files 下载",
+    "质感文件 APK",
+    "Material Files Shizuku 访问 data",
+    "Android 开源 Root 文件管理器",
+    "zhanghai MaterialFiles"
+  ]
+}

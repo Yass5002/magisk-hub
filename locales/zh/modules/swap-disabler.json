@@ -1,0 +1,16 @@
+{
+  "id": "swap-disabler",
+  "displayName": "Swap-Disabler (禁用虚拟内存与 Swap)",
+  "description": "开机自动关闭 Android 交换分区（Swap）与内存扩展机制，适用于 8GB 及以上大内存旗舰机型，减少闪存损耗并提升流畅度。",
+  "seo": {
+    "title": "Swap-Disabler 禁用虚拟内存与 RAM Plus 模块下载 | Magisk Hub",
+    "description": "下载 Swap-Disabler Magisk 模块，开机自动执行 swapoff 关闭系统交换分区与虚拟内存扩展，减少闪存写入损耗，提升大内存旗舰机的应用切换流畅度。"
+  },
+  "searchAliases": [
+    "Swap-Disabler 模块下载",
+    "关闭安卓虚拟内存 Magisk",
+    "禁用三星 RAM Plus Root",
+    "关闭 ZRAM 与 Swap 交换分区",
+    "大内存手机禁用 Swap 模块"
+  ]
+}

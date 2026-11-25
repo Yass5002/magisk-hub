@@ -1,0 +1,16 @@
+{
+  "id": "stellar-tweaks",
+  "displayName": "Stellar-Tweaks",
+  "description": "基于 Rust 开发的智能 Android 性能守护进程，集成 FEAS 快速能量感知调度、多架构 GPU 控制、旁路供电与离线 WebUI。",
+  "seo": {
+    "title": "Stellar-Tweaks Rust 性能调度与 FEAS 模块下载配置 | Magisk Hub",
+    "description": "下载 Stellar-Tweaks 模块，兼容 Magisk、KernelSU 与 APatch。基于 Rust 编写的轻量性能守护进程，集成 FEAS 调度、多架构 GPU 控制、旁路供电与离线 WebUI。"
+  },
+  "searchAliases": [
+    "Stellar Tweaks 模块下载",
+    "Rust 性能调度模块",
+    "FEAS 帧率感知调度 Android",
+    "Stellar Tweaks WebUI",
+    "KernelSU 性能调度模块"
+  ]
+}

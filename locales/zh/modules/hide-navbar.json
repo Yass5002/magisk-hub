@@ -1,0 +1,16 @@
+{
+  "id": "hide-navbar",
+  "displayName": "Hide-Navbar / NavTweaks (隐藏小白条)",
+  "description": "面向 Android 10 至 15 的 Systemless 导航栏与全面屏手势定制模块，通过 RRO 覆盖彻底隐藏手势小白条并消除键盘底部空白留白。",
+  "seo": {
+    "title": "Hide-Navbar (NavTweaks) 隐藏手势小白条模块下载 | Magisk Hub",
+    "description": "下载 Hide-Navbar (NavTweaks) 全面屏手势优化模块，支持 Magisk、KernelSU 与 APatch。刷入时通过音量键自选隐藏小白条与移除键盘底部空白高度。"
+  },
+  "searchAliases": [
+    "Hide-Navbar 模块下载",
+    "NavTweaks 隐藏小白条",
+    "Magisk 隐藏手势指示条",
+    "移除输入法底部空白条",
+    "全面屏手势全屏模块"
+  ]
+}

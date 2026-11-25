@@ -1,0 +1,16 @@
+{
+  "id": "noogle-magisk",
+  "displayName": "Noogle Magisk (microG 去谷歌套件)",
+  "description": "由 SelfRef 开发的无系统分区修改 Magisk 套件，可在原厂 Android 固件中以开源 microG 替代 Google Play 服务并精简谷歌应用。",
+  "seo": {
+    "title": "Noogle Magisk 下载与 microG 配置指南 | Magisk Hub",
+    "description": "下载 Noogle Magisk 模块，支持在保留原厂相机与固件特性的前提下，通过 Systemless 方式使用开源 microG 替代 Google Play 服务并一键完成权限配置。"
+  },
+  "searchAliases": [
+    "Noogle Magisk 下载",
+    "原厂系统替换 microG 模块",
+    "Android 去谷歌服务 Magisk",
+    "microG 签名欺骗配置",
+    "面具 microG 替代 GMS"
+  ]
+}

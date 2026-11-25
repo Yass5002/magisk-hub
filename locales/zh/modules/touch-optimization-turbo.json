@@ -1,0 +1,16 @@
+{
+  "id": "touch-optimization-turbo",
+  "displayName": "Touch Optimization Turbo (触控低延迟优化)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的触控与渲染低延迟模块，通过优化 SurfaceFlinger 缓冲队列与高通输入参数提升跟手度。",
+  "seo": {
+    "title": "Touch Optimization Turbo 触控与渲染低延迟模块下载 | Magisk Hub",
+    "description": "下载 Touch Optimization Turbo 模块，兼容 Magisk、KernelSU 与 APatch。通过精简 SurfaceFlinger 缓冲队列与优化高通输入参数，显著降低触控与画面渲染延迟。"
+  },
+  "searchAliases": [
+    "Touch Optimization Turbo 下载",
+    "安卓触控低延迟 Magisk 模块",
+    "SurfaceFlinger 降低延迟",
+    "高通触控优化 Root",
+    "游戏屏幕跟手度优化模块"
+  ]
+}

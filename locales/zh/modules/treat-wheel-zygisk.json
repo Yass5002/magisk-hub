@@ -1,0 +1,16 @@
+{
+  "id": "treat-wheel-zygisk",
+  "displayName": "Treat Wheel (Zygisk)",
+  "description": "PerformanC 团队基于纯 C99 编写的轻量级 Zygisk 隐藏与隔离模块，专为 ReZygisk 打造，内置 ReVanced 挂载卸载（RVU）与多语言 WebUI 控制面板。",
+  "seo": {
+    "title": "Treat Wheel 模块下载与 RVU 卸载配置指南 (ReZygisk) | Magisk Hub",
+    "description": "下载纯 C99 架构的 Treat Wheel 模块，适配 Magisk、KernelSU 与 APatch（需搭配 ReZygisk）。支持无痕 Root 隐藏、ReVanced 挂载自动卸载及 WebUI 管理。"
+  },
+  "searchAliases": [
+    "Treat Wheel 模块下载",
+    "Treat-Wheel-Zygisk 教程",
+    "ReZygisk 隐藏模块",
+    "ReVanced 挂载隐藏 RVU",
+    "Treat Wheel WebUI"
+  ]
+}

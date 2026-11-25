@@ -1,0 +1,16 @@
+{
+  "id": "crond4android",
+  "displayName": "crond4android (定时任务守护进程)",
+  "description": "支持 KernelSU、APatch 与 Magisk 的轻量级 crond 定时任务模块，集成基于 BusyBox 的标准 crontab 命令与 WebUI 管理界面。",
+  "seo": {
+    "title": "crond4android 模块下载与定时任务配置指南 | Magisk Hub",
+    "description": "下载 crond4android 模块，兼容 Magisk、KernelSU 与 APatch。提供轻量级后台 crond 守护进程、标准 crontab 命令行及可视化 WebUI 定时任务管理。"
+  },
+  "searchAliases": [
+    "crond4android 模块下载",
+    "Android Root 定时任务 crond",
+    "KernelSU APatch crontab 命令",
+    "Magisk 后台定时执行脚本",
+    "Android 轻量计划任务替代 Tasker"
+  ]
+}

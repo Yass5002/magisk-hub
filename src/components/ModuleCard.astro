@@ -1,32 +1,19 @@
 ---
-import type { ModuleData } from '../lib/modules';
-import { CATEGORIES } from '../lib/modules';
+import { getCategoryInfo, type ModuleData } from '../lib/modules';
+import { localizePath, type Locale } from '../i18n/routing';
+import { getSoftwareTypeBadgeText } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
 
 export interface Props {
   module: ModuleData;
+  locale?: Locale;
 }
 
-const { module } = Astro.props;
-const category = CATEGORIES[module.category] || { name: module.category, id: module.category, icon: 'Layers' };
-const author = module.repo ? module.repo.split('/')[0] : (module.author || 'Community');
-
-const iconMap: Record<string, string> = {
-  'root-management': 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
-  'performance-kernel': 'M13 10V3L4 14h7v7l9-11h-7z',
-  'system-environment': 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10',
-  'customization-ui': 'M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4',
-  'development-instrumentation': 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
-  'system-utilities': 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z',
-  'networking-proxies': 'M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9',
-  'security-certificates': 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z',
-  'xposed-runtime-hooks': 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z',
-  'audio-dsp-acoustics': 'M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z',
-  'system-typography-fonts': 'M4 6h16M4 12h16M4 18h7',
-  'battery-power-charging': 'M13 10V3L4 14h7v7l9-11h-7z',
-  'boot-animations-ui': 'M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-};
-
-const categorySvgPath = iconMap[module.category] || iconMap['system-environment'];
+const { module, locale = 'en' } = Astro.props;
+const ui = getUI(locale);
+const category = getCategoryInfo(module.category, locale);
+const author = module.repo ? module.repo.split('/')[0] : (module.author || (locale === 'zh' ? '社区' : 'Community'));
+const moduleHref = localizePath(`/modules/${module.id}/`, locale);
 
 function formatStars(count?: number): string {
   if (!count) return '0';
@@ -48,9 +35,9 @@ const isCommunity = !module.repo;
 }`}>
   <!-- Interactive Overlay Link -->
   <a 
-    href={`/modules/${module.id}/`} 
+    href={moduleHref} 
     class="absolute inset-0 z-0" 
-    aria-label={`View ${module.name} module`}
+    aria-label={ui.card.viewAria(module.name)}
     data-umami-event="click-module-card"
     data-umami-event-module={module.id}
     data-umami-event-category={module.category}
@@ -102,12 +89,12 @@ const isCommunity = !module.repo;
             </h3>
             {isTier1 && (
               <span class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] font-mono font-medium text-zinc-800 border border-zinc-200/80 shrink-0">
-                guide
+                {ui.card.guideBadge}
               </span>
             )}
             {isCommunity && (
               <span class="rounded bg-indigo-50 px-1.5 py-0.5 text-[10px] font-mono font-medium text-indigo-700 border border-indigo-200/70 shrink-0">
-                community
+                {ui.card.communityBadge}
               </span>
             )}
           </div>
@@ -125,10 +112,12 @@ const isCommunity = !module.repo;
         <div class="mt-1 flex items-center gap-1.5 text-xs font-mono text-zinc-500 truncate">
           <span class="truncate">{category.name}</span>
           {module.softwareType && module.softwareType !== 'flashable-module' && (
-            <span class="text-zinc-300 shrink-0">•</span>
-            <span class="shrink-0 bg-zinc-100 text-zinc-700 px-1.5 py-0.5 rounded border border-zinc-200 text-[10px] font-medium">
-              {module.softwareType === 'xposed-module' ? 'xposed' : module.softwareType === 'standalone-app' ? 'app' : 'kernel'}
-            </span>
+            <>
+              <span class="text-zinc-300 shrink-0">•</span>
+              <span class="shrink-0 bg-zinc-100 text-zinc-700 px-1.5 py-0.5 rounded border border-zinc-200 text-[10px] font-medium">
+                {getSoftwareTypeBadgeText(module.softwareType, locale)}
+              </span>
+            </>
           )}
         </div>
       </div>
@@ -164,7 +153,7 @@ const isCommunity = !module.repo;
         <>
           <span class="text-zinc-300 shrink-0">•</span>
           <span class="text-[10px] font-mono font-medium text-indigo-600 bg-indigo-50/80 px-1.5 py-0.5 rounded border border-indigo-100 shrink-0">
-            pkg
+            {ui.card.pkgBadge}
           </span>
         </>
       )}

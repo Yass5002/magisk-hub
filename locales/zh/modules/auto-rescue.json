@@ -1,0 +1,16 @@
+{
+  "id": "auto-rescue",
+  "displayName": "Auto Rescue (自动救砖模块)",
+  "description": "自动化开机防卡米看门狗模块，可在早期启动阶段追踪引导次数并在触发异常重启阈值时自动禁用问题模块，支持白名单保护与 OTA 更新延迟机制。",
+  "seo": {
+    "title": "Auto Rescue 自动救砖模块下载与防卡米配置指南 | Magisk Hub",
+    "description": "下载 Auto Rescue 自动救砖模块，兼容 Magisk、KernelSU 与 APatch。启动阶段实时监控引导状态，在发生卡米或 Bootloop 时自动禁用异常模块并支持白名单保护。"
+  },
+  "searchAliases": [
+    "Auto Rescue 自动救砖模块下载",
+    "Magisk 防卡米救砖模块",
+    "KernelSU Bootloop 自动禁用模块",
+    "刷模块无限重启自动恢复",
+    "Automatic_brick_rescue 白名单设置"
+  ]
+}

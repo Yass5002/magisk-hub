@@ -1,0 +1,16 @@
+{
+  "id": "iunlockergl",
+  "displayName": "iUnlocker GLTool (iUnlockerGL)",
+  "description": "基于 Zygisk 的 GPU 与硬件信息伪装模块，通过修改 OpenGL ES、Vulkan 参数及显示规格，解锁大型手游极清画质与高帧率模式。",
+  "seo": {
+    "title": "iUnlocker GLTool 下载与 GPU 伪装解锁高帧率配置 | Magisk Hub",
+    "description": "下载最新版 iUnlocker GLTool 模块，支持 Magisk 及 KernelSU（需 Zygisk）。通过伪装 OpenGL ES、Vulkan 与屏幕参数，解锁手游高画质及 120 帧模式。"
+  },
+  "searchAliases": [
+    "iUnlocker GLTool 下载",
+    "GPU 伪装解锁 120 帧模块",
+    "OpenGL Vulkan 伪装 Magisk",
+    "手游解锁高画质极限帧率",
+    "iUnlockerGL 模块"
+  ]
+}

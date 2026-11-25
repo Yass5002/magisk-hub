@@ -1,0 +1,16 @@
+{
+  "id": "skysceneaddon",
+  "displayName": "SkySceneAddon (SkyScene 内存优化)",
+  "description": "面向新老 ARM 架构 Android 设备的内核内存与 ZRAM 优化模块，精准调优 MGLRU/LRU 页面回收与 cgroup 进程队列。",
+  "seo": {
+    "title": "SkySceneAddon ARM 内存与 ZRAM 调度优化模块下载 | Magisk Hub",
+    "description": "下载 SkySceneAddon 模块，兼容 Magisk 与 KernelSU。针对 ARM 设备优化 MGLRU 与传统 LRU 页面回收、ZRAM 压缩交换与 LMK 机制，有效消除内存抖动卡顿。"
+  },
+  "searchAliases": [
+    "SkySceneAddon 模块下载",
+    "Android MGLRU ZRAM 优化",
+    "安卓内存抖动卡顿修复",
+    "KernelSU 后台内存管理模块",
+    "SkyScene Add-on 内存优化"
+  ]
+}

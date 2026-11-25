@@ -1,0 +1,15 @@
+{
+  "id": "harmonyos-boot-animation",
+  "displayName": "HarmonyOS Boot Animation & Chime（鸿蒙开机动画与音效）",
+  "description": "以无侵入式方式将 Android 默认二阶段开机动画与启动提示音替换为华为 HarmonyOS 同心圆光环动画及开机音效。",
+  "seo": {
+    "title": "HarmonyOS 鸿蒙开机动画与音效模块下载指南 | Magisk Hub",
+    "description": "下载华为 HarmonyOS 鸿蒙开机动画与音效模块，支持 Magisk、KernelSU 与 APatch。一键无侵入式替换同心圆光环视觉效果与开机提示音。"
+  },
+  "searchAliases": [
+    "HarmonyOS 开机动画 Magisk",
+    "鸿蒙开机动画音效模块",
+    "华为开机提示音 bootaudio",
+    "安卓 Root 刷入鸿蒙开机动画"
+  ]
+}

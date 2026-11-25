@@ -1,0 +1,16 @@
+{
+  "id": "xiaomi-13pro-device-spoofer",
+  "displayName": "Xiaomi 13 Pro Device Identity Spoofer (小米 13 Pro 机型伪装)",
+  "description": "无系统分区修改（Systemless）的机型伪装模块，将设备属性伪装为小米 13 Pro (2210132C)，解锁游戏高帧率与旗舰特性。",
+  "seo": {
+    "title": "小米 13 Pro 机型伪装模块下载与高帧率配置 | Magisk Hub",
+    "description": "下载小米 13 Pro 机型伪装模块，兼容 Magisk、KernelSU 与 APatch。将系统机型标识伪装为 2210132C，解锁王者荣耀、原神、和平精英等手游 120 帧与高画质选项。"
+  },
+  "searchAliases": [
+    "小米 13 Pro 机型伪装",
+    "Magisk 机型伪装模块",
+    "王者荣耀 120 帧伪装",
+    "2210132C 机型修改",
+    "Root 游戏高帧率解锁"
+  ]
+}

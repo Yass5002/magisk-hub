@@ -1,0 +1,16 @@
+{
+  "id": "knoxpatch",
+  "displayName": "KnoxPatch (三星 Knox 功能修复)",
+  "description": "面向已 Root 三星 One UI 设备的 LSPosed 与根模块套件，系统性修复安全文件夹、Samsung Pass、三星健康与私密分享等 Knox 服务。",
+  "seo": {
+    "title": "KnoxPatch 下载与三星 Knox 功能修复指南 | Magisk Hub",
+    "description": "下载 KnoxPatch 与 Enhancer 模块，支持 Magisk、KernelSU 与 APatch。在已解锁 Bootloader 的三星 One UI 设备上恢复安全文件夹与三星健康。"
+  },
+  "searchAliases": [
+    "KnoxPatch 下载教程",
+    "三星 Root 后修复安全文件夹",
+    "三星健康 Root 无法使用修复",
+    "One UI Knox 0x1 修复",
+    "Samsung Pass Root 修复模块"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nintendo-switch-system-sounds",
+  "displayName": "Nintendo Switch System Sound Effects（Switch 系统音效包）",
+  "description": "无系统分区修改的系统提示音替换模块，将 Android 原生锁屏、解锁、点击与充电音效替换为任天堂 Switch 及 Joy-Con 标志性清脆音效。",
+  "seo": {
+    "title": "Nintendo Switch 系统音效替换模块下载与说明 | Magisk Hub",
+    "description": "下载 Nintendo Switch 系统音效模块，支持 Magisk、KernelSU 与 APatch。通过无侵入挂载替换系统 UI 提示音，体验 Joy-Con 插拔充电、开关屏幕及菜单点击等原汁原味掌机音效。"
+  },
+  "searchAliases": [
+    "Switch 系统音效 Magisk 模块",
+    "任天堂 Switch 锁屏提示音",
+    "Joy-Con 充电提示音模块",
+    "Android 替换系统 UI 音效",
+    "Switch 解锁音效 Root"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "kernelenhancer",
+  "displayName": "KernelEnhancer",
+  "description": "面向 Root 设备的通用 Linux 内核调优模块，精细优化调度器、虚拟内存与 I/O 队列，消除界面微卡顿并兼顾日常流畅度与电池续航。",
+  "seo": {
+    "title": "KernelEnhancer 模块下载与系统内核调优指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 KernelEnhancer 模块，支持 Magisk 与 KernelSU。通用调校骁龙、天玑及 Exynos 设备调度器、虚拟内存与 I/O 队列，减少日常卡顿掉帧并兼顾续航表现。"
+  },
+  "searchAliases": [
+    "KernelEnhancer 模块下载",
+    "Android 内核调优模块",
+    "减少掉帧卡顿 Magisk 模块",
+    "RAAJK20Pro KernelEnhancer",
+    "通用省电流畅内核优化"
+  ]
+}

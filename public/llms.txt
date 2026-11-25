@@ -1,11 +1,13 @@
 # Magisk Hub
 
-> Magisk Hub is an open directory and technical knowledge hub cataloging 278 community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, and LSPosed.
+> Magisk Hub is an open directory and technical knowledge hub cataloging 249 community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, and LSPosed.
 
 ## Overview & Architecture
 Magisk Hub indexes verified open-source and community root packages, technical architecture breakdowns, and official release assets. Every module listed is verified against JSON Schema Draft-07 specifications and physical archive payload inspection.
 
 - Website: https://magisk.yssn.tech/
+- Simplified Chinese Mirror: https://magisk.yssn.tech/zh/
+- Chinese LLM Index: https://magisk.yssn.tech/zh/llms.txt
 - Source Code: https://github.com/Yass5002/magisk-hub
 - Full LLM Module Feed: https://magisk.yssn.tech/llms-full.txt
 - Schema Definition: https://github.com/Yass5002/magisk-hub/blob/master/modules/schema.json

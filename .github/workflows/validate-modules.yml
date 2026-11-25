@@ -4,9 +4,11 @@ on:
   pull_request:
     paths:
       - 'modules/**'
+      - 'locales/**'
       - 'content/**'
       - 'src/**'
       - 'scripts/**'
+      - 'tests/**'
       - '.github/workflows/validate-modules.yml'
   push:
     branches:
@@ -14,14 +16,16 @@ on:
       - master
     paths:
       - 'modules/**'
+      - 'locales/**'
       - 'content/**'
       - 'src/**'
       - 'scripts/**'
+      - 'tests/**'
       - '.github/workflows/validate-modules.yml'
 
 jobs:
   validate:
-    name: Validate Module Schema & Slugs
+    name: Validate Module Schema, Localization & Build
     runs-on: ubuntu-latest
 
     steps:
@@ -40,9 +44,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
-      - name: Run module validator
+      - name: Run module schema validator
         run: |
           python3 scripts/validate_module.py
+
+      - name: Run EN + ZH SEO & localization discovery audit
+        run: |
+          python3 scripts/validate_seo_llm_discovery.py
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -55,3 +63,8 @@ jobs:
 
       - name: Verify static site build
         run: npm run build
+
+      - name: Run production dist & i18n SEO tests
+        run: |
+          python3 scripts/verify_production_dist.py
+          python3 -m unittest discover -s tests -p "test_*.py" -v

@@ -1,0 +1,15 @@
+{
+  "id": "cubic-adblock",
+  "displayName": "Cubic-AdBlock (精简防误杀 Hosts 去广告)",
+  "description": "通过无侵入式挂载精选 hosts 规则实现全系统广告与遥测拦截，精心保留 Google、微软、Facebook 登录及厂商云同步等核心服务。",
+  "seo": {
+    "title": "Cubic-AdBlock 模块下载与安装指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Cubic-AdBlock 精简 hosts 去广告模块，支持 Magisk、KernelSU 与 APatch。零后台内存占用拦截全系统广告与隐私遥测，同时保留主流账号登录与云服务正常可用。"
+  },
+  "searchAliases": [
+    "Cubic-AdBlock 模块下载",
+    "不误杀谷歌登录的 hosts 模块",
+    "安卓无后台耗电去广告",
+    "Vaz15k Cubic-AdBlock"
+  ]
+}

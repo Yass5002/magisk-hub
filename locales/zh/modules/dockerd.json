@@ -1,0 +1,16 @@
+{
+  "id": "dockerd",
+  "displayName": "dockerd (Android 原生 Docker 引擎)",
+  "description": "为已 Root 的 ARM64 Android 设备部署原生 Docker 守护进程与 CLI 工具链，内置服务管理脚本与 Unix Socket 运行时。",
+  "seo": {
+    "title": "dockerd Magisk 模块下载与容器配置指南 | Magisk Hub",
+    "description": "下载适用 ARM64 设备的 dockerd 模块，支持 Magisk 与 KernelSU。在定制内核的 Android 上运行原生 Docker 守护进程、管理容器及配置环境变量。"
+  },
+  "searchAliases": [
+    "dockerd Magisk 模块下载",
+    "Android Root 运行原生 Docker",
+    "手机运行 Docker 容器 ARM64",
+    "KernelSU dockerd 配置教程",
+    "安卓支持 Docker 魔改内核要求"
+  ]
+}

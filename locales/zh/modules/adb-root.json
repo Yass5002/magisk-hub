@@ -1,0 +1,15 @@
+{
+  "id": "adb-root",
+  "displayName": "adb_root (ADB Root 守护进程模块)",
+  "description": "专为 Android 9/10 打造的 Magisk 开发调试模块，通过替换修补版 AOSP adbd 二进制文件实现直接以 Root 权限运行 adb root 并免 USB 授权验证。",
+  "seo": {
+    "title": "adb_root 模块下载与使用指南 (Magisk 开发调试) | Magisk Hub",
+    "description": "下载 adb_root Magisk 模块，专为 Android 9 与 Android 10 设备设计。无系统分区替换修补版 adbd，解锁 adb root、adb remount 与免 RSA 密钥确认调试。"
+  },
+  "searchAliases": [
+    "adb_root Magisk 模块下载",
+    "安卓正式版开启 adb root",
+    "adb remount 解锁 Root 模块",
+    "Android 10 免授权 ADB 调试"
+  ]
+}

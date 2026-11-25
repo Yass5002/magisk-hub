@@ -1,0 +1,24 @@
+---
+import CategoryDetailView from '../../../views/CategoryDetailView.astro';
+import { CATEGORIES, getAllModules, type CategoryInfo, type ModuleData } from '../../../lib/modules';
+
+export async function getStaticPaths() {
+  const allModules = getAllModules('zh');
+  return Object.values(CATEGORIES).map(cat => {
+    const modules = allModules.filter(m => m.category === cat.id);
+    return {
+      params: { category: cat.id },
+      props: { category: cat, modules },
+    };
+  });
+}
+
+export interface Props {
+  category: CategoryInfo;
+  modules: ModuleData[];
+}
+
+const { category, modules } = Astro.props;
+---
+
+<CategoryDetailView category={category} modules={modules} locale="zh" />

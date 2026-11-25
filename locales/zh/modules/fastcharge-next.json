@@ -1,0 +1,16 @@
+{
+  "id": "fastcharge-next",
+  "displayName": "FastCharge Next",
+  "description": "智能解锁内核充电电流限制与温控降流阈值的快充优化模块，在硬件安全边界内提升 USB-PD 及原装快充功率表现。",
+  "seo": {
+    "title": "FastCharge Next 快充优化模块下载与原理指南 | Magisk Hub",
+    "description": "下载 FastCharge Next 快充加速模块，支持 Magisk、KernelSU 与 APatch。通过安全调整内核 power_supply 电流上限与温控阶梯，提升日常快充速度。"
+  },
+  "searchAliases": [
+    "FastCharge Next 下载",
+    "Magisk 快充解锁模块",
+    "突破充电限流 Root",
+    "安卓温控降流解除",
+    "KernelSU 快充优化"
+  ]
+}

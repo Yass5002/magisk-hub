@@ -1,0 +1,16 @@
+{
+  "id": "bcr",
+  "displayName": "BCR (Basic Call Recorder 通话录音)",
+  "description": "由 chenxiaolong 开发的零依赖开源通话录音模块，通过系统特权直接从 Android 音频 HAL 捕获双向无损语音流，支持 FLAC、Opus、AAC 与 WAV 格式纯本地离线录制。",
+  "seo": {
+    "title": "BCR (Basic Call Recorder) 通话录音模块下载与配置 | Magisk Hub",
+    "description": "下载开源无损通话录音模块 BCR，支持 Magisk 与 KernelSU。直接从音频 HAL 捕获双向高清语音流，支持 FLAC、Opus 与 AAC 离线本地录制。"
+  },
+  "searchAliases": [
+    "BCR 通话录音模块下载",
+    "Basic Call Recorder Magisk",
+    "Android 双向无损通话录音 Root",
+    "chenxiaolong BCR 配置指南",
+    "KernelSU 通话内录模块"
+  ]
+}

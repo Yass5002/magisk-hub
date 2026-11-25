@@ -1,0 +1,16 @@
+{
+  "id": "canta",
+  "displayName": "Canta (免 Root 系统应用精简)",
+  "description": "由 samolego 开发的开源系统应用精简工具，支持基于 Shizuku 免 Root（或搭配 Magisk/KernelSU）以用户 0 身份安全卸载预装应用，集成 UAD 安全分级清单并支持随时恢复。",
+  "seo": {
+    "title": "Canta 免 Root 精简系统应用工具下载与使用指南 | Magisk Hub",
+    "description": "下载 Canta 系统应用精简工具，支持 Shizuku 免 Root 及 Magisk、KernelSU、APatch 环境。结合 UAD 安全分级清单，安全卸载预装应用并支持随时恢复。"
+  },
+  "searchAliases": [
+    "Canta 免 Root 卸载系统应用",
+    "Canta Shizuku 下载使用教程",
+    "安卓停用卸载预装软件工具",
+    "UAD 系统精简安全清单工具",
+    "cmd package install-existing 恢复应用"
+  ]
+}

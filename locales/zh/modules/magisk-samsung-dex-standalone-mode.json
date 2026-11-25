@@ -1,0 +1,16 @@
+{
+  "id": "magisk-samsung-dex-standalone-mode",
+  "displayName": "Samsung DeX Standalone Mode (三星手机本机独立 DeX)",
+  "description": "无侵入式修改 floating_feature.xml 配置，使三星 Galaxy 手机无需外接显示器即可直接在手机屏幕上运行 Samsung DeX 桌面模式。",
+  "seo": {
+    "title": "三星手机本机开启 DeX 桌面模式模块下载与指南 | Magisk Hub",
+    "description": "下载 magisk-samsung-dex-standalone-mode 模块，支持 Magisk 与 KernelSU。无需外接显示器即可在三星 Galaxy 手机屏幕直接启动独立 DeX 模式。"
+  },
+  "searchAliases": [
+    "三星手机本机开启 DeX 模式",
+    "Samsung DeX Standalone Mode 模块",
+    "One UI 手机屏幕运行 DeX",
+    "floating_feature.xml 修改 DeX",
+    "三星桌面模式 Magisk 模块"
+  ]
+}

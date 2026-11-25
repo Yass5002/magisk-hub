@@ -1,0 +1,16 @@
+{
+  "id": "magisk-tailscaled",
+  "displayName": "Magisk Tailscaled",
+  "description": "面向 Root Android 设备的 Tailscale 守护进程模块，使用用户态网络模式让设备开机自动加入 Tailscale 组网。",
+  "seo": {
+    "title": "Magisk Tailscaled 下载与组网配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Magisk Tailscaled 模块，支持 Magisk 与 KernelSU。提供 tailscaled 用户态组网守护进程、登录命令说明及与 Android VPN 共存的排查指南。"
+  },
+  "searchAliases": [
+    "Magisk Tailscaled 下载",
+    "Android Root 运行 Tailscale",
+    "Tailscale 不占 VPN 槽位",
+    "tailscaled Magisk KernelSU 模块",
+    "Tailscale 用户态组网安卓"
+  ]
+}

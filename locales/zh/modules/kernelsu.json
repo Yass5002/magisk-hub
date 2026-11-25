@@ -1,0 +1,16 @@
+{
+  "id": "kernelsu",
+  "displayName": "KernelSU",
+  "description": "由 weishu (tiann) 打造的 Android 内核级 Root 方案，运行于 Ring 0 内核空间，支持按 UID 授权、App Profile 隔离与 OverlayFS 无侵入挂载。",
+  "seo": {
+    "title": "KernelSU 下载与 GKI 刷入配置指南 | Magisk Hub",
+    "description": "下载官方 KernelSU 管理器与 GKI 刷机教程。直接在 Linux 内核空间实现高隐蔽性 Root 授权、App Profile 沙盒隔离与 OverlayFS 模块挂载，附安全模式救砖指南。"
+  },
+  "searchAliases": [
+    "KernelSU 下载",
+    "KernelSU GKI 刷入教程",
+    "KernelSU 和 Magisk 对比",
+    "KernelSU 隐藏 Root",
+    "KernelSU 模块安全模式"
+  ]
+}

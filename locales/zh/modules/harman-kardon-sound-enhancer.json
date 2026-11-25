@@ -1,0 +1,16 @@
+{
+  "id": "harman-kardon-sound-enhancer",
+  "displayName": "Harman Kardon Sound Enhancement（哈曼卡顿音效与杜比驱动）",
+  "description": "以无系统分区修改（Systemless）方式移植小米 10S 哈曼卡顿音频 HAL 驱动、定制 Dolby Atmos 配置与 MiSound DSP 音效增强套件。",
+  "seo": {
+    "title": "Harman Kardon 哈曼卡顿音效与杜比驱动模块下载指南 | Magisk Hub",
+    "description": "下载 Harman Kardon 哈曼卡顿音效与杜比驱动模块，支持 Magisk、KernelSU 与 APatch。移植小米 10S 原生哈曼金耳朵声学调校、双扬声场平衡与 Dolby Atmos 均衡器，适配高通骁龙机型。"
+  },
+  "searchAliases": [
+    "哈曼卡顿音效 Magisk 模块",
+    "小米 10S 哈曼音效移植",
+    "Harman Kardon 杜比驱动模块",
+    "MiSound 音效增强模块",
+    "澎湃 OS 哈曼卡顿音效开启"
+  ]
+}

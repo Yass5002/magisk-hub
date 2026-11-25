@@ -1,0 +1,16 @@
+{
+  "id": "battery-health-query",
+  "displayName": "电池健康度与循环次数查询 (Battery Health Query)",
+  "description": "轻量级电池诊断守护模块，通过读取 Linux power_supply sysfs 硬件节点计算真实容量保持率、充电循环次数与电池健康度。",
+  "seo": {
+    "title": "电池健康度与循环次数查询 Magisk 模块下载与指南 | Magisk Hub",
+    "description": "下载电池健康度查询模块，支持 Magisk、KernelSU 与 APatch。直接读取内核 sysfs 电池健康寄存器与设计容量，在管理器界面实时显示真实损耗与循环次数。"
+  },
+  "searchAliases": [
+    "Magisk 电池健康度查询",
+    "Root 查看电池循环次数",
+    "高通 SOH 电池寿命检测",
+    "电池真实容量查询模块",
+    "KernelSU 电池健康监测"
+  ]
+}

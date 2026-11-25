@@ -1,0 +1,16 @@
+{
+  "id": "charging-bypass-magisk",
+  "displayName": "Charging Bypass (亮屏自动旁路断充模块)",
+  "description": "基于屏幕亮灭状态的硬件级充电控制模块，亮屏时自动暂停电池充电并由外部供电，息屏后自动恢复快充，有效缓解边充边玩导致的发热降频。",
+  "seo": {
+    "title": "Charging Bypass 亮屏断充模块下载与使用指南 | Magisk Hub",
+    "description": "下载最新版 Charging Bypass Magisk 模块，兼容 Magisk 与 KernelSU。亮屏自动切断电芯充电电流实现游戏旁路供电，息屏立即恢复标准快充并记录日志。"
+  },
+  "searchAliases": [
+    "Charging Bypass 模块下载",
+    "Magisk 亮屏旁路供电",
+    "游戏边充边玩断充模块",
+    "Android 14 15 16 充电直通",
+    "KernelSU 旁路充电控制"
+  ]
+}

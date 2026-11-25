@@ -1,0 +1,16 @@
+{
+  "id": "frosty",
+  "displayName": "Frosty",
+  "description": "功能完善的省电与 Google Play 服务（GMS）优化模块，支持通过 WebUI 分模块冻结 GMS 后台、强化深度 Doze 与内核内存调优。",
+  "seo": {
+    "title": "Frosty 谷歌服务冻结与深度 Doze 省电模块下载 | Magisk Hub",
+    "description": "下载 Frosty 省电优化模块，支持 Magisk 与 KernelSU。提供分门别类的 Google Play 服务组件冻结、深度 Doze 休眠强化与 WebUI 内存内核调优。"
+  },
+  "searchAliases": [
+    "Frosty 模块下载",
+    "Frosty 谷歌服务冻结",
+    "Drsexo Frosty",
+    "GMS 省电与深度休眠",
+    "KernelSU 省电优化模块"
+  ]
+}

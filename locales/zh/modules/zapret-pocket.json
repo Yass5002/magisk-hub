@@ -1,0 +1,16 @@
+{
+  "id": "zapret-pocket",
+  "displayName": "zapret Pocket (Android DPI 绕过模块)",
+  "description": "面向 Root Android 设备的 zapret 移植模块，基于 nfqws 在本机实现数据包乱序、SNI 分片与伪造 TLS 握手，无需外接 VPN 即可绕过 DPI 审查与限速。",
+  "seo": {
+    "title": "zapret Pocket 模块下载与 DPI 绕过配置指南 | Magisk Hub",
+    "description": "下载最新版 zapret Pocket 模块，支持 Magisk、KernelSU 与 APatch。无需外部代理节点，通过 nfqws 在本地实现 SNI 分片与数据包乱序以绕过网络 DPI 封锁。"
+  },
+  "searchAliases": [
+    "zapret pocket 下载",
+    "Android Root 绕过 DPI",
+    "nfqws Magisk 模块",
+    "免 VPN 绕过 SNI 阻断",
+    "zapret 安卓版配置"
+  ]
+}

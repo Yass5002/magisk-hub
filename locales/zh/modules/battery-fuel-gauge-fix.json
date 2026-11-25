@@ -1,0 +1,16 @@
+{
+  "id": "battery-fuel-gauge-fix",
+  "displayName": "Battery Fuel Gauge Fix (高通 BMS 电量计校准)",
+  "description": "读取高通内核 BMS 库仑计硬件寄存器并实时同步至 Android BatteryService，消除状态栏电量显示漂移与跳电问题。",
+  "seo": {
+    "title": "Battery Fuel Gauge Fix 电量计校准模块下载与指南 | Magisk Hub",
+    "description": "下载 Battery Fuel Gauge Fix 电量校准模块，支持 Magisk、KernelSU 与 APatch。直接读取高通 BMS 硬件寄存器同步系统电量，解决电量虚高与突然关机问题。"
+  },
+  "searchAliases": [
+    "Magisk 电量校准模块",
+    "高通 BMS 电量计修复",
+    "Android 电量跳电修复",
+    "Battery Fuel Gauge Fix 下载",
+    "Root 电池电量不准修复"
+  ]
+}

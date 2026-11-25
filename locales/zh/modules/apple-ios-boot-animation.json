@@ -1,0 +1,16 @@
+{
+  "id": "apple-ios-boot-animation",
+  "displayName": "Apple iOS 经典极简开机动画 (iOS Boot Animation)",
+  "description": "无系统分区修改的 Apple iOS 风格开机动画模块，在纯黑 OLED 背景上呈现经典白色苹果标志与平滑水平启动进度条。",
+  "seo": {
+    "title": "Apple iOS 经典开机动画 Magisk 模块下载与效果指南 | Magisk Hub",
+    "description": "下载 Apple iOS 经典开机动画模块，支持 Magisk、KernelSU 与 APatch。采用纯黑 OLED 省电底色与高分辨率苹果图标进度条，轻量化打包不拖慢开机速度。"
+  },
+  "searchAliases": [
+    "Magisk 苹果开机动画",
+    "Android 仿 iOS 开机动画",
+    "OLED 纯黑苹果开机动画",
+    "KernelSU 开机动画模块",
+    "bootanimation iOS 下载"
+  ]
+}

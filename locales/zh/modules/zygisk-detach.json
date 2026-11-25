@@ -1,0 +1,16 @@
+{
+  "id": "zygisk-detach",
+  "displayName": "zygisk-detach (Play 商店应用解绑)",
+  "description": "基于 Zygisk 与 Binder IPC 拦截技术的应用解绑模块，防止 Google Play 商店自动更新或覆盖已修改的应用。",
+  "seo": {
+    "title": "zygisk-detach 模块下载与 Play 商店解绑教程 | Magisk Hub",
+    "description": "下载 zygisk-detach 模块，兼容 Magisk 与 KernelSU。通过动态 Binder 挂钩将特定应用从 Google Play 商店剥离，彻底阻止自动更新覆盖修改版客户端。"
+  },
+  "searchAliases": [
+    "zygisk-detach 下载",
+    "Play 商店阻止更新",
+    "Google Play 应用解绑",
+    "YouTube ReVanced 防自动更新",
+    "Magisk 隐藏应用更新"
+  ]
+}

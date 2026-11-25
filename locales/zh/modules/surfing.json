@@ -1,0 +1,16 @@
+{
+  "id": "surfing",
+  "displayName": "Surfing (多内核透明代理网关)",
+  "description": "兼容 Magisk 与 KernelSU 的多内核透明代理模块，支持 Clash/mihomo、sing-box、Xray 与 Hysteria 及 TPROXY/TUN 路由。",
+  "seo": {
+    "title": "Surfing 模块下载与 Clash/mihomo 透明代理配置指南 | Magisk Hub",
+    "description": "下载 Surfing 透明代理模块，支持 Magisk、KernelSU 与 APatch。兼容 Clash/mihomo、sing-box、Xray 与 Hysteria 内核，支持按 Wi-Fi 与应用分流控制。"
+  },
+  "searchAliases": [
+    "Surfing Magisk 模块下载",
+    "Clash mihomo 透明代理模块",
+    "Surfing box_bll 配置教程",
+    "SurfingTile 代理控制面板",
+    "KernelSU 透明代理模块"
+  ]
+}

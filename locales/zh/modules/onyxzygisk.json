@@ -1,0 +1,16 @@
+{
+  "id": "onyxzygisk",
+  "displayName": "OnyxZygisk",
+  "description": "不依赖内核补丁的独立 ptrace Zygisk 运行时，支持免重启热插拔模块、FN 功能节点扩展与内置离线 WebUI 控制台。",
+  "seo": {
+    "title": "OnyxZygisk 模块下载与免重启热插拔使用指南 | Magisk Hub",
+    "description": "下载 OnyxZygisk 通用 Zygisk 运行时，支持 Magisk、KernelSU 与 APatch。提供 ptrace 注入、模块免重启热插拔、FN 扩展及本地 WebUI 管理界面。"
+  },
+  "searchAliases": [
+    "OnyxZygisk 模块下载",
+    "Zygisk 免重启热插拔模块",
+    "OnyxZygisk WebUI 使用教程",
+    "APatch 晚加载 Zygisk 模块",
+    "OnyxZygisk FN 模块是什么"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "net-switch",
+  "displayName": "Net Switch",
+  "description": "基于原生 Linux iptables 的独立应用联网隔离防火墙模块，无需启动耗电的本地 VPN 服务即可按应用控制网络访问权限。",
+  "seo": {
+    "title": "Net Switch 下载与配置指南（Root 应用防火墙模块）| Magisk Hub",
+    "description": "下载 Net Switch 模块，支持 Magisk、KernelSU 与 APatch。基于 Linux iptables UID 过滤实现单应用断网隔离，不占用 VPN 通道且自带现代 WebUI 控制面板。"
+  },
+  "searchAliases": [
+    "Net Switch 模块下载",
+    "Magisk 应用联网控制防火墙",
+    "Root 免 VPN 禁止应用联网",
+    "iptables 按应用断网模块",
+    "Net Switch WebUI 配置"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "supl-replacer",
+  "displayName": "supl-replacer (A-GPS 隐私代理替换)",
+  "description": "无侵入式替换 gps.conf 中默认的 Google SUPL 服务器为 GrapheneOS 隐私代理，在保持秒级卫星定位速度的同时防止 SIM 卡 IMSI 与基站信息泄露。",
+  "seo": {
+    "title": "supl-replacer 下载与 A-GPS 定位隐私保护指南 | Magisk Hub",
+    "description": "下载 supl-replacer Magisk 模块，将 gps.conf 中的 Google SUPL 服务器替换为 GrapheneOS 隐私代理，阻止定位时泄露 IMSI 标识并保留快速搜星体验。"
+  },
+  "searchAliases": [
+    "supl-replacer 下载",
+    "Magisk 替换 gps.conf SUPL",
+    "A-GPS 防止 IMSI 泄露",
+    "GrapheneOS SUPL 代理",
+    "Android 定位隐私模块"
+  ]
+}

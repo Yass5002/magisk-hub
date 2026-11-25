@@ -1,0 +1,16 @@
+{
+  "id": "viperfx-re",
+  "displayName": "ViPERFX_RE (ViPER4Android 蝰蛇音效重制版)",
+  "description": "专为 Android 14 及以上 64 位系统重构的 ViPER4Android FX 音频 DSP 模块，无侵入提供脉冲反馈卷积、DDC 耳机校准与多段均衡器。",
+  "seo": {
+    "title": "ViPERFX_RE 下载与新版本蝰蛇音效配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 ViPERFX_RE 蝰蛇音效重制版，支持 Magisk、KernelSU 与 APatch。原生 64 位音频驱动完美适配新版 Android 架构，提供卷积脉冲与耳机调音功能。"
+  },
+  "searchAliases": [
+    "ViPERFX_RE 下载",
+    "安卓 14 15 蝰蛇音效模块",
+    "ViPER4Android 64位驱动修复",
+    "Magisk 音频 DSP 调音",
+    "蝰蛇音效脉冲反馈 IRS"
+  ]
+}

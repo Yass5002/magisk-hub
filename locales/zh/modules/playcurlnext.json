@@ -1,0 +1,16 @@
+{
+  "id": "playcurlnext",
+  "displayName": "playcurlNEXT",
+  "description": "轻量级后台自动化模块，每次开机及按设定周期自动从社区拉取最新可用设备指纹并写入 Play Integrity Fix 或 Fork。",
+  "seo": {
+    "title": "playcurlNEXT 模块下载与 PIF 指纹自动更新指南 | Magisk Hub",
+    "description": "下载 playcurlNEXT 自动更新模块，兼容 Magisk 与 KernelSU。可定时拉取未封禁设备指纹并自动更新 pif.json，持续维持 Play Integrity 认证有效。"
+  },
+  "searchAliases": [
+    "playcurlNEXT 模块下载",
+    "PIF 指纹自动更新模块",
+    "pif.json 定时拉取脚本",
+    "Play Integrity 失效自动修复",
+    "playcurlNEXT minutes.txt 设置"
+  ]
+}

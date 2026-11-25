@@ -1,0 +1,16 @@
+{
+  "id": "miui-display-refresh-locker",
+  "displayName": "MIUI Display Refresh Rate Locker (小米全局高刷锁定)",
+  "description": "面向小米 MIUI 与澎湃 OS 的全局高刷新率锁定模块，通过屏蔽 SmartFPS 动态侦测与 Joyose 降频策略，全场景稳定 120Hz/144Hz 刷新率。",
+  "seo": {
+    "title": "MIUI 全局高刷锁定模块下载与 120Hz/144Hz 配置 | Magisk Hub",
+    "description": "下载最新版小米全局高刷锁定模块，支持 Magisk、KernelSU 与 APatch。屏蔽 MIUI 与澎湃 OS 的 SmartFPS 及 Joyose 动态降频，全场景稳定 120Hz/144Hz 刷新率。"
+  },
+  "searchAliases": [
+    "MIUI 全局 120Hz 高刷模块",
+    "澎湃 OS 锁高刷模块下载",
+    "关闭 MIUI SmartFPS 动态降频",
+    "小米视频 60Hz 降频解决",
+    "Joyose 锁帧高刷 Magisk"
+  ]
+}

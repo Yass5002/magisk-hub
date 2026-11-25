@@ -1,0 +1,15 @@
+{
+  "id": "termuxrootmods",
+  "displayName": "TermuxRootMods (Termux Root 终端增强)",
+  "description": "由 rompelhd 开发的 Magisk 模块，通过无侵入式补丁接管 mkshrc 并借助原生 C++ 启动器，全面优化已 Root 设备的 Termux su 终端环境。",
+  "seo": {
+    "title": "TermuxRootMods 下载与配置指南 (Magisk) | Magisk Hub",
+    "description": "下载 TermuxRootMods Magisk 模块，修复 Termux 执行 su 后环境变量、PATH 路径与终端样式丢失问题，为已 Root 安卓设备提供原生级 Linux Root Shell 体验。"
+  },
+  "searchAliases": [
+    "TermuxRootMods 模块下载",
+    "Termux su 环境变量修复",
+    "Termux Root 终端增强",
+    "mkshrc Root Shell 配置"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ttf-twemoji",
+  "displayName": "Twemoji Replacer (ttf-twemoji 表情替换)",
+  "description": "通过 Magisk 无侵入替换系统默认 NotoColorEmoji 字体，在全系统应用、输入法与通知栏启用开源 Twitter Twemoji 彩色表情包。",
+  "seo": {
+    "title": "ttf-twemoji 下载与 Android 表情包替换指南 (Magisk) | Magisk Hub",
+    "description": "下载 ttf-twemoji Magisk 模块，支持无系统分区修改替换 Android 默认 Google 表情为 Twitter Twemoji 彩色字体，兼容高分屏渲染与 OTA 更新。"
+  },
+  "searchAliases": [
+    "ttf-twemoji 模块下载",
+    "Magisk 替换 Twitter 表情",
+    "安卓系统换 Twemoji 字体",
+    "NotoColorEmoji 替换模块",
+    "Root 更换系统 Emoji"
+  ]
+}

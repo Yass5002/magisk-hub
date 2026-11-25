@@ -1,0 +1,16 @@
+{
+  "id": "google-mobile-services-core",
+  "displayName": "Google Mobile Services Core Suite (GMS 核心套件)",
+  "description": "无系统分区修改（Systemless）的 Google 移动服务（GMS）与 Play 商店框架套件，消除国行固件区域限制，恢复定位历史记录与完整生态功能。",
+  "seo": {
+    "title": "GMS 核心套件 (Google Play 服务) 下载与配置 | Magisk Hub",
+    "description": "下载无系统分区修改的 GMS 核心套件，支持 Magisk、KernelSU 与 APatch。一键部署谷歌服务框架，解除国行固件区域限制并修复商店 404 下载报错。"
+  },
+  "searchAliases": [
+    "GMS 核心套件下载",
+    "Magisk 谷歌服务框架模块",
+    "国行解锁谷歌位置记录",
+    "Google Play 商店 404 修复",
+    "Systemless GMS 模块"
+  ]
+}

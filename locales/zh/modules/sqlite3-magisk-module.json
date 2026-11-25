@@ -1,0 +1,16 @@
+{
+  "id": "sqlite3-magisk-module",
+  "displayName": "sqlite3-magisk-module (全架构 SQLite3 CLI)",
+  "description": "为 ARM、ARM64、x86 与 x86_64 架构 Android 设备及模拟器提供静态编译的 sqlite3 命令行工具，用于直接查询与维护系统数据库。",
+  "seo": {
+    "title": "sqlite3 Magisk 模块下载与数据库调试指南 | Magisk Hub",
+    "description": "下载全架构静态编译版 sqlite3 模块，支持 Magisk、KernelSU、APatch 与模拟器环境。恢复缺失的 sqlite3 命令行工具，直接在终端查询与修复应用数据库。"
+  },
+  "searchAliases": [
+    "sqlite3 Magisk 模块下载",
+    "Android 缺少 sqlite3 命令修复",
+    "Termux Root 查看修改应用 db 数据库",
+    "雷电模拟器 Waydroid sqlite3 工具",
+    "静态编译 sqlite3 全架构支持"
+  ]
+}

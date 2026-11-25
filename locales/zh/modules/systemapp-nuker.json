@@ -1,0 +1,16 @@
+{
+  "id": "systemapp-nuker",
+  "displayName": "System App Nuker (SAN 系统应用精简)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的无侵入式系统应用精简模块，内置 WebUI 界面、OverlayFS 白名单隐藏机制与开机防变砖保护。",
+  "seo": {
+    "title": "System App Nuker 下载与系统精简配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 System App Nuker (SAN)，支持 Magisk、KernelSU 与 APatch。通过 WebUI 与 OverlayFS 目录隐藏技术无损精简系统预装应用，自带卡开机自动恢复保护。"
+  },
+  "searchAliases": [
+    "System App Nuker 下载",
+    "SAN 系统精简模块",
+    "KernelSU WebUI 精简预装",
+    "OverlayFS 系统应用隐藏",
+    "Magisk 无损删系统应用"
+  ]
+}

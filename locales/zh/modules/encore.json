@@ -1,0 +1,16 @@
+{
+  "id": "encore",
+  "displayName": "Encore Tweaks",
+  "description": "智能动态性能与功耗调度模块，在游戏场景自动提升帧率表现，日常使用时降低功耗延长续航，支持 WebUI 管理。",
+  "seo": {
+    "title": "Encore Tweaks 模块下载与 WebUI 配置指南 | Magisk Hub",
+    "description": "下载 Encore Tweaks 性能调度模块，支持 Magisk、KernelSU 与 APatch。提供游戏与省电模式切换、设备温控缓解及 WebUI 实时调校功能。"
+  },
+  "searchAliases": [
+    "Encore Tweaks 下载",
+    "Encore 游戏调度模块",
+    "Rem01Gaming Encore",
+    "Magisk 游戏帧率优化",
+    "Encore WebUI 配置"
+  ]
+}

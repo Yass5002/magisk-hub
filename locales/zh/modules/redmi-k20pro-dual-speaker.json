@@ -1,0 +1,16 @@
+{
+  "id": "redmi-k20pro-dual-speaker",
+  "displayName": "Redmi K20 Pro Stereo Dual Speaker（K20 Pro 双扬声器与哈曼调音）",
+  "description": "专为 Redmi K20 Pro / 小米 9T Pro（raphael）打造的声学改造模块，开启听筒立体声双扬声器、25 级精细音量调节与哈曼卡顿音效配置。",
+  "seo": {
+    "title": "Redmi K20 Pro 双扬声器与哈曼调音模块下载指南 | Magisk Hub",
+    "description": "下载 Redmi K20 Pro 立体声双扬声器与哈曼卡顿音效模块，支持 Magisk、KernelSU 与 APatch。适配骁龙 855 与 WCD9340 编解码器，解锁听筒双扬、25 级音量及空间音频控制。"
+  },
+  "searchAliases": [
+    "Redmi K20 Pro 双扬声器模块",
+    "K20 Pro 哈曼卡顿音效",
+    "K20 Pro 25 级音量调节",
+    "raphael 立体声双扬 Magisk",
+    "小米 9T Pro 听筒双扬声器"
+  ]
+}

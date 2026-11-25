@@ -1,0 +1,16 @@
+{
+  "id": "freezeit-background-optimizer",
+  "displayName": "FreezeIt 墓碑后台优化 (FreezeIt Background Optimizer)",
+  "description": "基于 Linux 内核 cgroups 与进程 Freezer 子系统的智能后台冻结守护进程，彻底消除后台耗电与唤醒锁（Wakelock）。",
+  "seo": {
+    "title": "FreezeIt 墓碑后台冻结 Magisk 模块下载与白名单配置 | Magisk Hub",
+    "description": "下载 FreezeIt 后台优化模块，兼容 Magisk、KernelSU 与 APatch。利用内核 cgroups Freezer 暂停后台进程且保留内存状态，兼顾零待机耗电与秒级恢复。"
+  },
+  "searchAliases": [
+    "FreezeIt 墓碑模块",
+    "Magisk 后台冻结墓碑",
+    "Android Root 墓碑机制",
+    "KernelSU 冻结后台省电",
+    "FreezeIt 白名单配置"
+  ]
+}

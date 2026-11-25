@@ -1,0 +1,16 @@
+{
+  "id": "quantitative-charge-cutoff",
+  "displayName": "BH 定量断充与电池保护 (Quantitative Charge Cutoff)",
+  "description": "自动化内核级充电阈值控制器，支持自定义停充上限（如 80%）与复充下限（如 70%），大幅延长锂电池循环寿命。",
+  "seo": {
+    "title": "BH 定量断充电池保护 Magisk 模块下载与阈值配置 | Magisk Hub",
+    "description": "下载 BH 定量断充保护模块，兼容 Magisk、KernelSU 与 APatch。支持自定义高电量停充与低电量复充阈值，通过内核电源开关避免高电压老化并实时回显状态。"
+  },
+  "searchAliases": [
+    "BH 定量断充模块",
+    "Magisk 限制充电 80%",
+    "Android Root 定量断充",
+    "电池保护停充模块",
+    "KernelSU 充电阈值控制"
+  ]
+}

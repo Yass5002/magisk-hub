@@ -1,0 +1,16 @@
+{
+  "id": "specter",
+  "displayName": "Specter",
+  "description": "dpejoh 打造的轻量级密钥证明与隐藏管理套件，全面重写自 Yurikey，支持自动监听目标应用、多源 Keybox 管理及 WebUI 可视化配置。",
+  "seo": {
+    "title": "Specter 模块下载与配置指南 (Magisk/KernelSU) | Magisk Hub",
+    "description": "下载 Specter 隐藏与完整性认证管理模块，支持 Magisk、KernelSU 与 APatch。提供 inotify 自动目标识别、Keybox 轮换及 WebUI 面板配置教程。"
+  },
+  "searchAliases": [
+    "Specter 模块下载",
+    "dpejoh Specter",
+    "Specter Play Integrity 过检测",
+    "Yurikey 替代模块",
+    "Specter WebUI 配置"
+  ]
+}

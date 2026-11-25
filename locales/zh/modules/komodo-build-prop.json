@@ -1,0 +1,16 @@
+{
+  "id": "komodo-build-prop",
+  "displayName": "Komodo-Build-Prop (Pixel 9 Pro XL 伪装)",
+  "description": "适用于 Magisk 与 KernelSU 的无侵入式机型伪装模块，通过跨分区系统属性与凭证同步将设备识别为 Google Pixel 9 Pro XL。",
+  "seo": {
+    "title": "Komodo-Build-Prop 模块下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Komodo-Build-Prop 模块，兼容 Magisk 与 KernelSU。支持多分区 Pixel 9 Pro XL 设备指纹伪装、PIF 与 TrickyStore 联动及类原生 ROM 特征清理。"
+  },
+  "searchAliases": [
+    "Komodo Build Prop 模块下载",
+    "伪装 Pixel 9 Pro XL 模块",
+    "安卓机型伪装 Play Integrity",
+    "Magisk 谷歌 Pixel 特性解锁",
+    "类原生 ROM 指纹伪装"
+  ]
+}

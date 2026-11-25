@@ -1,0 +1,16 @@
+{
+  "id": "revanced-extended",
+  "displayName": "ReVanced Extended (Morphe 无侵入增强模块)",
+  "description": "自动化部署并无系统分区挂载 ReVanced Extended（Morphe）版 YouTube 与 YouTube Music 的 Root 模块，免 MicroG 直接接入谷歌服务。",
+  "seo": {
+    "title": "ReVanced Extended 模块下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 ReVanced Extended (Morphe) 模块，支持 Magisk 与 KernelSU。无侵入挂载去广告版 YouTube 与 YouTube Music，免装 MicroG 并支持后台与画中画播放。"
+  },
+  "searchAliases": [
+    "ReVanced Extended Magisk 模块下载",
+    "YouTube 去广告 Root 模块",
+    "YouTube Music 增强版 Magisk",
+    "Morphe YouTube 模块配置",
+    "免 MicroG YouTube Root"
+  ]
+}

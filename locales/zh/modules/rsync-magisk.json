@@ -1,0 +1,16 @@
+{
+  "id": "rsync-magisk",
+  "displayName": "rsync-magisk (静态编译 Rsync 工具)",
+  "description": "通过无系统分区修改方式向 /system/bin 注入静态编译的 rsync 二进制文件，实现高效率增量文件备份与远程 NAS/SSH 同步。",
+  "seo": {
+    "title": "rsync-magisk 模块下载与增量同步配置指南 | Magisk Hub",
+    "description": "下载 rsync-magisk 模块，为已 Root 的 Android 设备免修改系统分区部署静态编译 rsync 命令，轻松实现局域网 NAS 照片增量备份与自动化定时同步。"
+  },
+  "searchAliases": [
+    "Android Root 安装 rsync",
+    "Magisk rsync 模块下载",
+    "手机增量备份到 NAS",
+    "静态编译 rsync 二进制",
+    "rsync-magisk 使用教程"
+  ]
+}

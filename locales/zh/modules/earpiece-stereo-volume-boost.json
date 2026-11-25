@@ -1,0 +1,16 @@
+{
+  "id": "earpiece-stereo-volume-boost",
+  "displayName": "Earpiece Stereo & Volume Boost（听筒双扬声器与音量增强）",
+  "description": "通过修改 ALSA 混音路径将前置通话听筒复用为副扬声器，实现单扬声器机型的双声道立体声外放，并同步提升听筒功放与数字音量增益。",
+  "seo": {
+    "title": "Earpiece Stereo 听筒双扬声器音量增强模块下载 | Magisk Hub",
+    "description": "下载 Earpiece Stereo & Volume Boost 模块，支持 Magisk、KernelSU 与 APatch。重配高通 ALSA 混音路径，解锁前置听筒双扬声道并提升外放增益。"
+  },
+  "searchAliases": [
+    "听筒双扬声器 Magisk 模块",
+    "单扬声器改双扬声器",
+    "mixer_paths 音量增强",
+    "听筒声音小放大模块",
+    "Android 双扬声器立体声开启"
+  ]
+}

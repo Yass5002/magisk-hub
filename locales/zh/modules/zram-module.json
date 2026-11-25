@@ -1,0 +1,16 @@
+{
+  "id": "zram-module",
+  "displayName": "ZRAM-Module (自定义 ZRAM 压缩算法)",
+  "description": "适用于 Magisk 与 KernelSU 的 ZRAM 优化模块，可在开机阶段无侵入加载 lz4kd、zstdn 等内核压缩驱动并自定义内存压缩容量。",
+  "seo": {
+    "title": "ZRAM-Module 下载与压缩算法配置 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 ZRAM-Module 模块，兼容 Magisk 与 KernelSU。支持开机动态加载 lz4kd 与 zstdn 等第三方内核压缩模块并自定义 ZRAM 交换分区大小，提升后台留存。"
+  },
+  "searchAliases": [
+    "ZRAM-Module 下载",
+    "Magisk 修改 ZRAM 算法",
+    "lz4kd zstdn 内核压缩模块",
+    "KernelSU 自定义 ZRAM 大小",
+    "Android ZRAM 优化模块"
+  ]
+}

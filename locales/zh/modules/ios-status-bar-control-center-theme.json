@@ -1,0 +1,16 @@
+{
+  "id": "ios-status-bar-control-center-theme",
+  "displayName": "iOS Status Bar & Control Center Theme (仿 iOS 状态栏)",
+  "description": "高还原度仿 iOS 风格状态栏与控制中心主题模块，通过 RRO 覆盖为 ColorOS 与 AOSP 设备引入单排信号格、Wi-Fi 图标与内嵌百分比电池。",
+  "seo": {
+    "title": "仿 iOS 状态栏与控制中心 Magisk 主题模块下载 | Magisk Hub",
+    "description": "下载仿 iOS 状态栏与控制中心主题模块，支持 Magisk、KernelSU 与 APatch。为 ColorOS、OxygenOS 与 AOSP 设备打造高还原度单排信号及内嵌百分比电池图标。"
+  },
+  "searchAliases": [
+    "仿 iOS 状态栏 Magisk 模块",
+    "ColorOS 苹果控制中心主题",
+    "Android 仿 iPhone 电池图标",
+    "高还原 iOS 信号栏模块",
+    "一加 OPPO 状态栏美化模块"
+  ]
+}

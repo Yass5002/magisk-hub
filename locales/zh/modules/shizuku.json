@@ -1,0 +1,16 @@
+{
+  "id": "shizuku",
+  "displayName": "Shizuku",
+  "description": "Rikka 开发的 Android 特权系统 API 代理服务，借助 app_process 与 Binder IPC 让普通应用无需频繁 fork su 进程即可直接调用高权限系统接口。",
+  "seo": {
+    "title": "Shizuku 下载与无线调试激活教程 (免 Root/Root 通用) | Magisk Hub",
+    "description": "下载 Shizuku 并获取完整激活指南，支持免 Root 无线调试与 Magisk、KernelSU、APatch Root 模式。包含 Binder IPC 原理、rish 终端及小米后台保活配置。"
+  },
+  "searchAliases": [
+    "Shizuku 下载",
+    "Shizuku 无线调试配对",
+    "Shizuku 激活教程",
+    "Shizuku rish 终端",
+    "Shizuku 后台掉线怎么办"
+  ]
+}

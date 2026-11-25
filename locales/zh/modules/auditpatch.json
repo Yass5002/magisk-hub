@@ -1,0 +1,16 @@
+{
+  "id": "auditpatch",
+  "displayName": "AuditPatch (内核审计日志脱敏)",
+  "description": "基于 Rust linjector 与 PLT Hook 的原生日志脱敏模块，在不重启 logd 的前提下清除 Android 审计日志中的敏感 Root 上下文。",
+  "seo": {
+    "title": "AuditPatch 下载与审计日志脱敏指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 AuditPatch 模块，支持 Magisk、KernelSU 与 APatch。通过原生 PLT Hook 实时擦除 logd 内核审计日志中的 SELinux 敏感特征，无需 Zygisk。"
+  },
+  "searchAliases": [
+    "AuditPatch 模块下载",
+    "Android 审计日志隐藏 Root",
+    "logd 注入脱敏",
+    "SELinux 审计记录清除",
+    "无 Zygisk 隐藏检测"
+  ]
+}

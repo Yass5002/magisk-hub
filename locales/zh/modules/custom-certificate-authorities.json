@@ -1,0 +1,16 @@
+{
+  "id": "custom-certificate-authorities",
+  "displayName": "Custom Certificate Authorities",
+  "description": "自动将用户证书迁移至系统根证书信任区的 Magisk 模块，支持 DER 自动转 PEM 格式、多用户配置及 Android 14+ APEX Conscrypt 与 BoringSSL 双路径挂载。",
+  "seo": {
+    "title": "Custom Certificate Authorities 下载与证书配置 | Magisk Hub",
+    "description": "下载 Custom Certificate Authorities 模块，适配现代 Android 系统与 Magisk。自动完成 DER 转 PEM 并双路径挂载系统信任区，全面兼容 Conscrypt 与 Flutter。"
+  },
+  "searchAliases": [
+    "Custom Certificate Authorities 下载",
+    "Android 14 系统证书模块",
+    "DER 自动转 PEM 证书",
+    "Flutter 抓包系统根证书",
+    "Conscrypt APEX 证书挂载"
+  ]
+}

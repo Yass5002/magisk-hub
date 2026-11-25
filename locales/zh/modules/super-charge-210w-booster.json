@@ -1,0 +1,16 @@
+{
+  "id": "super-charge-210w-booster",
+  "displayName": "210W 亮屏极限快充模块 (Super Charge 210W Booster)",
+  "description": "重构小米及红米设备厂商温控策略，解除亮屏状态下的充电电流与功率限制（最高支持 210W），并内置 80°C 硬件级过热断充保护。",
+  "seo": {
+    "title": "小米 210W 亮屏快充解锁 Magisk 模块下载与原理解析 | Magisk Hub",
+    "description": "下载 210W 亮屏极限快充模块，支持 Magisk、KernelSU 与 APatch。解除 MIUI 与 HyperOS 亮屏充电降频限制，覆盖多档快充协议并具备 80°C 高温保护。"
+  },
+  "searchAliases": [
+    "小米 210W 亮屏快充模块",
+    "Magisk 解除亮屏充电限流",
+    "MIUI 亮屏快充温控解锁",
+    "红米快充解除温控模块",
+    "HyperOS 亮屏满速快充"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "xtreme-bs",
+  "displayName": "Xtreme Battery Saver (XtremeBS 极限省电)",
+  "description": "事件驱动型 Android Root 电源控制模块，支持按亮屏、息屏、充电与低电量事件精细调节 CPU 核心、应用策略、Doze 与进程优先级。",
+  "seo": {
+    "title": "Xtreme Battery Saver 模块下载与省电配置 | Magisk Hub",
+    "description": "下载 Xtreme Battery Saver (XtremeBS) 模块，兼容 Magisk 与 KernelSU。提供基于事件触发的 CPU 核心、Doze 休眠与后台进程管控方案，附安全模式恢复教程。"
+  },
+  "searchAliases": [
+    "XtremeBS 省电模块",
+    "Xtreme Battery Saver 下载",
+    "Magisk 极限省电模块",
+    "XBSctl 命令行省电",
+    "KernelSU 后台压制省电"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "universal-gms-doze",
+  "displayName": "Universal GMS Doze (谷歌服务省电优化)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的谷歌服务省电模块，将 Google Play 服务纳入 Doze 深度休眠同时保留 FCM 消息推送。",
+  "seo": {
+    "title": "Universal GMS Doze 谷歌服务 Doze 省电模块下载指南 | Magisk Hub",
+    "description": "下载 Universal GMS Doze 模块，支持 Magisk、KernelSU 与 APatch。解除 Google Play 服务强制电池白名单，使其参与 Doze 深度休眠并保留 FCM 推送。"
+  },
+  "searchAliases": [
+    "Universal GMS Doze 下载",
+    "谷歌服务耗电优化 Magisk",
+    "GMS Doze 省电模块",
+    "Google Play 服务加入电池优化",
+    "KernelSU 谷歌省电 WebUI"
+  ]
+}

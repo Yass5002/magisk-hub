@@ -1,0 +1,16 @@
+{
+  "id": "magnetar",
+  "displayName": "MAGNETAR",
+  "description": "内置轻量级机器学习启发式引擎的自适应内核与设备性能优化模块，无需手动切换模式即可动态平衡 CPU、GPU 与内存调度。",
+  "seo": {
+    "title": "MAGNETAR 下载与自适应内核调度配置 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 MAGNETAR 模块，支持 Magisk、KernelSU 与 APatch。内置轻量级机器学习启发式引擎，免配置自适应调校 CPU、GPU 与内存状态，平衡游戏响应与日常续航。"
+  },
+  "searchAliases": [
+    "MAGNETAR 模块下载",
+    "MAGNETAR 自适应调度",
+    "Kyliekyler MAGNETAR",
+    "免配置内核优化模块",
+    "MAGNETAR KernelSU APatch"
+  ]
+}

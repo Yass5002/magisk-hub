@@ -1,0 +1,16 @@
+{
+  "id": "pixelify-next",
+  "displayName": "Pixelify-Next (Pixel 独占特性移植)",
+  "description": "支持 Magisk 与 KernelSU 的无系统分区修改移植模块，可在非 Pixel 设备上启用新一代语音助理（NGA）、Google 相册特权及分应用机型伪装等 Pixel 独占功能。",
+  "seo": {
+    "title": "Pixelify-Next 下载与 Pixel 特性配置指南 | Magisk Hub",
+    "description": "下载 Pixelify-Next 模块，支持 Magisk 与 KernelSU。提供分应用 Zygisk 机型伪装、NGA 语音输入、通话筛选与 Pixel 桌面等独占功能移植与排错指南。"
+  },
+  "searchAliases": [
+    "Pixelify-Next 下载",
+    "Magisk 模拟 Pixel 特性模块",
+    "Google 相册无限空间伪装",
+    "NGA 语音输入 Magisk 模块",
+    "Pixel 启动器移植模块"
+  ]
+}

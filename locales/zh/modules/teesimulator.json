@@ -1,0 +1,16 @@
+{
+  "id": "teesimulator",
+  "displayName": "TEESimulator",
+  "description": "JingMatrix 开发的硬件密钥证明模拟模块，将 AOSP 官方参考 KeyMint 可信应用（kmr-ta）直接嵌入 keystore 守护进程，实现原汁原味的软件态 TEE 认证。",
+  "seo": {
+    "title": "TEESimulator 模块下载与 Keybox 配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 TEESimulator 硬件密钥证明模拟模块，支持 Magisk、KernelSU 与 APatch（64 位设备）。包含 kmr-ta 注入原理、config.json 热更新及 Strong Integrity 配置。"
+  },
+  "searchAliases": [
+    "TEESimulator 下载",
+    "TEESimulator 模块配置",
+    "KeyMint 密钥证明模拟",
+    "Play Integrity 强完整性 Strong",
+    "keybox.xml 配置教程"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "box-for-magisk",
+  "displayName": "box_for_magisk (Box 透明代理套件)",
+  "description": "功能完备的 Android 透明代理平台，借助原生 iptables/nftables 与 cgroup 分流机制调度 Sing-box、Xray、V2Ray 与 Mihomo 核心，无需占用 VPN 槽位。",
+  "seo": {
+    "title": "box_for_magisk 下载与透明代理配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 box_for_magisk 透明代理模块，支持 Magisk、KernelSU 与 APatch。集成 Sing-box、Xray 与 Mihomo 核心，实现内核级 TPROXY 分应用代理与防 DNS 泄露。"
+  },
+  "searchAliases": [
+    "box_for_magisk 模块下载",
+    "Box for Magisk 透明代理教程",
+    "Sing-box Magisk 模块配置",
+    "Mihomo KernelSU 分应用代理",
+    "安卓 Root TPROXY 代理套件"
+  ]
+}

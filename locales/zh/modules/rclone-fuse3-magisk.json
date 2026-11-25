@@ -1,0 +1,16 @@
+{
+  "id": "rclone-fuse3-magisk",
+  "displayName": "rclone-fuse3-magisk (Rclone 云盘挂载)",
+  "description": "集成 Rclone 与 libfuse3 的无侵入式 Magisk 模块，可将 Google Drive、OneDrive、WebDAV 及 S3 等云端存储直接挂载为 Android 本地目录。",
+  "seo": {
+    "title": "Rclone FUSE3 Magisk 模块下载与云盘挂载配置 | Magisk Hub",
+    "description": "下载 Rclone FUSE3 Magisk 模块，借助 libfuse3 将 Google Drive、OneDrive、WebDAV 与 S3 网盘挂载为本地目录，支持开机自动挂载与 Web 管理界面。"
+  },
+  "searchAliases": [
+    "Magisk Rclone 挂载网盘",
+    "Android 挂载 WebDAV 本地目录",
+    "Rclone FUSE3 模块下载",
+    "手机挂载 Google Drive Root",
+    "libfuse3 Magisk 模块"
+  ]
+}

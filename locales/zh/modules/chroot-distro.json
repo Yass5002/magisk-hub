@@ -1,0 +1,16 @@
+{
+  "id": "chroot-distro",
+  "displayName": "chroot-distro (Android 原生 Linux 发行版管理器)",
+  "description": "专为已 Root 的 Android 设备打造的终端工具，可通过原生 chroot 环境直接安装并运行完整的 GNU/Linux 发行版。",
+  "seo": {
+    "title": "chroot-distro 模块下载与 Linux 容器配置指南 | Magisk Hub",
+    "description": "下载 Magisk 版 chroot-distro 模块，免 PRoot 性能损耗直接在 Android 上通过原生 chroot 部署 Debian、Ubuntu、Arch 与 Alpine 等 Linux 发行版。"
+  },
+  "searchAliases": [
+    "chroot-distro Magisk 模块下载",
+    "Android Root 运行 Linux 容器",
+    "手机 chroot 安装 Debian Ubuntu",
+    "chroot-distro 使用配置教程",
+    "替代 proot-distro 原生 chroot"
+  ]
+}

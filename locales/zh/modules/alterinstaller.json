@@ -1,0 +1,16 @@
+{
+  "id": "alterinstaller",
+  "displayName": "AlterInstaller",
+  "description": "由 chenxiaolong 开发的无 Hook Root 工具，在系统早期启动阶段直接修改安装包数据库中的安装来源与更新所有者属性，无需依赖 Zygisk。",
+  "seo": {
+    "title": "AlterInstaller 下载与配置指南（伪装应用安装来源模块）| Magisk Hub",
+    "description": "下载 AlterInstaller 模块，兼容 Magisk 与 KernelSU。无需 Zygisk 即可在开机早期修改 packages.xml 中的应用安装来源与更新所有者，轻松绕过侧载限制并防商店误更新。"
+  },
+  "searchAliases": [
+    "AlterInstaller 模块下载",
+    "伪装应用安装来源为 Google Play",
+    "Android 修改应用更新所有者",
+    "绕过银行应用侧载安装检测",
+    "chenxiaolong AlterInstaller 配置"
+  ]
+}

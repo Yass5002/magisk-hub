@@ -1,0 +1,16 @@
+{
+  "id": "nano-ndk",
+  "displayName": "nano-ndk (Android 静态命令行编辑器)",
+  "description": "由 osm0sis 基于 Android NDK 静态编译的 GNU nano 文本编辑器，自带完整 terminfo 终端配置，支持系统内与 TWRP 救援编辑。",
+  "seo": {
+    "title": "nano-ndk 模块下载与终端文本编辑指南 | Magisk Hub",
+    "description": "下载 osm0sis 编译的 nano-ndk 模块，支持 Magisk、KernelSU、APatch 及 TWRP Recovery。零依赖静态二进制文件搭配完整 terminfo，轻松编辑系统配置。"
+  },
+  "searchAliases": [
+    "nano-ndk Magisk 模块下载",
+    "Android 终端命令行编辑器 nano",
+    "TWRP 恢复模式用 nano 改文件",
+    "osm0sis nano 静态编译版",
+    "手机编辑 build.prop 终端工具"
+  ]
+}

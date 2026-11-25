@@ -1,0 +1,16 @@
+{
+  "id": "realme-gt3-neo5-cpu-limiter",
+  "displayName": "Realme-GT3-neo5-CPU-limiter (真我 GT Neo5 降频省电)",
+  "description": "面向真我 GT3 与 GT Neo 5 的 Magisk/KernelSU 降频省电模块，支持自定义 CPU 频率上限、节能调度与核心离线，延长亮屏续航。",
+  "seo": {
+    "title": "Realme-GT3-neo5-CPU-limiter 降频省电模块下载与配置 | Magisk Hub",
+    "description": "下载适用于 Magisk 与 KernelSU 的 Realme-GT3-neo5-CPU-limiter 模块。支持真我 GT3 与 GT Neo 5 骁龙 8+ 降频、省电调度、核心离线与息屏休眠。"
+  },
+  "searchAliases": [
+    "真我 GT Neo5 降频省电模块",
+    "Realme GT3 CPU 限频",
+    "骁龙 8+ Gen 1 降频 Root",
+    "真我屏蔽核心省电",
+    "Realme CPU Limiter 下载"
+  ]
+}

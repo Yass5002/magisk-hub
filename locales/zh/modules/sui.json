@@ -1,0 +1,16 @@
+{
+  "id": "sui",
+  "displayName": "Sui (系统级 Shizuku 超级用户接口)",
+  "description": "面向 Android 的现代超级用户接口实现，通过 Zygisk 或 Riru 将 Shizuku API 直接注入系统服务，免去独立后台进程与频繁拉起 su 子壳的开销。",
+  "seo": {
+    "title": "Sui 模块下载与 Shizuku 系统级配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Sui 模块，兼容 Magisk、KernelSU 与 APatch。将 Shizuku API 原生注入 system_server，在系统设置中直接管理应用高阶权限与交互式 Root Shell。"
+  },
+  "searchAliases": [
+    "Sui 模块下载",
+    "Sui 和 Shizuku 区别",
+    "Magisk Sui Zygisk 安装",
+    "系统级 Shizuku 授权",
+    "XiaoTong6666 Sui"
+  ]
+}

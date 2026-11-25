@@ -1,4 +1,6 @@
 ---
+import { SITE_URL } from '../i18n/routing';
+
 export interface BreadcrumbItem {
   name: string;
   url: string;
@@ -11,7 +13,7 @@ export interface Props {
 const { items } = Astro.props;
 
 const normalizeBreadcrumbUrl = (u: string) => {
-  let full = u.startsWith('http') ? u : `https://magisk.yssn.tech${u}`;
+  let full = u.startsWith('http') ? u : `${SITE_URL}${u}`;
   if (!full.endsWith('/')) {
     full += '/';
   }

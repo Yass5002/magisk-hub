@@ -1,0 +1,16 @@
+{
+  "id": "freepps-xiaomi-fast-charge",
+  "displayName": "FreePPS 小米公版 PPS 快充解锁",
+  "description": "支持 KernelSU、APatch 与 Magisk 的开源充电模块，用于解锁小米、红米及 POCO 设备的公版 USB-PD PPS 快充协议限制。",
+  "seo": {
+    "title": "FreePPS 小米公版 PPS 快充解锁模块下载与配置指南 | Magisk Hub",
+    "description": "下载 FreePPS 小米公版 PPS 快充解锁模块，兼容 KernelSU、APatch 与 Magisk。突破第三方 GaN 充电器功率限制，支持亮屏快充加速与功率验证教程。"
+  },
+  "searchAliases": [
+    "FreePPS 小米快充",
+    "小米解锁公版 PPS 快充",
+    "红米第三方充电器快充模块",
+    "Magisk 小米 PD 快充解锁",
+    "KernelSU FreePPS 下载"
+  ]
+}

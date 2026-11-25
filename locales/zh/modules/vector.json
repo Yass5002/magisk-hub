@@ -1,0 +1,16 @@
+{
+  "id": "vector",
+  "displayName": "Vector",
+  "description": "JingMatrix 维护的新一代现代 Xposed 框架（LSPosed 官方社区继任者），基于 Zygisk 实现高效 ART 运行时方法挂钩，全面适配 Android 14 与 15。",
+  "seo": {
+    "title": "Vector Xposed 框架下载与模块激活教程 (LSPosed 继任) | Magisk Hub",
+    "description": "下载新版 Vector Xposed 框架模块，支持 Magisk、KernelSU 与 APatch。全面兼容既有 LSPosed 模块并修复 Android 14/15 ART 内联挂钩崩溃问题。"
+  },
+  "searchAliases": [
+    "Vector Xposed 下载",
+    "LSPosed 替代框架",
+    "Android 15 LSPosed",
+    "JingMatrix Vector 模块",
+    "Vector 管理器安装"
+  ]
+}

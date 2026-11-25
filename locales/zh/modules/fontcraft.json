@@ -1,0 +1,15 @@
+{
+  "id": "fontcraft",
+  "displayName": "FontCraft（WebUI 字体与 Emoji 双槽注入引擎）",
+  "description": "内置深色拟态本地 WebUI 的字体与 Emoji 管理引擎，支持离线浏览本地 TTF 文件与双槽混合编译队列。",
+  "seo": {
+    "title": "FontCraft 下载与 WebUI 字体替换指南 | Magisk Hub",
+    "description": "下载 FontCraft 字体与 Emoji 引擎，支持 Magisk、KernelSU 与 APatch。通过本地 WebUI 离线浏览 TTF 字体并同步合成苹果或谷歌 Emoji 覆盖层。"
+  },
+  "searchAliases": [
+    "FontCraft Magisk 模块",
+    "KernelSU WebUI 换字体",
+    "本地 TTF 字体直刷模块",
+    "字体与 Emoji 混合替换工具"
+  ]
+}

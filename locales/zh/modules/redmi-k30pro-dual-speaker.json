@@ -1,0 +1,16 @@
+{
+  "id": "redmi-k30pro-dual-speaker",
+  "displayName": "Redmi K30 Pro 对称式双扬声器（Symmetric Dual Speakers）",
+  "description": "专为 Redmi K30 Pro / POCO F2 Pro（lmi）设计的 ALSA 混音路径重构模块，通过将媒体左声道路由至顶部听筒实现均衡立体声外放。",
+  "seo": {
+    "title": "Redmi K30 Pro 对称双扬声器模块下载与教程 | Magisk Hub",
+    "description": "下载 Redmi K30 Pro 对称式双扬声器模块，支持 Magisk、KernelSU 与 APatch。适配骁龙 865（lmi）平台，将媒体声道精准分离至顶部听筒与底部扬声器，同时严格隔离通话隐私路由。"
+  },
+  "searchAliases": [
+    "Redmi K30 Pro 双扬声器模块",
+    "K30 Pro 听筒改立体声",
+    "POCO F2 Pro 双扬 Magisk",
+    "lmi 混音路径双扬声器",
+    "浅城墨白 K30 Pro 双扬"
+  ]
+}

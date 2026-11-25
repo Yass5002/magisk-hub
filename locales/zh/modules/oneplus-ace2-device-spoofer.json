@@ -1,0 +1,16 @@
+{
+  "id": "oneplus-ace2-device-spoofer",
+  "displayName": "OnePlus Ace 2 机型伪装模块 (游戏高帧率解锁)",
+  "description": "无系统分区修改构建属性注入模块，将设备型号伪装为一加 Ace 2（PHK110），解锁竞技手游中的 90FPS/120FPS 高帧率选项。",
+  "seo": {
+    "title": "OnePlus Ace 2 机型伪装模块下载 (Magisk/KSU) | Magisk Hub",
+    "description": "下载一加 Ace 2 机型伪装模块，支持 Magisk、KernelSU 与 APatch。通过无侵入式属性注入将设备识别为 PHK110，轻松解锁和平精英、原神等游戏高帧率模式。"
+  },
+  "searchAliases": [
+    "一加 Ace 2 机型伪装模块",
+    "PHK110 伪装 Magisk",
+    "和平精英 120 帧解锁模块",
+    "KernelSU 游戏高帧率伪装",
+    "一加机型修改模块下载"
+  ]
+}

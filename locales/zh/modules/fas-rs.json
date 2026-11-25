@@ -1,0 +1,16 @@
+{
+  "id": "fas-rs",
+  "displayName": "FAS-RS",
+  "description": "由 shadow3aaa 使用 Rust 编写的帧感知调度守护进程，实时监测 SurfaceFlinger 渲染延迟并动态调节 CPU/GPU 频率。",
+  "seo": {
+    "title": "FAS-RS 帧感知调度模块下载与配置指南 (KSU/Magisk) | Magisk Hub",
+    "description": "下载 FAS-RS 帧感知调度模块，支持 KernelSU、APatch 与 Magisk。基于 SurfaceFlinger 帧延迟实时调控频率，支持 games.toml 分游戏定制目标帧率。"
+  },
+  "searchAliases": [
+    "FAS-RS 下载",
+    "帧感知调度模块",
+    "shadow3aaa fas-rs",
+    "games.toml 配置教程",
+    "安卓游戏稳帧 Root 模块"
+  ]
+}

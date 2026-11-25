@@ -1,0 +1,16 @@
+{
+  "id": "apatch",
+  "displayName": "APatch",
+  "description": "bmax121 开发的内核级 Android Root 方案，基于 KernelPatch 直接修补原厂 Boot 镜像，支持 SuperKey 隔离、KPM 内核补丁模块与 APM 无侵入模块。",
+  "seo": {
+    "title": "APatch 下载与刷入配置指南 (KernelPatch Root 方案) | Magisk Hub",
+    "description": "获取 APatch 最新版安装包与刷机指南。无需编译源码，直接利用 KernelPatch 修补原厂 boot.img 实现内核级 Root，支持 SuperKey 鉴权与 KPM/APM 双模块架构。"
+  },
+  "searchAliases": [
+    "APatch 下载",
+    "APatch 刷入教程",
+    "APatch SuperKey 忘记",
+    "KernelPatch Root 方案",
+    "APatch 和 KernelSU 区别"
+  ]
+}

@@ -11,63 +11,91 @@ import '@fontsource/jetbrains-mono/400.css';
 import '@fontsource/jetbrains-mono/500.css';
 import '@fontsource/jetbrains-mono/600.css';
 import SpriteDefs from '../components/SpriteDefs.astro';
+import {
+  getAlternateUrls,
+  getLocaleFromPath,
+  localizePath,
+  SITE_URL,
+  type Locale,
+} from '../i18n/routing';
+import { getUI } from '../i18n/ui';
 
 export interface Props {
   title: string;
   description: string;
+  locale?: Locale;
   keywords?: string[];
   canonicalUrl?: string;
   ogType?: 'website' | 'article';
   ogImage?: string;
+  noindex?: boolean;
   structuredData?: Record<string, any> | Record<string, any>[];
 }
 
 const {
   title,
   description,
+  locale: propLocale,
   keywords = [],
-  canonicalUrl = Astro.url.href,
+  canonicalUrl,
   ogType = 'website',
   ogImage = '/assets/og-image.png',
+  noindex = false,
   structuredData,
 } = Astro.props;
 
-const rawCanonical = canonicalUrl || Astro.url.href;
+const locale: Locale = propLocale ?? getLocaleFromPath(Astro.url.pathname);
+const ui = getUI(locale);
+
+const rawCanonical = canonicalUrl || `${SITE_URL}${Astro.url.pathname}`;
 // Strip all query strings and strictly normalize the trailing slash
 const baseUrl = rawCanonical.split('?')[0];
 const finalCanonical = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
-const siteName = 'Magisk Hub';
+const alternates = getAlternateUrls(Astro.url.pathname);
+const zhSwitchHref = localizePath(Astro.url.pathname, 'zh');
+
+const siteName = ui.siteName;
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+const siteHomeUrl = locale === 'zh' ? `${SITE_URL}/zh/` : `${SITE_URL}/`;
 
 // Base Schema.org WebSite structure
 const baseWebSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   'name': 'Magisk Hub',
-  'url': 'https://magisk.yssn.tech/',
-  'description': 'Directory of active root modules for Magisk, KernelSU, and APatch.',
+  'url': siteHomeUrl,
+  'inLanguage': ui.inLanguage,
+  'description': ui.websiteSchemaDesc,
   'potentialAction': {
     '@type': 'SearchAction',
-    'target': 'https://magisk.yssn.tech/?q={search_term_string}',
+    'target': `${siteHomeUrl}?q={search_term_string}`,
     'query-input': 'required name=search_term_string'
   }
 };
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-[#fafafa] overflow-x-hidden">
+<html lang={ui.htmlLang} class="scroll-smooth bg-[#fafafa] overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content={ui.contentLanguage} />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/magisk-logo.svg" />
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href={finalCanonical} />
+    <!-- Canonical & Hreflang Alternates -->
+    {!noindex && (
+      <>
+        <link rel="canonical" href={finalCanonical} />
+        <link rel="alternate" hreflang="en" href={alternates.en} />
+        <link rel="alternate" hreflang="zh-Hans" href={alternates.zhHans} />
+        <link rel="alternate" hreflang="x-default" href={alternates.xDefault} />
+      </>
+    )}
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
     <!-- Primary Meta Tags -->
@@ -75,7 +103,7 @@ const baseWebSiteSchema = {
     <meta name="title" content={fullTitle} />
     <meta name="description" content={description} />
     {keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="yandex-verification" content="30d5239d97b25ad5" />
 
     <!-- Preconnect to GitHub avatars for fast author image delivery -->
@@ -92,10 +120,12 @@ const baseWebSiteSchema = {
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content={ui.ogLocale} />
+    <meta property="og:locale:alternate" content={ui.ogLocaleAlternate} />
     <meta property="og:url" content={finalCanonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
+    <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`} />
     <meta property="og:site_name" content={siteName} />
 
     <!-- Twitter -->
@@ -103,7 +133,7 @@ const baseWebSiteSchema = {
     <meta name="twitter:url" content={finalCanonical} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `https://magisk.yssn.tech${ogImage}`} />
+    <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`} />
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(baseWebSiteSchema)} />
@@ -119,17 +149,88 @@ const baseWebSiteSchema = {
     <slot name="head" />
   </head>
   <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 overflow-x-hidden">
-    <Navbar />
-    
+    <Navbar locale={locale} />
+
+    {locale === 'en' && !noindex && (
+      <div
+        id="zhLocaleBanner"
+        class="hidden border-b border-zinc-200 bg-zinc-50 text-zinc-700 text-xs"
+        role="region"
+        aria-label="Language suggestion"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2.5 flex-wrap">
+            <span>检测到您的浏览器首选语言为简体中文，可切换至完整中文模块文档与目录。</span>
+            <a
+              href={zhSwitchHref}
+              id="zhBannerSwitchLink"
+              class="inline-flex items-center rounded-md bg-zinc-900 px-2.5 py-1 text-[11px] font-semibold text-white hover:bg-zinc-800 transition-colors"
+            >
+              切换到简体中文版 →
+            </a>
+          </div>
+          <button
+            type="button"
+            id="zhBannerDismissBtn"
+            class="text-zinc-400 hover:text-zinc-700 px-1.5 py-0.5 rounded transition-colors shrink-0"
+            aria-label="关闭语言提示"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    )}
+
     <main class="flex-1">
       <slot />
     </main>
 
-    <Footer />
-    
+    <Footer locale={locale} />
+
     <SpriteDefs />
 
     <script>
+      // Non-blocking Chinese browser suggestion (never auto-redirects crawlers or users)
+      (function initLocaleBanner() {
+        const banner = document.getElementById('zhLocaleBanner');
+        if (!banner) return;
+        try {
+          const pref = localStorage.getItem('magisk_hub_locale_pref');
+          const dismissed = localStorage.getItem('magisk_hub_zh_banner_dismissed');
+          const langs = navigator.languages && navigator.languages.length
+            ? navigator.languages
+            : [navigator.language || ''];
+          const prefersZh = langs.some((l) => String(l).toLowerCase().startsWith('zh'));
+          if (prefersZh && pref !== 'en' && dismissed !== '1') {
+            banner.classList.remove('hidden');
+          }
+          document.getElementById('zhBannerDismissBtn')?.addEventListener('click', () => {
+            banner.classList.add('hidden');
+            localStorage.setItem('magisk_hub_zh_banner_dismissed', '1');
+            localStorage.setItem('magisk_hub_locale_pref', 'en');
+          });
+          document.getElementById('zhBannerSwitchLink')?.addEventListener('click', () => {
+            localStorage.setItem('magisk_hub_locale_pref', 'zh');
+          });
+        } catch {
+          // Ignore storage errors in restricted environments
+        }
+      })();
+
+      // Persist explicit user clicks on language switcher
+      document.querySelectorAll('[data-locale-switch]').forEach((el) => {
+        el.addEventListener('click', () => {
+          const target = el.getAttribute('data-locale-switch');
+          if (target) {
+            try {
+              localStorage.setItem('magisk_hub_locale_pref', target);
+            } catch {
+              // ignore
+            }
+          }
+        });
+      });
+
       document.addEventListener('click', (event) => {
         const target = event.target;
         if (!(target instanceof Element)) return;

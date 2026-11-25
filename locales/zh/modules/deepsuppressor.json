@@ -1,0 +1,16 @@
+{
+  "id": "deepsuppressor",
+  "displayName": "DeepSuppressor (后台子进程精细压制模块)",
+  "description": "基于 AMMF2 框架的后台子进程压制模块，通过 JSON 规则与 WebUI 精准冻结应用冗余子进程（如推送、统计与小程序进程），在不杀主进程的前提下省电减负。",
+  "seo": {
+    "title": "DeepSuppressor 模块下载与后台子进程压制指南 | Magisk Hub",
+    "description": "下载最新版 DeepSuppressor 模块，支持 KernelSU 与 Magisk。基于 AMMF2 与 WebUI 按包名精准压制应用后台子进程，有效降低唤醒耗电而不破坏主程序通知。"
+  },
+  "searchAliases": [
+    "DeepSuppressor 模块下载",
+    "后台子进程压制 Magisk",
+    "AMMF2 WebUI 后台管理",
+    "KernelSU 冻结应用子进程",
+    "Root 抑制推送统计进程"
+  ]
+}

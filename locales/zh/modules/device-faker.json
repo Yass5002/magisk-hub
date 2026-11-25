@@ -1,0 +1,16 @@
+{
+  "id": "device-faker",
+  "displayName": "Device Faker (device_faker)",
+  "description": "基于 Rust 编写的高性能 Zygisk 机型伪装模块，通过写时复制（COW）内存机制实现分应用精细化设备型号与硬件身份伪装，内置多语言 WebUI。",
+  "seo": {
+    "title": "Device Faker 下载与分应用机型伪装指南 | Magisk Hub",
+    "description": "下载 Rust 编写的 Device Faker 模块，兼容 Magisk、KernelSU 与 APatch。利用写时复制技术按应用隔离伪装机型属性，提供直观 WebUI 与即时生效配置。"
+  },
+  "searchAliases": [
+    "Device Faker 下载",
+    "device_faker 模块",
+    "Zygisk 分应用机型伪装",
+    "游戏高帧率机型修改",
+    "Rust 机型伪装 WebUI"
+  ]
+}

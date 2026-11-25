@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ModuleCard from '../components/ModuleCard.astro';
+import { type PlatformInfo, type ModuleData } from '../lib/modules';
+import { localizePath, SITE_URL, type Locale } from '../i18n/routing';
+import { localizePlatform } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
+
+export interface Props {
+  platform: PlatformInfo;
+  modules: ModuleData[];
+  locale?: Locale;
+}
+
+const { platform: rawPlatform, modules, locale = 'en' } = Astro.props;
+const ui = getUI(locale);
+const platform = localizePlatform(rawPlatform, locale);
+const canonicalPath = localizePath(`/compatibility/${platform.id}/`, locale);
+
+const breadcrumbs = [
+  { name: ui.moduleDetail.home, url: localizePath('/', locale) },
+  { name: ui.platformDetail.breadcrumbGroup, url: localizePath('/', locale) },
+  { name: platform.name, url: canonicalPath },
+];
+
+const platformSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  'name': ui.platformDetail.schemaName(platform.name),
+  'description': platform.description,
+  'inLanguage': ui.inLanguage,
+  'url': `${SITE_URL}${canonicalPath}`,
+  'numberOfItems': modules.length,
+};
+---
+
+<BaseLayout
+  locale={locale}
+  title={ui.platformDetail.seoTitle(platform.title)}
+  description={platform.description}
+  structuredData={platformSchema}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <div class="py-6 border-b border-zinc-200">
+      <div class="flex items-center gap-2.5">
+        <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
+          {ui.platformDetail.badge}
+        </span>
+        <span class="text-xs font-mono text-zinc-500">{ui.platformDetail.modulesCount(modules.length)}</span>
+      </div>
+
+      <h1 class="mt-2 text-3xl font-extrabold text-zinc-900 tracking-tight">
+        {ui.platformDetail.h1(platform.name)}
+      </h1>
+
+      <p class="mt-1.5 text-sm text-zinc-600 max-w-2xl leading-relaxed">
+        {platform.details}
+      </p>
+    </div>
+
+    <!-- Modules Grid -->
+    <div class="mt-6">
+      <h2 class="sr-only">{ui.platformDetail.srHeading(platform.name)}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {modules.map(mod => (
+          <ModuleCard module={mod} locale={locale} />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

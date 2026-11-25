@@ -1,0 +1,16 @@
+{
+  "id": "magisk",
+  "displayName": "Magisk（面具）",
+  "description": "Android 通用的开源无系统分区（Systemless）Root 套件，提供 Boot 镜像修补、Magic Mount 挂载与 Zygisk 框架。",
+  "seo": {
+    "title": "Magisk（面具）官方下载与刷入安装指南 | Magisk Hub",
+    "description": "下载最新版官方 Magisk（面具）APK，包含 boot.img / init_boot.img 修补刷入教程、Zygisk 与 DenyList 配置及救砖方法。"
+  },
+  "searchAliases": [
+    "面具",
+    "面具官方下载",
+    "Magisk APK 下载",
+    "安卓 Root",
+    "Zygisk"
+  ]
+}

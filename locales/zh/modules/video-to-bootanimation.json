@@ -1,0 +1,16 @@
+{
+  "id": "video-to-bootanimation",
+  "displayName": "Video To Bootanimation (视频转开机动画)",
+  "description": "支持将本地 MP4 视频文件自动转换为高精度 Android 开机动画（bootanimation.zip）的 Magisk 模块与终端转换工具集。",
+  "seo": {
+    "title": "Video To Bootanimation 视频开机动画模块下载与教程 | Magisk Hub",
+    "description": "下载 Video To Bootanimation 模块，支持 Magisk Root 环境。自动识别视频分辨率与帧率，一键将 MP4 视频转换为系统开机动画并支持提取启动音频。"
+  },
+  "searchAliases": [
+    "MP4 转开机动画 Magisk",
+    "Video To Bootanimation 下载",
+    "Android 自定义视频开机动画",
+    "bootanimation 制作模块",
+    "面具视频开机动画"
+  ]
+}

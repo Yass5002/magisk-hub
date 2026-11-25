@@ -1,0 +1,16 @@
+{
+  "id": "copg",
+  "displayName": "COPG (按应用伪装机型与 GPU 模块)",
+  "description": "基于 Zygisk 的分应用机型、CPU 与 GPU 信息伪装模块，内置可视化 WebUI，可为指定游戏解锁 90/120Hz 高帧率与高画质选项而不影响系统其余应用。",
+  "seo": {
+    "title": "COPG 模块下载与游戏高帧率机型伪装指南 (Zygisk) | Magisk Hub",
+    "description": "下载最新版 COPG Zygisk 模块，支持 Magisk、KernelSU 与 APatch。通过内置 WebUI 按应用伪装旗舰机型、CPU 与 GPU 渲染器，安全解锁游戏高帧率模式。"
+  },
+  "searchAliases": [
+    "COPG 模块下载",
+    "Zygisk 解锁游戏 120 帧",
+    "分应用机型伪装模块",
+    "Android GPU 型号伪装",
+    "KernelSU WebUI 伪装机型"
+  ]
+}

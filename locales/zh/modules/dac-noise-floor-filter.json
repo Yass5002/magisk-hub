@@ -1,0 +1,16 @@
+{
+  "id": "dac-noise-floor-filter",
+  "displayName": "DAC Noise Floor Filter & Stereo Fix（DAC 底噪过滤与立体声修复）",
+  "description": "校准高通 WCD9335（Tasha）等 DAC 音频混音路径，消除高敏入耳式耳机（IEM）在低音量下的模拟底噪电流声与接地环路干扰。",
+  "seo": {
+    "title": "DAC Noise Floor Filter 底噪过滤模块下载与降噪指南 | Magisk Hub",
+    "description": "下载 DAC Noise Floor Filter 降噪模块，支持 Magisk、KernelSU 与 APatch。校准高通 WCD9335/Tasha 模拟功放与数字增益，消除高敏耳塞底噪与串音。"
+  },
+  "searchAliases": [
+    "DAC 底噪过滤 Magisk 模块",
+    "消除耳机电流声沙沙声",
+    "高通 Tasha 混音路径降噪",
+    "低阻抗耳机底噪修复",
+    "Android 有线耳机立体声修复"
+  ]
+}

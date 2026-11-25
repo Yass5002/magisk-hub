@@ -1,0 +1,16 @@
+{
+  "id": "disable-low-ram",
+  "displayName": "Disable Low RAM Flag",
+  "description": "通过 resetprop 在开机早期覆盖 ro.config.low_ram 属性为 false，为 Android Go 低内存设备解锁悬浮窗、分屏多任务与通知角标等完整特性。",
+  "seo": {
+    "title": "Disable Low RAM Flag 下载与配置指南（Android Go 解锁模块）| Magisk Hub",
+    "description": "下载 Disable Low RAM Flag 模块，支持 Magisk Root 环境。利用 resetprop 禁用低内存限制标志，为 Android Go 设备恢复悬浮窗权限、应用分屏、画中画及通知角标功能。"
+  },
+  "searchAliases": [
+    "Disable Low RAM Flag 下载",
+    "Android Go 解锁悬浮窗权限模块",
+    "ro.config.low_ram false Magisk",
+    "Android Go 开启分屏与画中画",
+    "解除 Android Go 功能受限提示"
+  ]
+}

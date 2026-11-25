@@ -1,0 +1,16 @@
+{
+  "id": "audio-jitter-silencer",
+  "displayName": "Audio Jitter Silencer (音频抖动抑制)",
+  "description": "由音频工程师 zyhk 开发的专业无侵入式优化模块，通过禁用自适应电池、无线连接节电休眠并配置 Doze 白名单，抑制蓝牙耳机与 USB DAC 的 50Hz 以下低频音频流抖动。",
+  "seo": {
+    "title": "Audio Jitter Silencer 音频抖动抑制模块下载与配置指南 | Magisk Hub",
+    "description": "下载 Audio Jitter Silencer 模块，支持 Magisk 环境。通过禁用自适应电池与网络休眠机制并配置 Doze 白名单，有效抑制蓝牙与 USB DAC 的低频音频抖动。"
+  },
+  "searchAliases": [
+    "audio jitter silencer 模块下载",
+    "Magisk 音频抖动抑制",
+    "蓝牙耳机 USB DAC 音质优化模块",
+    "Android 音频 Doze 白名单优化",
+    "zyhk 音频优化模块"
+  ]
+}

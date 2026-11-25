@@ -1,0 +1,16 @@
+{
+  "id": "selinux-permissive",
+  "displayName": "SELinux Permissive (宽容模式切换与隐藏)",
+  "description": "在开机阶段将 Android SELinux 切换为 Permissive 宽容模式，并通过限制节点读取与伪装系统属性降低应用检测风险。",
+  "seo": {
+    "title": "SELinux Permissive 模块下载与宽容模式指南 | Magisk Hub",
+    "description": "下载 Magisk 版 SELinux Permissive 模块，开机自动切换 SELinux 为宽容模式，同时收紧 enforce 节点权限并伪装 ro.boot.selinux 属性以减少检测。"
+  },
+  "searchAliases": [
+    "SELinux Permissive Magisk 模块下载",
+    "Android 开机切换 SELinux 宽容模式",
+    "隐藏 SELinux Permissive 状态检测",
+    "三星内核 CONFIG_ALWAYS_ENFORCE",
+    "Root 调试关闭 SELinux 拦截"
+  ]
+}

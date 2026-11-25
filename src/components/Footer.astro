@@ -1,7 +1,21 @@
 ---
 import { CATEGORIES, PLATFORMS } from '../lib/modules';
+import { getLocaleFromPath, localizePath, type Locale } from '../i18n/routing';
+import { localizeCategory, localizePlatform } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
 
-const platformList = Object.values(PLATFORMS);
+export interface Props {
+  locale?: Locale;
+}
+
+const { locale: propLocale } = Astro.props;
+const locale: Locale = propLocale ?? getLocaleFromPath(Astro.url.pathname);
+const ui = getUI(locale);
+
+const platformList = Object.values(PLATFORMS).map(p => localizePlatform(p, locale));
+const categoryList = Object.values(CATEGORIES).map(c => localizeCategory(c, locale));
+const altLocale: Locale = locale === 'zh' ? 'en' : 'zh';
+const altHref = localizePath(Astro.url.pathname, altLocale);
 ---
 
 <footer class="mt-20 border-t border-zinc-200 bg-white text-zinc-600 text-xs">
@@ -16,23 +30,23 @@ const platformList = Object.values(PLATFORMS);
             height="32" 
             class="h-8 w-8 object-contain"
           />
-          <span class="text-base font-bold text-zinc-900">Magisk Hub</span>
+          <span class="text-base font-bold text-zinc-900">{ui.siteName}</span>
         </div>
         <p class="mt-3 max-w-sm text-zinc-500 leading-relaxed text-xs">
-          An open directory of community-maintained root modules and elevated tools for Magisk, KernelSU, APatch, LSPosed, and Shizuku.
+          {ui.footer.about}
         </p>
         <p class="mt-4 text-[11px] text-zinc-500">
-          Magisk Hub is an independent community project. Android, Magisk, and related trademarks belong to their respective copyright holders.
+          {ui.footer.trademark}
         </p>
       </div>
 
       <div>
-        <h2 class="font-semibold text-zinc-900 text-xs">Platforms</h2>
+        <h2 class="font-semibold text-zinc-900 text-xs">{ui.footer.platformsHeading}</h2>
         <ul class="mt-4 space-y-2 font-mono">
           {platformList.map(p => (
             <li>
               <a 
-                href={`/compatibility/${p.id}/`} 
+                href={localizePath(`/compatibility/${p.id}/`, locale)} 
                 data-umami-event="footer-platform-click" 
                 data-umami-event-platform={p.id} 
                 class="text-zinc-600 hover:text-zinc-900 transition-colors"
@@ -41,16 +55,20 @@ const platformList = Object.values(PLATFORMS);
               </a>
             </li>
           ))}
-          <li><a href="/categories/" data-umami-event="footer-categories-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">All Categories</a></li>
+          <li>
+            <a href={localizePath('/categories/', locale)} data-umami-event="footer-categories-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
+              {ui.footer.allCategories}
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="col-span-2">
-        <h2 class="font-semibold text-zinc-900 text-xs">Categories</h2>
+        <h2 class="font-semibold text-zinc-900 text-xs">{ui.footer.categoriesHeading}</h2>
         <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 font-mono">
-          {Object.values(CATEGORIES).map(c => (
+          {categoryList.map(c => (
             <li>
-              <a href={`/categories/${c.id}/`} data-umami-event="footer-category-click" data-umami-event-category={c.id} class="text-zinc-600 hover:text-zinc-900 transition-colors truncate block" title={c.name}>
+              <a href={localizePath(`/categories/${c.id}/`, locale)} data-umami-event="footer-category-click" data-umami-event-category={c.id} class="text-zinc-600 hover:text-zinc-900 transition-colors truncate block" title={c.name}>
                 {c.name}
               </a>
             </li>
@@ -59,26 +77,31 @@ const platformList = Object.values(PLATFORMS);
       </div>
 
       <div>
-        <h2 class="font-semibold text-zinc-900 text-xs">Repository</h2>
+        <h2 class="font-semibold text-zinc-900 text-xs">{ui.footer.repositoryHeading}</h2>
         <ul class="mt-4 space-y-2 font-mono">
           <li>
-            <a href="/security/" data-umami-event="footer-security-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
-              Security Policy
+            <a href={localizePath('/security/', locale)} data-umami-event="footer-security-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
+              {ui.footer.securityPolicy}
             </a>
           </li>
           <li>
             <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" data-umami-event="footer-github-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
-              GitHub Source
+              {ui.footer.githubSource}
             </a>
           </li>
           <li>
             <a href="https://github.com/Yass5002/magisk-hub/blob/master/modules/schema.json" target="_blank" rel="noopener noreferrer" data-umami-event="footer-schema-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
-              JSON Schema
+              {ui.footer.jsonSchema}
             </a>
           </li>
           <li>
             <a href="https://github.com/Yass5002/magisk-hub/actions" target="_blank" rel="noopener noreferrer" data-umami-event="footer-actions-click" class="text-zinc-600 hover:text-zinc-900 transition-colors">
-              Release Sync CI
+              {ui.footer.releaseSyncCi}
+            </a>
+          </li>
+          <li>
+            <a href={altHref} hreflang={altLocale === 'zh' ? 'zh-Hans' : 'en'} data-locale-switch={altLocale} class="text-zinc-700 hover:text-zinc-900 font-semibold transition-colors">
+              {ui.footer.langSwitch}
             </a>
           </li>
         </ul>
@@ -87,7 +110,7 @@ const platformList = Object.values(PLATFORMS);
 
     <div class="mt-12 border-t border-zinc-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
       <p>
-        Data validated against JSON Schema Draft-07 • Verified upstream release assets
+        {ui.footer.bottomNote}
       </p>
       <div class="flex items-center gap-4">
         <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors">GitHub</a>

@@ -1,0 +1,16 @@
+{
+  "id": "ezme-dex-space",
+  "displayName": "ezme-dex-space (ART 编译省空间优化)",
+  "description": "调整 Android dex2oat 编译策略，将默认的 speed 模式切换为 space-profile，显著减少 Dalvik 缓存占用的存储空间。",
+  "seo": {
+    "title": "ezme-dex-space 模块下载与优化指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 ezme-dex-space 编译优化模块，支持 Magisk 与 KernelSU。将 Android dex2oat 编译目标从 speed 调整为 space-profile，大幅释放 Dalvik 缓存空间。"
+  },
+  "searchAliases": [
+    "ezme-dex-space 模块下载",
+    "Android dex2oat 省空间优化",
+    "pm.dexopt space-profile Magisk",
+    "减小 dalvik-cache 体积",
+    "Android AOT 编译释放存储空间"
+  ]
+}

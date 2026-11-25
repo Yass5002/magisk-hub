@@ -1,0 +1,16 @@
+{
+  "id": "azenith",
+  "displayName": "AZenith (动态性能与温控调度模块)",
+  "description": "集前台游戏优先级调度、后台智能冻结、Thermalcore 稳帧控温与图形控制台于一体的动态性能优化模块，兼顾高帧率游戏与日常续航。",
+  "seo": {
+    "title": "AZenith 模块下载与性能调度配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 AZenith 性能优化模块，支持 Magisk、KernelSU 与 APatch。提供省电、均衡与性能模式切换、游戏预加载及 Thermalcore 温控稳帧功能。"
+  },
+  "searchAliases": [
+    "AZenith 模块下载",
+    "Android 游戏调度优化模块",
+    "Thermalcore 温控稳帧",
+    "Magisk 动态性能模式",
+    "KernelSU 游戏性能调度"
+  ]
+}

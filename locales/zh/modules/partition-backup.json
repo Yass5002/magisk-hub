@@ -1,0 +1,16 @@
+{
+  "id": "partition-backup",
+  "displayName": "Partition Backup (分区备份工具)",
+  "description": "支持命令行与 WebUI 的系统级分区备份工具，可在手机端直接列出并导出 boot、init_boot、persist 等底层原始块镜像。",
+  "seo": {
+    "title": "Partition Backup 分区备份模块下载与使用指南 | Magisk Hub",
+    "description": "下载 Partition Backup 分区备份模块，兼容 Magisk、KernelSU 与 APatch。支持 CLI 命令与 WebUI 界面一键导出 boot、vendor_boot 等原始镜像。"
+  },
+  "searchAliases": [
+    "Android 分区备份模块",
+    "Magisk 备份 boot 镜像",
+    "KernelSU WebUI 分区提取",
+    "手机字库基带 EFS 备份",
+    "partition-backup 下载"
+  ]
+}

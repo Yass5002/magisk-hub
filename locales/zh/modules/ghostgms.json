@@ -1,0 +1,16 @@
+{
+  "id": "ghostgms",
+  "displayName": "GhostGMS",
+  "description": "安全可逆的 Google Play 服务轻量化与隐私优化模块，抑制非必要后台唤醒与遥测上报，同时完整保留 FCM 消息推送。",
+  "seo": {
+    "title": "GhostGMS 谷歌服务省电与隐私遥测优化模块下载 | Magisk Hub",
+    "description": "下载 GhostGMS 谷歌服务优化模块，支持 Magisk 与 KernelSU。无侵入式抑制 GMS 后台唤醒与遥测数据上传，在不影响 FCM 推送的前提下大幅降低待机耗电。"
+  },
+  "searchAliases": [
+    "GhostGMS 下载",
+    "谷歌服务后台省电模块",
+    "Kaushik GhostGMS",
+    "GMS 唤醒锁抑制 Root",
+    "GhostGMS Core 与 Legacy"
+  ]
+}

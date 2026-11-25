@@ -1,0 +1,16 @@
+{
+  "id": "qishui-music-svip-unlocker",
+  "displayName": "汽水音乐 SVIP 与去广告 (Soda Music Unlocker)",
+  "description": "专为汽水音乐（海外版 Luna Music）打造的 LSPosed 运行时 Hook 模块，自动解锁 SVIP 会员权益、无损音质串流与离线下载并彻底屏蔽应用内广告。",
+  "seo": {
+    "title": "汽水音乐 SVIP 解锁与去广告模块下载指南 (LSPosed) | Magisk Hub",
+    "description": "下载汽水音乐 SVIP 与去广告模块，支持 LSPosed（Zygisk/Riru）。基于 DexKit 动态内存 Hook 实现免重打包签名解锁无损音质、屏蔽开屏及信息流广告。"
+  },
+  "searchAliases": [
+    "汽水音乐 SVIP 模块下载",
+    "汽水音乐去广告 LSPosed",
+    "Luna Music SVIP 解锁",
+    "fuckqishui Xposed 模块",
+    "汽水音乐无损音质破解"
+  ]
+}

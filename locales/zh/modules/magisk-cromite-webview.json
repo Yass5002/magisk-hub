@@ -1,0 +1,16 @@
+{
+  "id": "magisk-cromite-webview",
+  "displayName": "Cromite SystemWebView (隐私强化 WebView 替换)",
+  "description": "无系统分区修改的 SystemWebView 替换模块，将系统默认 WebView 替换为注重隐私、去谷歌化且支持广告拦截的 Cromite，并每日自动构建更新。",
+  "seo": {
+    "title": "Cromite SystemWebView 模块下载与配置指南 | Magisk Hub",
+    "description": "下载 magisk-cromite-webview 模块，支持 Magisk 与 KernelSU。无侵入式替换系统 WebView 为去谷歌、防指纹追踪的 Cromite 内核。"
+  },
+  "searchAliases": [
+    "Cromite WebView Magisk 模块",
+    "Android 替换系统 WebView",
+    "Bromite 继任者 Cromite",
+    "防指纹追踪 WebView 模块",
+    "magisk-cromite-webview 下载"
+  ]
+}

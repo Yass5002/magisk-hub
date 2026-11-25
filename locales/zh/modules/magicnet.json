@@ -1,0 +1,16 @@
+{
+  "id": "magicnet",
+  "displayName": "MagicNet (sing-box 透明代理)",
+  "description": "基于定制版 sing-box 内核的高性能透明代理模块，支持 TUN 与 eBPF 双模式路由，不占用系统 VPN 通道。",
+  "seo": {
+    "title": "MagicNet 下载与透明代理配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 MagicNet 透明代理模块，支持 Magisk、KernelSU 与 APatch。基于定制 sing-box 核心实现 TUN 与 eBPF 内核级流量转发，支持多订阅与分应用路由。"
+  },
+  "searchAliases": [
+    "MagicNet Magisk 模块",
+    "MagicNet sing-box 透明代理",
+    "Android eBPF 透明代理",
+    "不占 VPN 槽位代理模块",
+    "MagicNet CLI 命令教程"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "aurora",
+  "displayName": "Aurora (透明代理启动器)",
+  "description": "无侵入式系统级透明代理启动模块，在内核网络层调度 sing-box 与 mihomo 核心，通过 TProxy 与 TUN 模式实现低功耗全局代理路由。",
+  "seo": {
+    "title": "Aurora 透明代理模块下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Aurora 透明代理启动器模块，支持 Magisk、KernelSU 与 APatch。集成 sing-box 与 mihomo 双内核，通过 TProxy 与 TUN 接管全局流量，告别 VpnService 耗电。"
+  },
+  "searchAliases": [
+    "Aurora Magisk 透明代理模块",
+    "sing-box KernelSU 透明代理",
+    "mihomo TProxy 安卓 Root 模块",
+    "Tkocean Aurora 下载"
+  ]
+}

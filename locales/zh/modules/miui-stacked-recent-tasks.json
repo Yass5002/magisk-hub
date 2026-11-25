@@ -1,0 +1,16 @@
+{
+  "id": "miui-stacked-recent-tasks",
+  "displayName": "MIUI Stacked Recent Tasks Launcher (小米堆叠后台桌面)",
+  "description": "基于 Xposeded 堆叠桌面引擎的无侵入打包模块，为小米 MIUI 与 HyperOS 系统桌面解锁类 iOS 横向卡片堆叠多任务与丝滑切换物理动画。",
+  "seo": {
+    "title": "MIUI Stacked Recent Tasks 堆叠后台模块下载 | Magisk Hub",
+    "description": "下载 MIUI Stacked Recent Tasks 堆叠后台桌面模块，支持 Magisk、KernelSU 与 APatch。为小米 MIUI 与 HyperOS 解锁类 iOS 横向卡片堆叠多任务与流畅切换动画。"
+  },
+  "searchAliases": [
+    "MIUI 堆叠后台 Magisk 模块",
+    "小米桌面 iOS 堆叠多任务",
+    "Xposeded 堆叠桌面模块",
+    "MIUI 横向最近任务修改版",
+    "南橘北枳 堆叠后台桌面"
+  ]
+}

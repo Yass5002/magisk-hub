@@ -1,0 +1,16 @@
+{
+  "id": "trickystoreoss",
+  "displayName": "TrickyStoreOSS",
+  "description": "beakthoven 开发的完全开源版 TrickyStore 替代模块，基于 GPLv3 协议实现 Keystore HAL 拦截与自定义 Keybox 证书链注入，不含闭源组件。",
+  "seo": {
+    "title": "TrickyStoreOSS 开源版模块下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载完全开源的 TrickyStoreOSS 模块，兼容 Magisk、KernelSU 与 APatch。支持 Keystore HAL 拦截、keybox.xml 证书链伪装与热重载配置。"
+  },
+  "searchAliases": [
+    "TrickyStoreOSS 下载",
+    "开源版 TrickyStore",
+    "TrickyStore 替代模块",
+    "keybox.xml 证书链伪装",
+    "target.txt 配置方法"
+  ]
+}

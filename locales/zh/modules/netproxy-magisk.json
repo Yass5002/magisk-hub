@@ -1,0 +1,16 @@
+{
+  "id": "netproxy-magisk",
+  "displayName": "NetProxy-Magisk (Sing-box WebUI 透明代理)",
+  "description": "基于 sing-box 核心的 Android 透明代理模块，支持一键启停，并内置本地 WebUI 仪表盘、订阅定时更新与智能分流。",
+  "seo": {
+    "title": "NetProxy-Magisk 下载与 WebUI 代理配置指南 | Magisk Hub",
+    "description": "下载 NetProxy-Magisk 模块，支持 Magisk、KernelSU 与 APatch。集成 sing-box 内核与 TPROXY 透明代理，内置本地 WebUI 面板实现一键启停与订阅管理。"
+  },
+  "searchAliases": [
+    "NetProxy-Magisk 下载",
+    "Fanju6 NetProxy 模块",
+    "sing-box WebUI 透明代理",
+    "安卓 Root 代理面板",
+    "NetProxy 9090 控制台"
+  ]
+}

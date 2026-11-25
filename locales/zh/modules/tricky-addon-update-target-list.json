@@ -1,0 +1,16 @@
+{
+  "id": "tricky-addon-update-target-list",
+  "displayName": "Tricky Addon - Update Target List",
+  "description": "由 KOWX712 开发的 WebUI 配置伴侣模块，通过可视化界面一键管理 Tricky Store、TEESimulator 与 OhMyKeymint 的 target.txt 目标应用列表。",
+  "seo": {
+    "title": "Tricky Addon 下载与配置指南（Tricky Store WebUI）| Magisk Hub",
+    "description": "下载 Tricky Addon 模块，支持 KernelSU、APatch 与 Magisk。提供 WebUI 一键管理 Tricky Store 与 TEESimulator 的 target.txt 列表及叶证书模式。"
+  },
+  "searchAliases": [
+    "Tricky Addon 模块下载",
+    "Tricky Store target.txt 配置工具",
+    "Tricky Addon WebUI 怎么用",
+    "TEESimulator 目标列表图形化管理",
+    "Tricky Store 感叹号叶证书模式"
+  ]
+}

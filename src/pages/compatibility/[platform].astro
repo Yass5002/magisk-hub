@@ -1,11 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import ModuleCard from '../../components/ModuleCard.astro';
+import PlatformDetailView from '../../views/PlatformDetailView.astro';
 import { getAllModules, PLATFORMS, type PlatformInfo, type ModuleData } from '../../lib/modules';
 
 export async function getStaticPaths() {
-  const allModules = getAllModules();
+  const allModules = getAllModules('en');
   const platformList = Object.values(PLATFORMS);
 
   return platformList.map(p => {
@@ -22,58 +20,7 @@ export interface Props {
   modules: ModuleData[];
 }
 
-
 const { platform, modules } = Astro.props;
-
-const breadcrumbs = [
-  { name: 'Home', url: '/' },
-  { name: 'Compatibility', url: '/' },
-  { name: platform.name, url: `/compatibility/${platform.id}/` },
-];
-
-const platformSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  'name': `${platform.name} Root Modules`,
-  'description': platform.description,
-  'url': `https://magisk.yssn.tech/compatibility/${platform.id}/`,
-  'numberOfItems': modules.length,
-};
 ---
 
-<BaseLayout
-  title={`${platform.title} - Magisk Hub`}
-  description={platform.description}
-  structuredData={platformSchema}
->
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-    <Breadcrumbs items={breadcrumbs} />
-
-    <div class="py-6 border-b border-zinc-200">
-      <div class="flex items-center gap-2.5">
-        <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
-          Platform
-        </span>
-        <span class="text-xs font-mono text-zinc-500">{modules.length} Modules</span>
-      </div>
-
-      <h1 class="mt-2 text-3xl font-extrabold text-zinc-900 tracking-tight">
-        {platform.name} Modules
-      </h1>
-
-      <p class="mt-1.5 text-sm text-zinc-600 max-w-2xl leading-relaxed">
-        {platform.details}
-      </p>
-    </div>
-
-    <!-- Modules Grid (3-Column Desktop Grid) -->
-    <div class="mt-6">
-      <h2 class="sr-only">Modules compatible with {platform.name}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modules.map(mod => (
-          <ModuleCard module={mod} />
-        ))}
-      </div>
-    </div>
-  </div>
-</BaseLayout>
+<PlatformDetailView platform={platform} modules={modules} locale="en" />

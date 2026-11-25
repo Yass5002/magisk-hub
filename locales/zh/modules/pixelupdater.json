@@ -1,0 +1,16 @@
+{
+  "id": "pixelupdater",
+  "displayName": "PixelUpdater (Pixel Root 设备 A/B OTA 更新)",
+  "description": "专为已 Root 的 Google Pixel 手机打造的 A/B 分区 OTA 更新工具，直接通过原生 update_engine 向非活动槽位流式刷入官方更新并自动保留 Magisk Root。",
+  "seo": {
+    "title": "PixelUpdater 下载与 Pixel OTA 保 Root 指南 | Magisk Hub",
+    "description": "下载 PixelUpdater 模块，专为已获取 Magisk Root 的 Google Pixel 设备打造。支持调用原生 update_engine 直刷官方 A/B OTA 更新并自动修补槽位保留 Root。"
+  },
+  "searchAliases": [
+    "PixelUpdater 下载",
+    "Google Pixel Root 后 OTA 更新",
+    "Pixel A/B 更新保留 Magisk",
+    "update_engine 自动更新模块",
+    "面具 Pixel 系统升级保 Root"
+  ]
+}

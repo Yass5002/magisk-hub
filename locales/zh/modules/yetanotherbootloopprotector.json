@@ -1,0 +1,16 @@
+{
+  "id": "yetanotherbootloopprotector",
+  "displayName": "YetAnotherBootloopProtector (YABP 防卡米保护)",
+  "description": "专为 Magisk、KernelSU 与 APatch 打造的自动化防卡米与 SystemUI 崩溃恢复模块，支持开机标记追踪、超时熔断与 Recovery 急救刷入。",
+  "seo": {
+    "title": "YetAnotherBootloopProtector 下载与防卡米配置 | Magisk Hub",
+    "description": "下载 YetAnotherBootloopProtector，兼容 Magisk、KernelSU 与 APatch。支持多阶段标记追踪、开机超时熔断与 SystemUI 监控，有效预防模块冲突导致的无限重启与卡米。"
+  },
+  "searchAliases": [
+    "YABP 防卡米模块",
+    "YetAnotherBootloopProtector 下载",
+    "Magisk 防变砖防卡米",
+    "SystemUI 崩溃自动恢复",
+    "TWRP 一键禁用所有模块"
+  ]
+}

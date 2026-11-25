@@ -1,0 +1,16 @@
+{
+  "id": "app-manager",
+  "displayName": "App Manager (安卓高级应用管理与隐私控制)",
+  "description": "Muntashir Akon 开发的开源 Android 应用管理、安全审计与隐私控制利器，支持组件禁用、追踪器拦截、AppOps 权限管控与加密备份。",
+  "seo": {
+    "title": "App Manager 下载与配置指南 (Root/Shizuku) | Magisk Hub",
+    "description": "下载开源全能的 App Manager，支持 Shizuku、Magisk、KernelSU 与 APatch。提供应用四大组件禁用、Exodus 追踪器拦截、AppOps 权限管理与数据加密备份。"
+  },
+  "searchAliases": [
+    "App Manager 安卓版下载",
+    "App Manager Root 禁用应用组件",
+    "安卓屏蔽应用内追踪器广告",
+    "Shizuku AppOps 权限管理软件",
+    "开源安卓应用数据加密备份工具"
+  ]
+}

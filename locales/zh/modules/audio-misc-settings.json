@@ -1,0 +1,16 @@
+{
+  "id": "audio-misc-settings",
+  "displayName": "Audio Misc Settings (音频杂项优化)",
+  "description": "面向发烧友的底层音频框架优化模块，可精细调校 USB HAL 传输周期、禁用 Moto Dolby 等厂商冗余 DSP 音效及 Google Tensor AOC 守护进程，实现低抖动 Bit-Perfect 音频输出。",
+  "seo": {
+    "title": "Audio Misc Settings 音频优化模块下载与配置指南 | Magisk Hub",
+    "description": "下载 Audio Misc Settings 音频优化模块，支持 Magisk、KernelSU 与 APatch。精调 USB HAL 传输周期并禁用厂商多余音效与 Tensor AOC 守护进程，减少音频抖动。"
+  },
+  "searchAliases": [
+    "audio misc settings 模块下载",
+    "Android USB DAC 音频抖动优化",
+    "Magisk 音频杂项设置模块",
+    "Pixel Tensor AOC 音频优化",
+    "去除厂商多余音效 Magisk"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "resampling-for-cheapies",
+  "displayName": "Resampling for Cheapies (入门级 DAC 重采样优化)",
+  "description": "覆盖系统级 AudioFlinger 混音器重采样参数，优化入门级 USB DAC 小尾巴与 LDAC 蓝牙耳机的升频滤波表现，消除高频毛刺与失真。",
+  "seo": {
+    "title": "Resampling for Cheapies 重采样音质优化模块下载 | Magisk Hub",
+    "description": "下载 Resampling for Cheapies Magisk 模块，覆盖系统 AudioFlinger 重采样滤波器，有效改善平价 USB DAC 小尾巴与 LDAC 蓝牙耳机的升频失真与听感。"
+  },
+  "searchAliases": [
+    "Resampling for Cheapies 下载",
+    "AudioFlinger 重采样优化",
+    "USB DAC 小尾巴音质模块",
+    "LDAC 蓝牙重采样失真修复",
+    "Magisk 高保真音频模块"
+  ]
+}

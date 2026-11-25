@@ -1,0 +1,16 @@
+{
+  "id": "lite-blur-control-center-for-hyperos",
+  "displayName": "Lite-Blur-Control-Center-for-HyperOS (HyperOS 轻量模糊控制中心)",
+  "description": "面向小米 HyperOS 中低端设备的轻量级控制中心模糊模块，在不运行高开销实时着色器管线的前提下恢复控制中心、通知栏与电源菜单的毛玻璃效果。",
+  "seo": {
+    "title": "Lite-Blur-Control-Center-for-HyperOS 下载配置 | Magisk Hub",
+    "description": "下载 Lite-Blur-Control-Center-for-HyperOS 模块，支持 Magisk 与 KernelSU。为小米 HyperOS 设备恢复控制中心与电源菜单毛玻璃效果且不掉帧。"
+  },
+  "searchAliases": [
+    "HyperOS 控制中心模糊模块",
+    "小米控制中心去灰底",
+    "红米控制中心开启高斯模糊",
+    "HyperOS 轻量模糊 Magisk 模块",
+    "小米电源菜单模糊不卡顿"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "zygiskfrida",
+  "displayName": "ZygiskFrida (隐蔽 Frida 注入)",
+  "description": "基于 Zygisk 的隐蔽动态插桩模块，在应用进程孵化阶段直接注入 Frida Gadget，有效绕过 ptrace 反调试检测与 APK 签名完整性校验。",
+  "seo": {
+    "title": "ZygiskFrida 下载与注入配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 ZygiskFrida 模块，支持 Magisk 与 KernelSU。通过 Zygisk 无感注入 Frida Gadget，绕过 ptrace 调试检测与重打包签名校验，支持延迟加载与子进程追踪。"
+  },
+  "searchAliases": [
+    "ZygiskFrida 模块下载",
+    "Frida 过反调试检测",
+    "Zygisk 注入 Frida Gadget",
+    "安卓逆向绕过 ptrace 检测",
+    "Frida 隐蔽插桩配置"
+  ]
+}

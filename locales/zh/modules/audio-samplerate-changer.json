@@ -1,0 +1,16 @@
+{
+  "id": "audio-samplerate-changer",
+  "displayName": "Audio Samplerate Changer (全局采样率解锁)",
+  "description": "由 zyhk 开发的自动化 Hi-Fi 音频引擎，可将 Android 全局混音器与 USB DAC 采样率提升至 768kHz/32-bit，将 USB 传输周期缩减至 2000µs 并实现蓝牙高清编码同步。",
+  "seo": {
+    "title": "Audio Samplerate Changer 音频采样率解锁模块下载与配置 | Magisk Hub",
+    "description": "下载 Audio Samplerate Changer 模块，支持 Magisk 与 KernelSU。解锁最高 768kHz/32-bit USB DAC 采样率、降低传输周期抖动并同步蓝牙高清编码。"
+  },
+  "searchAliases": [
+    "audio samplerate changer 模块下载",
+    "安卓解锁 768kHz 32bit USB DAC",
+    "Magisk 全局音频采样率修改",
+    "zyhk 采样率解锁模块",
+    "Android 移除 DRC 动态范围压缩"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fontloader",
+  "displayName": "FontLoader（Zygisk 字体预加载防闪退模块）",
+  "description": "在应用挂载命名空间隔离前于 Zygote 阶段预加载自定义模块字体，防止 Android 12+ 启用 DenyList 的应用因字体卸载而闪退。",
+  "seo": {
+    "title": "FontLoader 下载：解决字体模块致银行 App 闪退 | Magisk Hub",
+    "description": "下载 FontLoader Zygisk 模块，支持 Magisk 与 KernelSU。通过在 Zygote 早期预加载字体，彻底修复 Android 12 及以上系统隐藏 Root 后换字体闪退问题。"
+  },
+  "searchAliases": [
+    "FontLoader Magisk 下载",
+    "Android 12 换字体银行闪退",
+    "DenyList 字体模块崩溃修复",
+    "Zygisk 字体预加载模块"
+  ]
+}

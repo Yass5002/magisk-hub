@@ -1,0 +1,16 @@
+{
+  "id": "wadbd",
+  "displayName": "Wireless ADB Controller (wadbd 无线调试)",
+  "description": "通过命令行或 WebUI 管理 Android 无线 ADB 守护进程，支持开机自启、自定义监听端口及 adbkey.pub 公钥预授权导入，告别重复配对。",
+  "seo": {
+    "title": "wadbd 无线 ADB 模块下载与开机自启配置指南 | Magisk Hub",
+    "description": "下载 wadbd 无线调试控制模块，支持 Magisk、KernelSU 与 APatch。实现重启后持久化开启无线 ADB、自定义监听端口、公钥静默授权与 WebUI 一键开关。"
+  },
+  "searchAliases": [
+    "wadbd 模块下载",
+    "Magisk 无线 ADB 开机自启",
+    "安卓永久开启 5555 端口",
+    "KernelSU 无线调试 WebUI",
+    "ADB 公钥免确认授权"
+  ]
+}

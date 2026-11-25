@@ -1,0 +1,16 @@
+{
+  "id": "kpatch-next-module",
+  "displayName": "KPatch-Next-Module (内核热补丁模块)",
+  "description": "适用于 KernelSU 与 Magisk 的独立 KPM 内核热补丁支持模块，基于 ftrace 与 kprobes 实现免重启动态修改内核函数。",
+  "seo": {
+    "title": "KPatch-Next 模块下载与 KPM 热补丁指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 KPatch-Next 模块，支持 Magisk 与 KernelSU。提供独立 KPM 内核热补丁支持，通过 ftrace 动态注入内核函数，无需重刷 Boot 镜像即可应用安全补丁。"
+  },
+  "searchAliases": [
+    "KPatch-Next 模块下载",
+    "KernelSU Next KPM 模块",
+    "安卓内核热补丁模块",
+    "免重启内核函数 Hook",
+    "kpatch 命令行加载模块"
+  ]
+}

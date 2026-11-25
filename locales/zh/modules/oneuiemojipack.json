@@ -1,0 +1,16 @@
+{
+  "id": "oneuiemojipack",
+  "displayName": "OneUIEmojiPack (三星 OneUI Emoji 字体)",
+  "description": "无系统分区修改将 AOSP 默认 Emoji 字体替换为三星 OneUI 表情包，兼容 Magisk、KernelSU 与 APatch。",
+  "seo": {
+    "title": "OneUIEmojiPack 下载与安装指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载 OneUIEmojiPack 模块，支持 Magisk、KernelSU 与 APatch。无系统分区修改即可将 Android 原生表情替换为三星 OneUI 风格 Emoji，完整保留 OTA 更新。"
+  },
+  "searchAliases": [
+    "OneUI Emoji 模块下载",
+    "安卓替换三星表情 Magisk",
+    "OneUIEmojiPack 字体模块",
+    "KernelSU 替换三星 Emoji",
+    "安卓系统表情包替换 Root"
+  ]
+}

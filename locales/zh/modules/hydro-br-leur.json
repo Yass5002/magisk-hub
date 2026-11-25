@@ -1,0 +1,16 @@
+{
+  "id": "hydro-br-leur",
+  "displayName": "Hydro-Brûleur",
+  "description": "面向小米、红米及部分一加/真我设备的硬件级性能优化模块，支持 Yuni、AngelBeats、Pandora 等第三方内核，深度调校联发科 fpsgo 与 Pixelworks Iris 独显芯片。",
+  "seo": {
+    "title": "Hydro-Brûleur 模块下载与内核显示优化配置 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 Hydro-Brûleur 模块，支持 Magisk 与 KernelSU。专为小米及红米设备打造，集成联发科 fpsgo 帧率调度与 Iris 独显芯片调校，配合第三方内核提升游戏流畅度。"
+  },
+  "searchAliases": [
+    "Hydro-Brûleur 模块下载",
+    "红米 K60 至尊版内核优化",
+    "联发科 fpsgo 调校模块",
+    "小米 Iris 独显芯片配置",
+    "Yuni Pandora 内核模块"
+  ]
+}

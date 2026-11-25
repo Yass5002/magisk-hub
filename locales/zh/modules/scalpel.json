@@ -1,0 +1,16 @@
+{
+  "id": "scalpel",
+  "displayName": "Scalpel (系统精简与软件转系统应用)",
+  "description": "面向 Root 设备的精准系统精简（Debloat）与应用系统化工具，支持安全屏蔽厂商预装臃肿软件并将用户应用提升至 system/priv-app 权限。",
+  "seo": {
+    "title": "Scalpel 系统精简与转系统应用模块下载指南 | Magisk Hub",
+    "description": "下载 Scalpel 模块，兼容 Magisk、KernelSU 与 APatch。支持无侵入式屏蔽 OEM 预装臃肿应用，并将第三方软件安全提升为 priv-app 系统特权应用。"
+  },
+  "searchAliases": [
+    "Scalpel 系统精简模块",
+    "Magisk 卸载内置软件",
+    "用户应用转为系统应用",
+    "KernelSU Debloat 精简",
+    "APatch 应用系统化"
+  ]
+}

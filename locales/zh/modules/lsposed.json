@@ -1,0 +1,16 @@
+{
+  "id": "lsposed",
+  "displayName": "LSPosed Framework",
+  "description": "基于 Zygisk 的现代 Android ART 运行时 Hook 框架，支持按应用精确划分作用域（Scope），在内存中动态修改方法逻辑而不改动系统分区。",
+  "seo": {
+    "title": "LSPosed 框架下载与作用域配置指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载 LSPosed Zygisk 框架模块，兼容 Magisk、KernelSU 与 APatch。提供白名单作用域隔离、寄生模式管理器及救砖指南，兼容经典 Xposed API。"
+  },
+  "searchAliases": [
+    "LSPosed 模块下载",
+    "面具 LSPosed 安装教程",
+    "LSPosed 拨号盘代码 5776733",
+    "KernelSU 安装 LSPosed",
+    "LSPosed 作用域设置"
+  ]
+}

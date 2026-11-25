@@ -1,0 +1,16 @@
+{
+  "id": "deviceidchanger",
+  "displayName": "DeviceID Changer",
+  "description": "轻量开源的 WebUI 模块，支持在 Magisk、KernelSU 与 APatch 环境下直接修改或随机化特定应用的 Android SSAID（ANDROID_ID），避免独立改机软件被风控识别。",
+  "seo": {
+    "title": "DeviceID Changer 下载与 SSAID 修改指南 | Magisk Hub",
+    "description": "下载开源免费的 DeviceID Changer 模块，支持 Magisk、KernelSU 与 APatch。通过 WebUI 无痕修改目标应用 SSAID 与设备标识符，有效规避应用硬件封禁与追踪。"
+  },
+  "searchAliases": [
+    "DeviceID Changer 下载",
+    "SSAID 修改模块",
+    "ANDROID_ID 修改 WebUI",
+    "KernelSU 修改设备 ID",
+    "绕过应用设备硬件封禁"
+  ]
+}

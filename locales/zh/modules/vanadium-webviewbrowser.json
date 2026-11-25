@@ -1,0 +1,16 @@
+{
+  "id": "vanadium-webviewbrowser",
+  "displayName": "Vanadium-WebViewBrowser",
+  "description": "面向 Magisk 与 KernelSU 的安全加固模块，将系统 WebView 无侵入式替换为 GrapheneOS 的 Vanadium WebView 并安装独立 Vanadium 浏览器。",
+  "seo": {
+    "title": "Vanadium-WebViewBrowser 下载与安装 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Vanadium-WebViewBrowser 模块，支持 Magisk 与 KernelSU。将系统 WebView 无侵入式替换为安全加固的 GrapheneOS Vanadium 引擎，防范漏洞利用与指纹追踪。"
+  },
+  "searchAliases": [
+    "Vanadium WebView 模块",
+    "GrapheneOS 浏览器 Magisk",
+    "Android 替换系统 WebView",
+    "安全加固 WebView 内核",
+    "Vanadium Browser 下载"
+  ]
+}

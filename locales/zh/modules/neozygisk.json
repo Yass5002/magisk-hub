@@ -1,0 +1,16 @@
+{
+  "id": "neozygisk",
+  "displayName": "NeoZygisk",
+  "description": "基于 Linux ptrace 系统调用实现的轻量级 Zygisk 框架，兼容 Magisk、KernelSU 与 APatch，具备内存痕迹清理与双层命名空间隔离能力。",
+  "seo": {
+    "title": "NeoZygisk 模块下载与隐藏 Root 配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 NeoZygisk 独立 Zygisk 运行时模块，兼容 Magisk、KernelSU 与 APatch。采用 ptrace 注入 Zygote，结合挂载卸载与命名空间切换实现高隐蔽 Root 隔离。"
+  },
+  "searchAliases": [
+    "NeoZygisk 模块下载",
+    "KernelSU Zygisk 替代模块",
+    "APatch 安装 NeoZygisk",
+    "ptrace Zygote 注入模块",
+    "NeoZygisk 银行应用隐藏 Root"
+  ]
+}

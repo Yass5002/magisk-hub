@@ -1,0 +1,16 @@
+{
+  "id": "magisk-asoulopt",
+  "displayName": "AsoulOpt (Magisk_AsoulOpt)",
+  "description": "广泛用于骁龙、天玑与 Exynos 平台的智能内核调度与温控调优模块，动态调节 CPU/GPU 调度器、温控阈值与 UFS 存储 I/O 以提升游戏稳帧表现。",
+  "seo": {
+    "title": "AsoulOpt 模块下载与调度温控配置 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 AsoulOpt (Magisk_AsoulOpt) 模块，支持 Magisk、KernelSU 与 APatch。动态调校骁龙、天玑及 Exynos 调度器、GPU 温控阈值与存储 I/O，稳定游戏帧率。"
+  },
+  "searchAliases": [
+    "AsoulOpt 模块下载",
+    "Magisk_AsoulOpt 温控调度",
+    "nakixii 调度模块",
+    "原神稳帧内核调校",
+    "Android Root 温控降频优化"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ih8securelock",
+  "displayName": "ih8SecureLock",
+  "description": "基于 Zygisk 的轻量级截屏限制解除模块，在 Binder IPC 层拦截 FLAG_SECURE 窗口标记与系统截屏监听回调，恢复受限应用的自由截图与录屏功能。",
+  "seo": {
+    "title": "ih8SecureLock 下载与解除应用截屏限制指南 | Magisk Hub",
+    "description": "下载 ih8SecureLock 模块，兼容 Magisk 与 KernelSU 下的 Zygisk 环境。无需 Xposed 框架即可拦截 FLAG_SECURE 标志与截屏检测，轻松恢复银行及流媒体应用截图。"
+  },
+  "searchAliases": [
+    "ih8SecureLock 下载",
+    "解除 FLAG_SECURE 截图限制",
+    "Zygisk 禁止截图破解模块",
+    "防止 App 检测截屏模块",
+    "银行流媒体应用允许录屏截图"
+  ]
+}

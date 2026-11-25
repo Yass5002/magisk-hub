@@ -1,0 +1,16 @@
+{
+  "id": "leica-camera-port",
+  "displayName": "Leica Camera MIUI Port (小米徕卡相机移植版)",
+  "description": "无系统分区修改的小米相机特权应用移植模块，为非徕卡机型注入正统徕卡经典与徕卡生动色彩风格、徕卡水印及预编译 ART 优化缓存。",
+  "seo": {
+    "title": "Leica Camera 小米徕卡相机移植 Magisk 模块下载 | Magisk Hub",
+    "description": "下载 Leica Camera MIUI Port 移植模块，支持 Magisk、KernelSU 与 APatch。为小米及 Redmi 机型解锁徕卡经典与生动色彩科学、专属相机水印与 ISP 调优。"
+  },
+  "searchAliases": [
+    "小米徕卡相机移植 Magisk",
+    "MIUI 徕卡水印相机模块",
+    "红米解锁徕卡经典生动滤镜",
+    "Leica Camera Port 下载",
+    "HyperOS 徕卡相机模块"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "magisk-ios-emoji",
+  "displayName": "Magisk-iOS-Emoji (iOS 苹果表情字体)",
+  "description": "以无系统分区修改（Systemless）方式将 Android 原生表情字体替换为苹果 iOS 风格 Emoji，并自动屏蔽 GMS 动态字体覆盖。",
+  "seo": {
+    "title": "Magisk-iOS-Emoji 下载与安装指南 (苹果 Emoji 模块) | Magisk Hub",
+    "description": "下载 Magisk-iOS-Emoji 模块，支持 Magisk、KernelSU 与 APatch。以无侵入方式将 Android 系统默认表情替换为苹果 iOS Unicode 表情字体，并抑制 GMS 字体覆写。"
+  },
+  "searchAliases": [
+    "Magisk iOS Emoji 模块",
+    "安卓 Root 替换苹果表情",
+    "Android iOS 表情字体包",
+    "Keinta15 Magisk-iOS-Emoji",
+    "NotoColorEmoji 替换苹果表情"
+  ]
+}

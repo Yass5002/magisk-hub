@@ -1,0 +1,16 @@
+{
+  "id": "tencent-rog6-device-spoofer",
+  "displayName": "腾讯 ROG 游戏手机 6 天玑版机型伪装模块",
+  "description": "通过无系统分区修改覆盖品牌与型号属性为华硕 ROG 游戏手机 6 天玑至尊版（ASUS_AI2203_B），突破主流手游画质与高帧率限制。",
+  "seo": {
+    "title": "腾讯 ROG 6 天玑版机型伪装模块下载 (Magisk/KSU) | Magisk Hub",
+    "description": "下载腾讯 ROG 游戏手机 6 天玑版机型伪装模块，支持 Magisk、KernelSU 与 APatch。通过 resetprop 伪装 ASUS_AI2203_B 机型标识，解锁游戏极致画质与高帧率。"
+  },
+  "searchAliases": [
+    "ROG 6 机型伪装模块下载",
+    "ASUS_AI2203_B 伪装 Magisk",
+    "腾讯 ROG 游戏手机型号伪装",
+    "王者荣耀和平精英高帧率模块",
+    "KernelSU 华硕游戏手机伪装"
+  ]
+}

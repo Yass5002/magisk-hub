@@ -1,0 +1,16 @@
+{
+  "id": "hyperos-accessibility-fix",
+  "displayName": "HyperOS Accessibility Fix (澎湃 OS 无障碍保活)",
+  "description": "实时监听系统 logcat 事件，防止小米澎湃 OS 在后台查杀或省电清理时自动关闭应用的无障碍服务权限。",
+  "seo": {
+    "title": "hyperos-accessibility-fix 模块下载与配置 | Magisk Hub",
+    "description": "下载 hyperos-accessibility-fix 模块，支持 Magisk 与 KernelSU。防止小米澎湃 OS 激进省电与锁屏清理自动关闭无障碍服务权限，开机自启持续保活。"
+  },
+  "searchAliases": [
+    "澎湃 OS 无障碍自动关闭修复",
+    "HyperOS 无障碍保活模块",
+    "小米无障碍权限自动重置",
+    "hyperos-accessibility-fix 下载",
+    "Magisk 无障碍锁定模块"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "opluskey",
+  "displayName": "OplusKey (一加/OPPO 实体按键重映射)",
+  "description": "专为 OnePlus 三段式开关与 OPPO 侧边按键打造的 Root 模块，通过 C++ 守护进程自定义单击、双击、三击及长按脚本动作。",
+  "seo": {
+    "title": "OplusKey 模块下载与配置指南 (一加/OPPO 按键映射) | Magisk Hub",
+    "description": "下载 OplusKey Magisk 模块，支持一加三段式静音滑块与 OPPO、Realme 实体侧键自定义映射。采用低功耗 C++ 内核事件监听，支持自定义 Shell 脚本。"
+  },
+  "searchAliases": [
+    "OplusKey 模块下载",
+    "一加三段式开关自定义 Magisk",
+    "OPPO 实体侧键重映射 Root",
+    "ColorOS 三段式改功能",
+    "OplusKey 按键脚本配置"
+  ]
+}

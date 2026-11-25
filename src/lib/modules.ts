@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import type { Locale } from '../i18n/routing';
+import { localizeCategory } from '../i18n/taxonomy';
 
 export interface ModuleRelease {
   tag: string;
@@ -14,12 +16,23 @@ export interface ModuleSEO {
   description: string;
 }
 
+export interface ModuleZhOverride {
+  id: string;
+  displayName?: string;
+  description?: string;
+  seo?: ModuleSEO;
+  searchAliases?: string[];
+}
+
 export type SoftwareType = 'flashable-module' | 'xposed-module' | 'standalone-app' | 'kernel-module';
 export type PlatformCompatibility = 'Magisk' | 'KernelSU' | 'APatch' | 'LSPosed' | 'Shizuku' | 'Rootless';
 
 export interface ModuleData {
   id: string;
   name: string;
+  enName?: string;
+  enDescription?: string;
+  searchAliases?: string[];
   repo: string | null;
   author?: string;
   sourceType?: 'github' | 'community';
@@ -35,6 +48,7 @@ export interface ModuleData {
   contentTier?: 1 | 2 | 3;
   latestRelease: ModuleRelease;
   seo: ModuleSEO;
+  zhSeo?: ModuleSEO;
 }
 
 export interface CategoryInfo {
@@ -203,12 +217,43 @@ export function getAllPlatforms(): PlatformInfo[] {
   return Object.values(PLATFORMS);
 }
 
+export function getCategoryInfo(categoryId: string, locale: Locale = 'en'): CategoryInfo {
+  const base = CATEGORIES[categoryId] || {
+    id: categoryId,
+    name: categoryId,
+    description: '',
+    icon: 'Layers',
+  };
+  return localizeCategory(base, locale);
+}
 
-let cachedModules: ModuleData[] | null = null;
+const cachedModulesByLocale: Partial<Record<Locale, ModuleData[]>> = {};
 
-export function getAllModules(): ModuleData[] {
-  if (cachedModules) {
-    return cachedModules;
+function loadZhOverrides(): Map<string, ModuleZhOverride> {
+  const map = new Map<string, ModuleZhOverride>();
+  const zhDir = path.resolve(process.cwd(), 'locales/zh/modules');
+  if (!fs.existsSync(zhDir)) {
+    return map;
+  }
+
+  const files = fs.readdirSync(zhDir).filter(f => f.endsWith('.json'));
+  for (const file of files) {
+    try {
+      const raw = fs.readFileSync(path.join(zhDir, file), 'utf-8');
+      const parsed = JSON.parse(raw) as ModuleZhOverride;
+      if (parsed?.id) {
+        map.set(parsed.id, parsed);
+      }
+    } catch (err) {
+      console.error(`Failed to parse zh module override ${file}:`, err);
+    }
+  }
+  return map;
+}
+
+export function getAllModules(locale: Locale = 'en'): ModuleData[] {
+  if (cachedModulesByLocale[locale]) {
+    return cachedModulesByLocale[locale]!;
   }
 
   const modulesDir = path.resolve(process.cwd(), 'modules');
@@ -226,6 +271,8 @@ export function getAllModules(): ModuleData[] {
     }
   }
 
+  const zhOverrides = locale === 'zh' ? loadZhOverrides() : new Map<string, ModuleZhOverride>();
+
   const files = fs.readdirSync(modulesDir).filter(f => f.endsWith('.json') && f !== 'schema.json');
   const modules: ModuleData[] = [];
 
@@ -235,6 +282,19 @@ export function getAllModules(): ModuleData[] {
       const raw = fs.readFileSync(fullPath, 'utf-8');
       const data = JSON.parse(raw) as ModuleData;
       data.trendingDownloads = trendingMap[data.id] || 0;
+      data.enName = data.name;
+      data.enDescription = data.description;
+
+      if (locale === 'zh') {
+        const zh = zhOverrides.get(data.id);
+        if (zh) {
+          if (zh.displayName) data.name = zh.displayName;
+          if (zh.description) data.description = zh.description;
+          if (zh.seo) data.zhSeo = zh.seo;
+          if (zh.searchAliases) data.searchAliases = zh.searchAliases;
+        }
+      }
+
       modules.push(data);
     } catch (err) {
       console.error(`Failed to parse module ${file}:`, err);
@@ -262,24 +322,24 @@ export function getAllModules(): ModuleData[] {
     return (b.stars || 0) - (a.stars || 0);
   });
 
-  cachedModules = modules;
+  cachedModulesByLocale[locale] = modules;
   return modules;
 }
 
-export function getModuleById(id: string): ModuleData | undefined {
-  return getAllModules().find(m => m.id === id);
+export function getModuleById(id: string, locale: Locale = 'en'): ModuleData | undefined {
+  return getAllModules(locale).find(m => m.id === id);
 }
 
-export function getModulesByCategory(category: string): ModuleData[] {
-  return getAllModules().filter(m => m.category === category);
+export function getModulesByCategory(category: string, locale: Locale = 'en'): ModuleData[] {
+  return getAllModules(locale).filter(m => m.category === category);
 }
 
-export function getModulesByCompatibility(platform: string): ModuleData[] {
-  return getAllModules().filter(m => m.compatibility.includes(platform as PlatformCompatibility));
+export function getModulesByCompatibility(platform: string, locale: Locale = 'en'): ModuleData[] {
+  return getAllModules(locale).filter(m => m.compatibility.includes(platform as PlatformCompatibility));
 }
 
 export function getStats() {
-  const all = getAllModules();
+  const all = getAllModules('en');
   return {
     total: all.length,
     tier1: all.filter(m => m.contentTier === 1).length,
@@ -295,14 +355,34 @@ export function formatPlatformsShort(compatibility: PlatformCompatibility[]): st
 }
 
 
-export function formatPlatformsSentence(compatibility: PlatformCompatibility[]): string {
+export function formatPlatformsSentence(compatibility: PlatformCompatibility[], locale: Locale = 'en'): string {
   if (!compatibility || compatibility.length === 0) return 'Android';
+  if (locale === 'zh') {
+    if (compatibility.length === 1) return compatibility[0];
+    if (compatibility.length === 2) return `${compatibility[0]} 与 ${compatibility[1]}`;
+    return `${compatibility.slice(0, -1).join('、')} 与 ${compatibility[compatibility.length - 1]}`;
+  }
   if (compatibility.length === 1) return compatibility[0];
   if (compatibility.length === 2) return `${compatibility[0]} and ${compatibility[1]}`;
   return `${compatibility.slice(0, -1).join(', ')}, and ${compatibility[compatibility.length - 1]}`;
 }
 
-export function generateModuleSEO(module: ModuleData): { title: string; description: string } {
+export function generateModuleSEO(module: ModuleData, locale: Locale = 'en'): { title: string; description: string } {
+  if (locale === 'zh') {
+    if (module.zhSeo?.title && module.zhSeo?.description) {
+      return module.zhSeo;
+    }
+    const platShort = formatPlatformsShort(module.compatibility);
+    const fullTitle = `${module.name} 下载与配置指南 (${platShort}) | Magisk Hub`;
+    const fallbackTitle = `${module.name} 下载与配置指南 | Magisk Hub`;
+    const title = module.zhSeo?.title || (fullTitle.length <= 58 ? fullTitle : fallbackTitle);
+    const lead = `下载适用于 ${formatPlatformsSentence(module.compatibility, 'zh')} 的 ${module.name}。`;
+    const body = (module.description || '').trim();
+    const rawDesc = `${lead}${body}`;
+    const description = module.zhSeo?.description || (rawDesc.length <= 120 ? rawDesc : `${rawDesc.slice(0, 117)}...`);
+    return { title, description };
+  }
+
   // Title template: {ModuleName} – Download ({platforms}) | Magisk Hub
   // Fallback: {ModuleName} – Download | Magisk Hub if > 60 chars
   let title = module.seo?.title;
@@ -352,4 +432,3 @@ export function generateModuleSEO(module: ModuleData): { title: string; descript
 
   return { title, description };
 }
-

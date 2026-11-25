@@ -1,0 +1,15 @@
+{
+  "id": "thunderbolt-lock-unlock-sounds",
+  "displayName": "Thunderbolt Lock & Unlock Sound Effects (雷电锁屏音效)",
+  "description": "无系统分区替换 Android 原生锁屏与解锁提示音的音频模块，提供清脆凌厉的雷电电流音效且零后台功耗。",
+  "seo": {
+    "title": "Thunderbolt 雷电锁屏解锁音效模块下载与配置 | Magisk Hub",
+    "description": "下载 Thunderbolt 雷电锁屏音效模块，兼容 Magisk、KernelSU 与 APatch。无系统分区替换系统 Lock.ogg 与 Unlock.ogg 音频文件，打造清脆科技感解锁体验。"
+  },
+  "searchAliases": [
+    "雷电锁屏音效 Magisk 模块",
+    "安卓修改锁屏解锁声音 Root",
+    "Thunderbolt 音效模块下载",
+    "KernelSU 替换系统锁屏提示音"
+  ]
+}

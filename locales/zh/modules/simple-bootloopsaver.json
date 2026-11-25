@@ -1,0 +1,16 @@
+{
+  "id": "simple-bootloopsaver",
+  "displayName": "Simple_BootloopSaver (轻量救砖防卡米)",
+  "description": "在系统启动后期持续监测 Zygote 进程 PID 稳定性，一旦检测到模块引发的 Bootloop 无限重启循环，自动禁用全部模块并重启恢复系统。",
+  "seo": {
+    "title": "Simple_BootloopSaver 防变砖救砖模块下载与指南 | Magisk Hub",
+    "description": "下载 Simple_BootloopSaver Magisk 防卡米模块。专为加密存储设备设计，自动检测 Zygote 崩溃循环并一键禁用异常模块，无需 TWRP 解密即可救砖。"
+  },
+  "searchAliases": [
+    "Magisk 防卡米模块",
+    "刷模块无限重启救砖",
+    "Simple Bootloop Saver 下载",
+    "FBE 加密救砖禁用模块",
+    "Zygote 崩溃自动禁用模块"
+  ]
+}

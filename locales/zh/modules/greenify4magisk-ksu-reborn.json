@@ -1,0 +1,16 @@
+{
+  "id": "greenify4magisk-ksu-reborn",
+  "displayName": "Greenify4Magisk/KSU Reborn (绿色守护特权版)",
+  "description": "将绿色守护无侵入挂载至 /system/priv-app/ 系统特权目录，免 Xposed 解锁 Boost 嗜睡模式与批量应用自动休眠。",
+  "seo": {
+    "title": "Greenify4Magisk/KSU Reborn 绿色守护模块下载 | Magisk Hub",
+    "description": "下载 Greenify4Magisk/KSU Reborn 模块，支持 Magisk、KernelSU 与 APatch。将绿色守护无侵入挂载为系统特权应用，免 Xposed 解锁 Boost 嗜睡模式。"
+  },
+  "searchAliases": [
+    "Greenify4Magisk 下载",
+    "绿色守护 Magisk 特权模块",
+    "Greenify Boost 模式解锁",
+    "KernelSU 绿色守护",
+    "Drsexo Greenify Reborn"
+  ]
+}

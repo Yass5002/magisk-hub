@@ -1,0 +1,16 @@
+{
+  "id": "stealthdebug",
+  "displayName": "StealthDebug",
+  "description": "无系统分区修改（Systemless）的 Magisk 模块，用于拦截并隐藏 USB 调试与开发者选项相关系统属性，绕过游戏及金融应用的 ADB 检测。",
+  "seo": {
+    "title": "StealthDebug 下载与使用指南（隐藏 USB 调试检测模块）| Magisk Hub",
+    "description": "下载 StealthDebug Magisk 模块，可在保留正常 ADB 调试功能的同时隐藏 USB 调试与开发者选项系统属性，帮助绕过竞技手游反作弊及银行应用的调试环境检测。"
+  },
+  "searchAliases": [
+    "StealthDebug 模块下载",
+    "Magisk 隐藏 USB 调试状态",
+    "绕过游戏 ADB 调试检测",
+    "Root 隐藏开发者选项检测",
+    "sp11xy StealthDebug"
+  ]
+}

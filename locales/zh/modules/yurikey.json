@@ -1,0 +1,16 @@
+{
+  "id": "yurikey",
+  "displayName": "YuriKey Manager (yurikey)",
+  "description": "配合 TrickyStore 使用的自动化配置模块，支持一键获取并备份有效 keybox.xml、同步 target.txt 列表及适配安全补丁级别，助力通过 Strong Integrity 认证。",
+  "seo": {
+    "title": "YuriKey Manager (yurikey) 下载与配置指南 | Magisk Hub",
+    "description": "下载 YuriKey Manager 模块，支持 Magisk、KernelSU 与 APatch。自动拉取并更新 TrickyStore 所需的 Keybox 密钥与目标应用列表，一键实现强完整性认证配置。"
+  },
+  "searchAliases": [
+    "YuriKey 下载",
+    "yurikey 模块",
+    "TrickyStore Keybox 自动更新",
+    "Strong Integrity 过检测模块",
+    "Play Integrity 强完整性认证"
+  ]
+}

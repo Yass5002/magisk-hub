@@ -1,0 +1,16 @@
+{
+  "id": "swapboost-pro",
+  "displayName": "SwapBoost-Pro (zRAM 与 Swap 双层优化)",
+  "description": "Magisk 虚拟内存优化模块，通过高优先级 zRAM 压缩内存与低优先级磁盘 Swapfile 兜底策略并调优 VM 参数，提升多任务表现。",
+  "seo": {
+    "title": "SwapBoost-Pro zRAM 与交换分区优先级优化模块下载 | Magisk Hub",
+    "description": "下载 SwapBoost-Pro Magisk 模块，通过高优先级 zRAM 压缩内存与低优先级磁盘 Swapfile 兜底策略优化虚拟内存，兼容严格 SELinux 并有效防止后台杀进程。"
+  },
+  "searchAliases": [
+    "SwapBoost-Pro 模块下载",
+    "Android zRAM Swap 优化",
+    "安卓防后台杀进程 Magisk",
+    "虚拟内存优先级设置 Root",
+    "SwapBoost Pro 配置"
+  ]
+}

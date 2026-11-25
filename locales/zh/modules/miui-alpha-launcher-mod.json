@@ -1,0 +1,16 @@
+{
+  "id": "miui-alpha-launcher-mod",
+  "displayName": "MIUI Alpha Launcher Mod (小米桌面内测修改版)",
+  "description": "面向小米 MIUI 与 HyperOS 的无系统分区修改（Systemless）桌面增强模块，解锁自定义桌面网格、应用图标隐藏、文件夹弹性动画与全局背景模糊。",
+  "seo": {
+    "title": "MIUI Alpha Launcher Mod 下载与功能指南 | Magisk Hub",
+    "description": "下载 MIUI Alpha Launcher Mod 模块，支持 Magisk、KernelSU 与 APatch。为小米 MIUI 与 HyperOS 系统桌面解锁双击锁屏、高密度桌面网格、应用隐藏与文件夹背景模糊。"
+  },
+  "searchAliases": [
+    "MIUI 内测桌面修改版模块",
+    "小米桌面双击锁屏 Magisk",
+    "MIUI 桌面文件夹模糊模块",
+    "MiuiHome 修改版 APatch",
+    "小米桌面隐藏应用模块"
+  ]
+}

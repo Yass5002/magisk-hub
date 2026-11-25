@@ -1,0 +1,16 @@
+{
+  "id": "bindhosts",
+  "displayName": "bindhosts (无侵入式 Hosts 挂载去广告)",
+  "description": "适用于 APatch、KernelSU 与 Magisk 的高性能无侵入式 hosts 挂载引擎，通过内核级 bind mount 拦截广告与追踪域名且零额外耗电。",
+  "seo": {
+    "title": "bindhosts 模块下载与规则配置指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载 bindhosts 无侵入式 hosts 模块，兼容 Magisk、KernelSU 与 APatch。支持多上游广告规则订阅、WebUI 管理、黑白名单定制与零后台耗电域名拦截。"
+  },
+  "searchAliases": [
+    "bindhosts 模块下载",
+    "KernelSU 系统级 hosts 去广告",
+    "APatch hosts 挂载模块",
+    "安卓 Root 免 VPN 去广告",
+    "bindhosts 白名单设置"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "zeromount",
+  "displayName": "ZeroMount",
+  "description": "Enginex0 开发的无挂载（Mountless）模块加载引擎，在内核 VFS getname() 层重定向文件路径，实现零挂载表污染并深度集成 SUSFS 隐匿。",
+  "seo": {
+    "title": "ZeroMount 下载与无挂载引擎配置指南 | Magisk Hub",
+    "description": "下载 ZeroMount 模块，兼容 KernelSU、APatch 与 Magisk。通过内核 VFS 路径重定向实现无痕模块加载，消除挂载表指纹并原生集成 SUSFS 隐藏能力。"
+  },
+  "searchAliases": [
+    "ZeroMount 模块",
+    "ZeroMount 下载",
+    "无挂载加载模块",
+    "KernelSU VFS 重定向",
+    "ZeroMount SUSFS 隐藏"
+  ]
+}

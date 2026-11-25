@@ -1,0 +1,16 @@
+{
+  "id": "tcp-optimiser-module",
+  "displayName": "TCP_Optimiser_Module (TCP 拥塞算法动态优化)",
+  "description": "根据当前活跃网络类型（Wi-Fi 与移动数据）动态切换 BBR、Cubic 等 TCP 拥塞控制算法与队列调度器的 Root 模块。",
+  "seo": {
+    "title": "TCP_Optimiser_Module 下载与 BBR 网络优化模块指南 | Magisk Hub",
+    "description": "下载 TCP_Optimiser_Module 模块，支持 Magisk、KernelSU 与 APatch。支持 Wi-Fi 自动切换 BBR 与移动数据切换 Cubic，并可配置 qdisc 与 TCP 初始窗口优化。"
+  },
+  "searchAliases": [
+    "TCP_Optimiser_Module 下载",
+    "Magisk 自动切换 BBR Cubic",
+    "Android TCP 拥塞算法优化",
+    "WiFi BBR 流量 Cubic 模块",
+    "initcwnd initrwnd 优化模块"
+  ]
+}

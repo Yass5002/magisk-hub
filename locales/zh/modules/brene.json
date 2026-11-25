@@ -1,0 +1,16 @@
+{
+  "id": "brene",
+  "displayName": "BRENE (防卡米恢复引擎)",
+  "description": "轻量级开机保护守护进程，持续监测 Android 启动阶段与系统崩溃状态，在发生卡米或无限重启时自动禁用故障模块。",
+  "seo": {
+    "title": "BRENE 防卡米模块下载与恢复配置 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 BRENE 防卡米保护模块，兼容 Magisk、KernelSU 与 APatch。自动监测启动超时与连续重启并安全禁用问题模块，支持 Action 按钮测试与超时参数自定义。"
+  },
+  "searchAliases": [
+    "BRENE 模块下载",
+    "BRENE 防卡米",
+    "Magisk 自动禁用故障模块",
+    "KernelSU 防无限重启",
+    "Root 救砖保护模块"
+  ]
+}

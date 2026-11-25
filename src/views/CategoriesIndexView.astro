@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { CATEGORIES, getAllModules } from '../lib/modules';
+import { localizePath, type Locale } from '../i18n/routing';
+import { localizeCategory } from '../i18n/taxonomy';
+import { getUI } from '../i18n/ui';
+
+export interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const ui = getUI(locale);
+const allModules = getAllModules(locale);
+
+const categories = Object.values(CATEGORIES).map(rawCat => {
+  const cat = localizeCategory(rawCat, locale);
+  const catMods = allModules.filter(m => m.category === cat.id);
+  const tier1Count = catMods.filter(m => m.contentTier === 1).length;
+  const totalStars = catMods.reduce((sum, m) => sum + (m.stars || 0), 0);
+
+  return {
+    ...cat,
+    count: catMods.length,
+    tier1Count,
+    totalStars,
+  };
+});
+
+const breadcrumbs = [
+  { name: ui.moduleDetail.home, url: localizePath('/', locale) },
+  { name: ui.categoriesIndex.breadcrumb, url: localizePath('/categories/', locale) },
+];
+---
+
+<BaseLayout
+  locale={locale}
+  title={ui.categoriesIndex.seoTitle}
+  description={ui.categoriesIndex.seoDescription}
+>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <div class="py-6 border-b border-zinc-200">
+      <h1 class="text-3xl font-extrabold text-zinc-900 tracking-tight">
+        {ui.categoriesIndex.h1}
+      </h1>
+      <p class="mt-1.5 text-sm text-zinc-500 max-w-2xl">
+        {ui.categoriesIndex.subtitle}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+      {categories.map(cat => (
+        <a 
+          href={localizePath(`/categories/${cat.id}/`, locale)}
+          class="group rounded-xl border border-zinc-200 bg-white p-5 hover:border-zinc-300 hover:shadow-xs transition-all flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex items-start justify-between gap-3">
+              <h2 class="text-lg font-bold text-zinc-900 group-hover:text-black transition-colors">
+                {cat.name}
+              </h2>
+              <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80 shrink-0">
+                {ui.categoriesIndex.modulesCount(cat.count)}
+              </span>
+            </div>
+
+            <p class="mt-2 text-xs text-zinc-600 leading-relaxed">
+              {cat.description}
+            </p>
+          </div>
+
+          <div class="mt-5 pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-mono text-zinc-500">
+            <div class="flex items-center gap-2">
+              <span class="text-amber-500 font-medium">★ {cat.totalStars.toLocaleString()} {ui.home.starsSuffix}</span>
+              {cat.tier1Count > 0 && (
+                <>
+                  <span class="text-zinc-300">•</span>
+                  <span>{ui.categoriesIndex.guidesCount(cat.tier1Count)}</span>
+                </>
+              )}
+            </div>
+
+            <span class="font-medium text-zinc-900 group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1">
+              {ui.categoriesIndex.browse}
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

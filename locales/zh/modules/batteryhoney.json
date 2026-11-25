@@ -1,0 +1,16 @@
+{
+  "id": "batteryhoney",
+  "displayName": "Battery Honey (Zig 省电调度模块)",
+  "description": "基于 Zig 编写的超轻量电源管理守护进程，融合 RaiRin-AI 省电策略与 Devfreq/GPU 总线调频，在保持界面流畅的同时显著降低待机与日常功耗。",
+  "seo": {
+    "title": "Battery Honey 模块下载与省电调频配置指南 | Magisk Hub",
+    "description": "下载最新版 Battery Honey (Awaken) 模块，支持 Magisk、KernelSU 与 APatch。采用低开销 Zig 二进制与 RaiRin-AI 逻辑动态调节 GPU 及内存总线功耗。"
+  },
+  "searchAliases": [
+    "Battery Honey 模块下载",
+    "Magisk 省电调度模块",
+    "Zig Android 省电守护进程",
+    "Devfreq GPU 降功耗调频",
+    "KernelSU WebUI 省电模块"
+  ]
+}

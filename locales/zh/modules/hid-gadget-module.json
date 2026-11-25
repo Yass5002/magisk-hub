@@ -1,0 +1,16 @@
+{
+  "id": "hid-gadget-module",
+  "displayName": "USB HID Gadget Module (USB 键鼠模拟)",
+  "description": "基于 Linux ConfigFS 启用 Android USB HID 设备模拟，内置交互式终端键鼠界面 hid-tui 与 DuckyScript 3.0 脚本注入引擎。",
+  "seo": {
+    "title": "hid-gadget-module 下载与 USB 键鼠模拟指南 | Magisk Hub",
+    "description": "下载 hid-gadget-module 模块，兼容 Magisk 与 KernelSU。通过内核 ConfigFS 将手机模拟为物理 USB 键盘、鼠标与多媒体遥控，支持 DuckyScript 自动化注入。"
+  },
+  "searchAliases": [
+    "hid-gadget-module 模块下载",
+    "Android 手机模拟 USB 键盘鼠标",
+    "Magisk BadUSB DuckyScript 模块",
+    "hid-tui 终端键鼠控制器",
+    "安卓 USB HID Gadget 内核配置"
+  ]
+}

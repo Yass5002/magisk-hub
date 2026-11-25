@@ -1,0 +1,16 @@
+{
+  "id": "zygisk-assistant",
+  "displayName": "Zygisk Assistant",
+  "description": "完全开源的 Zygisk Root 隐藏模块，支持拦截挂载表读取、隐藏 su 二进制路径与伪装调试属性，兼容 Magisk、KernelSU 与 APatch。",
+  "seo": {
+    "title": "Zygisk Assistant 下载与开源隐藏 Root 指南 | Magisk Hub",
+    "description": "下载完全开源的 Zygisk Assistant 模块，支持 Magisk、KernelSU 与 APatch。通过系统调用与 C 库拦截过滤挂载表并隐藏 su 文件，有效应对银行应用检测。"
+  },
+  "searchAliases": [
+    "Zygisk Assistant 下载",
+    "开源隐藏 Root 模块",
+    "Shamiko 开源替代品",
+    "Zygisk Assistant 配置",
+    "银行应用 Root 隐藏"
+  ]
+}

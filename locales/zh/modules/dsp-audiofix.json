@@ -1,0 +1,16 @@
+{
+  "id": "dsp-audiofix",
+  "displayName": "DSP-AudioFix (小米联发科音频修复)",
+  "description": "面向小米与联发科机型艾为智能功放的开机音频修复模块，通过同步 audioserver 与 DSP 初始化时序消除破音与杂音。",
+  "seo": {
+    "title": "DSP-AudioFix 模块下载与音频修复指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 DSP-AudioFix 模块，支持 Magisk 与 KernelSU。开机延迟重启 audioserver，解决小米与联发科机型艾为智能功放初始化竞态导致的破音与杂音问题。"
+  },
+  "searchAliases": [
+    "DSP-AudioFix 模块下载",
+    "Poco X6 Pro 破音修复",
+    "联发科天玑 8300 音频杂音修复",
+    "艾为智能功放 Magisk 修复",
+    "开机重启 audioserver 模块"
+  ]
+}

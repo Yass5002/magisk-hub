@@ -1,0 +1,16 @@
+{
+  "id": "ohmykeymint",
+  "displayName": "OhMyKeymint",
+  "description": "基于 Rust 编写的 Android Keystore 2.0 拦截模块，通过挂钩 keystore2 守护进程将密钥证明重定向至自定义 KeyMint 配置。",
+  "seo": {
+    "title": "OhMyKeymint 模块下载与 KeyMint 配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 OhMyKeymint 硬件认证拦截模块，兼容 Magisk、KernelSU 与 APatch。使用 Rust 挂钩 keystore2 守护进程，通过 TOML 灵活配置 Keybox 与补丁级别。"
+  },
+  "searchAliases": [
+    "OhMyKeymint 模块下载",
+    "安卓 Keystore2 密钥证明拦截",
+    "OhMyKeymint config.toml 配置",
+    "替代 TrickyStore 模块",
+    "Play Integrity 强认证 Keybox"
+  ]
+}

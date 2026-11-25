@@ -1,0 +1,16 @@
+{
+  "id": "key-attestation",
+  "displayName": "Key Attestation",
+  "description": "由 vvb2060 开发的离线安全诊断工具，用于生成、解析并验证 Android 硬件 Keystore、StrongBox 与 KeyMint 密钥证明证书链。",
+  "seo": {
+    "title": "Key Attestation 下载与使用指南（密钥证明检测工具）| Magisk Hub",
+    "description": "下载离线密钥证明诊断工具 Key Attestation，支持免 Root 及 Magisk、KernelSU、APatch 环境，用于检测硬件 Keystore、StrongBox 与 KeyMint 证书链状态。"
+  },
+  "searchAliases": [
+    "Key Attestation 下载",
+    "vvb2060 密钥证明工具",
+    "Android 硬件密钥认证检测",
+    "KeyMint StrongBox 验证",
+    "Bootloader 锁定状态检测"
+  ]
+}

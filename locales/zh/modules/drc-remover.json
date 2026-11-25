@@ -1,0 +1,16 @@
+{
+  "id": "drc-remover",
+  "displayName": "DRC Remover (禁用音频动态范围压缩)",
+  "description": "移除高通骁龙等主流 Android 设备所有音频输出通道中的 DRC（动态范围控制/压缩）限制，还原无损听感。",
+  "seo": {
+    "title": "DRC Remover 模块下载与音频优化指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 DRC Remover 音频优化模块，支持 Magisk 与 KernelSU。无侵入式修改系统音频策略 XML，禁用高通骁龙等设备全输出通道的动态范围压缩。"
+  },
+  "searchAliases": [
+    "DRC Remover 模块下载",
+    "禁用 Android 音频动态压缩",
+    "speaker_drc_enabled 关闭",
+    "高通骁龙音频音质还原 Magisk",
+    "Magisk 解除音频压限"
+  ]
+}

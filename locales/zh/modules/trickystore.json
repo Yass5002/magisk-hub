@@ -1,0 +1,16 @@
+{
+  "id": "trickystore",
+  "displayName": "TrickyStore",
+  "description": "深入 Android Keystore HAL 层的证书链注入模块，支持为已解锁 Bootloader 设备注入自定义 Keybox 以通过强完整性认证。",
+  "seo": {
+    "title": "TrickyStore 下载与 Keybox 配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 TrickyStore，兼容 Magisk 与 KernelSU。详解 Keystore 2.0 拦截原理、keybox.xml 与 target.txt 配置及 Strong 认证修复。"
+  },
+  "searchAliases": [
+    "TrickyStore 下载",
+    "Keybox 密钥盒",
+    "Strong Integrity 过检测",
+    "Bootloader 锁定状态伪装",
+    "密钥认证绕过"
+  ]
+}

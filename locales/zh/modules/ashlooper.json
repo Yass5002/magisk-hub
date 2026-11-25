@@ -1,0 +1,16 @@
+{
+  "id": "ashlooper",
+  "displayName": "AshReXcue (AshLooper 智能防卡米)",
+  "description": "面向 Magisk、KernelSU 与 APatch 的智能防卡米保护引擎，通过差分状态分析精准定位并隔离异常模块与开机脚本。",
+  "seo": {
+    "title": "AshReXcue (AshLooper) 防卡米模块下载与教程 | Magisk Hub",
+    "description": "下载 AshReXcue (AshLooper) 防卡米保护模块，支持 Magisk、KernelSU 与 APatch。支持差分追踪故障模块、开机脚本隔离与 SystemUI 崩溃监控。"
+  },
+  "searchAliases": [
+    "AshReXcue 模块下载",
+    "AshLooper 防卡米",
+    "Magisk 智能防砖模块",
+    "KernelSU 开机脚本保护",
+    "SystemUI 崩溃循环救砖"
+  ]
+}

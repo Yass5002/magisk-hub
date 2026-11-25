@@ -1,0 +1,16 @@
+{
+  "id": "czero",
+  "displayName": "CZero (C++ 系统清理模块)",
+  "description": "专为 Android 打造的高性能系统缓存清理与后台优化模块，基于事件驱动的原生 C++ 守护进程运行。",
+  "seo": {
+    "title": "CZero 模块下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 CZero 系统清理与优化模块，支持 Magisk、KernelSU 与 APatch。基于事件驱动 C++ 守护进程实现高效缓存清理、后台压制与 F2FS 垃圾回收。"
+  },
+  "searchAliases": [
+    "CZero 模块下载",
+    "CZeroX 缓存清理",
+    "Android F2FS 垃圾回收 Magisk",
+    "C++ 守护进程清理模块",
+    "KernelSU 系统清理优化"
+  ]
+}

@@ -1,0 +1,42 @@
+# Magisk Hub（简体中文版）
+
+> Magisk Hub 是面向 Magisk、KernelSU、APatch 与 LSPosed 生态的开源 Root 模块中文目录与技术文档中心，累计收录 249 个活跃模块。
+
+## 项目概览与验证机制
+所有收录模块均通过 JSON Schema Draft-07 数据规范校验与真实发布包载荷核查，提供官方直链下载、中文技术原理解析、配置文件路径与救砖排查指南。
+
+- 中文首页: https://magisk.yssn.tech/zh/
+- 英文首页: https://magisk.yssn.tech/
+- 完整中文模块索引: https://magisk.yssn.tech/zh/llms-full.txt
+- 开源仓库: https://github.com/Yass5002/magisk-hub
+- 安全与审核政策: https://magisk.yssn.tech/zh/security/
+
+## 兼容平台目录
+- [Magisk 模块](https://magisk.yssn.tech/zh/compatibility/magisk/): 经典无系统分区修改（Systemless）Root 方案，支持 Boot 镜像修补与 Zygisk。
+- [KernelSU 模块](https://magisk.yssn.tech/zh/compatibility/kernelsu/): 基于 GKI 内核空间的 Root 授权管理方案。
+- [APatch 模块](https://magisk.yssn.tech/zh/compatibility/apatch/): 基于 KernelPatch 的内核就地修补 Root 方案。
+- [LSPosed 模块](https://magisk.yssn.tech/zh/compatibility/lsposed/): 现代 Android ART 运行时方法 Hook 框架。
+- [Shizuku 特权应用](https://magisk.yssn.tech/zh/compatibility/shizuku/): 通过 Binder 令牌调用系统特权 API 的免 Root 应用。
+- [免 Root 工具](https://magisk.yssn.tech/zh/compatibility/rootless/): 基于无线调试 ADB 或 Device Owner 的免 Root 实用工具。
+
+## 模块功能分类
+- [Root 管理与隐藏](https://magisk.yssn.tech/zh/categories/root-management/): 核心 su 守护进程、Zygisk 注入引擎、Root 环境隐藏与 Play Integrity 认证绕过工具。
+- [性能与内核调校](https://magisk.yssn.tech/zh/categories/performance-kernel/): CPU/GPU 调度器优化、温控策略调整与游戏帧率性能增强模块。
+- [系统环境与框架增强](https://magisk.yssn.tech/zh/categories/system-environment/): Systemless 系统框架微调、OEM 专属功能解锁与系统级特性修改。
+- [界面定制与美化](https://magisk.yssn.tech/zh/categories/customization-ui/): 状态栏、手势导航、桌面启动器及系统外观视觉定制模块。
+- [开发调试与逆向插桩](https://magisk.yssn.tech/zh/categories/development-instrumentation/): 动态 Hook 框架、Frida 注入服务端、系统抓包调试与逆向分析工具。
+- [系统实用工具](https://magisk.yssn.tech/zh/categories/system-utilities/): 通话录音、自动清理、后台管理、磁盘挂载与终端效率增强工具。
+- [网络与透明代理](https://magisk.yssn.tech/zh/categories/networking-proxies/): Systemless 广告拦截、TPROXY 透明代理网关与隐私 DNS 重定向模块。
+- [安全与证书管理](https://magisk.yssn.tech/zh/categories/security-certificates/): 系统级 CA 根证书信任注入、设备标识符伪装与隐私安全防护模块。
+- [Xposed 与运行时 Hook](https://magisk.yssn.tech/zh/categories/xposed-runtime-hooks/): ART 运行时方法挂钩、签名校验绕过与应用逻辑增强模块。
+- [音频 DSP 与声学增强](https://magisk.yssn.tech/zh/categories/audio-dsp-acoustics/): 系统全局均衡器、音频驱动调音、Mixer 通路修改与杜比全景声移植。
+- [系统字体与排版](https://magisk.yssn.tech/zh/categories/system-typography-fonts/): 无侵入式系统字体替换、CJK 中日韩字符集补全与 Emoji 表情包替换模块。
+- [电池与充电控制](https://magisk.yssn.tech/zh/categories/battery-power-charging/): 高级充电阈值开关、旁路供电（Idle Mode）、PPS 快充协议解锁与功耗监控。
+- [开机动画与启动画面](https://magisk.yssn.tech/zh/categories/boot-animations-ui/): 自定义开机动画、Pixel 原生开机特效与充电/启动界面美化模块。
+
+## 热门核心模块中文指南
+- [Magisk（面具）](https://magisk.yssn.tech/zh/modules/magisk/): 通用无系统分区修改（Systemless）Root 方案与镜像修补教程。
+- [PlayIntegrityFix (PIF)](https://magisk.yssn.tech/zh/modules/playintegrityfix/): 通过 Zygisk 注入与设备指纹伪装修复 Play Integrity 认证。
+- [Shamiko](https://magisk.yssn.tech/zh/modules/shamiko/): LSPosed 团队开发的高隐蔽性 Zygisk Root 隐藏模块。
+- [TrickyStore](https://magisk.yssn.tech/zh/modules/trickystore/): 基于 Keystore HAL 拦截与 Keybox 注入通过强完整性认证。
+- [ACC 高级充电控制](https://magisk.yssn.tech/zh/modules/acc/): 充电上限保护、限流控温与旁路供电（Idle Mode）守护进程。

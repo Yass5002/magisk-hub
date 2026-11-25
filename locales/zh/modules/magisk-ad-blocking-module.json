@@ -1,0 +1,16 @@
+{
+  "id": "magisk-ad-blocking-module",
+  "displayName": "Magisk-Ad-Blocking-Module (系统级 Hosts 去广告)",
+  "description": "零后台耗电的 Systemless hosts 去广告模块，整合 OISD、1Hosts 与反成人内容规则，全局拦截广告与追踪域名。",
+  "seo": {
+    "title": "Magisk-Ad-Blocking-Module 下载与去广告配置指南 | Magisk Hub",
+    "description": "下载 Magisk-Ad-Blocking-Module，支持 Magisk、KernelSU 与 APatch。整合 OISD 与 1Hosts 规则实现 Systemless hosts 全局广告与追踪器拦截。"
+  },
+  "searchAliases": [
+    "Magisk-Ad-Blocking-Module 下载",
+    "pantsufan 去广告模块",
+    "OISD 1Hosts Magisk hosts",
+    "免 VPN 系统级去广告",
+    "Magisk 屏蔽应用内广告"
+  ]
+}

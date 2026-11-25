@@ -1,0 +1,16 @@
+{
+  "id": "coloros-battery-details-lite",
+  "displayName": "ColorOS 电池详情与耗电显示 Lite",
+  "description": "面向 ColorOS、Realme UI 与 OxygenOS 的轻量级通知栏电池遥测模块，通过系统通知渠道实时显示充电功率、充放电电流（mA）、电压及电池温度。",
+  "seo": {
+    "title": "ColorOS 电池详情通知栏监控模块下载与使用指南 | Magisk Hub",
+    "description": "下载 ColorOS Battery Details Lite 模块，支持 Magisk、KernelSU 与 APatch。在通知栏实时显示充电功率、电流、放电速率与电池温度等硬件遥测数据。"
+  },
+  "searchAliases": [
+    "ColorOS 电池详情通知栏模块",
+    "ColorOS_details Lite 下载",
+    "Realme UI 实时充电功率显示 Magisk",
+    "一加 OxygenOS 状态栏电流监控",
+    "Android 通知栏电池温度功耗监控"
+  ]
+}

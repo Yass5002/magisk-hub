@@ -1,0 +1,16 @@
+{
+  "id": "thermal-controller-bypass",
+  "displayName": "Thermal Controller Disabler (爱玩机温控移除)",
+  "description": "爱玩机工具箱出品的无侵入式温控移除模块，系统性屏蔽厂商温控配置文件，防止游戏与高负载场景下 CPU/GPU 激进降频。",
+  "seo": {
+    "title": "Thermal Controller Disabler 爱玩机温控移除模块下载 | Magisk Hub",
+    "description": "下载爱玩机工具箱出品的 Thermal Controller Disabler 温控移除模块，支持 Magisk、KernelSU 与 APatch。无侵入屏蔽厂商温控限制，告别游戏降频锁帧与暗屏。"
+  },
+  "searchAliases": [
+    "爱玩机温控移除模块",
+    "Thermal Controller Disabler 下载",
+    "安卓去温控 Magisk 模块",
+    "游戏解除温控降频锁帧",
+    "KernelSU 屏蔽温控模块"
+  ]
+}

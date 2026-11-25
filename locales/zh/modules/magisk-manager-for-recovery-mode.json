@@ -1,0 +1,16 @@
+{
+  "id": "magisk-manager-for-recovery-mode",
+  "displayName": "Magisk Manager for Recovery Mode (mm 恢复模式救砖工具)",
+  "description": "面向 TWRP 与 OrangeFox 等第三方 Recovery 终端的交互式救砖工具，可在无法开机时禁用或卸载问题 Magisk 模块并修复镜像文件系统。",
+  "seo": {
+    "title": "Magisk Manager Recovery (mm) 救砖模块下载与使用指南 | Magisk Hub",
+    "description": "下载 Magisk Manager for Recovery Mode (mm) 救砖模块，专为 Magisk 打造。支持在 TWRP 终端中一键停用冲突模块、删除异常包或切换仅核心模式。"
+  },
+  "searchAliases": [
+    "Magisk Recovery 救砖模块",
+    "TWRP 禁用面具模块 mm",
+    "面具模块变砖卡开机修复",
+    "sh sdcard mm 命令",
+    "Magisk 仅核心模式恢复"
+  ]
+}

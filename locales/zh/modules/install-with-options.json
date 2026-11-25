@@ -1,0 +1,16 @@
+{
+  "id": "install-with-options",
+  "displayName": "Install with Options (高级 APK 安装器)",
+  "description": "基于 Shizuku 的开源 Android 本地高级安装器，支持绕过低版本 SDK 限制、安装测试包、降级安装及拆分 APK 打包安装。",
+  "seo": {
+    "title": "Install with Options 下载与安装指南 (Shizuku) | Magisk Hub",
+    "description": "下载 Install with Options 安装器，支持 Shizuku、免 Root、Magisk、KernelSU 与 APatch。免电脑一键绕过低 SDK 限制、安装测试包与拆分 APK。"
+  },
+  "searchAliases": [
+    "Install with Options 下载",
+    "Android 14 绕过低版本 SDK 安装",
+    "Shizuku 降级安装 APK",
+    "免电脑安装 testOnly APK",
+    "拆分 APK 安装器 apks xapk"
+  ]
+}

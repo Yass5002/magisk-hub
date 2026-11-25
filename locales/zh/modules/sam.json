@@ -1,0 +1,16 @@
+{
+  "id": "sam",
+  "displayName": "SAM (SmartDNS + AdGuardHome + Mihomo)",
+  "description": "由 5MayRain 开发的三合一网络模块，将 SmartDNS、AdGuard Home 与 Mihomo 整合为统一的 DNS 过滤与透明代理流水线。",
+  "seo": {
+    "title": "SAM 模块下载与 SmartDNS/AdGuard/Mihomo 配置指南 | Magisk Hub",
+    "description": "下载 SAM 三合一网络模块，支持 Magisk、KernelSU 与 APatch。集成 SmartDNS、AdGuard Home 与 Mihomo 透明代理，支持双链条拓扑与网页管理后台。"
+  },
+  "searchAliases": [
+    "SAM Magisk 模块下载",
+    "5MayRain SAM 三合一",
+    "SmartDNS AdGuardHome Mihomo 安卓",
+    "AdGuard 透明代理模块",
+    "SAM 路由链条配置"
+  ]
+}

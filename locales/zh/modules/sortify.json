@@ -1,0 +1,16 @@
+{
+  "id": "sortify",
+  "displayName": "Sortify (下载目录自动归类)",
+  "description": "面向 Magisk 与 KernelSU 的后台文件自动化整理模块，按文件类型定时将 Download 目录内的杂乱文件自动归类至对应子文件夹。",
+  "seo": {
+    "title": "Sortify 下载目录自动整理模块下载 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 Sortify 自动整理模块，支持 Magisk 与 KernelSU。内置 WebUI 与 Action 快捷按钮，按预设周期自动将 Download 文件夹中的图片、APK 与压缩包分类归档。"
+  },
+  "searchAliases": [
+    "Sortify 模块下载",
+    "Magisk 自动整理下载文件夹",
+    "KernelSU WebUI 文件归类",
+    "Android Download 自动分类",
+    "手机下载目录整理模块"
+  ]
+}

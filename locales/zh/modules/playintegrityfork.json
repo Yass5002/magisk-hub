@@ -1,0 +1,16 @@
+{
+  "id": "playintegrityfork",
+  "displayName": "PlayIntegrityFork",
+  "description": "由 osm0sis 维护的 PlayIntegrityFix 增强分支，支持通过自定义 pif.json 覆写设备指纹与系统字段以通过 Play Integrity 设备认证。",
+  "seo": {
+    "title": "PlayIntegrityFork 模块下载与 pif.json 配置指南 | Magisk Hub",
+    "description": "下载 PlayIntegrityFork 模块，支持 Magisk 及搭配 Zygisk Next 的 KernelSU 与 APatch。支持自定义设备指纹与字段覆写，轻松通过谷歌设备完整性检测。"
+  },
+  "searchAliases": [
+    "PlayIntegrityFork 下载",
+    "Play Integrity 过检测模块",
+    "自定义 pif.json 指纹教程",
+    "谷歌商店设备未认证修复",
+    "PlayIntegrityFork 与 PIF 区别"
+  ]
+}

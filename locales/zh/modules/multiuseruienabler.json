@@ -1,0 +1,16 @@
+{
+  "id": "multiuseruienabler",
+  "displayName": "multiuseruienabler (多用户界面解锁)",
+  "description": "通过无系统分区修改注入框架属性，在精简版 OEM ROM（如三星 One UI Core）中重新启用隐藏的 Android 多用户设置界面。",
+  "seo": {
+    "title": "multiuseruienabler 下载与配置指南 (Magisk 模块) | Magisk Hub",
+    "description": "下载 multiuseruienabler 模块，支持 Magisk Root 环境。通过 Systemless 属性注入恢复隐藏的 Android 多用户管理界面，适配三星 One UI Core 等精简系统。"
+  },
+  "searchAliases": [
+    "multiuseruienabler 下载",
+    "One UI Core 开启多用户",
+    "Android 隐藏多用户设置解锁",
+    "Magisk 多用户模块",
+    "fw.show_multiuserui 模块"
+  ]
+}

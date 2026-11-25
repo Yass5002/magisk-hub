@@ -1,0 +1,16 @@
+{
+  "id": "usb-samplerate-unlocker",
+  "displayName": "USB Samplerate Unlocker (USB 采样率解锁)",
+  "description": "在开机阶段动态二进制修补厂商 ALSA 音频库，突破 Android USB 音频 HAL 默认 96kHz 采样率限制，解锁 192kHz、384kHz 与 768kHz 无损直出。",
+  "seo": {
+    "title": "USB Samplerate Unlocker 下载与高采样率配置指南 | Magisk Hub",
+    "description": "下载 USB Samplerate Unlocker，支持 Magisk 与 KernelSU。动态修补 libalsautils 解除 Android USB DAC 96kHz 采样率限制，实现无损母带音频直通输出。"
+  },
+  "searchAliases": [
+    "USB 采样率解锁模块",
+    "安卓小尾巴突破 96kHz 限制",
+    "USB Samplerate Unlocker 下载",
+    "Magisk 音频直出 384kHz",
+    "libalsautils 修补模块"
+  ]
+}

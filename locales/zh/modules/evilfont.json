@@ -1,0 +1,15 @@
+{
+  "id": "evilfont",
+  "displayName": "EvilFont（阿语/波斯语字体与 Apple Emoji 模块）",
+  "description": "交互式音量键安装的无侵入式字体模块，可替换 Android 默认阿拉伯语、波斯语字体并集成高清 Apple Emoji。",
+  "seo": {
+    "title": "EvilFont 下载与音量键配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 EvilFont 字体模块，支持 Magisk、KernelSU 与 APatch。安装时通过音量键交互选择精选阿拉伯语/波斯语字体及苹果 iOS Emoji 表情。"
+  },
+  "searchAliases": [
+    "EvilFont Magisk 模块下载",
+    "苹果 iOS Emoji 字体模块",
+    "阿拉伯语波斯语字体替换",
+    "音量键交互字体模块"
+  ]
+}

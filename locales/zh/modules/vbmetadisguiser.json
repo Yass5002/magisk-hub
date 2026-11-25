@@ -1,0 +1,16 @@
+{
+  "id": "vbmetadisguiser",
+  "displayName": "VBMetaDisguiser (VBMeta 属性伪装)",
+  "description": "用于伪装 Android Verified Boot (AVB)、VBMeta 分区参数、Boot Hash 与 Bootloader 状态的系统属性掩码模块，支持 Magisk 与 KernelSU。",
+  "seo": {
+    "title": "VBMetaDisguiser 模块下载与伪装配置 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 VBMetaDisguiser 模块，支持 Magisk、KernelSU 与 APatch。伪装 AVB 属性、Boot Hash 与 Bootloader 锁定状态，轻松通过 Native Detector 检测。"
+  },
+  "searchAliases": [
+    "VBMetaDisguiser 下载",
+    "VBMeta 属性伪装模块",
+    "Boot Hash 伪装",
+    "AVB Bootloader 隐藏",
+    "Native Detector 过检测"
+  ]
+}

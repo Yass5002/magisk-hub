@@ -1,0 +1,16 @@
+{
+  "id": "auto-charge-disconnect",
+  "displayName": "满电自动断充保护模块 (Auto Charge Disconnect)",
+  "description": "零依赖的纯 Shell 充电监控守护脚本，电量充至 100% 时自动切断充电输入开关，跌至 95% 时自动恢复充电，有效减少夜间过充损耗。",
+  "seo": {
+    "title": "满电自动断充保护 Magisk 模块下载与阈值配置指南 | Magisk Hub",
+    "description": "下载满电自动断充保护模块，兼容 Magisk、KernelSU 与 APatch。通过内核输入开关在满电时自动断充、掉电至 95% 恢复供电，避免夜间长期满充损伤电池。"
+  },
+  "searchAliases": [
+    "Magisk 满电自动断充",
+    "防过充充电保护模块",
+    "夜间充电自动断电 Root",
+    "input_suspend 自动断充",
+    "KernelSU 充电断电保护"
+  ]
+}

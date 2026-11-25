@@ -1,0 +1,16 @@
+{
+  "id": "susfs4ksu-module",
+  "displayName": "SUSFS (susfs4ksu-module)",
+  "description": "sidex15 开发的内核级 Root 隐藏配套模块，配合 SUSFS 内核补丁直接在 Linux 内核态隐匿挂载点、自定义路径及文件元数据，无惧用户态检测。",
+  "seo": {
+    "title": "SUSFS 模块下载与内核态隐藏指南 (KernelSU/APatch) | Magisk Hub",
+    "description": "下载 susfs4ksu-module 配套模块，适配已打入 SUSFS 补丁的 KernelSU 与 APatch 内核。详解 VFS 挂载点隐藏、Kstat 元数据伪装与自定义路径隐匿用法。"
+  },
+  "searchAliases": [
+    "SUSFS 模块下载",
+    "susfs4ksu-module 教程",
+    "KernelSU 内核级隐藏",
+    "SUSFS 隐藏挂载点",
+    "APatch SUSFS 过检测"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "rezygisk",
+  "displayName": "ReZygisk",
+  "description": "PerformanC 开发的开源独立 Zygisk 引擎，为 KernelSU、APatch 与自定义 Root 方案提供高性能、无遥测的 Zygote 进程注入支持。",
+  "seo": {
+    "title": "ReZygisk 下载与配置指南 (KernelSU/APatch/Magisk) | Magisk Hub",
+    "description": "下载最新版 ReZygisk 独立 Zygisk 引擎，支持 KernelSU、APatch 与 Magisk。了解 Zygote 进程注入架构、安装步骤及禁用内置 Zygisk 的防冲突配置。"
+  },
+  "searchAliases": [
+    "ReZygisk 下载",
+    "ReZygisk 模块",
+    "KernelSU 开启 Zygisk",
+    "ReZygisk 和 Zygisk Next 区别",
+    "APatch Zygisk 引擎"
+  ]
+}

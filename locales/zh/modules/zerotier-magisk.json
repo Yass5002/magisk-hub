@@ -1,0 +1,16 @@
+{
+  "id": "zerotier-magisk",
+  "displayName": "ZeroTier for Magisk (zerotier-magisk)",
+  "description": "无侵入式 ZeroTier One 后台守护进程模块，在内核网络层建立加密 P2P 虚拟局域网，不占用 Android 系统 VPN 通道且支持自建 Planet 根节点。",
+  "seo": {
+    "title": "ZeroTier for Magisk 模块下载与组网配置指南 | Magisk Hub",
+    "description": "下载最新版 zerotier-magisk 模块与配套控制端，在 Magisk 环境下以系统守护进程运行 ZeroTier P2P 虚拟组网，不占用系统 VPN 卡槽并支持自定义 Planet。"
+  },
+  "searchAliases": [
+    "ZeroTier Magisk 模块下载",
+    "Android 不占 VPN 槽位 ZeroTier",
+    "Root 手机自建 Planet 组网",
+    "zerotier-one 后台守护进程",
+    "Magisk 内网穿透模块"
+  ]
+}

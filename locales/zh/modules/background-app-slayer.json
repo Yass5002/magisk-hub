@@ -1,0 +1,16 @@
+{
+  "id": "background-app-slayer",
+  "displayName": "Background App Slayer (BAS 后台清理模块)",
+  "description": "面向手游场景的自动化后台进程清理守护进程，支持三档激进程度与白名单保护，进入游戏后自动释放内存并减少后台唤醒抢占。",
+  "seo": {
+    "title": "Background App Slayer 模块下载与游戏后台清理指南 | Magisk Hub",
+    "description": "下载最新版 Background App Slayer (BAS) 模块，支持 Magisk 与 KernelSU。启动游戏时自动按三档策略清理后台应用进程，释放可用内存并保障前台帧率稳定。"
+  },
+  "searchAliases": [
+    "Background App Slayer 下载",
+    "Magisk 游戏自动杀后台",
+    "KernelSU 后台清理模块",
+    "SmartAppClose 替代模块",
+    "游戏模式自动清理内存"
+  ]
+}

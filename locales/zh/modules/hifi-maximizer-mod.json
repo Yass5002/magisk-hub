@@ -1,0 +1,16 @@
+{
+  "id": "hifi-maximizer-mod",
+  "displayName": "Hi-Fi Maximizer (低频音频抖动优化模块)",
+  "description": "面向发烧友的 Magisk 数字音频优化模块，通过降低 USB DAC、蓝牙 A2DP 与 DLNA 输出抖动提升高保真音质。",
+  "seo": {
+    "title": "Hi-Fi Maximizer 模块下载与音质调优指南 (Magisk) | Magisk Hub",
+    "description": "下载 Hi-Fi Maximizer 音频调优模块，支持 Magisk。通过锁定性能调度器、压制温控守护进程并绕过音效链，显著降低 USB DAC 与蓝牙音频抖动。"
+  },
+  "searchAliases": [
+    "Hi-Fi Maximizer 模块下载",
+    "Android USB DAC 降低抖动 Magisk",
+    "发烧音频内核调优模块",
+    "禁用温控降低音频延迟",
+    "hifi-maximizer-mod Magisk"
+  ]
+}

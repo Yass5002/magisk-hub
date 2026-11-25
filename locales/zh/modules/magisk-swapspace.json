@@ -1,0 +1,16 @@
+{
+  "id": "magisk-swapspace",
+  "displayName": "magisk-swapspace (SwapSpace 虚拟内存管理)",
+  "description": "面向 Root 设备的持久化 Swap 虚拟内存管理模块，支持通过 magiskswap 命令行在内部存储创建、启停交换文件，并自定义 swappiness 与优先级。",
+  "seo": {
+    "title": "magisk-swapspace 下载与持久化 Swap 虚拟内存配置 | Magisk Hub",
+    "description": "下载最新版 magisk-swapspace 模块，支持 Magisk 与 KernelSU。通过 magiskswap 命令在本地存储创建持久化 Swap 交换文件，灵活调节 swappiness 与优先级扩展虚拟内存。"
+  },
+  "searchAliases": [
+    "magisk-swapspace 下载",
+    "Android 创建 Swap 虚拟内存",
+    "magiskswap 命令行教程",
+    "KernelSU 扩展虚拟内存模块",
+    "Termux 编译内存不足 Swap"
+  ]
+}

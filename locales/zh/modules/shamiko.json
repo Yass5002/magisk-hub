@@ -1,0 +1,15 @@
+{
+  "id": "shamiko",
+  "displayName": "Shamiko",
+  "description": "由 LSPosed 团队开发的隐蔽性 Root 隐藏模块，基于 Zygisk 隐藏 su、挂载点及敏感属性以绕过银行与应用检测。",
+  "seo": {
+    "title": "Shamiko 下载与黑白名单隐藏配置指南 (Magisk/KSU/APatch) | Magisk Hub",
+    "description": "下载最新版 Shamiko，兼容 Magisk、KernelSU 与 APatch。涵盖 Zygisk 隐藏原理、白名单模式开启及银行软件防检测排查指南。"
+  },
+  "searchAliases": [
+    "Shamiko 模块下载",
+    "隐藏 Root",
+    "Magisk 隐藏银行应用",
+    "Shamiko 白名单模式"
+  ]
+}

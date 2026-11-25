@@ -1,0 +1,16 @@
+{
+  "id": "livebootmodule",
+  "displayName": "LiveBoot (实时开机日志动画)",
+  "description": "独立运行的 Magisk、KernelSU 与 APatch 模块，在开机过程中将传统动画替换为实时滚动的 Linux 内核 dmesg 与 Android logcat 控制台日志。",
+  "seo": {
+    "title": "LiveBoot 模块下载：开机实时内核日志动画配置 | Magisk Hub",
+    "description": "下载独立版 LiveBoot 开机日志模块，支持 Magisk、KernelSU 与 APatch。无需配套应用即可在开机时实时显示 dmesg 与 logcat 排错日志。"
+  },
+  "searchAliases": [
+    "LiveBoot Magisk 模块",
+    "Android 开机显示日志动画",
+    "Chainfire LiveBoot 独立版",
+    "dmesg 开机排错模块",
+    "livebootmodule 下载"
+  ]
+}

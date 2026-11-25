@@ -1,0 +1,16 @@
+{
+  "id": "nothing-euicc",
+  "displayName": "nothing-euicc (Nothing eSIM 启用器)",
+  "description": "专为 Nothing OS 打造的 eUICC 强制启用模块，搭配 eSTK.me 或 5ber 实体可写 eSIM 卡激活系统级 LPA 管理功能。",
+  "seo": {
+    "title": "nothing-euicc 下载与 Nothing 手机 eSIM 启用指南 | Magisk Hub",
+    "description": "下载 nothing-euicc 模块，支持 Magisk 环境下的 Nothing Phone 设备。强制开启系统原生 LPA 框架，搭配 eSTK.me 与 5ber 实体 eSIM 卡实现下载与切号。"
+  },
+  "searchAliases": [
+    "nothing-euicc 下载",
+    "Nothing Phone 开启 eSIM",
+    "Nothing OS 系统 LPA 激活",
+    "eSTK.me Nothing 手机适配",
+    "5ber Magisk 切卡模块"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nlsound-module-qcom",
+  "displayName": "NLSound (高通骁龙音频增强)",
+  "description": "专为高通骁龙设备打造的系统级高解析音频与麦克风增强模块，支持 DIRECT_PCM 直通输出、tinymix 硬件混音调校、ACDB 校准及解除 DSP 限幅器。",
+  "seo": {
+    "title": "NLSound 高通版下载与音质调校指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 NLSound 高通音频增强模块，支持 Magisk、KernelSU 与 APatch。提供 DIRECT_PCM 独占直通、tinymix 硬件寄存器调音及麦克风降噪修复指南。"
+  },
+  "searchAliases": [
+    "NLSound 高通音质模块",
+    "Magisk 音频增强模块",
+    "高通 DIRECT_PCM 直通",
+    "tinymix 硬件调音",
+    "ACDB 音频补丁"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "vpnhide",
+  "displayName": "VPN Hide (vpnhide)",
+  "description": "多层级 Android VPN 状态隐藏框架，跨 Java API、原生 C/C++ 运行时与内核 netlink 接口屏蔽活跃 VPN 连接，绕过银行与流媒体应用检测。",
+  "seo": {
+    "title": "vpnhide 模块下载与 VPN 隐藏配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 vpnhide 模块，支持 Magisk、KernelSU 与 APatch。结合 LSPosed、Zygisk 与内核驱动多层级隐藏 VPN 连接，绕过银行及支付应用检测。"
+  },
+  "searchAliases": [
+    "vpnhide 模块下载",
+    "Android 隐藏 VPN 检测",
+    "银行 App 绕过 VPN 检测",
+    "NoVPNDetect 替代模块",
+    "Magisk VPN 隐藏"
+  ]
+}

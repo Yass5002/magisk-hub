@@ -1,0 +1,15 @@
+{
+  "id": "google-pixel-boot-animation-dark",
+  "displayName": "Google Pixel Boot Animation (Dark)（纯黑开机动画）",
+  "description": "原汁原味的 Google Pixel 深色模式开机动画模块，提供流畅的 60 FPS 四色几何粒子过渡与 OLED 纯黑背景。",
+  "seo": {
+    "title": "Google Pixel 深色开机动画下载与模块指南 | Magisk Hub",
+    "description": "下载 Google Pixel 深色模式开机动画模块，支持 Magisk、KernelSU 与 APatch。以无侵入式方式替换原厂开机画面，带来 60 FPS 纯黑流畅启动体验。"
+  },
+  "searchAliases": [
+    "Google Pixel 开机动画 Magisk",
+    "Pixel 深色开机动画模块",
+    "60帧纯黑开机动画包",
+    "安卓 Root 修改谷歌开机动画"
+  ]
+}

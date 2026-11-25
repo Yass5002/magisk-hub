@@ -1,0 +1,16 @@
+{
+  "id": "locusmimic",
+  "displayName": "LocusMimic (位置模拟)",
+  "description": "面向 Android 11+ 已 Root 设备的 LSPosed 位置与路线模拟模块，通过框架层 Hook 实现零模拟位置检测风险、分应用独立定位及基站/Wi-Fi 伪装。",
+  "seo": {
+    "title": "LocusMimic 位置模拟下载与 LSPosed 配置指南 | Magisk Hub",
+    "description": "下载 LocusMimic 位置模拟模块，兼容 LSPosed 与 Magisk/KernelSU/APatch。支持地图选点、多点路线规划、分应用独立伪装以及基站与 Wi-Fi 协同模拟。"
+  },
+  "searchAliases": [
+    "LocusMimic 下载",
+    "LSPosed 虚拟定位模块",
+    "安卓过模拟位置检测",
+    "分应用独立修改定位",
+    "Xposed 路线模拟工具"
+  ]
+}

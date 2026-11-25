@@ -1,12 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import ModuleCard from '../../components/ModuleCard.astro';
+import CategoryDetailView from '../../views/CategoryDetailView.astro';
 import { CATEGORIES, getAllModules, type CategoryInfo, type ModuleData } from '../../lib/modules';
 
 export async function getStaticPaths() {
-  const allModules = getAllModules();
-  
+  const allModules = getAllModules('en');
   return Object.values(CATEGORIES).map(cat => {
     const modules = allModules.filter(m => m.category === cat.id);
     return {
@@ -22,77 +19,6 @@ export interface Props {
 }
 
 const { category, modules } = Astro.props;
-
-const breadcrumbs = [
-  { name: 'Home', url: '/' },
-  { name: 'Categories', url: '/categories/' },
-  { name: category.name, url: `/categories/${category.id}/` },
-];
-
-const categorySchema = {
-  '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  'name': `${category.name} Magisk & Root Modules`,
-  'description': category.description,
-  'url': `https://magisk.yssn.tech/categories/${category.id}/`,
-  'numberOfItems': modules.length,
-};
 ---
 
-<BaseLayout
-  title={`${category.name} Modules - Magisk Hub`}
-  description={`Browse active ${category.name} modules for Magisk, KernelSU, and APatch. ${category.description}`}
-  structuredData={categorySchema}
->
-  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-    <Breadcrumbs items={breadcrumbs} />
-
-    <!-- Category Header -->
-    <div class="py-6 border-b border-zinc-200">
-      <div class="flex items-center gap-2.5">
-        <span class="rounded bg-zinc-100 px-2 py-0.5 text-xs font-mono font-medium text-zinc-800 border border-zinc-200/80">
-          Category
-        </span>
-        <span class="text-xs font-mono text-zinc-500">{modules.length} Modules</span>
-      </div>
-
-      <h1 class="mt-2 text-3xl font-extrabold text-zinc-900 tracking-tight">
-        {category.name}
-      </h1>
-
-      <p class="mt-1.5 text-sm text-zinc-600 max-w-2xl leading-relaxed">
-        {category.description}
-      </p>
-    </div>
-
-    <!-- Modules Grid (3-Column Desktop Grid) -->
-    <div class="mt-6">
-      <h2 class="sr-only">Modules in {category.name}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modules.map(mod => (
-          <ModuleCard module={mod} />
-        ))}
-      </div>
-    </div>
-
-    <!-- Explore Other Categories -->
-    <div class="mt-12 pt-8 border-t border-zinc-200">
-      <h2 class="text-xl font-bold text-zinc-900 mb-4">Explore Other Categories</h2>
-      <div class="flex flex-wrap gap-3">
-        {Object.values(CATEGORIES)
-          .filter(c => c.id !== category.id)
-          .map(c => (
-            <a 
-              href={`/categories/${c.id}/`} 
-              data-umami-event="category-switch-click"
-              data-umami-event-from={category.id}
-              data-umami-event-to={c.id}
-              class="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
-            >
-              <span>{c.name}</span>
-            </a>
-          ))}
-      </div>
-    </div>
-  </div>
-</BaseLayout>
+<CategoryDetailView category={category} modules={modules} locale="en" />

@@ -1,0 +1,16 @@
+{
+  "id": "harmonyos-sans-dynamic-font",
+  "displayName": "HarmonyOS Sans Dynamic Font (鸿蒙动态可变字体)",
+  "description": "完整无侵入式移植华为 HarmonyOS Sans 可变字体套件，支持 9 档动态字重调节、中英文混排优化以及 ColorOS/OxygenOS 字重滑块。",
+  "seo": {
+    "title": "HarmonyOS Sans 鸿蒙可变字体模块下载与配置 | Magisk Hub",
+    "description": "下载 HarmonyOS Sans 鸿蒙动态字体模块，支持 Magisk、KernelSU 与 APatch。提供 9 档连续可变字重与完整 CJK 字符覆盖，完美适配一加与 OPPO 动态字重调节。"
+  },
+  "searchAliases": [
+    "鸿蒙字体 Magisk 模块",
+    "HarmonyOS Sans 可变字体下载",
+    "ColorOS 鸿蒙字重模块",
+    "Android 无侵入式字体替换",
+    "面具鸿蒙字体"
+  ]
+}

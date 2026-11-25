@@ -1,0 +1,16 @@
+{
+  "id": "turbo-fast-charge-booster",
+  "displayName": "Turbo 极速快充电流步进增强 (Turbo Fast Charge Booster)",
+  "description": "底层电源参数调优脚本，通过 init.d 阶段写入 sysfs 限流阈值，锁定 2000mA AC 交流输入及 1100mA USB 与无线充电电流。",
+  "seo": {
+    "title": "Turbo 极速快充电流增强 Magisk 模块下载与参数说明 | Magisk Hub",
+    "description": "下载 Turbo 极速快充电流增强模块，兼容 Magisk、KernelSU 与 APatch。开机一次性调整内核 power_supply 电流上限，改善保守温控导致的 USB 与 AC 充电降流。"
+  },
+  "searchAliases": [
+    "Turbo 快充增强模块",
+    "Magisk 解除 USB 充电限流",
+    "Android 提高充电电流 Root",
+    "power_supply 电流上限解锁",
+    "KernelSU 快充增强脚本"
+  ]
+}

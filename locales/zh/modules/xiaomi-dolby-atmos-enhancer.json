@@ -1,0 +1,16 @@
+{
+  "id": "xiaomi-dolby-atmos-enhancer",
+  "displayName": "Dolby Atmos 小米调音与 Pad 6 Max 空间环绕音效",
+  "description": "针对小米、红米及 POCO 机型优化的 Dolby Atmos 音效增强模块，强化低频下潜与高频柔化，解锁蓝牙自定义均衡器并引入小米平板 6 Max 空间环绕声场。",
+  "seo": {
+    "title": "Dolby Atmos 小米杜比音效增强模块下载与配置指南 | Magisk Hub",
+    "description": "下载 Dolby Atmos 小米调音增强模块，兼容 Magisk、KernelSU 与 APatch。提供低频增强、高频柔化、蓝牙均衡器解锁与小米平板 6 Max 空间环绕声场配置教程。"
+  },
+  "searchAliases": [
+    "小米杜比全景声模块",
+    "Dolby Atmos 小米调音",
+    "小米平板 6 Max 杜比音效",
+    "Magisk 杜比音效增强",
+    "蓝牙杜比均衡器解锁"
+  ]
+}

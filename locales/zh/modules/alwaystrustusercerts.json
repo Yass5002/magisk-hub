@@ -1,0 +1,16 @@
+{
+  "id": "alwaystrustusercerts",
+  "displayName": "AlwaysTrustUserCerts",
+  "description": "NVISO Security 开发的抓包辅助模块，开机自动将用户安装的 CA 根证书提升至系统信任区，便于使用 Burp Suite 与 mitmproxy 解析 HTTPS 流量。",
+  "seo": {
+    "title": "AlwaysTrustUserCerts 下载与系统证书注入指南 | Magisk Hub",
+    "description": "下载 AlwaysTrustUserCerts 模块，支持 Magisk、KernelSU 与 APatch。自动将用户 CA 证书无系统分区修改挂载至系统信任目录，助力移动安全测试与抓包分析。"
+  },
+  "searchAliases": [
+    "AlwaysTrustUserCerts 下载",
+    "用户证书转系统证书模块",
+    "Burp Suite 安卓抓包证书",
+    "mitmproxy 系统 CA 证书",
+    "Android 抓包信任根证书"
+  ]
+}

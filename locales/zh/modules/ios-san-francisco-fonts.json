@@ -1,0 +1,16 @@
+{
+  "id": "ios-san-francisco-fonts",
+  "displayName": "iOS San Francisco Font Suite (苹果 SF Pro 字体)",
+  "description": "将苹果 iOS 原生 San Francisco Pro 与 SF Compact 字体无侵入式移植至 Android 系统的字体替换模块，具备完整字重与基线对齐。",
+  "seo": {
+    "title": "iOS San Francisco 苹果 SF Pro 字体模块下载 | Magisk Hub",
+    "description": "下载 iOS San Francisco 苹果字体模块，兼容 Magisk、KernelSU 与 APatch。系统级无侵入式替换 Roboto 字体为 SF Pro，保留系统 Emoji 与中文回退链。"
+  },
+  "searchAliases": [
+    "iOS 苹果字体 Magisk",
+    "SF Pro Android 字体模块",
+    "San Francisco 字体下载",
+    "苹果字体面具模块",
+    "Android 仿 iOS 字体"
+  ]
+}

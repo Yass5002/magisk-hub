@@ -1,0 +1,16 @@
+{
+  "id": "makefontsgreatagain",
+  "displayName": "MakeFontsGreatAgain (MFGA 全字符字体引擎)",
+  "description": "集成多套字体的全局系统字体覆盖引擎，支持完整 Unicode 字符集、最新彩色 Emoji 预览、独特 GMS 字体屏蔽及 WebUI 字符范围过滤与配色。",
+  "seo": {
+    "title": "MakeFontsGreatAgain (MFGA) 下载与配置指南 | Magisk Hub",
+    "description": "下载 MakeFontsGreatAgain (MFGA) 模块，支持 Magisk、KernelSU 与 APatch。提供完整 Unicode 字符覆盖、彩色 Emoji 字体、GMS 字体屏蔽及 WebUI 自定义配色。"
+  },
+  "searchAliases": [
+    "MakeFontsGreatAgain 模块下载",
+    "MFGA 字体引擎",
+    "Numbersf MakeFontsGreatAgain",
+    "Android 全 Unicode 字体模块",
+    "MFGA 屏蔽 GMS 字体"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "playstoreselfupdateblocker",
+  "displayName": "PlayStoreSelfUpdateBlocker (Play 商店防静默更新)",
+  "description": "在已 Root 的 Android 设备上实时拦截 Google Play 商店后台静默自更新，支持 Magisk、KernelSU 与 APatch，助力维持 Play Integrity 认证状态。",
+  "seo": {
+    "title": "PlayStoreSelfUpdateBlocker 下载与锁定版本指南 | Magisk Hub",
+    "description": "下载 PlayStoreSelfUpdateBlocker 模块，全面兼容 Magisk、KernelSU 与 APatch。实时监控并拦截 Google Play 商店后台静默更新，辅助维持 Play Integrity 过检。"
+  },
+  "searchAliases": [
+    "PlayStoreSelfUpdateBlocker 下载",
+    "阻止 Google Play 商店自动更新",
+    "Play 商店锁定版本 Magisk 模块",
+    "PUSBlocker 过 Play Integrity",
+    "禁止谷歌商店静默更新 Root"
+  ]
+}

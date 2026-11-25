@@ -1,0 +1,16 @@
+{
+  "id": "dynamic-system-tweaks-magisk-module",
+  "displayName": "Dynamic System Tweaks (DST)",
+  "description": "面向 32 位与 64 位 ARM 设备的通用性能优化模块，通过调节内核虚拟内存与 I/O 参数提升界面流畅度与温控稳定性。",
+  "seo": {
+    "title": "Dynamic System Tweaks (DST) 下载与优化指南 | Magisk Hub",
+    "description": "下载 Dynamic System Tweaks (DST) 模块，支持 Magisk 与 KernelSU。兼容 32 位及 64 位 ARM 设备，优化虚拟内存、I/O 队列与温控调度，提升老旧机型流畅度。"
+  },
+  "searchAliases": [
+    "Dynamic System Tweaks 下载",
+    "DST 性能优化模块",
+    "老旧安卓手机提速 Magisk",
+    "32 位 ARM 优化模块",
+    "内核虚拟内存优化"
+  ]
+}

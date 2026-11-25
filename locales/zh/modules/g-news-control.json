@@ -1,0 +1,16 @@
+{
+  "id": "g-news-control",
+  "displayName": "G-News-Control (谷歌负一屏控制)",
+  "description": "专为 Magisk 与 KernelSU 打造的轻量级模块，支持通过 Action 按钮或终端命令一键开关桌面负一屏 Google Discover 信息流，同时保留完整谷歌搜索与语音助手功能。",
+  "seo": {
+    "title": "G-News-Control 模块下载与负一屏开关指南 | Magisk Hub",
+    "description": "下载 G-News-Control 模块，支持 Magisk 与 KernelSU。无需停用 Google 应用，通过 Action 按钮或 gnc 命令无损隐藏或恢复桌面负一屏信息流。"
+  },
+  "searchAliases": [
+    "G-News Control 模块下载",
+    "禁用 Google 负一屏",
+    "Android 关闭 Google Discover",
+    "gnc 命令开关负一屏",
+    "KernelSU Action 隐藏谷歌新闻"
+  ]
+}

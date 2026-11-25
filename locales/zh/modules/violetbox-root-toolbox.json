@@ -1,0 +1,16 @@
+{
+  "id": "violetbox-root-toolbox",
+  "displayName": "VioletBox Root Toolbox (紫罗兰工具箱)",
+  "description": "由 Smart-Paocai 开发的全能型 Android Root 手机端工具箱，支持 SELinux 状态切换、物理分区读写刷入、基带字库备份、批量模块管理及机型伪装。",
+  "seo": {
+    "title": "VioletBox Root Toolbox 下载与全能玩机工具箱指南 | Magisk Hub",
+    "description": "下载 VioletBox Root 工具箱，兼容 Magisk、KernelSU 与 APatch。提供免电脑端 SELinux 切换、分区备份刷写、基带字库提取、模块批量安装与设备信息伪装功能。"
+  },
+  "searchAliases": [
+    "VioletBox 工具箱下载",
+    "紫罗兰 Root 工具箱 APK",
+    "安卓免电脑刷写分区软件",
+    "Magisk 批量刷模块工具",
+    "SELinux 切换 Root 工具"
+  ]
+}

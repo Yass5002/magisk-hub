@@ -1,0 +1,16 @@
+{
+  "id": "hail",
+  "displayName": "Hail (雹 - 应用冻结工具)",
+  "description": "开源轻量级 Android 应用冻结工具，支持通过 Shizuku、免 Root 设备所有者或 Root 权限停用、隐藏、暂停与卸载应用。",
+  "seo": {
+    "title": "Hail (雹) 下载与冻结指南 (Shizuku/Root/Dhizuku) | Magisk Hub",
+    "description": "下载开源应用冻结工具 Hail (雹)，支持 Shizuku、免 Root、Magisk、KernelSU 与 APatch。通过停用、隐藏与暂停三种模式彻底管住流氓后台。"
+  },
+  "searchAliases": [
+    "Hail 雹下载",
+    "Hail 应用冻结 Shizuku",
+    "Android 免 Root 冻结应用",
+    "Hail Device Owner 激活命令",
+    "pm suspend 暂停应用工具"
+  ]
+}

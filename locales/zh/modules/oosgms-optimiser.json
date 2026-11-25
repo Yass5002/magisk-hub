@@ -1,0 +1,16 @@
+{
+  "id": "oosgms-optimiser",
+  "displayName": "OOSGMS-OPTIMISER",
+  "description": "面向氧 OS（OxygenOS）与谷歌服务框架（GMS）的隐私与省电优化模块，精准禁用后台遥测追踪组件、分析服务与高频唤醒锁。",
+  "seo": {
+    "title": "OOSGMS-OPTIMISER 下载与氧 OS / GMS 省电去追踪配置 | Magisk Hub",
+    "description": "下载最新版 OOSGMS-OPTIMISER 模块，支持 Magisk 与 KernelSU。精准禁用谷歌服务 GMS、氧 OS 及主流第三方应用后台遥测追踪组件与唤醒锁，降低待机耗电。"
+  },
+  "searchAliases": [
+    "OOSGMS-OPTIMISER 下载",
+    "谷歌服务 GMS 省电模块",
+    "氧 OS 去遥测追踪优化",
+    "一加 OxygenOS 待机耗电优化",
+    "禁用 GMS 唤醒锁 Magisk"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "zygisk-cacerts",
+  "displayName": "Zygisk CAcerts",
+  "description": "由 vvb2060 开发的无侵入式安全模块，使用上游 AOSP 最新 CA 根证书库替换系统过期证书，并支持 ARM64、RISC-V 及 16KB 内存页内核。",
+  "seo": {
+    "title": "Zygisk CAcerts 下载与使用指南（系统根证书更新模块）| Magisk Hub",
+    "description": "下载 Zygisk CAcerts 模块，支持 Magisk、KernelSU 与 APatch 的 Zygisk 环境。同步上游 AOSP CA 根证书并自动修复 SELinux 上下文，解决老旧设备 HTTPS 握手失败问题。"
+  },
+  "searchAliases": [
+    "Zygisk CAcerts 下载",
+    "vvb2060 根证书更新模块",
+    "Android 更新系统 CA 根证书",
+    "修复老设备 HTTPS 证书过期",
+    "16KB 内存页 Zygisk 证书模块"
+  ]
+}

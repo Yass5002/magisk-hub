@@ -1,0 +1,16 @@
+{
+  "id": "forcedns-magisk-kernelsu",
+  "displayName": "ForceDNS (强制全局 DNS 重定向)",
+  "description": "通过内核级 iptables 规则劫持所有 53 端口 UDP/TCP 出站 DNS 请求并重定向至安全解析器，防止应用内置硬编码 DNS 导致泄露，同时支持 NextDNS DoT 与 WebUI 管理。",
+  "seo": {
+    "title": "ForceDNS 模块下载与防泄露配置 (Magisk/KernelSU) | Magisk Hub",
+    "description": "下载 ForceDNS 模块，兼容 Magisk 与 KernelSU。利用内核 iptables 强制重定向 53 端口 DNS 流量至 Cloudflare、AdGuard 或 NextDNS DoT，彻底杜绝 DNS 泄露。"
+  },
+  "searchAliases": [
+    "ForceDNS Magisk 模块下载",
+    "KernelSU 强制全局 DNS 重定向",
+    "安卓 Root 防止 DNS 泄露",
+    "iptables 劫持 53 端口 DNS",
+    "ForceDNS NextDNS DoT 配置"
+  ]
+}

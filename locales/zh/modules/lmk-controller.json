@@ -1,0 +1,16 @@
+{
+  "id": "lmk-controller",
+  "displayName": "LMK Controller",
+  "description": "面向 Android 低内存杀手（LMK/LMKD）的调控模块，自动适配传统 LMK 与 PSI LMKD 路径，提供游戏、稳定与默认三档内存管理预设及 WebUI。",
+  "seo": {
+    "title": "LMK Controller 模块下载与内存压力配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载最新版 LMK Controller 模块，支持 Magisk 与 KernelSU。自动识别传统 LMK 与 PSI LMKD 路径，提供游戏、稳定与默认三档内存压力预设及 WebUI 控制。"
+  },
+  "searchAliases": [
+    "LMK Controller 下载",
+    "Android LMKD 后台留存优化",
+    "防杀后台 Magisk 模块",
+    "PSI LMKD 内存管理调校",
+    "KernelSU 内存优化 WebUI"
+  ]
+}

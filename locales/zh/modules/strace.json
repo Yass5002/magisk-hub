@@ -1,0 +1,15 @@
+{
+  "id": "strace",
+  "displayName": "Strace (系统调用追踪)",
+  "description": "通过 Magisk 无系统分区修改（Systemless）方式安装 strace 诊断工具，用于在已获取 Root 权限的 Android 设备上追踪进程系统调用与信号。",
+  "seo": {
+    "title": "Strace 模块下载与使用指南 (Magisk) | Magisk Hub",
+    "description": "下载适用于 Magisk 的 Strace 模块，在已 Root 的 Android 设备上无侵入式安装静态编译的 strace 工具，支持多架构追踪系统调用与信号。"
+  },
+  "searchAliases": [
+    "strace Magisk 模块",
+    "Android 系统调用追踪",
+    "安卓 Root strace 下载",
+    "evdenis strace 模块"
+  ]
+}

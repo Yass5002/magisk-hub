@@ -1,0 +1,16 @@
+{
+  "id": "dozedisabler",
+  "displayName": "Doze Disabler (开机自动禁用 Doze 模块)",
+  "description": "轻量级无侵入模块，在开机阶段自动禁用 Android Doze（DeviceIdle）休眠限制，解决息屏后即时通讯推送延迟、后台同步中断与常驻服务休眠问题。",
+  "seo": {
+    "title": "Doze Disabler 模块下载与关闭打盹模式指南 | Magisk Hub",
+    "description": "下载最新版 Doze Disabler 模块，支持 Magisk、KernelSU 与 APatch。开机自动禁用系统 Doze 限制，确保息屏期间实时接收消息推送并维持后台服务稳定运行。"
+  },
+  "searchAliases": [
+    "Doze Disabler 模块下载",
+    "Magisk 关闭 Doze 打盹模式",
+    "修复息屏消息推送延迟 Root",
+    "开机自动执行 deviceidle disable",
+    "Android 后台同步防休眠模块"
+  ]
+}

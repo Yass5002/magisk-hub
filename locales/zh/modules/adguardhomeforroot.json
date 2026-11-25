@@ -1,0 +1,16 @@
+{
+  "id": "adguardhomeforroot",
+  "displayName": "AdGuardHomeForRoot (本地 DNS 去广告服务)",
+  "description": "在已 Root 的 Android 设备上原生运行官方 AdGuard Home 守护进程，通过系统级 iptables 接管 DNS 流量并屏蔽广告，无需占用 VPN 通道。",
+  "seo": {
+    "title": "AdGuardHomeForRoot 下载与配置指南 (Magisk/KSU) | Magisk Hub",
+    "description": "下载 AdGuardHomeForRoot 模块，支持 Magisk、KernelSU 与 APatch。在本地运行 AdGuard Home 并通过 iptables 过滤 DNS，不占 VPN 槽位且自带 Web 控制台。"
+  },
+  "searchAliases": [
+    "AdGuardHomeForRoot 模块下载",
+    "安卓 Root 本地 AdGuard Home",
+    "不占 VPN 去广告模块",
+    "iptables DNS 劫持去广告",
+    "AdGuardHome 安卓 WebUI 3000"
+  ]
+}

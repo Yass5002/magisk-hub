@@ -1,0 +1,16 @@
+{
+  "id": "infamick-script",
+  "displayName": "Infamick-script (Root 终端维护工具箱)",
+  "description": "交互式 Root 终端命令行工具箱，集成电池循环健康检测、充电控制、三星 CSC 切换与去 Knox 服务、按键映射及底层分区备份功能。",
+  "seo": {
+    "title": "Infamick-script 模块下载与命令行使用指南 | Magisk Hub",
+    "description": "下载 Infamick-script Root 工具箱模块，支持 Magisk 与 Termux 终端交互操作。提供电池循环查询、三星 CSC 切换、去 Knox 与分区 dd 备份。"
+  },
+  "searchAliases": [
+    "Infamick-script 下载",
+    "Android Root 终端工具箱",
+    "三星 CSC 切换 Magisk 模块",
+    "Root 查询电池循环次数",
+    "Deknoxer 去 Knox 脚本"
+  ]
+}

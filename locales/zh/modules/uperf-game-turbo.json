@@ -1,0 +1,16 @@
+{
+  "id": "uperf-game-turbo",
+  "displayName": "Uperf-Game-Turbo (用户态性能调度)",
+  "description": "面向 Android 的动态用户态性能控制器，通过直读 Linux 触控事件与 SurfaceFlinger 钩子实时调节 CPU/GPU 频率及线程亲和性。",
+  "seo": {
+    "title": "Uperf-Game-Turbo 下载与调度配置指南 (Magisk) | Magisk Hub",
+    "description": "下载最新版 Uperf-Game-Turbo 模块，支持 Magisk 与 Root 终端部署。通过底层触控轮询与帧渲染分析优化游戏流畅度，附模式切换与兼容性排查指南。"
+  },
+  "searchAliases": [
+    "Uperf Game Turbo 模块下载",
+    "Uperf 温控调度",
+    "Android 用户态性能控制器",
+    "yinwanxi Uperf",
+    "Scene 配套调度模块"
+  ]
+}

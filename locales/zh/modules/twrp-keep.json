@@ -1,0 +1,16 @@
+{
+  "id": "twrp-keep",
+  "displayName": "twrp-keep (TWRP A/B 分区 OTA 保留脚本)",
+  "description": "由 osm0sis 编写的专用 OTA 挂钩脚本，可在 A/B 或虚拟 A/B 设备完成系统更新后保留 TWRP 第三方 Recovery，无缝衔接 Magisk 安装到未使用的槽位流程。",
+  "seo": {
+    "title": "twrp-keep 下载与 A/B 设备 OTA 保留 TWRP 指南 | Magisk Hub",
+    "description": "下载 osm0sis 开发的 twrp-keep 脚本模块，适用于支持无缝 A/B 分区的 Magisk Root 设备。在系统 OTA 升级后配合面具安装到未使用的槽位，完整保留 TWRP 恢复环境。"
+  },
+  "searchAliases": [
+    "twrp-keep 下载",
+    "TWRP A/B Retention Script",
+    "A/B 分区 OTA 更新保留 TWRP",
+    "Magisk 安装到未使用的槽位 TWRP",
+    "osm0sis twrp-keep 教程"
+  ]
+}
