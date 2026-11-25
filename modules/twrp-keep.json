@@ -4,7 +4,7 @@
   "repo": "Magisk-Modules-Repo/twrp-keep",
   "category": "system-environment",
   "softwareType": "flashable-module",
-  "description": "twrp-keep",
+  "description": "Specialized OTA hook created by osm0sis to preserve TWRP custom recovery across seamless A/B partition updates before completing Magisk inactive slot installation.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "twrp-keep – Download (Magisk) | Magisk Hub",
-    "description": "Download twrp-keep for Magisk. twrp-keep."
+    "description": "Download twrp-keep for Magisk. Specialized OTA hook created by osm0sis to preserve TWRP custom recovery across seamless A/B partition..."
   },
   "contentTier": 1
 }

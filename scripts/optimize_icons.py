@@ -6,8 +6,11 @@ Optimize and downscale raster icon images in assets/icons/
 import os
 from PIL import Image
 
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+
 def optimize_icons():
-    icon_dir = 'assets/icons'
+    icon_dir = os.path.join(REPO_ROOT, 'assets', 'icons')
     total_before = 0
     total_after = 0
     optimized_count = 0
@@ -19,20 +22,18 @@ def optimize_icons():
         sz_before = os.path.getsize(p)
         total_before += sz_before
 
-        # Check if it is a valid raster image
         try:
             with Image.open(p) as img:
                 w, h = img.size
-                if w > 128 or h > 128 or sz_before > 20000:
+                if img.format != 'PNG' or img.mode != 'RGBA' or (w, h) != (512, 512):
                     img = img.convert('RGBA')
-                    img.thumbnail((128, 128), Image.Resampling.LANCZOS)
+                    img = img.resize((512, 512), Image.Resampling.LANCZOS)
                     img.save(p, format='PNG', optimize=True)
                     sz_after = os.path.getsize(p)
                     optimized_count += 1
-                    print(f"Optimized {f}: {w}x{h} ({sz_before/1024:.1f} KB) -> {img.size[0]}x{img.size[1]} ({sz_after/1024:.1f} KB)")
+                    print(f"Normalized {f}: {w}x{h} ({sz_before/1024:.1f} KB) -> 512x512 ({sz_after/1024:.1f} KB)")
         except Exception as e:
-            # SVG or non-PIL format - leave as is
-            pass
+            print(f"Skipping {f}: {e}")
 
         total_after += os.path.getsize(p)
 

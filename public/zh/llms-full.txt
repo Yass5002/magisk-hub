@@ -75,7 +75,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 19,260
+- 社区热度指标: 19,260
 - 最新版本: v221204
 - 官方下载地址: https://apk.magisk.vip/download.php?id=795
 
@@ -98,7 +98,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 12,110
+- 社区热度指标: 12,110
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=822
 
@@ -157,7 +157,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 7,906
+- 社区热度指标: 7,906
 - 最新版本: v2.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=736
 
@@ -180,7 +180,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 7,691
+- 社区热度指标: 7,691
 - 最新版本: v4.3.04750.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=167
 
@@ -215,7 +215,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 7,326
+- 社区热度指标: 7,326
 - 最新版本: v1.3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=820
 
@@ -238,7 +238,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 6,761
+- 社区热度指标: 6,761
 - 最新版本: v2.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=651
 
@@ -249,7 +249,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 6,610
+- 社区热度指标: 6,610
 - 最新版本: v15.0.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=832
 
@@ -284,7 +284,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 5,932
+- 社区热度指标: 5,932
 - 最新版本: v1.9.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=96
 
@@ -295,7 +295,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 5,921
+- 社区热度指标: 5,921
 - 最新版本: bate1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=139
 
@@ -318,7 +318,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 4,665
+- 社区热度指标: 4,665
 - 最新版本: v11.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=221
 
@@ -401,7 +401,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 3,706
+- 社区热度指标: 3,706
 - 最新版本: v1.7.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=359
 
@@ -448,7 +448,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 3,394
+- 社区热度指标: 3,394
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=228
 
@@ -459,7 +459,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 3,266
+- 社区热度指标: 3,266
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=453
 
@@ -590,7 +590,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 2,367
+- 社区热度指标: 2,367
 - 最新版本: v2.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=426
 
@@ -601,7 +601,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 2,260
+- 社区热度指标: 2,260
 - 最新版本: v6.0.5-X12Pro
 - 官方下载地址: https://apk.magisk.vip/download.php?id=153
 
@@ -624,7 +624,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 2,217
+- 社区热度指标: 2,217
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=442
 
@@ -683,7 +683,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,967
+- 社区热度指标: 1,967
 - 最新版本: v2.2.21.5
 - 官方下载地址: https://apk.magisk.vip/download.php?id=197
 
@@ -706,7 +706,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,903
+- 社区热度指标: 1,903
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=21
 
@@ -717,7 +717,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,781
+- 社区热度指标: 1,781
 - 最新版本: v2.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=475
 
@@ -764,7 +764,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,573
+- 社区热度指标: 1,573
 - 最新版本: v0.5
 - 官方下载地址: https://apk.magisk.vip/download.php?id=4
 
@@ -799,7 +799,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,508
+- 社区热度指标: 1,508
 - 最新版本: v1.0.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=74
 
@@ -810,7 +810,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,494
+- 社区热度指标: 1,494
 - 最新版本: v4.3.001951.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=290
 
@@ -869,7 +869,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,384
+- 社区热度指标: 1,384
 - 最新版本: v15.0.2.84
 - 官方下载地址: https://apk.magisk.vip/download.php?id=836
 
@@ -880,7 +880,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,375
+- 社区热度指标: 1,375
 - 最新版本: v2.1.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=65
 
@@ -903,7 +903,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,319
+- 社区热度指标: 1,319
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=169
 
@@ -914,7 +914,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,317
+- 社区热度指标: 1,317
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=185
 
@@ -925,7 +925,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,285
+- 社区热度指标: 1,285
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=417
 
@@ -936,7 +936,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,276
+- 社区热度指标: 1,276
 - 最新版本: v20210226
 - 官方下载地址: https://apk.magisk.vip/download.php?id=219
 
@@ -947,7 +947,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,224
+- 社区热度指标: 1,224
 - 最新版本: v1.46
 - 官方下载地址: https://apk.magisk.vip/download.php?id=26
 
@@ -958,7 +958,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,193
+- 社区热度指标: 1,193
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=224
 
@@ -969,7 +969,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,187
+- 社区热度指标: 1,187
 - 最新版本: v0.02
 - 官方下载地址: https://apk.magisk.vip/download.php?id=42
 
@@ -1004,7 +1004,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,145
+- 社区热度指标: 1,145
 - 最新版本: v2.0.0.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=194
 
@@ -1027,7 +1027,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,100
+- 社区热度指标: 1,100
 - 最新版本: v7.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=427
 
@@ -1050,7 +1050,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,087
+- 社区热度指标: 1,087
 - 最新版本: v1.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=28
 
@@ -1061,7 +1061,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,076
+- 社区热度指标: 1,076
 - 最新版本: v2022.03.25
 - 官方下载地址: https://apk.magisk.vip/download.php?id=213
 
@@ -1072,7 +1072,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,045
+- 社区热度指标: 1,045
 - 最新版本: v1.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=447
 
@@ -1083,7 +1083,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,034
+- 社区热度指标: 1,034
 - 最新版本: v4.39.0.5785
 - 官方下载地址: https://apk.magisk.vip/download.php?id=206
 
@@ -1094,7 +1094,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,015
+- 社区热度指标: 1,015
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=352
 
@@ -1105,7 +1105,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,012
+- 社区热度指标: 1,012
 - 最新版本: v1.1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=27
 
@@ -1116,7 +1116,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,007
+- 社区热度指标: 1,007
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=474
 
@@ -1127,7 +1127,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,007
+- 社区热度指标: 1,007
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=175
 
@@ -1138,7 +1138,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 955
+- 社区热度指标: 955
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=156
 
@@ -1161,7 +1161,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 891
+- 社区热度指标: 891
 - 最新版本: v13.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=477
 
@@ -1172,7 +1172,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 860
+- 社区热度指标: 860
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=223
 
@@ -1231,7 +1231,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 761
+- 社区热度指标: 761
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=476
 
@@ -1254,7 +1254,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 736
+- 社区热度指标: 736
 - 最新版本: bate7
 - 官方下载地址: https://apk.magisk.vip/download.php?id=171
 
@@ -1265,7 +1265,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 734
+- 社区热度指标: 734
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=480
 
@@ -1300,7 +1300,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 691
+- 社区热度指标: 691
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=188
 
@@ -1311,7 +1311,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 686
+- 社区热度指标: 686
 - 最新版本: 183.72
 - 官方下载地址: https://apk.magisk.vip/download.php?id=174
 
@@ -1322,20 +1322,9 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 655
+- 社区热度指标: 655
 - 最新版本: v1.79
 - 官方下载地址: https://apk.magisk.vip/download.php?id=11
-
-### VioletBox Root Toolbox (紫罗兰工具箱) (`violetbox-root-toolbox`)
-- 模块简介: 由 Smart-Paocai 开发的全能型 Android Root 手机端工具箱，支持 SELinux 状态切换、物理分区读写刷入、基带字库备份、批量模块管理及机型伪装。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/violetbox-root-toolbox/
-- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
-- 软件包类型: standalone-app
-- 收录渠道: community
-- 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 650
-- 最新版本: v1.0.0
-- 官方下载地址: https://apk.magisk.vip/download.php?id=2252
 
 ### Magic Mount-rs (`meta-magic-mount-rs`)
 - 模块简介: 基于 Rust 编写的高性能元模块（Metamodule），为 KernelSU 与 APatch 提供无系统分区挂载（Magic Mount）、自定义绑定规则与 WebUI 配置。
@@ -1356,7 +1345,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 626
+- 社区热度指标: 626
 - 最新版本: v1.2
 - 官方下载地址: https://apk.magisk.vip/download.php?id=8
 
@@ -1367,7 +1356,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 616
+- 社区热度指标: 616
 - 最新版本: v1
 - 官方下载地址: https://apk.magisk.vip/download.php?id=180
 
@@ -1450,7 +1439,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 509
+- 社区热度指标: 509
 - 最新版本: v2.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=478
 
@@ -1497,7 +1486,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 470
+- 社区热度指标: 470
 - 最新版本: v23.11.08
 - 官方下载地址: https://apk.magisk.vip/download.php?id=469
 
@@ -1520,7 +1509,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 453
+- 社区热度指标: 453
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=471
 
@@ -1559,6 +1548,18 @@
 - 最新版本: v2.1.2
 - 官方下载地址: https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.2/ViPER4Android-RE-AIDL-v2.1.2.zip
 - 上游仓库: https://github.com/likelikeslike/ViPERFX_RE
+
+### VioletBox Root Toolbox (紫罗兰工具箱) (`violetbox-root-toolbox`)
+- 模块简介: 由 Smart-Paocai 开发的全能型 Android Root 手机端工具箱，支持 SELinux 状态切换、物理分区读写刷入、基带字库备份、批量模块管理及机型伪装。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/violetbox-root-toolbox/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: standalone-app
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 427
+- 最新版本: v1.0.0
+- 官方下载地址: https://github.com/Smart-Paocai/violet_Box/releases/download/v1.0.0/VioletBox_V1.0.0_release.apk
+- 上游仓库: https://github.com/Smart-Paocai/violet_Box
 
 ### Magisk-iOS-Emoji (iOS 苹果表情字体) (`magisk-ios-emoji`)
 - 模块简介: 以无系统分区修改（Systemless）方式将 Android 原生表情字体替换为苹果 iOS 风格 Emoji，并自动屏蔽 GMS 动态字体覆盖。
@@ -2203,7 +2204,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: community
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 103
+- 社区热度指标: 103
 - 最新版本: v1.0.6.1
 - 官方下载地址: https://gitlab.com/api/v4/projects/87739512/packages/generic/AlwaysStrong/v1.0.6.1/AlwaysStrong-v1.0.6.1.zip
 

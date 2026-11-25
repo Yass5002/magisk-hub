@@ -4,7 +4,7 @@
   "repo": "LSPosed/LSPosed",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "LSPosed Framework",
+  "description": "Modern successor to the Xposed Framework by LSPosed Developers, injecting into Android's Zygote to provide memory-only runtime method hooks with per-app scope isolation.",
   "compatibility": [
     "Magisk",
     "KernelSU",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "LSPosed Framework – Download | Magisk Hub",
-    "description": "Download LSPosed Framework for Magisk, KernelSU, and APatch. LSPosed Framework."
+    "description": "Download LSPosed Framework for Magisk, KernelSU, and APatch. Modern successor to the Xposed Framework by LSPosed Developers, injecting..."
   },
   "contentTier": 1
 }

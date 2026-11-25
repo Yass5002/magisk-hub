@@ -4,7 +4,7 @@
   "repo": "mgksu/dockerd",
   "category": "development-instrumentation",
   "softwareType": "flashable-module",
-  "description": "Magisk Docker",
+  "description": "Deploys a native Docker daemon and container management CLI onto Android, backed by an automated init service and Unix socket runtime.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "dockerd – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download dockerd for Magisk and KernelSU. Magisk Docker."
+    "description": "Download dockerd for Magisk and KernelSU. Deploys a native Docker daemon and container management CLI onto Android, backed by an..."
   },
   "contentTier": 1
 }

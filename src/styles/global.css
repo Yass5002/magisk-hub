@@ -19,15 +19,6 @@
   }
 }
 
-/* Hide scrollbar for horizontal chip navigation on mobile */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 /* Clean light scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

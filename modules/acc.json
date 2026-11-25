@@ -4,7 +4,7 @@
   "repo": "VR-25/acc",
   "category": "battery-power-charging",
   "softwareType": "flashable-module",
-  "description": "Advanced Charging Controller",
+  "description": "Sophisticated power management daemon by VR25 that manipulates kernel power supply nodes to enforce charging capacity thresholds, current limits, and idle mode.",
   "compatibility": [
     "Magisk",
     "KernelSU",
@@ -22,7 +22,7 @@
   },
   "seo": {
     "title": "Advanced Charging Controller – Download | Magisk Hub",
-    "description": "Download Advanced Charging Controller for Magisk, KernelSU, and APatch. Advanced Charging Controller."
+    "description": "Download Advanced Charging Controller for Magisk, KernelSU, and APatch. Sophisticated power management daemon by VR25 that manipulates..."
   },
   "contentTier": 1
 }

@@ -30,6 +30,9 @@ export function localizePath(pathname: string, locale: Locale): string {
     return pathname;
   }
   const base = stripLocalePrefix(pathname);
+  if (base === '/404/' || base === '/404.html/') {
+    return locale === 'zh' ? '/zh/404/' : '/404.html';
+  }
   if (locale === 'zh') {
     return base === '/' ? '/zh/' : `/zh${base}`;
   }

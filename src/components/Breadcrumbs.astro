@@ -1,5 +1,6 @@
 ---
-import { SITE_URL } from '../i18n/routing';
+import { SITE_URL, getLocaleFromPath, type Locale } from '../i18n/routing';
+import { getUI } from '../i18n/ui';
 
 export interface BreadcrumbItem {
   name: string;
@@ -8,9 +9,12 @@ export interface BreadcrumbItem {
 
 export interface Props {
   items: BreadcrumbItem[];
+  locale?: Locale;
 }
 
-const { items } = Astro.props;
+const { items, locale: propLocale } = Astro.props;
+const locale: Locale = propLocale ?? getLocaleFromPath(Astro.url.pathname);
+const ui = getUI(locale);
 
 const normalizeBreadcrumbUrl = (u: string) => {
   let full = u.startsWith('http') ? u : `${SITE_URL}${u}`;
@@ -32,12 +36,12 @@ const schema = {
 };
 ---
 
-<nav aria-label="Breadcrumb" class="flex items-center text-xs text-zinc-500 py-3">
+<nav aria-label={ui.nav.breadcrumbAria} class="flex items-center text-xs text-zinc-500 py-3">
   <ol class="flex items-center flex-wrap gap-1.5 font-mono">
     {items.map((item, idx) => (
       <li class="flex items-center gap-1.5">
         {idx > 0 && (
-          <svg class="h-3 w-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="h-3 w-3 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         )}

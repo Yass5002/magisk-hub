@@ -25,9 +25,11 @@ const altHref = localizePath(Astro.url.pathname, altLocale);
         <div class="flex items-center gap-3">
           <img 
             src="/magisk-logo.svg" 
-            alt="Magisk Logo" 
+            alt={ui.nav.logoAlt} 
             width="32" 
             height="32" 
+            loading="lazy"
+            decoding="async"
             class="h-8 w-8 object-contain"
           />
           <span class="text-base font-bold text-zinc-900">{ui.siteName}</span>
@@ -100,7 +102,15 @@ const altHref = localizePath(Astro.url.pathname, altLocale);
             </a>
           </li>
           <li>
-            <a href={altHref} hreflang={altLocale === 'zh' ? 'zh-Hans' : 'en'} data-locale-switch={altLocale} class="text-zinc-700 hover:text-zinc-900 font-semibold transition-colors">
+            <a
+              href={altHref}
+              hreflang={altLocale === 'zh' ? 'zh-Hans' : 'en'}
+              data-locale-switch={altLocale}
+              data-umami-event="footer-language-switch"
+              data-umami-event-from={locale}
+              data-umami-event-to={altLocale}
+              class="text-zinc-700 hover:text-zinc-900 font-semibold transition-colors"
+            >
               {ui.footer.langSwitch}
             </a>
           </li>
@@ -113,9 +123,9 @@ const altHref = localizePath(Astro.url.pathname, altLocale);
         {ui.footer.bottomNote}
       </p>
       <div class="flex items-center gap-4">
-        <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors">GitHub</a>
-        <a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors">Magisk</a>
-        <a href="https://kernelsu.org" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors">KernelSU</a>
+        <a href="https://github.com/Yass5002/magisk-hub" target="_blank" rel="noopener noreferrer" data-umami-event="footer-external-click" data-umami-event-target="github" class="text-zinc-600 hover:text-zinc-900 transition-colors">GitHub</a>
+        <a href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener noreferrer" data-umami-event="footer-external-click" data-umami-event-target="magisk" class="text-zinc-600 hover:text-zinc-900 transition-colors">Magisk</a>
+        <a href="https://kernelsu.org" target="_blank" rel="noopener noreferrer" data-umami-event="footer-external-click" data-umami-event-target="kernelsu" class="text-zinc-600 hover:text-zinc-900 transition-colors">KernelSU</a>
       </div>
     </div>
   </div>

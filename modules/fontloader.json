@@ -4,7 +4,7 @@
   "repo": "JingMatrix/FontLoader",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "FontLoader active root module.",
+  "description": "Preloads custom module fonts inside Zygote before app mount namespaces are isolated, preventing DenyList apps from crashing due to unmounted font files.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "FontLoader – Download (Magisk) | Magisk Hub",
-    "description": "Download FontLoader for Magisk. FontLoader active root module."
+    "description": "Download FontLoader for Magisk. Preloads custom module fonts inside Zygote before app mount namespaces are isolated, preventing DenyList..."
   },
   "contentTier": 1
 }

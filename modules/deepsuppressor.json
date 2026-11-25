@@ -4,7 +4,7 @@
   "repo": "Aurora-Nasa-1/DeepSuppressor",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
-  "description": "A Magisk Module",
+  "description": "Background process manager built on AMMF2, targeting rogue secondary app processes (push services, analytics, sub-threads) with per-process JSON rules and WebUI controls.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "DeepSuppressor – Download (Magisk) | Magisk Hub",
-    "description": "Download DeepSuppressor for Magisk. A Magisk Module."
+    "description": "Download DeepSuppressor for Magisk. Background process manager built on AMMF2, targeting rogue secondary app processes (push services..."
   },
   "contentTier": 1
 }

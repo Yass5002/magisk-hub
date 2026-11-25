@@ -4,7 +4,7 @@
   "repo": "5ec1cff/TrickyStore",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "TrickyStore active root module.",
+  "description": "Advanced Keystore HAL interception module enabling devices with unlocked bootloaders to satisfy MEETS_STRONG_INTEGRITY via custom keybox injection.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "TrickyStore – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download TrickyStore for Magisk and KernelSU. TrickyStore active root module."
+    "description": "Download TrickyStore for Magisk and KernelSU. Advanced Keystore HAL interception module enabling devices with unlocked bootloaders to..."
   },
   "contentTier": 1
 }

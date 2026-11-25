@@ -47,7 +47,13 @@ class TestChromiumE2E(unittest.TestCase):
         # Abort third-party analytics requests so headless runs stay deterministic
         page.route("https://analytics.mehro.me/**", lambda route: route.abort())
         errors = []
-        page.on("pageerror", lambda err: errors.append(str(err)))
+        page.on("pageerror", lambda err: errors.append(f"pageerror: {err}"))
+        page.on(
+            "console",
+            lambda msg: errors.append(f"console.error: {msg.text}")
+            if msg.type == "error" and "analytics.mehro.me" not in msg.text and "Failed to load resource" not in msg.text
+            else None,
+        )
         return ctx, page, errors
 
     def test_mobile_header_pill_drawer_and_no_horizontal_overflow(self):
@@ -84,9 +90,25 @@ class TestChromiumE2E(unittest.TestCase):
             self.assertIn("?q=playintegriyfix", page.url)
             self.assertTrue(page.locator('.module-card-wrapper[data-id="playintegrityfix"]').is_visible())
 
-            page.locator("#resetBtn").evaluate("el => { /* no-op if hidden */ }")
             page.locator("#searchClearBtn").click()
             self.assertNotIn("?q=", page.url)
+
+            # Zero-results -> Reset button clears filters cleanly
+            search.fill("zzzznonexistent999")
+            self.assertTrue(page.locator("#noResults").is_visible())
+            page.locator("#resetBtn").click()
+            self.assertFalse(page.locator("#noResults").is_visible())
+
+            # Keyboard accessibility on desktop Platforms dropdown & 404 language switcher
+            plat_btn = page.locator("#platforms-menu-btn")
+            plat_btn.click()
+            self.assertEqual(plat_btn.get_attribute("aria-expanded"), "true")
+            page.keyboard.press("Escape")
+            self.assertEqual(plat_btn.get_attribute("aria-expanded"), "false")
+
+            page.goto(f"{self.base_url}/zh/404/", wait_until="domcontentloaded")
+            switch_href = page.locator('[data-umami-event="navbar-language-switch"]').get_attribute("href")
+            self.assertEqual(switch_href, "/404.html")
 
             # Category filter page interactive search + compat filter
             page.goto(f"{self.base_url}/categories/root-management/", wait_until="networkidle")

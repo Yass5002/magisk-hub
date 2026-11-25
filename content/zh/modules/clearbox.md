@@ -50,7 +50,7 @@ faq: []
 
 ### 3. 深度文件分类（`FileConfigs`）
 在 `/data/adb/wipe_cache/FileConfigs/` 目录下，用户可创建 `.conf` 配置文件，按文件扩展名与体积范围进行筛选清理：
-```conf
+```ini
 # Target archive files between 10MB and 1GB
 @MAX=1/G @MIN=10/M
 zip 7z

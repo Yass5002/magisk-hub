@@ -4,7 +4,7 @@
   "repo": "InsertX2k/multiuseruienabler",
   "category": "system-environment",
   "softwareType": "flashable-module",
-  "description": "multiuseruienabler",
+  "description": "Systemlessly injects framework properties to reveal the hidden Android Multiple Users settings interface on restricted OEM ROMs like One UI Core.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "multiuseruienabler – Download (Magisk) | Magisk Hub",
-    "description": "Download multiuseruienabler for Magisk. multiuseruienabler."
+    "description": "Download multiuseruienabler for Magisk. Systemlessly injects framework properties to reveal the hidden Android Multiple Users settings..."
   },
   "contentTier": 1
 }

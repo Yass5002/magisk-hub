@@ -4,7 +4,7 @@
   "repo": "DanGLVK/Hide-Navbar",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "Hide Navbar",
+  "description": "Customizes the appearance of Android navigation bars, enabling true fullscreen gesture navigation by hiding the gesture pill and keyboard spacer.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "Hide-Navbar – Download (Magisk) | Magisk Hub",
-    "description": "Download Hide-Navbar for Magisk. Hide Navbar."
+    "description": "Download Hide-Navbar for Magisk. Customizes the appearance of Android navigation bars, enabling true fullscreen gesture navigation by..."
   },
   "contentTier": 1
 }

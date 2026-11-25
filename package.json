@@ -4,11 +4,12 @@
   "type": "module",
   "description": "An active-source directory for Magisk, KernelSU, and APatch modules",
   "scripts": {
-    "copy-assets": "node -e \"const fs=require('fs'); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets', 'public/assets', {recursive:true});\"",
+    "copy-assets": "node -e \"const fs=require('fs'); fs.rmSync('public/assets', {recursive:true, force:true}); fs.mkdirSync('public/assets', {recursive:true}); fs.cpSync('assets', 'public/assets', {recursive:true});\"",
     "generate-llms": "python3 scripts/generate_llms.py",
     "dev": "npm run copy-assets && astro dev",
     "build": "npm run copy-assets && astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "validate": "python3 scripts/validate_module.py",
     "test": "node --experimental-strip-types --test tests/routing.test.mts && node --test tests/dom_runtime.test.mjs && python3 scripts/validate_module.py && python3 scripts/validate_seo_llm_discovery.py && python3 scripts/verify_production_dist.py && python3 -m unittest discover -s tests -p 'test_*.py' -v",
     "test:e2e": "python3 tests/e2e_playwright.py"
@@ -24,12 +25,12 @@
   },
   "homepage": "https://magisk.yssn.tech",
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/sitemap": "^3.7.6",
     "@astrojs/tailwind": "^6.0.2",
     "@fontsource/inter": "^5.3.0",
     "@fontsource/jetbrains-mono": "^5.3.0",
     "@tailwindcss/typography": "^0.5.20",
-    "astro": "^7.3.5",
+    "astro": "^7.4.13",
     "tailwindcss": "^3.4.19"
   },
   "engines": {
@@ -45,7 +46,9 @@
     "modules"
   ],
   "devDependencies": {
-    "jsdom": "^31.0.1"
+    "@astrojs/check": "^0.9.12",
+    "jsdom": "^31.0.1",
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "postcss-selector-parser": "^6.1.5"

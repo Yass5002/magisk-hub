@@ -38,7 +38,6 @@ CAT_MAP = {
     'development-instrumentation': 'development-instrumentation',
     'utilities': 'system-utilities',
     'system-utilities': 'system-utilities',
-    'audio': 'system-utilities',
     'file-management': 'system-utilities',
     'debloating': 'system-utilities',
     'networking': 'networking-proxies',
@@ -58,6 +57,88 @@ CAT_MAP = {
     'boot-animations-ui': 'boot-animations-ui',
     'boot-animation': 'boot-animations-ui',
 }
+
+CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+
+
+def is_clean_english_text(text):
+    """Return True when text is non-empty pure-English (no CJK or placeholder boilerplate)."""
+    cleaned = (text or "").strip()
+    if not cleaned:
+        return False
+    if CJK_RE.search(cleaned):
+        return False
+    if "active root module" in cleaned.lower():
+        return False
+    return True
+
+
+def choose_preserved_description(existing_cand, upstream_info):
+    """Preserve curated English catalog description over raw CJK/empty upstream descriptions."""
+    existing_desc = (existing_cand.get("description") or "").strip()
+    if is_clean_english_text(existing_desc) and len(existing_desc) >= 20:
+        return existing_desc
+    upstream_desc = (upstream_info.get("description") or "").strip()
+    if is_clean_english_text(upstream_desc):
+        return upstream_desc
+    if existing_desc and not CJK_RE.search(existing_desc):
+        return existing_desc
+    return f"{existing_cand['name']} systemless extension for Android."
+
+
+def choose_preserved_seo(existing_cand, name, compat, desc, ver_tag):
+    """Keep curated English SEO metadata if clean; otherwise generate normalized SEO tags."""
+    existing_seo = existing_cand.get("seo") or {}
+    ex_title = (existing_seo.get("title") or "").strip()
+    ex_desc = (existing_seo.get("description") or "").strip()
+    if (
+        len(ex_title) >= 15
+        and len(ex_desc) >= 35
+        and is_clean_english_text(ex_title)
+        and is_clean_english_text(ex_desc)
+    ):
+        return {"title": ex_title, "description": ex_desc}
+    gen_title, gen_desc = generate_module_seo(name, compat, desc, ver_tag)
+    return {"title": gen_title, "description": gen_desc}
+
+
+def build_synced_module_entry(c, info, slug, category, sw_type, compat, spdx, desc, icon_path, chosen_asset, latest_rel):
+    """Assemble modules/<slug>.json entry while preserving optional curated metadata fields."""
+    entry = {
+        "id": slug,
+        "name": c["name"],
+        "repo": info.get("nameWithOwner") or c["repo"],
+        "category": category,
+        "softwareType": sw_type,
+        "description": desc,
+        "compatibility": compat,
+        "license": spdx,
+        "icon": icon_path,
+        "stars": info.get("stargazerCount", 0),
+        "latestRelease": {
+            "tag": latest_rel["tagName"],
+            "publishedAt": latest_rel["publishedAt"],
+            "url": latest_rel["url"],
+            "downloadUrl": chosen_asset["downloadUrl"],
+            "assetName": chosen_asset["name"],
+        },
+        "seo": choose_preserved_seo(c, c["name"], compat, desc, latest_rel["tagName"]),
+    }
+    for opt_key in ("author", "sourceType", "sourceUrl", "contentTier", "trendingDownloads"):
+        if opt_key in c and c[opt_key] is not None:
+            entry[opt_key] = c[opt_key]
+    return entry
+
+
+def is_mass_prune_aborted(total_github, surviving_count, pruned_count, fetched_count):
+    """Prevent accidental catalog wipeout during GitHub API rate-limit or network outages."""
+    if total_github < 20:
+        return False
+    if fetched_count < total_github * 0.5:
+        return True
+    if surviving_count == 0 or (pruned_count / total_github) > 0.25:
+        return True
+    return False
 
 # Verified icon path mapping within module repositories
 KNOWN_ICONS = {
@@ -186,48 +267,48 @@ def generate_module_seo(name, compat, desc, ver_tag):
 
 
 
-def _url_probe(url, method="HEAD", extra_headers=None):
+def _url_probe(url, method="HEAD", extra_headers=None, timeout=8):
     headers = {"User-Agent": "Mozilla/5.0 (compatible; MagiskHub/1.0)"}
     if extra_headers:
         headers.update(extra_headers)
     req = urllib.request.Request(url, method=method, headers=headers)
-    with urllib.request.urlopen(req, timeout=15) as resp:
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.status
 
 
-def check_asset_head(url):
-    """Verify asset reachability via HEAD with retry and Range GET fallback."""
+def check_asset_head(url, timeout=8):
+    """Verify asset reachability via HEAD with fast fallback to a 1-byte Range GET."""
+    last_err = None
     for attempt in range(2):
         try:
-            status = _url_probe(url, method="HEAD")
+            status = _url_probe(url, method="HEAD", timeout=timeout)
             if status in (200, 302):
                 return True
         except urllib.error.HTTPError as e:
             if e.code in (404, 410):
                 return False
-            # Many CDNs/proxies reject HEAD with 400/403/405 or transient 5xx; probe byte 0 via GET
+            last_err = e
             try:
-                get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"})
+                get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"}, timeout=timeout)
                 if get_status in (200, 206):
                     return True
             except urllib.error.HTTPError as get_e:
                 if get_e.code in (404, 410):
                     return False
-                if attempt == 1:
-                    print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
+                last_err = get_e
             except Exception as get_e:
-                if attempt == 1:
-                    print(f"Fallback GET check failed for {url}: {get_e}", file=sys.stderr)
+                last_err = get_e
         except Exception as e:
-            # Retry once or fall back to Range GET on transient socket/timeout errors
-            try:
-                get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"})
-                if get_status in (200, 206):
-                    return True
-            except Exception:
-                pass
-            if attempt == 1:
-                print(f"HEAD check failed for {url}: {e}", file=sys.stderr)
+            last_err = e
+            if attempt == 0:
+                try:
+                    get_status = _url_probe(url, method="GET", extra_headers={"Range": "bytes=0-0"}, timeout=timeout)
+                    if get_status in (200, 206):
+                        return True
+                except Exception as get_e:
+                    last_err = get_e
+    if last_err:
+        print(f"Asset check failed for {url}: {last_err}", file=sys.stderr)
     return False
 
 
@@ -502,7 +583,8 @@ def main():
         repo_name = repo.split('/')[1]
         sw_type = c.get("softwareType", "flashable-module")
         slug = c.get("id") or make_slug(raw_id, repo_name)
-        category = c.get("category") or CAT_MAP.get(c.get("category", "system-utilities"), "system-utilities")
+        raw_cat = c.get("category") or "system-utilities"
+        category = CAT_MAP.get(raw_cat, raw_cat if raw_cat in CAT_MAP.values() else "system-utilities")
         compat = c.get("compatibility", ["Magisk"])
 
         info = github_data.get(repo)
@@ -546,10 +628,7 @@ def main():
             else:
                 spdx = "Proprietary"
 
-        desc = info.get("description") or c.get("description") or f"{c['name']} active root module."
-        desc = desc.strip()
-        if not desc:
-            desc = f"{c['name']} active root module for Android."
+        desc = choose_preserved_description(c, info)
 
         active_candidates.append({
             "c": c,
@@ -597,32 +676,29 @@ def main():
         default_branch = cand["info"].get("defaultBranchRef", {}).get("name", "master") or "master"
         icon_path = resolve_icon(repo, slug, default_branch)
 
-        entry = {
-            "id": slug,
-            "name": c["name"],
-            "repo": cand["info"].get("nameWithOwner") or repo,
-            "category": cand["category"],
-            "softwareType": cand["sw_type"],
-            "description": cand["desc"],
-            "compatibility": cand["compat"],
-            "license": cand["spdx"],
-            "icon": icon_path,
-            "stars": cand["info"].get("stargazerCount", 0),
-            "latestRelease": {
-                "tag": cand["latest_rel"]["tagName"],
-                "publishedAt": cand["latest_rel"]["publishedAt"],
-                "url": cand["latest_rel"]["url"],
-                "downloadUrl": cand["chosen_asset"]["downloadUrl"],
-                "assetName": cand["chosen_asset"]["name"]
-            },
-            "seo": {
-                "title": generate_module_seo(c["name"], cand["compat"], cand["desc"], cand["latest_rel"]["tagName"])[0],
-                "description": generate_module_seo(c["name"], cand["compat"], cand["desc"], cand["latest_rel"]["tagName"])[1]
-            }
-        }
-        if c.get("contentTier"):
-            entry["contentTier"] = c["contentTier"]
+        entry = build_synced_module_entry(
+            c=c,
+            info=cand["info"],
+            slug=slug,
+            category=cand["category"],
+            sw_type=cand["sw_type"],
+            compat=cand["compat"],
+            spdx=cand["spdx"],
+            desc=cand["desc"],
+            icon_path=icon_path,
+            chosen_asset=cand["chosen_asset"],
+            latest_rel=cand["latest_rel"],
+        )
         final_module_entries.append((slug, entry))
+
+    if is_mass_prune_aborted(len(github_candidates), len(final_module_entries), len(pruned_modules), len(github_data)):
+        print(
+            f"🛑 ABORTING PRUNE & WRITE: {len(pruned_modules)}/{len(github_candidates)} GitHub modules flagged "
+            f"(fetched={len(github_data)}, surviving={len(final_module_entries)}). Possible GitHub API outage.",
+            file=sys.stderr,
+            flush=True,
+        )
+        sys.exit(1)
 
     # Clean existing module files if they got pruned (preserving community modules)
     zh_locales_dir = os.path.join(REPO_ROOT, "locales", "zh", "modules")

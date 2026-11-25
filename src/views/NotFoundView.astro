@@ -19,7 +19,7 @@ const homeHref = localizePath('/', locale);
   noindex={true}
 >
   <div class="mx-auto max-w-xl px-4 py-20 sm:px-6 lg:px-8 text-center">
-    <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-900 border border-zinc-200 mb-6 shadow-xs">
+    <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-zinc-100 text-zinc-900 border border-zinc-200 mb-6 shadow-sm">
       <span class="font-mono text-lg font-bold">404</span>
     </div>
 
@@ -33,18 +33,19 @@ const homeHref = localizePath('/', locale);
 
     <!-- Search Box -->
     <div class="mt-8 max-w-md mx-auto">
-      <form action={homeHref} method="GET" class="relative flex items-center h-12 rounded-xl border border-zinc-200 bg-white shadow-xs focus-within:border-zinc-900 focus-within:ring-2 focus-within:ring-zinc-900/10 transition-all">
-        <div class="pl-4 pr-2 text-zinc-400 pointer-events-none">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <form action={homeHref} method="GET" class="relative flex items-center h-12 rounded-xl border border-zinc-200 bg-white shadow-sm focus-within:border-zinc-900 focus-within:ring-2 focus-within:ring-zinc-900/10 transition-all">
+        <div class="pl-4 pr-2 text-zinc-500 pointer-events-none">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
           </svg>
         </div>
         <input 
           type="text" 
           name="q"
+          aria-label={ui.notFound.searchPlaceholder}
           placeholder={ui.notFound.searchPlaceholder} 
           autocomplete="off"
-          class="w-full bg-transparent py-2.5 pr-4 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none"
+          class="w-full bg-transparent py-2.5 pr-4 text-xs sm:text-sm text-zinc-900 placeholder-zinc-500 focus:outline-none"
         />
         <button 
           type="submit" 
@@ -58,9 +59,9 @@ const homeHref = localizePath('/', locale);
     <div class="mt-8">
       <a 
         href={homeHref} 
-        class="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-500 hover:text-zinc-900 transition-colors"
+        class="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
       >
-        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
         </svg>
         {ui.notFound.backHome}
@@ -68,11 +69,16 @@ const homeHref = localizePath('/', locale);
     </div>
   </div>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    const track404 = () => {
       if ((window as any).umami) {
         const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
-        (window as any).umami.track("404-error", { path: window.location.pathname, locale: pageLocale });
+        (window as any).umami.track('404-error', { path: window.location.pathname, locale: pageLocale });
       }
-    });
+    };
+    if ((window as any).umami) {
+      track404();
+    } else {
+      window.addEventListener('load', track404, { once: true });
+    }
   </script>
 </BaseLayout>

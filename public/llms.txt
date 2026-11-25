@@ -1,6 +1,6 @@
 # Magisk Hub
 
-> Magisk Hub is an open directory and technical knowledge hub cataloging 270 community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, and LSPosed.
+> Magisk Hub is an open directory and technical knowledge hub cataloging 270 community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, LSPosed, and Shizuku.
 
 ## Overview & Architecture
 Magisk Hub indexes verified open-source and community root packages, technical architecture breakdowns, and official release assets. Every module listed is verified against JSON Schema Draft-07 specifications and physical archive payload inspection.
@@ -19,6 +19,8 @@ Android privilege environments supported across this directory:
 - [KernelSU Modules](https://magisk.yssn.tech/compatibility/kernelsu/): Kernel-space root management operating via custom su privilege delegation in GKI kernels.
 - [APatch Modules](https://magisk.yssn.tech/compatibility/apatch/): KernelPatch-based root solution modifying the Android kernel in-place without requiring full custom boot image rebuilds.
 - [LSPosed Modules](https://magisk.yssn.tech/compatibility/lsposed/): ART runtime hooking framework executing method interceptions in memory.
+- [Shizuku Privileged Apps](https://magisk.yssn.tech/compatibility/shizuku/): Unrooted system API access via ADB/root-backed Binder IPC delegation.
+- [Rootless Tools](https://magisk.yssn.tech/compatibility/rootless/): Non-root utilities running via Shizuku, wireless debugging (ADB), or Device Owner privileges.
 
 ## Ecosystem Categories
 Browse modules by functional domain:
@@ -39,13 +41,14 @@ Browse modules by functional domain:
 ## Featured Flagship Guides (Tier 1)
 In-depth technical guides with architecture breakdowns, configuration paths, and troubleshooting FAQs:
 
+- [Magisk](https://magisk.yssn.tech/modules/magisk/): Core systemless root suite providing boot image patching and Zygisk process injection.
 - [PlayIntegrityFix](https://magisk.yssn.tech/modules/playintegrityfix/): Fix Play Integrity API verdicts by spoofing valid device fingerprints. Config: `/data/adb/pif.json`.
 - [Shamiko](https://magisk.yssn.tech/modules/shamiko/): Closed-source Zygisk module for advanced root hiding and sensitive app cloaking. Config: `/data/adb/shamiko/whitelist`.
 - [TrickyStore](https://magisk.yssn.tech/modules/trickystore/): Keystore interception tool supporting software-backed keybox spoofing for hardware-backed attestation bypasses. Config: `/data/adb/tricky_store/target.txt`.
-- [SukiSU Ultra](https://magisk.yssn.tech/modules/sukisu-ultra/): Next-generation KernelSU root management system coupling LKM architecture with Susfs stealth hiding.
+- [ReZygisk](https://magisk.yssn.tech/modules/rezygisk/): Open-source C implementation of the Zygisk API compatible across Magisk, KernelSU, and APatch.
 - [OverlayFS MetaModule](https://magisk.yssn.tech/modules/meta-overlayfs-kernelsu/): High-performance OverlayFS filesystem metamodule for KernelSU replacing Magic Mount.
 - [FreePPS](https://magisk.yssn.tech/modules/freepps-xiaomi-fast-charge/): Unlocks open-standard USB-PD Programmable Power Supply (PPS) protocol fast charging on Xiaomi devices.
-- [Mediatek Mali GPU Governor](https://magisk.yssn.tech/modules/mediatek-mali-gpu-governor/): Adaptive low-level kernel GPU governor for Dimensity Mali processors.
+- [bindhosts](https://magisk.yssn.tech/modules/bindhosts/): Cross-platform systemless hosts blocker utilizing mount-bind across Magisk, KernelSU, and APatch.
 - [ViPER4Android FX Redesign](https://magisk.yssn.tech/modules/viperfx-re/): Renowned systemless audio DSP equalizer, convolver, and bass management suite.
 - [LocusMimic](https://magisk.yssn.tech/modules/locusmimic/): Advanced GPS location and multi-point route simulator operating systemlessly via LSPosed.
 - [LSPDoze](https://magisk.yssn.tech/modules/lspdoze/): Instant Deep Doze transitions upon screen-off, background wakelock suppression, and fullscreen AOD.

@@ -4,7 +4,7 @@
   "repo": "eritpchy/FingerprintPay",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付",
+  "description": "Bridges standard Android BiometricPrompt APIs to proprietary payment services (Alipay, WeChat Pay, QQ) on rooted and custom AOSP ROMs.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "FingerprintPay – Download (Magisk) | Magisk Hub",
-    "description": "Download FingerprintPay for Magisk. 让微信、QQ、支付宝、淘宝、云闪付支持使用指纹支付."
+    "description": "Download FingerprintPay for Magisk. Bridges standard Android BiometricPrompt APIs to proprietary payment services (Alipay, WeChat Pay..."
   },
   "contentTier": 1
 }

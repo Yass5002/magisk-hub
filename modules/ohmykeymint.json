@@ -4,7 +4,7 @@
   "repo": "qwq233/OhMyKeymint",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "OhMyKeymint active root module.",
+  "description": "Rust-engineered attestation redirection module hooking Android 12+ keystore2 daemons to route cryptographic attestation to custom KeyMint profiles.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "OhMyKeymint – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download OhMyKeymint for Magisk and KernelSU. OhMyKeymint active root module."
+    "description": "Download OhMyKeymint for Magisk and KernelSU. Rust-engineered attestation redirection module hooking Android 12+ keystore2 daemons to..."
   },
   "contentTier": 1
 }

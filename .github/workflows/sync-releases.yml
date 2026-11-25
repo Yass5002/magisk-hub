@@ -59,8 +59,8 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Stage any modified/added/deleted files in modules/, assets/, src/data/, locales/, content/zh/, and llms feeds
-          git add -A modules/ assets/ src/data/ locales/ content/zh/ public/llms.txt public/llms-full.txt public/zh/llms.txt public/zh/llms-full.txt
+          # Stage any modified/added/deleted files in modules/, assets/, src/data/, locales/, content/, and llms feeds
+          git add -A modules/ assets/ src/data/ locales/ content/ public/llms.txt public/llms-full.txt public/zh/llms.txt public/zh/llms-full.txt
           
           if git diff --staged --quiet; then
             echo "No changes detected. Database is completely up to date."

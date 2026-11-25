@@ -8,6 +8,11 @@ import {
   normalizeTrailingSlash,
   stripLocalePrefix,
 } from '../src/i18n/routing.ts';
+import {
+  parseInlineMarkdown,
+  renderEntityMarkdown,
+  VERIFIED_MODULE_TARGETS,
+} from '../src/lib/inlineMarkdown.ts';
 
 test('normalizeTrailingSlash enforces trailing slash', () => {
   assert.equal(normalizeTrailingSlash('/'), '/');
@@ -48,4 +53,24 @@ test('getAlternateUrls returns symmetric en, zhHans, and xDefault URLs', () => {
     xDefault: 'https://magisk.yssn.tech/modules/shamiko/',
   });
   assert.equal(getAbsoluteUrl('/', 'zh'), 'https://magisk.yssn.tech/zh/');
+  assert.equal(localizePath('/zh/404/', 'en'), '/404.html');
+  assert.equal(localizePath('/404.html', 'zh'), '/zh/404/');
+});
+
+test('parseInlineMarkdown escapes HTML tags/XSS while formatting inline code and bold spans', () => {
+  const rendered = parseInlineMarkdown('Run `<script>alert(1)</script>` for **<package>** & safety');
+  assert.doesNotMatch(rendered, /<script>/i);
+  assert.match(rendered, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
+  assert.match(rendered, /<strong[^>]*>&lt;package&gt;<\/strong>/);
+  assert.match(rendered, /&amp; safety/);
+});
+
+test('renderEntityMarkdown never creates nested links inside <code> spans', () => {
+  const html = renderEntityMarkdown('Pairs with Shamiko and `/data/adb/shamiko/whitelist` config', 'trickystore', 'en', false);
+  const codeSegments = html.match(/<code\b[^>]*>.*?<\/code>/g) || [];
+  assert.equal(codeSegments.length, 1);
+  assert.doesNotMatch(codeSegments[0], /<a\b/i, 'must not link inside <code> elements');
+  assert.match(html, /<a href="\/modules\/shamiko\/"[^>]*>Shamiko<\/a>/);
+  assert.equal('mountify' in VERIFIED_MODULE_TARGETS, false);
+  assert.equal('stevenblock' in VERIFIED_MODULE_TARGETS, false);
 });

@@ -4,7 +4,7 @@
   "repo": "nakixii/Magisk_AsoulOpt",
   "category": "performance-kernel",
   "softwareType": "flashable-module",
-  "description": "Magisk_AsoulOpt active root module.",
+  "description": "Kernel optimization module for Snapdragon, Dimensity, and Exynos chipsets dynamically tuning CPU/GPU governors, I/O schedulers, and thermal limits.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "Magisk_AsoulOpt – Download (Magisk) | Magisk Hub",
-    "description": "Download Magisk_AsoulOpt for Magisk. Magisk_AsoulOpt active root module."
+    "description": "Download Magisk_AsoulOpt for Magisk. Kernel optimization module for Snapdragon, Dimensity, and Exynos chipsets dynamically tuning..."
   },
   "contentTier": 1
 }

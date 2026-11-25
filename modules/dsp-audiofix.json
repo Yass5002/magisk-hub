@@ -4,7 +4,7 @@
   "repo": "ahmed-alnassif/DSP-AudioFix",
   "category": "system-utilities",
   "softwareType": "flashable-module",
-  "description": "DSP-AudioFix active root module.",
+  "description": "Resolves audio distortion and initialization jitter on Xiaomi and MediaTek handsets with Awinic smart amplifiers by synchronizing audioserver with DSP readiness.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "DSP-AudioFix – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download DSP-AudioFix for Magisk and KernelSU. DSP-AudioFix active root module."
+    "description": "Download DSP-AudioFix for Magisk and KernelSU. Resolves audio distortion and initialization jitter on Xiaomi and MediaTek handsets with..."
   },
   "contentTier": 1
 }

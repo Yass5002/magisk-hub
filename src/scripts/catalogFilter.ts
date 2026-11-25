@@ -14,7 +14,9 @@ const SEARCH_STOPWORDS = new Set([
 ]);
 
 export function normalizeSearchText(s: string): string {
-  return s.toLowerCase().replace(/[-_.\s/\\:()[\]]+/g, '');
+  return s
+    .toLowerCase()
+    .replace(/[-_.\s/\\:()[\]·•，。！？、：；“”‘’（）【】《》「」『』—–‐]+/g, '');
 }
 
 /** Bounded Levenshtein edit distance returning maxDist + 1 early when exceeded. */
@@ -66,7 +68,7 @@ function matchSmartFallback(rawQuery: string, wrappers: HTMLElement[]): Set<stri
     .map((t) => normalizeSearchText(t))
     .filter((t) => t.length >= 4 && !SEARCH_STOPWORDS.has(t));
   const words = [
-    ...(rawQuery.match(/[a-z0-9]{3,}/g) || []),
+    ...(rawQuery.match(/[a-z0-9]{2,}/g) || []),
     ...(rawQuery.match(/[\u4e00-\u9fff]{2,}/g) || []),
   ]
     .map((t) => t.toLowerCase())
@@ -131,6 +133,7 @@ export function initCatalogFilter(opts: CatalogFilterOptions = {}) {
   const moduleCount = document.getElementById('moduleCount');
 
   if (!moduleGrid || cardWrappers.length === 0) return;
+  const gridEl = moduleGrid;
 
   const pageLocale = document.documentElement.lang?.toLowerCase().startsWith('zh') ? 'zh' : 'en';
   let currentSearch = '';
@@ -138,6 +141,7 @@ export function initCatalogFilter(opts: CatalogFilterOptions = {}) {
   let currentCategory = 'all';
   let currentSort = sortSelect?.value || 'trending';
   let currentTotalVisible = cardWrappers.length;
+  let lastSortKey = '';
 
   // Hydrate initial ?q=, ?compat=, ?cat=, ?sort= from URL query string
   try {
@@ -266,32 +270,37 @@ export function initCatalogFilter(opts: CatalogFilterOptions = {}) {
       }
     }
 
-    const sorted = [...cardWrappers].sort((a, b) => {
-      if (currentSort === 'trending') {
-        const dlA = parseInt(a.getAttribute('data-trending') || '0', 10);
-        const dlB = parseInt(b.getAttribute('data-trending') || '0', 10);
-        const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
-        const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
-        if (dlB !== dlA) return dlB - dlA;
-        return starsB - starsA;
-      } else if (currentSort === 'stars') {
-        const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
-        const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
-        return starsB - starsA;
-      } else if (currentSort === 'name') {
-        const nameA = a.getAttribute('data-name') || '';
-        const nameB = b.getAttribute('data-name') || '';
-        return nameA.localeCompare(nameB);
-      } else if (currentSort === 'recent') {
-        const dateA = new Date(a.getAttribute('data-date') || 0).getTime();
-        const dateB = new Date(b.getAttribute('data-date') || 0).getTime();
-        return dateB - dateA;
-      }
-      return 0;
-    });
+    if (currentSort !== lastSortKey) {
+      const sorted = [...cardWrappers].sort((a, b) => {
+        if (currentSort === 'trending') {
+          const dlA = parseInt(a.getAttribute('data-trending') || '0', 10);
+          const dlB = parseInt(b.getAttribute('data-trending') || '0', 10);
+          const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
+          const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
+          if (dlB !== dlA) return dlB - dlA;
+          return starsB - starsA;
+        } else if (currentSort === 'stars') {
+          const starsA = parseInt(a.getAttribute('data-stars') || '0', 10);
+          const starsB = parseInt(b.getAttribute('data-stars') || '0', 10);
+          return starsB - starsA;
+        } else if (currentSort === 'name') {
+          const nameA = a.getAttribute('data-name') || '';
+          const nameB = b.getAttribute('data-name') || '';
+          return nameA.localeCompare(nameB);
+        } else if (currentSort === 'recent') {
+          const rawA = new Date(a.getAttribute('data-date') || 0).getTime();
+          const rawB = new Date(b.getAttribute('data-date') || 0).getTime();
+          const dateA = Number.isFinite(rawA) ? rawA : 0;
+          const dateB = Number.isFinite(rawB) ? rawB : 0;
+          return dateB - dateA;
+        }
+        return 0;
+      });
 
-    for (const el of sorted) {
-      moduleGrid.appendChild(el);
+      for (const el of sorted) {
+        gridEl.appendChild(el);
+      }
+      lastSortKey = currentSort;
     }
 
     const totalVisible = visibleCount + (shouldShowSpotlight ? 1 : 0);

@@ -4,7 +4,7 @@
   "repo": "Magisk-Modules-Repo/nano-ndk",
   "category": "development-instrumentation",
   "softwareType": "flashable-module",
-  "description": "nano-ndk",
+  "description": "Static ARM and ARM64 GNU nano text editor compiled with the Android NDK by osm0sis, providing complete terminfo definitions for on-device and TWRP terminal editing.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "nano-ndk – Download (Magisk) | Magisk Hub",
-    "description": "Download nano-ndk for Magisk. nano-ndk."
+    "description": "Download nano-ndk for Magisk. Static ARM and ARM64 GNU nano text editor compiled with the Android NDK by osm0sis, providing complete..."
   },
   "contentTier": 1
 }

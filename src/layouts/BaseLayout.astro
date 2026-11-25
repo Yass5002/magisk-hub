@@ -2,14 +2,14 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import '@fontsource/inter/400.css';
+import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
 import '@fontsource/inter/800.css';
-import '@fontsource/jetbrains-mono/400.css';
-import '@fontsource/jetbrains-mono/500.css';
-import '@fontsource/jetbrains-mono/600.css';
+import '@fontsource/jetbrains-mono/latin-400.css';
+import '@fontsource/jetbrains-mono/latin-500.css';
+import '@fontsource/jetbrains-mono/latin-600.css';
 import SpriteDefs from '../components/SpriteDefs.astro';
 import {
   getAlternateUrls,
@@ -76,7 +76,7 @@ const baseWebSiteSchema = {
 ---
 
 <!doctype html>
-<html lang={ui.htmlLang} class="scroll-smooth bg-[#fafafa] overflow-x-hidden">
+<html lang={ui.htmlLang} class="scroll-smooth bg-[#fafafa] overflow-x-clip">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -126,6 +126,9 @@ const baseWebSiteSchema = {
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={siteName} />
     <meta property="og:site_name" content={siteName} />
 
     <!-- Twitter -->
@@ -134,6 +137,7 @@ const baseWebSiteSchema = {
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`} />
+    <meta name="twitter:image:alt" content={siteName} />
 
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(baseWebSiteSchema)} />
@@ -148,7 +152,7 @@ const baseWebSiteSchema = {
     )}
     <slot name="head" />
   </head>
-  <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 overflow-x-hidden">
+  <body class="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 overflow-x-clip">
     <Navbar locale={locale} />
 
     {locale === 'en' && !noindex && (
@@ -156,11 +160,11 @@ const baseWebSiteSchema = {
         id="zhLocaleBanner"
         class="hidden border-b border-zinc-200 bg-zinc-50 text-zinc-700 text-xs"
         role="region"
-        aria-label="Language suggestion"
+        aria-label={ui.nav.langSwitchTitle}
       >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-3">
           <div class="flex items-center gap-2.5 flex-wrap">
-            <span>检测到您的浏览器首选语言为简体中文，可切换至完整中文模块文档与目录。</span>
+            <span>{ui.localeBanner.message}</span>
             <a
               href={zhSwitchHref}
               id="zhBannerSwitchLink"
@@ -169,7 +173,7 @@ const baseWebSiteSchema = {
               data-umami-event-to="zh"
               class="inline-flex items-center rounded-md bg-zinc-900 px-2.5 py-1 text-[11px] font-semibold text-white hover:bg-zinc-800 transition-colors"
             >
-              切换到简体中文版 →
+              {ui.localeBanner.cta}
             </a>
           </div>
           <button
@@ -177,8 +181,8 @@ const baseWebSiteSchema = {
             id="zhBannerDismissBtn"
             data-umami-event="zh-banner-dismiss"
             data-umami-event-locale="en"
-            class="text-zinc-400 hover:text-zinc-700 px-1.5 py-0.5 rounded transition-colors shrink-0"
-            aria-label="关闭语言提示"
+            class="text-zinc-500 hover:text-zinc-800 px-2 py-1 rounded transition-colors shrink-0"
+            aria-label={ui.localeBanner.dismiss}
           >
             ✕
           </button>

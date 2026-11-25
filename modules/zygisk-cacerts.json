@@ -4,7 +4,7 @@
   "repo": "vvb2060/zygisk_cacerts",
   "category": "security-certificates",
   "softwareType": "flashable-module",
-  "description": "zygisk_cacerts active root module.",
+  "description": "Systemless security utility by vvb2060 that updates Android's root certificate store with upstream AOSP CA certificates across Android 7 through 16 with 16k page size support.",
   "compatibility": [
     "Magisk",
     "KernelSU"
@@ -21,7 +21,7 @@
   },
   "seo": {
     "title": "zygisk_cacerts – Download (Magisk/KSU) | Magisk Hub",
-    "description": "Download zygisk_cacerts for Magisk and KernelSU. zygisk_cacerts active root module."
+    "description": "Download zygisk_cacerts for Magisk and KernelSU. Systemless security utility by vvb2060 that updates Android's root certificate store..."
   },
   "contentTier": 1
 }

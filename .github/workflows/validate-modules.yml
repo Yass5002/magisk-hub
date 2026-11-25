@@ -57,6 +57,9 @@ jobs:
       - name: Install Node dependencies
         run: npm ci --legacy-peer-deps
 
+      - name: Run Astro and TypeScript type check
+        run: npm run check
+
       - name: Verify static site build
         run: npm run build
 

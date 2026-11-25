@@ -28,7 +28,7 @@ const isTier1 = module.contentTier === 1;
 const isCommunity = !module.repo;
 ---
 
-<article class={`relative group flex flex-col justify-between h-full rounded-xl border p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-xs ${
+<article class={`relative group flex flex-col justify-between h-full rounded-xl border p-5 cursor-pointer transition-all duration-150 ease-in-out hover:shadow-sm focus-within:ring-2 focus-within:ring-zinc-900/20 ${
   isCommunity 
     ? 'border-indigo-100 bg-white hover:border-indigo-300' 
     : (isTier1 ? 'border-zinc-300 hover:border-zinc-400 bg-white' : 'border-zinc-200 hover:border-zinc-300 bg-white')
@@ -36,7 +36,7 @@ const isCommunity = !module.repo;
   <!-- Interactive Overlay Link -->
   <a 
     href={moduleHref} 
-    class="absolute inset-0 z-0" 
+    class="absolute inset-0 z-0 rounded-xl focus:outline-none" 
     aria-label={ui.card.viewAria(module.name)}
     data-umami-event="click-module-card"
     data-umami-event-module={module.id}
@@ -44,11 +44,11 @@ const isCommunity = !module.repo;
     data-umami-event-locale={locale}
   ></a>
 
-  <div>
+  <div class="relative z-10 pointer-events-none">
     <!-- Top Row: Avatar + Title & Normalized Monospace Version -->
     <div class="flex items-start gap-3.5">
       <!-- Avatar / Category Icon -->
-      <div class="shrink-0 relative z-10">
+      <div class="shrink-0">
         {module.icon ? (
           <img 
             src={`/${module.icon}`} 
@@ -56,6 +56,7 @@ const isCommunity = !module.repo;
             width="44" 
             height="44" 
             loading="lazy"
+            decoding="async"
             class="h-11 w-11 rounded-lg object-contain bg-zinc-50 p-1 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
           />
         ) : (
@@ -67,12 +68,13 @@ const isCommunity = !module.repo;
                 width="44" 
                 height="44" 
                 loading="lazy"
+                decoding="async"
                 class="h-11 w-11 rounded-lg object-cover bg-zinc-50 border border-zinc-200 group-hover:border-zinc-300 transition-colors"
                 onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
               />
             ) : null}
             <div class={`${module.repo ? 'hidden' : 'flex'} h-11 w-11 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-200`}>
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <use href={`#icon-${module.category}`} />
               </svg>
             </div>
@@ -131,11 +133,11 @@ const isCommunity = !module.repo;
   </div>
 
   <!-- Unified Bottom Metadata Bar -->
-  <div class="mt-4 pt-3.5 border-t border-zinc-100 flex items-center justify-between text-xs font-medium text-zinc-500 relative z-10">
+  <div class="mt-4 pt-3.5 border-t border-zinc-100 flex items-center justify-between text-xs font-medium text-zinc-500 relative z-10 pointer-events-none">
     <!-- Left: Maintainer + Compact Stars -->
     <div class="flex items-center gap-2.5 truncate max-w-[55%]">
       <div class="flex items-center gap-1 truncate text-zinc-500">
-        <svg class="h-3.5 w-3.5 text-zinc-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="h-3.5 w-3.5 text-zinc-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <use href="#icon-author" />
         </svg>
         <span class="truncate hover:text-zinc-900 transition-colors font-mono">{author}</span>
@@ -146,14 +148,14 @@ const isCommunity = !module.repo;
           <span class="text-zinc-300 shrink-0">•</span>
           <!-- Compact Stars (Only for GitHub-backed repositories) -->
           <div class="inline-flex items-center gap-1 font-mono font-medium text-zinc-800 shrink-0">
-            <span class="text-amber-500">★</span>
+            <span class="text-amber-600" aria-hidden="true">★</span>
             <span>{formatStars(module.stars)}</span>
           </div>
         </>
       ) : (
         <>
           <span class="text-zinc-300 shrink-0">•</span>
-          <span class="text-[10px] font-mono font-medium text-indigo-600 bg-indigo-50/80 px-1.5 py-0.5 rounded border border-indigo-100 shrink-0">
+          <span class="text-[10px] font-mono font-medium text-indigo-700 bg-indigo-50/80 px-1.5 py-0.5 rounded border border-indigo-200/80 shrink-0">
             {ui.card.pkgBadge}
           </span>
         </>

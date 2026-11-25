@@ -20,6 +20,10 @@ def get_7d_timestamps():
     return seven_days_ago_ms, now_ms
 
 def fetch_trending_downloads():
+    if not UMAMI_API_KEY:
+        print("[sync_trending] Skipping Umami query: UMAMI_API_KEY is not set.")
+        return None
+
     start_at, end_at = get_7d_timestamps()
     endpoint = f"{UMAMI_URL}/api/websites/{WEBSITE_ID}/event-data/events?startAt={start_at}&endAt={end_at}&event=download-module"
 
@@ -53,9 +57,10 @@ def main():
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     counts = fetch_trending_downloads()
 
-    if counts is not None:
-        with open(OUTPUT_FILE, "w") as f:
+    if counts:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(counts, f, indent=2)
+            f.write("\n")
         print(f"[sync_trending] Successfully populated {OUTPUT_FILE} with {len(counts)} real trending modules from Umami!")
         # Print top 10
         sorted_items = sorted(counts.items(), key=lambda x: x[1], reverse=True)[:10]
@@ -63,9 +68,12 @@ def main():
         for k, v in sorted_items:
             print(f"  - {k}: {v} downloads")
     else:
+        if counts == {}:
+            print(f"[sync_trending] Empty trending payload returned; preserving existing {OUTPUT_FILE}.")
         if not os.path.exists(OUTPUT_FILE):
-            with open(OUTPUT_FILE, "w") as f:
+            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
                 json.dump({}, f, indent=2)
+                f.write("\n")
             print(f"[sync_trending] Fallback initialized empty {OUTPUT_FILE}.")
 
 if __name__ == "__main__":

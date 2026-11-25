@@ -119,7 +119,7 @@ test('English home shows non-blocking Chinese suggestion banner for zh-CN browse
   assert.ok(bannerEn && bannerEn.classList.contains('hidden'), 'Banner should stay hidden for en-US browser');
 });
 
-test('Chinese module detail copy button uses localized labels', () => {
+test('Chinese module detail copy button uses localized labels', async () => {
   const dom = loadDistDom('zh/modules/magisk/index.html', { url: 'https://magisk.yssn.tech/zh/modules/magisk/' });
   const doc = dom.window.document;
   const copyBtn = doc.querySelector('.copy-path-btn');
@@ -127,6 +127,7 @@ test('Chinese module detail copy button uses localized labels', () => {
   const textSpan = copyBtn.querySelector('.copy-text');
   assert.equal(textSpan.textContent.trim(), '复制');
   copyBtn.click();
+  await new Promise((resolve) => setTimeout(resolve, 0));
   assert.equal(textSpan.textContent.trim(), '已复制');
 });
 
@@ -265,4 +266,28 @@ test('Fuzzy typo search, URL state sync, category/platform filters, and archived
     url: 'https://magisk.yssn.tech/archived/perfgame/',
   });
   assert.match(archDom.window.document.body.textContent || '', /Recommended Active Alternatives/);
+});
+
+test('AppManager and Canta guides preserve <package> inline placeholders and 404 switchers work cleanly', () => {
+  const appDom = loadDistDom('modules/app-manager/index.html', {
+    url: 'https://magisk.yssn.tech/modules/app-manager/',
+  });
+  assert.match(
+    appDom.window.document.body.textContent || '',
+    /<package>/,
+    'parseInlineMarkdown should HTML-escape <package> instead of stripping it as an HTML tag'
+  );
+
+  const notFoundZh = loadDistDom('zh/404/index.html', {
+    url: 'https://magisk.yssn.tech/zh/404/',
+  });
+  const navSwitchToEn = notFoundZh.window.document.querySelector('[data-umami-event="navbar-language-switch"]');
+  assert.equal(navSwitchToEn?.getAttribute('href'), '/404.html');
+
+  // Prototype-key safety on ?from=toString must leave supersededNoticeBanner hidden
+  const protoDom = loadDistDom('modules/disable-flag-secure/index.html', {
+    url: 'https://magisk.yssn.tech/modules/disable-flag-secure/?from=toString',
+  });
+  const protoBanner = protoDom.window.document.getElementById('supersededNoticeBanner');
+  assert.ok(protoBanner?.classList.contains('hidden'), '?from=toString must not trigger Object.prototype lookup');
 });

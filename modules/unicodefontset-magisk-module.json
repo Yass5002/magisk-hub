@@ -4,7 +4,7 @@
   "repo": "Losketch/UnicodeFontSet-magisk-module",
   "category": "customization-ui",
   "softwareType": "flashable-module",
-  "description": "A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块",
+  "description": "Expands Android's fallback font system with complete Unicode character sets, covering ancient scripts, mathematical symbols, and rare glyphs without tofu boxes.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "UnicodeFontSet-magisk-module – Download | Magisk Hub",
-    "description": "Download UnicodeFontSet-magisk-module for Magisk. A full Unicode font set Magisk module / 一个完整 Unicode 字体合集的 Magisk 模块."
+    "description": "Download UnicodeFontSet-magisk-module for Magisk. Expands Android's fallback font system with complete Unicode character sets, covering..."
   },
   "contentTier": 1
 }

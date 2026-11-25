@@ -5,8 +5,10 @@ import json
 import re
 import yaml
 
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
 catalog = {}
-for f in sorted(glob.glob('modules/*.json')):
+for f in sorted(glob.glob(os.path.join(REPO_ROOT, 'modules', '*.json'))):
     if not f.endswith('schema.json'):
         mid = os.path.basename(f)[:-5]
         with open(f, 'r', encoding='utf-8') as fp:
@@ -31,8 +33,6 @@ exact_targets = {
     'zygisk-assistant': ['zygisk assistant', 'zygisk-assistant'],
     'bindhosts': ['bindhosts', 'systemless hosts'],
     'acc': ['advanced charging controller', 'acc daemon', 'vr-25 acc'],
-    'hyperos-theme-manager': ['hyperos theme manager', 'miui theme manager mod'],
-    'hyperos-app-vault': ['app vault mod', 'hyperos app vault', 'miui app vault'],
     'miui-theme-rights-enabler': ['apk protection patch', 'theme rights enabler', 'miui theme rights'],
     'viper4android-dolby-coexistence': ['viper4android', 'v4a coexistence'],
     'viperfx-re': ['viperfx_re', 'viperfx-re'],
@@ -195,7 +195,7 @@ if len(sys.argv) > 2 and sys.argv[1] == '--report':
     os.makedirs(os.path.dirname(os.path.abspath(report_path)), exist_ok=True)
     with open(report_path, 'w', encoding='utf-8') as fp:
         fp.write("# Magisk Hub - Verified Module-to-Module Interlinking Audit\n\n")
-        fp.write(f"Equal-attention technical verification across all {len(modules)} modules. Excludes generic root boilerplate.\n\n")
+        fp.write(f"Equal-attention technical verification across all {len(catalog)} modules. Excludes generic root boilerplate.\n\n")
         fp.write(f"Total Verified Specific Interlinks: **{len(deduped_links)}** across **{len(by_category)} categories**.\n\n")
 
         for cat, links in sorted(by_category.items()):

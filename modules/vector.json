@@ -4,7 +4,7 @@
   "repo": "JingMatrix/Vector",
   "category": "root-management",
   "softwareType": "flashable-module",
-  "description": "Modern Xposed Framework",
+  "description": "The official modern successor to the LSPosed framework maintained by JingMatrix, bringing advanced ART hooking to Android 14 and 15.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "Vector – Download (Magisk) | Magisk Hub",
-    "description": "Download Vector for Magisk. Modern Xposed Framework."
+    "description": "Download Vector for Magisk. The official modern successor to the LSPosed framework maintained by JingMatrix, bringing advanced ART..."
   },
   "contentTier": 1
 }

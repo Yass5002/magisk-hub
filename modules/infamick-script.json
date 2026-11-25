@@ -4,7 +4,7 @@
   "repo": "Infamousmick/Infamick-script",
   "category": "system-environment",
   "softwareType": "flashable-module",
-  "description": "Infamick-script active root module.",
+  "description": "Interactive root shell utility providing Samsung CSC editing, Knox package disabling, battery cycle diagnostics, hardware button remapping, and partition backups.",
   "compatibility": [
     "Magisk"
   ],
@@ -20,7 +20,7 @@
   },
   "seo": {
     "title": "Infamick-script – Download (Magisk) | Magisk Hub",
-    "description": "Download Infamick-script for Magisk. Infamick-script active root module."
+    "description": "Download Infamick-script for Magisk. Interactive root shell utility providing Samsung CSC editing, Knox package disabling, battery cycle..."
   },
   "contentTier": 1
 }

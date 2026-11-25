@@ -50,7 +50,7 @@ Users can declare specific folders or cache locations for automated purging by d
 
 ### 3. Deep File Classification (`FileConfigs`)
 Under `/data/adb/wipe_cache/FileConfigs/`, users can create `.conf` profiles to filter and purge files by extension and size boundaries:
-```conf
+```ini
 # Target archive files between 10MB and 1GB
 @MAX=1/G @MIN=10/M
 zip 7z

@@ -105,9 +105,24 @@ def run_audit():
             if "```" not in md_text and "/" not in md_text:
                 warnings.append(f"[{slug}] Markdown guide lacks technical commands or file paths")
             try:
-                en_fm, _ = parse_frontmatter(md_text)
+                en_fm, en_body = parse_frontmatter(md_text)
+                if not isinstance(en_fm, dict):
+                    errors.append(f"[{slug}] Missing EN YAML frontmatter")
+                else:
+                    if not str(en_fm.get("title", "")).strip():
+                        errors.append(f"[{slug}] EN MD frontmatter title is empty")
+                    if not str(en_fm.get("description", "")).strip():
+                        errors.append(f"[{slug}] EN MD frontmatter description is empty")
+                if not en_body.strip():
+                    errors.append(f"[{slug}] EN MD body is empty")
             except Exception as e:
                 errors.append(f"[{slug}] Invalid EN frontmatter YAML: {e}")
+
+        en_desc = (data.get("description") or "").strip()
+        if CJK_RE.search(en_desc):
+            errors.append(f"[{slug}] EN JSON description contains CJK characters")
+        if "active root module" in en_desc.lower():
+            errors.append(f"[{slug}] EN JSON description uses placeholder boilerplate")
 
         # 3. Category & Taxonomy
         cat = data.get("category")
@@ -182,6 +197,8 @@ def run_audit():
 
         if not title:
             errors.append(f"[{slug}] Missing seo.title")
+        elif CJK_RE.search(title):
+            errors.append(f"[{slug}] EN seo.title contains CJK characters")
         elif len(title) < 15:
             errors.append(f"[{slug}] SEO title too short ({len(title)} chars): '{title}'")
         elif len(title) > 90:
@@ -189,6 +206,8 @@ def run_audit():
 
         if not desc:
             errors.append(f"[{slug}] Missing seo.description")
+        elif CJK_RE.search(desc) or "active root module" in desc.lower():
+            errors.append(f"[{slug}] EN seo.description contains CJK characters or boilerplate")
         elif len(desc) < 35:
             errors.append(f"[{slug}] SEO description too short ({len(desc)} chars): '{desc}'")
         elif len(desc) > 220:

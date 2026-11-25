@@ -136,9 +136,9 @@ const policySchema = {
             Every module listed on Magisk Hub is tracked against an open-source JSON specification (<code class="bg-zinc-100 border border-zinc-200 px-1.5 py-0.5 rounded font-mono text-xs">modules/schema.json</code>) adhering to JSON Schema Draft-07. Our continuous synchronization pipeline enforces the following validation gates before any package enters the directory:
           </p>
           <ul class="list-disc list-inside space-y-1.5 pl-2 text-zinc-600">
-            <li><strong>Public Source Repository:</strong> All indexed modules must link to public, inspectable git repositories (predominantly GitHub). Proprietary or obfuscated binary-only repositories are not accepted.</li>
-            <li><strong>Verified Release Assets:</strong> Download links point directly to official GitHub releases published by repository maintainers. Assets are never re-hosted on third-party servers.</li>
-            <li><strong>Compatibility Tagging:</strong> Supported root implementations (Magisk, KernelSU, APatch) are audited against maintainer manifests to prevent cross-platform installation errors.</li>
+            <li><strong>Public Source & Payload Inspection:</strong> We prioritize public, auditable GitHub and GitLab repositories. Packages distributed exclusively via community channels are explicitly tagged as community packages without forged repo links, and every Tier 1 guide is verified by unpacking the actual ZIP/APK release payload.</li>
+            <li><strong>Official Release Assets Only:</strong> Download links point directly to official GitHub/GitLab Releases or maintainer-published distribution URLs. Binaries are never re-packaged or silently re-hosted.</li>
+            <li><strong>Multi-Platform Compatibility Auditing:</strong> Support across Magisk, KernelSU, APatch, LSPosed, and Shizuku is verified against maintainer manifests and installation scripts to prevent cross-environment flashing issues.</li>
           </ul>
         </section>
 

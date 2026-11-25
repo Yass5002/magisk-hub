@@ -9,6 +9,11 @@ import glob
 import json
 import os
 
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+MODULES_DIR = os.path.join(REPO_ROOT, 'modules')
+ZH_LOCALES_DIR = os.path.join(REPO_ROOT, 'locales', 'zh', 'modules')
+PUBLIC_DIR = os.path.join(REPO_ROOT, 'public')
+
 ZH_CATEGORIES = {
     'root-management': ('Root 管理与隐藏', '核心 su 守护进程、Zygisk 注入引擎、Root 环境隐藏与 Play Integrity 认证绕过工具。'),
     'performance-kernel': ('性能与内核调校', 'CPU/GPU 调度器优化、温控策略调整与游戏帧率性能增强模块。'),
@@ -28,7 +33,7 @@ ZH_CATEGORIES = {
 
 def load_zh_overrides():
     overrides = {}
-    for f in glob.glob('locales/zh/modules/*.json'):
+    for f in glob.glob(os.path.join(ZH_LOCALES_DIR, '*.json')):
         try:
             with open(f, 'r', encoding='utf-8') as fp:
                 d = json.load(fp)
@@ -40,7 +45,7 @@ def load_zh_overrides():
 
 
 def generate():
-    files = sorted(glob.glob('modules/*.json'))
+    files = sorted(glob.glob(os.path.join(MODULES_DIR, '*.json')))
     modules = []
     for f in files:
         if os.path.basename(f) == 'schema.json':
@@ -90,7 +95,8 @@ def generate():
         lines_full.append(f"- Software Type: {software_type}")
         lines_full.append(f"- Source Channel: {source_type}")
         lines_full.append(f"- Supported Platforms: {compat}")
-        lines_full.append(f"- Standing / Metric: {stars:,}")
+        stars_label = 'GitHub Stars' if source_type == 'github' and repo else 'Community Metric'
+        lines_full.append(f"- {stars_label}: {stars:,}")
         lines_full.append(f"- Latest Release: {tag}")
         if download:
             lines_full.append(f"- Download Asset: {download}")
@@ -98,8 +104,8 @@ def generate():
             lines_full.append(f"- Upstream Source: https://github.com/{repo}")
         lines_full.append('')
 
-    os.makedirs('public', exist_ok=True)
-    with open('public/llms-full.txt', 'w', encoding='utf-8') as out:
+    os.makedirs(PUBLIC_DIR, exist_ok=True)
+    with open(os.path.join(PUBLIC_DIR, 'llms-full.txt'), 'w', encoding='utf-8') as out:
         out.write('\n'.join(lines_full))
     print(f"Generated public/llms-full.txt with {total_count} modules")
 
@@ -107,7 +113,7 @@ def generate():
     lines_summary = [
         '# Magisk Hub',
         '',
-        f'> Magisk Hub is an open directory and technical knowledge hub cataloging {total_count} community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, and LSPosed.',
+        f'> Magisk Hub is an open directory and technical knowledge hub cataloging {total_count} community-maintained root modules and extensions for Android devices utilizing Magisk, KernelSU, APatch, LSPosed, and Shizuku.',
         '',
         '## Overview & Architecture',
         'Magisk Hub indexes verified open-source and community root packages, technical architecture breakdowns, and official release assets. Every module listed is verified against JSON Schema Draft-07 specifications and physical archive payload inspection.',
@@ -126,6 +132,8 @@ def generate():
         '- [KernelSU Modules](https://magisk.yssn.tech/compatibility/kernelsu/): Kernel-space root management operating via custom su privilege delegation in GKI kernels.',
         '- [APatch Modules](https://magisk.yssn.tech/compatibility/apatch/): KernelPatch-based root solution modifying the Android kernel in-place without requiring full custom boot image rebuilds.',
         '- [LSPosed Modules](https://magisk.yssn.tech/compatibility/lsposed/): ART runtime hooking framework executing method interceptions in memory.',
+        '- [Shizuku Privileged Apps](https://magisk.yssn.tech/compatibility/shizuku/): Unrooted system API access via ADB/root-backed Binder IPC delegation.',
+        '- [Rootless Tools](https://magisk.yssn.tech/compatibility/rootless/): Non-root utilities running via Shizuku, wireless debugging (ADB), or Device Owner privileges.',
         '',
         '## Ecosystem Categories',
         'Browse modules by functional domain:',
@@ -146,13 +154,14 @@ def generate():
         '## Featured Flagship Guides (Tier 1)',
         'In-depth technical guides with architecture breakdowns, configuration paths, and troubleshooting FAQs:',
         '',
+        '- [Magisk](https://magisk.yssn.tech/modules/magisk/): Core systemless root suite providing boot image patching and Zygisk process injection.',
         '- [PlayIntegrityFix](https://magisk.yssn.tech/modules/playintegrityfix/): Fix Play Integrity API verdicts by spoofing valid device fingerprints. Config: `/data/adb/pif.json`.',
         '- [Shamiko](https://magisk.yssn.tech/modules/shamiko/): Closed-source Zygisk module for advanced root hiding and sensitive app cloaking. Config: `/data/adb/shamiko/whitelist`.',
         '- [TrickyStore](https://magisk.yssn.tech/modules/trickystore/): Keystore interception tool supporting software-backed keybox spoofing for hardware-backed attestation bypasses. Config: `/data/adb/tricky_store/target.txt`.',
-        '- [SukiSU Ultra](https://magisk.yssn.tech/modules/sukisu-ultra/): Next-generation KernelSU root management system coupling LKM architecture with Susfs stealth hiding.',
+        '- [ReZygisk](https://magisk.yssn.tech/modules/rezygisk/): Open-source C implementation of the Zygisk API compatible across Magisk, KernelSU, and APatch.',
         '- [OverlayFS MetaModule](https://magisk.yssn.tech/modules/meta-overlayfs-kernelsu/): High-performance OverlayFS filesystem metamodule for KernelSU replacing Magic Mount.',
         '- [FreePPS](https://magisk.yssn.tech/modules/freepps-xiaomi-fast-charge/): Unlocks open-standard USB-PD Programmable Power Supply (PPS) protocol fast charging on Xiaomi devices.',
-        '- [Mediatek Mali GPU Governor](https://magisk.yssn.tech/modules/mediatek-mali-gpu-governor/): Adaptive low-level kernel GPU governor for Dimensity Mali processors.',
+        '- [bindhosts](https://magisk.yssn.tech/modules/bindhosts/): Cross-platform systemless hosts blocker utilizing mount-bind across Magisk, KernelSU, and APatch.',
         '- [ViPER4Android FX Redesign](https://magisk.yssn.tech/modules/viperfx-re/): Renowned systemless audio DSP equalizer, convolver, and bass management suite.',
         '- [LocusMimic](https://magisk.yssn.tech/modules/locusmimic/): Advanced GPS location and multi-point route simulator operating systemlessly via LSPosed.',
         '- [LSPDoze](https://magisk.yssn.tech/modules/lspdoze/): Instant Deep Doze transitions upon screen-off, background wakelock suppression, and fullscreen AOD.',
@@ -165,12 +174,13 @@ def generate():
         ''
     ]
 
-    with open('public/llms.txt', 'w', encoding='utf-8') as out:
+    with open(os.path.join(PUBLIC_DIR, 'llms.txt'), 'w', encoding='utf-8') as out:
         out.write('\n'.join(lines_summary))
     print(f"Generated public/llms.txt with {total_count} modules summary")
 
     # 3. Generate public/zh/llms-full.txt (Simplified Chinese)
-    os.makedirs('public/zh', exist_ok=True)
+    zh_public_dir = os.path.join(PUBLIC_DIR, 'zh')
+    os.makedirs(zh_public_dir, exist_ok=True)
     zh_full = [
         '# Magisk Hub - 中文完整模块索引 (llms-full.txt)',
         '',
@@ -205,7 +215,8 @@ def generate():
         zh_full.append(f"- 软件包类型: {software_type}")
         zh_full.append(f"- 收录渠道: {source_type}")
         zh_full.append(f"- 兼容平台: {compat}")
-        zh_full.append(f"- GitHub Star: {stars:,}")
+        zh_metric_label = 'GitHub Star' if source_type == 'github' and repo else '社区热度指标'
+        zh_full.append(f"- {zh_metric_label}: {stars:,}")
         zh_full.append(f"- 最新版本: {tag}")
         if download:
             zh_full.append(f"- 官方下载地址: {download}")
@@ -213,7 +224,7 @@ def generate():
             zh_full.append(f"- 上游仓库: https://github.com/{repo}")
         zh_full.append('')
 
-    with open('public/zh/llms-full.txt', 'w', encoding='utf-8') as out:
+    with open(os.path.join(zh_public_dir, 'llms-full.txt'), 'w', encoding='utf-8') as out:
         out.write('\n'.join(zh_full))
     print(f"Generated public/zh/llms-full.txt with {total_count} modules")
 
@@ -257,7 +268,7 @@ def generate():
         ''
     ])
 
-    with open('public/zh/llms.txt', 'w', encoding='utf-8') as out:
+    with open(os.path.join(zh_public_dir, 'llms.txt'), 'w', encoding='utf-8') as out:
         out.write('\n'.join(zh_summary))
     print(f"Generated public/zh/llms.txt with {total_count} modules summary")
 

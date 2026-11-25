@@ -75,7 +75,8 @@ def verify_dist():
     print("DIST BUILD & BILINGUAL SEO ARTIFACT VERIFICATION AUDIT")
     print("=" * 80)
 
-    dist_dir = "dist"
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    dist_dir = os.path.join(repo_root, "dist")
     if not os.path.isdir(dist_dir):
         print(f"Error: {dist_dir} does not exist!")
         return False
@@ -83,7 +84,7 @@ def verify_dist():
     errors = []
 
     module_jsons = [
-        f for f in glob.glob("modules/*.json")
+        f for f in glob.glob(os.path.join(repo_root, "modules", "*.json"))
         if os.path.basename(f) != "schema.json"
     ]
     expected_min_urls = len(module_jsons) * 2 + 40
@@ -185,8 +186,23 @@ def verify_dist():
             errors.append(f"[{en_rel or '/'}] EN hreflang mismatch: {en_alts} vs canon {en_canon}/{zh_canon}")
         if zh_alts.get("en") != en_canon or zh_alts.get("zh-Hans") != zh_canon:
             errors.append(f"[{zh_rel}] ZH hreflang mismatch: {zh_alts} vs canon {en_canon}/{zh_canon}")
+        if not en_p.schemas or any("_parse_error" in s for s in en_p.schemas):
+            errors.append(f"[{en_rel or '/'}] Missing or invalid EN JSON-LD schema")
         if not zh_p.schemas or any("_parse_error" in s for s in zh_p.schemas):
-            errors.append(f"[{zh_rel}] Missing or invalid JSON-LD schema")
+            errors.append(f"[{zh_rel}] Missing or invalid ZH JSON-LD schema")
+
+    # 5. Check 404 pages carry noindex
+    for nf_rel, expected_lang in [("404.html", "en"), (os.path.join("zh", "404", "index.html"), "zh-CN")]:
+        nf_path = os.path.join(dist_dir, nf_rel)
+        if not os.path.isfile(nf_path):
+            errors.append(f"Missing 404 artifact: dist/{nf_rel}")
+        else:
+            nf_p = parse_html(nf_path)
+            if nf_p.html_lang != expected_lang:
+                errors.append(f"[dist/{nf_rel}] Expected html lang='{expected_lang}', got '{nf_p.html_lang}'")
+            robots_meta = next((m.get("content", "") for m in nf_p.metas if m.get("name") == "robots"), "")
+            if "noindex" not in robots_meta.lower():
+                errors.append(f"[dist/{nf_rel}] 404 page missing robots noindex meta (got '{robots_meta}')")
 
     print("\n" + "=" * 80)
     if errors:
