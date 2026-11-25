@@ -1,0 +1,19 @@
+name: Report Outdated Release or Broken Link
+description: Flag a stale version, broken download link, or incorrect compatibility metadata on Magisk Hub
+title: "[Catalog Fix]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: module_slug
+    attributes:
+      label: Module Slug or URL
+      placeholder: e.g., /modules/trickystore/
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What needs updating?
+      placeholder: e.g., Upstream repo moved to a new owner, or the download link returns 404.
+    validations:
+      required: true

@@ -474,6 +474,18 @@ const keywords = locale === 'zh'
               </svg>
             </button>
           </div>
+
+          <a
+            href={`https://github.com/Yass5002/magisk-hub/issues/new?template=module-update.yml&title=${encodeURIComponent(`[Catalog Fix]: ${module.id}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-umami-event="module-report-github"
+            data-umami-event-module={module.id}
+            data-umami-event-locale={locale}
+            class="text-center text-[11px] text-zinc-500 hover:text-zinc-900 transition-colors pt-0.5"
+          >
+            {ui.moduleDetail.reportIssueLink}
+          </a>
         </div>
       </div>
     </div>

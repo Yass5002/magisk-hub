@@ -16,6 +16,7 @@ export const UI_STRINGS = {
       platforms: 'Platforms',
       downloadMagisk: 'Download Magisk',
       githubRepo: 'GitHub Repository',
+      githubStarTitle: 'View Yass5002/magisk-hub on GitHub',
       toggleMenu: 'Toggle navigation menu',
       langSwitchLabel: '中文',
       langSwitchTitle: '切换到简体中文',
@@ -63,6 +64,7 @@ export const UI_STRINGS = {
       noResultsTitle: 'No modules found',
       noResultsDesc: 'Try adjusting your search terms or clearing filters.',
       resetFilters: 'Reset all filters',
+      requestModuleCta: 'Request module on GitHub',
       faqHeading: 'Frequently Asked Questions',
       faqs: [
         {
@@ -108,6 +110,7 @@ export const UI_STRINGS = {
       startingDownload: 'Starting download...',
       githubSource: 'GitHub Source',
       communitySource: 'Community Release Source',
+      reportIssueLink: 'Outdated or broken link? Report on GitHub',
       copyFilenameTitle: 'Copy file name',
       faqHeading: 'Frequently Asked Questions',
       aboutHeading: (name: string) => `About ${name}`,
@@ -244,6 +247,7 @@ export const UI_STRINGS = {
       platforms: '兼容平台',
       downloadMagisk: '下载 Magisk',
       githubRepo: 'GitHub 仓库',
+      githubStarTitle: '前往 GitHub 查看 Yass5002/magisk-hub 仓库',
       toggleMenu: '切换导航菜单',
       langSwitchLabel: 'English',
       langSwitchTitle: 'Switch to English',
@@ -290,6 +294,7 @@ export const UI_STRINGS = {
       noResultsTitle: '未找到匹配的模块',
       noResultsDesc: '请尝试更换中英文关键词，或清除当前的平台与分类筛选条件。',
       resetFilters: '重置所有筛选',
+      requestModuleCta: '去 GitHub 提交收录请求',
       faqHeading: '常见问题解答',
       faqs: [
         {
@@ -335,6 +340,7 @@ export const UI_STRINGS = {
       startingDownload: '正在启动下载...',
       githubSource: 'GitHub 源码仓库',
       communitySource: '社区发布源',
+      reportIssueLink: '版本过期或链接异常？前往 GitHub 反馈',
       copyFilenameTitle: '复制文件名',
       faqHeading: '常见问题（FAQ）',
       aboutHeading: (name: string) => `关于 ${name}`,

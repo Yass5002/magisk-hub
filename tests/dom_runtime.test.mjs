@@ -164,4 +164,16 @@ test('Localization analytics track zh-banner-shown and attach locale properties'
   const zhDetail = loadDistDom('zh/modules/magisk/index.html', { url: 'https://magisk.yssn.tech/zh/modules/magisk/' });
   assert.equal(zhDetail.window.document.querySelector('[data-umami-event="download-module"]')?.getAttribute('data-umami-event-locale'), 'zh');
   assert.equal(zhDetail.window.document.querySelector('[data-umami-event="navbar-language-switch"]')?.getAttribute('data-umami-event-from'), 'zh');
+
+  // Visible mobile/desktop GitHub star pill & prefilled zero-results issue request CTA
+  const headerPill = doc.querySelector('[data-umami-event="navbar-github-click"][data-umami-event-placement="header-pill"]');
+  assert.ok(headerPill, 'header GitHub pill renders on homepage');
+  assert.ok(!headerPill.classList.contains('hidden'), 'header GitHub pill is visible on mobile viewports too');
+  assert.match(headerPill.querySelector('.nav-github-stars')?.textContent?.trim() || '', /^\d+(?:\.\d+)?k?$/);
+
+  const searchInput = doc.getElementById('searchInput');
+  searchInput.value = 'RareCustomModule';
+  searchInput.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
+  const reqBtn = doc.getElementById('requestModuleBtn');
+  assert.ok(reqBtn && reqBtn.href.includes('template=module-request.yml') && reqBtn.href.includes('RareCustomModule'));
 });

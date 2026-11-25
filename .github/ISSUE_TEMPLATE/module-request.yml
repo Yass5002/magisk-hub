@@ -1,0 +1,38 @@
+name: Request a Module
+description: Suggest an active Magisk, KernelSU, APatch, or LSPosed module to add to Magisk Hub
+title: "[Module Request]: "
+labels: ["module-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping grow **Magisk Hub**! Please link the upstream source (GitHub, GitLab, XDA, or official release page) so we can verify the payload before indexing.
+  - type: input
+    id: module_name
+    attributes:
+      label: Module Name
+      placeholder: e.g., Zygisk Assistant
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Official Source / Release URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Supported Platforms
+      options:
+        - label: Magisk
+        - label: KernelSU
+        - label: APatch
+        - label: LSPosed
+        - label: Shizuku / Rootless
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Any setup caveats, conflicts, or upstream maintainers to credit
