@@ -96,8 +96,12 @@ class TestZhContentParity(unittest.TestCase):
     def test_all_modules_have_zh_json_and_markdown(self):
         missing_json = [s for s in self.slugs if not os.path.isfile(os.path.join(ZH_MODULES_DIR, f"{s}.json"))]
         missing_md = [s for s in self.slugs if not os.path.isfile(os.path.join(ZH_CONTENT_DIR, f"{s}.md"))]
+        extra_json = sorted({os.path.basename(f)[:-5] for f in glob.glob(os.path.join(ZH_MODULES_DIR, "*.json"))} - set(self.slugs))
+        extra_md = sorted({os.path.basename(f)[:-3] for f in glob.glob(os.path.join(ZH_CONTENT_DIR, "*.md"))} - set(self.slugs))
         self.assertEqual(missing_json, [], f"Missing ZH JSON files: {missing_json[:10]}")
         self.assertEqual(missing_md, [], f"Missing ZH Markdown files: {missing_md[:10]}")
+        self.assertEqual(extra_json, [], f"Orphaned ZH JSON files: {extra_json[:10]}")
+        self.assertEqual(extra_md, [], f"Orphaned ZH Markdown files: {extra_md[:10]}")
 
     def test_zh_json_quality_and_seo_uniqueness(self):
         titles = {}

@@ -46,6 +46,10 @@ jobs:
         run: |
           python3 scripts/sync_trending.py
 
+      - name: Regenerate bilingual LLM discovery feeds
+        run: |
+          python3 scripts/generate_llms.py
+
       - name: Validate database schema integrity
         run: |
           python3 scripts/validate_module.py
@@ -55,8 +59,8 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Stage any modified/added/deleted files in modules/, assets/, and src/data/
-          git add -A modules/ assets/ src/data/
+          # Stage any modified/added/deleted files in modules/, assets/, src/data/, locales/, content/zh/, and llms feeds
+          git add -A modules/ assets/ src/data/ locales/ content/zh/ public/llms.txt public/llms-full.txt public/zh/llms.txt public/zh/llms-full.txt
           
           if git diff --staged --quiet; then
             echo "No changes detected. Database is completely up to date."

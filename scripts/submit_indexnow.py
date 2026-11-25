@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 HOST = "magisk.yssn.tech"
 KEY = "a8f4c2e91b7d40329e6f1a5b8c3d7e20"
 KEY_LOCATION = f"https://{HOST}/{KEY}.txt"
-INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
+INDEXNOW_ENDPOINT = "https://www.bing.com/indexnow"
 SITEMAP_PATH = os.path.join(os.path.dirname(__file__), "..", "dist", "sitemap-0.xml")
 
 
@@ -46,7 +46,10 @@ def main():
     req = urllib.request.Request(
         INDEXNOW_ENDPOINT,
         data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json; charset=utf-8"},
+        headers={
+            "Content-Type": "application/json; charset=utf-8",
+            "User-Agent": "MagiskHub-IndexNow/1.0",
+        },
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=20) as resp:

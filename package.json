@@ -9,7 +9,7 @@
     "build": "npm run copy-assets && astro build",
     "preview": "astro preview",
     "validate": "python3 scripts/validate_module.py",
-    "test": "node --experimental-strip-types --test tests/routing.test.ts && node --test tests/dom_runtime.test.mjs && python3 scripts/validate_module.py && python3 scripts/validate_seo_llm_discovery.py && python3 scripts/verify_production_dist.py && python3 -m unittest discover -s tests -p 'test_*.py' -v"
+    "test": "node --experimental-strip-types --test tests/routing.test.mts && node --test tests/dom_runtime.test.mjs && python3 scripts/validate_module.py && python3 scripts/validate_seo_llm_discovery.py && python3 scripts/verify_production_dist.py && python3 -m unittest discover -s tests -p 'test_*.py' -v"
   },
   "repository": {
     "type": "git",

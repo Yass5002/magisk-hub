@@ -541,6 +541,8 @@ def main():
         final_module_entries.append((slug, entry))
 
     # Clean existing module files if they got pruned (preserving community modules)
+    zh_locales_dir = os.path.join(REPO_ROOT, "locales", "zh", "modules")
+    zh_content_dir = os.path.join(REPO_ROOT, "content", "zh", "modules")
     active_slugs = {s for s, _ in final_module_entries} | {c["id"] for c in community_candidates}
     for existing_file in os.listdir(MODULES_DIR):
         if existing_file.endswith(".json") and existing_file != "schema.json":
@@ -552,6 +554,12 @@ def main():
                     ic = os.path.join(ICONS_DIR, f"{file_slug}{ext}")
                     if os.path.isfile(ic):
                         os.remove(ic)
+                zh_json = os.path.join(zh_locales_dir, f"{file_slug}.json")
+                if os.path.isfile(zh_json):
+                    os.remove(zh_json)
+                zh_md = os.path.join(zh_content_dir, f"{file_slug}.md")
+                if os.path.isfile(zh_md):
+                    os.remove(zh_md)
 
     # Write surviving module entries
     for slug, doc in final_module_entries:
