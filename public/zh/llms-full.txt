@@ -15,7 +15,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 64,297
+- GitHub Star: 64,312
 - 最新版本: v31.1
 - 官方下载地址: https://github.com/topjohnwu/Magisk/releases/download/v31.1/Magisk-v31.1.apk
 - 上游仓库: https://github.com/topjohnwu/Magisk
@@ -27,7 +27,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 34,653
+- GitHub Star: 34,673
 - 最新版本: v13.6.0
 - 官方下载地址: https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk
 - 上游仓库: https://github.com/RikkaApps/Shizuku
@@ -39,7 +39,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch, LSPosed
-- GitHub Star: 30,968
+- GitHub Star: 30,976
 - 最新版本: v1.0.4
 - 官方下载地址: https://github.com/librepods-org/librepods/releases/download/v1.0.4/LibrePods-FOSS-v1.0.4-100040301-release.apk
 - 上游仓库: https://github.com/librepods-org/librepods
@@ -51,7 +51,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 25,644
+- GitHub Star: 25,657
 - 最新版本: v1.9.2
 - 官方下载地址: https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-riru-release.zip
 - 上游仓库: https://github.com/LSPosed/LSPosed
@@ -63,7 +63,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: KernelSU
-- GitHub Star: 21,018
+- GitHub Star: 21,034
 - 最新版本: v3.3.1
 - 官方下载地址: https://github.com/tiann/KernelSU/releases/download/v3.3.1/KernelSU_v3.3.1_32680-release.apk
 - 上游仓库: https://github.com/tiann/KernelSU
@@ -86,7 +86,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 13,319
+- GitHub Star: 13,330
 - 最新版本: v2.2
 - 官方下载地址: https://github.com/JingMatrix/Vector/releases/download/v2.2/Vector-v2.2-3080-Release.zip
 - 上游仓库: https://github.com/JingMatrix/Vector
@@ -109,7 +109,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 11,170
+- GitHub Star: 11,177
 - 最新版本: v1.5.3
 - 官方下载地址: https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip
 - 上游仓库: https://github.com/Dr-TSNG/ZygiskNext
@@ -121,7 +121,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Magisk, KernelSU, APatch
-- GitHub Star: 9,725
+- GitHub Star: 9,729
 - 最新版本: v4.1.1
 - 官方下载地址: https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk
 - 上游仓库: https://github.com/MuntashirAkon/AppManager
@@ -133,7 +133,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Magisk, KernelSU, APatch
-- GitHub Star: 9,551
+- GitHub Star: 9,553
 - 最新版本: v1.7.5
 - 官方下载地址: https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk
 - 上游仓库: https://github.com/zhanghai/MaterialFiles
@@ -145,7 +145,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: APatch
-- GitHub Star: 8,226
+- GitHub Star: 8,232
 - 最新版本: 11282
 - 官方下载地址: https://github.com/bmax121/APatch/releases/download/11282/APatch_11282_e8e4651_HEAD-release-signed.apk
 - 上游仓库: https://github.com/bmax121/APatch
@@ -168,7 +168,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 7,773
+- GitHub Star: 7,786
 - 最新版本: v4.1.0
 - 官方下载地址: https://github.com/samolego/Canta/releases/download/v4.1.0/androidApp-release.apk
 - 上游仓库: https://github.com/samolego/Canta
@@ -191,7 +191,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Rootless, Shizuku, Magisk, KernelSU, APatch
-- GitHub Star: 7,678
+- GitHub Star: 7,684
 - 最新版本: 26.09
 - 官方下载地址: https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.09/InstallerX-Revived-online-26.09.apk
 - 上游仓库: https://github.com/wxxsfxyzm/InstallerX-Revived
@@ -203,7 +203,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 7,467
+- GitHub Star: 7,470
 - 最新版本: v1.11.0
 - 官方下载地址: https://github.com/aistra0528/Hail/releases/download/v1.11.0/Hail-v1.11.0.apk
 - 上游仓库: https://github.com/aistra0528/Hail
@@ -226,7 +226,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 6,984
+- GitHub Star: 6,986
 - 最新版本: 3.3.15
 - 官方下载地址: https://github.com/reqable/reqable-app/releases/download/3.3.15/reqable-app-android-arm64.apk
 - 上游仓库: https://github.com/reqable/reqable-app
@@ -260,7 +260,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 6,509
+- GitHub Star: 6,515
 - 最新版本: 1.4.1
 - 官方下载地址: https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip
 - 上游仓库: https://github.com/5ec1cff/TrickyStore
@@ -306,7 +306,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 4,725
+- GitHub Star: 4,726
 - 最新版本: v19
 - 官方下载地址: https://github.com/osm0sis/PlayIntegrityFork/releases/download/v19/PlayIntegrityFork-v19.zip
 - 上游仓库: https://github.com/osm0sis/PlayIntegrityFork
@@ -329,7 +329,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 4,597
+- GitHub Star: 4,598
 - 最新版本: 7.0.1-ci
 - 官方下载地址: https://github.com/eritpchy/FingerprintPay/releases/download/7.0.1-ci/zygisk-module-xfingerprint-pay-all-v7.0.1-release.zip
 - 上游仓库: https://github.com/eritpchy/FingerprintPay
@@ -341,7 +341,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 4,278
+- GitHub Star: 4,283
 - 最新版本: oss-177
 - 官方下载地址: https://github.com/frknkrc44/HMA-OSS/releases/download/oss-177/HMA-OSS-ZYGISK-oss-177-release.zip
 - 上游仓库: https://github.com/frknkrc44/HMA-OSS
@@ -353,7 +353,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 4,256
+- GitHub Star: 4,258
 - 最新版本: 165
 - 官方下载地址: https://github.com/NoName-exe/revanced-extended/releases/download/165/youtube-music-morphe-module-v9.30.53-arm64-v8a.zip
 - 上游仓库: https://github.com/NoName-exe/revanced-extended
@@ -365,7 +365,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 4,253
+- GitHub Star: 4,257
 - 最新版本: v4.9-inject-s
 - 官方下载地址: https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.9-inject-s/PlayIntegrityFix_v4.9-inject-s.zip
 - 上游仓库: https://github.com/KOWX712/PlayIntegrityFix
@@ -377,7 +377,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Rootless, Shizuku, Magisk, KernelSU, APatch
-- GitHub Star: 4,245
+- GitHub Star: 4,249
 - 最新版本: v2.13.0
 - 官方下载地址: https://github.com/iamr0s/Dhizuku/releases/download/v2.13.0/Dhizuku_v2.13.0.apk
 - 上游仓库: https://github.com/iamr0s/Dhizuku
@@ -389,7 +389,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 4,178
+- GitHub Star: 4,182
 - 最新版本: v1.0.0
 - 官方下载地址: https://github.com/PerformanC/ReZygisk/releases/download/v1.0.0/ReZygisk-v1.0.0-release.zip
 - 上游仓库: https://github.com/PerformanC/ReZygisk
@@ -412,7 +412,7 @@
 - 软件包类型: xposed-module
 - 收录渠道: github
 - 兼容平台: LSPosed, Magisk, KernelSU, APatch
-- GitHub Star: 3,601
+- GitHub Star: 3,606
 - 最新版本: N-1.0
 - 官方下载地址: https://github.com/LSPosed/CorePatch/releases/download/N-1.0/app-release.apk
 - 上游仓库: https://github.com/LSPosed/CorePatch
@@ -424,7 +424,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: KernelSU, APatch, Magisk
-- GitHub Star: 3,557
+- GitHub Star: 3,560
 - 最新版本: v4.4
 - 官方下载地址: https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.4/TrickyAddonModule-v4.4.zip
 - 上游仓库: https://github.com/KOWX712/Tricky-Addon-Update-Target-List
@@ -436,7 +436,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 3,477
+- GitHub Star: 3,480
 - 最新版本: 0.9.2
 - 官方下载地址: https://github.com/zacharee/InstallWithOptions/releases/download/0.9.2/InstallWithOptions_0.9.2-release.apk
 - 上游仓库: https://github.com/zacharee/InstallWithOptions
@@ -482,7 +482,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,843
+- GitHub Star: 2,845
 - 最新版本: v4.0
 - 官方下载地址: https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Release.zip
 - 上游仓库: https://github.com/JingMatrix/TEESimulator
@@ -494,7 +494,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,798
+- GitHub Star: 2,802
 - 最新版本: v1.5.2+_R28
 - 官方下载地址: https://github.com/sidex15/susfs4ksu-module/releases/download/v1.5.2%2B_R28/ksu_module_susfs_1.5.2%2B.zip
 - 上游仓库: https://github.com/sidex15/susfs4ksu-module
@@ -506,7 +506,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 2,769
+- GitHub Star: 2,772
 - 最新版本: Kana
 - 官方下载地址: https://github.com/nakixii/Magisk_AsoulOpt/releases/download/Kana/Magisk_AsoulOpt_Kana.zip
 - 上游仓库: https://github.com/nakixii/Magisk_AsoulOpt
@@ -518,7 +518,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 2,689
+- GitHub Star: 2,690
 - 最新版本: v2.1.4
 - 官方下载地址: https://github.com/snake-4/Zygisk-Assistant/releases/download/v2.1.4/Zygisk-Assistant-v2.1.4-1013f8a-release.zip
 - 上游仓库: https://github.com/snake-4/Zygisk-Assistant
@@ -530,7 +530,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 2,654
+- GitHub Star: 2,658
 - 最新版本: v2.4
 - 官方下载地址: https://github.com/JingMatrix/NeoZygisk/releases/download/v2.4/NeoZygisk-v2.4-289-release.zip
 - 上游仓库: https://github.com/JingMatrix/NeoZygisk
@@ -554,7 +554,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,536
+- GitHub Star: 2,537
 - 最新版本: v7.9.0
 - 官方下载地址: https://github.com/GitMetaio/Surfing/releases/download/v7.9.0/Surfing_v7.9.0_release.zip
 - 上游仓库: https://github.com/GitMetaio/Surfing
@@ -566,7 +566,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,533
+- GitHub Star: 2,534
 - 最新版本: v1.10.2
 - 官方下载地址: https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip
 - 上游仓库: https://github.com/taamarin/box_for_magisk
@@ -578,7 +578,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 2,471
+- GitHub Star: 2,472
 - 最新版本: v2023.10.16
 - 官方下载地址: https://github.com/VR-25/acc/releases/download/v2023.10.16/acc_flashable_uninstaller.zip
 - 上游仓库: https://github.com/VR-25/acc
@@ -612,7 +612,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Rootless, Magisk, KernelSU, APatch
-- GitHub Star: 2,220
+- GitHub Star: 2,222
 - 最新版本: v1.8.4
 - 官方下载地址: https://github.com/vvb2060/KeyAttestation/releases/download/v1.8.4/KeyAttestation-v1.8.4.apk
 - 上游仓库: https://github.com/vvb2060/KeyAttestation
@@ -624,7 +624,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,219
+- GitHub Star: 2,222
 - 最新版本: v1.24.0
 - 官方下载地址: https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip
 - 上游仓库: https://github.com/j-hc/zygisk-detach
@@ -647,7 +647,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 2,081
+- GitHub Star: 2,085
 - 最新版本: v6.0.1-282
 - 官方下载地址: https://github.com/Enginex0/TEESimulator-RS/releases/download/v6.0.1-282/TEESimulator-RS-v6.0.1-282-Release.zip
 - 上游仓库: https://github.com/Enginex0/TEESimulator-RS
@@ -671,7 +671,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 1,976
+- GitHub Star: 1,979
 - 最新版本: v3.0.6
 - 官方下载地址: https://github.com/Yurii0307/yurikey/releases/download/v3.0.6/Yurikey-v3.0.6.signed.zip
 - 上游仓库: https://github.com/Yurii0307/yurikey
@@ -694,7 +694,7 @@
 - 软件包类型: xposed-module
 - 收录渠道: github
 - 兼容平台: LSPosed, Magisk, KernelSU, APatch
-- GitHub Star: 1,911
+- GitHub Star: 1,912
 - 最新版本: 1.6.6-0352170c
 - 官方下载地址: https://github.com/Dev4Mod/WaEnhancer/releases/download/1.6.6-0352170c/WaEnhancer-1.6.6.0352170C.apk
 - 上游仓库: https://github.com/Dev4Mod/WaEnhancer
@@ -728,7 +728,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 1,616
+- GitHub Star: 1,617
 - 最新版本: 20261027
 - 官方下载地址: https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20261027/AdGuardHomeForRoot_arm64.zip
 - 上游仓库: https://github.com/twoone-3/AdGuardHomeForRoot
@@ -740,7 +740,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 1,589
+- GitHub Star: 1,591
 - 最新版本: Uperf-Game-Turbo-1.51
 - 官方下载地址: https://github.com/yinwanxi/Uperf-Game-Turbo/releases/download/Uperf-Game-Turbo-1.51/Uperf_Game_Turbo-1.51.zip
 - 上游仓库: https://github.com/yinwanxi/Uperf-Game-Turbo
@@ -752,7 +752,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 1,584
+- GitHub Star: 1,588
 - 最新版本: v3.1.0
 - 官方下载地址: https://github.com/beakthoven/TrickyStoreOSS/releases/download/v3.1.0/Tricky-Store-OSS-v3.1.0-172-41383f5-Release.zip
 - 上游仓库: https://github.com/beakthoven/TrickyStoreOSS
@@ -775,7 +775,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 1,563
+- GitHub Star: 1,564
 - 最新版本: v2.1.5
 - 官方下载地址: https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip
 - 上游仓库: https://github.com/bindhosts/bindhosts
@@ -822,8 +822,8 @@
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
 - GitHub Star: 1,490
-- 最新版本: 17.27.5-1
-- 官方下载地址: https://github.com/ViRb3/magisk-frida/releases/download/17.27.5-1/MagiskFrida-17.27.5-1.zip
+- 最新版本: 17.27.6-1
+- 官方下载地址: https://github.com/ViRb3/magisk-frida/releases/download/17.27.6-1/MagiskFrida-17.27.6-1.zip
 - 上游仓库: https://github.com/ViRb3/magisk-frida
 
 ### NetProxy-Magisk (Sing-box WebUI 透明代理) (`netproxy-magisk`)
@@ -833,7 +833,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 1,479
+- GitHub Star: 1,481
 - 最新版本: v8.7.3
 - 官方下载地址: https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.7.3/NetProxy_v8.7.3_1128.zip
 - 上游仓库: https://github.com/Fanju6/NetProxy-Magisk
@@ -845,7 +845,7 @@
 - 软件包类型: xposed-module
 - 收录渠道: github
 - 兼容平台: LSPosed, Magisk, KernelSU, APatch
-- GitHub Star: 1,423
+- GitHub Star: 1,424
 - 最新版本: v5.0.1
 - 官方下载地址: https://github.com/LSPosed/DisableFlagSecure/releases/download/v5.0.1/app-release.apk
 - 上游仓库: https://github.com/LSPosed/DisableFlagSecure
@@ -857,7 +857,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,390
+- GitHub Star: 1,391
 - 最新版本: v5.53.1
 - 官方下载地址: https://github.com/Enginex0/tricky-addon-enhanced/releases/download/v5.53.1/TA_enhanced-v5.53.1.zip
 - 上游仓库: https://github.com/Enginex0/tricky-addon-enhanced
@@ -980,7 +980,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,178
+- GitHub Star: 1,179
 - 最新版本: 13614
 - 官方下载地址: https://github.com/Magisk-Modules-Repo/busybox-ndk/releases/download/13614/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip
 - 上游仓库: https://github.com/Magisk-Modules-Repo/busybox-ndk
@@ -992,7 +992,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 1,167
+- GitHub Star: 1,168
 - 最新版本: v3.9
 - 官方下载地址: https://github.com/fei-ke/unlock-cn-gms/releases/download/v3.9/unlock-cn-gms-v3.9.zip
 - 上游仓库: https://github.com/fei-ke/unlock-cn-gms
@@ -1149,7 +1149,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 926
+- GitHub Star: 927
 - 最新版本: v1.7.0
 - 官方下载地址: https://github.com/Seyud/device_faker/releases/download/v1.7.0/device_faker_v1.7.0.zip
 - 上游仓库: https://github.com/Seyud/device_faker
@@ -1176,6 +1176,18 @@
 - 最新版本: v1.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=223
 
+### Sui (系统级 Shizuku 超级用户接口) (`sui`)
+- 模块简介: 面向 Android 的现代超级用户接口实现，通过 Zygisk 或 Riru 将 Shizuku API 直接注入系统服务，免去独立后台进程与频繁拉起 su 子壳的开销。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/sui/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU
+- GitHub Star: 844
+- 最新版本: nightly
+- 官方下载地址: https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_589-cb157fa-release.zip
+- 上游仓库: https://github.com/XiaoTong6666/Sui
+
 ### Specter (`specter`)
 - 模块简介: dpejoh 打造的轻量级密钥证明与隐藏管理套件，全面重写自 Yurikey，支持自动监听目标应用、多源 Keybox 管理及 WebUI 可视化配置。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/specter/
@@ -1187,18 +1199,6 @@
 - 最新版本: v2.0.0
 - 官方下载地址: https://github.com/dpejoh/specter/releases/download/v2.0.0/specter-v2.0.0.zip
 - 上游仓库: https://github.com/dpejoh/specter
-
-### Sui (系统级 Shizuku 超级用户接口) (`sui`)
-- 模块简介: 面向 Android 的现代超级用户接口实现，通过 Zygisk 或 Riru 将 Shizuku API 直接注入系统服务，免去独立后台进程与频繁拉起 su 子壳的开销。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/sui/
-- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk, KernelSU
-- GitHub Star: 843
-- 最新版本: nightly
-- 官方下载地址: https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_589-cb157fa-release.zip
-- 上游仓库: https://github.com/XiaoTong6666/Sui
 
 ### Hide-Navbar / NavTweaks (隐藏小白条) (`hide-navbar`)
 - 模块简介: 面向 Android 10 至 15 的 Systemless 导航栏与全面屏手势定制模块，通过 RRO 覆盖彻底隐藏手势小白条并消除键盘底部空白留白。
@@ -1219,10 +1219,22 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 771
+- GitHub Star: 773
 - 最新版本: v1.19
 - 官方下载地址: https://github.com/daboynb/playcurlNEXT/releases/download/v1.19/playcurlNEXT.zip
 - 上游仓库: https://github.com/daboynb/playcurlNEXT
+
+### OhMyKeymint (`ohmykeymint`)
+- 模块简介: 基于 Rust 编写的 Android Keystore 2.0 拦截模块，通过挂钩 keystore2 守护进程将密钥证明重定向至自定义 KeyMint 配置。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/ohmykeymint/
+- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU
+- GitHub Star: 762
+- 最新版本: 1.3.0-7742865
+- 官方下载地址: https://github.com/qwq233/OhMyKeymint/releases/download/1.3.0-7742865/OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip
+- 上游仓库: https://github.com/qwq233/OhMyKeymint
 
 ### DAC Noise Floor Filter & Stereo Fix（DAC 底噪过滤与立体声修复） (`dac-noise-floor-filter`)
 - 模块简介: 校准高通 WCD9335（Tasha）等 DAC 音频混音路径，消除高敏入耳式耳机（IEM）在低音量下的模拟底噪电流声与接地环路干扰。
@@ -1234,18 +1246,6 @@
 - 社区热度指标: 761
 - 最新版本: v3.0
 - 官方下载地址: https://apk.magisk.vip/download.php?id=476
-
-### OhMyKeymint (`ohmykeymint`)
-- 模块简介: 基于 Rust 编写的 Android Keystore 2.0 拦截模块，通过挂钩 keystore2 守护进程将密钥证明重定向至自定义 KeyMint 配置。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/ohmykeymint/
-- 所属分类: https://magisk.yssn.tech/zh/categories/root-management/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk, KernelSU
-- GitHub Star: 760
-- 最新版本: 1.3.0-7742865
-- 官方下载地址: https://github.com/qwq233/OhMyKeymint/releases/download/1.3.0-7742865/OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip
-- 上游仓库: https://github.com/qwq233/OhMyKeymint
 
 ### Dolby Atmos 小米调音与 Pad 6 Max 空间环绕音效 (`xiaomi-dolby-atmos-enhancer`)
 - 模块简介: 针对小米、红米及 POCO 机型优化的 Dolby Atmos 音效增强模块，强化低频下潜与高频柔化，解锁蓝牙自定义均衡器并引入小米平板 6 Max 空间环绕声场。
@@ -1276,7 +1276,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 706
+- GitHub Star: 708
 - 最新版本: v1.3.1
 - 官方下载地址: https://github.com/okhsunrog/vpnhide/releases/download/v1.3.1/vpnhide-kpm.zip
 - 上游仓库: https://github.com/okhsunrog/vpnhide
@@ -1288,7 +1288,7 @@
 - 软件包类型: standalone-app
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 698
+- GitHub Star: 699
 - 最新版本: 26.08.1
 - 官方下载地址: https://github.com/feravolt/FDE.AI-docs/releases/download/26.08.1/FDE.AI-v26.08.1.apk
 - 上游仓库: https://github.com/feravolt/FDE.AI-docs
@@ -1333,7 +1333,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: KernelSU, APatch, Magisk
-- GitHub Star: 634
+- GitHub Star: 635
 - 最新版本: v4.1.12
 - 官方下载地址: https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.1.12/magic_mount_rs-4.1.12-959-universal.zip
 - 上游仓库: https://github.com/Tools-cx-app/meta-magic_mount-rs
@@ -1379,7 +1379,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 556
+- GitHub Star: 557
 - 最新版本: v2.0.0.1
 - 官方下载地址: https://github.com/anasfanani/magisk-tailscaled/releases/download/v2.0.0.1/Magisk-Tailscaled-v2.0.0.1.zip
 - 上游仓库: https://github.com/anasfanani/magisk-tailscaled
@@ -1391,7 +1391,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 536
+- GitHub Star: 538
 - 最新版本: 5.2.2
 - 官方下载地址: https://github.com/Rem01Gaming/encore/releases/download/5.2.2/encore-5.2.2-1571-47cdb70-main.zip
 - 上游仓库: https://github.com/Rem01Gaming/encore
@@ -1474,7 +1474,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 479
+- GitHub Star: 480
 - 最新版本: v5
 - 官方下载地址: https://github.com/Rev4N1/GPhotosUnlimited/releases/download/v5/GPhotosUnlimited-v5.zip
 - 上游仓库: https://github.com/Rev4N1/GPhotosUnlimited
@@ -1544,7 +1544,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 437
+- GitHub Star: 439
 - 最新版本: v2.1.2
 - 官方下载地址: https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.2/ViPER4Android-RE-v2.1.2.zip
 - 上游仓库: https://github.com/likelikeslike/ViPERFX_RE
@@ -1580,7 +1580,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 365
+- GitHub Star: 366
 - 最新版本: 0.0.11
 - 官方下载地址: https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/download/0.0.11/TreatWheel.zip
 - 上游仓库: https://github.com/PerformanC/Treat-Wheel-Zygisk
@@ -1676,7 +1676,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 306
+- GitHub Star: 307
 - 最新版本: 7.2
 - 官方下载地址: https://github.com/AestasBritannia/Hydro-Br-leur/releases/download/7.2/Hydrostellaire.Chocolate.zip
 - 上游仓库: https://github.com/AestasBritannia/Hydro-Br-leur
@@ -1700,7 +1700,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 292
+- GitHub Star: 293
 - 最新版本: v1.2.1
 - 官方下载地址: https://github.com/sidex15/deviceidchanger/releases/download/v1.2.1/DeviceID-Changer.zip
 - 上游仓库: https://github.com/sidex15/deviceidchanger
@@ -1736,7 +1736,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 276
+- GitHub Star: 278
 - 最新版本: v2.3.2
 - 官方下载地址: https://github.com/ukriu/HyperUnlocked/releases/download/v2.3.2/HyperUnlocked.zip
 - 上游仓库: https://github.com/ukriu/HyperUnlocked
@@ -1760,7 +1760,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 272
+- GitHub Star: 273
 - 最新版本: v2.2.6
 - 官方下载地址: https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip
 - 上游仓库: https://github.com/chisewaguri/systemapp_nuker
@@ -1808,7 +1808,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 222
+- GitHub Star: 223
 - 最新版本: v10.1
 - 官方下载地址: https://github.com/RipperHybrid/AshLooper/releases/download/v10.1/AshReXcue_Bootloop_Protector_10.1_201.zip
 - 上游仓库: https://github.com/RipperHybrid/AshLooper
@@ -1940,7 +1940,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 172
+- GitHub Star: 173
 - 最新版本: v1.09
 - 官方下载地址: https://github.com/OnyxZygisk/OnyxZygisk/releases/download/v1.09/OnyxZygisk-v1.09-399-820b68b-release.zip
 - 上游仓库: https://github.com/OnyxZygisk/OnyxZygisk
@@ -2000,10 +2000,22 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 155
+- GitHub Star: 156
 - 最新版本: 20260907
 - 官方下载地址: https://github.com/5MayRain/SAM/releases/download/20260907/SAM_20260907_release.zip
 - 上游仓库: https://github.com/5MayRain/SAM
+
+### AZenith (动态性能与温控调度模块) (`azenith`)
+- 模块简介: 集前台游戏优先级调度、后台智能冻结、Thermalcore 稳帧控温与图形控制台于一体的动态性能优化模块，兼顾高帧率游戏与日常续航。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/azenith/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU
+- GitHub Star: 153
+- 最新版本: AZenith-5.3
+- 官方下载地址: https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.3/AZenith-5.3-2049-56aa3446-Stellars-Beta.zip
+- 上游仓库: https://github.com/Liliya2727/AZenith
 
 ### ZeroTier for Magisk (zerotier-magisk) (`zerotier-magisk`)
 - 模块简介: 无侵入式 ZeroTier One 后台守护进程模块，在内核网络层建立加密 P2P 虚拟局域网，不占用 Android 系统 VPN 通道且支持自建 Planet 根节点。
@@ -2016,18 +2028,6 @@
 - 最新版本: v1.14.2-2
 - 官方下载地址: https://github.com/eventlOwOp/zerotier-magisk/releases/download/v1.14.2-2/zerotier-magisk-aarch64-ndk-4191d8c.zip
 - 上游仓库: https://github.com/eventlOwOp/zerotier-magisk
-
-### AZenith (动态性能与温控调度模块) (`azenith`)
-- 模块简介: 集前台游戏优先级调度、后台智能冻结、Thermalcore 稳帧控温与图形控制台于一体的动态性能优化模块，兼顾高帧率游戏与日常续航。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/azenith/
-- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk, KernelSU
-- GitHub Star: 151
-- 最新版本: AZenith-5.3
-- 官方下载地址: https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.3/AZenith-5.3-2049-56aa3446-Stellars-Beta.zip
-- 上游仓库: https://github.com/Liliya2727/AZenith
 
 ### ZeroMount (`zeromount`)
 - 模块简介: Enginex0 开发的无挂载（Mountless）模块加载引擎，在内核 VFS getname() 层重定向文件路径，实现零挂载表污染并深度集成 SUSFS 隐匿。
@@ -2065,6 +2065,18 @@
 - 官方下载地址: https://github.com/chenxiaolong/AlterInstaller/releases/download/v2.4/AlterInstaller-2.4-release.zip
 - 上游仓库: https://github.com/chenxiaolong/AlterInstaller
 
+### PixelXpert-Next (Pixel 原生系统定制模块) (`pixelxpert-next`)
+- 模块简介: 接棒原版 PixelXpert 的混合 Xposed 与 Root 定制模块，专为 Android 13 至 17+ 原生 Google Pixel 固件提供状态栏、快捷设置、锁屏及系统框架深度修改。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/pixelxpert-next/
+- 所属分类: https://magisk.yssn.tech/zh/categories/customization-ui/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch, LSPosed
+- GitHub Star: 137
+- 最新版本: v6.1.5
+- 官方下载地址: https://github.com/anirudhgupta109/PixelXpert-Next/releases/download/v6.1.5/PixelXpert-Next.zip
+- 上游仓库: https://github.com/anirudhgupta109/PixelXpert-Next
+
 ### AntiSafetyCore (`antisafetycore`)
 - 模块简介: 通过部署签名冲突的占位 APK，阻止 Google Play 服务在后台静默安装 Android System SafetyCore 与 Key Verifier 遥测组件的 Root 模块。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/antisafetycore/
@@ -2076,18 +2088,6 @@
 - 最新版本: 1.3.0
 - 官方下载地址: https://github.com/Astoritin/AntiSafetyCore/releases/download/1.3.0/AntiSafetyCore-1.3.0.zip
 - 上游仓库: https://github.com/Astoritin/AntiSafetyCore
-
-### PixelXpert-Next (Pixel 原生系统定制模块) (`pixelxpert-next`)
-- 模块简介: 接棒原版 PixelXpert 的混合 Xposed 与 Root 定制模块，专为 Android 13 至 17+ 原生 Google Pixel 固件提供状态栏、快捷设置、锁屏及系统框架深度修改。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/pixelxpert-next/
-- 所属分类: https://magisk.yssn.tech/zh/categories/customization-ui/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk, KernelSU, APatch, LSPosed
-- GitHub Star: 136
-- 最新版本: v6.1.5
-- 官方下载地址: https://github.com/anirudhgupta109/PixelXpert-Next/releases/download/v6.1.5/PixelXpert-Next.zip
-- 上游仓库: https://github.com/anirudhgupta109/PixelXpert-Next
 
 ### Video To Bootanimation (视频转开机动画) (`video-to-bootanimation`)
 - 模块简介: 支持将本地 MP4 视频文件自动转换为高精度 Android 开机动画（bootanimation.zip）的 Magisk 模块与终端转换工具集。
@@ -2144,7 +2144,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk
-- GitHub Star: 115
+- GitHub Star: 116
 - 最新版本: v17.3
 - 官方下载地址: https://github.com/JUANIMAN/PerfMTK/releases/download/v17.3/PerfMTKv17.3.zip
 - 上游仓库: https://github.com/JUANIMAN/PerfMTK
@@ -2161,6 +2161,18 @@
 - 官方下载地址: https://github.com/i-Taylo/iUnlockerGL/releases/download/v1.1.5-r4/iUnlocker-GLTool-for-android-v1.1.5-r4.zip
 - 上游仓库: https://github.com/i-Taylo/iUnlockerGL
 
+### Stellar-Tweaks (`stellar-tweaks`)
+- 模块简介: 基于 Rust 开发的智能 Android 性能守护进程，集成 FEAS 快速能量感知调度、多架构 GPU 控制、旁路供电与离线 WebUI。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/stellar-tweaks/
+- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk, KernelSU, APatch
+- GitHub Star: 112
+- 最新版本: 22.0
+- 官方下载地址: https://github.com/kanaodnd/Stellar-Tweaks/releases/download/22.0/Stellar-v22.0-release5.3-VoyagingAstralist-25926.zip
+- 上游仓库: https://github.com/kanaodnd/Stellar-Tweaks
+
 ### DRC Remover (禁用音频动态范围压缩) (`drc-remover`)
 - 模块简介: 移除高通骁龙等主流 Android 设备所有音频输出通道中的 DRC（动态范围控制/压缩）限制，还原无损听感。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/drc-remover/
@@ -2172,18 +2184,6 @@
 - 最新版本: v1.2.5
 - 官方下载地址: https://github.com/Magisk-Modules-Alt-Repo/drc-remover/releases/download/v1.2.5/magisk-module-drc-remover-v1.2.5.zip
 - 上游仓库: https://github.com/Magisk-Modules-Alt-Repo/drc-remover
-
-### Stellar-Tweaks (`stellar-tweaks`)
-- 模块简介: 基于 Rust 开发的智能 Android 性能守护进程，集成 FEAS 快速能量感知调度、多架构 GPU 控制、旁路供电与离线 WebUI。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/stellar-tweaks/
-- 所属分类: https://magisk.yssn.tech/zh/categories/performance-kernel/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk, KernelSU, APatch
-- GitHub Star: 111
-- 最新版本: 22.0
-- 官方下载地址: https://github.com/kanaodnd/Stellar-Tweaks/releases/download/22.0/Stellar-v22.0-release5.3-VoyagingAstralist-25926.zip
-- 上游仓库: https://github.com/kanaodnd/Stellar-Tweaks
 
 ### Wireless ADB Controller (wadbd 无线调试) (`wadbd`)
 - 模块简介: 通过命令行或 WebUI 管理 Android 无线 ADB 守护进程，支持开机自启、自定义监听端口及 adbkey.pub 公钥预授权导入，告别重复配对。
@@ -2395,7 +2395,7 @@
 - 软件包类型: flashable-module
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU
-- GitHub Star: 80
+- GitHub Star: 79
 - 最新版本: v1.3.0
 - 官方下载地址: https://github.com/FurLC/ZRAM-Module/releases/download/v1.3.0/ZRAM-Module-v1.3.0.zip
 - 上游仓库: https://github.com/FurLC/ZRAM-Module
@@ -2432,8 +2432,8 @@
 - 收录渠道: github
 - 兼容平台: Magisk, KernelSU, APatch
 - GitHub Star: 77
-- 最新版本: v0.3.7
-- 官方下载地址: https://github.com/Mrakorez/py2droid/releases/download/v0.3.7/py2droid-v0.3.7.zip
+- 最新版本: v0.3.8
+- 官方下载地址: https://github.com/Mrakorez/py2droid/releases/download/v0.3.8/py2droid-v0.3.8.zip
 - 上游仓库: https://github.com/Mrakorez/py2droid
 
 ### rclone-fuse3-magisk (Rclone 云盘挂载) (`rclone-fuse3-magisk`)
@@ -2544,6 +2544,18 @@
 - 官方下载地址: https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker/releases/download/v2.0/PlayStoreSelfUpdateBlocker-v2.0.zip
 - 上游仓库: https://github.com/himanshujjp/PlayStoreSelfUpdateBlocker
 
+### Resampling for Cheapies (入门级 DAC 重采样优化) (`resampling-for-cheapies`)
+- 模块简介: 覆盖系统级 AudioFlinger 混音器重采样参数，优化入门级 USB DAC 小尾巴与 LDAC 蓝牙耳机的升频滤波表现，消除高频毛刺与失真。
+- 中文详情页: https://magisk.yssn.tech/zh/modules/resampling-for-cheapies/
+- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
+- 软件包类型: flashable-module
+- 收录渠道: github
+- 兼容平台: Magisk
+- GitHub Star: 57
+- 最新版本: v2.0.2
+- 官方下载地址: https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/download/v2.0.2/magisk-module-resampling-for-cheapies-v2.0.2.zip
+- 上游仓库: https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies
+
 ### FastCharge Next (`fastcharge-next`)
 - 模块简介: 智能解锁内核充电电流限制与温控降流阈值的快充优化模块，在硬件安全边界内提升 USB-PD 及原装快充功率表现。
 - 中文详情页: https://magisk.yssn.tech/zh/modules/fastcharge-next/
@@ -2555,18 +2567,6 @@
 - 最新版本: v2.0.2
 - 官方下载地址: https://github.com/Dev97633/Fastcharge-next/releases/download/v2.0.2/fastcharge-next-v2.0.2.zip
 - 上游仓库: https://github.com/Dev97633/Fastcharge-next
-
-### Resampling for Cheapies (入门级 DAC 重采样优化) (`resampling-for-cheapies`)
-- 模块简介: 覆盖系统级 AudioFlinger 混音器重采样参数，优化入门级 USB DAC 小尾巴与 LDAC 蓝牙耳机的升频滤波表现，消除高频毛刺与失真。
-- 中文详情页: https://magisk.yssn.tech/zh/modules/resampling-for-cheapies/
-- 所属分类: https://magisk.yssn.tech/zh/categories/system-utilities/
-- 软件包类型: flashable-module
-- 收录渠道: github
-- 兼容平台: Magisk
-- GitHub Star: 56
-- 最新版本: v2.0.2
-- 官方下载地址: https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies/releases/download/v2.0.2/magisk-module-resampling-for-cheapies-v2.0.2.zip
-- 上游仓库: https://github.com/Magisk-Modules-Alt-Repo/resampling-for-cheapies
 
 ### Scalpel (系统精简与软件转系统应用) (`scalpel`)
 - 模块简介: 面向 Root 设备的精准系统精简（Debloat）与应用系统化工具，支持安全屏蔽厂商预装臃肿软件并将用户应用提升至 system/priv-app 权限。
