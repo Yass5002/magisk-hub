@@ -16,7 +16,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 64,312
+- GitHub Stars: 64,328
 - Latest Release: v31.1
 - Download Asset: https://github.com/topjohnwu/Magisk/releases/download/v31.1/Magisk-v31.1.apk
 - Upstream Source: https://github.com/topjohnwu/Magisk
@@ -29,7 +29,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 34,673
+- GitHub Stars: 34,749
 - Latest Release: v13.6.0
 - Download Asset: https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk
 - Upstream Source: https://github.com/RikkaApps/Shizuku
@@ -42,7 +42,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch, LSPosed
-- GitHub Stars: 30,976
+- GitHub Stars: 30,985
 - Latest Release: v1.0.4
 - Download Asset: https://github.com/librepods-org/librepods/releases/download/v1.0.4/LibrePods-FOSS-v1.0.4-100040301-release.apk
 - Upstream Source: https://github.com/librepods-org/librepods
@@ -55,7 +55,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 25,657
+- GitHub Stars: 25,664
 - Latest Release: v1.9.2
 - Download Asset: https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-riru-release.zip
 - Upstream Source: https://github.com/LSPosed/LSPosed
@@ -68,7 +68,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: KernelSU
-- GitHub Stars: 21,034
+- GitHub Stars: 21,076
 - Latest Release: v3.3.1
 - Download Asset: https://github.com/tiann/KernelSU/releases/download/v3.3.1/KernelSU_v3.3.1_32680-release.apk
 - Upstream Source: https://github.com/tiann/KernelSU
@@ -93,7 +93,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 13,330
+- GitHub Stars: 13,339
 - Latest Release: v2.2
 - Download Asset: https://github.com/JingMatrix/Vector/releases/download/v2.2/Vector-v2.2-3080-Release.zip
 - Upstream Source: https://github.com/JingMatrix/Vector
@@ -118,7 +118,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 11,177
+- GitHub Stars: 11,182
 - Latest Release: v1.5.3
 - Download Asset: https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.5.3/Zygisk-Next-1.5.3-880-22a1bf5-release.zip
 - Upstream Source: https://github.com/Dr-TSNG/ZygiskNext
@@ -131,7 +131,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Magisk, KernelSU, APatch
-- GitHub Stars: 9,729
+- GitHub Stars: 9,737
 - Latest Release: v4.1.1
 - Download Asset: https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk
 - Upstream Source: https://github.com/MuntashirAkon/AppManager
@@ -144,7 +144,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Magisk, KernelSU, APatch
-- GitHub Stars: 9,553
+- GitHub Stars: 9,560
 - Latest Release: v1.7.5
 - Download Asset: https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk
 - Upstream Source: https://github.com/zhanghai/MaterialFiles
@@ -157,7 +157,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: APatch
-- GitHub Stars: 8,232
+- GitHub Stars: 8,236
 - Latest Release: 11282
 - Download Asset: https://github.com/bmax121/APatch/releases/download/11282/APatch_11282_e8e4651_HEAD-release-signed.apk
 - Upstream Source: https://github.com/bmax121/APatch
@@ -182,10 +182,23 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 7,786
+- GitHub Stars: 7,822
 - Latest Release: v4.1.0
 - Download Asset: https://github.com/samolego/Canta/releases/download/v4.1.0/androidApp-release.apk
 - Upstream Source: https://github.com/samolego/Canta
+
+### InstallerX Revived (`installerx-revived`)
+- Description: Modern community-maintained Android package installer supporting APK, APKS, APKM, XAPK, batch installs, and privileged Root, Shizuku, and Dhizuku backends.
+- Module URL: https://magisk.yssn.tech/modules/installerx-revived/
+- Chinese Module URL: https://magisk.yssn.tech/zh/modules/installerx-revived/
+- Category: https://magisk.yssn.tech/categories/system-utilities/
+- Software Type: standalone-app
+- Source Channel: github
+- Supported Platforms: Rootless, Shizuku, Magisk, KernelSU, APatch
+- GitHub Stars: 7,695
+- Latest Release: 26.09
+- Download Asset: https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.09/InstallerX-Revived-online-26.09.apk
+- Upstream Source: https://github.com/wxxsfxyzm/InstallerX-Revived
 
 ### Leica Camera MIUI Port & Color Profiles (`leica-camera-port`)
 - Description: Systemless privileged MIUI Camera replacement injecting authentic Leica Authentic and Leica Vibrant color profiles, Leica watermark processing, and custom ISP tuning.
@@ -199,19 +212,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v4.3.04750.0
 - Download Asset: https://apk.magisk.vip/download.php?id=167
 
-### InstallerX Revived (`installerx-revived`)
-- Description: Modern community-maintained Android package installer supporting APK, APKS, APKM, XAPK, batch installs, and privileged Root, Shizuku, and Dhizuku backends.
-- Module URL: https://magisk.yssn.tech/modules/installerx-revived/
-- Chinese Module URL: https://magisk.yssn.tech/zh/modules/installerx-revived/
-- Category: https://magisk.yssn.tech/categories/system-utilities/
-- Software Type: standalone-app
-- Source Channel: github
-- Supported Platforms: Rootless, Shizuku, Magisk, KernelSU, APatch
-- GitHub Stars: 7,684
-- Latest Release: 26.09
-- Download Asset: https://github.com/wxxsfxyzm/InstallerX-Revived/releases/download/26.09/InstallerX-Revived-online-26.09.apk
-- Upstream Source: https://github.com/wxxsfxyzm/InstallerX-Revived
-
 ### Hail (`hail`)
 - Description: Disable / Hide / Suspend / Uninstall Android apps without root.
 - Module URL: https://magisk.yssn.tech/modules/hail/
@@ -220,7 +220,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 7,470
+- GitHub Stars: 7,486
 - Latest Release: v1.11.0
 - Download Asset: https://github.com/aistra0528/Hail/releases/download/v1.11.0/Hail-v1.11.0.apk
 - Upstream Source: https://github.com/aistra0528/Hail
@@ -245,7 +245,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 6,986
+- GitHub Stars: 6,991
 - Latest Release: 3.3.15
 - Download Asset: https://github.com/reqable/reqable-app/releases/download/3.3.15/reqable-app-android-arm64.apk
 - Upstream Source: https://github.com/reqable/reqable-app
@@ -282,7 +282,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 6,515
+- GitHub Stars: 6,517
 - Latest Release: 1.4.1
 - Download Asset: https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip
 - Upstream Source: https://github.com/5ec1cff/TrickyStore
@@ -295,7 +295,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 6,376
+- GitHub Stars: 6,374
 - Latest Release: shamiko-414
 - Download Asset: https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-414/Shamiko-v1.2.5-414-release.zip
 - Upstream Source: https://github.com/LSPosed/LSPosed.github.io
@@ -332,7 +332,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 4,726
+- GitHub Stars: 4,725
 - Latest Release: v19
 - Download Asset: https://github.com/osm0sis/PlayIntegrityFork/releases/download/v19/PlayIntegrityFork-v19.zip
 - Upstream Source: https://github.com/osm0sis/PlayIntegrityFork
@@ -357,7 +357,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 4,598
+- GitHub Stars: 4,600
 - Latest Release: 7.0.1-ci
 - Download Asset: https://github.com/eritpchy/FingerprintPay/releases/download/7.0.1-ci/zygisk-module-xfingerprint-pay-all-v7.0.1-release.zip
 - Upstream Source: https://github.com/eritpchy/FingerprintPay
@@ -370,23 +370,10 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 4,283
+- GitHub Stars: 4,295
 - Latest Release: oss-177
 - Download Asset: https://github.com/frknkrc44/HMA-OSS/releases/download/oss-177/HMA-OSS-ZYGISK-oss-177-release.zip
 - Upstream Source: https://github.com/frknkrc44/HMA-OSS
-
-### revanced-extended (`revanced-extended`)
-- Description: ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users.
-- Module URL: https://magisk.yssn.tech/modules/revanced-extended/
-- Chinese Module URL: https://magisk.yssn.tech/zh/modules/revanced-extended/
-- Category: https://magisk.yssn.tech/categories/customization-ui/
-- Software Type: flashable-module
-- Source Channel: github
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 4,258
-- Latest Release: 165
-- Download Asset: https://github.com/NoName-exe/revanced-extended/releases/download/165/youtube-music-morphe-module-v9.30.53-arm64-v8a.zip
-- Upstream Source: https://github.com/NoName-exe/revanced-extended
 
 ### PlayIntegrityFix (`playintegrityfix`)
 - Description: Fix Play Integrity verdicts.
@@ -396,10 +383,23 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 4,257
+- GitHub Stars: 4,261
 - Latest Release: v4.9-inject-s
 - Download Asset: https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.9-inject-s/PlayIntegrityFix_v4.9-inject-s.zip
 - Upstream Source: https://github.com/KOWX712/PlayIntegrityFix
+
+### revanced-extended (`revanced-extended`)
+- Description: ReVanced eXtended (now Morphe) YT and YT-M for both root and non-root users.
+- Module URL: https://magisk.yssn.tech/modules/revanced-extended/
+- Chinese Module URL: https://magisk.yssn.tech/zh/modules/revanced-extended/
+- Category: https://magisk.yssn.tech/categories/customization-ui/
+- Software Type: flashable-module
+- Source Channel: github
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 4,261
+- Latest Release: 165
+- Download Asset: https://github.com/NoName-exe/revanced-extended/releases/download/165/youtube-music-morphe-module-v9.30.53-arm64-v8a.zip
+- Upstream Source: https://github.com/NoName-exe/revanced-extended
 
 ### Dhizuku (`dhizuku`)
 - Description: A tool that can share DeviceOwner permissions to other application.
@@ -409,7 +409,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Rootless, Shizuku, Magisk, KernelSU, APatch
-- GitHub Stars: 4,249
+- GitHub Stars: 4,260
 - Latest Release: v2.13.0
 - Download Asset: https://github.com/iamr0s/Dhizuku/releases/download/v2.13.0/Dhizuku_v2.13.0.apk
 - Upstream Source: https://github.com/iamr0s/Dhizuku
@@ -422,7 +422,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 4,182
+- GitHub Stars: 4,183
 - Latest Release: v1.0.0
 - Download Asset: https://github.com/PerformanC/ReZygisk/releases/download/v1.0.0/ReZygisk-v1.0.0-release.zip
 - Upstream Source: https://github.com/PerformanC/ReZygisk
@@ -447,7 +447,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: xposed-module
 - Source Channel: github
 - Supported Platforms: LSPosed, Magisk, KernelSU, APatch
-- GitHub Stars: 3,606
+- GitHub Stars: 3,608
 - Latest Release: N-1.0
 - Download Asset: https://github.com/LSPosed/CorePatch/releases/download/N-1.0/app-release.apk
 - Upstream Source: https://github.com/LSPosed/CorePatch
@@ -473,7 +473,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Shizuku, Rootless, Magisk, KernelSU, APatch
-- GitHub Stars: 3,480
+- GitHub Stars: 3,479
 - Latest Release: 0.9.2
 - Download Asset: https://github.com/zacharee/InstallWithOptions/releases/download/0.9.2/InstallWithOptions_0.9.2-release.apk
 - Upstream Source: https://github.com/zacharee/InstallWithOptions
@@ -523,7 +523,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,845
+- GitHub Stars: 2,847
 - Latest Release: v4.0
 - Download Asset: https://github.com/JingMatrix/TEESimulator/releases/download/v4.0/TEESimulator-v4.0-34-Release.zip
 - Upstream Source: https://github.com/JingMatrix/TEESimulator
@@ -536,7 +536,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,802
+- GitHub Stars: 2,801
 - Latest Release: v1.5.2+_R28
 - Download Asset: https://github.com/sidex15/susfs4ksu-module/releases/download/v1.5.2%2B_R28/ksu_module_susfs_1.5.2%2B.zip
 - Upstream Source: https://github.com/sidex15/susfs4ksu-module
@@ -549,7 +549,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 2,772
+- GitHub Stars: 2,771
 - Latest Release: Kana
 - Download Asset: https://github.com/nakixii/Magisk_AsoulOpt/releases/download/Kana/Magisk_AsoulOpt_Kana.zip
 - Upstream Source: https://github.com/nakixii/Magisk_AsoulOpt
@@ -562,7 +562,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 2,690
+- GitHub Stars: 2,692
 - Latest Release: v2.1.4
 - Download Asset: https://github.com/snake-4/Zygisk-Assistant/releases/download/v2.1.4/Zygisk-Assistant-v2.1.4-1013f8a-release.zip
 - Upstream Source: https://github.com/snake-4/Zygisk-Assistant
@@ -575,7 +575,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 2,658
+- GitHub Stars: 2,661
 - Latest Release: v2.4
 - Download Asset: https://github.com/JingMatrix/NeoZygisk/releases/download/v2.4/NeoZygisk-v2.4-289-release.zip
 - Upstream Source: https://github.com/JingMatrix/NeoZygisk
@@ -588,7 +588,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,617
+- GitHub Stars: 2,618
 - Latest Release: v1.3
 - Download Asset: https://github.com/NVISOsecurity/AlwaysTrustUserCerts/releases/download/v1.3/AlwaysTrustUserCerts_v1.3.zip
 - Upstream Source: https://github.com/NVISOsecurity/AlwaysTrustUserCerts
@@ -614,7 +614,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,534
+- GitHub Stars: 2,532
 - Latest Release: v1.10.2
 - Download Asset: https://github.com/taamarin/box_for_magisk/releases/download/v1.10.2/box_for_root-v1.10.2.zip
 - Upstream Source: https://github.com/taamarin/box_for_magisk
@@ -627,7 +627,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 2,472
+- GitHub Stars: 2,471
 - Latest Release: v2023.10.16
 - Download Asset: https://github.com/VR-25/acc/releases/download/v2023.10.16/acc_flashable_uninstaller.zip
 - Upstream Source: https://github.com/VR-25/acc
@@ -656,6 +656,19 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v6.0.5-X12Pro
 - Download Asset: https://apk.magisk.vip/download.php?id=153
 
+### zygisk-detach (`zygisk-detach`)
+- Description: Zygisk module to detach installed apps from Play Store, hooking binder
+- Module URL: https://magisk.yssn.tech/modules/zygisk-detach/
+- Chinese Module URL: https://magisk.yssn.tech/zh/modules/zygisk-detach/
+- Category: https://magisk.yssn.tech/categories/system-environment/
+- Software Type: flashable-module
+- Source Channel: github
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 2,223
+- Latest Release: v1.24.0
+- Download Asset: https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip
+- Upstream Source: https://github.com/j-hc/zygisk-detach
+
 ### Key Attestation (`key-attestation`)
 - Description: Diagnostic security application by vvb2060 for generating, parsing, and verifying Android Hardware Keystore, StrongBox, and KeyMint certificate chains without network dependencies.
 - Module URL: https://magisk.yssn.tech/modules/key-attestation/
@@ -668,19 +681,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v1.8.4
 - Download Asset: https://github.com/vvb2060/KeyAttestation/releases/download/v1.8.4/KeyAttestation-v1.8.4.apk
 - Upstream Source: https://github.com/vvb2060/KeyAttestation
-
-### zygisk-detach (`zygisk-detach`)
-- Description: Zygisk module to detach installed apps from Play Store, hooking binder
-- Module URL: https://magisk.yssn.tech/modules/zygisk-detach/
-- Chinese Module URL: https://magisk.yssn.tech/zh/modules/zygisk-detach/
-- Category: https://magisk.yssn.tech/categories/system-environment/
-- Software Type: flashable-module
-- Source Channel: github
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,222
-- Latest Release: v1.24.0
-- Download Asset: https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip
-- Upstream Source: https://github.com/j-hc/zygisk-detach
 
 ### Ultraman Tiga Charging Animation & SFX (`ultraman-tiga-charging-animation`)
 - Description: Lockscreen charging animation overlay featuring Ultraman Tiga Spark Lens transformation effects and authentic sound effects upon USB connection.
@@ -715,7 +715,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 2,038
+- GitHub Stars: 2,039
 - Latest Release: v1.6.2
 - Download Asset: https://github.com/ys1231/MoveCertificate/releases/download/v1.6.2/MoveCertificate-v1.6.2.zip
 - Upstream Source: https://github.com/ys1231/MoveCertificate
@@ -728,7 +728,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,979
+- GitHub Stars: 1,981
 - Latest Release: v3.0.6
 - Download Asset: https://github.com/Yurii0307/yurikey/releases/download/v3.0.6/Yurikey-v3.0.6.signed.zip
 - Upstream Source: https://github.com/Yurii0307/yurikey
@@ -755,8 +755,8 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Supported Platforms: LSPosed, Magisk, KernelSU, APatch
 - GitHub Stars: 1,912
 - Latest Release: 1.6.6-0352170c
-- Download Asset: https://github.com/Dev4Mod/WaEnhancer/releases/download/1.6.6-0352170c/WaEnhancer-1.6.6.0352170C.apk
-- Upstream Source: https://github.com/Dev4Mod/WaEnhancer
+- Download Asset: https://github.com/Waenhancer-Dev/WaEnhancer/releases/download/1.6.6-0352170c/WaEnhancer-1.6.6.0352170C.apk
+- Upstream Source: https://github.com/Waenhancer-Dev/WaEnhancer
 
 ### 210W Screen-On Extreme Fast Charging Mod (`super-charge-210w-booster`)
 - Description: Unlocks maximum charging current and wattage (up to 210W) during active screen-on time on Xiaomi and Redmi devices by overriding thermal policies with 80°C hardware protection.
@@ -790,7 +790,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 1,617
+- GitHub Stars: 1,618
 - Latest Release: 20261027
 - Download Asset: https://github.com/twoone-3/AdGuardHomeForRoot/releases/download/20261027/AdGuardHomeForRoot_arm64.zip
 - Upstream Source: https://github.com/twoone-3/AdGuardHomeForRoot
@@ -841,7 +841,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 1,564
+- GitHub Stars: 1,565
 - Latest Release: v2.1.5
 - Download Asset: https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip
 - Upstream Source: https://github.com/bindhosts/bindhosts
@@ -891,7 +891,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 1,490
+- GitHub Stars: 1,491
 - Latest Release: 17.27.6-1
 - Download Asset: https://github.com/ViRb3/magisk-frida/releases/download/17.27.6-1/MagiskFrida-17.27.6-1.zip
 - Upstream Source: https://github.com/ViRb3/magisk-frida
@@ -904,7 +904,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 1,481
+- GitHub Stars: 1,483
 - Latest Release: v8.7.3
 - Download Asset: https://github.com/Fanju6/NetProxy-Magisk/releases/download/v8.7.3/NetProxy_v8.7.3_1128.zip
 - Upstream Source: https://github.com/Fanju6/NetProxy-Magisk
@@ -1064,7 +1064,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 1,179
+- GitHub Stars: 1,178
 - Latest Release: 13614
 - Download Asset: https://github.com/Magisk-Modules-Repo/busybox-ndk/releases/download/13614/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip
 - Upstream Source: https://github.com/Magisk-Modules-Repo/busybox-ndk
@@ -1102,7 +1102,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: KernelSU, APatch, Magisk
-- GitHub Stars: 1,124
+- GitHub Stars: 1,123
 - Latest Release: v4.9.1
 - Download Asset: https://github.com/shadow3aaa/fas-rs/releases/download/v4.9.1/fas-rs.zip
 - Upstream Source: https://github.com/shadow3aaa/fas-rs
@@ -1248,7 +1248,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 927
+- GitHub Stars: 929
 - Latest Release: v1.7.0
 - Download Asset: https://github.com/Seyud/device_faker/releases/download/v1.7.0/device_faker_v1.7.0.zip
 - Upstream Source: https://github.com/Seyud/device_faker
@@ -1285,9 +1285,9 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 844
+- GitHub Stars: 845
 - Latest Release: nightly
-- Download Asset: https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_589-cb157fa-release.zip
+- Download Asset: https://github.com/XiaoTong6666/Sui/releases/download/nightly/Sui-v13.5.4.3_590-6844d95-release.zip
 - Upstream Source: https://github.com/XiaoTong6666/Sui
 
 ### specter (`specter`)
@@ -1337,7 +1337,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 762
+- GitHub Stars: 766
 - Latest Release: 1.3.0-7742865
 - Download Asset: https://github.com/qwq233/OhMyKeymint/releases/download/1.3.0-7742865/OhMyKeymint-release-arm64-v8a-1.3.0-7742865.zip
 - Upstream Source: https://github.com/qwq233/OhMyKeymint
@@ -1386,7 +1386,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 708
+- GitHub Stars: 712
 - Latest Release: v1.3.1
 - Download Asset: https://github.com/okhsunrog/vpnhide/releases/download/v1.3.1/vpnhide-kpm.zip
 - Upstream Source: https://github.com/okhsunrog/vpnhide
@@ -1448,7 +1448,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: KernelSU, APatch, Magisk
-- GitHub Stars: 635
+- GitHub Stars: 638
 - Latest Release: v4.1.12
 - Download Asset: https://github.com/Tools-cx-app/meta-magic_mount-rs/releases/download/v4.1.12/magic_mount_rs-4.1.12-959-universal.zip
 - Upstream Source: https://github.com/Tools-cx-app/meta-magic_mount-rs
@@ -1498,7 +1498,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 557
+- GitHub Stars: 556
 - Latest Release: v2.0.0.1
 - Download Asset: https://github.com/anasfanani/magisk-tailscaled/releases/download/v2.0.0.1/Magisk-Tailscaled-v2.0.0.1.zip
 - Upstream Source: https://github.com/anasfanani/magisk-tailscaled
@@ -1511,7 +1511,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 538
+- GitHub Stars: 539
 - Latest Release: 5.2.2
 - Download Asset: https://github.com/Rem01Gaming/encore/releases/download/5.2.2/encore-5.2.2-1571-47cdb70-main.zip
 - Upstream Source: https://github.com/Rem01Gaming/encore
@@ -1588,7 +1588,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 505
+- GitHub Stars: 506
 - Latest Release: v8.2
 - Download Asset: https://github.com/ZG089/Re-Malwack/releases/download/v8.2/Re-Malwack_v8.2.zip
 - Upstream Source: https://github.com/ZG089/Re-Malwack
@@ -1601,7 +1601,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 480
+- GitHub Stars: 481
 - Latest Release: v5
 - Download Asset: https://github.com/Rev4N1/GPhotosUnlimited/releases/download/v5/GPhotosUnlimited-v5.zip
 - Upstream Source: https://github.com/Rev4N1/GPhotosUnlimited
@@ -1656,6 +1656,19 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v1.0
 - Download Asset: https://apk.magisk.vip/download.php?id=471
 
+### ViPERFX_RE (`viperfx-re`)
+- Description: Reverse Engineering of ViPER4Android FX
+- Module URL: https://magisk.yssn.tech/modules/viperfx-re/
+- Chinese Module URL: https://magisk.yssn.tech/zh/modules/viperfx-re/
+- Category: https://magisk.yssn.tech/categories/system-utilities/
+- Software Type: flashable-module
+- Source Channel: github
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 441
+- Latest Release: v2.1.2
+- Download Asset: https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.2/ViPER4Android-RE-v2.1.2.zip
+- Upstream Source: https://github.com/likelikeslike/ViPERFX_RE
+
 ### COPG (`copg`)
 - Description: Advanced per-app device / CPU / GPU spoofer for rooted Android — device profiles, per-app CPU models, prop & Android-ID spoofing, all driven by a full on-device WebUI. Zygisk module for KernelSU / Magisk / APatch.
 - Module URL: https://magisk.yssn.tech/modules/copg/
@@ -1669,19 +1682,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/AlirezaParsi/COPG/releases/download/v7.8.2/COPG-v7.8.2.zip
 - Upstream Source: https://github.com/AlirezaParsi/COPG
 
-### ViPERFX_RE (`viperfx-re`)
-- Description: Reverse Engineering of ViPER4Android FX
-- Module URL: https://magisk.yssn.tech/modules/viperfx-re/
-- Chinese Module URL: https://magisk.yssn.tech/zh/modules/viperfx-re/
-- Category: https://magisk.yssn.tech/categories/system-utilities/
-- Software Type: flashable-module
-- Source Channel: github
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 439
-- Latest Release: v2.1.2
-- Download Asset: https://github.com/likelikeslike/ViPERFX_RE/releases/download/v2.1.2/ViPER4Android-RE-v2.1.2.zip
-- Upstream Source: https://github.com/likelikeslike/ViPERFX_RE
-
 ### VioletBox Root Toolbox (`violetbox-root-toolbox`)
 - Description: Comprehensive all-in-one Android root utility by Smart-Paocai featuring SELinux mode management, raw partition reading/flashing, baseband font backup, module batch flashing, and device ID modification.
 - Module URL: https://magisk.yssn.tech/modules/violetbox-root-toolbox/
@@ -1690,7 +1690,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: standalone-app
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU, APatch
-- GitHub Stars: 428
+- GitHub Stars: 431
 - Latest Release: v1.0.0
 - Download Asset: https://github.com/Smart-Paocai/violet_Box/releases/download/v1.0.0/VioletBox_V1.0.0_release.apk
 - Upstream Source: https://github.com/Smart-Paocai/violet_Box
@@ -1716,7 +1716,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 366
+- GitHub Stars: 368
 - Latest Release: 0.0.11
 - Download Asset: https://github.com/PerformanC/Treat-Wheel-Zygisk/releases/download/0.0.11/TreatWheel.zip
 - Upstream Source: https://github.com/PerformanC/Treat-Wheel-Zygisk
@@ -1781,7 +1781,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 344
+- GitHub Stars: 345
 - Latest Release: v4.5
 - Download Asset: https://github.com/Briclyaz/NLSound/releases/download/v4.5/NLSound.v4.5.Qcom.Devices.zip
 - Upstream Source: https://github.com/Briclyaz/NLSound
@@ -1794,7 +1794,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: KernelSU, APatch, Magisk
-- GitHub Stars: 321
+- GitHub Stars: 323
 - Latest Release: v1.7.0
 - Download Asset: https://github.com/Seyud/FreePPS/releases/download/v1.7.0/FreePPS_v1.7.0.zip
 - Upstream Source: https://github.com/Seyud/FreePPS
@@ -1976,7 +1976,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 217
+- GitHub Stars: 218
 - Latest Release: v11
 - Download Asset: https://github.com/j-hc/ih8SecureLock/releases/download/v11/ih8SecureLock-v11.zip
 - Upstream Source: https://github.com/j-hc/ih8SecureLock
@@ -1989,7 +1989,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk
-- GitHub Stars: 210
+- GitHub Stars: 211
 - Latest Release: v8.138-6537c16
 - Download Asset: https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector/releases/download/v8.138-6537c16/YetAnotherBootloopProtector-138-v8.138-6537c16.zip
 - Upstream Source: https://github.com/Magisk-Modules-Alt-Repo/YetAnotherBootloopProtector
@@ -2184,7 +2184,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: github
 - Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 153
+- GitHub Stars: 154
 - Latest Release: AZenith-5.3
 - Download Asset: https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.3/AZenith-5.3-2049-56aa3446-Stellars-Beta.zip
 - Upstream Source: https://github.com/Liliya2727/AZenith
@@ -2392,7 +2392,7 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Software Type: flashable-module
 - Source Channel: community
 - Supported Platforms: Magisk, KernelSU, APatch
-- Community Metric: 104
+- Community Metric: 105
 - Latest Release: v1.0.6.1
 - Download Asset: https://gitlab.com/api/v4/projects/87739512/packages/generic/AlwaysStrong/v1.0.6.1/AlwaysStrong-v1.0.6.1.zip
 
@@ -2682,6 +2682,19 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Download Asset: https://github.com/Magisk-Modules-Alt-Repo/supl-replacer/releases/download/v2.3.1/supl-replacer-v2.3.1.zip
 - Upstream Source: https://github.com/Magisk-Modules-Alt-Repo/supl-replacer
 
+### KernelEnhancer (`kernelenhancer`)
+- Description: Stable Magisk modules for performance and efficient battery usage on rooted Android devices.
+- Module URL: https://magisk.yssn.tech/modules/kernelenhancer/
+- Chinese Module URL: https://magisk.yssn.tech/zh/modules/kernelenhancer/
+- Category: https://magisk.yssn.tech/categories/performance-kernel/
+- Software Type: flashable-module
+- Source Channel: github
+- Supported Platforms: Magisk, KernelSU
+- GitHub Stars: 66
+- Latest Release: V6.0
+- Download Asset: https://github.com/RAAJK20Pro/KernelEnhancer/releases/download/V6.0/KernelEnhancerV6.0.zip
+- Upstream Source: https://github.com/RAAJK20Pro/KernelEnhancer
+
 ### ClearBox (`clearbox`)
 - Description: Comprehensive system cleaning and filesystem maintenance engine offering rule-based cache suppression, deep file categorization, disk GC, and terminal TUI control.
 - Module URL: https://magisk.yssn.tech/modules/clearbox/
@@ -2707,19 +2720,6 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Latest Release: v5.1.1.3
 - Download Asset: https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn/releases/download/v5.1.1.3/Greenify4Magisk-KSU-Reborn-v5.1.1.3.zip
 - Upstream Source: https://github.com/Drsexo/Greenify4Magisk-KSU-Reborn
-
-### KernelEnhancer (`kernelenhancer`)
-- Description: Stable Magisk modules for performance and efficient battery usage on rooted Android devices.
-- Module URL: https://magisk.yssn.tech/modules/kernelenhancer/
-- Chinese Module URL: https://magisk.yssn.tech/zh/modules/kernelenhancer/
-- Category: https://magisk.yssn.tech/categories/performance-kernel/
-- Software Type: flashable-module
-- Source Channel: github
-- Supported Platforms: Magisk, KernelSU
-- GitHub Stars: 65
-- Latest Release: V6.0
-- Download Asset: https://github.com/RAAJK20Pro/KernelEnhancer/releases/download/V6.0/KernelEnhancerV6.0.zip
-- Upstream Source: https://github.com/RAAJK20Pro/KernelEnhancer
 
 ### OOSGMS-OPTIMISER (`oosgms-optimiser`)
 - Description: Magisk module to optimise and remove trackers for GMS and OOS
@@ -3289,8 +3289,8 @@ Repository: https://github.com/Yass5002/magisk-hub
 - Source Channel: github
 - Supported Platforms: Magisk
 - GitHub Stars: 9
-- Latest Release: v1.0.0
-- Download Asset: https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/download/v1.0.0/magisk-jetbrains-mono-system-font.zip
+- Latest Release: v1.0.1
+- Download Asset: https://github.com/Mars-Wave/jetbrains-font-magisk-module/releases/download/v1.0.1/magisk-jetbrains-mono-system-font.zip
 - Upstream Source: https://github.com/Mars-Wave/jetbrains-font-magisk-module
 
 ### Aurora (`aurora`)
