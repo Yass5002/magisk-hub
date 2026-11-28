@@ -13,13 +13,13 @@
   ],
   "license": "GPL-3.0",
   "icon": "assets/icons/waenhancer.png",
-  "stars": 1916,
+  "stars": 1921,
   "latestRelease": {
-    "tag": "1.6.7-1f581f4b",
-    "publishedAt": "2026-11-26T20:09:14Z",
-    "url": "https://github.com/Waenhancer-Dev/WaEnhancer/releases/tag/1.6.7-1f581f4b",
-    "downloadUrl": "https://github.com/Waenhancer-Dev/WaEnhancer/releases/download/1.6.7-1f581f4b/WaEnhancer-1.6.7.1F581F4B.apk",
-    "assetName": "WaEnhancer-1.6.7.1F581F4B.apk"
+    "tag": "1.6.7-08fcba65",
+    "publishedAt": "2026-11-28T11:54:57Z",
+    "url": "https://github.com/Waenhancer-Dev/WaEnhancer/releases/tag/1.6.7-08fcba65",
+    "downloadUrl": "https://github.com/Waenhancer-Dev/WaEnhancer/releases/download/1.6.7-08fcba65/WaEnhancer-1.6.7.08FCBA65.apk",
+    "assetName": "WaEnhancer-1.6.7.08FCBA65.apk"
   },
   "seo": {
     "title": "WaEnhancer – WhatsApp Privacy & UI Xposed Module | Magisk Hub",
